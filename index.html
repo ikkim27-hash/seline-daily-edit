@@ -279,6 +279,9 @@ footer{border-top:3px solid var(--ink);padding-top:14px}
   .tips li:nth-last-child(2):nth-child(odd){border-bottom:0}
 }
 .tochead{font-weight:600;font-size:1.15rem;letter-spacing:-.01em}
+.mast .date{font-size:1.3rem;font-weight:700;color:var(--ink);letter-spacing:-.01em;animation:dateblink 1.8s ease-in-out infinite}
+@keyframes dateblink{0%,100%{opacity:1}50%{opacity:.3}}
+@media (prefers-reduced-motion:reduce){.mast .date{animation:none}}
 .news article{grid-template-columns:auto 1fr auto}
 .news .n{grid-column:1;grid-row:1/3}
 .news .tag{grid-column:2;grid-row:1}
