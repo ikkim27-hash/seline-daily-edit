@@ -316,12 +316,13 @@ footer{border-top:3px solid var(--ink);padding-top:14px}
 .pager .pg-nav button:disabled{opacity:.3;cursor:default}
 .mast .date{font-size:.91rem;font-weight:700;color:var(--ink);letter-spacing:-.01em}
 /* 홈 버튼: 제호가 화면에서 사라지면 오른쪽 아래에 커피 사진이 떠오른다 */
-.home{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:calc(18px + env(safe-area-inset-bottom));width:48px;height:48px;padding:0;border:2px solid var(--surface);border-radius:50%;overflow:hidden;background:var(--surface);box-shadow:0 4px 14px rgba(27,35,33,.28);cursor:pointer;z-index:20;opacity:0;visibility:hidden;transition:opacity .25s ease,visibility .25s}
+.home{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:calc(18px + env(safe-area-inset-bottom));width:48px;height:48px;padding:0;border:3px solid #FDFCF9;border-radius:50%;overflow:hidden;background:#8A5A1E;box-shadow:0 4px 12px rgba(27,35,33,.3);cursor:pointer;z-index:20;opacity:0;visibility:hidden;transition:opacity .25s ease,visibility .25s}
 .home.on{opacity:1;visibility:visible}
 .home img{width:100%;height:100%;object-fit:cover;display:block}
 /* 버튼은 가만히 있고 잔 안의 커피만 제호보다 빠르게 흔들린다 */
-.home .swirl{position:absolute;inset:0;clip-path:circle(36% at 48.2% 35.4%);transform-origin:48.2% 35.4%;animation:swirl 2s ease-in-out infinite alternate}
-@media (prefers-reduced-motion:reduce){.home .swirl{animation:none;display:none}}
+.home .swirl{transform-origin:50% 50%;animation:homeswirl 2s ease-in-out infinite alternate}
+@keyframes homeswirl{from{transform:rotate(-8deg) scale(1.02)}to{transform:rotate(8deg) scale(1.02)}}
+@media (prefers-reduced-motion:reduce){.home .swirl{animation:none}}
 .home:focus-visible{outline:2px solid var(--hot);outline-offset:3px}
 @media (prefers-reduced-motion:reduce){.home{transition:none}}
 /* 제호 위로 빛이 사선으로 한 번 지나간다 */
@@ -430,7 +431,7 @@ section h2,.news h3,.news article:first-child h3{font-size:clamp(1.22rem,4.24vw,
   <p class="closing"><span lang="en">Another day to be grateful for.</span><span>오늘도 감사한 하루</span></p>
 </div>
 
-<button type="button" class="home" id="home" aria-label="맨 위 오늘 호로 돌아가기" title="Home"><img src="coffee.jpg" alt="" width="96" height="96"><img class="swirl" src="coffee.jpg" alt="" aria-hidden="true" width="96" height="96"></button>
+<button type="button" class="home" id="home" aria-label="맨 위 오늘 호로 돌아가기" title="Home"><img class="swirl" src="home-coffee.png" alt="" width="240" height="240"></button>
 <script>
 /* ===== 소식 옆에 붙는 작은 선 그림. 기사마다 icon 값으로 하나를 고른다. ===== */
 const ICONS = {
