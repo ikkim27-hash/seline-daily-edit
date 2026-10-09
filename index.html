@@ -350,6 +350,14 @@ footer{border-top:3px solid var(--ink);padding-top:14px}
 #music .listen .ic{width:52px;height:52px;border-radius:50%;background:var(--on-gold);color:var(--gold);display:grid;place-items:center;box-shadow:0 3px 0 rgba(27,35,33,.22);transition:transform .15s ease,box-shadow .15s ease}
 #music .listen .ic svg{width:27px;height:27px;display:block}
 #music .listen a:hover .ic,#music .listen a:active .ic{transform:translateY(2px);box-shadow:0 1px 0 rgba(27,35,33,.22)}
+/* 두 아이콘이 서로 엇갈려 천천히 떠오르고, 안의 그림은 살짝 기운다 */
+@keyframes icfloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@keyframes ictilt{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(5deg)}}
+#music .listen .ic{animation:icfloat 3.2s ease-in-out infinite}
+#music .listen .ic svg{animation:ictilt 3.2s ease-in-out infinite}
+#music .listen a:nth-child(2) .ic,#music .listen a:nth-child(2) .ic svg{animation-delay:-1.6s}
+#music .listen a:hover .ic,#music .listen a:active .ic{animation:none}
+@media (prefers-reduced-motion:reduce){#music .listen .ic,#music .listen .ic svg{animation:none}}
 #music .listen a:focus-visible .ic{outline:2px solid var(--on-gold);outline-offset:3px}
 #english h2{font-size:clamp(1.22rem,4.24vw,1.92rem)}
 .drill .pat{font-size:clamp(1.28rem,4.8vw,1.76rem)}
