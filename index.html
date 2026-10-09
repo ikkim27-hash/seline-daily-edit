@@ -344,7 +344,13 @@ footer{border-top:3px solid var(--ink);padding-top:14px}
 #music .asof{font-weight:700;font-size:.92rem}
 #music .sub{font-size:1.04rem;line-height:1.75}
 #music .listen a{border-color:var(--on-gold);color:var(--on-gold);font-family:"Syne","IBM Plex Sans KR",sans-serif;font-weight:600;letter-spacing:.02em}
-#music .listen a:hover{background:var(--on-gold);color:var(--gold)}
+#music .listen{gap:22px;margin-top:4px}
+#music .listen a{border:0;padding:0;display:flex;flex-direction:column;align-items:center;gap:7px;font-size:.72rem;letter-spacing:.06em}
+#music .listen a:hover{background:none;color:var(--on-gold)}
+#music .listen .ic{width:52px;height:52px;border-radius:50%;background:var(--on-gold);color:var(--gold);display:grid;place-items:center;box-shadow:0 3px 0 rgba(27,35,33,.22);transition:transform .15s ease,box-shadow .15s ease}
+#music .listen .ic svg{width:27px;height:27px;display:block}
+#music .listen a:hover .ic,#music .listen a:active .ic{transform:translateY(2px);box-shadow:0 1px 0 rgba(27,35,33,.22)}
+#music .listen a:focus-visible .ic{outline:2px solid var(--on-gold);outline-offset:3px}
 #english h2{font-size:clamp(1.22rem,4.24vw,1.92rem)}
 .drill .pat{font-size:clamp(1.28rem,4.8vw,1.76rem)}
 .h-en,h3 .h-en,#music .h-en{font-weight:500;font-size:.7em;letter-spacing:0;line-height:1.3;margin-top:.35em}
@@ -634,7 +640,7 @@ function render(){
     <h2>${esc(mu.title)}<span class="h-en">${esc(mu.artist)} · ${esc(mu.year)}</span></h2>
     <p class="asof">${esc(mu.mood)}</p>
     <p class="sub">${esc(mu.why)}</p>
-    <div class="listen"><a href="https://www.youtube.com/results?search_query=${qs}" target="_blank" rel="noopener">Listen on YouTube →</a><a href="https://open.spotify.com/search/${qs}" target="_blank" rel="noopener">Listen on Spotify →</a></div>`;
+    <div class="listen"><a href="https://www.youtube.com/results?search_query=${qs}" target="_blank" rel="noopener" aria-label="Listen on YouTube"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4" fill="currentColor"/><path d="M10 9.2v5.6l5-2.8z" fill="var(--on-gold)"/></svg></span><span class="nm">YouTube</span></a><a href="https://open.spotify.com/search/${qs}" target="_blank" rel="noopener" aria-label="Listen on Spotify"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.5" fill="currentColor"/><g fill="none" stroke="var(--on-gold)" stroke-linecap="round"><path d="M7 9.4c3.6-1.1 7.2-.8 10.2.9" stroke-width="1.9"/><path d="M7.6 12.5c3-.8 5.9-.5 8.4.9" stroke-width="1.6"/><path d="M8.3 15.3c2.3-.6 4.4-.4 6.3.7" stroke-width="1.3"/></g></svg></span><span class="nm">Spotify</span></a></div>`;
   }
 
   const k = d.fact;
