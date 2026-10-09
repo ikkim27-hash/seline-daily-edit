@@ -198,7 +198,12 @@ body{word-break:keep-all;overflow-wrap:anywhere}
 .mast h1{font-family:"Cormorant Garamond","Garamond","Baskerville","Times New Roman",serif;font-weight:500;font-size:clamp(1.7rem,7.4vw,3.6rem);line-height:1.22;letter-spacing:.14em;text-transform:uppercase;min-width:0}
 .mast h1 span{display:block;color:var(--ink);font-weight:500;font-style:normal}
 .mast .row{flex-wrap:nowrap;align-items:center;justify-content:space-between;gap:12px}
-.cup{flex:0 0 auto;width:clamp(104px,30vw,190px);height:auto;aspect-ratio:1;object-fit:cover;border-radius:50%;margin-bottom:.2em}
+.cup{display:block;position:relative;overflow:hidden;flex:0 0 auto;width:clamp(104px,30vw,190px);aspect-ratio:1;border-radius:50%;margin-bottom:.2em}
+.cup img{display:block;width:100%;height:100%;max-width:none;object-fit:cover}
+/* 잔 속 커피만 잘라 천천히 좌우로 돌려 찰랑이는 느낌을 준다 */
+.cup .swirl{position:absolute;inset:0;clip-path:circle(36% at 48.2% 35.4%);transform-origin:48.2% 35.4%;animation:swirl 5.5s ease-in-out infinite alternate}
+@keyframes swirl{from{transform:rotate(-6deg) scale(1.015)}to{transform:rotate(6deg) scale(1.03)}}
+@media (prefers-reduced-motion:reduce){.cup .swirl{animation:none;display:none}}
 .mast .tag{font-family:var(--body);font-size:1rem;font-weight:500;letter-spacing:.3em;line-height:1.2;color:var(--pop)}
 .stamp{display:none}
 .mast .meta{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;border-top:1px solid var(--edge);padding-top:10px}
@@ -334,7 +339,7 @@ footer{border-top:3px solid var(--ink);padding-top:14px}
   <header class="mast">
     <div class="strip"><span id="stamp"></span><span>Kuala Lumpur · Seoul</span></div>
     <div class="row"><h1>Seline’s<span>Daily Edit</span></h1>
-      <img class="cup" src="coffee.jpg" alt="라테 아트가 올라간 커피 한 잔" width="480" height="480"></div>
+      <span class="cup"><img src="coffee.jpg" alt="라테 아트가 올라간 커피 한 잔" width="480" height="480"><img class="swirl" src="coffee.jpg" alt="" aria-hidden="true" width="480" height="480"></span></div>
     <p class="tag">셀린이 고른 오늘</p>
     <div class="meta"><p class="date" id="date"></p>
     <div class="daynav">
