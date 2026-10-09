@@ -201,7 +201,7 @@ body{word-break:keep-all;overflow-wrap:anywhere}
 .cup{display:block;position:relative;overflow:hidden;flex:0 0 auto;width:clamp(104px,30vw,190px);aspect-ratio:1;border-radius:50%;margin-bottom:.2em}
 .cup img{display:block;width:100%;height:100%;max-width:none;object-fit:cover}
 /* 잔 속 커피만 잘라 천천히 좌우로 돌려 찰랑이는 느낌을 준다 */
-.cup .swirl{position:absolute;inset:0;clip-path:circle(36% at 48.2% 35.4%);transform-origin:48.2% 35.4%;animation:swirl 5.5s ease-in-out infinite alternate}
+.cup .swirl{position:absolute;inset:0;clip-path:circle(36% at 48.2% 35.4%);transform-origin:48.2% 35.4%;animation:swirl 3.6s ease-in-out infinite alternate}
 @keyframes swirl{from{transform:rotate(-6deg) scale(1.015)}to{transform:rotate(6deg) scale(1.03)}}
 @media (prefers-reduced-motion:reduce){.cup .swirl{animation:none;display:none}}
 .mast .tag{font-family:var(--body);font-size:1rem;font-weight:500;letter-spacing:.3em;line-height:1.2;color:var(--pop)}
