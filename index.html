@@ -339,13 +339,13 @@ footer{border-top:3px solid var(--ink);padding-top:14px}
   <p class="tochead">In this issue</p>
   <nav class="tabs" id="toc" aria-label="이번 호 차례"></nav>
 
-  <section id="english"></section>
   <section id="news"></section>
   <section id="trend"></section>
   <section id="life"></section>
   <section id="music"></section>
   <section id="shows"></section>
   <section id="fact"></section>
+  <section id="english"></section>
 
   <footer id="foot"></footer>
 </div>
@@ -506,7 +506,7 @@ function render(){
   const dt = new Date(d.date + "T00:00:00");
   $("date").textContent = dt.toLocaleDateString("ko-KR",{year:"numeric",month:"long",day:"numeric",weekday:"long"});
   $("stamp").textContent = "Issue " + d.date.replace(/-/g, ".");
-  const toc = [["english","영어",d.english && d.english.title],["news","소식",d.news && d.news[0] && d.news[0].title],["trend","트렌드",d.trend && d.trend.title],["life","생활 팁",d.life && d.life.title],["music","음악",d.music && (d.music.title + " · " + d.music.artist)],["shows","전시·공연",d.shows && d.shows.items && d.shows.items[0] && d.shows.items[0].title],["fact","상식",d.fact && d.fact.title]].filter(x => x[2]);
+  const toc = [["news","소식",d.news && d.news[0] && d.news[0].title],["trend","트렌드",d.trend && d.trend.title],["life","생활 팁",d.life && d.life.title],["music","음악",d.music && (d.music.title + " · " + d.music.artist)],["shows","전시·공연",d.shows && d.shows.items && d.shows.items[0] && d.shows.items[0].title],["fact","상식",d.fact && d.fact.title],["english","영어",d.english && d.english.title]].filter(x => x[2]);
   $("toc").innerHTML = toc.map(x => `<a href="#${x[0]}"><span class="sec">${x[1]}</span><span class="ttl">${esc(x[2])}</span><span class="go">→</span></a>`).join("");
   $("prev").disabled = idx >= DAYS.length - 1;
   $("next").disabled = idx <= 0;
