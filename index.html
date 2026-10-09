@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Seline Daily">
+<link rel="apple-touch-icon" href="coffee.jpg">
+<link rel="icon" href="coffee.jpg">
+<meta name="theme-color" content="#EDE3D2">
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<title>Seline's Daily Edit</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600&family=Syne:wght@600;700&family=Gowun+Dodum&display=swap">
+<style>
+/* Layout: a sticker-zine column. Thick ink outlines, hard offset shadows, one color-blocked panel per section; the dialogue is a chat thread. */
+:root{
+  --bg:#EDE3D2; --surface:#FBF7EF; --ink:#1B2321; --muted:#5A615E; --edge:#D6C9B3;
+  --hot:#4F7868; --on-hot:#FFFFFF; --pop:#7A5A14; --on-pop:#FFFFFF; --mint:#DCE8E1; --on-mint:#2F5A4B;
+  --sky:#E9E6DF; --on-sky:#1B2321;
+  --drill-bg:#14352E; --drill-fg:#F2F0EC; --drill-hi:#DFC585;
+  --display:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --body:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --latin:"Source Sans 3","Helvetica Neue","Segoe UI",Arial,sans-serif;
+}
+:root{color-scheme:light}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16.5px;line-height:1.7}
+.wrap{max-width:640px;margin:0 auto;padding-inline:18px;padding-block:26px 64px;display:flex;flex-direction:column;gap:30px}
+h1,h2,h3,p,ol{margin:0}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--hot);outline-offset:2px}
+.box{border:2.5px solid var(--edge);border-radius:20px;box-shadow:5px 5px 0 var(--edge)}
+
+/* 머리 */
+.mast{display:flex;flex-direction:column;gap:12px}
+.mast .row{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.mast h1{font-family:var(--display);font-weight:400;font-size:3.6rem;line-height:1;letter-spacing:-.01em}
+.mast h1 span{color:var(--hot)}
+.stamp{font-family:var(--latin);font-weight:800;font-size:.8rem;letter-spacing:.06em;background:var(--pop);color:var(--on-pop);border:2.5px solid var(--edge);border-radius:999px;padding:6px 14px;transform:rotate(-4deg);white-space:nowrap}
+.date{font-size:1rem;color:var(--muted)}
+.daynav{display:flex;gap:8px}
+.daynav button{background:var(--surface);border:2px solid var(--edge);border-radius:999px;padding:3px 14px;font-size:.88rem}
+.daynav button:disabled{opacity:.3;cursor:default}
+
+.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);display:flex;gap:8px;padding-block:8px}
+.tabs a{flex:1;text-align:center;text-decoration:none;font-family:var(--display);font-size:1.02rem;padding:7px 6px;border:2.5px solid var(--edge);border-radius:14px;background:var(--surface)}
+.tabs a:nth-child(1){background:var(--pop);color:var(--on-pop)}
+.tabs a:nth-child(2){background:var(--hot);color:var(--on-hot)}
+.tabs a:nth-child(3){background:var(--mint);color:var(--on-mint)}
+
+section{display:flex;flex-direction:column;gap:18px;scroll-margin-top:70px}
+.label{align-self:flex-start;font-family:var(--display);font-size:.95rem;padding:3px 14px;border:2.5px solid var(--edge);border-radius:999px}
+h2{font-family:var(--display);font-weight:400;font-size:1.85rem;line-height:1.25;text-wrap:balance}
+.sub{color:var(--muted);font-size:.95rem}
+
+/* 영어: 채팅 */
+#english .label{background:var(--pop);color:var(--on-pop)}
+.tools{display:flex;flex-wrap:wrap;gap:8px}
+.tools button{background:var(--surface);border:2px solid var(--edge);border-radius:999px;padding:5px 14px;font-size:.9rem}
+.tools button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.chat{background:var(--sky);color:var(--on-sky);padding:18px 14px;display:flex;flex-direction:column;gap:12px}
+.msg{display:flex;flex-direction:column;gap:3px;max-width:86%;min-width:0}
+.msg.b{align-self:flex-end;align-items:flex-end}
+.bubble{background:var(--surface);color:var(--ink);border:2.5px solid var(--edge);border-radius:18px 18px 18px 4px;padding:9px 14px;text-align:left;font-family:var(--latin);font-size:1.1rem;line-height:1.4;font-weight:600}
+.msg.b .bubble{background:var(--pop);color:var(--on-pop);border-radius:18px 18px 4px 18px}
+button.bubble:active{transform:translate(2px,2px)}
+.msg .ko{font-size:.88rem;padding-inline:6px;opacity:.85}
+.hint{font-size:.85rem;text-align:center;opacity:.8}
+.exprs{display:grid;gap:14px}
+.expr{background:var(--surface);padding:14px 16px;display:flex;flex-direction:column;gap:4px}
+.expr h3{font-family:var(--latin);font-weight:800;font-size:1.25rem;line-height:1.3}
+.expr h3 i{font-style:normal;display:inline-block;background:var(--pop);color:var(--on-pop);border-radius:6px;padding:0 6px;margin-right:6px;font-size:.9rem}
+.expr p{font-size:.97rem}
+.expr .eg{font-family:var(--latin);color:var(--muted);font-size:1rem}
+.drill{background:var(--ink);color:var(--bg);border-radius:20px;padding:18px;display:flex;flex-direction:column;gap:10px}
+.drill h3{font-family:var(--display);font-weight:400;font-size:1.15rem;color:var(--pop)}
+.drill .pat{font-family:var(--latin);font-weight:800;font-size:1.3rem;line-height:1.3}
+.drill ol{padding-left:1.3em;display:flex;flex-direction:column;gap:6px;font-family:var(--latin);font-size:1.05rem}
+.drill small{font-family:var(--body);opacity:.8;font-size:.86rem}
+.drill b{color:var(--pop);font-weight:800}
+
+/* 뉴스 */
+#news .label{background:var(--hot);color:var(--on-hot)}
+.news{display:flex;flex-direction:column;gap:16px}
+.news article{background:var(--surface);padding:16px 16px 14px;display:grid;grid-template-columns:auto 1fr;gap:4px 12px}
+.news .n{font-family:var(--display);font-size:2.4rem;line-height:1;color:var(--hot);grid-row:1/3}
+.news .tag{justify-self:start;font-size:.78rem;border:2px solid var(--edge);border-radius:999px;padding:0 9px;background:var(--mint);color:var(--on-mint)}
+.news h3{font-size:1.12rem;font-weight:700;line-height:1.45;text-wrap:balance;min-width:0}
+.news p{grid-column:1/-1;font-size:.98rem}
+.news .src{font-size:.84rem;color:var(--muted)}
+
+/* 날씨 */
+#weather .label{background:var(--mint);color:var(--on-mint)}
+.now{background:var(--mint);color:var(--on-mint);padding:18px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.now .t{font-family:var(--display);font-size:4.2rem;line-height:1}
+.now .d{display:flex;flex-direction:column;min-width:0}
+.now .d b{font-size:1.15rem}
+.alert{background:var(--hot);color:var(--on-hot);padding:12px 16px;font-size:.96rem;border:2.5px solid var(--edge);border-radius:14px}
+.cities{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.city{background:var(--surface);padding:12px 14px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.city h3{font-family:var(--display);font-weight:400;font-size:1.05rem}
+.city .r{display:flex;justify-content:space-between;gap:8px;font-size:.9rem;font-variant-numeric:tabular-nums}
+.city .r span:last-child{white-space:nowrap}
+.city em{font-style:normal;color:var(--muted);font-size:.82rem;margin-left:4px}
+footer{color:var(--muted);font-size:.84rem}
+/* 정제된 톤: 얇은 선, 그림자 없음, 가는 숫자 */
+body{font-weight:400;letter-spacing:-.005em}
+.box{border:1px solid var(--edge);border-radius:14px;box-shadow:none}
+.mast h1{font-weight:300;font-size:3rem;letter-spacing:-.03em}
+.mast h1 span{color:var(--pop);font-weight:600}
+.stamp{transform:none;font-weight:500;letter-spacing:.14em;background:none;color:var(--pop);border:1px solid var(--pop)}
+.daynav button,.tools button,.news .tag,.alert{border-width:1px}
+.tabs{border-bottom:1px solid var(--edge);gap:0}
+.tabs a:nth-child(n){background:none;color:var(--muted);border:0;border-radius:0;font-weight:500;font-size:.98rem;letter-spacing:.04em}
+.tabs a:nth-child(n):hover{color:var(--ink)}
+.label{border:0;padding:0;border-radius:0;font-weight:600;font-size:.8rem;letter-spacing:.16em}
+#english .label,#news .label,#weather .label,#life .label{background:none;color:var(--pop)}
+.tips{list-style:none;padding:0;display:flex;flex-direction:column;background:var(--surface)}
+.tips li{display:grid;grid-template-columns:2.2em 1fr;gap:4px 8px;padding:14px 16px;border-bottom:1px solid var(--edge)}
+.tips li:last-child{border-bottom:0}
+.tips .k{font-family:var(--latin);font-weight:300;font-size:1.5rem;line-height:1.2;color:var(--pop)}
+.tips b{font-weight:600;display:block}
+.tips span{min-width:0;font-size:.97rem}
+.lifesrc{font-size:.84rem;color:var(--muted)}
+#fact .label,#trend .label{background:none;color:var(--pop)}
+.asof{font-size:.84rem;color:var(--muted)}
+#shows .label{background:none;color:var(--pop)}
+.tabs{overflow-x:auto;scrollbar-width:none}
+.tabs a:nth-child(n){flex:1 0 auto;padding-inline:12px}
+.showlist{list-style:none;margin:0;padding:0;background:var(--surface);display:flex;flex-direction:column}
+.showlist li{display:grid;grid-template-columns:3.4em 1fr;gap:2px 12px;padding:14px 16px;border-bottom:1px solid var(--edge)}
+.showlist li:last-child{border-bottom:0}
+.showlist .kind{font-size:.78rem;font-weight:600;color:var(--pop);padding-top:3px}
+.showlist .body{min-width:0;display:flex;flex-direction:column;gap:2px}
+.showlist b{font-weight:600;font-size:1.02rem}
+.showlist .when{font-size:.9rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.showlist .memo{font-size:.92rem}
+#music .label{background:none;color:var(--pop)}
+.listen{display:flex;flex-wrap:wrap;gap:10px}
+.listen a{font-size:.9rem;font-weight:500;color:var(--ink);text-decoration:none;border:1px solid var(--ink);padding:7px 14px}
+.listen a:hover{background:var(--ink);color:var(--bg)}
+.showlist .stitle{color:var(--ink);text-decoration:none}
+.showlist .stitle:hover b{text-decoration:underline;text-underline-offset:4px}
+.showlist .more{align-self:flex-start;margin-top:6px;font-size:.86rem;font-weight:500;color:var(--ink);text-decoration:none;border:1px solid var(--ink);padding:5px 12px}
+.showlist .more:hover{background:var(--ink);color:var(--bg)}
+.factbox{background:var(--surface);padding:18px;display:flex;flex-direction:column;gap:12px}
+.factbox p{font-size:1rem}
+.factbox ul{margin:0;padding-left:1.1em;display:flex;flex-direction:column;gap:6px;font-size:.95rem}
+.tabs a:nth-child(n){font-size:.9rem;letter-spacing:0;padding-inline:2px;white-space:nowrap}
+.quote{margin:0;padding:22px 20px;background:var(--drill-bg);color:var(--drill-fg);border-radius:14px;display:flex;flex-direction:column;gap:10px}
+.quote .q{font-size:.8rem;font-weight:600;letter-spacing:.16em;color:var(--drill-hi)}
+.quote .ko{font-size:1.3rem;font-weight:500;line-height:1.55;letter-spacing:-.02em;text-wrap:balance}
+.quote .en{font-family:var(--latin);font-weight:300;font-size:1.08rem;line-height:1.5;opacity:.9}
+.quote .by{font-size:.86rem;opacity:.75}
+:root{--aq1:#3E8E5A;--aq2:#C29A1E;--aq3:#D0702F;--aq4:#B23A3A;--aq5:#7A3A7A}
+.air{background:var(--surface);padding:16px;display:flex;flex-direction:column;gap:12px}
+.air h3{font-weight:600;font-size:1.05rem}
+.air .meta{font-size:.86rem;color:var(--muted)}
+.airrow{display:grid;grid-template-columns:minmax(0,9.5em) 1fr 2.6em;gap:10px;align-items:center;font-size:.93rem}
+.airrow .bar{height:8px;border-radius:999px;background:var(--edge);overflow:hidden}
+.airrow .bar i{display:block;height:100%;border-radius:999px}
+.airrow .v{font-family:var(--latin);font-weight:500;text-align:right;font-variant-numeric:tabular-nums}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.8rem;color:var(--muted)}
+.legend span{display:flex;align-items:center;gap:5px}
+.legend i{width:9px;height:9px;border-radius:50%;display:inline-block}
+.voice{display:flex;align-items:center;gap:8px;font-size:.9rem;color:var(--muted);min-width:0}
+.voice select{font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--edge);border-radius:999px;padding:5px 12px;max-width:12em}
+h2{font-weight:600;font-size:1.6rem;letter-spacing:-.02em}
+.bubble{border:1px solid var(--edge);font-weight:400;font-size:1.08rem}
+.msg.b .bubble{background:var(--hot);color:var(--on-hot);border-color:var(--hot)}
+.expr h3{font-weight:600;font-size:1.15rem}
+.expr h3 i{background:none;color:var(--pop);padding:0;font-weight:500}
+.drill{background:var(--drill-bg);color:var(--drill-fg);border-radius:14px}
+.drill h3{font-weight:600;font-size:.85rem;letter-spacing:.14em;color:var(--drill-hi)}
+.drill .pat{font-weight:500}
+.drill b{color:var(--drill-hi);font-weight:600}
+.news .n{font-family:var(--latin);font-weight:300;color:var(--pop)}
+.news h3{font-weight:600}
+.now{background:var(--hot);color:var(--on-hot);border-color:var(--hot)}
+.now .t{font-family:var(--latin);font-weight:300}
+.now .d b{font-weight:500}
+.city h3{font-weight:600;font-size:.98rem}
+/* ===== 매거진 레이아웃: 큰 제호, 표지 문장, 차례, 굵은 괘선과 2단 그리드 ===== */
+:root{--edit:"Source Sans 3","IBM Plex Sans KR","Helvetica Neue","Apple SD Gothic Neo",sans-serif}
+.mast .tag,.quote .en,.tabs a .go,.tochead,.expr h3 i,.drill .pat,.news .n,.tips .k,.h-en,.msg .sp{font-style:normal !important}
+body{word-break:keep-all;overflow-wrap:anywhere}
+.wrap{max-width:780px;gap:56px;padding-block:20px 80px}
+.strip{display:flex;justify-content:space-between;gap:12px;font-family:var(--latin);font-size:.72rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;border-top:3px solid var(--ink);border-bottom:1px solid var(--ink);padding:7px 0;color:var(--ink)}
+.mast{gap:14px}
+.mast .row{align-items:flex-end}
+.mast h1{font-family:"Cormorant Garamond","Garamond","Baskerville","Times New Roman",serif;font-weight:500;font-size:clamp(1.7rem,7.4vw,3.6rem);line-height:1.22;letter-spacing:.14em;text-transform:uppercase;min-width:0}
+.mast h1 span{display:block;color:var(--ink);font-weight:500;font-style:normal}
+.mast .row{flex-wrap:nowrap;align-items:center;justify-content:space-between;gap:12px}
+.cup{flex:0 0 auto;width:clamp(104px,30vw,190px);height:auto;aspect-ratio:1;object-fit:cover;border-radius:50%;margin-bottom:.2em}
+.mast .tag{font-family:var(--body);font-size:1rem;font-weight:500;letter-spacing:.3em;line-height:1.2;color:var(--pop)}
+.stamp{display:none}
+.mast .meta{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;border-top:1px solid var(--edge);padding-top:10px}
+.daynav button{border-radius:0;border-color:var(--ink);background:none;font-size:.82rem}
+.quote{border-radius:0;padding:clamp(28px,7vw,56px) clamp(20px,6vw,48px);gap:16px}
+.quote .q{font-family:var(--latin);letter-spacing:.22em;font-size:.72rem}
+.photo{margin:0;display:flex;flex-direction:column;gap:10px;border-top:3px solid var(--ink);padding-top:14px}
+.photo .plabel{font-size:.74rem;font-weight:600;letter-spacing:.16em;color:var(--pop)}
+.photo img{display:block;width:100%;max-width:100%;height:auto}
+.photo figcaption{display:flex;justify-content:space-between;gap:12px;font-size:.95rem}
+.photo .pdate{color:var(--muted);font-family:var(--latin);font-size:.82rem;white-space:nowrap}
+.quote .pick{border-top:1px solid color-mix(in srgb,var(--drill-fg) 30%,transparent);padding-top:14px;margin-top:6px;font-size:.95rem;line-height:1.65}
+.quote .pick b{display:block;font-size:.72rem;letter-spacing:.16em;color:var(--drill-hi);font-weight:600;margin-bottom:4px}
+.quote .ko{font-size:clamp(1.28rem,4.96vw,2.16rem);font-weight:600;line-height:1.3;letter-spacing:-.04em}
+.quote .en{font-family:var(--edit);font-style:italic;font-weight:400;font-size:clamp(1.2rem,4.4vw,1.7rem);line-height:1.25;opacity:1;color:var(--drill-hi)}
+.tabs{position:static;display:grid;grid-template-columns:1fr;gap:0;padding:0;border-top:3px solid var(--ink);border-bottom:1px solid var(--ink);overflow:visible;background:none}
+.tabs a:nth-child(n){display:grid;grid-template-columns:5.2em 1fr auto;gap:12px;align-items:baseline;text-align:left;padding:12px 0;border-bottom:1px solid var(--edge);border-radius:0;white-space:normal;color:var(--ink);font-size:1rem;letter-spacing:-.01em;font-weight:500}
+.tabs a:last-child{border-bottom:0}
+.tabs a .sec{font-size:.74rem;font-weight:600;letter-spacing:.14em;color:var(--pop)}
+.tabs a .ttl{min-width:0}
+.tabs a .go{font-family:var(--edit);font-style:italic;color:var(--muted);font-size:1.1rem}
+.tabs a:nth-child(n):hover .ttl{text-decoration:underline;text-underline-offset:4px}
+.h-en{display:block;font-family:var(--edit);font-style:italic;font-weight:400;letter-spacing:0;color:var(--muted);font-size:.52em;line-height:1.2;margin-top:.3em}
+h3 .h-en{font-size:.82em}
+
+.tochead{font-family:var(--edit);font-style:italic;font-size:1.5rem;line-height:1;margin-bottom:-44px}
+section{gap:20px;border-top:3px solid var(--ink);padding-top:14px}
+.label,#english .label,#news .label,#life .label,#fact .label,#trend .label,#shows .label{font-family:var(--body);font-size:.74rem;letter-spacing:.16em;color:var(--pop)}
+h2{font-size:clamp(1.52rem,5.3vw,2.4rem);font-weight:700;line-height:1.18;letter-spacing:-.045em}
+.sub{font-size:1.02rem;max-width:36em}
+.box{border-radius:0}
+.chat{border:0;padding:22px 16px}
+.bubble{border-radius:16px 16px 16px 2px}
+.msg.b .bubble{border-radius:16px 16px 2px 16px}
+.expr{border:0;border-top:1px solid var(--ink);padding:14px 0 0;background:none}
+.expr h3{font-size:1.3rem;letter-spacing:-.02em}
+.expr h3 i{font-family:var(--edit);font-style:italic;font-size:1.5rem;margin-right:10px}
+.drill{border-radius:0;padding:22px}
+.drill .pat{font-family:var(--edit);font-style:italic;font-weight:400;font-size:clamp(1.6rem,6vw,2.2rem);line-height:1.15}
+.news{gap:0}
+.news article{border:0;border-top:1px solid var(--ink);background:none;padding:18px 0 22px;grid-template-columns:auto 1fr;gap:6px 14px}
+.news article:first-child{border-top:0;padding-top:0}
+.news .n{font-family:var(--edit);font-style:italic;font-weight:400;font-size:3rem;line-height:.9}
+.news h3{font-size:1.25rem;font-weight:700;letter-spacing:-.03em;line-height:1.35}
+.news article:first-child h3{font-size:clamp(.9rem,3.24vw,1.26rem);line-height:1.4}
+.news .tag{border:0;background:none;padding:0;color:var(--pop);font-weight:600;letter-spacing:.12em;font-size:.72rem}
+.factbox{border:0;background:none;padding:0}
+.factbox>p{font-size:1.12rem;line-height:1.8}
+.factbox ul{border-top:1px solid var(--edge);padding-top:14px}
+.tips,.showlist{border:0;border-top:1px solid var(--ink);background:none}
+.tips li,.showlist li{padding-inline:0}
+.tips .k{font-family:var(--edit);font-style:italic;font-size:1.9rem;font-weight:400}
+.showlist li{grid-template-columns:4.2em 1fr}
+.showlist .kind{letter-spacing:.1em}
+footer{border-top:3px solid var(--ink);padding-top:14px}
+/* 대화: 모두 왼쪽 정렬, 화자는 글자로 구분 */
+.chat{background:none;color:var(--ink);padding:0;gap:0;border-top:1px solid var(--ink)}
+.msg,.msg.b{display:grid;grid-template-columns:1.9em 1fr;gap:0 12px;max-width:none;align-self:stretch;align-items:start;padding:14px 12px;border-bottom:1px solid var(--edge)}
+.msg.b{background:var(--mint)}
+.msg .sp{font-family:var(--edit);font-size:1.5rem;line-height:1.15;color:var(--pop)}
+.msg.b .sp{color:var(--on-mint)}
+.msg .txt{min-width:0;display:flex;flex-direction:column;gap:4px}
+.msg .bubble,.msg.b .bubble{margin:0;background:none;border:0;border-radius:0;padding:0;color:var(--ink);font-family:var(--latin);font-size:1.2rem;font-weight:500;line-height:1.45;letter-spacing:0;text-align:left}
+.msg .ko{margin:0;padding:0;font-size:.93rem;color:var(--muted);opacity:1}
+.expr h3{font-family:var(--latin);font-weight:700;font-size:1.3rem;letter-spacing:0}
+.expr .eg{font-family:var(--latin);font-size:1.08rem;color:var(--muted)}
+.drill ol{font-family:var(--latin);font-size:1.15rem}
+.drill .pat{font-family:var(--latin);font-style:normal;font-weight:700;letter-spacing:0}
+@media (min-width:700px){
+  .tabs{grid-template-columns:1fr 1fr;column-gap:36px}
+  .tabs a:nth-last-child(2):nth-child(odd){border-bottom:0}
+  .exprs{grid-template-columns:1fr 1fr;column-gap:36px;row-gap:22px}
+  .news{display:grid;grid-template-columns:1fr 1fr;column-gap:36px}
+  .news article:first-child{grid-column:1/-1;padding-bottom:28px}
+  .news article:nth-child(2),.news article:nth-child(3){border-top:1px solid var(--ink)}
+  .factbox>p{column-count:1;max-width:34em}
+  .tips{display:grid;grid-template-columns:1fr 1fr;column-gap:36px}
+  .tips li:nth-last-child(2):nth-child(odd){border-bottom:0}
+}
+.tochead{font-weight:600;font-size:1.15rem;letter-spacing:-.01em}
+.news article{grid-template-columns:auto 1fr auto}
+.news .n{grid-column:1;grid-row:1/3}
+.news .tag{grid-column:2;grid-row:1}
+.news h3{grid-column:2;grid-row:2}
+.news .ico.sticker{width:84px;height:56px;transform:rotate(-7deg);filter:drop-shadow(0 2px 3px rgba(0,0,0,.28))}
+.news .ico.sticker.tall{width:62px;height:86px;transform:rotate(5deg)}
+.news .ico{grid-column:3;grid-row:1/3;align-self:center;width:62px;height:62px;color:#3B3B38;overflow:visible}
+#news h2,#trend h2,#life h2,#music h2,#shows h2,#fact h2{font-size:clamp(1.22rem,4.24vw,1.92rem)}
+/* 음악 코너: 골드 바탕, 다른 서체 */
+:root{--gold:#CDAE62;--on-gold:#1B2321}
+#music{background:var(--gold);color:var(--on-gold);border-top:0;padding:24px 20px;font-family:"Gowun Dodum","IBM Plex Sans KR","Apple SD Gothic Neo",sans-serif}
+#music .label{color:var(--on-gold);font-family:"Syne","IBM Plex Sans KR",sans-serif;font-weight:700;font-size:.82rem;letter-spacing:.08em}
+#music h2{font-family:"Syne","Gowun Dodum","IBM Plex Sans KR",sans-serif;font-weight:700;letter-spacing:-.02em;line-height:1.2}
+#music .h-en{font-family:"Gowun Dodum","IBM Plex Sans KR",sans-serif;color:var(--on-gold);font-size:.62em;font-weight:400;opacity:.85}
+#music .asof,#music .sub{color:var(--on-gold)}
+#music .asof{font-weight:700;font-size:.92rem}
+#music .sub{font-size:1.04rem;line-height:1.75}
+#music .listen a{border-color:var(--on-gold);color:var(--on-gold);font-family:"Syne","IBM Plex Sans KR",sans-serif;font-weight:600;letter-spacing:.02em}
+#music .listen a:hover{background:var(--on-gold);color:var(--gold)}
+#english h2{font-size:clamp(.88rem,3.08vw,1.4rem);line-height:1.3;font-weight:700;letter-spacing:-.02em}
+.drill .pat{font-size:clamp(1.28rem,4.8vw,1.76rem)}
+.h-en{font-weight:400;font-size:.5em;letter-spacing:0}
+.news .n,.tips .k,.expr h3 i,.msg .sp{font-weight:300}
+.quote .en{font-weight:400}
+@media (max-width:420px){.mast h1{font-size:clamp(1.7rem,7.4vw,3.6rem)}.cities{grid-template-columns:1fr}h2{font-size:1.6rem}}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+  <filter id="pencil" x="-15%" y="-15%" width="130%" height="130%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" seed="4" result="wob"/>
+    <feDisplacementMap in="SourceGraphic" in2="wob" scale="2.8" xChannelSelector="R" yChannelSelector="G" result="line"/>
+    <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="2" seed="9" result="grain"/>
+    <feColorMatrix in="grain" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.9 1.75" result="mask"/>
+    <feComposite in="line" in2="mask" operator="in"/>
+  </filter>
+  <filter id="pencil2" x="-15%" y="-15%" width="130%" height="130%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="21" result="wob"/>
+    <feDisplacementMap in="SourceGraphic" in2="wob" scale="3.4" xChannelSelector="G" yChannelSelector="R" result="line"/>
+    <feTurbulence type="fractalNoise" baseFrequency="1.3" numOctaves="2" seed="33" result="grain"/>
+    <feColorMatrix in="grain" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2.4 1.7" result="mask"/>
+    <feComposite in="line" in2="mask" operator="in"/>
+  </filter>
+</defs></svg>
+<div class="wrap">
+  <header class="mast">
+    <div class="strip"><span id="stamp"></span><span>Kuala Lumpur · Seoul</span></div>
+    <div class="row"><h1>Seline’s<span>Daily Edit</span></h1>
+      <img class="cup" src="coffee.jpg" alt="라테 아트가 올라간 커피 한 잔" width="480" height="480"></div>
+    <p class="tag">셀린이 고른 오늘</p>
+    <div class="meta"><p class="date" id="date"></p>
+    <div class="daynav">
+      <button id="prev" type="button">← 전날</button>
+      <button id="next" type="button">다음 날 →</button>
+    </div></div>
+  </header>
+
+  <figure class="quote" id="quote"></figure>
+
+  <figure class="photo" id="photo" hidden></figure>
+
+  <p class="tochead">In this issue</p>
+  <nav class="tabs" id="toc" aria-label="이번 호 차례"></nav>
+
+  <section id="english"></section>
+  <section id="news"></section>
+  <section id="trend"></section>
+  <section id="life"></section>
+  <section id="music"></section>
+  <section id="shows"></section>
+  <section id="fact"></section>
+
+  <footer id="foot"></footer>
+</div>
+
+<script>
+/* ===== 소식 옆에 붙는 작은 선 그림. 기사마다 icon 값으로 하나를 고른다. ===== */
+const ICONS = {
+  coin:{sticker:true, vb:"2 0 64 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M12 42v7c0 4.4 9 8 20 8s20-3.6 20-8v-7z"/><ellipse cx="32" cy="42" rx="20" ry="8"/><path d="M12 32v7c0 4.4 9 8 20 8s20-3.6 20-8v-7z"/><ellipse cx="32" cy="32" rx="20" ry="8"/><path d="M12 22v7c0 4.4 9 8 20 8s20-3.6 20-8v-7z"/><ellipse cx="32" cy="22" rx="20" ry="8"/><path d="M56 6l1.6 4 4 1.6-4 1.6-1.6 4-1.6-4-4-1.6 4-1.6z"/></g><g stroke="#8A5A12" stroke-width="1.5" stroke-linejoin="round"><path d="M12 42v7c0 4.4 9 8 20 8s20-3.6 20-8v-7z" fill="#DDA22F"/><ellipse cx="32" cy="42" rx="20" ry="8" fill="#F7D36B"/><path d="M12 32v7c0 4.4 9 8 20 8s20-3.6 20-8v-7z" fill="#DDA22F"/><ellipse cx="32" cy="32" rx="20" ry="8" fill="#F7D36B"/><path d="M12 22v7c0 4.4 9 8 20 8s20-3.6 20-8v-7z" fill="#DDA22F"/><ellipse cx="32" cy="22" rx="20" ry="8" fill="#F7D36B"/></g><ellipse cx="32" cy="22" rx="13" ry="4.6" fill="none" stroke="#C98B1E" stroke-width="1.3"/><path d="M27 22h10M32 19.6v4.8" stroke="#C98B1E" stroke-width="1.5" stroke-linecap="round"/><path d="M16 46v4M21 48.5v4M43 48.5v4M48 46v4M16 36v4M21 38.5v4M43 38.5v4M48 36v4" stroke="#B57F1C" stroke-width="1.2" stroke-linecap="round"/><path d="M17 19q5-4 12-4.6" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" opacity=".8"/><path d="M56 6l1.6 4 4 1.6-4 1.6-1.6 4-1.6-4-4-1.6 4-1.6z" fill="#F7D36B" stroke="#8A5A12" stroke-width="1.2" stroke-linejoin="round"/>'},
+  school:{sticker:true, vb:"0 -2 72 64", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M36 13V2h11l-3 3.5 3 3.5H36"/><path d="M7 31L36 12l29 19z"/><rect x="12" y="30" width="48" height="27"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M36 13V2"/><path d="M36 2h11l-3 3.5 3 3.5H36z" fill="#2F6B5A"/><rect x="12" y="30" width="48" height="27" fill="#F5E4BA"/><path d="M7 31L36 12l29 19z" fill="#C8553D"/><circle cx="36" cy="23.5" r="4.4" fill="#fff"/><path d="M36 21v2.6l1.8 1.2" fill="none" stroke-width="1.1"/><rect x="17" y="36" width="9" height="9" fill="#A9D9EC"/><rect x="46" y="36" width="9" height="9" fill="#A9D9EC"/><path d="M21.5 36v9M17 40.5h9M50.5 36v9M46 40.5h9" stroke-width="1"/><path d="M31 57V44a5 5 0 0 1 10 0v13z" fill="#8C5A3A"/><circle cx="38.6" cy="50.5" r=".9" fill="#F2CF6B" stroke="none"/><path d="M6 57h60"/></g>'},
+  puppet:{sticker:true, tall:true, vb:"0 -2 66 92", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M26 19Q18 3 35 4Q29 9 34 16Z"/><circle cx="32" cy="22" r="7.2"/><path d="M38.2 20l8.5 2.6-7.6 2.6z"/><path d="M25 33Q32 29 39 33L37 54Q32 57 27 54Z"/><path d="M26.5 54h11L43 75H21z"/><path d="M27 36L15 48 12 62M37 36L50 43 54 29" fill="none"/><path d="M12 62L10 86M54 29L57 86M32 75V86" fill="none"/></g><g stroke="#6B4A2B" stroke-width="1.6" stroke-linecap="round"><path d="M12 62L10 86M54 29L57 86M32 75V86" fill="none"/></g><g stroke="#4A2E1A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M27 36L15 48 12 62M37 36L50 43 54 29" fill="none"/></g><g stroke="#E8B96A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M27 36L15 48 12 62M37 36L50 43 54 29" fill="none"/></g><circle cx="12" cy="62" r="2.6" fill="#E8B96A" stroke="#4A2E1A" stroke-width="1.3"/><circle cx="54" cy="29" r="2.6" fill="#E8B96A" stroke="#4A2E1A" stroke-width="1.3"/><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round"><path d="M26.5 54h11L43 75H21z" fill="#2F6B5A"/><path d="M25 33Q32 29 39 33L37 54Q32 57 27 54Z" fill="#B5462F"/><path d="M26 19Q18 3 35 4Q29 9 34 16Z" fill="#D9A441"/><circle cx="32" cy="22" r="7.2" fill="#F0C987"/><path d="M38.2 20l8.5 2.6-7.6 2.6z" fill="#F0C987"/></g><path d="M26.3 50h11.4" stroke="#F2CF6B" stroke-width="2.4"/><path d="M24 62h16M22.5 68.5h19" stroke="#F2CF6B" stroke-width="1.3" stroke-dasharray="2 2.4"/><path d="M27 40l5 4 5-4M28 46h8" fill="none" stroke="#F2CF6B" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="32" cy="36" r="1.5" fill="#F2CF6B"/><circle cx="29" cy="10" r="1.2" fill="#B5462F"/><path d="M33 20.5q2.2-1.4 4 0" fill="none" stroke="#1B2321" stroke-width="1.3" stroke-linecap="round"/><circle cx="35" cy="22" r="1" fill="#1B2321"/><path d="M35 26.2q2 .9 3.6-.2" fill="none" stroke="#B5462F" stroke-width="1.2" stroke-linecap="round"/>'},
+  turtle:{sticker:true, vb:"-5 6 84 56", svg:'<g fill="#fff" stroke="#fff" stroke-width="7" stroke-linejoin="round"><path d="M11 41l-8 4 8 3z"/><ellipse cx="22" cy="50" rx="5.5" ry="6.5"/><ellipse cx="46" cy="50" rx="5.5" ry="6.5"/><circle cx="64" cy="34" r="9.5"/><path d="M12 41Q12 15 34 15Q55 15 55 41Z"/><path d="M10 40h47a3.2 3.2 0 0 1 0 6.4H10a3.2 3.2 0 0 1 0-6.4z"/></g><g stroke="#2F5D49" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M11 41l-8 4 8 3z" fill="#8ED1AE"/><ellipse cx="22" cy="50" rx="5.5" ry="6.5" fill="#8ED1AE"/><ellipse cx="46" cy="50" rx="5.5" ry="6.5" fill="#8ED1AE"/><circle cx="64" cy="34" r="9.5" fill="#9BD9B8"/><path d="M12 41Q12 15 34 15Q55 15 55 41Z" fill="#5FAE84"/><path d="M34 22l8 5v8l-8 5-8-5v-8z" fill="#7CC6A0"/><path d="M34 22v-7M42 27l8-5M42 35l11 3M26 27l-8-5M26 35l-12 3M34 40v1" fill="none" stroke="#3F8B66"/><path d="M10 40h47a3.2 3.2 0 0 1 0 6.4H10a3.2 3.2 0 0 1 0-6.4z" fill="#F4DC9A"/><path d="M62.5 37.5q3 3 6 .2" fill="none"/></g><circle cx="67" cy="31.5" r="2" fill="#1B2321"/><circle cx="67.7" cy="30.8" r=".7" fill="#fff"/><circle cx="60.8" cy="36.6" r="2" fill="#F5A3A3" opacity=".85"/><path d="M20 26q4-7 11-8" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" opacity=".55"/>'},
+  shophouse:{sticker:true, vb:"0 2 72 66", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M5 22L36 7l31 15z"/><rect x="10" y="22" width="52" height="43"/><path d="M7 40h58l-4 8H11z"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><rect x="10" y="22" width="52" height="19" fill="#DDA56B"/><path d="M5 22L36 7l31 15z" fill="#8C5A3A"/><path d="M20 14.5l-6 7M30 10l-4 11.5M42 10l4 11.5M52 14.5l6 7" stroke="#6B4226" stroke-width="1"/><rect x="15" y="26" width="10" height="11" fill="#2F6B5A"/><rect x="31" y="26" width="10" height="11" fill="#2F6B5A"/><rect x="47" y="26" width="10" height="11" fill="#2F6B5A"/><path d="M20 26v11M36 26v11M52 26v11M16 29.5h8M16 33.5h8M32 29.5h8M32 33.5h8M48 29.5h8M48 33.5h8" stroke="#1F4A3E" stroke-width=".9"/><rect x="10" y="47" width="52" height="18" fill="#C98A4E"/><path d="M17 47v18M24 47v18M48 47v18M55 47v18" stroke="#A46B35" stroke-width="1"/><rect x="30" y="51" width="12" height="14" fill="#4A2E1A"/><path d="M7 40h58l-4 8H11z" fill="#C8553D"/><path d="M17 40l-2 8M28 40l-1 8M44 40l1 8M55 40l2 8" stroke="#F5E4BA" stroke-width="2.2"/><path d="M4 65h64"/></g>'},
+  bowl:'<path d="M6 24h36a18 14 0 0 1-36 0zM16 12c-2 3 2 4 0 7M24 10c-2 3 2 4 0 7M32 12c-2 3 2 4 0 7M18 40h12"/>',
+  art:'<rect x="8" y="10" width="32" height="28"/><path d="M8 32l9-9 7 7 5-5 11 9"/><circle cx="31" cy="18" r="2.5"/>',
+  music:'<path d="M18 34V12l20-4v22"/><circle cx="13" cy="34" r="5"/><circle cx="33" cy="30" r="5"/>',
+  leaf:'<path d="M10 38C8 20 20 8 40 8c0 20-12 32-30 30zM10 38l18-18"/>',
+  plane:'<path d="M6 28l36-16-12 28-6-11zM24 29l18-17"/>',
+  bus:'<rect x="8" y="10" width="32" height="24" rx="3"/><path d="M8 22h32M16 34v4M32 34v4"/><circle cx="16" cy="28" r="1.5"/><circle cx="32" cy="28" r="1.5"/>',
+  lantern:'<path d="M24 4v6M16 10h16M16 38h16M24 38v6"/><ellipse cx="24" cy="24" rx="11" ry="14"/><path d="M24 10v28M18 12c-3 8-3 16 0 24M30 12c3 8 3 16 0 24"/>',
+  rain:'<path d="M14 28a8 8 0 0 1 1-16 11 11 0 0 1 21 3 7 7 0 0 1-1 13zM16 34l-2 6M24 34l-2 6M32 34l-2 6"/>',
+  people:'<circle cx="16" cy="14" r="5"/><circle cx="33" cy="16" r="4"/><path d="M6 38c0-8 4-13 10-13s10 5 10 13M27 38c0-6 2-10 6-10s8 4 8 10"/>',
+  book:'<path d="M24 12c-5-3-11-3-16-1v26c5-2 11-2 16 1 5-3 11-3 16-1V11c-5-2-11-2-16 1zM24 12v26"/>',
+  basket:'<path d="M8 20h32l-4 20H12zM16 20l6-12M32 20l-6-12M18 26v8M24 26v8M30 26v8"/>',
+  heart:'<path d="M24 40C10 30 6 22 10 15c3-5 10-5 14 1 4-6 11-6 14-1 4 7 0 15-14 25z"/>',
+  passport:'<rect x="11" y="6" width="26" height="36" rx="2"/><circle cx="24" cy="21" r="7"/><path d="M17 21h14M24 14c-3 4-3 10 0 14M24 14c3 4 3 10 0 14M18 35h12"/>',
+  news:'<rect x="8" y="8" width="32" height="32"/><path d="M14 16h20M14 24h12M14 30h12M30 24h4v6h-4z"/>'
+};
+const icon = k => { const d = ICONS[k] || ICONS.news; if(d && d.sticker) return `<svg class="ico sticker${d.tall ? " tall" : ""}" viewBox="${d.vb}" aria-hidden="true">${d.svg}</svg>`; return `<svg class="ico" viewBox="-3 -3 54 54" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><g filter="url(#pencil)">${d}</g><g filter="url(#pencil2)" opacity=".5" transform="translate(.8 .6) rotate(1.2 24 24)">${d}</g></svg>`; };
+/* ===== /ICONS ===== */
+
+/* ===== PHOTO: Seline이 가끔 올리는 사진. 매일 업데이트 작업은 이 값을 건드리지 않는다. 없으면 null. ===== */
+const PHOTO = null; // 예: {src:"photo.jpg", caption:"한 줄 설명", date:"2026-10-09"}
+/* ===== /PHOTO ===== */
+
+/* ===== DAYS: 날짜별 콘텐츠. 최신 날짜가 맨 앞. 매일 새 객체를 맨 앞에 추가하고 14일치만 유지. ===== */
+const DAYS = [
+{
+  date: "2026-10-09",
+  quote: {
+    ko: "우리의 삶은 사소한 것들에 허비되고 있다.",
+    en: "Our life is frittered away by detail.",
+    by: "헨리 데이비드 소로, 『월든』 (1854)",
+    pick: {kind:"영화", title:"퍼펙트 데이즈 (Perfect Days, 2023)", gist:"도쿄의 화장실 청소부 히라야마의 반복되는 하루를 따라가며, 단순한 일상도 충분히 충만할 수 있다고 말하는 영화입니다."}
+  },
+  english: {
+    title: "오랜만에 연락한 친구와 브런치 약속 잡기", titleEn: "Making Brunch Plans with an Old Friend",
+    situation: "한동안 못 본 친구와 안부를 나누고 주말 약속을 정하는 대화입니다. 미국인들이 친구 사이에 매일 쓰는 말투입니다.",
+    lines: [
+      ["A","Hey, stranger! It's been forever. How have you been?","야, 이게 누구야! 진짜 오랜만이다. 어떻게 지냈어?"],
+      ["B","I know, right? Things have been kind of hectic, but I can't complain.","그러니까. 좀 정신없긴 했는데 그럭저럭 잘 지내."],
+      ["A","We should catch up sometime. Are you free this weekend, by any chance?","언제 한번 만나서 얘기 좀 하자. 혹시 이번 주말에 시간 돼?"],
+      ["B","Saturday's out, but I'm wide open on Sunday.","토요일은 안 되는데 일요일은 하루 종일 비어."],
+      ["A","Perfect. Do you feel like grabbing brunch? There's a new place near my apartment I've been meaning to try.","잘됐다. 브런치 먹을래? 우리 집 근처에 새로 생긴 데가 있는데 계속 가 보고 싶었거든."],
+      ["B","I'm down. What time were you thinking?","좋아. 몇 시쯤 생각했어?"],
+      ["A","How about eleven? It gets pretty packed after noon.","11시 어때? 12시 넘으면 사람이 꽤 많아져."],
+      ["B","Sounds good. Text me the address and I'll meet you there.","좋아. 주소 문자로 보내 줘. 거기서 보자."],
+      ["A","Will do. Can't wait!","그럴게. 벌써 기대된다!"]
+    ],
+    expressions: [
+      {en:"It's been forever.", ko:"‘정말 오랜만이다’. It's been a long time보다 과장된 친근한 말투입니다. Hey, stranger!도 오랜만에 본 친구에게 장난스럽게 건네는 인사입니다.", eg:"It's been forever since we last hung out."},
+      {en:"I can't complain.", ko:"‘불평할 게 없다’, 즉 ‘그럭저럭 잘 지낸다’는 뜻입니다. How are you?에 대한 담백한 대답으로 자주 씁니다.", eg:"“How's the new job?” “Can't complain.”"},
+      {en:"I've been meaning to ~", ko:"‘~하려고 계속 마음먹고 있었다’. 아직 못 했지만 전부터 하고 싶었다는 뜻입니다.", eg:"I've been meaning to call you."},
+      {en:"I'm down.", ko:"제안에 ‘좋아, 나도 할래’라고 답하는 말입니다. 친구 사이의 캐주얼한 표현이고, I'm down for brunch처럼 for를 붙여 쓰기도 합니다.", eg:"“Want to see a movie tonight?” “I'm down.”"},
+      {en:"wide open / ~ is out", ko:"일정을 말할 때 씁니다. I'm wide open은 ‘완전히 비어 있다’, Saturday's out은 ‘토요일은 안 된다’입니다.", eg:"Friday's out for me, but my Thursday is wide open."}
+    ],
+    pattern: {
+      en: "Do you feel like ~ing?",
+      ko: "‘~하고 싶어?’, ‘~할래?’. Do you want to ~?보다 상대 기분을 묻는 느낌이라 더 부드럽습니다. 뒤에 동사는 -ing 형태로 씁니다.",
+      examples: [
+        ["Do you feel like <b>going</b> for a <b>walk</b>?","산책 갈래?"],
+        ["Do you feel like <b>ordering</b> <b>in</b> tonight?","오늘 저녁은 시켜 먹을까?"],
+        ["I don't <b>feel</b> like <b>cooking</b> today.","오늘은 요리하기 싫어."]
+      ]
+    }
+  },
+  news: [
+    {tag:"생활경제", icon:"coin", title:"2027년 예산안, 최저임금 2,000링깃으로 인상 추진", titleEn: "Budget 2027 Proposes Raising the Minimum Wage to RM2,000",
+     body:"9일 발표된 2027년 예산안에 생활과 직접 관련된 내용이 여럿 담겼습니다. 월 최저임금을 2027년 6월부터 1,700링깃에서 2,000링깃으로 올리고, 개인 소득공제를 9,000링깃에서 12,000링깃으로 늘립니다. 생애 첫 주택 구입자는 50만 링깃 이하 주택의 인지세가 전액 면제됩니다. 아직 예산안 단계라 시행 전에 바뀔 수 있습니다.",
+     src:"The Sun", url:"https://thesun.my/news/budget-2027-minimum-wage-rm2000-govt-cost-of-living/"},
+    {tag:"생활", icon:"school", title:"연무 악화, 대기오염지수 180 넘는 지역은 9일부터 휴교", titleEn: "Schools to Close Where the Haze Index Tops 180",
+     body:"교육부는 대기오염지수(API)가 180을 넘는 지역의 학교를 9일부터 닫고, 150 초과가 사흘 연속 이어지는 지역은 12일부터 닫도록 했습니다. 수업은 원격으로 전환합니다. 전국 휴교가 아니라 지역별 수치에 따라 정해집니다.",
+     src:"Malay Mail", url:"https://www.malaymail.com/news/malaysia/2026/10/08/schools-in-malaysia-to-close-from-tomorrow-if-haze-index-tops-180-education-ministry-says/238300"},
+    {tag:"문화", icon:"puppet", title:"사라져 가는 그림자 인형극 ‘와양 쿨릿’, 전통과 변화 사이", titleEn: "Wayang Kulit at a Crossroads Between Tradition and Change",
+     body:"클란탄 주의 전통 그림자 인형극 와양 쿨릿이 위기를 맞고 있습니다. 코타바루 일대에서 활동하는 원로 연희자는 3명뿐이고, 수련 중인 젊은 전수자도 3명입니다. 클란탄 말레이시아 대학은 서너 달 걸리던 인형 제작을 레이저 가공으로 일주일로 줄였고, 연희자들은 SNS와 현대적인 소재로 젊은 관객을 찾으려 합니다.",
+     src:"Malay Mail", url:"https://www.malaymail.com/news/life/2026/10/08/the-future-of-wayang-kulit-hinges-on-preserving-tradition-while-embracing-change/238055"},
+    {tag:"자연", icon:"turtle", title:"사바의 푸른바다거북, 세계적 야생동물 감소 속에서 늘었다", titleEn: "Sabah's Green Turtles Rebound Against a Global Wildlife Decline",
+     body:"사바 주 거북섬의 푸른바다거북 산란이 1970년대의 세 배인 연 2만 둥지 이상으로 늘었습니다. 1977년부터 이어진 보호구역 지정과 1997년의 거북 고기·알 섭취 금지, 주민들의 알 이전 활동이 배경으로 꼽힙니다. 푸른바다거북은 2025년 국제자연보전연맹 목록에서 ‘멸종위기’에서 ‘관심 대상’으로 조정됐습니다.",
+     src:"Malay Mail (AFP)", url:"https://www.malaymail.com/news/life/2026/10/08/palmsized-hatchlings-big-win-malaysias-green-turtles-defy-global-wildlife-decline/238236"},
+    {tag:"여행·역사", icon:"shophouse", title:"트렝가누 둥군의 90년 된 목조 상가 ‘크다이 카유’", titleEn: "Dungun's 90-Year-Old Wooden Shophouses",
+     body:"쿠알라 둥군에는 1933년에 조성된 2층 목조 상가가 지금도 약 100칸 남아 식당과 철물점, 식료품점으로 쓰이고 있습니다. 1922년 무렵부터 건너온 호키엔계 중국인 상인들이 자리 잡았고, 1930~60년대 부킷 브시 철광 채굴로 번성했던 곳입니다. 상가의 일상을 그린 벽화도 볼 수 있습니다.",
+     src:"Malay Mail (Bernama)", url:"https://www.malaymail.com/news/life/2026/10/08/where-hokkien-traders-settled-and-miners-thrived-dunguns-kedai-kayu-still-whisper-history/238223"}
+  ],
+  trend: {
+    title: "편의점은 늘고 백화점은 줄었다", titleEn: "Convenience Stores Up, Department Stores Down",
+    asOf: "2026년 2~3월 발표 자료 기준",
+    body: "말레이시아 소비자는 지갑을 닫은 것이 아니라 신중해졌습니다. 2025년 소매 판매는 2.4% 늘어 경제성장률 5.2%에 못 미쳤고, 업태별로 차이가 크게 벌어졌습니다.",
+    points: [
+      "미니마켓과 편의점 매출은 2025년 한 해 13.2% 늘었습니다. 가까운 곳에서 조금씩 자주 사는 소비가 늘었다는 뜻입니다.",
+      "백화점은 4.8% 줄었고, 가구·인테리어·가전은 9.6% 줄었습니다. 큰돈 드는 구매를 미루는 흐름입니다.",
+      "패션과 약국·드럭스토어는 3~4% 완만하게 성장했습니다.",
+      "유고브 2026 브랜드 순위에서 쇼피가 1위, 왓츠앱이 2위, 토종 유제품 브랜드 팜프레시가 3위에 올랐습니다. 한 해 동안 점수가 가장 많이 오른 브랜드는 KFC와 맥도날드입니다."
+    ],
+    src: [
+      ["Marketing Magazine Asia (2026.3.20)","https://marketingmagazineasia.com/malaysian-shoppers-are-still-spending-just-more-carefully/"],
+      ["YouGov 브랜드 순위 (2026.2.3)","https://yougov.com/articles/54012-best-brand-rankings-2026-malaysia"]
+    ]
+  },
+  life: {
+    title: "코피티암에서 현지인처럼 주문하는 암호", titleEn: "The Secret Code for Ordering at a Kopitiam",
+    intro: "말레이시아 동네 커피숍 코피티암에는 메뉴판에 없는 주문 언어가 있습니다. 단어 몇 개만 알면 커피를 내 입맛대로 주문할 수 있습니다.",
+    tips: [
+      ["그냥 ‘코피’는 달달한 연유 커피","Kopi라고만 하면 가당 연유를 넣은 커피가 나옵니다. 차는 같은 방식으로 Teh입니다."],
+      ["O와 C가 우유를 정합니다","Kopi O는 우유 없이 설탕만 넣은 블랙커피, Kopi C는 무가당 연유와 설탕을 넣은 커피입니다."],
+      ["‘코송’은 빼 달라는 말","Kosong은 말레이어로 ‘없음’입니다. Kopi O kosong은 설탕도 우유도 없는 커피, Kopi C kosong은 설탕만 뺀 커피입니다."],
+      ["진하게는 ‘가우’, 덜 달게는 ‘시우 다이’","호키엔어 Gau는 진하게, Poh는 연하게입니다. 광둥어 Siu dai는 설탕 적게, Gah dai는 설탕 많이입니다."],
+      ["차갑게는 ‘펭’, 섞어서는 ‘참’","Peng을 붙이면 얼음을 넣어 줍니다. Cham은 커피와 차를 반반 섞은 음료입니다."]
+    ],
+    src: [["SAYS: Ordering your drinks at a Malaysian kopitiam","https://says.com/my/lifestyle/ordering-your-drinks-at-a-malaysian-kopitiam"]]
+  },
+  shows: {
+    intro: "쿠알라룸푸르에서 지금 볼 수 있거나 곧 열리는 전시와 공연입니다.",
+    items: [
+      {kind:"전시", title:"로버트 라우션버그와 아시아 (Robert Rauschenberg and Asia)", when:"11월 1일까지", where:"일함 갤러리(ILHAM Gallery) 5층", memo:"미국 현대미술 작가 로버트 라우션버그의 전시입니다.", url:"https://ilhamgallery.com/exhibitions/robert-rauschenberg-and-asia/"},
+      {kind:"전시", title:"The Bouquet and the Wreath (Rebirth)", when:"10월 11일까지", where:"일함 갤러리 3층", memo:"이번 주말이 마지막입니다.", url:"https://ilhamgallery.com/exhibitions/the-bouquet-and-the-wreath-rebirth/"},
+      {kind:"뮤지컬", title:"쇼트+스위트 말레이시아 페스티벌 2026: 뮤지컬", when:"10월 9~11일", where:"KLPac (쿠알라룸푸르 공연예술센터)", memo:"짧은 창작 뮤지컬을 여러 편 묶어 올리는 축제입니다. 연극 부문은 10월 16~25일에 이어집니다.", url:"https://www.klpac.org/shows/short-sweet-malaysia-festival-2026-musical/"},
+      {kind:"오페라", title:"투란도트 (Turandot)", when:"10월 17~25일", where:"KLPac", memo:"KLPac 오케스트라가 연주합니다.", url:"https://www.klpac.org/shows/turandot/"},
+      {kind:"K팝", title:"마마무 월드 투어 (MAMAMOO 2026 WORLD TOUR [4WARD])", when:"10월 10일", where:"유니피 아레나, 쿠알라룸푸르", memo:"시간과 잔여석은 예매처에서 확인하세요.", url:"https://says.com/my/entertainment/mamamoo-is-coming-to-kl-this-october-for-their-2026-world-tour"},
+      {kind:"클래식", title:"브라이언 탄 헌정 공연 (Tribute to Brian Tan with The klpac Orchestra)", when:"10월 30일~11월 1일", where:"KLPac", memo:"KLPac 오케스트라의 공연입니다.", url:"https://www.klpac.org/shows/tribute-to-brian-tan-with-the-klpac-orchestra/"}
+    ]
+  },
+  music: {
+    title: "Don't Know Why", artist: "노라 존스 (Norah Jones)", year: "2002",
+    mood: "커피 한 잔과 어울리는 느린 재즈 팝",
+    why: "피아노와 낮은 목소리만으로 채운 곡입니다. 서두를 것 없는 금요일 저녁이나 주말 아침에 틀어 두기 좋습니다.",
+    query: "Norah Jones Don't Know Why"
+  },
+  fact: {
+    title: "한글날은 왜 10월 9일일까", titleEn: "Why Is Hangul Day on October 9?",
+    body: "오늘은 한글날입니다. 세종대왕은 1443년에 훈민정음을 만들고 1446년에 책으로 펴내 세상에 알렸습니다. 그 책 『훈민정음』 해례본에 음력 9월 상순에 펴냈다는 기록이 있어, 이를 양력으로 바꾼 10월 9일을 한글날로 정했습니다.",
+    more: [
+      "처음 만든 글자는 28자였고, 지금은 그중 24자를 씁니다.",
+      "해례본에는 글자를 만든 원리가 적혀 있습니다. 만든 사람과 시기, 원리가 기록으로 남은 문자는 세계적으로 드뭅니다.",
+      "『훈민정음』 해례본은 1997년 유네스코 세계기록유산에 올랐습니다."
+    ],
+    src: [["국립국어원: 한글의 탄생","https://www.korean.go.kr/hangeul/origin/001.html"]]
+  }
+}
+];
+
+/* ===== /DAYS ===== */
+
+const $ = id => document.getElementById(id);
+const hen = t => t ? `<span class="h-en">${esc(t)}</span>` : "";
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+let idx = 0;
+function render(){
+  const d = DAYS[idx];
+  const dt = new Date(d.date + "T00:00:00");
+  $("date").textContent = dt.toLocaleDateString("ko-KR",{year:"numeric",month:"long",day:"numeric",weekday:"long"});
+  $("stamp").textContent = "Issue " + d.date.replace(/-/g, ".");
+  const toc = [["english","영어",d.english && d.english.title],["news","소식",d.news && d.news[0] && d.news[0].title],["trend","트렌드",d.trend && d.trend.title],["life","생활 팁",d.life && d.life.title],["music","음악",d.music && (d.music.title + " · " + d.music.artist)],["shows","전시·공연",d.shows && d.shows.items && d.shows.items[0] && d.shows.items[0].title],["fact","상식",d.fact && d.fact.title]].filter(x => x[2]);
+  $("toc").innerHTML = toc.map(x => `<a href="#${x[0]}"><span class="sec">${x[1]}</span><span class="ttl">${esc(x[2])}</span><span class="go">→</span></a>`).join("");
+  $("prev").disabled = idx >= DAYS.length - 1;
+  $("next").disabled = idx <= 0;
+
+  $("photo").hidden = !PHOTO;
+  if(PHOTO) $("photo").innerHTML = `<span class="plabel">Seline의 사진</span><img src="${esc(PHOTO.src)}" alt="${esc(PHOTO.caption || "")}"><figcaption>${esc(PHOTO.caption || "")}${PHOTO.date ? `<span class="pdate">${esc(PHOTO.date.replace(/-/g,"."))}</span>` : ""}</figcaption>`;
+
+  const q = d.quote;
+  $("quote").hidden = !q;
+  if(q) $("quote").innerHTML = `<span class="q">책 속 한 줄</span><span class="ko">${esc(q.ko)}</span>${q.en ? `<span class="en">${esc(q.en)}</span>` : ""}<figcaption class="by">${esc(q.by)}</figcaption>${q.pick ? `<span class="pick"><b>${esc(q.pick.kind)} 속 같은 마음</b>${esc(q.pick.title)}<br>${esc(q.pick.gist)}</span>` : ""}`;
+
+  const e = d.english;
+  $("english").innerHTML = `
+    <span class="label">미국 일상 회화 · 중급</span>
+    <h2>${esc(e.title)}${hen(e.titleEn)}</h2>
+    <p class="sub">${esc(e.situation)}</p>
+    <div class="chat">
+      ${e.lines.map(l=>`<div class="msg ${l[0]==="B"?"b":"a"}"><span class="sp">${esc(l[0])}</span>
+        <div class="txt"><p class="bubble">${esc(l[1])}</p><p class="ko">${esc(l[2])}</p></div></div>`).join("")}
+    </div>
+    <div class="exprs">${e.expressions.map((x,i)=>`
+      <div class="expr box"><h3><i>${i+1}</i>${esc(x.en)}</h3><p>${esc(x.ko)}</p><p class="eg">${esc(x.eg)}</p></div>`).join("")}
+    </div>
+    ${e.pattern ? `<div class="drill"><h3>오늘의 패턴</h3><p class="pat">${esc(e.pattern.en)}</p><p>${esc(e.pattern.ko)}</p>
+      <ol>${e.pattern.examples.map(s=>`<li>${s[0]}<br><small>${esc(s[1])}</small></li>`).join("")}</ol></div>` : ""}`;
+
+  $("news").innerHTML = `
+    <span class="label">말레이시아 소식 · 문화와 생활</span>
+    <h2>오늘 알아둘 ${d.news.length}가지${hen("Stories Worth Knowing Today")}</h2>
+    <div class="news">${d.news.map((n,i)=>`
+      <article class="box"><span class="n">${i+1}</span><span class="tag">${esc(n.tag)}</span><h3>${esc(n.title)}${hen(n.titleEn)}</h3>${icon(n.icon)}<p>${esc(n.body)}</p>
+      <p class="src">출처 <a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.src)}</a></p></article>`).join("")}
+    </div>`;
+
+  const tr = d.trend;
+  $("trend").hidden = !tr;
+  if(tr) $("trend").innerHTML = `
+    <span class="label">말레이시아 트렌드 · 소비와 브랜드</span>
+    <h2>${esc(tr.title)}${hen(tr.titleEn)}</h2>
+    <p class="asof">${esc(tr.asOf)}</p>
+    <div class="factbox box"><p>${esc(tr.body)}</p>
+      ${tr.points && tr.points.length ? `<ul>${tr.points.map(m=>`<li>${esc(m)}</li>`).join("")}</ul>` : ""}</div>
+    <p class="lifesrc">출처 ${tr.src.map(x=>`<a href="${esc(x[1])}" target="_blank" rel="noopener">${esc(x[0])}</a>`).join(" · ")}</p>`;
+
+  const f = d.life;
+  $("life").hidden = !f;
+  if(f) $("life").innerHTML = `
+    <span class="label">말레이시아 생활 팁</span>
+    <h2>${esc(f.title)}${hen(f.titleEn)}</h2>
+    <p class="sub">${esc(f.intro)}</p>
+    <ol class="tips box">${f.tips.map((t,i)=>`<li><span class="k">${i+1}</span><span><b>${esc(t[0])}</b>${esc(t[1])}</span></li>`).join("")}</ol>
+    <p class="lifesrc">출처 ${f.src.map(s=>`<a href="${esc(s[1])}" target="_blank" rel="noopener">${esc(s[0])}</a>`).join(" · ")}</p>`;
+
+  const sh = d.shows;
+  $("shows").hidden = !sh;
+  if(sh) $("shows").innerHTML = `
+    <span class="label">전시 · 공연</span>
+    <h2>이번 주 볼거리${hen("What's On This Week")}</h2>
+    <p class="sub">${esc(sh.intro)}</p>
+    <ul class="showlist box">${sh.items.map(x=>`<li><span class="kind">${esc(x.kind)}</span><span class="body"><a class="stitle" href="${esc(x.url)}" target="_blank" rel="noopener"><b>${esc(x.title)}</b></a><span class="when">${esc(x.when)} · ${esc(x.where)}</span>${x.memo ? `<span class="memo">${esc(x.memo)}</span>` : ""}<a class="more" href="${esc(x.url)}" target="_blank" rel="noopener">자세히 보기 →</a></span></li>`).join("")}</ul>`;
+
+  const mu = d.music;
+  $("music").hidden = !mu;
+  if(mu){
+    const qs = encodeURIComponent(mu.query || (mu.artist + " " + mu.title));
+    $("music").innerHTML = `
+    <span class="label">Now Playing · Seline’s Pick</span>
+    <h2>${esc(mu.title)}<span class="h-en">${esc(mu.artist)} · ${esc(mu.year)}</span></h2>
+    <p class="asof">${esc(mu.mood)}</p>
+    <p class="sub">${esc(mu.why)}</p>
+    <div class="listen"><a href="https://www.youtube.com/results?search_query=${qs}" target="_blank" rel="noopener">Listen on YouTube →</a><a href="https://open.spotify.com/search/${qs}" target="_blank" rel="noopener">Listen on Spotify →</a></div>`;
+  }
+
+  const k = d.fact;
+  $("fact").hidden = !k;
+  if(k) $("fact").innerHTML = `
+    <span class="label">오늘의 상식</span>
+    <h2>${esc(k.title)}${hen(k.titleEn)}</h2>
+    <div class="factbox box"><p>${esc(k.body)}</p>
+      ${k.more && k.more.length ? `<ul>${k.more.map(m=>`<li>${esc(m)}</li>`).join("")}</ul>` : ""}</div>
+    ${k.src && k.src.length ? `<p class="lifesrc">출처 ${k.src.map(x=>`<a href="${esc(x[1])}" target="_blank" rel="noopener">${esc(x[0])}</a>`).join(" · ")}</p>` : ""}`;
+
+  $("foot").textContent = "뉴스는 각 기사 원문을 한국어로 요약한 것입니다. 정확한 내용은 출처 링크에서 확인하세요.";
+}
+$("prev").onclick = () => { if(idx < DAYS.length-1){ idx++; render(); } };
+$("next").onclick = () => { if(idx > 0){ idx--; render(); } };
+render();
+</script>
+
+</body>
+</html>
