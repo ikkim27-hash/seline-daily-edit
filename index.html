@@ -455,7 +455,9 @@ const ICONS = {
   passport:'<rect x="11" y="6" width="26" height="36" rx="2"/><circle cx="24" cy="21" r="7"/><path d="M17 21h14M24 14c-3 4-3 10 0 14M24 14c3 4 3 10 0 14M18 35h12"/>',
   news:'<rect x="8" y="8" width="32" height="32"/><path d="M14 16h20M14 24h12M14 30h12M30 24h4v6h-4z"/>'
 };
-const icon = k => { const d = ICONS[k] || ICONS.news; if(d && d.sticker) return `<svg class="ico sticker${d.tall ? " tall" : ""}" viewBox="${d.vb}" aria-hidden="true">${d.svg}</svg>`; return `<svg class="ico" viewBox="-3 -3 54 54" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><g filter="url(#pencil)">${d}</g><g filter="url(#pencil2)" opacity=".5" transform="translate(.8 .6) rotate(1.2 24 24)">${d}</g></svg>`; };
+/* 기사에 그날 그린 전용 스티커(art)가 있으면 그것을 쓰고, 없으면 icon 값으로 위 보관함에서 고른다. */
+const okArt = a => a && typeof a.svg === "string" && typeof a.vb === "string" && !/<\s*(script|image|foreignObject|use|style|a)\b|href|\son\w+\s*=/i.test(a.svg);
+const icon = (k, art) => { const d = okArt(art) ? {sticker:true, vb:art.vb, svg:art.svg, tall:!!art.tall} : (ICONS[k] || ICONS.news); if(d && d.sticker) return `<svg class="ico sticker${d.tall ? " tall" : ""}" viewBox="${d.vb}" aria-hidden="true">${d.svg}</svg>`; return `<svg class="ico" viewBox="-3 -3 54 54" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><g filter="url(#pencil)">${d}</g><g filter="url(#pencil2)" opacity=".5" transform="translate(.8 .6) rotate(1.2 24 24)">${d}</g></svg>`; };
 /* ===== /ICONS ===== */
 
 /* ===== PHOTO: Seline이 가끔 올리는 사진. 매일 업데이트 작업은 이 값을 건드리지 않는다. 없으면 null. ===== */
@@ -619,7 +621,7 @@ function render(){
     <span class="label">말레이시아 소식 · 문화와 생활</span>
     <h2>오늘 알아둘 ${d.news.length}가지${hen("Stories Worth Knowing Today")}</h2>
     <div class="news">${d.news.map((n,i)=>`
-      <article class="box"><span class="n">${i+1}</span><span class="tag">${esc(n.tag)}</span><h3>${esc(n.title)}${hen(n.titleEn)}</h3>${icon(n.icon)}<p>${esc(n.body)}</p>
+      <article class="box"><span class="n">${i+1}</span><span class="tag">${esc(n.tag)}</span><h3>${esc(n.title)}${hen(n.titleEn)}</h3>${icon(n.icon, n.art)}<p>${esc(n.body)}</p>
       <p class="src">출처 <a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.src)}</a></p></article>`).join("")}
     </div>`;
 
