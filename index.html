@@ -590,7 +590,7 @@ function render(){
   const dt = new Date(d.date + "T00:00:00");
   $("date").textContent = dt.toLocaleDateString("ko-KR",{year:"numeric",month:"long",day:"numeric",weekday:"long"});
   $("stamp").textContent = "Issue " + d.date.replace(/-/g, ".");
-  const toc = [["news","소식",d.news && d.news[0] && d.news[0].title],["trend","트렌드",d.trend && d.trend.title],["life","생활 팁",d.life && d.life.title],["music","음악",d.music && (d.music.title + " · " + d.music.artist)],["shows","전시·공연",d.shows && d.shows.items && d.shows.items[0] && d.shows.items[0].title],["fact","상식",d.fact && d.fact.title],["english","영어",d.english && d.english.title]].filter(x => x[2]);
+  const toc = [["news","소식",d.news && d.news[0] && d.news[0].title],["trend",(d.trend && d.trend.cat) || "트렌드",d.trend && d.trend.title],["life",(d.life && d.life.cat) || "생활 팁",d.life && d.life.title],["music","음악",d.music && (d.music.title + " · " + d.music.artist)],["shows","전시·공연",d.shows && d.shows.items && d.shows.items[0] && d.shows.items[0].title],["fact","상식",d.fact && d.fact.title],["english","영어",d.english && d.english.title]].filter(x => x[2]);
   $("toc").innerHTML = toc.map(x => `<a href="#${x[0]}"><span class="sec">${x[1]}</span><span class="ttl">${esc(x[2])}</span><span class="go">→</span></a>`).join("");
   $("prev").disabled = idx >= DAYS.length - 1;
   $("next").disabled = idx <= 0;
@@ -618,7 +618,7 @@ function render(){
       <ol>${e.pattern.examples.map(s=>`<li>${s[0]}<br><small>${esc(s[1])}</small></li>`).join("")}</ol></div>` : ""}`;
 
   $("news").innerHTML = `
-    <span class="label">말레이시아 소식 · 문화와 생활</span>
+    <span class="label">${d.news.some(n => n.sub) ? "오늘의 소식 · 말레이시아와 세계" : "말레이시아 소식 · 문화와 생활"}</span>
     <h2>오늘 알아둘 ${d.news.length}가지${hen("Stories Worth Knowing Today")}</h2>
     <div class="news">${d.news.map((n,i)=>`
       <article class="box"><span class="n">${i+1}</span><span class="tag">${esc(n.tag)}</span><h3>${esc(n.title)}${hen(n.titleEn)}</h3>${icon(n.icon, n.art)}<p>${esc(n.body)}</p>
@@ -628,7 +628,7 @@ function render(){
   const tr = d.trend;
   $("trend").hidden = !tr;
   if(tr) $("trend").innerHTML = `
-    <span class="label">말레이시아 트렌드 · 소비와 브랜드</span>
+    <span class="label">${esc(tr.cat || "말레이시아 트렌드 · 소비와 브랜드")}</span>
     <h2>${esc(tr.title)}${hen(tr.titleEn)}</h2>
     <p class="asof">${esc(tr.asOf)}</p>
     <div class="factbox box"><p>${esc(tr.body)}</p>
@@ -638,7 +638,7 @@ function render(){
   const f = d.life;
   $("life").hidden = !f;
   if(f) $("life").innerHTML = `
-    <span class="label">말레이시아 생활 팁</span>
+    <span class="label">${esc(f.cat || "말레이시아 생활 팁")}</span>
     <h2>${esc(f.title)}${hen(f.titleEn)}</h2>
     <p class="sub">${esc(f.intro)}</p>
     <ol class="tips box">${f.tips.map((t,i)=>`<li><span class="k">${i+1}</span><span><b>${esc(t[0])}</b>${esc(t[1])}</span></li>`).join("")}</ol>
