@@ -378,6 +378,19 @@ section h2,.news h3,.news article:first-child h3{font-size:clamp(1.22rem,4.24vw,
 .news .n,.tips .k,.expr h3 i,.msg .sp{font-weight:300}
 .quote .en{font-weight:400}
 @media (max-width:420px){.mast h1{font-size:clamp(1.7rem,7.4vw,3.6rem)}.cities{grid-template-columns:1fr}h2{font-size:1.6rem}}
+/* 같은 마음: 책 속 글귀 */
+.quote .pick .pl{display:block;font-size:1.06rem;font-weight:500;line-height:1.6;letter-spacing:-.02em}
+.quote .pick .pe{display:block;margin-top:6px;font-family:var(--edit);font-style:italic;font-size:1rem;line-height:1.45;color:var(--drill-hi)}
+.quote .pick .pb{display:block;margin-top:8px;font-size:.84rem;opacity:.75}
+.quote .pick .pt{display:block;font-weight:600}
+.quote .pick .pe{margin-top:10px}
+/* 음악 라벨: 글자 위로 빛이 계속 반짝이며 지나간다 */
+@supports ((-webkit-background-clip:text) or (background-clip:text)){
+  #music .label{background-image:linear-gradient(115deg,var(--on-gold) 0%,var(--on-gold) 36%,#FFFFFF 50%,var(--on-gold) 64%,var(--on-gold) 100%)}
+  #music.lit .label{animation:labelglint 2.4s ease-in-out .3s infinite}
+  @keyframes labelglint{0%{background-position:100% 0}65%,100%{background-position:0 0}}
+  @media (prefers-reduced-motion:reduce){#music.lit .label{animation:none}}
+}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -472,7 +485,7 @@ const DAYS = [
     ko: "10월이 있는 세상에 살고 있어서 정말 기뻐요.",
     en: "I'm so glad I live in a world where there are Octobers.",
     by: "루시 모드 몽고메리, 『빨강 머리 앤』 (1908)",
-    pick: {kind:"책", title:"가을 (Autumn, 2016) · 앨리 스미스", gist:"2016년 유럽연합 탈퇴 국민투표 무렵의 영국을 배경으로, 서른두 살 엘리자베스와 어린 시절 이웃이었던 백한 살 대니얼의 오랜 우정을 그리며, 계절이 바뀌어도 사람 사이에 남는 것이 무엇인지 돌아보게 하는 소설입니다."}
+    pick: {kind:"책", title:"가을 (Autumn, 2016) · 앨리 스미스", gist:"2016년 유럽연합 탈퇴 국민투표 무렵의 영국, 서른두 살 엘리자베스는 요양원에서 잠든 백한 살의 옛 이웃 대니얼을 찾아가 곁을 지킵니다. 어린 시절 그가 들려주던 그림 이야기는 그녀를 미술사 강사의 길로 이끌었고, 소설은 세상이 갈라지는 계절에도 한 사람이 다른 사람에게 남긴 것은 사라지지 않는다고 말합니다.", after:"누군가 곁에 있어 준 시간은, 계절이 바뀐 뒤에도 우리 안에서 조용히 자랍니다."}
   },
   english: {
     title: "집을 비우는 동안 이웃에게 화분과 우편물 부탁하기", titleEn: "Asking a Neighbor to Watch Your Place While You're Away",
@@ -716,7 +729,7 @@ function render(){
 
   const q = d.quote;
   $("quote").hidden = !q;
-  if(q) $("quote").innerHTML = `<span class="q">책 속 한 줄</span><span class="ko">${esc(q.ko)}</span>${q.en ? `<span class="en">${esc(q.en)}</span>` : ""}<figcaption class="by">${esc(q.by)}</figcaption>${q.pick ? `<span class="pick"><b>${esc(q.pick.kind)} 속 같은 마음</b>${esc(q.pick.title)}<br>${esc(q.pick.gist)}</span>` : ""}`;
+  if(q) $("quote").innerHTML = `<span class="q">책 속 한 줄</span><span class="ko">${esc(q.ko)}</span>${q.en ? `<span class="en">${esc(q.en)}</span>` : ""}<figcaption class="by">${esc(q.by)}</figcaption>${q.pick ? (q.pick.line ? `<span class="pick"><b>${esc(q.pick.kind)} 속 같은 마음</b><span class="pl">${esc(q.pick.line)}</span>${q.pick.lineEn ? `<span class="pe">${esc(q.pick.lineEn)}</span>` : ""}<span class="pb">${esc(q.pick.by || "")}</span></span>` : `<span class="pick"><b>${esc(q.pick.kind)} 속 같은 마음</b><span class="pt">${esc(q.pick.title)}</span>${esc(q.pick.gist)}${q.pick.after ? `<span class="pe">${esc(q.pick.after)}</span>` : ""}</span>`) : ""}`;
 
   const e = d.english;
   $("english").innerHTML = `
