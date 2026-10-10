@@ -480,6 +480,116 @@ const PHOTO = null; // 예: {src:"photo.jpg", caption:"한 줄 설명", date:"20
 /* ===== DAYS: 날짜별 콘텐츠. 최신 날짜가 맨 앞. 매일 새 객체를 맨 앞에 추가하고 14일치만 유지. ===== */
 const DAYS = [
 {
+  date: "2026-10-11",
+  quote: {
+    ko: "아! 진정한 편안함으로 치자면 집에 머무는 것만 한 게 없지요.",
+    en: "Ah! there is nothing like staying at home, for real comfort.",
+    by: "제인 오스틴, 『에마』 (1815)",
+    pick: {kind:"영화", title:"리틀 포레스트 (Little Forest, 2018)", gist:"교사 임용 시험에 떨어진 혜원은 서울에서 하던 아르바이트를 그만두고 자신이 자란 시골 마을로 돌아옵니다. 집에 어머니는 없지만, 혜원은 어머니가 음식으로 자신에게 집을 만들어 주던 방식을 하나씩 되짚고, 고향을 떠나지 않았거나 서울에서 돌아온 옛 친구 둘과 다시 어울립니다. 임순례 감독의 이 영화는 손수 차린 한 끼와 익숙한 부엌이 지친 사람을 어떻게 다시 일으키는지 서두르지 않고 보여 줍니다.", after:"돌아갈 부엌이 있다는 것, 편안함은 어쩌면 거기서 시작되는지도 모릅니다."}
+  },
+  english: {
+    title: "사이즈가 안 맞는 스웨터 교환하기", titleEn: "Exchanging a Sweater That Doesn't Fit",
+    situation: "지난주에 산 스웨터가 작아서 매장에 다시 가져가는 대화입니다. 원하는 색이 품절일 때 부드럽게 부탁하는 말투까지 익혀 보세요.",
+    lines: [
+      ["A","Hi, I'd like to return this sweater. I bought it last week, but it runs a little small.","안녕하세요, 이 스웨터를 반품하고 싶어요. 지난주에 샀는데 좀 작게 나왔네요."],
+      ["B","No problem. Do you have your receipt on you?","그럼요. 영수증 지금 갖고 계세요?"],
+      ["A","I do. Here you go. I never wore it, and the tags are still on.","네, 여기요. 한 번도 안 입었고 태그도 그대로 달려 있어요."],
+      ["B","Perfect. Would you like to exchange it for a bigger size, or would you rather get a refund?","좋습니다. 큰 사이즈로 교환해 드릴까요, 아니면 환불이 나으세요?"],
+      ["A","I was hoping to swap it for a medium, if you have one in stock.","재고가 있으면 미디엄으로 바꾸고 싶었어요."],
+      ["B","Let me check in the back. Sorry, we're all out of the medium in gray. We do have it in navy, though.","안쪽에서 확인해 볼게요. 죄송해요, 회색 미디엄은 다 나갔네요. 네이비는 있어요."],
+      ["A","Hmm, I had my heart set on the gray. Any chance you could order one for me?","음, 회색으로 마음을 정했었는데요. 혹시 하나 주문해 주실 수 있을까요?"],
+      ["B","Sure thing. It should be here by Friday, and we'll give you a call when it comes in.","물론이죠. 금요일까지는 올 거예요. 들어오면 전화 드릴게요."],
+      ["A","That works. Thanks for going out of your way.","좋아요. 일부러 신경 써 주셔서 감사해요."],
+      ["B","Happy to help. Have a good one!","별말씀을요. 좋은 하루 보내세요!"]
+    ],
+    expressions: [
+      {en:"It runs small.", ko:"옷이나 신발이 ‘표시된 사이즈보다 작게 나왔다’는 뜻입니다. 반대는 runs large이고, 딱 맞게 나왔으면 It's true to size라고 합니다.", eg:"These sneakers run small, so I'd go up half a size."},
+      {en:"have ~ on you", ko:"‘지금 몸에 지니고 있다’. 영수증, 현금, 신분증처럼 그 자리에서 꺼낼 수 있는지 물을 때 씁니다.", eg:"Do you have any cash on you?"},
+      {en:"be (all) out of ~", ko:"‘~이 다 떨어지다’. 가게 재고나 집에 있는 물건에 두루 쓰고, all을 붙이면 하나도 안 남았다는 느낌이 강해집니다.", eg:"We're all out of milk. Can you pick some up?"},
+      {en:"have one's heart set on ~", ko:"‘~으로 마음을 굳히다, 꼭 그것을 원하다’. 다른 것으로 바꾸기 아쉬울 때 부드럽게 쓰는 말입니다.", eg:"She has her heart set on that little place by the park."},
+      {en:"go out of your way", ko:"‘일부러 수고를 들이다’. 안 해도 되는 일을 해 준 사람에게 고마움을 전할 때 자주 씁니다.", eg:"He went out of his way to drive me home."}
+    ],
+    pattern: {
+      en: "I was hoping to ~",
+      ko: "‘~하고 싶었는데요, ~할 수 있을까 해서요’. 지금 바라는 일인데도 과거진행형으로 말해 요구를 한결 부드럽게 만듭니다. I want to ~보다 공손하게 들립니다.",
+      examples: [
+        ["I was <b>hoping</b> to get a <b>table</b> by the window.","창가 자리에 앉을 수 있을까 해서요."],
+        ["I was <b>hoping</b> to <b>leave</b> a little <b>early</b> today.","오늘은 조금 일찍 나가고 싶었는데요."],
+        ["I was <b>hoping</b> to <b>talk</b> to you about <b>Saturday</b>.","토요일 일로 얘기 좀 하고 싶었어."]
+      ]
+    }
+  },
+  news: [
+    {tag:"문화", icon:"news", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M11 17L58 8l1.8 8.6L12.8 25.6z"/><rect x="12" y="27" width="48" height="28" rx="2.5"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><rect x="12" y="27" width="48" height="28" rx="2.5" fill="#F5E4BA"/><path d="M12 27h48v8H12z" fill="#6B4A2B"/><path d="M11 17L58 8l1.8 8.6L12.8 25.6z" fill="#6B4A2B"/></g><path d="M19.5 15.4l6.5-1.3-1 9.2-6.6 1.2zM33.6 12.7l6.5-1.3-1 9.2-6.6 1.2zM47.7 10l6.5-1.3-1 9.2-6.6 1.2z" fill="#F5E4BA"/><path d="M19 28l-3 6h6l3-6zM33 28l-3 6h6l3-6zM47 28l-3 6h6l3-6z" fill="#F5E4BA"/><path d="M18 42h22M18 48h14M38 48h16" fill="none" stroke="#A8843F" stroke-width="1.5" stroke-linecap="round"/><circle cx="14.5" cy="23.5" r="1.6" fill="#F2CF6B" stroke="#4A2E1A" stroke-width="1"/>'}, title:"말레이시아 영화 관객 두 배로, 2025년 1,483만 명", titleEn: "Malaysian Film Audiences Doubled to 14.83 Million in 2025",
+     body:"테오 니 칭 통신부 부장관은 FINAS 본부에서 열린 제35회 말레이시아 영화제(FFM35) 출범 행사에서, 2025년 영화 관객이 2024년 714만 명에서 107.7% 늘어 1,483만 명이었다고 밝혔습니다. 자국 영화 흥행 수입도 1억 6,657만 링깃에서 2억 4,795만 링깃으로 올라 최고 기록을 세웠고, 1위는 7,364만 링깃을 번 ‘Blood Brothers: Bara Naga’였습니다. FFM35 시상식은 11월 21일 이스타나 부다야에서 열립니다.",
+     src:"Bernama", url:"https://www.bernama.com/en/news.php?id=2618416"},
+    {tag:"문화", icon:"puppet", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><rect x="9" y="8" width="54" height="44"/><rect x="6" y="50" width="60" height="6" rx="1.5"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><rect x="10" y="10" width="52" height="41" fill="#F5E4BA"/><path d="M10 12h21c0 15-7 28-17 38h-4z" fill="#C8553D"/><path d="M62 12H41c0 15 7 28 17 38h4z" fill="#C8553D"/><path d="M8 8h56v8q-4.7 5-9.3 0-4.7 5-9.4 0-4.6 5-9.3 0-4.7 5-9.3 0-4.7 5-9.4 0-4.6 5-9.3 0z" fill="#B5462F"/><rect x="6" y="50" width="60" height="6" rx="1.5" fill="#8C5A3A"/><path d="M36 28l1.9 4.3 4.7.4-3.6 3.1 1.1 4.6-4.1-2.5-4.1 2.5 1.1-4.6-3.6-3.1 4.7-.4z" fill="#F2CF6B" stroke-width="1.2"/></g><path d="M17 22q-1 12-5 20M24 21q-2 9-6 16M55 22q1 12 5 20M48 21q2 9 6 16" fill="none" stroke="#8E3524" stroke-width="1.2" stroke-linecap="round"/>'}, title:"트렝가누 박물관, 연극 무대로 역사를 들려준다", titleEn: "Terengganu Museum Takes History to the Stage",
+     body:"트렝가누 주립박물관위원회가 10월 11일부터 13일까지 사흘간 쿠알라트렝가누의 트렝가누 승마 리조트(TER)에서 왕실 뮤지컬 연극을 올립니다. 텡쿠 달람 칼툼이 1936년에 쓴 문학 작품 ‘Syair Tawarikh Sultan Zainal Abidin III’를 알리 주소가 희곡으로 옮기고 마르주키 알리가 무대에 올린 작품으로, 술탄 자이날 아비딘 3세의 치세(1881~1918년)가 배경입니다. 위원회는 박물관이 유물과 필사본을 보존하는 곳에 그치지 않고 연구와 교육의 중심이 되도록 하려는 시도라고 설명했습니다.",
+     src:"Bernama", url:"https://www.bernama.com/en/general/news.php?id=2618420"},
+    {tag:"생활", icon:"school", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M20 28a16 16 0 0 1 32 0v22a5 5 0 0 1-5 5H25a5 5 0 0 1-5-5z"/><path d="M30 13a6 6 0 0 1 12 0" fill="none"/><rect x="14" y="32" width="6" height="15" rx="3"/><rect x="52" y="32" width="6" height="15" rx="3"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M30 13a6 6 0 0 1 12 0" fill="none" stroke-width="2.6"/><rect x="14" y="32" width="6" height="15" rx="3" fill="#C8553D"/><rect x="52" y="32" width="6" height="15" rx="3" fill="#C8553D"/><path d="M20 28a16 16 0 0 1 32 0v22a5 5 0 0 1-5 5H25a5 5 0 0 1-5-5z" fill="#E0704F"/><path d="M20.4 30h31.2" fill="none"/><rect x="26" y="37" width="20" height="14" rx="3" fill="#F2A65A"/><path d="M26 42h20" fill="none"/><rect x="33.5" y="40" width="5" height="4.4" rx="1" fill="#F2CF6B" stroke-width="1.1"/><circle cx="36" cy="23" r="2.2" fill="#F5E4BA" stroke-width="1.2"/></g><path d="M25 22q3-6 9-7" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" opacity=".6"/>'}, title:"조호르주, 연무로 모든 학교 휴교를 16일까지 연장", titleEn: "Johor Extends School Closures Through October 16 Over Haze",
+     body:"조호르 주정부는 연무 때문에 주 안의 모든 학교와 교육기관의 휴교를 10월 12일부터 16일까지 닷새 더 이어 가기로 했습니다. 조호르 섭정 툰쿠 마코타 이스마일의 명에 따른 결정으로, 주 교육·정보위원회 위원장 무하마드 나킵 가잘리 박사가 10일 성명으로 알렸습니다. 13~15일 사이 인도네시아 칼리만탄 쪽에서 불어올 바람이 국경을 넘는 오염을 실어 올 수 있다는 전망이 나왔고, 대기오염지수(API)는 170~180으로 보고됐습니다. 이 기간에 잡힌 시험과 평가는 미루고, 가능한 곳에서는 가정 학습(PdPR)을 이어 갑니다.",
+     src:"Bernama", url:"https://www.bernama.com/en/general/news.php?id=2618405"},
+    {tag:"여행", icon:"plane", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M17 46a19 19 0 0 1 38 0z"/><rect x="13" y="46" width="46" height="8" rx="3.5"/><circle cx="36" cy="23.5" r="3.6"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M36 27v2" stroke-width="3"/><circle cx="36" cy="23.5" r="3.6" fill="#DDA22F"/><path d="M17 46a19 19 0 0 1 38 0z" fill="#F2CF6B"/><rect x="13" y="46" width="46" height="8" rx="3.5" fill="#8C5A3A"/></g><path d="M23 41q2-9 11-11" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" opacity=".8"/><path d="M58 22l4.5-3.5M60 29.5h5.5M14 22l-4.5-3.5M12 29.5H6.5" fill="none" stroke="#C98B1E" stroke-width="1.6" stroke-linecap="round"/>'}, title:"KLIA에서 약 20분, 습지를 내려다보는 280실 호텔 개관", titleEn: "A 280-Room Wetland-View Hotel Opens About 20 Minutes From KLIA",
+     body:"가무다 랜드가 가무다 코브에 280실 규모의 호텔 ‘아사이 가무다 코브(ASAI Gamuda Cove)’의 개관 행사를 열었습니다. 아사이(ASAI) 브랜드 호텔 가운데 가장 크고, 쿠알라룸푸르 국제공항(KLIA)에서 약 20분 거리입니다. 450헥타르 규모의 파야 인다 디스커버리 웻랜즈 옆에 자리해 습지를 내려다보는 인피니티 풀을 두었고, 식음 시설은 세 곳입니다. 첫 손님은 사전 개관 단계인 9월 15일에 맞았습니다.",
+     src:"BernamaBiz", url:"https://www.bernamabiz.com/news.php?id=2618412"},
+    {tag:"생활", icon:"shophouse", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><rect x="22" y="8" width="30" height="48"/><rect x="50" y="28" width="13" height="28"/><circle cx="14" cy="42" r="7"/><path d="M14 49v7M6 56h60" fill="none"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M14 47v9" fill="none" stroke-width="2"/><circle cx="14" cy="42" r="7" fill="#5FAE84"/><rect x="50" y="28" width="13" height="28" fill="#DDA56B"/><rect x="24" y="11" width="26" height="45" fill="#F5E4BA"/><rect x="22" y="8" width="30" height="4.5" fill="#C8553D"/><rect x="33" y="47" width="8" height="9" fill="#8C5A3A"/><path d="M6 56h60" fill="none"/></g><g fill="#A9D9EC" stroke="#4A2E1A" stroke-width="1"><rect x="28" y="16" width="7" height="5"/><rect x="39" y="16" width="7" height="5"/><rect x="28" y="24" width="7" height="5"/><rect x="39" y="24" width="7" height="5"/><rect x="28" y="32" width="7" height="5"/><rect x="39" y="32" width="7" height="5"/><rect x="28" y="40" width="7" height="5"/><rect x="39" y="40" width="7" height="5"/><rect x="53.5" y="33" width="6" height="5"/><rect x="53.5" y="42" width="6" height="5"/></g><path d="M10.5 40q1-3.5 4-4" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" opacity=".6"/>'}, title:"부킷 잘릴 서민 주택 도시 ‘반다르 마다니’, 월요일부터 1단계 등록", titleEn: "Registration Opens Monday for the Bandar Madani Bukit Jalil Affordable Township",
+     body:"안와르 총리는 9일 2027년 예산안을 발표하며, 1만 7,000가구 규모로 계획된 서민 주택 도시 ‘반다르 마다니 부킷 잘릴’의 1단계 등록을 월요일에 시작한다고 밝혔습니다. 수직형 학교를 비롯한 편의 시설을 갖춘 주거지로 개발됩니다. 정해진 수입이 없는 자영업자를 비롯해 생애 첫 주택 구입자 8만 명을 돕도록 주택신용보증제도(SJKP)로 최대 200억 링깃의 대출 보증도 제공합니다. 등록 자격은 기사에 나와 있지 않습니다.",
+     src:"Malay Mail", url:"https://www.malaymail.com/news/malaysia/2026/10/09/pm-anwar-registration-to-open-next-week-for-affordable-smart-city-bandar-madani-bukit-jalil/238486"}
+  ],
+  trend: {
+    title: "8월 도소매 판매 1,730억 링깃, 1년 전보다 10.5% 늘었다", titleEn: "August Wholesale and Retail Sales Reach RM173 Billion, Up 10.5%",
+    asOf: "2026년 10월 9일 통계청 발표 기준 (2026년 8월 수치)",
+    body: "말레이시아 통계청(DOSM)이 9일 발표한 2026년 8월 도소매업 판매액은 1,730억 링깃으로 1년 전보다 10.5% 늘었습니다. 판매량 지수도 3.6% 올랐고, 도매·소매·자동차 세 부문이 모두 성장했습니다.",
+    points: [
+      "도매업은 812억 링깃으로 115억 링깃(16.5%) 늘어 성장에 가장 크게 기여했습니다.",
+      "소매업은 717억 링깃으로 44억 링깃(6.5%) 늘었습니다.",
+      "자동차 부문은 201억 링깃으로 5억 링깃(2.5%) 늘었습니다.",
+      "세 부문이 더한 판매 증가분은 모두 164억 링깃입니다."
+    ],
+    src: [["Malay Mail · Bernama (2026.10.9)","https://www.malaymail.com/news/money/2026/10/09/dosm-wholesale-trade-leads-the-charge-as-malaysias-august-sales-surge-to-rm173b/238380"]]
+  },
+  life: {
+    title: "식당에서 통하는 한마디, 그리고 손짓", titleEn: "The Phrases and Hand Gestures That Work at Any Malaysian Eatery",
+    intro: "말레이시아 사람들은 식당에서 짧은 한마디에 손짓을 곁들여 주문합니다. 현지 매체 SAYS가 꼽은 일곱 가지 가운데 바로 써먹을 만한 것을 골랐습니다.",
+    tips: [
+      ["앉자마자 ‘바기 메뉴’","Bagi menu는 자리에 앉아 메뉴판을 달라고 할 때 쓰는 말입니다. 식사를 마치고 디저트가 궁금해질 때도 씁니다."],
+      ["덜 달게는 ‘쿠랑 마니스’","Kurang manis는 덜 달게 해 달라는 말입니다. 아침 테 타릭을 덜 달게 마시고 싶을 때 씁니다."],
+      ["매운맛이 모자라면 ‘칠리 포통’","Bagi cili potong은 썬 고추를 달라는 말입니다. 통고추가 아니라 썬 것으로 달라는 뜻에서 칼질하는 손동작을 곁들입니다."],
+      ["밥 추가는 ‘나시 탐바 사투’","Nasi tambah satu는 밥을 하나 더 달라는 말입니다. 로티 차나이에 커리가 빠져 나왔다면 kuah kari를 달라고 하면 됩니다."],
+      ["계산은 ‘민탁 빌’, 마막에서는 ‘보스, 키라’","Mintak bill은 식사를 마치고 계산서를 달라는 말로, 허공에 서명하는 시늉을 함께 합니다. 마막 식당에서는 같은 뜻으로 Bos, kira라고 합니다."]
+    ],
+    src: [["SAYS: 7 Hand Gestures Malaysians Will Automatically Make When They're Out Eating (2017.9.14)","https://says.com/my/lifestyle/hand-gestures-malaysians-make-when-ordering-food"]]
+  },
+  shows: {
+    intro: "쿠알라룸푸르에서 지금 볼 수 있거나 곧 열리는 전시와 공연입니다.",
+    items: [
+      {kind:"전시", title:"로버트 라우션버그와 아시아 (Robert Rauschenberg and Asia)", when:"11월 1일까지", where:"일함 갤러리(ILHAM Gallery) 5층", memo:"미국 현대미술 작가 로버트 라우션버그의 전시입니다.", url:"https://ilhamgallery.com/exhibitions/robert-rauschenberg-and-asia/"},
+      {kind:"전시", title:"The Bouquet and the Wreath (Rebirth)", when:"10월 11일까지", where:"일함 갤러리 3층", memo:"오늘(11일)이 마지막 날입니다.", url:"https://ilhamgallery.com/exhibitions/the-bouquet-and-the-wreath-rebirth/"},
+      {kind:"연극", title:"쇼트+스위트 말레이시아 페스티벌 2026: 연극 (Short + Sweet Malaysia Festival 2026: Theatre)", when:"10월 16~17일, 23~25일", where:"KLPac 펜타스 2 (Pentas 2)", memo:"10분 이내의 짧은 창작극을 여러 편 묶어 올리는 경연 축제로, 25일은 갈라와 시상식입니다.", url:"https://www.klpac.org/shows/short-sweet-malaysia-festival-2026-theatre/"},
+      {kind:"오페라", title:"투란도트 (Turandot)", when:"10월 17~25일", where:"KLPac", memo:"KLPac 오케스트라가 연주합니다.", url:"https://www.klpac.org/shows/turandot/"},
+      {kind:"클래식", title:"스티븐 허프와 함께하는 저녁 (A Regal Evening with Stephen Hough)", when:"10월 24일", where:"데완 필하모닉 페트로나스 (Dewan Filharmonik PETRONAS)", memo:"히로카미 준이치가 지휘하는 말레이시아 필하모닉과 피아니스트 스티븐 허프가 베토벤 피아노 협주곡 5번 ‘황제’와 교향곡 4번을 연주합니다.", url:"https://www.mpo.com.my/season-2026/a-regal-evening-with-stephen-hough"},
+      {kind:"클래식", title:"브라이언 탄 헌정 공연 (Tribute to Brian Tan with The klpac Orchestra)", when:"10월 30일~11월 1일", where:"KLPac", memo:"KLPac 오케스트라의 공연입니다.", url:"https://www.klpac.org/shows/tribute-to-brian-tan-with-the-klpac-orchestra/"},
+      {kind:"클래식", title:"보르네오의 울림: 알레나 무랑과 MPO (Beats of Borneo: Alena Murang with the MPO)", when:"10월 31일", where:"데완 필하모닉 페트로나스 (Dewan Filharmonik PETRONAS)", memo:"히로카미 준이치가 지휘하는 말레이시아 필하모닉이 라벨 ‘쿠프랭의 무덤’과 모차르트 교향곡 40번을 연주하고, 알레나 무랑이 비비안 추아의 사페 협주곡을 초연합니다.", url:"https://www.mpo.com.my/season-2026/beats-of-borneo-alena-murang-with-the-mpo"}
+    ]
+  },
+  music: {
+    title: "Daydream", artist: "오타 브라운 (Ota Brown)", year: "2024",
+    mood: "서두를 일 없는 일요일 오후의 따뜻함",
+    why: "바르셀로나에서 태어나 리버풀에서 활동하는 싱어송라이터 오타 브라운의 데뷔 싱글로, 재즈와 솔, 보사노바를 섞은 곡입니다. 해야 할 일이 없는 느린 일요일 오후에 따뜻하고 느긋하게 듣기 좋습니다.",
+    query: "Ota Brown Daydream"
+  },
+  fact: {
+    title: "10월 11일은 왜 ‘세계 여자아이의 날’일까", titleEn: "Why Is October 11 the International Day of the Girl Child?",
+    body: "오늘 10월 11일은 유엔이 정한 ‘세계 여자아이의 날’입니다. 유엔 총회는 2011년 12월 19일 결의 66/170을 채택해 이날을 기념일로 선포했습니다. 여자아이의 권리와 세계 곳곳의 여자아이들이 겪는 고유한 어려움을 알리자는 뜻입니다.",
+    more: [
+      "1995년 베이징 세계여성회의에서 채택된 베이징 선언과 행동강령은 여자아이의 권리를 처음으로 따로 짚은 문서입니다.",
+      "2026년 주제는 ‘조혼을 끝내고 여자아이의 권리에 투자하자’입니다.",
+      "유엔은 학교에 다니지 못하는 여자아이가 1억 3,300만 명이라고 밝힙니다."
+    ],
+    src: [["유엔: International Day of the Girl Child","https://www.un.org/en/observances/girl-child-day"]]
+  }
+},
+{
   date: "2026-10-10",
   quote: {
     ko: "10월이 있는 세상에 살고 있어서 정말 기뻐요.",
