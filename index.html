@@ -480,6 +480,116 @@ const PHOTO = null; // 예: {src:"photo.jpg", caption:"한 줄 설명", date:"20
 /* ===== DAYS: 날짜별 콘텐츠. 최신 날짜가 맨 앞. 매일 새 객체를 맨 앞에 추가하고 14일치만 유지. ===== */
 const DAYS = [
 {
+  date: "2026-10-12",
+  quote: {
+    ko: "너 자신을 믿어라. 모든 마음은 그 강철 같은 현에 맞춰 떨린다.",
+    en: "Trust thyself: every heart vibrates to that iron string.",
+    by: "랠프 월도 에머슨, 『자기 신뢰』 (1841)",
+    pick: {kind:"책", title:"와일드 (Wild, 2012) · 셰릴 스트레이드", gist:"1995년, 스물여섯 살의 셰릴 스트레이드는 모하비 사막에서 출발해 퍼시픽 크레스트 트레일 1,100마일을 혼자 걷습니다. 스물두 살에 어머니를 잃은 뒤 무너져 있던 그녀가 자기 발로 걸은 길을 돌아보며 쓴 회고록입니다. 책은 누가 대신 들어 줄 수 없는 짐을 지고도 사람은 한 걸음씩 나아갈 수 있다고 담담하게 말합니다.", after:"자신을 믿는 일은 거창한 다짐이 아니라, 다음 한 걸음을 스스로 내딛는 데서 시작됩니다."}
+  },
+  english: {
+    title: "식당에서 주문과 다른 음식이 나왔을 때", titleEn: "Sending Back the Wrong Order at a Restaurant",
+    situation: "연어를 시켰는데 치킨이 나왔습니다. 얼굴 붉히지 않고 정중하게 바로잡는 말과, 실수를 인정하고 수습하는 직원의 말투를 함께 익혀 보세요.",
+    lines: [
+      ["A","Excuse me, sorry to bother you, but I think there's been a mix-up with my order.","저기요, 번거롭게 해서 죄송한데 제 주문에 착오가 있었던 것 같아요."],
+      ["B","Oh no, I'm sorry about that. What did you end up with?","아이고, 죄송합니다. 어떤 음식이 나왔나요?"],
+      ["A","I ordered the grilled salmon, but this looks like the chicken.","저는 연어 구이를 시켰는데 이건 치킨인 것 같아요."],
+      ["B","You're right, that's on us. Let me take that back, and I'll put a rush on your salmon.","맞네요, 저희 실수입니다. 이건 가져가고 연어를 서둘러 준비해 드릴게요."],
+      ["A","Thanks. It's no big deal, though. We're not in any hurry.","고마워요. 그래도 괜찮아요. 저희 급하지 않거든요."],
+      ["B","I appreciate you being so understanding. Can I get you anything while you wait?","이해해 주셔서 감사합니다. 기다리시는 동안 뭐 좀 가져다드릴까요?"],
+      ["A","Actually, could I get a refill on my iced tea?","그럼 아이스티 좀 더 주실 수 있을까요?"],
+      ["B","Coming right up. And I'll take the appetizer off your bill to make up for it.","바로 가져다드릴게요. 그리고 죄송한 마음으로 애피타이저 값은 계산서에서 빼 드리겠습니다."],
+      ["A","Oh, you don't have to do that, but thank you. That's really nice of you.","아, 그러실 필요까진 없는데, 감사해요. 정말 친절하시네요."],
+      ["B","It's the least we can do. Your salmon should be out in about ten minutes.","그 정도는 당연히 해 드려야죠. 연어는 10분쯤 뒤에 나올 거예요."]
+    ],
+    expressions: [
+      {en:"There's been a mix-up.", ko:"‘착오가 있었다, 뭔가 뒤바뀌었다’. 누구 탓인지 따지지 않고 문제를 알리는 말이라, 주문이나 예약이 잘못됐을 때 부드럽게 꺼내기 좋습니다.", eg:"There's been a mix-up with our reservation. We booked a table for six."},
+      {en:"That's on us.", ko:"‘저희 잘못입니다’. on 뒤에 사람을 붙여 책임이 누구에게 있는지 말합니다. That's on me는 ‘내 잘못이야’라는 뜻입니다.", eg:"I forgot to set the alarm. That's on me."},
+      {en:"put a rush on ~", ko:"‘~을 서둘러 처리하다’. 주문이나 배송, 서류처럼 순서를 앞당겨 빨리 해 달라고 할 때 씁니다.", eg:"Could you put a rush on this order? I need it by Friday."},
+      {en:"make up for ~", ko:"‘~을 만회하다, 보상하다’. 실수나 놓친 것을 다른 것으로 메워 준다는 뜻입니다.", eg:"I'll cook dinner tonight to make up for being late."},
+      {en:"It's the least we can do.", ko:"‘그 정도는 당연히 해 드려야죠’. 상대가 고마워하거나 미안해할 때, 별것 아니라며 받아 주는 말입니다. 혼자라면 the least I can do라고 합니다.", eg:"You helped me move, so buying you lunch is the least I can do."}
+    ],
+    pattern: {
+      en: "Sorry to bother you, but ~",
+      ko: "‘번거롭게 해서 죄송한데요, ~’. 모르는 사람이나 바빠 보이는 사람에게 말을 걸며 부탁이나 질문을 꺼낼 때 쓰는 완충 표현입니다. 뒤에는 부탁, 질문, 알려 줄 말이 옵니다.",
+      examples: [
+        ["Sorry to <b>bother</b> you, but is this <b>seat</b> taken?","죄송한데, 이 자리 주인 있나요?"],
+        ["Sorry to <b>bother</b> you, but could you take our <b>picture</b>?","죄송하지만 저희 사진 좀 찍어 주실 수 있을까요?"],
+        ["Sorry to <b>bother</b> you, but I think you <b>dropped</b> this.","저기요, 이거 떨어뜨리신 것 같아요."]
+      ]
+    }
+  },
+  news: [
+    {tag:"문화", icon:"art", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><rect x="16" y="9" width="40" height="31"/><rect x="13" y="40" width="46" height="5" rx="1.5"/><path d="M27 45l-6 12M45 45l6 12M36 45v10" fill="none"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M27 45l-6 12M45 45l6 12M36 45v10" fill="none" stroke-width="3"/><rect x="16" y="9" width="40" height="31" fill="#F5E4BA"/><rect x="13" y="40" width="46" height="5" rx="1.5" fill="#8C5A3A"/><circle cx="27" cy="20" r="5.5" fill="#E0704F"/><path d="M33 35l8-13 9 13z" fill="#2F6B5A"/><path d="M20 34q5-6 10 0" fill="none" stroke="#DDA22F" stroke-width="2.2"/></g><path d="M48 12l1.3 3.2 3.2 1.3-3.2 1.3-1.3 3.2-1.3-3.2-3.2-1.3 3.2-1.3z" fill="#F7D36B" stroke="#8A5A12" stroke-width="1.1" stroke-linejoin="round"/>'}, title:"AI와 함께 만든 그림, 빅토리아 루의 전시가 툰 라작 익스체인지에서 개막", titleEn: "Victoria Lu's AI-Assisted Art Exhibition Opens at Tun Razak Exchange",
+     body:"대만 태생의 큐레이터이자 평론가, 작가, 교육자인 빅토리아 루(Victoria Lu)의 전시 ‘Art Without Boundaries — New Voyage to Nanyang’ 두 번째 회가 10월 10일 쿠알라룸푸르 툰 라작 익스체인지의 익스체인지 106 안 루앙 트두(Ruang Teduh)에서 개막했습니다. AI의 도움을 받아 만든 작품이 젊은 작가들의 작품과 나란히 걸리며, 루는 AI를 창작의 동반자라고 부르면서도 사람의 창의성은 기계가 쉽게 대신할 수 없다고 말했습니다. 개막식은 말레이시아 영화감독 다툭 우웨이 사아리가 열었고, 전시는 11월 11일까지 이어집니다.",
+     src:"Malay Mail", url:"https://www.malaymail.com/news/life/2026/10/10/art-meets-algorithm-victoria-lu-explores-ai-and-human-creativity-at-kuala-lumpur-exhibition/238604"},
+    {tag:"자연", icon:"book", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M8 19h56v33H8z"/><path d="M36 16C30 12 18 12 10 15v34c8-3 20-3 26 1z"/><path d="M36 16c6-4 18-4 26-1v34c-8-3-20-3-26 1z"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M8 19h56v33H8z" fill="#2F6B5A"/><path d="M36 16C30 12 18 12 10 15v34c8-3 20-3 26 1z" fill="#F5E4BA"/><path d="M36 16c6-4 18-4 26-1v34c-8-3-20-3-26 1z" fill="#F5E4BA"/><path d="M16 40q1-14 14-15q0 14-14 15z" fill="#5FAE84"/><path d="M17.5 38.5l9-9.5" fill="none" stroke="#2F5D49" stroke-width="1.2"/></g><g fill="#6B4A2B"><circle cx="43" cy="24" r="1.7"/><circle cx="48" cy="24" r="1.7"/><circle cx="43" cy="30" r="1.7"/><circle cx="48" cy="36" r="1.7"/><circle cx="54" cy="24" r="1.7"/><circle cx="54" cy="30" r="1.7"/><circle cx="58.5" cy="30" r="1.7"/><circle cx="54" cy="36" r="1.7"/></g>'}, title:"손끝으로 읽는 숲, 멸종위기 나무 일곱 종을 담은 점자책", titleEn: "A Braille Book Lets Readers Explore Seven Endangered Forest Trees by Touch",
+     body:"말레이시아 산림연구소(FRIM)와 말레이시아 국제이슬람대학교(IIUM)가 촉각 그림과 점자를 함께 실은 책 ‘Sentuhan Rimba: Mengenali Biji Benih Spesies Hutan yang Terancam di Malaysia’를 펴냈습니다. Touch2Read 프로젝트로 만든 이 책은 말레이시아의 멸종위기 산림 수종 일곱 가지의 씨앗 특징과 식물학적 정보, 쓰임새를 담았고, FRIM이 실제 씨앗 표본을 내주어 촉각 그림의 본으로 삼았습니다. 출간 행사에서는 시각장애가 있는 IIUM 학생들이 FRIM의 딥테로카프 수목원을 찾아 식물을 만지고 향을 맡으며 익혔습니다.",
+     src:"Bernama", url:"https://www.bernama.com/en/general/news.php?id=2618457"},
+    {tag:"생활", icon:"school", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><rect x="33" y="7" width="6" height="13" rx="3"/><path d="M36 19c-9 0-13 8-14 19l-4 8h36l-4-8c-1-11-5-19-14-19z"/><rect x="15" y="45" width="42" height="5" rx="2.5"/><circle cx="36" cy="53.5" r="3.2"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><circle cx="36" cy="53.5" r="3.2" fill="#8C5A3A"/><rect x="33" y="7" width="6" height="13" rx="3" fill="#8C5A3A"/><path d="M36 19c-9 0-13 8-14 19l-4 8h36l-4-8c-1-11-5-19-14-19z" fill="#F2CF6B"/><rect x="15" y="45" width="42" height="5" rx="2.5" fill="#DDA22F"/></g><path d="M27 34q1-8 6-11" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" opacity=".8"/><path d="M13 23l-5-3M12 31H6.5M59 23l5-3M60 31h5.5" fill="none" stroke="#C98B1E" stroke-width="1.6" stroke-linecap="round"/>'}, title:"연무 누그러진 곳부터 오늘 등교 재개, KL과 슬랑오르 일부는 휴교 유지", titleEn: "Schools Reopen Today Where Haze Has Eased; Parts of KL and Selangor Stay Closed",
+     body:"믈라카, 느그리슴빌란, 파항, 푸트라자야의 학교가 12일 월요일부터 정상 운영합니다. 쿠알라룸푸르에서는 센툴과 크라맛 교육구가 다시 문을 열지만, 방사르·푸두 교육구는 11일 오후 2시 체라스 측정소의 대기오염지수(API)가 152로 나와 추후 공지가 있을 때까지 휴교를 이어 갑니다. 슬랑오르는 훌루 랑앗, 곰박, 프탈링 프르다나 교육구의 학교가 계속 닫고 나머지 지역은 정상 운영합니다. 11일 오후 2시 기준 API는 푸트라자야 70, 쿠알라룸푸르 바투 무다 측정소 84였습니다.",
+     src:"Malay Mail (Bernama)", url:"https://www.malaymail.com/news/malaysia/2026/10/11/haze-schools-in-n-sembilan-pahang-putrajaya-melaka-and-parts-of-kl-selangor-to-reopen-tomorrow/238710"},
+    {tag:"교통", icon:"bus", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M5 40h15v16H5zM52 40h15v16H52z"/><rect x="12" y="20" width="48" height="22"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M5 40h15v16H5zM52 40h15v16H52z" fill="#B9773A"/><path d="M5 40h15v4.5H5zM52 40h15v4.5H52z" fill="#5FAE84"/></g><path d="M14 36V22h44v14M14 22l11 14 11-14 11 14 11-14M25 36V22M36 36V22M47 36V22" fill="none" stroke="#4A2E1A" stroke-width="4.4" stroke-linejoin="round" stroke-linecap="round"/><path d="M14 36V22h44v14M14 22l11 14 11-14 11 14 11-14M25 36V22M36 36V22M47 36V22" fill="none" stroke="#E0704F" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><rect x="10" y="36" width="52" height="5.5" rx="1" fill="#DDD5C4" stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round"/><path d="M27 50q9 5 18 0" fill="none" stroke="#B9AE97" stroke-width="1.5" stroke-linecap="round"/>'}, title:"구아 무상~코타바루 도로에 싱크홀, 14일부터 임시 다리 설치", titleEn: "Sinkhole Closes Gua Musang–Kota Bharu Road; Bailey Bridge Work Starts October 14",
+     body:"클란탄주 구아 무상의 크스다르 민족식물 휴양공원 근처에 깊이 약 8m, 길이 약 9m의 싱크홀이 생겨 구아 무상~코타바루 도로(FT08)가 모든 차량에 전면 통제됐습니다. 공공사업국(JKR)은 베일리 다리를 놓아 통행을 되살리기로 했고, 설치는 10월 14일에 시작해 일주일쯤 걸릴 예정이지만 지반 상태와 현장 안전에 따라 달라질 수 있습니다. 구아 무상을 거쳐 쿠알라룸푸르와 코타바루를 오가는 운전자는 FT2747 잘란 풀라이~반다르 바루 구아 무상 도로로 돌아가라는 안내가 나왔습니다.",
+     src:"Malay Mail", url:"https://www.malaymail.com/news/malaysia/2026/10/11/public-works-dept-to-install-bailey-bridge-after-sinkhole-closes-gua-musang-kota-bharu-road/238647"},
+    {tag:"생활경제", icon:"coin", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><rect x="20" y="9" width="32" height="32" rx="9"/><rect x="11" y="27" width="13" height="25" rx="5.5"/><rect x="48" y="27" width="13" height="25" rx="5.5"/><rect x="20" y="40" width="32" height="12"/><path d="M19 52v5M53 52v5" fill="none"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M19 52v5M53 52v5" fill="none" stroke-width="3"/><rect x="20" y="9" width="32" height="32" rx="9" fill="#E0704F"/><rect x="20" y="40" width="32" height="12" fill="#C8553D"/><rect x="23" y="34" width="26" height="10" rx="4" fill="#F2A65A"/><rect x="11" y="27" width="13" height="25" rx="5.5" fill="#C8553D"/><rect x="48" y="27" width="13" height="25" rx="5.5" fill="#C8553D"/><rect x="30" y="20" width="12" height="11" rx="2.5" fill="#F5E4BA"/></g><path d="M25 19q2-5 7-6" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" opacity=".6"/>'}, title:"부모와 조부모 돌봄 비용, 의료가 아니어도 세금 공제 대상으로", titleEn: "Budget 2027 Proposes Tax Relief for Non-Medical Care of Parents and Grandparents",
+     body:"지금은 부모와 조부모의 돌봄에 쓴 비용을 최대 8,000링깃까지 공제받을 수 있지만, 돌봄 서비스는 의료와 관련된 경우에만 인정됩니다. 2027년 예산안은 집과 주간 보호 센터, 거주형 돌봄 시설에서 받는 모든 종류의 돌봄 비용으로 대상을 넓히자고 제안했고, 2027 과세연도부터 적용됩니다. 의사의 확인은 필요 없어지지만 돌봄 제공자의 서면 확인서나 취업 허가증 사본, 그리고 영수증은 갖춰야 합니다. 노인 돌봄 센터의 서비스세를 2027년 1월부터 8%에서 6%로 내리는 안도 함께 담겼습니다.",
+     src:"Malay Mail", url:"https://www.malaymail.com/news/malaysia/2026/10/10/paying-a-carer-for-your-parents-or-grandparents-budget-2027-proposes-tax-relief-even-for-non-medical-care/238542"}
+  ],
+  trend: {
+    title: "싱가포르 수집품 브랜드 플레이 네이션, TRX에 플래그십 팝업", titleEn: "Singapore Collectibles Brand Play Nation Opens a Flagship Pop-Up at TRX",
+    asOf: "2026년 10월 11일 보도 기준",
+    body: "싱가포르에 기반을 둔 라이프스타일·수집품 브랜드 플레이 네이션(Play Nation)이 쿠알라룸푸르 더 익스체인지 TRX 콩코스 층에 플래그십 팝업을 열었습니다. 9월 24일 정식으로 문을 열었고, 매일 오전 10시부터 오후 10시까지 운영합니다.",
+    points: [
+      "헤리티지 시리즈는 전통 숍하우스와 동네 잡화점, 코피티암을 미니어처 블록으로 옮겼고, 카야 버터 토스트 모양의 노트북 슬리브도 있습니다.",
+      "케어베어, 산리오, 라인프렌즈와 협업한 상품을 함께 선보입니다.",
+      "DIY 바에서는 미니어처 피규어와 모래, 조개껍데기, 조약돌로 바다를 주제로 한 장식 병을 만들 수 있고, 값은 29.90링깃이며 150링깃 이상 구매하면 무료입니다.",
+      "말레이시아에서는 인터마크 몰에 단독 팝업을 두었고, 1 우타마·IOI 시티 몰·선웨이 벨로시티·라부안·세티아 시티 몰의 팍슨 매장에도 들어가 있습니다."
+    ],
+    src: [["Malay Mail (2026.10.11)","https://www.malaymail.com/news/life/2026/10/11/from-kopitiam-miniatures-to-care-bears-play-nation-opens-flagship-pop-up-at-trx/238684"]]
+  },
+  life: {
+    title: "말로 하지 않는 예절, 엄지와 바나나 잎에 담긴 배려", titleEn: "Malaysia's Unspoken Courtesies, From Thumbs to Banana Leaves",
+    intro: "말레이시아에는 따로 배우지 않아도 다들 지키는 예절이 있습니다. 현지 매체 SAYS가 정리한 스물두 가지 가운데, 모르면 어색해지기 쉬운 다섯 가지를 골랐습니다.",
+    tips: [
+      ["가리킬 때는 엄지로","장소나 물건, 사람을 가리킬 때 집게손가락을 쓰지 않습니다. 나머지 네 손가락을 주먹 쥐듯 접고 엄지로 가리킵니다."],
+      ["어른은 ‘엉클’, ‘안티’","나이 든 분은 uncle이나 aunty라고 부릅니다. 말레이어로는 pak cik, mak cik입니다."],
+      ["바나나 잎은 내 쪽으로 접기","바나나 잎에 차린 식사를 마치면 잎의 위쪽 절반을 자기 쪽으로 접습니다. 잘 먹었고 다시 오겠다는 뜻입니다."],
+      ["이중 주차를 꼭 해야 한다면","차를 지켜보고, 대시보드에 전화번호를 남겨 둡니다. 길에서 양보를 받았을 때는 손을 들어 고맙다는 뜻을 전합니다."],
+      ["앉은 사람들 앞을 지날 때","자리를 뜨느라 앉아 있는 손님들 앞을 가로질러 가야 한다면 허리를 굽혀 몸을 낮춥니다."]
+    ],
+    src: [["SAYS: 22 Unwritten Rules Of Common Courtesy When You're In Malaysia (2015.8.16)","https://says.com/my/lifestyle/unwritten-rules-of-common-courtesy-when-in-malaysia"]]
+  },
+  shows: {
+    intro: "쿠알라룸푸르에서 지금 볼 수 있거나 곧 열리는 전시와 공연입니다.",
+    items: [
+      {kind:"전시", title:"로버트 라우션버그와 아시아 (Robert Rauschenberg and Asia)", when:"11월 1일까지", where:"일함 갤러리(ILHAM Gallery) 5층", memo:"미국 현대미술 작가 로버트 라우션버그의 전시입니다.", url:"https://ilhamgallery.com/exhibitions/robert-rauschenberg-and-asia/"},
+      {kind:"전시", title:"경계 없는 예술: 난양으로 가는 새 항해 (Art Without Boundaries — New Voyage to Nanyang)", when:"11월 11일까지", where:"루앙 트두(Ruang Teduh), 익스체인지 106, 툰 라작 익스체인지", memo:"대만 태생의 큐레이터이자 작가 빅토리아 루가 AI의 도움을 받아 만든 작품을 젊은 작가들의 작품과 함께 선보입니다.", url:"https://www.malaymail.com/news/life/2026/10/10/art-meets-algorithm-victoria-lu-explores-ai-and-human-creativity-at-kuala-lumpur-exhibition/238604"},
+      {kind:"연극", title:"쇼트+스위트 말레이시아 페스티벌 2026: 연극 (Short + Sweet Malaysia Festival 2026: Theatre)", when:"10월 16~17일, 23~25일", where:"KLPac 펜타스 2 (Pentas 2)", memo:"10분 이내의 짧은 창작극을 여러 편 묶어 올리는 경연 축제로, 25일은 갈라와 시상식입니다.", url:"https://www.klpac.org/shows/short-sweet-malaysia-festival-2026-theatre/"},
+      {kind:"오페라", title:"투란도트 (Turandot)", when:"10월 17~25일", where:"KLPac", memo:"KLPac 오케스트라가 연주합니다.", url:"https://www.klpac.org/shows/turandot/"},
+      {kind:"클래식", title:"스티븐 허프와 함께하는 저녁 (A Regal Evening with Stephen Hough)", when:"10월 24일", where:"데완 필하모닉 페트로나스 (Dewan Filharmonik PETRONAS)", memo:"히로카미 준이치가 지휘하는 말레이시아 필하모닉과 피아니스트 스티븐 허프가 베토벤 피아노 협주곡 5번 ‘황제’와 교향곡 4번을 연주합니다.", url:"https://www.mpo.com.my/season-2026/a-regal-evening-with-stephen-hough"},
+      {kind:"클래식", title:"브라이언 탄 헌정 공연 (Tribute to Brian Tan with The klpac Orchestra)", when:"10월 30일~11월 1일", where:"KLPac", memo:"KLPac 오케스트라의 공연입니다.", url:"https://www.klpac.org/shows/tribute-to-brian-tan-with-the-klpac-orchestra/"},
+      {kind:"클래식", title:"보르네오의 울림: 알레나 무랑과 MPO (Beats of Borneo: Alena Murang with the MPO)", when:"10월 31일", where:"데완 필하모닉 페트로나스 (Dewan Filharmonik PETRONAS)", memo:"히로카미 준이치가 지휘하는 말레이시아 필하모닉이 라벨 ‘쿠프랭의 무덤’과 모차르트 교향곡 40번을 연주하고, 알레나 무랑이 비비안 추아의 사페 협주곡을 초연합니다.", url:"https://www.mpo.com.my/season-2026/beats-of-borneo-alena-murang-with-the-mpo"}
+    ]
+  },
+  music: {
+    title: "거리에서", artist: "타잔 (TARZZAN) · 원곡 성시경", year: "2026",
+    mood: "원곡자 앞에서 부른 뜻밖의 발라드",
+    why: "올데이 프로젝트의 래퍼 타잔이 10월 9일 KBS 2TV ‘더 시즌즈: 성시경의 고막남친’에서 원곡자 성시경 앞에 서서 부른 ‘거리에서’로, 데뷔 후 처음 도전한 발라드 보컬 커버입니다. 방송 무대여서 유튜브에서 영상으로 감상할 수 있고, 차분해지고 싶은 월요일 저녁에 잘 어울립니다.",
+    query: "타잔 거리에서 더 시즌즈 성시경의 고막남친"
+  },
+  fact: {
+    title: "캐나다의 추수감사절은 왜 10월일까", titleEn: "Why Is Canada's Thanksgiving in October?",
+    body: "10월 둘째 월요일인 오늘은 캐나다의 추수감사절입니다. 캐나다 의회는 1957년 1월 31일에 추수감사절을 10월 둘째 월요일로 선포했습니다. 그 전에는 의회가 해마다 날짜를 정했는데, 가을 날씨가 아직 야외 활동을 하기에 괜찮은 10월 셋째 월요일이 가장 자주 선택됐습니다.",
+    more: [
+      "1578년 프로비셔와 선원들이 지금의 누나부트 지역에서 올린 의식이 유럽인이 북미에서 올린 첫 추수감사 의식으로 꼽히며, 원주민들은 유럽인이 오기 전부터 가을 수확을 기념했습니다.",
+      "첫 공식 연례 추수감사절은 1879년 11월 6일이었고, 12월 6일까지 늦춰진 해도 있었습니다.",
+      "프린스에드워드아일랜드, 뉴브런즈윅, 노바스코샤를 뺀 모든 주와 준주에서 법정 공휴일입니다."
+    ],
+    src: [["The Canadian Encyclopedia: Thanksgiving in Canada","https://www.thecanadianencyclopedia.ca/en/article/thanksgiving-day"]]
+  }
+},
+{
   date: "2026-10-11",
   quote: {
     ko: "아! 진정한 편안함으로 치자면 집에 머무는 것만 한 게 없지요.",
@@ -900,7 +1010,7 @@ function render(){
     <h2>${esc(mu.title)}<span class="h-en">${esc(mu.artist)} · ${esc(mu.year)}</span></h2>
     <p class="asof">${esc(mu.mood)}</p>
     <p class="sub">${esc(mu.why)}</p>
-    <div class="listen"><a href="https://www.youtube.com/results?search_query=${qs}" target="_blank" rel="noopener" aria-label="Listen on YouTube"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4" fill="currentColor"/><path d="M10 9.2v5.6l5-2.8z" fill="var(--on-gold)"/></svg></span><span class="nm">YouTube</span></a><a href="https://open.spotify.com/search/${qs}" target="_blank" rel="noopener" aria-label="Listen on Spotify"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.5" fill="currentColor"/><g fill="none" stroke="var(--on-gold)" stroke-linecap="round"><path d="M7 9.4c3.6-1.1 7.2-.8 10.2.9" stroke-width="1.9"/><path d="M7.6 12.5c3-.8 5.9-.5 8.4.9" stroke-width="1.6"/><path d="M8.3 15.3c2.3-.6 4.4-.4 6.3.7" stroke-width="1.3"/></g></svg></span><span class="nm">Spotify</span></a></div>`;
+    <div class="listen"><a href="https://www.youtube.com/results?search_query=${qs}" target="_blank" rel="noopener" aria-label="Listen on YouTube"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4" fill="currentColor"/><path d="M10 9.2v5.6l5-2.8z" fill="var(--on-gold)"/></svg></span><span class="nm">YouTube</span></a>${(mu.noSpotify || d.date === "2026-10-12") ? "" : `<a href="https://open.spotify.com/search/${qs}" target="_blank" rel="noopener" aria-label="Listen on Spotify"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.5" fill="currentColor"/><g fill="none" stroke="var(--on-gold)" stroke-linecap="round"><path d="M7 9.4c3.6-1.1 7.2-.8 10.2.9" stroke-width="1.9"/><path d="M7.6 12.5c3-.8 5.9-.5 8.4.9" stroke-width="1.6"/><path d="M8.3 15.3c2.3-.6 4.4-.4 6.3.7" stroke-width="1.3"/></g></svg></span><span class="nm">Spotify</span></a>`}</div>`;
   }
 
   const k = d.fact;
