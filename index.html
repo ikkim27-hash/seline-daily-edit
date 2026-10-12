@@ -363,9 +363,9 @@ footer{border-top:3px solid var(--ink);padding-top:14px}
 /* 두 아이콘이 서로 엇갈려 천천히 떠오르고, 안의 그림은 살짝 기운다 */
 @keyframes icfloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
 @keyframes ictilt{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(5deg)}}
-#music .listen .ic{animation:icfloat 3.2s ease-in-out infinite}
-#music .listen .ic svg{animation:ictilt 3.2s ease-in-out infinite}
-#music .listen a:nth-child(2) .ic,#music .listen a:nth-child(2) .ic svg{animation-delay:-1.6s}
+#music .listen .ic{animation:icfloat 2.29s ease-in-out infinite}
+#music .listen .ic svg{animation:ictilt 2.29s ease-in-out infinite}
+#music .listen a:nth-child(2) .ic,#music .listen a:nth-child(2) .ic svg{animation-delay:-1.14s}
 #music .listen a:hover .ic,#music .listen a:active .ic{animation:none}
 @media (prefers-reduced-motion:reduce){#music .listen .ic,#music .listen .ic svg{animation:none}}
 #music .listen a:focus-visible .ic{outline:2px solid var(--on-gold);outline-offset:3px}
@@ -391,6 +391,67 @@ section h2,.news h3,.news article:first-child h3{font-size:clamp(1.22rem,4.24vw,
   @keyframes labelglint{0%{background-position:100% 0}65%,100%{background-position:0 0}}
   @media (prefers-reduced-motion:reduce){#music.lit .label{animation:none}}
 }
+/* 소식 코너: 소셜 카드형 피드 (2026-10-12부터) */
+#news .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:-6px}
+#news .chips span{font-size:.8rem;padding:3px 10px;border-radius:999px;background:var(--mint);color:var(--on-mint)}
+.feed{display:grid;gap:18px}
+@media (min-width:700px){.feed{grid-template-columns:1fr 1fr}.feed .post:first-child{grid-column:1/-1}}
+.post{background:var(--surface);border:1px solid var(--edge);border-radius:20px;padding:16px 16px 14px;display:flex;flex-direction:column;gap:10px;box-shadow:0 2px 0 var(--edge);min-width:0}
+.post header{display:flex;align-items:center;gap:10px}
+.post .av{width:54px;height:54px;border-radius:50%;background:var(--mint);display:grid;place-items:center;flex:0 0 auto}
+.post .av svg{width:46px;height:40px;transform:none;color:#3B3B38;filter:drop-shadow(0 1px 2px rgba(0,0,0,.25));overflow:visible}
+.post .av svg.tall{width:30px;height:44px}
+.post .who{display:flex;flex-direction:column;line-height:1.25;min-width:0}
+.post .who b{font-size:.95rem;font-weight:600}
+.post .who small{font-size:.8rem;color:var(--pop);font-weight:600}
+.post .no{margin-left:auto;font-family:var(--latin);font-weight:600;font-size:.8rem;color:var(--muted)}
+.post .ph{margin:0;display:flex;flex-direction:column;gap:4px}
+.post .ph img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:14px}
+.post .ph figcaption{font-size:.74rem;color:var(--muted)}
+.post h3{margin:2px 0 0;font-size:1.36rem;font-weight:700;line-height:1.32;letter-spacing:-.03em}
+.post h3 .en{display:block;font-family:var(--edit);font-style:italic;font-weight:400;font-size:.92rem;line-height:1.3;color:var(--muted);margin-top:4px;letter-spacing:0}
+.post .lead{margin:0;font-size:1rem}
+.post .pts{margin:0;padding:12px 14px;list-style:none;background:var(--bg);border-radius:14px;display:flex;flex-direction:column;gap:6px;font-size:.95rem}
+.post .pts li{display:grid;grid-template-columns:1.1em 1fr;gap:6px}
+.post .pts li::before{content:"✓";color:var(--on-mint);font-weight:700}
+.post .info{margin:0;display:flex;flex-direction:column;gap:4px;font-size:.9rem}
+.post .info div{display:grid;grid-template-columns:4.6em 1fr;gap:8px}
+.post .info dt{color:var(--muted);font-weight:600}
+.post .info dd{margin:0;min-width:0}
+.post .tags{margin:0;font-size:.88rem;color:var(--on-mint);font-weight:500}
+.post footer{border-top:1px solid var(--edge);padding-top:10px}
+.post footer a{font-size:.85rem;color:var(--ink);text-decoration:none;font-weight:500}
+.post footer a::after{content:" →"}
+.post.world{background:var(--drill-bg);color:var(--drill-fg);border-color:var(--drill-bg);box-shadow:none}
+.post.world .who small,.post.world .tags{color:var(--drill-hi)}
+.post.world .av,.post.world .pts{background:#24493F}
+.post.world h3 .en,.post.world .info dt,.post.world .no,.post.world .ph figcaption{color:#C9CFC9}
+.post.world .pts li::before{color:var(--drill-hi)}
+.post.world footer{border-color:#2F5A4B}
+.post.world footer a{color:var(--drill-fg)}
+.post.key{border-color:#C8553D;box-shadow:0 2px 0 #E7B9A8}
+.post .flag{align-self:flex-start;font-size:.76rem;font-weight:600;letter-spacing:.04em;color:#fff;background:#B5462F;border-radius:999px;padding:2px 10px}
+.post.world.soft{background:#3F584F;border-color:#3F584F}
+.post.world.soft .av,.post.world.soft .pts{background:#2A463E}
+.post.world.soft footer{border-color:#2A463E}
+.post.world.soft h3 .en,.post.world.soft .info dt,.post.world.soft .no{color:#DCE2DC}
+/* 시작 화면: 제호 글자가 물결치며 빛나고, 둥글게 돌며 가운데로 빨려 들어가는 사이 가운데에서 바깥으로 걷히며 본문이 드러난다 */
+@property --spr{syntax:"<percentage>";inherits:false;initial-value:-30%}
+.splash{position:fixed;inset:0;z-index:50;background:var(--bg);display:grid;place-items:center;cursor:pointer;--spr:-30%;-webkit-mask-image:radial-gradient(circle at 50% 50%,transparent var(--spr),#000 calc(var(--spr) + 28%));mask-image:radial-gradient(circle at 50% 50%,transparent var(--spr),#000 calc(var(--spr) + 28%))}
+.splash.out{animation:spreveal 1.4s cubic-bezier(.45,0,.25,1) .45s both}
+@keyframes spreveal{0%{--spr:-30%;opacity:1}80%{opacity:1}100%{--spr:110%;opacity:0}}
+.splash .sp-in{transition:transform 1.1s cubic-bezier(.55,0,.45,1),opacity .7s ease .4s,filter 1.1s ease}
+.splash.out .sp-in{transform:rotate(540deg) scale(.04);opacity:0;filter:blur(1px)}
+.splash .sp-t{margin:0;font-family:"Cormorant Garamond","Garamond","Times New Roman",serif;font-weight:500;font-size:clamp(2rem,9vw,3.6rem);line-height:1.22;letter-spacing:.14em;text-transform:uppercase;text-align:center;color:var(--ink)}
+.splash .sp-t span{display:block}
+.splash .sp-t i{font-style:normal;display:inline-block;opacity:0;transform:translateY(.45em);color:var(--ink);animation:sprise .5s cubic-bezier(.2,.7,.2,1) var(--d) forwards,spwave .7s ease-in-out calc(var(--d) + .4s) 1}
+@keyframes sprise{to{opacity:1;transform:none}}
+@keyframes spwave{0%,100%{transform:none}35%{transform:translateY(-.16em)}70%{transform:translateY(.04em)}}
+@supports ((-webkit-background-clip:text) or (background-clip:text)){
+  .splash .sp-t i{color:transparent;background:linear-gradient(115deg,var(--ink) 0%,var(--ink) 38%,#E9C468 48%,#FFF3C8 50%,#E9C468 52%,var(--ink) 62%,var(--ink) 100%);background-size:500% 100%;background-position:100% 0;-webkit-background-clip:text;background-clip:text;animation:sprise .5s cubic-bezier(.2,.7,.2,1) var(--d) forwards,spwave .7s ease-in-out calc(var(--d) + .4s) 1,spglint 1.1s ease-in-out calc(var(--d) + .3s) 1}
+  @keyframes spglint{0%{background-position:100% 0}100%{background-position:0 0}}
+}
+@media (prefers-reduced-motion:reduce){.splash{display:none}}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -409,6 +470,7 @@ section h2,.news h3,.news article:first-child h3{font-size:clamp(1.22rem,4.24vw,
     <feComposite in="line" in2="mask" operator="in"/>
   </filter>
 </defs></svg>
+<div class="splash" id="splash" aria-hidden="true"><div class="sp-in"><p class="sp-t"><span><i style="--d:0.000s">S</i><i style="--d:0.020s">e</i><i style="--d:0.040s">l</i><i style="--d:0.060s">i</i><i style="--d:0.080s">n</i><i style="--d:0.100s">e</i><i style="--d:0.120s">’</i><i style="--d:0.140s">s</i></span><span><i style="--d:0.160s">D</i><i style="--d:0.180s">a</i><i style="--d:0.200s">i</i><i style="--d:0.220s">l</i><i style="--d:0.240s">y</i> <i style="--d:0.280s">E</i><i style="--d:0.300s">d</i><i style="--d:0.320s">i</i><i style="--d:0.340s">t</i></span></p></div></div>
 <div class="wrap">
   <header class="mast">
     <div class="strip"><span id="stamp"></span><span>Kuala Lumpur · Seoul</span></div>
@@ -480,6 +542,127 @@ const PHOTO = null; // 예: {src:"photo.jpg", caption:"한 줄 설명", date:"20
 /* ===== DAYS: 날짜별 콘텐츠. 최신 날짜가 맨 앞. 매일 새 객체를 맨 앞에 추가하고 14일치만 유지. ===== */
 const DAYS = [
 {
+  date: "2026-10-13",
+  quote: {
+    ko: "내 말 믿어, 친구. 그냥 배를 타고 한가로이 노니는 것만큼 해 볼 만한 일은 없어. 정말이지 하나도 없지.",
+    en: "Believe me, my young friend, there is nothing—absolute nothing—half so much worth doing as simply messing about in boats.",
+    by: "케네스 그레이엄, 『버드나무에 부는 바람』 (1908)",
+    pick: {kind:"영화", title:"흐르는 강물처럼 (A River Runs Through It, 1992)", gist:"로버트 레드퍼드가 연출한 이 영화는 노먼 매클린이 1976년에 쓴 자전적 중편을 바탕으로, 제1차 세계대전 무렵부터 대공황 초기까지 몬태나주 미줄라에서 자란 장로교 목사의 두 아들 노먼과 폴을 따라갑니다. 형제는 아버지에게 플라이 낚시를 배우며 자라고, 다트머스로 떠났던 노먼은 6년 만에 돌아와 솜씨 좋은 낚시꾼이 된 폴을 다시 만납니다. 영화는 서로를 다 이해하지 못해도 같은 물가에서 함께 보낸 시간이 가족을 묶어 준다고 조용히 말합니다.", after:"아무 목적 없이 물 위에서 보낸 시간이, 돌아보면 가장 오래 남는 기억이 되곤 합니다."}
+  },
+  english: {
+    title: "미용실에서 원하는 머리 설명하기", titleEn: "Explaining What You Want at the Hair Salon",
+    situation: "머리를 다듬으러 미용실에 간 손님과 미용사의 대화입니다. 얼마나 자를지, 어떤 느낌을 원하는지 부드럽게 설명하는 말투를 익혀 보세요.",
+    lines: [
+      ["B","Hi, come on in. So what are we doing today?","어서 오세요. 오늘은 어떻게 해 드릴까요?"],
+      ["A","Just a trim, nothing too drastic. It's gotten a little out of hand.","그냥 좀 다듬어 주세요. 확 바꾸고 싶진 않아요. 머리가 좀 감당이 안 되게 자랐거든요."],
+      ["B","Gotcha. How much do you want me to take off?","알겠어요. 얼마나 잘라 드릴까요?"],
+      ["A","Maybe an inch or so. I want to keep the length and just clean up the ends.","한 2센티 정도요. 길이는 유지하고 끝만 정리하고 싶어요."],
+      ["B","Sounds good. Do you want me to thin it out a bit, too? You've got a lot of hair back here.","좋아요. 숱도 좀 쳐 드릴까요? 뒤쪽 머리숱이 많으시네요."],
+      ["A","Sure, but go easy on the layers. Last time they came out kind of choppy.","네, 그런데 층은 살살 내 주세요. 지난번엔 좀 뚝뚝 끊겨 보였거든요."],
+      ["B","No worries, I'll keep it soft. And what about your bangs?","걱정 마세요, 자연스럽게 해 드릴게요. 앞머리는요?"],
+      ["A","Just a little off the bangs. I like them to hit right above my eyebrows.","앞머리는 살짝만 잘라 주세요. 눈썹 바로 위에 오는 게 좋아요."],
+      ["B","Perfect. Let's get you shampooed first, and then we'll get started.","좋습니다. 먼저 머리 감겨 드리고 시작할게요."],
+      ["A","Great. I'm all yours.","좋아요. 맡길게요."]
+    ],
+    expressions: [
+      {en:"nothing too drastic", ko:"‘너무 과감한 건 말고’. 큰 변화는 원하지 않는다고 미리 선을 그을 때 씁니다. 머리, 인테리어, 계획 변경 등에 두루 씁니다.", eg:"I want to repaint the living room, but nothing too drastic."},
+      {en:"get out of hand", ko:"‘손쓸 수 없게 되다, 감당이 안 되다’. 머리가 너무 자랐을 때처럼 가볍게도, 상황이 걷잡을 수 없을 때처럼 진지하게도 씁니다.", eg:"The party got a little out of hand after midnight."},
+      {en:"take off (an inch)", ko:"미용실에서 ‘(길이를) 잘라 내다’라는 뜻입니다. How much do you want me to take off?는 미용사가 가장 자주 묻는 질문입니다.", eg:"Can you take off about two inches?"},
+      {en:"go easy on ~", ko:"‘~을 적당히 하다, 너무 많이 하지 않다’. 음식의 양념이나 소스를 줄여 달라고 할 때도 자주 씁니다.", eg:"Could you go easy on the ice, please?"},
+      {en:"I'm all yours.", ko:"‘이제 마음대로 하세요, 전 준비됐어요’. 상대에게 내 시간과 주의를 온전히 맡긴다는 친근한 말입니다.", eg:"I just finished my call. I'm all yours."}
+    ],
+    pattern: {
+      en: "Do you want me to ~?",
+      ko: "‘제가 ~해 드릴까요?’. 상대를 위해 무언가를 해 주겠다고 제안할 때 쓰는 말입니다. 친구 사이에도, 가게에서도 자연스럽게 씁니다.",
+      examples: [
+        ["Do you want me to <b>save</b> you a <b>seat</b>?","자리 하나 맡아 줄까?"],
+        ["Do you want me to <b>pick up</b> some <b>coffee</b> on the way?","오는 길에 커피 사 갈까?"],
+        ["Do you want me to <b>call</b> you when I <b>get there</b>?","도착하면 전화해 줄까?"]
+      ]
+    }
+  },
+  news: [
+    {region:"말레이시아", tag:"생활 · 연무", important:true, icon:"school", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><circle cx="56" cy="14" r="6"/><path d="M10 30L36 12l26 18z"/><rect x="14" y="29" width="44" height="24"/><path d="M8 44q7-4 14 0t14 0t14 0t14 0M12 51q6-3.5 12 0t12 0t12 0t12 0" fill="none"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><circle cx="56" cy="14" r="6" fill="#E9A15A"/><rect x="14" y="29" width="44" height="24" fill="#F5E4BA"/><path d="M10 30L36 12l26 18z" fill="#C8553D"/><rect x="19" y="33" width="8" height="7" fill="#A9D9EC"/><rect x="45" y="33" width="8" height="7" fill="#A9D9EC"/><path d="M31 53V41a5 5 0 0 1 10 0v12z" fill="#8C5A3A"/></g><path d="M8 44q7-4 14 0t14 0t14 0t14 0M12 51q6-3.5 12 0t12 0t12 0t12 0" fill="none" stroke="#4A2E1A" stroke-width="4.6" stroke-linecap="round"/><path d="M8 44q7-4 14 0t14 0t14 0t14 0M12 51q6-3.5 12 0t12 0t12 0t12 0" fill="none" stroke="#CFC7B6" stroke-width="2.2" stroke-linecap="round"/>'}, title:"오늘 조호르·믈라카 등 4곳 전면 휴교, KL은 정상", titleEn:"Haze Shuts All Schools in Johor, Melaka, Negeri Sembilan and Putrajaya Today",
+     lead:"교육부가 연무 때문에 13일 화요일 여러 지역의 학교를 닫는다고 발표했어요. 아이를 학교에 보내는 가정은 우리 동네 교육구를 꼭 확인하세요.",
+     pts:["조호르·믈라카·느그리슴빌란·푸트라자야는 모든 학교가 휴교해요", "슬랑오르는 훌루 랑앗·프탈링 프르다나·쿠알라 랑앗·세팡 교육구, 파항은 콴탄·롬핀 교육구가 휴교해요", "쿠알라룸푸르·라부안·크다·클란탄·프를리스·페낭·페락·트렝가누·사바·사라왁은 평소대로 수업해요"],
+     info:[["발표", "파들리나 시덱 교육부 장관 (12일 페이스북)"], ["운영 학교", "대기 질에 맞춰 야외 활동을 살피도록 했어요"], ["확인", "학교, 주 교육청, 교육구 공식 공지"]],
+     src:"The Star · 10.12", url:"https://www.thestar.com.my/news/nation/2026/10/12/haze-johor-melaka-negri-sembilan-and-putrajaya-schools-to-close-on-oct-13"},
+    {region:"말레이시아", tag:"유산", icon:"shophouse", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><rect x="8" y="24" width="56" height="28"/><rect x="26" y="22" width="20" height="30"/><path d="M30 22q0-7 6-10q6 3 6 10z"/><path d="M8 24q0-5 4-7q4 2 4 7zM56 24q0-5 4-7q4 2 4 7z"/><path d="M36 12V7M12 17v-3M60 17v-3" fill="none"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M36 12V7M12 17v-3M60 17v-3" fill="none"/><rect x="8" y="31" width="56" height="21" fill="#FBF7EF"/><rect x="8" y="24" width="8" height="28" fill="#F5E4BA"/><rect x="56" y="24" width="8" height="28" fill="#F5E4BA"/><rect x="26" y="22" width="20" height="30" fill="#F5E4BA"/><path d="M30 22q0-7 6-10q6 3 6 10z" fill="#E9D7A6"/><path d="M8 24q0-5 4-7q4 2 4 7zM56 24q0-5 4-7q4 2 4 7z" fill="#E9D7A6"/><path d="M31 52V40a5 5 0 0 1 10 0v12z" fill="#8C5A3A"/><path d="M18 52v-8a3 3 0 0 1 6 0v8zM48 52v-8a3 3 0 0 1 6 0v8z" fill="#2F6B5A"/><path d="M5 52h62"/></g><path d="M17 35h8M47 35h8" stroke="#C8553D" stroke-width="2.2" stroke-linecap="round"/><circle cx="36" cy="29" r="2.4" fill="#A9D9EC" stroke="#4A2E1A" stroke-width="1"/>'}, title:"1910년의 KL 기차역, 문화 명소로 다시 태어난다", titleEn:"KL's 1910 Railway Station to Be Restored as a Cultural Landmark",
+     lead:"앤서니 로크 교통부 장관이 12일, 국부펀드 카자나 내셔널이 이끄는 보존 사업으로 쿠알라룸푸르 기차역과 KTMB 본사 건물을 지킨다고 밝혔어요.",
+     pts:["기차역은 1910년에 문을 열었고, 식민 정부 건축가 아서 베니슨 허백이 무굴·무어 양식에 서양식 아치와 첨탑을 섞은 인도·사라센 양식으로 설계했어요", "지금도 KTM 코뮤터와 ETS 승객이 오가는 현역 역이에요", "술탄 압둘 사마드 빌딩처럼 고쳐 쓰는 방식으로, 관광객과 통근객을 위한 문화 명소로 바꿀 계획이에요"],
+     info:[["함께", "철도자산공사(RAC)"], ["참고", "술탄 압둘 사마드 빌딩 재생 사업에는 지금까지 약 50만 명이 다녀갔어요"]],
+     src:"Malay Mail · 10.12", url:"https://www.malaymail.com/news/malaysia/2026/10/12/loke-announces-khazanah-to-restore-kl-railway-station-and-ktmb-hq-hopes-to-see-end-of-asset-sale-claims/238790"},
+    {region:"말레이시아", tag:"음악", icon:"music", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><rect x="26" y="8" width="20" height="25" rx="10"/><path d="M36 33v17" fill="none"/><ellipse cx="36" cy="52" rx="14" ry="4"/><path d="M56 8l1.6 4 4 1.6-4 1.6-1.6 4-1.6-4-4-1.6 4-1.6z"/></g><path d="M36 33v17" fill="none" stroke="#4A2E1A" stroke-width="4.6" stroke-linecap="round"/><path d="M36 33v17" fill="none" stroke="#8C5A3A" stroke-width="2.2" stroke-linecap="round"/><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><ellipse cx="36" cy="52" rx="14" ry="4" fill="#8C5A3A"/><rect x="26" y="8" width="20" height="25" rx="10" fill="#D9D2C3"/><rect x="25" y="19" width="22" height="4" rx="1" fill="#DDA22F"/></g><path d="M30 12.5h12M28.5 16h15M28.5 26.5h15M30 30h12" stroke="#8F877A" stroke-width="1.1" stroke-linecap="round"/><path d="M30 11q2-2 4-2.4" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" opacity=".8"/><path d="M56 8l1.6 4 4 1.6-4 1.6-1.6 4-1.6-4-4-1.6 4-1.6z" fill="#F7D36B" stroke="#8A5A12" stroke-width="1.2" stroke-linejoin="round"/>'}, title:"노래 ‘Derita’로 빈탕 P. 라믈리 2026 우승", titleEn:"Rul Azhar Wins Bintang P. Ramlee 2026 With “Derita”",
+     lead:"쿠칭에서 열린 노래 경연 ‘빈탕 P. 라믈리 2026’ 결선에서 북부 지역 대표 룰 아즈하르가 노래 ‘Derita’로 우승했어요.",
+     pts:["결선에 오른 여섯 명 가운데 1위로, 상금 2만 링깃과 트로피, 상장을 받았어요", "2위는 사라왁 지역의 마하티르 자일라니, 3위는 사바 지역의 제프리잔 자밀이에요", "최우수 무대상은 남부 지역의 모흐드 리즈완 모드 타입에게 돌아갔어요"],
+     info:[["장소", "사라왁 대학교(UNIMAS) 아레나 그밀랑"], ["본명", "모하마드 파크룰 아즈하르 모하마드 자반디"]],
+     src:"Bernama · 10.12", url:"https://www.bernama.com/en/general/news.php?id=2618754"},
+    {region:"말레이시아", tag:"이야기", icon:"book", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M8 16h56v36H8z"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M8 16h56v36H8z" fill="#6B4A2B"/><path d="M11 19h24v30H11z" fill="#33261D"/><path d="M37 19h24v30H37z" fill="#33261D"/><path d="M36 16v36" fill="none"/></g><g stroke="#4A2E1A" stroke-width="1.1" stroke-linejoin="round"><rect x="14" y="23" width="18" height="14" fill="#E8D3A8"/><rect x="40" y="29" width="18" height="14" fill="#E8D3A8"/></g><path d="M18 36v-5l5-3.5 5 3.5v5z" fill="#A8843F"/><path d="M21.5 36v-3h3v3z" fill="#6B4A2B"/><path d="M41 42q5-7 9-3q3-3 7 3z" fill="#A8843F"/><circle cx="53" cy="33" r="2" fill="#C98B3A"/><path d="M14 23h3l-3 3zM32 23h-3l3 3zM40 29h3l-3 3zM58 29h-3l3 3z" fill="#DDA22F"/><path d="M15 42h14M15 45.5h9M41 24h14" fill="none" stroke="#C9B48A" stroke-width="1.3" stroke-linecap="round"/>'}, title:"셰프 완, 쿠칭 개척자의 증손자였다", titleEn:"Chef Wan Reveals Kuching Pioneer Ong Tiang Swee Was His Great-Grandfather",
+     lead:"요리사 셰프 완(다툭 레주안 이스마일)이 쿠칭의 중국역사박물관을 둘러보며, 쿠칭의 개척자이자 상인이었던 옹 티앙 스위가 자신의 증조할아버지라고 밝혔어요.",
+     pts:["옹 티앙 스위는 셰프 완의 외할머니의 아버지예요. 쿠칭에는 그의 이름을 딴 길이 있고, 1950년 쿠칭에서 세상을 떠났을 때 주 장례로 치러졌어요", "옹 집안의 젊은 후손들이 셰프 완을 만나러 와 옛 가족 사진첩을 펼쳐 보였어요", "일본 점령기에 집안은 재산을 빼앗겼고 증조할머니와 할머니는 싱가포르로 보내졌어요. 셰프 완은 1958년 싱가포르에서 태어났어요"],
+     info:[["어디", "쿠칭 중국역사박물관"], ["원출처", "The Borneo Post"]],
+     src:"Malay Mail · 10.10", url:"https://www.malaymail.com/news/life/2026/10/10/chef-wan-reveals-kuching-pioneer-ong-tiang-swee-was-his-great-grandfather/238541"},
+    {region:"세계", tag:"자연", icon:"turtle", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><circle cx="34" cy="32" r="20"/><circle cx="15" cy="31" r="5"/><circle cx="53" cy="31" r="5"/><path d="M28 13q3-5 6-1q3-5 6 1z"/><path d="M50 52q7-13 13-12q-1 12-13 12z"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><circle cx="15" cy="31" r="5" fill="#C8662B"/><circle cx="53" cy="31" r="5" fill="#C8662B"/><path d="M28 13q3-5 6-1q3-5 6 1z" fill="#D9792F"/><circle cx="34" cy="32" r="20" fill="#D9792F"/><ellipse cx="34" cy="37" rx="13" ry="12" fill="#F0C987"/></g><path d="M25 28q3.5-2 7 0M36 28q3.5-2 7 0" fill="none" stroke="#8C4A1E" stroke-width="1.3" stroke-linecap="round"/><circle cx="28.5" cy="32" r="2" fill="#1B2321"/><circle cx="39.5" cy="32" r="2" fill="#1B2321"/><circle cx="29.1" cy="31.4" r=".7" fill="#fff"/><circle cx="40.1" cy="31.4" r=".7" fill="#fff"/><circle cx="32.3" cy="38" r="1" fill="#6B4226"/><circle cx="35.7" cy="38" r="1" fill="#6B4226"/><path d="M28 43q6 4 12 0" fill="none" stroke="#6B4226" stroke-width="1.4" stroke-linecap="round"/><path d="M50 52q7-13 13-12q-1 12-13 12z" fill="#5FAE84" stroke="#2F5D49" stroke-width="1.5" stroke-linejoin="round"/><path d="M51.5 50.5l9.5-8.5" fill="none" stroke="#2F5D49" stroke-width="1.1" stroke-linecap="round"/>'}, title:"불길 피한 오랑우탄 여덟 마리, 보호림으로", titleEn:"Eight Orangutans Rescued From Fires Find a Safe Haven in Borneo",
+     lead:"인도네시아 서칼리만탄에서 산불 위험을 피해 구조된 오랑우탄 여덟 마리가 2만 3,000헥타르 규모의 바투 니암부 보호림으로 옮겨졌어요.",
+     pts:["새끼를 데린 어미 세 쌍과 10대 수컷 두 마리예요", "8월부터 10월 9일까지 산불 위협에서 구조된 오랑우탄은 모두 46마리예요", "WWF에 따르면 보르네오와 수마트라의 오랑우탄은 약 10만 4,000마리로, 100년 전 23만 마리가 넘던 데서 크게 줄었어요"],
+     info:[["어디", "인도네시아 서칼리만탄 (크타팡군 라만 사통 마을 등)"], ["함께", "야생동물 재활 단체 YIARI, 인도네시아 산림부"]],
+     src:"The Star (AFP) · 10.12", url:"https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/12/orang-utan-find-safe-haven"}
+  ],
+  trend: {
+    cat: "세계 트렌드 · 브랜드",
+    title: "이케아, 영국·아일랜드에 중고 가구 장터를 열다", titleEn: "IKEA Opens a Second-Hand Furniture Marketplace in the UK and Ireland",
+    asOf: "2026년 10월 7일 보도 기준",
+    body: "이케아가 10월 7일 영국과 아일랜드에서 쓰던 이케아 제품을 사고팔 수 있는 온라인 중고 장터를 열었습니다. 2024년 마드리드와 오슬로에서 먼저 시험 운영한 서비스입니다.",
+    points: [
+      "판매자가 물건을 스캔해 등록하면 장터가 가격을 제안하고, 전문 제품 사진과 정확한 치수, 조립 설명서, 관리 방법을 채워 줍니다.",
+      "물건이 팔리면 대금을 바로 받거나, 15%를 더 얹은 이케아 상품권으로 받을 수 있습니다.",
+      "매트리스와 가전, 식품은 올릴 수 없고, 구매자는 단종된 이케아 디자인도 찾을 수 있습니다.",
+      "이케아 조사에서 영국 성인의 87%가 중고 물건을 산다고 답했고, 장터의 물건은 비슷한 새 제품보다 60%가량 싸게 팔립니다."
+    ],
+    src: [["Dezeen (2026.10.7)","https://www.dezeen.com/2026/10/07/ikea-uk-ireland-marketplace-buy-sell-second-hand-furniture/"]]
+  },
+  life: {
+    title: "말끝에 붙는 ‘라’, 망글리시 한 스푼", titleEn: "A Spoonful of Manglish, From “Lah” to “Alamak”",
+    intro: "말레이시아식 영어인 망글리시(Manglish)는 문장 끝에 붙는 짧은 말과 독특한 단어 몇 개만 알아도 훨씬 잘 들립니다. 영어판 위키백과의 망글리시 항목에서 일상에서 자주 듣는 것을 골랐습니다.",
+    tips: [
+      ["‘라(lah)’는 안심과 친근함","입장을 분명히 하면서 상대와 한편이라는 느낌을 함께 주는 말입니다. Don't worry, he can do it one lah처럼 안심시킬 때 붙고, 예·아니요를 묻는 질문에는 쓰지 않습니다."],
+      ["‘로(loh)’는 이미 정해진 일","바꿀 수 없는 일을 힘주어 말할 때 붙이며, 조바심이 묻어나기도 합니다. traffic jam loh!는 ‘차가 막히는 걸 어떡해’라는 느낌입니다."],
+      ["‘메(meh)’는 반쯤 확신하는 질문","질문 끝에 붙어 자신감과 약간의 의심을 함께 담습니다. I like her, cannot meh?는 ‘내가 좋다는데, 안 될 게 뭐야?’라는 뜻입니다."],
+      ["‘캔’, ‘캔낫’, 그리고 ‘갓’","Can!은 ‘그럼, 되지’, Cannot.은 ‘절대 안 돼’라는 대답으로 그대로 씁니다. Got은 ‘있다’와 ‘가지다’를 함께 맡아 This bus got air-con or not?처럼 씁니다."],
+      ["‘아웃스테이션’과 ‘알라막’","going outstation은 다른 지방으로 떠난다는 말로, 식민지 시대에서 온 표현입니다. Alamak!은 놀라거나 당황했을 때 ‘이런!’ 하고 나오는 감탄사입니다."]
+    ],
+    src: [["Wikipedia: Manglish","https://en.wikipedia.org/wiki/Manglish"]]
+  },
+  shows: {
+    intro: "쿠알라룸푸르에서 지금 볼 수 있거나 곧 열리는 전시와 공연입니다.",
+    items: [
+      {kind:"전시", title:"로버트 라우션버그와 아시아 (Robert Rauschenberg and Asia)", when:"11월 1일까지", where:"일함 갤러리(ILHAM Gallery) 5층", memo:"미국 현대미술 작가 로버트 라우션버그의 전시입니다.", url:"https://ilhamgallery.com/exhibitions/robert-rauschenberg-and-asia/"},
+      {kind:"전시", title:"경계 없는 예술: 난양으로 가는 새 항해 (Art Without Boundaries — New Voyage to Nanyang)", when:"11월 11일까지", where:"루앙 트두(Ruang Teduh), 익스체인지 106, 툰 라작 익스체인지", memo:"대만 태생의 큐레이터이자 작가 빅토리아 루가 AI의 도움을 받아 만든 작품을 젊은 작가들의 작품과 함께 선보입니다.", url:"https://www.malaymail.com/news/life/2026/10/10/art-meets-algorithm-victoria-lu-explores-ai-and-human-creativity-at-kuala-lumpur-exhibition/238604"},
+      {kind:"연극", title:"쇼트+스위트 말레이시아 페스티벌 2026: 연극 (Short + Sweet Malaysia Festival 2026: Theatre)", when:"10월 16~17일, 23~25일", where:"KLPac 펜타스 2 (Pentas 2)", memo:"10분 이내의 짧은 창작극을 여러 편 묶어 올리는 경연 축제로, 25일은 갈라와 시상식입니다.", url:"https://www.klpac.org/shows/short-sweet-malaysia-festival-2026-theatre/"},
+      {kind:"오페라", title:"투란도트 (Turandot)", when:"10월 17~25일", where:"KLPac", memo:"KLPac 오케스트라가 연주합니다.", url:"https://www.klpac.org/shows/turandot/"},
+      {kind:"클래식", title:"스티븐 허프와 함께하는 저녁 (A Regal Evening with Stephen Hough)", when:"10월 24일", where:"데완 필하모닉 페트로나스 (Dewan Filharmonik PETRONAS)", memo:"히로카미 준이치가 지휘하는 말레이시아 필하모닉과 피아니스트 스티븐 허프가 베토벤 피아노 협주곡 5번 ‘황제’와 교향곡 4번을 연주합니다.", url:"https://www.mpo.com.my/season-2026/a-regal-evening-with-stephen-hough"},
+      {kind:"K팝", title:"더 로즈 아시아 투어 (The Rose ROSETOPIA Asia Tour)", when:"10월 25일", where:"메가 스타 아레나, 쿠알라룸푸르", memo:"한국 밴드 더 로즈의 쿠알라룸푸르 공연으로, CK 스타 엔터테인먼트가 주최합니다.", url:"https://thesmartlocal.my/the-rose-concert-2026/"},
+      {kind:"클래식", title:"보르네오의 울림: 알레나 무랑과 MPO (Beats of Borneo: Alena Murang with the MPO)", when:"10월 31일", where:"데완 필하모닉 페트로나스 (Dewan Filharmonik PETRONAS)", memo:"히로카미 준이치가 지휘하는 말레이시아 필하모닉이 라벨 ‘쿠프랭의 무덤’과 모차르트 교향곡 40번을 연주하고, 알레나 무랑이 비비안 추아의 사페 협주곡을 초연합니다.", url:"https://www.mpo.com.my/season-2026/beats-of-borneo-alena-murang-with-the-mpo"}
+    ]
+  },
+  music: {
+    title: "Wave", artist: "안토니우 카를루스 조빙 (Antônio Carlos Jobim)", year: "1967",
+    mood: "물결처럼 느리게 흔들리는 화요일 오후",
+    why: "조빙이 1967년 같은 이름의 앨범 첫 곡으로 실은 보사노바로, 클라우스 오거먼의 편곡 위로 리듬이 잔잔하게 일렁입니다. 오후에 잠깐 창밖을 보며 쉬어 갈 때 틀어 두기 좋습니다.",
+    query: "Antonio Carlos Jobim Wave"
+  },
+  fact: {
+    title: "10월 13일, 경도 0도가 그리니치로 정해진 날", titleEn: "October 13: The Day Greenwich Became the Prime Meridian",
+    body: "1884년 10월 13일, 미국 워싱턴 D.C.에서 열린 국제 자오선 회의는 영국 그리니치를 지나는 자오선을 경도의 기준으로 삼자는 안을 표결에 부쳐 찬성 22, 반대 1, 기권 2로 통과시켰습니다. 대부분의 항해용 해도와 그대로 이어 쓸 수 있다는 실용적인 이유가 힘을 얻었습니다.",
+    more: [
+      "회의에는 26개 나라에서 41명의 대표가 참석했습니다.",
+      "반대한 나라는 산도밍고(지금의 도미니카공화국)였고, 프랑스와 브라질은 기권했습니다.",
+      "회의는 기준 자오선의 평균 자정에 시작해 0시부터 24시까지 세는 ‘세계일’도 정했고, 결의안은 10월 22일에 채택됐습니다."
+    ],
+    src: [["Wikipedia: International Meridian Conference","https://en.wikipedia.org/wiki/International_Meridian_Conference"]]
+  }
+},
+{
   date: "2026-10-12",
   quote: {
     ko: "너 자신을 믿어라. 모든 마음은 그 강철 같은 현에 맞춰 떨린다.",
@@ -520,21 +703,31 @@ const DAYS = [
     }
   },
   news: [
-    {tag:"문화", icon:"art", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><rect x="16" y="9" width="40" height="31"/><rect x="13" y="40" width="46" height="5" rx="1.5"/><path d="M27 45l-6 12M45 45l6 12M36 45v10" fill="none"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M27 45l-6 12M45 45l6 12M36 45v10" fill="none" stroke-width="3"/><rect x="16" y="9" width="40" height="31" fill="#F5E4BA"/><rect x="13" y="40" width="46" height="5" rx="1.5" fill="#8C5A3A"/><circle cx="27" cy="20" r="5.5" fill="#E0704F"/><path d="M33 35l8-13 9 13z" fill="#2F6B5A"/><path d="M20 34q5-6 10 0" fill="none" stroke="#DDA22F" stroke-width="2.2"/></g><path d="M48 12l1.3 3.2 3.2 1.3-3.2 1.3-1.3 3.2-1.3-3.2-3.2-1.3 3.2-1.3z" fill="#F7D36B" stroke="#8A5A12" stroke-width="1.1" stroke-linejoin="round"/>'}, title:"AI와 함께 만든 그림, 빅토리아 루의 전시가 툰 라작 익스체인지에서 개막", titleEn: "Victoria Lu's AI-Assisted Art Exhibition Opens at Tun Razak Exchange",
-     body:"대만 태생의 큐레이터이자 평론가, 작가, 교육자인 빅토리아 루(Victoria Lu)의 전시 ‘Art Without Boundaries — New Voyage to Nanyang’ 두 번째 회가 10월 10일 쿠알라룸푸르 툰 라작 익스체인지의 익스체인지 106 안 루앙 트두(Ruang Teduh)에서 개막했습니다. AI의 도움을 받아 만든 작품이 젊은 작가들의 작품과 나란히 걸리며, 루는 AI를 창작의 동반자라고 부르면서도 사람의 창의성은 기계가 쉽게 대신할 수 없다고 말했습니다. 개막식은 말레이시아 영화감독 다툭 우웨이 사아리가 열었고, 전시는 11월 11일까지 이어집니다.",
-     src:"Malay Mail", url:"https://www.malaymail.com/news/life/2026/10/10/art-meets-algorithm-victoria-lu-explores-ai-and-human-creativity-at-kuala-lumpur-exhibition/238604"},
-    {tag:"자연", icon:"book", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M8 19h56v33H8z"/><path d="M36 16C30 12 18 12 10 15v34c8-3 20-3 26 1z"/><path d="M36 16c6-4 18-4 26-1v34c-8-3-20-3-26 1z"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M8 19h56v33H8z" fill="#2F6B5A"/><path d="M36 16C30 12 18 12 10 15v34c8-3 20-3 26 1z" fill="#F5E4BA"/><path d="M36 16c6-4 18-4 26-1v34c-8-3-20-3-26 1z" fill="#F5E4BA"/><path d="M16 40q1-14 14-15q0 14-14 15z" fill="#5FAE84"/><path d="M17.5 38.5l9-9.5" fill="none" stroke="#2F5D49" stroke-width="1.2"/></g><g fill="#6B4A2B"><circle cx="43" cy="24" r="1.7"/><circle cx="48" cy="24" r="1.7"/><circle cx="43" cy="30" r="1.7"/><circle cx="48" cy="36" r="1.7"/><circle cx="54" cy="24" r="1.7"/><circle cx="54" cy="30" r="1.7"/><circle cx="58.5" cy="30" r="1.7"/><circle cx="54" cy="36" r="1.7"/></g>'}, title:"손끝으로 읽는 숲, 멸종위기 나무 일곱 종을 담은 점자책", titleEn: "A Braille Book Lets Readers Explore Seven Endangered Forest Trees by Touch",
-     body:"말레이시아 산림연구소(FRIM)와 말레이시아 국제이슬람대학교(IIUM)가 촉각 그림과 점자를 함께 실은 책 ‘Sentuhan Rimba: Mengenali Biji Benih Spesies Hutan yang Terancam di Malaysia’를 펴냈습니다. Touch2Read 프로젝트로 만든 이 책은 말레이시아의 멸종위기 산림 수종 일곱 가지의 씨앗 특징과 식물학적 정보, 쓰임새를 담았고, FRIM이 실제 씨앗 표본을 내주어 촉각 그림의 본으로 삼았습니다. 출간 행사에서는 시각장애가 있는 IIUM 학생들이 FRIM의 딥테로카프 수목원을 찾아 식물을 만지고 향을 맡으며 익혔습니다.",
-     src:"Bernama", url:"https://www.bernama.com/en/general/news.php?id=2618457"},
-    {tag:"생활", icon:"school", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><rect x="33" y="7" width="6" height="13" rx="3"/><path d="M36 19c-9 0-13 8-14 19l-4 8h36l-4-8c-1-11-5-19-14-19z"/><rect x="15" y="45" width="42" height="5" rx="2.5"/><circle cx="36" cy="53.5" r="3.2"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><circle cx="36" cy="53.5" r="3.2" fill="#8C5A3A"/><rect x="33" y="7" width="6" height="13" rx="3" fill="#8C5A3A"/><path d="M36 19c-9 0-13 8-14 19l-4 8h36l-4-8c-1-11-5-19-14-19z" fill="#F2CF6B"/><rect x="15" y="45" width="42" height="5" rx="2.5" fill="#DDA22F"/></g><path d="M27 34q1-8 6-11" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" opacity=".8"/><path d="M13 23l-5-3M12 31H6.5M59 23l5-3M60 31h5.5" fill="none" stroke="#C98B1E" stroke-width="1.6" stroke-linecap="round"/>'}, title:"연무 누그러진 곳부터 오늘 등교 재개, KL과 슬랑오르 일부는 휴교 유지", titleEn: "Schools Reopen Today Where Haze Has Eased; Parts of KL and Selangor Stay Closed",
-     body:"믈라카, 느그리슴빌란, 파항, 푸트라자야의 학교가 12일 월요일부터 정상 운영합니다. 쿠알라룸푸르에서는 센툴과 크라맛 교육구가 다시 문을 열지만, 방사르·푸두 교육구는 11일 오후 2시 체라스 측정소의 대기오염지수(API)가 152로 나와 추후 공지가 있을 때까지 휴교를 이어 갑니다. 슬랑오르는 훌루 랑앗, 곰박, 프탈링 프르다나 교육구의 학교가 계속 닫고 나머지 지역은 정상 운영합니다. 11일 오후 2시 기준 API는 푸트라자야 70, 쿠알라룸푸르 바투 무다 측정소 84였습니다.",
-     src:"Malay Mail (Bernama)", url:"https://www.malaymail.com/news/malaysia/2026/10/11/haze-schools-in-n-sembilan-pahang-putrajaya-melaka-and-parts-of-kl-selangor-to-reopen-tomorrow/238710"},
-    {tag:"교통", icon:"bus", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M5 40h15v16H5zM52 40h15v16H52z"/><rect x="12" y="20" width="48" height="22"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M5 40h15v16H5zM52 40h15v16H52z" fill="#B9773A"/><path d="M5 40h15v4.5H5zM52 40h15v4.5H52z" fill="#5FAE84"/></g><path d="M14 36V22h44v14M14 22l11 14 11-14 11 14 11-14M25 36V22M36 36V22M47 36V22" fill="none" stroke="#4A2E1A" stroke-width="4.4" stroke-linejoin="round" stroke-linecap="round"/><path d="M14 36V22h44v14M14 22l11 14 11-14 11 14 11-14M25 36V22M36 36V22M47 36V22" fill="none" stroke="#E0704F" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><rect x="10" y="36" width="52" height="5.5" rx="1" fill="#DDD5C4" stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round"/><path d="M27 50q9 5 18 0" fill="none" stroke="#B9AE97" stroke-width="1.5" stroke-linecap="round"/>'}, title:"구아 무상~코타바루 도로에 싱크홀, 14일부터 임시 다리 설치", titleEn: "Sinkhole Closes Gua Musang–Kota Bharu Road; Bailey Bridge Work Starts October 14",
-     body:"클란탄주 구아 무상의 크스다르 민족식물 휴양공원 근처에 깊이 약 8m, 길이 약 9m의 싱크홀이 생겨 구아 무상~코타바루 도로(FT08)가 모든 차량에 전면 통제됐습니다. 공공사업국(JKR)은 베일리 다리를 놓아 통행을 되살리기로 했고, 설치는 10월 14일에 시작해 일주일쯤 걸릴 예정이지만 지반 상태와 현장 안전에 따라 달라질 수 있습니다. 구아 무상을 거쳐 쿠알라룸푸르와 코타바루를 오가는 운전자는 FT2747 잘란 풀라이~반다르 바루 구아 무상 도로로 돌아가라는 안내가 나왔습니다.",
-     src:"Malay Mail", url:"https://www.malaymail.com/news/malaysia/2026/10/11/public-works-dept-to-install-bailey-bridge-after-sinkhole-closes-gua-musang-kota-bharu-road/238647"},
-    {tag:"생활경제", icon:"coin", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><rect x="20" y="9" width="32" height="32" rx="9"/><rect x="11" y="27" width="13" height="25" rx="5.5"/><rect x="48" y="27" width="13" height="25" rx="5.5"/><rect x="20" y="40" width="32" height="12"/><path d="M19 52v5M53 52v5" fill="none"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M19 52v5M53 52v5" fill="none" stroke-width="3"/><rect x="20" y="9" width="32" height="32" rx="9" fill="#E0704F"/><rect x="20" y="40" width="32" height="12" fill="#C8553D"/><rect x="23" y="34" width="26" height="10" rx="4" fill="#F2A65A"/><rect x="11" y="27" width="13" height="25" rx="5.5" fill="#C8553D"/><rect x="48" y="27" width="13" height="25" rx="5.5" fill="#C8553D"/><rect x="30" y="20" width="12" height="11" rx="2.5" fill="#F5E4BA"/></g><path d="M25 19q2-5 7-6" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" opacity=".6"/>'}, title:"부모와 조부모 돌봄 비용, 의료가 아니어도 세금 공제 대상으로", titleEn: "Budget 2027 Proposes Tax Relief for Non-Medical Care of Parents and Grandparents",
-     body:"지금은 부모와 조부모의 돌봄에 쓴 비용을 최대 8,000링깃까지 공제받을 수 있지만, 돌봄 서비스는 의료와 관련된 경우에만 인정됩니다. 2027년 예산안은 집과 주간 보호 센터, 거주형 돌봄 시설에서 받는 모든 종류의 돌봄 비용으로 대상을 넓히자고 제안했고, 2027 과세연도부터 적용됩니다. 의사의 확인은 필요 없어지지만 돌봄 제공자의 서면 확인서나 취업 허가증 사본, 그리고 영수증은 갖춰야 합니다. 노인 돌봄 센터의 서비스세를 2027년 1월부터 8%에서 6%로 내리는 안도 함께 담겼습니다.",
-     src:"Malay Mail", url:"https://www.malaymail.com/news/malaysia/2026/10/10/paying-a-carer-for-your-parents-or-grandparents-budget-2027-proposes-tax-relief-even-for-non-medical-care/238542"}
+    {region:"말레이시아", tag:"전시", icon:"art", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><rect x="16" y="9" width="40" height="31"/><rect x="13" y="40" width="46" height="5" rx="1.5"/><path d="M27 45l-6 12M45 45l6 12M36 45v10" fill="none"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M27 45l-6 12M45 45l6 12M36 45v10" fill="none" stroke-width="3"/><rect x="16" y="9" width="40" height="31" fill="#F5E4BA"/><rect x="13" y="40" width="46" height="5" rx="1.5" fill="#8C5A3A"/><circle cx="27" cy="20" r="5.5" fill="#E0704F"/><path d="M33 35l8-13 9 13z" fill="#2F6B5A"/><path d="M20 34q5-6 10 0" fill="none" stroke="#DDA22F" stroke-width="2.2"/></g><path d="M48 12l1.3 3.2 3.2 1.3-3.2 1.3-1.3 3.2-1.3-3.2-3.2-1.3 3.2-1.3z" fill="#F7D36B" stroke="#8A5A12" stroke-width="1.1" stroke-linejoin="round"/>'}, title:"AI랑 같이 그린 그림, 사람 그림이랑 나란히 걸렸다", titleEn:"AI-Assisted Art Hangs Beside Young Artists' Work in KL",
+     lead:"대만 출신 큐레이터 겸 작가 빅토리아 루가 처음으로 말레이시아를 찾아 전시를 열었어요.",
+     pts:["‘Art Without Boundaries — New Voyage to Nanyang’ 두 번째 회", "AI의 도움으로 만든 작품을 젊은 작가들의 작품과 함께 전시", "루의 말: AI는 창작의 동반자, 그래도 사람의 창의성은 기계가 쉽게 대신하지 못한다"],
+     info:[["언제", "10월 10일 ~ 11월 11일"], ["어디", "루앙 트두(Ruang Teduh), 익스체인지 106 (TRX)"]],
+     src:"Malay Mail · 10.10", url:"https://www.malaymail.com/news/life/2026/10/10/art-meets-algorithm-victoria-lu-explores-ai-and-human-creativity-at-kuala-lumpur-exhibition/238604"},
+    {region:"말레이시아", tag:"자연", icon:"book", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M8 19h56v33H8z"/><path d="M36 16C30 12 18 12 10 15v34c8-3 20-3 26 1z"/><path d="M36 16c6-4 18-4 26-1v34c-8-3-20-3-26 1z"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M8 19h56v33H8z" fill="#2F6B5A"/><path d="M36 16C30 12 18 12 10 15v34c8-3 20-3 26 1z" fill="#F5E4BA"/><path d="M36 16c6-4 18-4 26-1v34c-8-3-20-3-26 1z" fill="#F5E4BA"/><path d="M16 40q1-14 14-15q0 14-14 15z" fill="#5FAE84"/><path d="M17.5 38.5l9-9.5" fill="none" stroke="#2F5D49" stroke-width="1.2"/></g><g fill="#6B4A2B"><circle cx="43" cy="24" r="1.7"/><circle cx="48" cy="24" r="1.7"/><circle cx="43" cy="30" r="1.7"/><circle cx="48" cy="36" r="1.7"/><circle cx="54" cy="24" r="1.7"/><circle cx="54" cy="30" r="1.7"/><circle cx="58.5" cy="30" r="1.7"/><circle cx="54" cy="36" r="1.7"/></g>'}, title:"눈 대신 손끝으로 읽는 숲", titleEn:"A Forest You Read With Your Fingertips",
+     lead:"시각장애인도 말레이시아의 멸종위기 나무를 알 수 있도록, 만져서 읽는 책이 나왔어요.",
+     pts:["산림연구소(FRIM)와 국제이슬람대학교(IIUM)가 함께 만든 촉각 그림 + 점자책", "멸종위기 산림 수종 7가지의 씨앗 생김새와 식물 정보, 쓰임새를 담았어요", "실제 씨앗 표본을 본떠 촉각 그림을 만들었어요"],
+     info:[["책 제목", "Sentuhan Rimba"], ["현장", "시각장애가 있는 IIUM 학생들이 FRIM 수목원에서 나무를 만지고 향을 맡으며 배웠어요"]],
+     src:"Bernama · 10.11", url:"https://www.bernama.com/en/general/news.php?id=2618457"},
+    {region:"말레이시아", tag:"스포츠", icon:"news", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M24 8h24l-5 30H29z"/><circle cx="36" cy="46" r="9"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M24 8h24l-5 30H29z" fill="#FBF7EF"/><path d="M30 8l2 30M36 8v30M42 8l-2 30M26 20h20M27.5 30h17" fill="none" stroke="#B9AE97" stroke-width="1.1"/><rect x="28" y="36" width="16" height="5" rx="1.5" fill="#C8553D"/><path d="M27 41h18a9 9 0 0 1-18 0z" fill="#F2CF6B"/></g><path d="M31 46q1 4 4 5" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" opacity=".7"/>'}, title:"9년 만의 결승, 말레이시아 주니어 배드민턴 은메달", titleEn:"Malaysia's Juniors Take Silver in Their First Final Since 2017",
+     lead:"이집트 카이로에서 열린 세계주니어단체선수권 결승에서 중국에 2‑1로 아쉽게 졌지만, 2017년 이후 처음 오른 결승이었어요.",
+     pts:["4강에서 2024년 우승팀 인도네시아를 2‑0으로 꺾었어요", "결승 2라운드를 55‑53으로 따내며 승부를 마지막까지 끌고 갔어요", "2라운드 남자복식은 샤즈미르 이르판·줄와카리잘 조가 55‑53 접전 끝에 이겼어요"],
+     info:[["대회", "World Junior Team Championships 2026"], ["장소", "카이로 국제 경기장"]],
+     src:"Bernama · 10.10", url:"https://www.bernama.com/en/news.php?id=2618431"},
+    {region:"말레이시아", tag:"생활 · 연무", important:true, icon:"school", title:"오늘 등교 재개, 단 KL·슬랑오르 일부는 휴교 계속", titleEn:"Schools Reopen Today, but Parts of KL and Selangor Stay Closed",
+     lead:"연무가 누그러진 지역부터 12일 월요일에 학교가 다시 문을 열어요. 아이가 있다면 우리 동네 교육구를 확인하세요.",
+     pts:["믈라카·느그리슴빌란·파항·푸트라자야는 정상 운영해요", "KL은 센툴·크라맛 교육구가 재개하고, 방사르·푸두 교육구는 추후 공지 때까지 휴교해요", "슬랑오르는 훌루 랑앗·곰박·프탈링 프르다나 교육구가 휴교하고, 나머지는 정상 운영해요"],
+     info:[["기준", "11일 오후 2시 API: 체라스 152, 바투 무다 84, 푸트라자야 70"], ["확인", "교육부(MOE)와 각 주 교육청 공식 채널"]],
+     src:"Malay Mail (Bernama) · 10.11", url:"https://www.malaymail.com/news/malaysia/2026/10/11/haze-schools-in-n-sembilan-pahang-putrajaya-melaka-and-parts-of-kl-selangor-to-reopen-tomorrow/238710"},
+    {region:"세계", tag:"우주", icon:"news", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><circle cx="36" cy="31" r="20"/><ellipse cx="36" cy="31" rx="30" ry="9" fill="none"/></g><ellipse cx="36" cy="31" rx="30" ry="9" fill="none" stroke="#4A2E1A" stroke-width="3.6"/><ellipse cx="36" cy="31" rx="30" ry="9" fill="none" stroke="#DDA22F" stroke-width="1.6"/><g stroke="#2F5D49" stroke-width="1.5" stroke-linejoin="round"><circle cx="36" cy="31" r="20" fill="#7FC4E0"/><path d="M24 18q6-3 10 1t-2 9q-6 2-8 8q-5-4-5-10t5-8zM42 26q6-2 9 3t-1 10q-5 4-9 1t0-8q-3-3 1-6z" fill="#5FAE84"/></g><path d="M6 31a30 9 0 0 0 60 0" fill="none" stroke="#4A2E1A" stroke-width="3.6"/><path d="M6 31a30 9 0 0 0 60 0" fill="none" stroke="#DDA22F" stroke-width="1.6"/><path d="M26 16q4-3 9-3" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" opacity=".7"/><path d="M60 8l1.3 3.2 3.2 1.3-3.2 1.3-1.3 3.2-1.3-3.2-3.2-1.3 3.2-1.3z" fill="#F7D36B" stroke="#8A5A12" stroke-width="1.1" stroke-linejoin="round"/>'}, title:"“우주에서 본 지구엔 국경이 없었어요”", titleEn:"“No Divisions, No Borders”",
+     lead:"유럽우주국(ESA)의 프랑스 우주비행사 소피 아드노가 235일 동안 국제우주정거장에 머문 뒤 돌아왔어요.",
+     pts:["유럽 우주비행사의 최장 연속 궤도 체류 기록이에요", "프랑스 여성 우주비행사로는 처음으로 우주 유영을 했고, 모두 세 번 나갔어요", "캡슐에서 나오자마자 한 말: 다시 우주로 보내 달라"],
+     info:[["그녀의 말", "지구는 우리 모두가 함께 쓰는 소중한 행성"], ["다음", "약 3주 동안 회복 훈련"]],
+     src:"Malay Mail (AFP) · 10.10", url:"https://www.malaymail.com/news/life/2026/10/10/no-divisions-no-borders-french-astronaut-sophie-adenot-on-seeing-earth-from-space/238583"}
   ],
   trend: {
     title: "싱가포르 수집품 브랜드 플레이 네이션, TRX에 플래그십 팝업", titleEn: "Singapore Collectibles Brand Play Nation Opens a Flagship Pop-Up at TRX",
@@ -966,6 +1159,26 @@ function render(){
     ${e.pattern ? `<div class="drill"><h3>오늘의 패턴</h3><p class="pat">${esc(e.pattern.en)}</p><p>${esc(e.pattern.ko)}</p>
       <ol>${e.pattern.examples.map(s=>`<li>${s[0]}<br><small>${esc(s[1])}</small></li>`).join("")}</ol></div>` : ""}`;
 
+  if(d.news.some(n => n.pts)){
+    const KN = ["","한","두","세","네","다섯","여섯","일곱"];
+    const mC = d.news.filter(n => n.region !== "세계").length, wC = d.news.length - mC;
+    $("news").innerHTML = `
+    <span class="label">Seline’s Feed · 오늘의 소식</span>
+    <h2>오늘, 말레이시아와 세계${hen("Today in Malaysia and Beyond")}</h2>
+    <div class="chips">${mC ? `<span>말레이시아 ${mC}</span>` : ""}${wC ? `<span>세계 ${wC}</span>` : ""}</div>
+    <div class="feed">${d.news.map((n,i)=>`
+      <article class="post${n.region === "세계" ? " world" + (d.date >= "2026-10-13" ? " soft" : "") : ""}${n.important ? " key" : ""}">
+        <header><span class="av">${icon(n.icon, n.art)}</span><span class="who"><b>Seline’s Daily</b><small>${esc(n.region || "말레이시아")} · ${esc(n.tag)}</small></span><span class="no">${i+1}/${d.news.length}</span></header>
+        ${n.important ? `<span class="flag">꼭 알아두세요</span>` : ""}
+        ${n.photo && n.photo.src ? `<figure class="ph"><img src="${esc(n.photo.src)}" alt="${esc(n.photo.alt || "")}" loading="lazy"><figcaption>참고 사진${n.photo.credit ? " · " + esc(n.photo.credit) : ""}</figcaption></figure>` : ""}
+        <h3>${esc(n.title)}${n.titleEn ? `<span class="en">${esc(n.titleEn)}</span>` : ""}</h3>
+        ${n.lead ? `<p class="lead">${esc(n.lead)}</p>` : ""}
+        <ul class="pts">${n.pts.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>
+        ${n.info && n.info.length ? `<dl class="info">${n.info.map(x=>`<div><dt>${esc(x[0])}</dt><dd>${esc(x[1])}</dd></div>`).join("")}</dl>` : ""}
+        <footer><a href="${esc(n.url)}" target="_blank" rel="noopener">원문 보기 · ${esc(n.src)}</a></footer>
+      </article>`).join("")}
+    </div>`;
+  } else {
   $("news").innerHTML = `
     <span class="label">${d.news.some(n => n.sub) ? "오늘의 소식 · 말레이시아와 세계" : "말레이시아 소식 · 문화와 생활"}</span>
     <h2>오늘 알아둘 ${d.news.length}가지${hen("Stories Worth Knowing Today")}</h2>
@@ -973,6 +1186,7 @@ function render(){
       <article class="box"><span class="n">${i+1}</span><span class="tag">${esc(n.tag)}</span><h3>${esc(n.title)}${hen(n.titleEn)}</h3>${icon(n.icon, n.art)}<p>${esc(n.body)}</p>
       <p class="src">출처 <a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.src)}</a></p></article>`).join("")}
     </div>`;
+  }
 
   const tr = d.trend;
   $("trend").hidden = !tr;
@@ -1074,6 +1288,13 @@ render();
     const f = () => h.classList.toggle("on", window.scrollY > 400);
     window.addEventListener("scroll", f, {passive:true}); f();
   }
+})();
+/* 시작 화면: 약 1.7초 뒤(또는 누르면 바로) 사라진다 */
+(function(){
+  const sp = document.getElementById("splash"); if(!sp) return;
+  const go = () => { if(sp.classList.contains("out")) return; sp.classList.add("out"); setTimeout(()=>sp.remove(), 1950); };
+  sp.addEventListener("click", go);
+  setTimeout(go, 1700);
 })();
 </script>
 
