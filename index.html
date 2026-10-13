@@ -542,6 +542,127 @@ const PHOTO = null; // 예: {src:"photo.jpg", caption:"한 줄 설명", date:"20
 /* ===== DAYS: 날짜별 콘텐츠. 최신 날짜가 맨 앞. 매일 새 객체를 맨 앞에 추가하고 14일치만 유지. ===== */
 const DAYS = [
 {
+  date: "2026-10-14",
+  quote: {
+    ko: "댈러웨이 부인은 꽃은 자기가 직접 사 오겠다고 말했다.",
+    en: "Mrs. Dalloway said she would buy the flowers herself.",
+    by: "버지니아 울프, 『댈러웨이 부인』 (1925)",
+    pick: {kind:"책", title:"디 아워스 (The Hours, 1998) · 마이클 커닝햄", gist:"1999년 뉴욕, 쉰두 살의 출판인 클라리사 본은 상을 받은 시인이자 옛 연인 리처드를 위한 파티에 쓸 꽃을 사러 집을 나섭니다. 소설은 그녀의 하루를 1923년 런던 리치먼드에서 『댈러웨이 부인』을 쓰는 버지니아 울프, 1949년 로스앤젤레스에서 그 책을 읽으며 남편 댄의 생일 파티를 준비하는 로라 브라운의 하루와 나란히 엮습니다. 서로 다른 시대를 사는 세 여자가 평범한 하루의 몇 시간 안에서 저마다의 삶을 견디고 붙드는 모습을, 책은 서두르지 않고 섬세하게 따라갑니다.", after:"꽃 한 다발을 내 손으로 사러 나서는 일처럼, 하루를 스스로 여는 작은 결심이 그날 전체를 붙들어 주기도 합니다."}
+  },
+  english: {
+    title: "친구에게 약속에 늦는다고 전화하기", titleEn: "Calling a Friend to Say You're Running Late",
+    situation: "영화를 보기로 한 날, 전철이 멈춰 서는 바람에 늦게 된 상황입니다. 미안한 마음을 전하고, 먼저 와 있는 친구와 표와 자리를 정리하는 말투를 익혀 보세요.",
+    lines: [
+      ["A","Hey, I'm so sorry, but I'm running about fifteen minutes behind.","미안해, 나 15분쯤 늦을 것 같아."],
+      ["B","No worries. What happened?","괜찮아. 무슨 일 있었어?"],
+      ["A","My train got held up between stations, and we just started moving again.","전철이 역 사이에서 멈춰 섰다가 이제 막 다시 출발했어."],
+      ["B","Ugh, that's the worst. Should I go ahead and grab our tickets?","으, 그거 진짜 짜증 나지. 내가 먼저 표 사 둘까?"],
+      ["A","Would you? That'd be a huge help. I'll pay you back as soon as I get there.","그래 줄래? 그럼 정말 고맙지. 도착하자마자 돈 줄게."],
+      ["B","Don't sweat it. Should I get us some popcorn too, or are you good?","신경 쓰지 마. 팝콘도 살까, 아니면 괜찮아?"],
+      ["A","Let's split a large. And save me an aisle seat if you can.","큰 거 하나 나눠 먹자. 그리고 되면 통로 쪽 자리 맡아 줘."],
+      ["B","You got it. The previews always run long anyway, so you won't miss much.","알았어. 어차피 예고편이 늘 길게 나오니까 별로 놓치는 건 없을 거야."],
+      ["A","Good point. I'll text you when I'm close.","그렇네. 거의 다 오면 문자할게."],
+      ["B","Sounds good. Take your time. I'm not going anywhere.","좋아. 천천히 와. 나 어디 안 가."]
+    ],
+    expressions: [
+      {en:"run (fifteen minutes) behind", ko:"‘(15분) 늦어지다’. 일정보다 뒤처지고 있다는 말로, I'm running late보다 얼마나 늦는지 구체적으로 알려 줄 때 자주 씁니다.", eg:"Sorry, I'm running a few minutes behind. Go ahead and order."},
+      {en:"get held up", ko:"‘(무언가에 걸려) 지체되다, 붙잡히다’. 교통, 회의, 줄 서기처럼 내 탓이 아닌 이유로 늦어졌다는 느낌을 줍니다.", eg:"I got held up at the grocery store. The line was out the door."},
+      {en:"pay (someone) back", ko:"‘(빌린 돈을) 갚다’. 친구가 대신 내 준 돈을 돌려주겠다고 할 때 씁니다.", eg:"Can you cover my coffee? I'll pay you back tomorrow."},
+      {en:"Don't sweat it.", ko:"‘신경 쓰지 마, 별일 아니야’. 상대가 미안해하거나 고마워할 때 가볍게 받아 주는 친구 사이의 말입니다.", eg:"“Sorry I forgot to call.” “Don't sweat it.”"},
+      {en:"I'm not going anywhere.", ko:"‘나 어디 안 가, 여기서 기다릴게’. 서두를 필요 없다고 상대를 안심시킬 때 씁니다.", eg:"Finish your call. I'm not going anywhere."}
+    ],
+    pattern: {
+      en: "Should I ~?",
+      ko: "‘내가 ~할까?’. 상대의 뜻을 물으며 무언가를 해 줄지 제안하거나, 어떻게 하면 좋을지 물을 때 씁니다. 친구 사이에 아주 자주 씁니다.",
+      examples: [
+        ["Should I <b>bring</b> anything to the <b>party</b>?","파티에 뭐 가져갈까?"],
+        ["Should I <b>call</b> ahead and make a <b>reservation</b>?","미리 전화해서 예약할까?"],
+        ["Should I <b>wait</b> for you <b>outside</b>?","밖에서 기다릴까?"]
+      ]
+    }
+  },
+  news: [
+    {region:"말레이시아", tag:"생활 · 연무", important:true, icon:"school", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M12 30L36 13l24 17z"/><rect x="15" y="29" width="42" height="24"/><path d="M39 20a7 7 0 0 1 7-9a9 9 0 0 1 16 3a5 5 0 0 1-1 10H43a4 4 0 0 1-4-4z"/><path d="M8 46q7-4 14 0t14 0t14 0t14 0" fill="none"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><rect x="15" y="29" width="42" height="24" fill="#F5E4BA"/><path d="M12 30L36 13l24 17z" fill="#C8553D"/><rect x="20" y="34" width="8" height="7" fill="#A9D9EC"/><rect x="44" y="34" width="8" height="7" fill="#A9D9EC"/><path d="M31 53V42a5 5 0 0 1 10 0v11z" fill="#8C5A3A"/><path d="M39 20a7 7 0 0 1 7-9a9 9 0 0 1 16 3a5 5 0 0 1-1 10H43a4 4 0 0 1-4-4z" fill="#D8D2C4"/><path d="M8 54h56" fill="none"/></g><path d="M8 46q7-4 14 0t14 0t14 0t14 0" fill="none" stroke="#4A2E1A" stroke-width="4.6" stroke-linecap="round"/><path d="M8 46q7-4 14 0t14 0t14 0t14 0" fill="none" stroke="#CFC7B6" stroke-width="2.2" stroke-linecap="round"/>'}, title:"오늘 조호르·믈라카·느그리슴빌란 전면 휴교", titleEn:"Haze Closes All Schools in Johor, Melaka and Negeri Sembilan Today",
+     lead:"교육부가 연무 때문에 14일 수요일 세 개 주의 모든 학교와 여러 교육구의 학교를 닫는다고 발표했어요. 아이를 학교에 보내는 가정은 우리 동네 교육구를 꼭 확인하세요.",
+     pts:["조호르·믈라카·느그리슴빌란은 모든 학교가 휴교해요", "슬랑오르 훌루 랑앗·세팡, 파항 콴탄·프칸·롬핀, 사바 타와우, 사라왁 세리안·스리 아만·루복 안투 지역 학교도 쉬어요", "그 밖의 주와 교육구 학교는 평소대로 수업해요"],
+     info:[["발표", "파들리나 시덱 교육부 장관 (13일 페이스북)"], ["휴교 중", "가정 학습(PdPR)으로 수업하고, 교사와 직원은 재택근무할 수 있어요"], ["대기 질", "13일 오후 3시 기준 전국 22곳이 ‘건강에 해로움’ 수준"]],
+     src:"Bernama · 10.13", url:"https://www.bernama.com/en/general/news.php?id=2619585"},
+    {region:"말레이시아", tag:"스포츠", icon:"coin", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><circle cx="36" cy="32" r="21"/><path d="M60 7l1.4 3.4 3.4 1.4-3.4 1.4-1.4 3.4-1.4-3.4-3.4-1.4 3.4-1.4z"/><path d="M6 26h6M5 33h6M7 40h5" fill="none"/></g><circle cx="36" cy="32" r="21" fill="#F2CE7E" stroke="#6B4226" stroke-width="1.6"/><g fill="#8C5A3A" stroke="#6B4226" stroke-width="1" stroke-linejoin="round"><polygon points="40.0,34.3 36.0,36.6 32.0,34.3 32.0,29.7 36.0,27.4 40.0,29.7"/><polygon points="49.3,34.1 45.6,36.3 41.9,34.1 41.9,29.9 45.6,27.7 49.3,29.8"/><polygon points="44.5,42.5 40.8,44.6 37.1,42.5 37.1,38.2 40.8,36.0 44.5,38.2"/><polygon points="34.9,42.5 31.2,44.6 27.5,42.5 27.5,38.2 31.2,36.0 34.9,38.2"/><polygon points="30.1,34.1 26.4,36.3 22.7,34.1 22.7,29.9 26.4,27.7 30.1,29.8"/><polygon points="34.9,25.8 31.2,28.0 27.5,25.8 27.5,21.5 31.2,19.4 34.9,21.5"/><polygon points="44.5,25.8 40.8,28.0 37.1,25.8 37.1,21.5 40.8,19.4 44.5,21.5"/><polygon points="52.7,41.7 50.5,43.0 48.2,41.7 48.2,39.1 50.5,37.8 52.7,39.1"/><polygon points="38.3,50.0 36.0,51.3 33.7,50.0 33.7,47.4 36.0,46.1 38.3,47.4"/><polygon points="23.8,41.7 21.5,43.0 19.3,41.7 19.3,39.1 21.5,37.8 23.8,39.1"/><polygon points="23.8,24.9 21.5,26.2 19.3,24.9 19.3,22.3 21.5,21.0 23.8,22.3"/><polygon points="38.3,16.6 36.0,17.9 33.7,16.6 33.7,14.0 36.0,12.7 38.3,14.0"/><polygon points="52.7,24.9 50.5,26.2 48.2,24.9 48.2,22.3 50.5,21.0 52.7,22.3"/></g><circle cx="36" cy="32" r="21" fill="none" stroke="#6B4226" stroke-width="1.6"/><path d="M22 20q5-6 12-7.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" opacity=".75"/><path d="M6 26h6M5 33h6M7 40h5" fill="none" stroke="#C98B1E" stroke-width="1.8" stroke-linecap="round"/><path d="M60 7l1.4 3.4 3.4 1.4-3.4 1.4-1.4 3.4-1.4-3.4-3.4-1.4 3.4-1.4z" fill="#F7D36B" stroke="#8A5A12" stroke-width="1.2" stroke-linejoin="round"/>'}, title:"36년 만의 금메달, 세팍타크로팀에 포상금", titleEn:"Golden Tigers Get RM160,000 After Ending a 36-Year Wait for Gold",
+     lead:"아이치·나고야 2026 아시안게임 결승에서 태국을 2‑0으로 꺾은 남자 세팍타크로 대표팀 ‘골든 타이거즈’가 협회에서 포상금을 받았어요.",
+     pts:["말레이시아 세팍타크로협회(PSM)가 선수 12명과 코치 2명에게 모두 16만 링깃을 줬어요", "정부 포상을 기다리지 않고 협회가 직접 마련한 돈이에요. 수말리 르두안 협회장은 이만한 포상은 처음일 거라고 했어요", "협회 파트너인 텔레콤 말레이시아(TM)는 금괴와 쇼핑 상품권을 더했어요"],
+     info:[["대회", "아이치·나고야 2026 아시안게임"], ["축하 행사", "12일 저녁, 쿠알라룸푸르"]],
+     src:"Bernama · 10.13", url:"https://www.bernama.com/en/sports/news.php?id=2619355"},
+    {region:"말레이시아", tag:"과학", icon:"leaf", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M22 30a5 5 0 0 1 5-5h16a5 5 0 0 1 5 5v20a5 5 0 0 1-5 5H27a5 5 0 0 1-5-5z"/><rect x="30" y="17" width="10" height="9"/><rect x="28" y="7" width="14" height="11" rx="2"/><path d="M48 46l7-4 9 2-2 9-8 2-7-3z"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><rect x="30" y="17" width="10" height="9" fill="#E8DCC2"/><rect x="28" y="7" width="14" height="11" rx="2" fill="#2F6B5A"/><path d="M22 30a5 5 0 0 1 5-5h16a5 5 0 0 1 5 5v20a5 5 0 0 1-5 5H27a5 5 0 0 1-5-5z" fill="#F3E9D2"/><path d="M23 36h24v14a4 4 0 0 1-4 4H27a4 4 0 0 1-4-4z" fill="#C9822F" stroke="none"/><path d="M22 30a5 5 0 0 1 5-5h16a5 5 0 0 1 5 5v20a5 5 0 0 1-5 5H27a5 5 0 0 1-5-5z" fill="none"/><rect x="27" y="31" width="16" height="9" rx="1.5" fill="#FBF7EF"/><path d="M48 46l7-4 9 2-2 9-8 2-7-3z" fill="#6B4226"/></g><path d="M30 34.5h10M31.5 37h7" stroke="#B9AE97" stroke-width="1.2" stroke-linecap="round"/><path d="M51 47l5-2M53 51l6-1M57 45.5l4 .6" stroke="#3B2414" stroke-width="1.1" stroke-linecap="round"/><path d="M25.5 29v6" stroke="#fff" stroke-width="1.8" stroke-linecap="round" opacity=".8"/><path d="M12 14l1.2 3 3 1.2-3 1.2-1.2 3-1.2-3-3-1.2 3-1.2z" fill="#F7D36B" stroke="#8A5A12" stroke-width="1.1" stroke-linejoin="round"/>'}, title:"숲속의 침향, 대학이 향수병에 담았다", titleEn:"UTM Bottles Agarwood, the 'Forest Gold', as a Perfume",
+     lead:"말레이시아 공과대학교(UTM) 파고 캠퍼스 연구진이 침향나무(Aquilaria malaccensis)의 향으로 향수 ‘프라그래드(Fragrad)’를 만들었어요.",
+     pts:["쉬그래드·히그래드·테자·투아, 네 가지 향이 있어요", "향수마다 침향 에센스를 약 25% 넣고, 한 번 만드는 데 3주에서 2달이 걸려요", "지금까지 300병 가까이 만들었고, 2024~2027년에 600병 넘게 파는 것이 목표예요"],
+     info:[["연구 책임", "노를리자 압둘 라티프 박사 (UTM 파고 ICA)"], ["판매", "UTM 스쿠다이 캠퍼스 UTMart와 여러 온라인 플랫폼"]],
+     src:"Malay Mail (Bernama) · 10.13", url:"https://www.malaymail.com/news/life/2026/10/13/from-forest-gold-to-bottled-fragrance-utm-gives-agarwood-new-life/238789"},
+    {region:"말레이시아", tag:"음식", icon:"bowl", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M9 31h54a27 21 0 0 1-54 0z"/><path d="M13 31q23-17 46 0z"/><rect x="27" y="50" width="18" height="6" rx="2"/><path d="M42 24L62 8M46 26L64 12" fill="none"/></g><path d="M42 24L62 8M46 26L64 12" fill="none" stroke="#4A2E1A" stroke-width="3.6" stroke-linecap="round"/><path d="M42 24L62 8M46 26L64 12" fill="none" stroke="#D9A441" stroke-width="1.8" stroke-linecap="round"/><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><rect x="27" y="50" width="18" height="6" rx="2" fill="#2F6B5A"/><path d="M13 31q23-17 46 0z" fill="#F2D27A"/><path d="M9 31h54a27 21 0 0 1-54 0z" fill="#F5E4BA"/><path d="M13 36h46" fill="none" stroke="#2F6B5A" stroke-width="2.2"/><path d="M18 30q4-6 8-1t8-1M30 26q4-5 8 0t8 0M38 30q4-5 8 0t7 1" fill="none" stroke="#D9A441" stroke-width="1.3"/><path d="M19 27l9-5 3 4-9 5z" fill="#C8553D"/><path d="M33 22l9-2 1 4.5-9 2z" fill="#C8553D"/></g><g fill="#5FAE84" stroke="#2F5D49" stroke-width=".8"><circle cx="28" cy="29.5" r="1.3"/><circle cx="45" cy="28" r="1.3"/><circle cx="40" cy="30" r="1.1"/><circle cx="24" cy="30.5" r="1.1"/></g><path d="M16 40q3 6 9 9" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" opacity=".7"/>'}, title:"쿠칭 맛 그대로, 체라스의 콜로 미", titleEn:"A Taste of Kuching in Cheras at So Good Kolo Mee",
+     lead:"배달로 시작해 인기를 얻은 ‘소 굿 콜로 미(So Good Kolo Mee)’가 쿠알라룸푸르 타만 체라스 프르타마에 가게를 열었어요. 대대로 내려온 집안 레시피로 사라왁 음식을 내요.",
+     pts:["오리지널 콜로 미는 8링깃이에요. 가는 에그누들을 라드에 버무리고 다진 돼지고기와 차슈, 어묵 등을 올려요", "23가지 약초를 넣은 국물에 조린 쿠에 찹은 12링깃으로, 4대째 내려온 레시피예요", "직접 만든 페이스트로 끓인 사라왁 락사 스페셜은 14링깃이에요"],
+     info:[["어디", "1, Jalan Koop Cuepacs 4A, Taman Cheras Pertama"], ["운영", "오전 9시~오후 9시, 수요일 휴무"]],
+     src:"Malay Mail · 10.12", url:"https://www.malaymail.com/news/eat-drink/2026/10/12/so-good-kolo-mee-in-taman-cheras-pertama-woos-us-with-kolo-mee-kueh-chap-and-laksa-that-will-banish-any-sarawakians-homesickness/238726"},
+    {region:"세계", tag:"자연", icon:"leaf", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M36 56Q33 36 21 17M36 56Q37 34 39 12M36 56Q41 38 53 20" fill="none"/><path d="M30.0 34.3L27.4 28.5L24.4 22.7L21.0 17.0M37.4 31.8L37.9 25.2L38.4 18.6L39.0 12.0M43.6 36.2L46.4 30.8L49.6 25.4L53.0 20.0" fill="none" stroke-width="15"/><path d="M36 50q-12-2-18-10q11 0 18 6zM36 48q11-3 16-12q-10 1-16 8z"/></g><path d="M36 56Q33 36 21 17M36 56Q37 34 39 12M36 56Q41 38 53 20" fill="none" stroke="#4A2E1A" stroke-width="3.4" stroke-linecap="round"/><path d="M36 56Q33 36 21 17M36 56Q37 34 39 12M36 56Q41 38 53 20" fill="none" stroke="#8DB66A" stroke-width="1.6" stroke-linecap="round"/><path d="M36 50q-12-2-18-10q11 0 18 6zM36 48q11-3 16-12q-10 1-16 8z" fill="#7CC6A0" stroke="#2F5D49" stroke-width="1.4" stroke-linejoin="round"/><path d="M28.6 34.9L25.8 33.6M31.4 33.7L32.5 30.9M26.7 30.6L23.9 29.5M29.4 29.3L30.4 26.4M24.6 26.3L21.7 25.3M27.3 24.9L28.1 22.0M22.3 22.0L19.4 21.2M24.9 20.5L25.6 17.6M19.7 17.8L16.8 17.1M22.3 16.2L22.9 13.2M35.9 31.7L34.0 29.4M38.9 31.9L41.1 29.9M36.3 26.7L34.3 24.4M39.3 27.0L41.5 24.9M36.7 21.8L34.7 19.4M39.6 22.0L41.9 20.0M37.1 16.8L35.2 14.5M40.1 17.1L42.3 15.1M37.5 11.9L35.6 9.5M40.5 12.1L42.8 10.1M42.3 35.5L41.4 32.6M45.0 36.9L47.8 35.8M44.4 31.4L43.6 28.5M47.0 32.9L49.9 31.9M46.7 27.3L45.9 24.4M49.3 28.9L52.2 28.0M49.1 23.3L48.5 20.3M51.7 24.8L54.6 24.1M51.8 19.2L51.2 16.2M54.2 20.8L57.2 20.2" fill="none" stroke="#8A5A12" stroke-width="4.4" stroke-linecap="round"/><path d="M28.6 34.9L25.8 33.6M31.4 33.7L32.5 30.9M26.7 30.6L23.9 29.5M29.4 29.3L30.4 26.4M24.6 26.3L21.7 25.3M27.3 24.9L28.1 22.0M22.3 22.0L19.4 21.2M24.9 20.5L25.6 17.6M19.7 17.8L16.8 17.1M22.3 16.2L22.9 13.2M35.9 31.7L34.0 29.4M38.9 31.9L41.1 29.9M36.3 26.7L34.3 24.4M39.3 27.0L41.5 24.9M36.7 21.8L34.7 19.4M39.6 22.0L41.9 20.0M37.1 16.8L35.2 14.5M40.1 17.1L42.3 15.1M37.5 11.9L35.6 9.5M40.5 12.1L42.8 10.1M42.3 35.5L41.4 32.6M45.0 36.9L47.8 35.8M44.4 31.4L43.6 28.5M47.0 32.9L49.9 31.9M46.7 27.3L45.9 24.4M49.3 28.9L52.2 28.0M49.1 23.3L48.5 20.3M51.7 24.8L54.6 24.1M51.8 19.2L51.2 16.2M54.2 20.8L57.2 20.2" fill="none" stroke="#EBC45C" stroke-width="2.4" stroke-linecap="round"/><rect x="31.5" y="45" width="9" height="4.5" rx="1.5" fill="#C8553D" stroke="#4A2E1A" stroke-width="1.3"/>'}, title:"논의 3분의 1을 자연에 돌려준 쌀 농부", titleEn:"An Italian Rice Farmer Gives a Third of Her Land Back to Nature",
+     lead:"이탈리아 북서부 베르첼리 평야의 쌀 농부 알리체 체루티가 110헥타르 농장의 약 3분의 1을 자연 상태로 되돌렸어요. 수확량보다 생물다양성을 앞세운 선택이에요.",
+     pts:["참나무, 오리나무, 물푸레나무, 서어나무 같은 토종 식물을 1만 그루 넘게 심었어요", "약 25헥타르가 습지가 되어 큰주홍부전나비 같은 희귀종이 살아요. 이탈리아에서 하나뿐인 흑꼬리도요 번식 기록지이기도 해요", "카르나롤리 클라시코 같은 옛 품종을 화학비료 없이 기르고, 수확 사이에는 양 약 1,200마리가 논에서 풀을 뜯어요"],
+     info:[["어디", "이탈리아 크로바 (밀라노와 토리노 사이)"], ["농장", "EU 인증 보호구역"]],
+     src:"Malay Mail (AFP) · 10.13", url:"https://www.malaymail.com/news/life/2026/10/13/italian-rice-farmer-beats-heat-with-biodiversity-haven/238812"}
+  ],
+  trend: {
+    title: "2006년 전자상거래법, 새 법으로 바뀐다", titleEn: "Malaysia Moves to Replace Its 2006 E-Commerce Act",
+    asOf: "2026년 10월 13일 보도 기준",
+    body: "정부가 2027년 예산안 발표에서, 주로 전자 거래의 법적 효력을 인정하는 데 그쳤던 2006년 전자상거래법을 폐지하고 플랫폼과 판매자의 의무를 분명히 하는 새 법으로 바꾸겠다고 밝혔습니다. 국내무역·생활비부는 9월 19일 이 정책 결정을 승인했고, 법안은 2027년 3월 의회 회기에 상정될 전망이라고 기사는 전했습니다.",
+    points: [
+      "2025년 10월 국내무역·생활비부(KPDN) 검토에서는 온라인 장터 운영을 다루는 종합적인 틀이 없고, 판매자가 소비자를 속였을 때 플랫폼 책임이 불분명하다는 점이 지적됐습니다.",
+      "말레이시아 소비자를 상대하는 해외 판매자와 플랫폼에 대한 단속이 제한적이라는 점도 빈틈으로 꼽혔습니다.",
+      "새 법에는 판매자 신원 확인과 정보 공개 강화, 상품 안전 조치, 신고부터 결정까지 이어지는 온라인 분쟁 해결 창구가 담길 수 있고, 플랫폼 면허제도 검토 중입니다.",
+      "새 법이 시행되기 전까지는 1999년 소비자보호법과 2024년 전자거래 규정이 계속 적용됩니다."
+    ],
+    src: [["Malay Mail (2026.10.13)","https://www.malaymail.com/news/malaysia/2026/10/13/malaysia-is-getting-a-new-e-commerce-law-what-could-change-for-online-shoppers/238661"]]
+  },
+  life: {
+    title: "같은 ‘락사’, 다른 국수: 지역마다 달라지는 한 그릇", titleEn: "Same Name, Different Bowl: How Laksa and Hokkien Mee Change by Region",
+    intro: "말레이시아에서는 같은 이름의 국수가 지역에 따라 전혀 다른 음식으로 나옵니다. 이름만 보고 시켰다가 놀라지 않도록, 영어판 위키백과의 락사와 호키엔 미 항목에서 차이를 정리했습니다.",
+    tips: [
+      ["KL의 ‘락사’는 커리 락사","클랑 밸리에서는 코코넛 수프 국수인 커리 미를 락사나 커리 락사라고도 부릅니다. 튀긴 두부와 꼬막, 긴 콩, 민트를 넣고 노란 에그누들이나 쌀국수를 씁니다."],
+      ["페낭 ‘아삼 락사’는 새콤한 생선 국물","아삼(asam)은 음식에 신맛을 내는 재료를 두루 가리키는 말로, 타마린드가 새콤한 맛을 냅니다. 삶아 잘게 부순 고등어로 국물을 내고 민트와 파인애플, 새우 페이스트로 맛을 냅니다."],
+      ["사라왁 락사는 그곳만의 향신료","다른 주의 락사에는 없는 향신료 조합이 특징입니다. 쌀국수에 닭고기, 달걀지단, 새우, 숙주, 고수를 올립니다."],
+      ["조호르 락사는 스파게티로","구운 울프 헤링과 코코넛 밀크로 진하게 끓인 국물에 스파게티를 씁니다. 주로 명절이나 특별한 날에 먹습니다."],
+      ["호키엔 미, KL은 볶음·페낭은 국물","KL의 호키엔 미는 굵은 노란 면을 진한 간장에 볶은 호키엔 차 미입니다. 페낭의 호키엔 미는 매콤한 새우 국물이 특징인 국수로, 하 미(hae mee)라고도 부릅니다."]
+    ],
+    src: [["Wikipedia: Laksa","https://en.wikipedia.org/wiki/Laksa"],["Wikipedia: Hokkien mee","https://en.wikipedia.org/wiki/Hokkien_mee"]]
+  },
+  shows: {
+    intro: "쿠알라룸푸르에서 지금 볼 수 있거나 곧 열리는 전시와 공연입니다.",
+    items: [
+      {kind:"전시", title:"로버트 라우션버그와 아시아 (Robert Rauschenberg and Asia)", when:"11월 1일까지", where:"일함 갤러리(ILHAM Gallery) 5층", memo:"미국 현대미술 작가 로버트 라우션버그의 전시입니다.", url:"https://ilhamgallery.com/exhibitions/robert-rauschenberg-and-asia/"},
+      {kind:"전시", title:"경계 없는 예술: 난양으로 가는 새 항해 (Art Without Boundaries — New Voyage to Nanyang)", when:"11월 11일까지", where:"루앙 트두(Ruang Teduh), 익스체인지 106, 툰 라작 익스체인지", memo:"대만 태생의 큐레이터이자 작가 빅토리아 루가 AI의 도움을 받아 만든 작품을 젊은 작가들의 작품과 함께 선보입니다.", url:"https://www.malaymail.com/news/life/2026/10/10/art-meets-algorithm-victoria-lu-explores-ai-and-human-creativity-at-kuala-lumpur-exhibition/238604"},
+      {kind:"연극", title:"쇼트+스위트 말레이시아 페스티벌 2026: 연극 (Short + Sweet Malaysia Festival 2026: Theatre)", when:"10월 16~17일, 23~25일", where:"KLPac 펜타스 2 (Pentas 2)", memo:"10분 이내의 짧은 창작극을 여러 편 묶어 올리는 경연 축제로, 25일은 갈라와 시상식입니다.", url:"https://www.klpac.org/shows/short-sweet-malaysia-festival-2026-theatre/"},
+      {kind:"오페라", title:"투란도트 (Turandot)", when:"10월 17~25일", where:"KLPac", memo:"KLPac 오케스트라가 연주합니다.", url:"https://www.klpac.org/shows/turandot/"},
+      {kind:"클래식", title:"스티븐 허프와 함께하는 저녁 (A Regal Evening with Stephen Hough)", when:"10월 24일", where:"데완 필하모닉 페트로나스 (Dewan Filharmonik PETRONAS)", memo:"히로카미 준이치가 지휘하는 말레이시아 필하모닉과 피아니스트 스티븐 허프가 베토벤 피아노 협주곡 5번 ‘황제’와 교향곡 4번을 연주합니다.", url:"https://www.mpo.com.my/season-2026/a-regal-evening-with-stephen-hough"},
+      {kind:"K팝", title:"더 로즈 아시아 투어 (The Rose ROSETOPIA Asia Tour)", when:"10월 25일", where:"메가 스타 아레나, 쿠알라룸푸르", memo:"한국 밴드 더 로즈의 쿠알라룸푸르 공연으로, CK 스타 엔터테인먼트가 주최합니다.", url:"https://thesmartlocal.my/the-rose-concert-2026/"},
+      {kind:"클래식", title:"보르네오의 울림: 알레나 무랑과 MPO (Beats of Borneo: Alena Murang with the MPO)", when:"10월 31일", where:"데완 필하모닉 페트로나스 (Dewan Filharmonik PETRONAS)", memo:"히로카미 준이치가 지휘하는 말레이시아 필하모닉이 라벨 ‘쿠프랭의 무덤’과 모차르트 교향곡 40번을 연주하고, 알레나 무랑이 비비안 추아의 사페 협주곡을 초연합니다.", url:"https://www.mpo.com.my/season-2026/beats-of-borneo-alena-murang-with-the-mpo"}
+    ]
+  },
+  music: {
+    title: "Plastic Love", artist: "다케우치 마리야 (Mariya Takeuchi)", year: "1984",
+    mood: "도시의 불빛이 하나둘 켜지는 수요일 저녁",
+    why: "다케우치 마리야가 직접 쓰고 부르고 야마시타 다쓰로가 프로듀스와 편곡을 맡은 시티 팝으로, 1984년 앨범 『Variety』에 실렸습니다. 경쾌한 베이스 위로 쓸쓸한 멜로디가 흘러, 한 주의 한가운데 퇴근길에 창밖을 보며 듣기 좋습니다.",
+    query: "Mariya Takeuchi Plastic Love"
+  },
+  fact: {
+    title: "10월 14일, 헤이스팅스 전투가 벌어진 날", titleEn: "October 14: The Day of the Battle of Hastings",
+    body: "1066년 10월 14일, 노르망디 공작 윌리엄이 이끄는 군대가 잉글랜드 헤이스팅스에서 약 11km 떨어진 곳, 지금의 배틀 근처에서 해럴드 왕의 잉글랜드군과 맞붙었습니다. 오전 9시에 시작된 싸움은 해 질 녘까지 이어졌고, 노르만군이 이기면서 노르만 정복이 시작됐습니다.",
+    more: [
+      "해럴드가 어떻게 숨졌는지는 사료마다 엇갈리며, 화살이 눈에 맞았다는 널리 알려진 이야기는 1080년대 기록에 처음 나옵니다.",
+      "윌리엄은 그해 12월 25일 웨스트민스터 사원에서 잉글랜드 왕으로 즉위했습니다.",
+      "전투에 이르는 이야기는 수를 놓아 만든 ‘바이외 태피스트리’에 담겨 있으며, 지금은 프랑스 바이외에 전시돼 있습니다."
+    ],
+    src: [["Wikipedia: Battle of Hastings","https://en.wikipedia.org/wiki/Battle_of_Hastings"]]
+  }
+},
+
+{
   date: "2026-10-13",
   quote: {
     ko: "내 말 믿어, 친구. 그냥 배를 타고 한가로이 노니는 것만큼 해 볼 만한 일은 없어. 정말이지 하나도 없지.",
@@ -592,11 +713,16 @@ const DAYS = [
      pts:["기차역은 1910년에 문을 열었고, 식민 정부 건축가 아서 베니슨 허백이 무굴·무어 양식에 서양식 아치와 첨탑을 섞은 인도·사라센 양식으로 설계했어요", "지금도 KTM 코뮤터와 ETS 승객이 오가는 현역 역이에요", "술탄 압둘 사마드 빌딩처럼 고쳐 쓰는 방식으로, 관광객과 통근객을 위한 문화 명소로 바꿀 계획이에요"],
      info:[["함께", "철도자산공사(RAC)"], ["참고", "술탄 압둘 사마드 빌딩 재생 사업에는 지금까지 약 50만 명이 다녀갔어요"]],
      src:"Malay Mail · 10.12", url:"https://www.malaymail.com/news/malaysia/2026/10/12/loke-announces-khazanah-to-restore-kl-railway-station-and-ktmb-hq-hopes-to-see-end-of-asset-sale-claims/238790"},
-    {region:"말레이시아", tag:"음악", icon:"music", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><rect x="26" y="8" width="20" height="25" rx="10"/><path d="M36 33v17" fill="none"/><ellipse cx="36" cy="52" rx="14" ry="4"/><path d="M56 8l1.6 4 4 1.6-4 1.6-1.6 4-1.6-4-4-1.6 4-1.6z"/></g><path d="M36 33v17" fill="none" stroke="#4A2E1A" stroke-width="4.6" stroke-linecap="round"/><path d="M36 33v17" fill="none" stroke="#8C5A3A" stroke-width="2.2" stroke-linecap="round"/><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><ellipse cx="36" cy="52" rx="14" ry="4" fill="#8C5A3A"/><rect x="26" y="8" width="20" height="25" rx="10" fill="#D9D2C3"/><rect x="25" y="19" width="22" height="4" rx="1" fill="#DDA22F"/></g><path d="M30 12.5h12M28.5 16h15M28.5 26.5h15M30 30h12" stroke="#8F877A" stroke-width="1.1" stroke-linecap="round"/><path d="M30 11q2-2 4-2.4" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" opacity=".8"/><path d="M56 8l1.6 4 4 1.6-4 1.6-1.6 4-1.6-4-4-1.6 4-1.6z" fill="#F7D36B" stroke="#8A5A12" stroke-width="1.2" stroke-linejoin="round"/>'}, title:"노래 ‘Derita’로 빈탕 P. 라믈리 2026 우승", titleEn:"Rul Azhar Wins Bintang P. Ramlee 2026 With “Derita”",
-     lead:"쿠칭에서 열린 노래 경연 ‘빈탕 P. 라믈리 2026’ 결선에서 북부 지역 대표 룰 아즈하르가 노래 ‘Derita’로 우승했어요.",
-     pts:["결선에 오른 여섯 명 가운데 1위로, 상금 2만 링깃과 트로피, 상장을 받았어요", "2위는 사라왁 지역의 마하티르 자일라니, 3위는 사바 지역의 제프리잔 자밀이에요", "최우수 무대상은 남부 지역의 모흐드 리즈완 모드 타입에게 돌아갔어요"],
-     info:[["장소", "사라왁 대학교(UNIMAS) 아레나 그밀랑"], ["본명", "모하마드 파크룰 아즈하르 모하마드 자반디"]],
-     src:"Bernama · 10.12", url:"https://www.bernama.com/en/general/news.php?id=2618754"},
+    {region:"세계", tag:"영국 입시", icon:"school", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M20 29v11q16 9 32 0V29z"/><path d="M6 24L36 12l30 12-30 12z"/><path d="M36 24l20 5v14" fill="none"/><path d="M53 43h6l1 8h-8z"/></g><g stroke="#1F2A36" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M20 29v11q16 9 32 0V29z" fill="#3E4C5E"/><path d="M6 24L36 12l30 12-30 12z" fill="#2F3B4A"/></g><path d="M14 24l22-9" stroke="#5D7088" stroke-width="1.4" stroke-linecap="round" fill="none"/><path d="M36 24l20 5v14" fill="none" stroke="#C98B1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="36" cy="24" r="2.4" fill="#DDA22F" stroke="#1F2A36" stroke-width="1.2"/><path d="M53 43h6l1 8h-8z" fill="#F2CF6B" stroke="#8A5A12" stroke-width="1.2" stroke-linejoin="round"/><path d="M54.5 45v5M56 45v5M57.5 45v5" stroke="#C98B1E" stroke-width=".9"/>'}, title:"옥스브리지·의대 지원 마감, 이번 주 목요일", titleEn:"UCAS Deadline for Oxford, Cambridge and Medicine Is This Thursday",
+     lead:"2027년 입학을 위한 옥스퍼드·케임브리지와 대부분의 의대·치대·수의대 UCAS 지원이 10월 15일에 마감돼요. 영국 대학 진학을 준비하는 국제학교 가정이라면 일정을 꼭 확인하세요.",
+     pts:["마감은 10월 15일 영국 시간 오후 6시, 말레이시아 시간으로는 16일 새벽 1시예요", "15일 마감 과정을 넣은 뒤 마감이 늦은 과정을 더할 수 있지만, 지원은 모두 합쳐 다섯 곳까지예요", "대부분의 다른 학부 과정은 2027년 1월 13일 영국 시간 오후 6시가 동일 심사 마감이에요"],
+     info:[["대상", "2027년 입학, 옥스퍼드·케임브리지와 대부분의 의학·치의학·수의학 과정"], ["유학생", "많은 대학이 유학생 지원은 그 뒤로도 더 받는다고 UCAS는 안내해요"]],
+     src:"UCAS 공식 일정", url:"https://www.ucas.com/applying/applying-to-university/dates-and-deadlines-for-uni-applications"},
+    {region:"세계", tag:"호주 유학", icon:"passport", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><rect x="16" y="8" width="30" height="44" rx="3"/><circle cx="52" cy="41" r="11"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><rect x="16" y="8" width="30" height="44" rx="3" fill="#2F6B5A"/></g><g fill="none" stroke="#F2CF6B" stroke-width="1.3" stroke-linecap="round"><circle cx="31" cy="26" r="7"/><path d="M24 26h14M31 19c-3 4-3 10 0 14M31 19c3 4 3 10 0 14M25 42h12M27 46h8"/></g><circle cx="52" cy="41" r="11" fill="#F5E4BA" stroke="#B5462F" stroke-width="1.8"/><circle cx="52" cy="41" r="7.5" fill="none" stroke="#B5462F" stroke-width="1" stroke-dasharray="2 1.6"/><path d="M48 41l3 3 5-6" fill="none" stroke="#B5462F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>'}, title:"호주 학생비자 규칙 변경, 가족 동반 까다로워져", titleEn:"Australia Tightens Student Visa Rules, Including for Family Members",
+     lead:"호주 정부가 10월 2일부터 학생비자(500)와 학생 보호자 비자(590) 신청 규칙을 바꿨어요. 이미 받은 학생비자에는 영향이 없어요.",
+     pts:["대부분의 임시 비자 소지자는 이제 호주 안에서 학생비자를 신청할 수 없고, 호주 밖에서 신청해 발급 때도 호주 밖에 있어야 해요", "학생비자에 가족을 넣는 것은 박사과정생, 태평양·ASEAN 국가 국민, 외국 정부 전액 장학생 등 예외만 가능하고, 발급 뒤 가족 추가는 예외 없이 안 돼요", "초·중등 과정 학생은 호주 안에서 다시 학생비자를 신청할 수 있는 예외에 들어가요"],
+     info:[["시행", "2026년 10월 2일 (그 전에 낸 신청은 종전 규정)"], ["보호자 비자", "현재 590 소지자는 호주 안에서 계속 재신청할 수 있어요"], ["확인", "호주 내무부 안내, 등록 이민대리인 상담 권장"]],
+     src:"Study Australia · 10.07", url:"https://www.studyaustralia.gov.au/en/tools-and-resources/news/student-visa-changes-october-2026"},
     {region:"말레이시아", tag:"이야기", icon:"book", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M8 16h56v36H8z"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M8 16h56v36H8z" fill="#6B4A2B"/><path d="M11 19h24v30H11z" fill="#33261D"/><path d="M37 19h24v30H37z" fill="#33261D"/><path d="M36 16v36" fill="none"/></g><g stroke="#4A2E1A" stroke-width="1.1" stroke-linejoin="round"><rect x="14" y="23" width="18" height="14" fill="#E8D3A8"/><rect x="40" y="29" width="18" height="14" fill="#E8D3A8"/></g><path d="M18 36v-5l5-3.5 5 3.5v5z" fill="#A8843F"/><path d="M21.5 36v-3h3v3z" fill="#6B4A2B"/><path d="M41 42q5-7 9-3q3-3 7 3z" fill="#A8843F"/><circle cx="53" cy="33" r="2" fill="#C98B3A"/><path d="M14 23h3l-3 3zM32 23h-3l3 3zM40 29h3l-3 3zM58 29h-3l3 3z" fill="#DDA22F"/><path d="M15 42h14M15 45.5h9M41 24h14" fill="none" stroke="#C9B48A" stroke-width="1.3" stroke-linecap="round"/>'}, title:"셰프 완, 쿠칭 개척자의 증손자였다", titleEn:"Chef Wan Reveals Kuching Pioneer Ong Tiang Swee Was His Great-Grandfather",
      lead:"요리사 셰프 완(다툭 레주안 이스마일)이 쿠칭의 중국역사박물관을 둘러보며, 쿠칭의 개척자이자 상인이었던 옹 티앙 스위가 자신의 증조할아버지라고 밝혔어요.",
      pts:["옹 티앙 스위는 셰프 완의 외할머니의 아버지예요. 쿠칭에는 그의 이름을 딴 길이 있고, 1950년 쿠칭에서 세상을 떠났을 때 주 장례로 치러졌어요", "옹 집안의 젊은 후손들이 셰프 완을 만나러 와 옛 가족 사진첩을 펼쳐 보였어요", "일본 점령기에 집안은 재산을 빼앗겼고 증조할머니와 할머니는 싱가포르로 보내졌어요. 셰프 완은 1958년 싱가포르에서 태어났어요"],
