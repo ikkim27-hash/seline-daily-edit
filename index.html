@@ -455,15 +455,18 @@ section h2,.news h3,.news article:first-child h3{font-size:clamp(1.22rem,4.24vw,
 /* 하트: 그날 호에 보내는 하트와 하트 수 */
 .likes{position:relative;display:flex;flex-direction:column;align-items:center;gap:10px;border-top:3px solid var(--ink);padding-top:22px;text-align:center}
 .likes .lk-q{margin:0;font-size:.95rem;color:var(--muted)}
-.likes .heart{position:relative;z-index:1;width:53px;height:53px;border-radius:50%;border:1px solid #E7B9A8;background:var(--surface);color:#C8553D;display:grid;place-items:center;padding:0;transition:transform .15s ease,background .2s ease}
-.likes .heart svg{width:26px;height:26px;display:block}
+.likes .heart{position:relative;z-index:1;width:48px;height:48px;border-radius:50%;border:1px solid #E7B9A8;background:var(--surface);color:#C8553D;display:grid;place-items:center;padding:0;transition:transform .15s ease,background .2s ease}
+.likes .heart svg{width:23px;height:23px;display:block}
 .likes .heart:not(:disabled):hover{transform:scale(1.06)}
 .likes .heart:not(:disabled):active{transform:scale(.92)}
 .likes .heart:disabled{cursor:default}
 .likes .heart[aria-pressed="true"]{background:#C8553D;border-color:#C8553D;color:#fff}
-.likes .heart.pop{animation:hpop .5s ease}
+/* 누른 뒤에는 구름처럼 둥실둥실 떠 있다 */
+.likes .heart[aria-pressed="true"]{animation:hfloat 3.4s ease-in-out infinite;box-shadow:0 6px 14px rgba(200,85,61,.22)}
+@keyframes hfloat{0%,100%{transform:translate(0,0) rotate(0)}25%{transform:translate(2px,-5px) rotate(2deg)}50%{transform:translate(0,-8px) rotate(0)}75%{transform:translate(-2px,-4px) rotate(-2deg)}}
+.likes .heart.pop{animation:hpop .5s ease,hfloat 3.4s ease-in-out .5s infinite}
 @keyframes hpop{0%{transform:scale(1)}40%{transform:scale(1.28)}100%{transform:scale(1)}}
-@media (prefers-reduced-motion:reduce){.likes .heart.pop{animation:none}.likes .heart{transition:none}}
+@media (prefers-reduced-motion:reduce){.likes .heart.pop,.likes .heart[aria-pressed="true"]{animation:none}.likes .heart{transition:none}}
 .likes .lk-n{margin:0;font-size:.95rem;color:var(--muted)}
 .likes .lk-n b{font-family:var(--latin);font-weight:600;font-size:1.3rem;color:var(--ink);margin-right:2px}
 .likes .lk-note{margin:0;font-size:.8rem;color:var(--muted)}
