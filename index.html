@@ -1461,10 +1461,10 @@ render();
     if(!mode || n === undefined){ box.hidden = true; return; }
     const on = mine(d), lock = on || !canPress || busy;
     box.hidden = false;
-    box.innerHTML = `<p class="lk-q">${on ? "하트를 보내 주셔서 고마워요" : "오늘 호가 마음에 드셨다면 하트를 눌러 주세요"}</p>
+    box.innerHTML = `<p class="lk-q">오늘 호가 마음에 드셨다면 하트를 눌러 주세요</p>
       <button type="button" class="heart" aria-pressed="${on}" aria-label="${on ? "하트를 보냈어요" : "이 호에 하트 보내기"}"${lock ? " disabled" : ""}>${HEART}</button>
       <p class="lk-n"><b>${n.toLocaleString("ko-KR")}</b> 하트</p>
-      ${!canPress && !on ? `<p class="lk-note">이 링크에서는 하트 수만 볼 수 있어요</p>` : ""}`;
+      ${on ? `<p class="lk-note">하트를 보내 주셔서 고마워요</p>` : (!canPress ? `<p class="lk-note">이 링크에서는 하트 수만 볼 수 있어요</p>` : "")}`;
   }
   async function webGet(d){
     const r = await fetch(`${API}/get/${NS}/heart-${d}`, {cache:"no-store"});
