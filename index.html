@@ -452,6 +452,28 @@ section h2,.news h3,.news article:first-child h3{font-size:clamp(1.22rem,4.24vw,
   @keyframes spglint{0%{background-position:100% 0}100%{background-position:0 0}}
 }
 @media (prefers-reduced-motion:reduce){.splash{display:none}}
+/* 하트: 그날 호에 보내는 하트와 하트 수 */
+.likes{position:relative;display:flex;flex-direction:column;align-items:center;gap:10px;border-top:3px solid var(--ink);padding-top:22px;text-align:center}
+.likes .lk-q{margin:0;font-size:.95rem;color:var(--muted)}
+.likes .heart{position:relative;z-index:1;width:53px;height:53px;border-radius:50%;border:1px solid #E7B9A8;background:var(--surface);color:#C8553D;display:grid;place-items:center;padding:0;transition:transform .15s ease,background .2s ease}
+.likes .heart svg{width:26px;height:26px;display:block}
+.likes .heart:not(:disabled):hover{transform:scale(1.06)}
+.likes .heart:not(:disabled):active{transform:scale(.92)}
+.likes .heart:disabled{cursor:default}
+.likes .heart[aria-pressed="true"]{background:#C8553D;border-color:#C8553D;color:#fff}
+.likes .heart.pop{animation:hpop .5s ease}
+@keyframes hpop{0%{transform:scale(1)}40%{transform:scale(1.28)}100%{transform:scale(1)}}
+@media (prefers-reduced-motion:reduce){.likes .heart.pop{animation:none}.likes .heart{transition:none}}
+.likes .lk-n{margin:0;font-size:.95rem;color:var(--muted)}
+.likes .lk-n b{font-family:var(--latin);font-weight:600;font-size:1.3rem;color:var(--ink);margin-right:2px}
+.likes .lk-note{margin:0;font-size:.8rem;color:var(--muted)}
+.likes[hidden]{display:none}
+/* 누르면 작은 하트들이 풍선 터지듯 사방으로 튀어 나간다 */
+.likes .burst{position:absolute;left:0;top:0;width:0;height:0;pointer-events:none;z-index:2}
+.likes .burst i{position:absolute;left:0;top:0;width:var(--s);height:var(--s);margin:calc(var(--s) / -2) 0 0 calc(var(--s) / -2);color:var(--c);opacity:0;animation:hfly var(--t) cubic-bezier(.15,.7,.3,1) var(--d) forwards}
+.likes .burst i svg{width:100%;height:100%;display:block}
+@keyframes hfly{0%{opacity:1;transform:translate(0,0) scale(.3) rotate(0)}15%{opacity:1}100%{opacity:0;transform:translate(var(--x),var(--y)) scale(1) rotate(var(--r))}}
+@media (prefers-reduced-motion:reduce){.likes .burst{display:none}}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -498,6 +520,8 @@ section h2,.news h3,.news article:first-child h3{font-size:clamp(1.22rem,4.24vw,
   <section id="shows"></section>
   <section id="fact"></section>
   <section id="english"></section>
+
+  <div class="likes" id="likes" hidden aria-live="polite"></div>
 
   <nav class="pager" id="pager" aria-label="날짜별 지난 호"></nav>
 
@@ -1421,6 +1445,108 @@ render();
   const go = () => { if(sp.classList.contains("out")) return; sp.classList.add("out"); setTimeout(()=>sp.remove(), 1950); };
   sp.addEventListener("click", go);
   setTimeout(go, 1700);
+})();
+/* 하트: 방문자가 그날 호에 하트를 보낸다. Claude 페이지에서는 db에, 공개 주소에서는 무료 카운터(abacus)에 날짜별로 쌓인다. 어느 쪽도 안 되면 하트 칸을 숨긴다. */
+(function(){
+  const box = $("likes"); if(!box) return;
+  const HEART = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5C5.4 15.9 2.5 12.4 2.5 8.7 2.5 5.8 4.7 3.6 7.5 3.6c1.9 0 3.5 1 4.5 2.6 1-1.6 2.6-2.6 4.5-2.6 2.8 0 5 2.2 5 5.1 0 3.7-2.9 7.2-9.5 11.8z" fill="currentColor"/></svg>';
+  const API = "https://abacus.jasoncameron.dev", NS = "seline-daily-edit";
+  const keep = { get: k => { try { return localStorage.getItem(k); } catch(e){ return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch(e){} } };
+  let mode = null, db = null, uid = null, canPress = true, myDays = [], seq = 0, busy = false;
+  const counts = {};
+  const today = () => DAYS[idx].date;
+  const mine = d => mode === "db" ? myDays.includes(d) : keep.get("sde-heart-" + d) === "1";
+  function paint(){
+    const d = today(), n = counts[d];
+    if(!mode || n === undefined){ box.hidden = true; return; }
+    const on = mine(d), lock = on || !canPress || busy;
+    box.hidden = false;
+    box.innerHTML = `<p class="lk-q">${on ? "하트를 보내 주셔서 고마워요" : "오늘 호가 마음에 드셨다면 하트를 눌러 주세요"}</p>
+      <button type="button" class="heart" aria-pressed="${on}" aria-label="${on ? "하트를 보냈어요" : "이 호에 하트 보내기"}"${lock ? " disabled" : ""}>${HEART}</button>
+      <p class="lk-n"><b>${n.toLocaleString("ko-KR")}</b> 하트</p>
+      ${!canPress && !on ? `<p class="lk-note">이 링크에서는 하트 수만 볼 수 있어요</p>` : ""}`;
+  }
+  async function webGet(d){
+    const r = await fetch(`${API}/get/${NS}/heart-${d}`, {cache:"no-store"});
+    if(r.status === 404) return 0;
+    if(!r.ok) throw new Error("http " + r.status);
+    const j = await r.json(); return Number(j.value) || 0;
+  }
+  async function webHit(d){
+    const r = await fetch(`${API}/hit/${NS}/heart-${d}`, {cache:"no-store"});
+    if(!r.ok) throw new Error("http " + r.status);
+    const j = await r.json(); return Number(j.value) || 0;
+  }
+  async function show(){
+    const d = today(), my = ++seq;
+    if(mode === "web" && counts[d] === undefined){
+      box.hidden = true;
+      try { const n = await webGet(d); if(my !== seq) return; counts[d] = n; } catch(e){ return; }
+    }
+    if(my === seq) paint();
+  }
+  box.addEventListener("click", async ev => {
+    const b = ev.target && ev.target.closest ? ev.target.closest("button.heart") : null;
+    if(!b || b.disabled || busy) return;
+    const d = today(); busy = true; b.disabled = true;
+    try {
+      if(mode === "web"){
+        counts[d] = await webHit(d); keep.set("sde-heart-" + d, "1");
+      } else if(mode === "db"){
+        const next = myDays.concat([d]).slice(-60);
+        await db.collection("likes").doc(uid).set({days: next});
+        myDays = next;
+      }
+    } catch(e){
+      if(mode === "db") canPress = false;
+    }
+    busy = false; paint();
+    const nb = box.querySelector(".heart"); if(nb && mine(d)){ nb.classList.add("pop"); burst(nb); }
+  });
+  function burst(btn){
+    const bx = box.getBoundingClientRect(), r = btn.getBoundingClientRect();
+    const w = document.createElement("span"); w.className = "burst";
+    w.style.left = (r.left - bx.left + r.width / 2) + "px"; w.style.top = (r.top - bx.top + r.height / 2) + "px";
+    const cols = ["#C8553D", "#E0704F", "#F2A65A", "#E7B9A8", "#DDA22F", "#B5462F"];
+    let html = "";
+    for(let i = 0; i < 22; i++){
+      const a = (Math.PI * 2 * i / 22) + (Math.random() - .5) * .5, dist = 55 + Math.random() * 75;
+      const x = Math.cos(a) * dist, y = Math.sin(a) * dist - 25 - Math.random() * 30;
+      html += `<i style="--x:${x.toFixed(1)}px;--y:${y.toFixed(1)}px;--r:${Math.round((Math.random() - .5) * 120)}deg;--s:${Math.round(9 + Math.random() * 11)}px;--c:${cols[i % cols.length]};--t:${(0.7 + Math.random() * 0.5).toFixed(2)}s;--d:${(Math.random() * 0.08).toFixed(2)}s">${HEART}</i>`;
+    }
+    w.innerHTML = html; box.appendChild(w);
+    setTimeout(() => w.remove(), 1500);
+  }
+  const _r = render;
+  render = function(){ _r(); show(); };
+  async function start(){
+    const c = window.claude;
+    if(c && typeof c.use === "function"){
+      try {
+        db = await c.use("db");
+        const user = db ? await c.use("user") : null;
+        uid = user ? await user.id() : null;
+        if(db){
+          const w = user ? await user.can("data.write") : null;
+          canPress = !!uid && w !== false;
+          mode = "db";
+          db.collection("likes").onSnapshot(snap => {
+            for(const k in counts) delete counts[k];
+            DAYS.forEach(x => { counts[x.date] = 0; });
+            snap.docs.forEach(doc => {
+              const v = doc.data(), days = v && Array.isArray(v.days) ? v.days : [];
+              days.forEach(x => { if(typeof x === "string" && x in counts) counts[x]++; });
+              if(doc.id === uid && !busy) myDays = days.filter(x => typeof x === "string");
+            });
+            paint();
+          }, () => { mode = null; paint(); });
+          return;
+        }
+      } catch(e){ db = null; }
+    }
+    mode = "web"; show();
+  }
+  start();
 })();
 </script>
 
