@@ -569,6 +569,132 @@ const PHOTO = null; // 예: {src:"photo.jpg", caption:"한 줄 설명", date:"20
 /* ===== DAYS: 날짜별 콘텐츠. 최신 날짜가 맨 앞. 매일 새 객체를 맨 앞에 추가하고 14일치만 유지. ===== */
 const DAYS = [
 {
+  date: "2026-10-18",
+  quote: {
+    ko: "할 일이 잔뜩 쌓여 있지 않으면, 빈둥거림을 제대로 즐길 수 없다.",
+    en: "It is impossible to enjoy idling thoroughly unless one has plenty of work to do.",
+    by: "제롬 K. 제롬, 『한가한 사람의 한가한 생각』 (1886)",
+    pick: {kind:"책", title:"어서 오세요, 휴남동 서점입니다 (Welcome to the Hyunam-dong Bookshop, 2022) · 황보름", gist:"대학과 결혼, 번듯한 직장으로 이어지는 정해진 길을 걷던 영주는 어느 날 완전히 지쳐 버리고, 일도 결혼도 뒤로한 채 서울의 조용한 동네 휴남동에 작은 서점을 엽니다. 외로운 바리스타, 결혼 생활이 행복하지 않은 주부, 영주에게서 무언가를 알아보는 작가처럼 저마다 실망을 안고 사는 사람들이 하나둘 서점에 드나들며 쉴 곳을 찾습니다. 소설은 큰 사건 없이, 책과 커피와 느슨한 이웃의 정 속에서 사람이 천천히 숨을 고르고 다시 살아갈 힘을 얻는 시간을 다정하게 따라갑니다.", after:"열심히 달려온 사람에게만 허락되는 쉼이 있고, 그 쉼은 때로 한 권의 책이 놓인 작은 가게에서 시작됩니다."}
+  },
+  english: {
+    title: "동네 야드 세일에서 기분 좋게 흥정하기", titleEn: "Haggling Politely at a Neighborhood Yard Sale",
+    situation: "주말 아침 동네 야드 세일에서 마음에 드는 빈티지 램프를 발견했습니다. 값을 깎아 달라고 부드럽게 말하고, 서로 기분 좋게 거래를 마무리하는 말투를 익혀 보세요.",
+    lines: [
+      ["A","Hi there! Is this lamp still up for grabs?","안녕하세요! 이 램프 아직 팔려요?"],
+      ["B","It sure is. It's vintage, and it works perfectly. I'm asking twenty-five for it.","그럼요. 빈티지인데 아주 잘 켜져요. 25달러에 내놨어요."],
+      ["A","It's lovely, but that's a little more than I wanted to spend. Would you take fifteen?","예쁘긴 한데 제가 생각한 것보다 조금 비싸네요. 15달러에 주실 수 있어요?"],
+      ["B","Hmm, fifteen's a bit low. Could you meet me halfway at twenty?","음, 15달러는 좀 낮은데요. 중간 정도인 20달러로 하면 어때요?"],
+      ["A","Twenty works if you throw in that little side table too.","저 작은 사이드 테이블까지 얹어 주시면 20달러 좋아요."],
+      ["B","Ha, you drive a hard bargain. Okay, deal. I've been trying to get rid of that table all morning anyway.","하하, 흥정 잘하시네요. 좋아요, 그렇게 해요. 어차피 아침 내내 그 테이블 치우고 싶었거든요."],
+      ["A","Perfect. Do you take cards, or is it cash only?","잘됐다. 카드 되나요, 아니면 현금만 받으세요?"],
+      ["B","Cash only, sorry. There's an ATM at the gas station down the block.","죄송해요, 현금만 돼요. 이 블록 끝 주유소에 ATM이 있어요."],
+      ["A","No problem. Could you hold them for me? I'll be back in ten minutes.","괜찮아요. 잠깐 맡아 주실래요? 10분 안에 올게요."],
+      ["B","Sure, I'll put a sold sign on them. Honestly, it's a steal at that price.","그럼요, ‘판매 완료’ 표시 붙여 둘게요. 사실 그 값이면 거저예요."]
+    ],
+    expressions: [
+      {en:"up for grabs", ko:"‘누구든 가져갈 수 있는, 아직 임자가 없는’. 물건이 아직 팔리지 않았는지, 자리가 비어 있는지 물을 때 가볍게 씁니다.", eg:"There are two free tickets up for grabs if anyone wants them."},
+      {en:"meet (someone) halfway", ko:"‘(서로) 한발씩 양보하다, 중간에서 맞추다’. 값이나 의견이 다를 때 가운데쯤에서 합의하자고 제안하는 말입니다.", eg:"You want pizza and I want sushi. Let's meet halfway and get Thai."},
+      {en:"throw in ~", ko:"‘~을 덤으로 얹어 주다’. 물건을 살 때 다른 것을 공짜로 끼워 달라고 하거나, 파는 쪽이 덤을 줄 때 씁니다.", eg:"If you buy the bike, I'll throw in the helmet for free."},
+      {en:"drive a hard bargain", ko:"‘흥정을 세게 하다, 쉽게 물러서지 않다’. 상대가 값을 잘 깎을 때 반쯤 웃으며 인정하는 말입니다.", eg:"Okay, okay, ten dollars. You drive a hard bargain."},
+      {en:"a steal", ko:"‘거저나 다름없는 물건’. 값에 비해 아주 좋은 물건을 샀을 때 씁니다. It's a steal at that price처럼 자주 말합니다.", eg:"I got this jacket for twelve dollars. What a steal."}
+    ],
+    pattern: {
+      en: "Would you take ~ for it?",
+      ko: "‘~에 주실 수 있어요?’. 중고 거래나 야드 세일에서 원하는 값을 정중하게 제안할 때 쓰는 표현입니다. 받아들일 때는 I could do that, 거절할 때는 That's a bit low처럼 답합니다.",
+      examples: [
+        ["Would you take <b>ten</b> for it?","10달러에 주실 수 있어요?"],
+        ["Would you take <b>forty</b> for <b>both</b> chairs?","의자 두 개 합쳐서 40달러에 되나요?"],
+        ["Would you take a little <b>less</b> if I pay <b>cash</b>?","현금으로 내면 조금 깎아 주실 수 있어요?"]
+      ]
+    }
+  },
+  news: [
+    {region:"말레이시아", tag:"생활 · 연무", important:true, icon:"school", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><rect x="17" y="12" width="38" height="28" rx="9"/><path d="M17 20q-10 0-10 7t10 7M55 20q10 0 10 7t-10 7" fill="none"/><path d="M10 50q6-3.5 12 0t12 0t12 0t12 0" fill="none"/></g><path d="M17 20q-10 0-10 7t10 7M55 20q10 0 10 7t-10 7" fill="none" stroke="#4A2E1A" stroke-width="3.4" stroke-linecap="round"/><path d="M17 20q-10 0-10 7t10 7M55 20q10 0 10 7t-10 7" fill="none" stroke="#FBF7EF" stroke-width="1.5" stroke-linecap="round"/><rect x="17" y="12" width="38" height="28" rx="9" fill="#A9D9EC" stroke="#2F5D49" stroke-width="1.5"/><path d="M20 20h32M19 26h34M20 32h32" stroke="#6E9FC0" stroke-width="1.3" stroke-linecap="round"/><path d="M29 12.6q7-3 14 0" fill="none" stroke="#2F5D49" stroke-width="1.5" stroke-linecap="round"/><path d="M22 16q3-2 7-2" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" opacity=".8"/><path d="M10 50q6-3.5 12 0t12 0t12 0t12 0" fill="none" stroke="#4A2E1A" stroke-width="4.4" stroke-linecap="round"/><path d="M10 50q6-3.5 12 0t12 0t12 0t12 0" fill="none" stroke="#CFC7B6" stroke-width="2" stroke-linecap="round"/>'}, title:"조호르 학교, 19일부터 닷새 더 휴교", titleEn:"Johor Schools Stay Closed for Five More Days From Monday Over Haze",
+     lead:"연무가 나아지지 않아 조호르주 정부가 주 안의 학교와 교육기관 휴교를 19일 월요일부터 닷새 더 이어 가요. 조호르에서 아이를 학교나 교육기관에 보내는 가정이 해당돼요.",
+     pts:["17일 정오 조호르 연무관리조정위원회 회의 뒤 정해졌고, 대기 질과 날씨 예보, 건강 평가에 따라 달라질 수 있어요", "휴교 동안에는 가정 학습(PdPR)으로 수업하고, 시험을 치러야 하는 학생은 조호르 교육청(JPNJ)이 조율해 제한적으로 예외를 둬요", "사립 교육기관과 어린이집은 실내 활동과 마스크 착용 같은 지침을 지키는 조건으로 열지 말지 스스로 정해요"],
+     info:[["시작", "10월 19일(월)부터 닷새"], ["발표", "무하마드 나킵 조호르주 교육·정보위원장 (17일 성명)"], ["재개", "북쪽으로 부는 바람과 앞으로 3~4일의 날씨 예보를 보고 정해요"]],
+     src:"Bernama · 10.17", url:"https://www.bernama.com/en/general/news.php?id=2621869"},
+    {region:"말레이시아", tag:"안전 · 홍수", important:true, icon:"rain", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M14 30L36 12l22 18z"/><rect x="18" y="29" width="36" height="18"/><path d="M6 44q5-4 10 0t10 0t10 0t10 0t10 0t10 0v12H6z"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><rect x="18" y="29" width="36" height="18" fill="#F5E4BA"/><path d="M14 30L36 12l22 18z" fill="#C8553D"/><rect x="23" y="33" width="8" height="7" fill="#A9D9EC"/><rect x="41" y="33" width="8" height="10" fill="#8C5A3A"/><path d="M6 44q5-4 10 0t10 0t10 0t10 0t10 0t10 0v12H6z" fill="#7FC4E0" stroke="#2F5D49"/></g><path d="M10 50q4-2.5 8 0M30 52q4-2.5 8 0M50 50q4-2.5 8 0" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" opacity=".85"/><path d="M27 33v7M23 36.5h8" stroke="#4A2E1A" stroke-width="1"/>'}, title:"페락 라룻·마탕·슬라마 홍수, 대피소 4곳 추가", titleEn:"Floods in Perak's Larut, Matang and Selama: Four More Relief Centres Open",
+     lead:"17일 오후부터 그치지 않은 비로 페락 라룻·마탕·슬라마(LMS) 지역의 마을 몇 곳이 물에 잠겨, 임시 대피소 네 곳이 더 문을 열었어요. 이 지역에 살거나 지나는 사람이 알아둘 소식이에요.",
+     pts:["캄풍 창캇 이볼, 캄풍 바투 9, 트롱에서 집 여러 채가 물에 잠겼어요", "새로 연 대피소는 SK 창캇 이볼, 알 우스타 모스크 강당, 트롱 강당(Dewan Perdana Trong), SK 마탕 글루고르예요", "17일 밤 기준 수요일부터 운영 중인 SK 마탕 대피소에 21가구 56명이 머물고 있고, 새 대피소 인원은 아직 집계되지 않았어요"],
+     info:[["개소", "17일 오후 8시, 대피소 4곳 추가"], ["발표", "페락주 재난관리위원회 사무국 (17일 성명)"]],
+     src:"Bernama · 10.17", url:"https://www.bernama.com/en/general/news.php?id=2621890"},
+    {region:"말레이시아", tag:"스포츠", icon:"news", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M12 8h26l-8 26h-10z"/><path d="M19 37h12a6 6 0 0 1-12 0z"/><path d="M44 6h6l6 18h-6zM60 6h-6l-6 18h6z"/><circle cx="52" cy="38" r="11"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M12 8h26l-8 26h-10z" fill="#FBF7EF"/><path d="M18 8l3 26M25 8v26M32 8l-3 26M15 18h20M17.5 26h15" fill="none" stroke="#B9AE97" stroke-width="1.1"/><rect x="19" y="33" width="12" height="4" rx="1.2" fill="#C8553D"/><path d="M19 37h12a6 6 0 0 1-12 0z" fill="#F2CF6B"/><path d="M44 6h6l6 18h-6z" fill="#C8553D"/><path d="M60 6h-6l-6 18h6z" fill="#2F6B5A"/></g><circle cx="52" cy="38" r="11" fill="#F7D36B" stroke="#8A5A12" stroke-width="1.5"/><circle cx="52" cy="38" r="7" fill="none" stroke="#C98B1E" stroke-width="1.3"/><path d="M46 33q2-3 6-3.6" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" opacity=".8"/>'}, title:"세계주니어 여자복식, 말레이시아 첫 우승", titleEn:"Low Zi Yu and Genevie Lim Become Malaysia's First World Junior Girls' Doubles Champions",
+     lead:"로우 지 위·제네비 림 조가 이집트 카이로에서 열린 2026 세계주니어배드민턴선수권 여자복식 결승에서 이겼어요. 이 종목에서 나온 말레이시아의 첫 챔피언이에요.",
+     pts:["2번 시드인 두 선수는 결승에서 일본의 가마타 니지카·가시오 시즈쿠 조를 15‑7, 9‑15, 15‑12로 꺾었어요", "1992년 이 종목이 생긴 뒤 34년 만에 처음 나온 말레이시아 우승이에요", "그동안 이 종목은 중국 선수들이 오랫동안 휩쓸어 왔어요"],
+     info:[["대회", "2026 세계주니어배드민턴선수권"], ["장소", "이집트 카이로 국제 경기장"]],
+     src:"Bernama · 10.17", url:"https://www.bernama.com/en/news.php?id=2621893"},
+    {region:"말레이시아", tag:"전시", icon:"art", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><rect x="8" y="8" width="44" height="44" rx="2"/><path d="M48 52l2-8 12-18 5 3.5-12 18z"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><rect x="8" y="8" width="44" height="44" rx="2" fill="#F5E4BA"/></g><path d="M8 23h44M8 38h44M23 8v15M37 23v15M23 38v14" stroke="#E0CFA6" stroke-width="1.1"/><g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9"><path d="M13 15q3-4 5 0t5 0t5 0" stroke="#C8553D"/><circle cx="39" cy="15" r="4" stroke="#2F6B5A"/><path d="M13 31q5-5 10 0t10 0" stroke="#3E4C5E"/><path d="M40 29q3 3 7 0" stroke="#8E5BA8"/><path d="M13 45q5-3 9 1t9-1M38 42q4 5 8 0" stroke="#DDA22F"/></g><g stroke="#4A2E1A" stroke-width="1.4" stroke-linejoin="round"><path d="M50 44l12-18 5 3.5-12 18z" fill="#C8553D"/><path d="M50 44l5 3.5-7 4.5z" fill="#F0C987"/><path d="M62 26l2.5-3.7 5 3.5-2.5 3.7z" fill="#3B3B38"/></g>'}, title:"화장실 벽에 호키엔 낙서, 페낭의 별난 전시", titleEn:"Write on the Walls: A Penang Show Gets Visitors Using Hokkien",
+     lead:"작가 수미딕(Sumidik)이 조지타운 마스하우스에서 전시 ‘MaiKea’를 열고 있어요. 호키엔어를 못 하게 된 젊은 세대가 다시 이 말을 쓰도록, 관람객이 직접 벽에 호키엔 말을 적게 했어요.",
+     pts:["전시 이름 MaiKea는 호키엔어로 ‘두려워 마’라는 뜻이에요", "변기와 세 벽으로 꾸민 화장실 칸 설치 작품에 작가가 몇 마디를 먼저 적었고, 나머지는 관람객이 채웠어요. 싱가포르 관람객은 자기네 식 호키엔 표현을 적기도 했대요", "호키엔 달력 일러스트 판화 14점과 회화 3점, 캐릭터 ‘투카오(TuKao)’ 조각도 함께 나와요"],
+     info:[["언제", "10월 31일까지, 금~일 낮 12시~오후 6시"], ["어디", "Masshaus, 147A Lebuh Victoria, George Town, Penang"]],
+     src:"Malay Mail · 10.17", url:"https://www.malaymail.com/news/life/2026/10/17/maikea-to-encourage-the-use-of-hokkien-in-penang-an-artist-invites-the-public-to-write-on-walls-at-an-exhibition/238836"},
+    {region:"세계", tag:"영국 유학", icon:"passport", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><rect x="10" y="8" width="28" height="42" rx="3"/><path d="M40 50v-5c0-2.5 5.4-4.5 12-4.5s12 2 12 4.5v5c0 2.5-5.4 4.5-12 4.5s-12-2-12-4.5zM40 41v-5c0-2.5 5.4-4.5 12-4.5s12 2 12 4.5v5c0 2.5-5.4 4.5-12 4.5s-12-2-12-4.5zM40 32v-5c0-2.5 5.4-4.5 12-4.5s12 2 12 4.5v5c0 2.5-5.4 4.5-12 4.5s-12-2-12-4.5z"/></g><rect x="10" y="8" width="28" height="42" rx="3" fill="#3E4C5E" stroke="#1F2A36" stroke-width="1.5"/><g fill="none" stroke="#F2CF6B" stroke-width="1.3" stroke-linecap="round"><circle cx="24" cy="25" r="7"/><path d="M17 25h14M24 18c-3 4-3 10 0 14M24 18c3 4 3 10 0 14M18 41h12"/></g><g stroke="#8A5A12" stroke-width="1.4" stroke-linejoin="round"><path d="M40 45v5c0 2.5 5.4 4.5 12 4.5s12-2 12-4.5v-5z" fill="#DDA22F"/><ellipse cx="52" cy="45" rx="12" ry="4.5" fill="#F7D36B"/><path d="M40 36v5c0 2.5 5.4 4.5 12 4.5s12-2 12-4.5v-5z" fill="#DDA22F"/><ellipse cx="52" cy="36" rx="12" ry="4.5" fill="#F7D36B"/><path d="M40 27v5c0 2.5 5.4 4.5 12 4.5s12-2 12-4.5v-5z" fill="#DDA22F"/><ellipse cx="52" cy="27" rx="12" ry="4.5" fill="#F7D36B"/></g><path d="M58 10v9M54 15l4 4 4-4" fill="none" stroke="#C8553D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="rotate(180 58 14.5)"/>'}, title:"영국 학생비자 생활비 기준, 11월 30일부터 오른다", titleEn:"UK Student Visa Maintenance Funds Rise From November 30",
+     lead:"영국 이민 규정 개정안(HC 584)에 따라 학생비자(Student visa)를 신청할 때 보여 줘야 하는 생활비 기준이 11월 30일부터 올라요. 영국 대학이나 과정에 진학할 자녀를 둔 가정이 해당돼요.",
+     pts:["런던 과정은 월 1,529파운드에서 1,570파운드로, 런던 밖 과정은 월 1,171파운드에서 1,203파운드로 바뀌어요", "11월 30일 전에 낸 신청은 11월 29일에 시행 중인 규정으로 심사해요", "지금 GOV.UK 안내로는 생활비를 최대 9개월치 보여 줘야 하고, 그 돈을 28일 연속 갖고 있어야 해요. 그 28일은 신청일 31일 안에 끝나야 해요"],
+     info:[["시행", "2026년 11월 30일 신청분부터"], ["근거", "영국 이민 규정 개정안 HC 584 (9월 3일)"], ["확인", "GOV.UK 공식 안내"]],
+     src:"GOV.UK 공식 안내", url:"https://www.gov.uk/government/publications/statement-of-changes-to-the-immigration-rules-hc-584-3-september-2026/statement-of-changes-to-the-immigration-rules-hc-584-3-september-2026-accessible"},
+    {region:"세계", tag:"이야기", icon:"news", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M8 12l38-4 4 38-38 4z"/><circle cx="42" cy="44" r="8"/><circle cx="59" cy="15" r="6"/><path d="M59 21v30M59 44h5M59 50h4" fill="none"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M8 12l38-4 4 38-38 4z" fill="#F5E4BA"/></g><g fill="#6B4A2B"><rect x="14" y="16" width="5" height="2.4" rx="1" transform="rotate(-6 16 17)"/><circle cx="23" cy="16.5" r="1.4"/><rect x="27" y="14.5" width="7" height="2.4" rx="1" transform="rotate(-6 30 16)"/><circle cx="38" cy="14" r="1.4"/><rect x="15" y="23" width="8" height="2.4" rx="1" transform="rotate(-6 19 24)"/><circle cx="27" cy="22.8" r="1.4"/><rect x="31" y="21" width="5" height="2.4" rx="1" transform="rotate(-6 33 22)"/><circle cx="40" cy="20.6" r="1.4"/><rect x="16" y="30" width="5" height="2.4" rx="1" transform="rotate(-6 18 31)"/><rect x="24" y="29" width="9" height="2.4" rx="1" transform="rotate(-6 28 30)"/><circle cx="37" cy="28" r="1.4"/><rect x="17" y="37" width="7" height="2.4" rx="1" transform="rotate(-6 20 38)"/><circle cx="28" cy="36.6" r="1.4"/></g><circle cx="42" cy="44" r="8" fill="#B5462F" stroke="#4A2E1A" stroke-width="1.5"/><circle cx="42" cy="44" r="4.5" fill="none" stroke="#E07A62" stroke-width="1.3"/><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M59 21v30M59 44h5M59 50h4" fill="none" stroke-width="4"/></g><path d="M59 21v30M59 44h5M59 50h4" fill="none" stroke="#DDA22F" stroke-width="2" stroke-linecap="round"/><circle cx="59" cy="15" r="6" fill="#F2CF6B" stroke="#4A2E1A" stroke-width="1.5"/><circle cx="59" cy="15" r="2.4" fill="#FBF7EF" stroke="#4A2E1A" stroke-width="1"/>'}, title:"200년 못 푼 나폴레옹 암호, AI가 6시간 만에", titleEn:"AI Cracks a 200-Year-Old Napoleonic Cipher in Six Hours",
+     lead:"미국 사이버보안 회사 센티널원(SentinelOne)의 27살 AI 엔지니어 카터 처치가, 1809년 나폴레옹의 장군 한 명에게 보낸 암호 편지를 AI로 풀었어요.",
+     pts:["편지는 프랑스군과 동맹군의 위치를 기호와 숫자, 글자로 스물네 줄에 걸쳐 적은 것으로, 온라인 학술 자료실에 손대지 않은 채 남아 있었어요", "OpenAI의 GPT-6 Astra가 6시간 만에 암호를 풀었고, 처치는 미해독 암호 목록 사이트 크립티아나(Cryptiana)를 운영하는 일본 특허 엔지니어 도모키요 사토시와 풀이를 확인했어요", "도모키요는 9월 중순 이후 자기 목록의 암호 대부분을 AI가 풀었다며 ‘2026년은 역사 암호 해독의 전환점으로 기억될 것’이라고 썼어요"],
+     info:[["편지", "1809년, 나폴레옹의 장군 한 명에게 보낸 것"], ["처치의 말", "AI가 주로 가져다주는 건 끈기"]],
+     src:"Malay Mail (AFP) · 10.16", url:"https://www.malaymail.com/news/tech-gadgets/2026/10/16/ai-cracks-napoleons-200-year-old-secret-code-in-just-six-hours/239301"}
+  ],
+  trend: {
+    title: "왓슨스, 부킷 빈탕에 말레이시아 최대 매장", titleEn: "Watsons Opens Its Biggest Malaysian Store in Bukit Bintang",
+    asOf: "2026년 10월 17일 보도 기준",
+    body: "헬스·뷰티 체인 왓슨스가 쿠알라룸푸르 부킷 빈탕의 이세탄 랏 10에 18,000제곱피트가 넘는 ‘왓슨스 플러스(Watsons Plus)’를 열었습니다. 말레이시아 왓슨스의 888번째 매장으로, 말레이시아 기록원에서 가장 큰 헬스·뷰티 소매 매장으로 인정받았습니다.",
+    points: [
+      "스킨케어와 고급 향수, 일본·한국·중국 뷰티 제품과 말레이시아 뷰티 브랜드를 비롯해 1만 7,000개가 넘는 상품을 갖췄습니다.",
+      "약사 상담, 피부·두피 스캔, 네일·눈썹·속눈썹 관리, 두피 세정, 마사지 같은 서비스를 매장 안에서 제공합니다.",
+      "현지 음식을 내는 ‘테이스트 오브 말레이시아’ 코너와 말레이시아 커피 체인 ZUS 커피와 협업한 음료, 아세안 인기 간식, 말레이시아 문화 기념품 코너를 두었고, 실내는 현대적인 바틱 요소로 꾸몄습니다.",
+      "개점은 AS 왓슨 그룹 창립 185주년과 겹치며, 캐린 로 지역 총괄 이사는 이 매장을 ‘소매의 미래를 만드는 과감한 한 걸음’이라고 말했습니다."
+    ],
+    src: [["Malay Mail (Bernama) (2026.10.17)","https://www.malaymail.com/news/life/2026/10/17/beauty-buffs-take-note-watsons-plus-opens-its-biggest-malaysian-store-in-bukit-bintang-with-17000-products-pampering-and-coffee/239492"]]
+  },
+  life: {
+    title: "같은 나라, 다른 주말: 주마다 다른 말레이시아 휴일 달력", titleEn: "One Country, Different Weekends: How Holidays Change From State to State",
+    intro: "말레이시아는 주(州)에 따라 주말 요일도, 공휴일도 조금씩 다릅니다. 다른 주로 여행하거나 출장을 잡을 때, 또 다가오는 디파발리 연휴를 계획할 때 알아두면 좋은 차이를 영어판 위키백과와 현지 매체 SAYS에서 골랐습니다.",
+    tips: [
+      ["크다·클란탄·트렝가누는 금·토가 주말","대부분의 주와 연방직할구는 토·일이 주말이지만, 크다·클란탄·트렝가누는 금·토가 주말이고 일요일부터 목요일까지 일합니다."],
+      ["조호르는 2025년부터 다시 토·일","조호르는 2014년에 주말을 금·토로 바꿨다가, 10년 만인 2025년 1월 1일부터 토·일로 되돌렸습니다."],
+      ["주말에 겹친 공휴일은 주마다 다르게 대체","토·일이 주말인 주에서는 일요일에 겹친 공휴일이 월요일로 넘어갑니다. 크다에서는 금요일에, 클란탄과 트렝가누에서는 토요일에 겹친 공휴일이 일요일이나 다음 근무일로 넘어갑니다."],
+      ["올해 디파발리는 11월 8일 일요일","디파발리는 사라왁을 뺀 전국 공휴일입니다. SAYS에 따르면 8일이 일요일이라 9일 월요일이 이어지는 휴일이 되지만, 크다·클란탄·사라왁·트렝가누는 9일을 공휴일로 쉬지 않습니다."],
+      ["주마다 따로 쉬는 날도 있습니다","모든 주에서 그 주 통치자나 주지사의 공식 생일이 공휴일입니다. 타이푸삼은 다섯 개 주와 연방직할구 두 곳, 누줄 알쿠란은 일곱 개 주와 세 연방직할구에서만 쉽니다."]
+    ],
+    src: [["Wikipedia: Public holidays in Malaysia","https://en.wikipedia.org/wiki/Public_holidays_in_Malaysia"],["SAYS: Malaysia's Long Weekends & Holidays In 2026 (2025.10.21)","https://says.com/my/lifestyle/long-weekends-holidays-for-malaysia-in-2026"]]
+  },
+  shows: {
+    intro: "쿠알라룸푸르에서 지금 볼 수 있거나 곧 열리는 전시와 공연입니다.",
+    items: [
+      {kind:"전시", title:"로버트 라우션버그와 아시아 (Robert Rauschenberg and Asia)", when:"11월 1일까지", where:"일함 갤러리(ILHAM Gallery) 5층", memo:"미국 현대미술 작가 로버트 라우션버그의 전시입니다.", url:"https://ilhamgallery.com/exhibitions/robert-rauschenberg-and-asia/"},
+      {kind:"전시", title:"경계 없는 예술: 난양으로 가는 새 항해 (Art Without Boundaries — New Voyage to Nanyang)", when:"11월 11일까지", where:"루앙 트두(Ruang Teduh), 익스체인지 106, 툰 라작 익스체인지", memo:"대만 태생의 큐레이터이자 작가 빅토리아 루가 AI의 도움을 받아 만든 작품을 젊은 작가들의 작품과 함께 선보입니다.", url:"https://www.malaymail.com/news/life/2026/10/10/art-meets-algorithm-victoria-lu-explores-ai-and-human-creativity-at-kuala-lumpur-exhibition/238604"},
+      {kind:"오페라", title:"투란도트 (Turandot)", when:"10월 18·20·22·24·25일", where:"KLPac 펜타스 1 (Pentas 1)", memo:"KLPac 오케스트라가 연주합니다. 18일과 25일은 오후 4시, 나머지 날은 오후 8시 공연입니다.", url:"https://www.klpac.org/shows/turandot/"},
+      {kind:"클래식", title:"스티븐 허프와 함께하는 저녁 (A Regal Evening with Stephen Hough)", when:"10월 24일", where:"데완 필하모닉 페트로나스 (Dewan Filharmonik PETRONAS)", memo:"히로카미 준이치가 지휘하는 말레이시아 필하모닉과 피아니스트 스티븐 허프가 베토벤 피아노 협주곡 5번 ‘황제’와 교향곡 4번을 연주합니다.", url:"https://www.mpo.com.my/season-2026/a-regal-evening-with-stephen-hough"},
+      {kind:"K팝", title:"더 로즈 아시아 투어 (The Rose ROSETOPIA Asia Tour)", when:"10월 25일", where:"메가 스타 아레나, 쿠알라룸푸르", memo:"한국 밴드 더 로즈의 쿠알라룸푸르 공연으로, CK 스타 엔터테인먼트가 주최합니다.", url:"https://thesmartlocal.my/the-rose-concert-2026/"},
+      {kind:"클래식", title:"브라이언 탄 헌정 공연 (Tribute to Brian Tan with The klpac Orchestra)", when:"10월 30일~11월 1일", where:"KLPac 펜타스 1 (Pentas 1)", memo:"KLPac의 첫 커뮤니티 오케스트라를 세운 고(故) 브라이언 탄을 기리며, 리 콕 렁이 지휘하는 KLPac 오케스트라가 연주합니다.", url:"https://www.klpac.org/shows/tribute-to-brian-tan-with-the-klpac-orchestra/"},
+      {kind:"K팝", title:"예성 10주년 투어 (YESUNG 10th Anniversary Tour: ABOUT THE THINGS WE CALLED ORDINARY)", when:"11월 7일 오후 8시", where:"제프 쿠알라룸푸르 (Zepp Kuala Lumpur)", memo:"슈퍼주니어 예성의 10주년 기념 투어 공연으로, iMe Malaysia가 주최합니다.", url:"https://klconcert.com/concert/yesung-10th-anniversary-tour-about-the-things-we-called-ordinary"}
+    ]
+  },
+  music: {
+    title: "Northern Sky", artist: "닉 드레이크 (Nick Drake)", year: "1971",
+    mood: "할 일을 다 마친 일요일 오후의 조용한 포크",
+    why: "영국 싱어송라이터 닉 드레이크의 두 번째 앨범 『Bryter Layter』에 실린 곡으로, 벨벳 언더그라운드 출신 존 케일이 첼레스타와 피아노, 해먼드 오르간을 연주해 기타와 목소리 둘레에 은은한 빛을 더합니다. 한 주의 일을 다 마무리한 일요일 오후, 창가에 앉아 아무것도 하지 않고 들어 보세요.",
+    query: "Nick Drake Northern Sky"
+  },
+  fact: {
+    title: "10월 18일, BBC가 처음 생긴 날", titleEn: "October 18, 1922: The Day the BBC Was Formed",
+    body: "1922년 10월 18일, 영국에서 ‘영국 방송 회사(British Broadcasting Company Ltd)’가 세워졌습니다. 그해 11월 14일 런던의 2LO 방송국에서 첫 BBC 방송을 내보냈고, 1927년 1월 1일 왕실 칙허장(Royal Charter)을 받아 지금의 ‘영국 방송 공사(British Broadcasting Corporation)’가 되었습니다.",
+    more: [
+      "1922년 12월 14일, 서른세 살의 존 리스가 BBC의 총지배인이 되었습니다.",
+      "공사로 바뀐 뒤 갓 기사 작위를 받은 리스가 첫 사장(Director-General)으로 임명되었습니다.",
+      "BBC는 왕실 칙허장에 따라 세워진 기관입니다."
+    ],
+    src: [["Wikipedia: BBC","https://en.wikipedia.org/wiki/BBC"],["Wikipedia: History of the BBC","https://en.wikipedia.org/wiki/History_of_the_BBC"]]
+  }
+},
+
+{
   date: "2026-10-17",
   quote: {
     ko: "날씨가 선선해지는 가을이면, 삶은 처음부터 다시 시작돼요.",
