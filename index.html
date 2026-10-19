@@ -569,6 +569,132 @@ const PHOTO = null; // 예: {src:"photo.jpg", caption:"한 줄 설명", date:"20
 /* ===== DAYS: 날짜별 콘텐츠. 최신 날짜가 맨 앞. 매일 새 객체를 맨 앞에 추가하고 14일치만 유지. ===== */
 const DAYS = [
 {
+  date: "2026-10-20",
+  quote: {
+    ko: "우리는 모두 시궁창에 있지만, 그중 누군가는 별을 바라보고 있다.",
+    en: "We are all in the gutter, but some of us are looking at the stars.",
+    by: "오스카 와일드, 『윈더미어 부인의 부채』 (1892년 초연)",
+    pick: {kind:"책", title:"히든 피겨스 (Hidden Figures, 2016) · 마고 리 셰털리", gist:"1930년대부터 1960년대까지, 미국 항공자문위원회(NACA)와 그 뒤를 이은 NASA의 랭리 연구소에서 ‘계산원(computer)’으로 일한 캐서린 존슨, 도러시 본, 메리 잭슨의 이야기입니다. 이들은 ‘웨스트 에어리어 컴퓨터스’에서 엔지니어들이 맡긴 문제를 풀었지만, 분리된 일터에서 늘 뒤편에 머물러야 했습니다. 아버지가 NASA 연구원으로 이들과 함께 일했던 저자는, 보이지 않는 자리에서도 하늘을 향한 계산을 멈추지 않은 사람들의 시간을 서두르지 않고 되살립니다.", after:"발밑이 어두운 날에도 고개를 들어 별을 셈하는 사람들이 있어, 하늘은 조금씩 가까워집니다."}
+  },
+  english: {
+    title: "친구를 요가 첫 수업에 끌어들이기", titleEn: "Talking a Friend Into a Beginner Yoga Class",
+    situation: "동네에 새로 생긴 요가 스튜디오에 같이 가자고 친구를 조르는 대화입니다. 망설이는 친구를 부드럽게 설득하고, 장난스럽게 조건을 붙이는 말투를 익혀 보세요.",
+    lines: [
+      ["A","Hey, I'm thinking about trying that new yoga studio on Fifth. Want to tag along?","있잖아, 5번가에 새로 생긴 요가 스튜디오 가 보려고. 같이 갈래?"],
+      ["B","Yoga? I don't know. I'm about as flexible as a brick.","요가? 글쎄. 나 몸이 벽돌만큼 뻣뻣한데."],
+      ["A","That's the whole point! It's a beginner class, so nobody's going to judge you.","그러니까 가는 거지! 초보자 수업이라 아무도 뭐라 안 해."],
+      ["B","Hmm. What time are we talking?","음. 몇 시 얘기하는 건데?"],
+      ["A","Thursday at six-thirty. We could grab a smoothie afterward.","목요일 6시 반. 끝나고 스무디 한잔하자."],
+      ["B","Okay, you had me at smoothie. Do I need to bring anything?","좋아, 스무디에서 넘어갔다. 뭐 챙겨 가야 해?"],
+      ["A","Just a water bottle. They have mats you can borrow, but I'd bring a towel.","물병만. 매트는 빌려주는데, 수건은 가져가는 게 좋을 거야."],
+      ["B","Got it. Fair warning, though: if it's too intense, I'm bailing halfway through.","알았어. 근데 미리 말해 두는데, 너무 힘들면 중간에 빠질 거야."],
+      ["A","Deal. Just give it a shot before you write it off.","좋아. 대신 아니라고 단정하기 전에 한번 해 보기는 해."],
+      ["B","Fine, I'll keep an open mind. Count me in.","알았어, 열린 마음으로 가 볼게. 나도 끼워 줘."]
+    ],
+    expressions: [
+      {en:"tag along", ko:"‘따라가다, 같이 끼다’. 누군가 가는 곳에 함께 따라붙을 때 씁니다. Want to tag along?은 ‘같이 갈래?’라는 가벼운 제안입니다.", eg:"I'm going to the farmers market. Want to tag along?"},
+      {en:"You had me at ~", ko:"‘~에서 이미 넘어갔어’. 상대의 말 가운데 한 가지만 듣고도 바로 마음이 정해졌다고 장난스럽게 말할 때 씁니다.", eg:"Free pizza and a movie? You had me at free pizza."},
+      {en:"give it a shot", ko:"‘한번 해 보다’. 잘될지 모르지만 일단 시도해 본다는 뜻으로, give it a try와 비슷합니다.", eg:"I've never made bread before, but I'll give it a shot."},
+      {en:"write (something) off", ko:"‘(해 보지도 않고) 아니라고 단정하다, 쓸모없다고 치부하다’. 사람이나 계획, 장소를 일찍 포기해 버릴 때 씁니다.", eg:"Don't write the restaurant off just because of one bad review."},
+      {en:"keep an open mind", ko:"‘열린 마음을 갖다, 선입견 없이 보다’. 낯선 것을 해 보기 전에 판단을 미루겠다는 말입니다.", eg:"I'm not a big fan of jazz, but I'll keep an open mind tonight."}
+    ],
+    pattern: {
+      en: "What/How ~ are we talking?",
+      ko: "‘~ 얘기하는 거야?, 대충 어느 정도인데?’. 상대가 꺼낸 계획이나 부탁의 시간, 양, 값을 구체적으로 물을 때 쓰는 구어체 표현입니다. 대화의 What time are we talking?처럼 짧게 되묻는 느낌입니다.",
+      examples: [
+        ["How <b>much</b> are we <b>talking</b>?","얼마 정도 얘기하는 거야?"],
+        ["How <b>long</b> of a <b>drive</b> are we talking?","차로 얼마나 가야 하는 거야?"],
+        ["What <b>kind</b> of <b>food</b> are we talking?","어떤 음식 얘기하는 건데?"]
+      ]
+    }
+  },
+  news: [
+    {region:"말레이시아", tag:"생활 · 연무", important:true, icon:"school", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><rect x="16" y="11" width="40" height="28" rx="10"/><path d="M16 17q-10 1-10 8t10 8M56 17q10 1 10 8t-10 8" fill="none"/><path d="M9 50q6-3.5 12 0t12 0t12 0t12 0" fill="none"/></g><path d="M16 17q-10 1-10 8t10 8M56 17q10 1 10 8t-10 8" fill="none" stroke="#4A2E1A" stroke-width="3.4" stroke-linecap="round"/><path d="M16 17q-10 1-10 8t10 8M56 17q10 1 10 8t-10 8" fill="none" stroke="#FBF7EF" stroke-width="1.5" stroke-linecap="round"/><rect x="16" y="11" width="40" height="28" rx="10" fill="#F2F0EC" stroke="#2F5D49" stroke-width="1.5"/><path d="M20 19h32M18.5 25h35M20 31h32" stroke="#B9AE97" stroke-width="1.3" stroke-linecap="round"/><path d="M28 11.8q8-3 16 0" fill="none" stroke="#2F5D49" stroke-width="1.6" stroke-linecap="round"/><path d="M21 15q3-2 7-2" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" opacity=".9"/><path d="M9 50q6-3.5 12 0t12 0t12 0t12 0" fill="none" stroke="#4A2E1A" stroke-width="4.4" stroke-linecap="round"/><path d="M9 50q6-3.5 12 0t12 0t12 0t12 0" fill="none" stroke="#CFC7B6" stroke-width="2" stroke-linecap="round"/>'}, title:"믈라카·슬랑오르 등 오늘 등교, 야외 활동은 중단", titleEn:"Schools in Melaka, Selangor, Negeri Sembilan and Parts of Pahang Open Today; Outdoor Activities Suspended",
+     lead:"연무가 이어지는 가운데 믈라카·슬랑오르·느그리슴빌란과 파항의 콴탄·롬핀·벤통 교육구 학교가 20일 화요일 평소대로 문을 열어요. 다만 야외 활동은 모두 멈춰요. 이 지역에서 아이를 학교에 보내는 가정이 해당돼요.",
+     pts:["믈라카는 등교하는 학생에게 마스크를 권하고, 아이 건강이 걱정되면 학교에 알린 뒤 집에 둘 수 있어요", "느그리슴빌란은 특히 호흡기 증상이 있거나 고위험군인 학생에게 마스크를 권해요", "교육부는 성적 입력 마감을 늦췄어요. UASA와 PAT/PASA는 11월 21일에서 28일로, PAJSK는 11월 30일에서 12월 5일로 바뀌어요"],
+     info:[["대상", "믈라카·슬랑오르·느그리슴빌란, 파항 콴탄·롬핀·벤통"], ["야외 활동", "모두 중단 (파항은 교실 밖 활동도 연기)"], ["확인", "슬랑오르는 공식 채널, 파항은 교육구 사무소 공지"]],
+     src:"Malay Mail (Bernama) · 10.19", url:"https://www.malaymail.com/news/malaysia/2026/10/19/haze-schools-in-melaka-selangor-negri-sembilan-and-pahang-to-open-tomorrow-outdoor-activities-suspended/239758"},
+    {region:"말레이시아", tag:"교통 · 여행", icon:"bus", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M30 17l4-7h7l-4 7" fill="none"/><path d="M7 43V24q0-6 7-6h34q9 0 15 9l3 6v10z"/><circle cx="18" cy="45" r="4.5"/><circle cx="31" cy="45" r="4.5"/><circle cx="54" cy="45" r="4.5"/><path d="M5 52h62" fill="none"/></g><path d="M30 17l4-7h7l-4 7" fill="none" stroke="#4A2E1A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M5 52h62" fill="none"/><circle cx="18" cy="45" r="4.5" fill="#3B3B38"/><circle cx="31" cy="45" r="4.5" fill="#3B3B38"/><circle cx="54" cy="45" r="4.5" fill="#3B3B38"/><path d="M7 43V24q0-6 7-6h34q9 0 15 9l3 6v10z" fill="#FBF7EF"/></g><path d="M7.8 34h57.4l.8 1.6V39H7.8z" fill="#2F6B5A"/><path d="M7.8 39h58" stroke="#DDA22F" stroke-width="1.6"/><path d="M7 43V24q0-6 7-6h34q9 0 15 9l3 6v10z" fill="none" stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round"/><g fill="#A9D9EC" stroke="#4A2E1A" stroke-width="1.1"><rect x="12" y="23" width="8" height="6" rx="1.5"/><rect x="23" y="23" width="8" height="6" rx="1.5"/><rect x="34" y="23" width="8" height="6" rx="1.5"/><path d="M48 22h1q7 0 11 7l1 2H48z"/></g><circle cx="62.5" cy="41" r="1.4" fill="#F2CF6B" stroke="#4A2E1A" stroke-width=".9"/><path d="M12 21q3-1.6 7-1.6" fill="none" stroke="#fff" stroke-width="1.4" stroke-linecap="round" opacity=".8"/>'}, title:"동해안 철도 ECRL, 곰박–콴탄 60링깃부터", titleEn:"ECRL Fares Start at RM60 From Gombak to Kuantan",
+     lead:"동해안 철도(ECRL) 요금이 나왔어요. 말레이시아 레일 링크(MRL)는 내각이 16일 요금을 승인했다고 밝혔고, 12월 중순 영업 운행을 목표로 하고 있어요.",
+     pts:["일반(Transit) 편도는 곰박에서 콴탄(코타SAS)까지 60링깃, 쿠알라트렝가누 95링깃, 코타바루 125링깃부터예요. 급행(Express)은 각각 68·110·147링깃부터예요", "급행으로 코타바루까지 약 4시간, 코타SAS까지 약 1시간 27분 걸려요. 요금은 시간대와 수요, 남은 좌석에 따라 달라지는 변동 요금제예요", "2~12세 어린이, 60세 이상 말레이시아인, 장애인 카드 소지자, 공무원 연금 수급자는 50%, 13~24세 학생은 40% 할인돼요"],
+     info:[["판매", "공식 요금 확정과 표 판매는 11월 중순 예정"], ["운행", "월~목 하루 12회, 금~일 16회"], ["열차", "전동차 10편성, 최고 시속 160km"]],
+     src:"Malay Mail · 10.19", url:"https://www.malaymail.com/news/malaysia/2026/10/19/ecrl-fares-start-at-rm60-for-gombak-kuantan-route-rm125-one-way-to-kota-bharu/239684"},
+    {region:"말레이시아", tag:"스포츠", icon:"news", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><circle cx="18" cy="40" r="11"/><circle cx="54" cy="40" r="11"/><path d="M18 40L33 40L29 23ZM29 23L46 23L33 40M46 23L54 40" fill="none"/><path d="M24 20h9M46 23l1-4h5q4 0 4 4t-3 4" fill="none"/></g><circle cx="18" cy="40" r="11" fill="#3B3B38" stroke="#4A2E1A" stroke-width="1.5"/><circle cx="18" cy="40" r="7" fill="none" stroke="#5E5E5A" stroke-width="1.2"/><circle cx="54" cy="40" r="11" fill="none" stroke="#3B3B38" stroke-width="3"/><path d="M54 29v22M43 40h22M46.2 32.2l15.6 15.6M61.8 32.2L46.2 47.8" stroke="#8C8478" stroke-width=".9"/><path d="M18 40L33 40L29 23ZM29 23L46 23L33 40M46 23L54 40" fill="none" stroke="#4A2E1A" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 40L33 40L29 23ZM29 23L46 23L33 40M46 23L54 40" fill="none" stroke="#C8553D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M24 20h9" stroke="#4A2E1A" stroke-width="3.4" stroke-linecap="round"/><path d="M29 23v-3" stroke="#4A2E1A" stroke-width="1.6"/><path d="M46 23l1-4h5q4 0 4 4t-3 4" fill="none" stroke="#4A2E1A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="18" cy="40" r="2" fill="#DDD5C4" stroke="#4A2E1A" stroke-width="1"/><circle cx="54" cy="40" r="2" fill="#DDD5C4" stroke="#4A2E1A" stroke-width="1"/><circle cx="33" cy="40" r="2.6" fill="#DDA22F" stroke="#4A2E1A" stroke-width="1"/><path d="M5 22h7M6 29h5" stroke="#C98B1E" stroke-width="1.8" stroke-linecap="round"/>'}, title:"아시안 패러게임 첫 금, 사이클 주하이리", titleEn:"Para Cyclist Zuhairie Wins Malaysia's First Gold at the 2026 Asian Para Games",
+     lead:"패러 트랙 사이클 선수 주하이리 아흐마드 타르미지가 일본 아이치·나고야 2026 아시안 패러게임에서 말레이시아의 첫 금메달을 땄어요.",
+     pts:["남자 C4‑C5 1,000m 독주(타임 트라이얼)에서 1분 5초 361로 우승했어요", "앞선 예선에서는 대회 신기록도 세웠어요", "안와르 총리는 X에 축하 글을 올리며 더 큰 성공을 향해 계속 나아가라고 격려했어요"],
+     info:[["대회", "2026 아시안 패러게임 (일본 아이치·나고야)"], ["장소", "이즈 벨로드롬"]],
+     src:"Malay Mail (Bernama) · 10.19", url:"https://www.malaymail.com/news/malaysia/2026/10/19/anwar-congratulates-para-cyclist-zuhairie-on-winning-malaysias-first-gold-at-2026-asian-para-games/239762"},
+    {region:"말레이시아", tag:"음식", icon:"bowl", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><ellipse cx="36" cy="44" rx="29" ry="10"/><circle cx="19" cy="33" r="6"/><circle cx="29" cy="34" r="6"/><circle cx="24" cy="25" r="6"/><rect x="38" y="27" width="8" height="14" rx="2.5" transform="rotate(-12 42 34)"/><rect x="46" y="27" width="8" height="14" rx="2.5" transform="rotate(-12 50 34)"/><rect x="54" y="27" width="8" height="14" rx="2.5" transform="rotate(-12 58 34)"/><ellipse cx="60" cy="16" rx="6" ry="3.5"/></g><ellipse cx="36" cy="44" rx="29" ry="10" fill="#FBF7EF" stroke="#4A2E1A" stroke-width="1.5"/><ellipse cx="36" cy="43" rx="23" ry="7" fill="none" stroke="#D6C9B3" stroke-width="1.1"/><g stroke="#4A2E1A" stroke-width="1.4" stroke-linejoin="round"><circle cx="24" cy="25" r="6" fill="#F7EBC8"/><circle cx="19" cy="33" r="6" fill="#F7EBC8"/><circle cx="29" cy="34" r="6" fill="#F7EBC8"/><g transform="rotate(-12 42 34)"><rect x="38" y="27" width="8" height="14" rx="2.5" fill="#FBF0D6"/><path d="M38 30v-0.5a2.5 2.5 0 0 1 2.5-2.5h3a2.5 2.5 0 0 1 2.5 2.5v0.5z" fill="#E9A84E"/></g><g transform="rotate(-12 50 34)"><rect x="46" y="27" width="8" height="14" rx="2.5" fill="#FBF0D6"/><path d="M46 30v-0.5a2.5 2.5 0 0 1 2.5-2.5h3a2.5 2.5 0 0 1 2.5 2.5v0.5z" fill="#E9A84E"/></g><g transform="rotate(-12 58 34)"><rect x="54" y="27" width="8" height="14" rx="2.5" fill="#FBF0D6"/><path d="M54 30v-0.5a2.5 2.5 0 0 1 2.5-2.5h3a2.5 2.5 0 0 1 2.5 2.5v0.5z" fill="#E9A84E"/></g></g><g fill="#B9AE97"><circle cx="17" cy="31" r=".7"/><circle cx="21" cy="34" r=".7"/><circle cx="27" cy="32" r=".7"/><circle cx="31" cy="35" r=".7"/><circle cx="23" cy="23" r=".7"/><circle cx="26" cy="27" r=".7"/></g><g fill="#8DB66A" stroke="#2F5D49" stroke-width="1"><ellipse cx="14" cy="45" rx="4" ry="2.4"/><ellipse cx="22" cy="48" rx="4" ry="2.4"/></g><g fill="#DCE8E1"><circle cx="14" cy="45" r=".9"/><circle cx="22" cy="48" r=".9"/></g><path d="M44 37q1 2 0 3M52 37q1 2 0 3" stroke="#5FAE84" stroke-width="1.4" stroke-linecap="round" fill="none"/><ellipse cx="60" cy="16" rx="6" ry="3.5" fill="#E0704F" stroke="#4A2E1A" stroke-width="1.3"/><ellipse cx="60" cy="15.4" rx="4" ry="1.8" fill="#C8553D"/><path d="M20 22q2-3 5-3" fill="none" stroke="#fff" stroke-width="1.4" stroke-linecap="round"/>'}, title:"주문하면 바로 빚는 치킨라이스 볼, 9.50링깃", titleEn:"Hainanese Chicken Rice Balls and Nyonya Kuih at BigBasket Kitchen, PJ",
+     lead:"프탈링자야 섹션 14 밀레니엄 스퀘어의 가족 식당 ‘빅바스켓 키친(BigBasket Kitchen)’을 말레이 메일이 소개했어요. 70대 하이난계 요리사 마거릿과 뇨냐인 자매 애비게일 림이 집안 레시피로 꾸리는 작은 가게예요.",
+     pts:["하이난 치킨라이스는 주문을 받으면 바로 빚는 라이스 볼과 함께 나오고 9.50링깃이에요", "나시 르막(9.50링깃)은 요일마다 곁들이가 바뀌어요. 월·화는 카피탄 치킨, 수·목은 치킨 른당, 금요일은 오탁오탁 치킨이에요", "뇨냐 쿠이도 날마다 바뀌어요. 풀룻 팡강은 5링깃, 풀룻 인티는 2.50링깃이고, 퉁수이(3.50링깃)는 정해진 날에만 나와요"],
+     info:[["어디", "Lot G-052, Ground Floor, Millennium Square, 98 Jalan 14/1, Section 14, Petaling Jaya"], ["운영", "월~금 오전 10시~오후 5시"]],
+     src:"Malay Mail · 10.19", url:"https://www.malaymail.com/news/eat-drink/2026/10/19/bigbasket-kitchen-in-pj-section-14-showcases-hainanese-chicken-rice-with-rice-balls-nasi-lemak-with-a-nyonya-twist-and-handmade-nyonya-kuih/239648"},
+    {region:"세계", tag:"호주 유학", icon:"school", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><rect x="8" y="42" width="40" height="10" rx="1.5"/><rect x="12" y="32" width="34" height="10" rx="1.5"/><rect x="10" y="24" width="30" height="8" rx="1.5"/><path d="M49 26l-5 22 6-4 4 6 1-23zM57 26l5 22-6-4-4 6-1-23z"/><circle cx="53" cy="20" r="11"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round"><rect x="8" y="42" width="40" height="10" rx="1.5" fill="#2F6B5A"/><rect x="12" y="32" width="34" height="10" rx="1.5" fill="#C8553D"/><rect x="10" y="24" width="30" height="8" rx="1.5" fill="#3E4C5E"/></g><path d="M44 44v6M41 34v6M35 26v4" stroke="#FBF7EF" stroke-width="1.4" stroke-linecap="round"/><path d="M12 47h28M16 37h22M14 28h18" stroke="#F2CF6B" stroke-width="1.2" stroke-linecap="round"/><g stroke="#8E3524" stroke-width="1.4" stroke-linejoin="round"><path d="M49 26l-5 22 6-4 4 6 1-23z" fill="#C8553D"/><path d="M57 26l5 22-6-4-4 6-1-23z" fill="#B5462F"/></g><circle cx="53" cy="20" r="11" fill="#F7D36B" stroke="#8A5A12" stroke-width="1.5"/><circle cx="53" cy="20" r="7.5" fill="#DDA22F" stroke="#8A5A12" stroke-width="1.2"/><path d="M53 15.5l1.4 2.9 3.2.4-2.3 2.2.6 3.2-2.9-1.5-2.9 1.5.6-3.2-2.3-2.2 3.2-.4z" fill="#FBF7EF"/><path d="M45.5 15q2-4 6-5" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" opacity=".8"/>'}, title:"호주 대학 6곳, THE 세계 순위 100위 안에", titleEn:"Six Australian Universities Make the THE World Top 100 for 2027",
+     lead:"호주 정부 유학 안내 사이트 스터디 오스트레일리아가 타임스 고등교육(THE) 세계대학순위 2027의 호주 결과를 정리했어요. 호주 대학 진학을 생각하는 가정이 참고할 만해요.",
+     pts:["호주 대학 37곳이 순위에 올랐어요. 호주 대학의 약 88%예요", "100위 안에는 멜버른대, 시드니대, 모내시대, 퀸즐랜드대, UNSW 시드니, 호주국립대(ANU)가 들었고, 애들레이드대, UTS, 매쿼리대, 서호주대(UWA)까지 200위 안에 모두 10곳이에요", "7곳이 지난해보다 순위가 올랐고, 매쿼리대와 RMIT대는 역대 가장 높은 순위를 받았어요"],
+     info:[["자료", "THE 세계대학순위 2027"], ["참고", "순위는 출발점일 뿐, 과정 내용·지역·입학 요건·학습 경험·지원 서비스도 함께 보라고 안내해요"], ["확인", "Study Australia 공식 안내"]],
+     src:"Study Australia · 10.08", url:"https://www.studyaustralia.gov.au/en/tools-and-resources/news/australia-shines-in-world-university-rankings-2027"},
+    {region:"세계", tag:"우주", icon:"news", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><circle cx="28" cy="35" r="17"/><path d="M50 18q1-6 7-6q6-1 7 4q1 6-6 7q-7 1-8-5z"/></g><path d="M42 23q4-6 7-7" fill="none" stroke="#B9AE97" stroke-width="1.3" stroke-dasharray="2 2.2" stroke-linecap="round"/><circle cx="28" cy="35" r="17" fill="#D9792F" stroke="#4A2E1A" stroke-width="1.5"/><path d="M14 30q6-2 10 1t9-1M16 42q7 3 12 0t10 1" fill="none" stroke="#B5582A" stroke-width="2.2" stroke-linecap="round"/><g fill="#C8662B" stroke="#8C4A1E" stroke-width=".9"><circle cx="34" cy="27" r="2.6"/><circle cx="22" cy="44" r="2"/><circle cx="37" cy="40" r="1.6"/></g><path d="M18 25q4-5 10-6" fill="none" stroke="#F2B07A" stroke-width="1.8" stroke-linecap="round"/><path d="M50 18q1-6 7-6q6-1 7 4q1 6-6 7q-7 1-8-5z" fill="#A39E95" stroke="#4A2E1A" stroke-width="1.4" stroke-linejoin="round"/><g fill="#7E7A72"><circle cx="55" cy="16" r="1.5"/><circle cx="60" cy="18.5" r="1.1"/><circle cx="58" cy="14" r=".8"/></g><path d="M62 32l1.2 3 3 1.2-3 1.2-1.2 3-1.2-3-3-1.2 3-1.2z" fill="#F7D36B" stroke="#8A5A12" stroke-width="1" stroke-linejoin="round"/><g fill="#F7D36B"><circle cx="10" cy="12" r="1"/><circle cx="44" cy="8" r="1"/><circle cx="56" cy="50" r="1"/></g>'}, title:"화성의 달 포보스로, 일본 MMX 출발", titleEn:"Japan Launches MMX to Bring Back Samples From Mars' Moon Phobos",
+     lead:"일본 우주항공연구개발기구(JAXA)의 탐사선 MMX가 H3 로켓에 실려 다네가시마 우주센터에서 발사됐어요. 일본 시간 20일 새벽 4시 41분, 말레이시아 시간으로는 새벽 3시 41분이에요.",
+     pts:["약 10개월을 날아 2027년 8월 화성에 닿고, 화성 주변에서 약 3년을 보내요. 포보스에 두 번 내려앉아 시료 약 10g을 모을 계획이에요", "프랑스와 독일이 함께 만든 로버 IDEFIX가 2028년 말이나 2029년 초 포보스에 내려가요", "시료 캡슐은 2031년 호주에 내릴 예정이에요. 성공하면 포보스에 착륙해 시료를 지구로 가져오는 첫 탐사선이 돼요"],
+     info:[["발사", "H3 로켓 10번째 비행, 다네가시마 우주센터"], ["목표", "포보스와 데이모스가 거대 충돌로 생겼는지, 화성에 붙잡힌 소행성인지 밝히기"]],
+     src:"Space.com · 10.19", url:"https://www.space.com/space-exploration/launches-spacecraft/japan-launches-historic-mmx-sample-return-mission-to-mars-moon-phobos"}
+  ],
+  trend: {
+    title: "연무에 공기청정기 판매 600% 늘었다", titleEn: "Haze Sends Air Purifier Sales Soaring",
+    asOf: "2026년 10월 18일 보도 기준",
+    body: "인도네시아 산불에서 넘어온 연무가 몇 달째 이어지면서, 동남아시아 곳곳에서 공기청정기와 산소 장비를 찾는 사람이 크게 늘었다고 AFP가 전했습니다. 소매업체들은 공기 질이 나빠지기 시작한 8월부터 공기청정기 판매가 늘었다고 밝혔습니다.",
+    points: [
+      "지역 가전 소매 체인 코츠(Courts)는 9월 28일부터 10월 12일까지 공기청정기 판매량이 지난해 같은 기간보다 600% 늘었다고 밝혔습니다.",
+      "싱가포르에 본사를 둔 게인 시티(Gain City)는 10월 9일부터 수요가 급격히 늘어, 지금 판매가 8월 연무철이 시작될 때의 9배라고 밝혔습니다.",
+      "쿠알라룸푸르 외곽의 의료기기 업체 AA 얼라이브(AA Alive)는 연무 때문에 판매가 35% 늘었고, 하루 약 40대의 대여 장비를 배달하고 있습니다.",
+      "이 업체 기술자는 보통 1,000시간을 쓰면 바꾸는 산소발생기 필터의 수명이 연무 오염 물질 때문에 절반으로 줄었다고 말했습니다."
+    ],
+    src: [["Malay Mail (AFP) (2026.10.18)","https://www.malaymail.com/news/life/2026/10/18/malaysians-queue-for-clean-air-lifelines-as-haze-sends-purifier-demand-into-overdrive/239564"]]
+  },
+  life: {
+    title: "동해안 섬 여행은 몬순 달력부터 확인하세요", titleEn: "Check the Monsoon Calendar Before Booking an East Coast Island",
+    intro: "반도 동해안의 섬들은 계절에 따라 문을 열고 닫습니다. 북동 몬순이 오기 전에 알아두면 좋은 것을 말레이시아 기상청(MetMalaysia)과 영어판 위키백과에서 골랐습니다. 리조트와 배편은 떠나기 전에 꼭 직접 확인하세요.",
+    tips: [
+      ["북동 몬순은 11월부터 3월까지","말레이시아 기상청에 따르면 북동 몬순은 11월부터 3월까지 이어지며, 특히 반도 동해안 주에 많은 비를 뿌리고 남중국해에 강한 바람과 거친 파도를 일으킵니다."],
+      ["프렌티안은 11~2월에 사실상 닫혀요","프렌티안 제도는 11월부터 2월까지 몬순이 거세 리조트와 페리가 멈추고, 관광객에게는 사실상 닫힙니다. 섬에는 포장도로와 활주로가 없어 쿠알라 브슷 선착장에서 쾌속선으로 오갑니다."],
+      ["레당은 10월부터 3월까지 조심","레당섬은 10월부터 3월까지 리조트 대부분이 닫고 배편도 크게 줄어듭니다. 비가 가장 많은 달은 11~2월, 가장 건조한 달은 4~8월이며, 배는 므랑이나 샤반다르 선착장에서 리조트가 운영합니다."],
+      ["티오만은 조호르와 파항 양쪽에서","티오만섬으로 가는 페리는 조호르 므르싱과 파항 탄중 그목에서 떠나고, 표는 창구에서 사거나 페리 회사 웹사이트에서 미리 예약할 수 있습니다. 섬은 면세 지역이기도 합니다."],
+      ["해양공원에는 규칙이 있어요","프렌티안 제도는 1994년 해양공원으로 지정되어 해안에서 2마일 안에서는 모든 낚시가 금지됩니다. 티오만섬 주변 바다도 이웃한 여덟 섬과 함께 해양공원과 해양보호구역으로 지정돼 있습니다."]
+    ],
+    src: [["MetMalaysia: Weather Phenomena","https://www.met.gov.my/en/pendidikan/fenomena-cuaca/"],["Wikipedia: Perhentian Islands","https://en.wikipedia.org/wiki/Perhentian_Islands"],["Wikipedia: Redang Island","https://en.wikipedia.org/wiki/Redang_Island"],["Wikipedia: Tioman Island","https://en.wikipedia.org/wiki/Tioman_Island"]]
+  },
+  shows: {
+    intro: "쿠알라룸푸르에서 지금 볼 수 있거나 곧 열리는 전시와 공연입니다.",
+    items: [
+      {kind:"전시", title:"로버트 라우션버그와 아시아 (Robert Rauschenberg and Asia)", when:"11월 1일까지", where:"일함 갤러리(ILHAM Gallery) 5층", memo:"미국 현대미술 작가 로버트 라우션버그의 전시입니다.", url:"https://ilhamgallery.com/exhibitions/robert-rauschenberg-and-asia/"},
+      {kind:"전시", title:"경계 없는 예술: 난양으로 가는 새 항해 (Art Without Boundaries — New Voyage to Nanyang)", when:"11월 11일까지", where:"루앙 트두(Ruang Teduh), 익스체인지 106, 툰 라작 익스체인지", memo:"대만 태생의 큐레이터이자 작가 빅토리아 루가 AI의 도움을 받아 만든 작품을 젊은 작가들의 작품과 함께 선보입니다.", url:"https://www.malaymail.com/news/life/2026/10/10/art-meets-algorithm-victoria-lu-explores-ai-and-human-creativity-at-kuala-lumpur-exhibition/238604"},
+      {kind:"오페라", title:"투란도트 (Turandot)", when:"10월 20·22·24·25일", where:"KLPac 펜타스 1 (Pentas 1)", memo:"KLPac 오케스트라가 연주합니다. 25일은 오후 4시, 나머지 날은 오후 8시 공연입니다.", url:"https://www.klpac.org/shows/turandot/"},
+      {kind:"클래식", title:"스티븐 허프와 함께하는 저녁 (A Regal Evening with Stephen Hough)", when:"10월 24일", where:"데완 필하모닉 페트로나스 (Dewan Filharmonik PETRONAS)", memo:"히로카미 준이치가 지휘하는 말레이시아 필하모닉과 피아니스트 스티븐 허프가 베토벤 피아노 협주곡 5번 ‘황제’와 교향곡 4번을 연주합니다.", url:"https://www.mpo.com.my/season-2026/a-regal-evening-with-stephen-hough"},
+      {kind:"K팝", title:"더 로즈 아시아 투어 (The Rose ROSETOPIA Asia Tour)", when:"10월 25일", where:"메가 스타 아레나, 쿠알라룸푸르", memo:"한국 밴드 더 로즈의 쿠알라룸푸르 공연으로, CK 스타 엔터테인먼트가 주최합니다.", url:"https://thesmartlocal.my/the-rose-concert-2026/"},
+      {kind:"클래식", title:"보르네오의 울림: 알레나 무랑과 MPO (Beats of Borneo: Alena Murang with the MPO)", when:"10월 31일 오후 8시", where:"데완 필하모닉 페트로나스 (Dewan Filharmonik PETRONAS)", memo:"히로카미 준이치가 지휘하는 말레이시아 필하모닉이 라벨 ‘쿠프랭의 무덤’과 모차르트 교향곡 40번을 연주하고, 알레나 무랑이 추아의 사페 협주곡을 협연합니다.", url:"https://www.mpo.com.my/season-2026/beats-of-borneo-alena-murang-with-the-mpo"},
+      {kind:"K팝", title:"예성 10주년 투어 (YESUNG 10th Anniversary Tour: ABOUT THE THINGS WE CALLED ORDINARY)", when:"11월 7일 오후 8시", where:"제프 쿠알라룸푸르 (Zepp Kuala Lumpur)", memo:"슈퍼주니어 예성의 10주년 기념 투어 공연으로, iMe Malaysia가 주최합니다.", url:"https://klconcert.com/concert/yesung-10th-anniversary-tour-about-the-things-we-called-ordinary"}
+    ]
+  },
+  music: {
+    title: "사랑이 아니라 말하지 말아요", artist: "성시경 (Sung Si-kyung)", year: "2026",
+    mood: "새벽처럼 조용히 저미는",
+    why: "이소라가 2016년에 발표하고 김동률이 노랫말과 곡을 모두 쓴 발라드를, 성시경이 '고막남친' 무대에서 자기 목소리로 다시 불렀어요. 힘을 빼고 낮게 흘러가는 노래라, 하루를 시작하기 전 조용한 아침에 커피 한 잔과 함께 틀어두기 좋습니다.",
+    query: "성시경 사랑이 아니라 말하지 말아요 고막남친"
+  },
+  fact: {
+    title: "10월 20일, 시드니 오페라하우스가 문을 연 날", titleEn: "October 20, 1973: The Sydney Opera House Opens",
+    body: "1973년 10월 20일, 엘리자베스 2세 여왕이 호주 시드니 오페라하우스를 공식 개관했습니다. 1955년 9월 시작된 국제 설계 공모에서 덴마크 건축가 예른 웃손이 1957년 1월 당선됐고, 공사는 1959년 3월 시작됐습니다. 1957년에는 350만 파운드를 들여 1963년 1월에 마칠 계획이었지만, 실제로는 10년 늦게 1억 200만 호주달러를 들여 완공됐습니다.",
+    more: [
+      "조개껍데기 같은 지붕은 처음에 정해진 기하학이 없어 설계팀이 1957~1963년에 적어도 12번 모양을 바꿨고, 1961년 중반 모든 껍데기를 하나의 구(球)에서 잘라 낸 조각으로 만드는 방식으로 정리했습니다.",
+      "지붕은 광택 있는 흰색과 무광 크림색, 두 가지 색 타일 105만 6,006장으로 덮여 있습니다.",
+      "웃손은 1966년 2월 28일 프로젝트를 떠나 다시는 호주에 돌아오지 않았고, 2003년 프리츠커상을 받았습니다. 건물은 2007년 유네스코 세계유산이 되었습니다."
+    ],
+    src: [["Wikipedia: Sydney Opera House","https://en.wikipedia.org/wiki/Sydney_Opera_House"]]
+  }
+},
+
+{
   date: "2026-10-19",
   quote: {
     ko: "세상에 알아낼 것이 이렇게나 많다니, 정말 멋지지 않아요? 그냥 살아 있다는 게 기뻐져요. 정말 흥미로운 세상이잖아요.",
