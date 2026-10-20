@@ -569,6 +569,133 @@ const PHOTO = null; // 예: {src:"photo.jpg", caption:"한 줄 설명", date:"20
 /* ===== DAYS: 날짜별 콘텐츠. 최신 날짜가 맨 앞. 매일 새 객체를 맨 앞에 추가하고 14일치만 유지. ===== */
 const DAYS = [
 {
+  date: "2026-10-21",
+  quote: {
+    ko: "모든 아이는 자란다. 단 한 아이만 빼고.",
+    en: "All children, except one, grow up.",
+    by: "J. M. 배리, 『피터와 웬디』 (1911)",
+    pick: {kind:"영화", title:"보이후드 (Boyhood, 2014)", gist:"2002년 텍사스의 작은 마을, 여섯 살 메이슨은 이혼한 엄마 올리비아, 누나 서맨사와 함께 살고, 이듬해 엄마가 대학에 다니며 더 나은 일을 찾으려고 가족은 휴스턴으로 이사합니다. 리처드 링클레이터 감독은 같은 배우들과 12년에 걸쳐 해마다 며칠씩 촬영해, 메이슨이 여섯 살에서 열여덟 살이 되기까지를 한 편의 영화에 담았습니다. 영화는 큰 사건보다 이사와 계절, 부모와 나누는 평범한 대화 같은 순간들이 쌓여 한 사람이 자라난다는 것을 서두르지 않고 지켜봅니다.", after:"누구도 자라지 않을 수는 없지만, 자라는 동안의 평범한 하루들은 오래도록 우리 안에 남아 빛납니다."}
+  },
+  english: {
+    title: "엄마 생신 선물, 친구랑 같이 고르기", titleEn: "Picking Out a Birthday Gift for Mom With a Friend",
+    situation: "엄마 생신을 며칠 앞두고 선물을 정하지 못해, 쇼핑하던 친구에게 도움을 청하는 대화입니다. 취향을 묻고, 가격과 할인을 확인하며 함께 고르는 말투를 익혀 보세요.",
+    lines: [
+      ["A","Okay, I need your help. My mom's birthday is Sunday, and I'm totally stumped.","좋아, 나 좀 도와줘. 엄마 생신이 일요일인데, 뭘 사야 할지 완전히 막막해."],
+      ["B","Let's see. What's she into these days?","어디 보자. 요즘 어머니가 뭘 좋아하셔?"],
+      ["A","Gardening, mostly. But she already has every tool under the sun.","주로 정원 가꾸기. 근데 세상에 있는 도구는 이미 다 갖고 계셔."],
+      ["B","What about something she wouldn't splurge on for herself, like a really nice robe?","본인한테는 큰맘 먹고 쓰지 않으실 만한 건 어때? 정말 좋은 가운 같은 거."],
+      ["A","Ooh, a robe could work. She's been wearing the same ratty one for years.","오, 가운 괜찮겠다. 몇 년째 똑같은 낡은 걸 입고 계시거든."],
+      ["B","There you go. Feel this one. It's super soft.","거봐. 이거 만져 봐. 엄청 부드러워."],
+      ["A","Oh, that's nice. It's a little pricey, though.","오, 좋다. 근데 좀 비싸네."],
+      ["B","Hang on, I think it's on sale. Let me double-check the tag.","잠깐, 이거 할인하는 것 같은데. 가격표 다시 확인해 볼게."],
+      ["A","You're right, it's thirty percent off. Sold!","맞네, 30퍼센트 할인이야. 이걸로 할게!"],
+      ["B","Nice. And ask for a gift receipt, just in case it doesn't fit.","잘됐다. 혹시 안 맞을 수도 있으니까 선물용 영수증도 꼭 달라고 해."]
+    ],
+    expressions: [
+      {en:"be stumped", ko:"‘막막하다, 도무지 모르겠다’. 답이나 방법이 전혀 떠오르지 않을 때 씁니다. totally를 붙이면 ‘완전히 손들었다’는 느낌이 강해집니다.", eg:"I've been trying to fix this sink all morning, and I'm stumped."},
+      {en:"be into ~", ko:"‘~을 좋아하다, ~에 빠져 있다’. 취미나 관심사를 물을 때 What are you into these days?처럼 아주 자주 씁니다.", eg:"My brother is really into rock climbing right now."},
+      {en:"every ~ under the sun", ko:"‘세상의 온갖 ~, 있을 수 있는 건 다’. 종류가 아주 많다는 것을 과장해서 말할 때 씁니다.", eg:"That store sells every kind of tea under the sun."},
+      {en:"splurge on ~", ko:"‘~에 큰맘 먹고 돈을 쓰다’. 평소라면 아낄 만한 데에 기분 좋게 돈을 쓸 때 씁니다.", eg:"We splurged on a nice dinner for our anniversary."},
+      {en:"a gift receipt", ko:"‘선물용 영수증’. 가격은 빠져 있지만 받는 사람이 교환이나 환불을 할 수 있게 해 주는 영수증으로, 미국 매장에서 계산할 때 따로 달라고 합니다.", eg:"Could I get a gift receipt with that, please?"}
+    ],
+    pattern: {
+      en: "~ could work.",
+      ko: "‘~도 괜찮겠다, ~면 되겠다’. 상대가 내놓은 의견이나 방법이 쓸 만하다고 부드럽게 받아들일 때 씁니다. That could work처럼 짧게도 자주 말합니다.",
+      examples: [
+        ["A <b>picnic</b> in the <b>park</b> could work.","공원에서 소풍하는 것도 괜찮겠다."],
+        ["<b>Saturday</b> morning could <b>work</b> for me.","난 토요일 아침이면 될 것 같아."],
+        ["That could <b>work</b>, but let me <b>check</b> with my sister.","그거 괜찮겠다. 근데 누나한테 한번 물어볼게."]
+      ]
+    }
+  },
+  news: [
+    {region:"말레이시아", tag:"생활 · 연무", important:true, icon:"rain", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><circle cx="46" cy="19" r="10"/><path d="M10 52V34h8v-6h7v10h6V24h9v10h7v-4h7v8h6v14z"/><path d="M8 41q7-4 14 0t14 0t14 0t14 0M8 49q7-4 14 0t14 0t14 0t14 0" fill="none"/></g><circle cx="46" cy="19" r="10" fill="#E9A15A" stroke="#4A2E1A" stroke-width="1.5"/><path d="M40 15q3-3 7-3" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" opacity=".7"/><path d="M10 52V34h8v-6h7v10h6V24h9v10h7v-4h7v8h6v14z" fill="#A39E95" stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round"/><g fill="#F2CF6B"><rect x="13" y="37" width="3" height="3"/><rect x="20" y="31" width="3" height="3"/><rect x="34" y="28" width="3" height="3"/><rect x="34" y="34" width="3" height="3"/><rect x="49" y="33" width="3" height="3"/></g><path d="M8 41q7-4 14 0t14 0t14 0t14 0M8 49q7-4 14 0t14 0t14 0t14 0" fill="none" stroke="#4A2E1A" stroke-width="4.6" stroke-linecap="round"/><path d="M8 41q7-4 14 0t14 0t14 0t14 0M8 49q7-4 14 0t14 0t14 0t14 0" fill="none" stroke="#D3CBBA" stroke-width="2.2" stroke-linecap="round"/>'}, title:"연무 다시 짙어져, 25곳 ‘건강에 해로움’", titleEn:"Haze Worsens Again as 25 Areas Hit Unhealthy Air Levels",
+     lead:"20일 오후 4시 기준 전국 25곳의 대기오염지수(API)가 ‘건강에 해로움’ 구간에 들었어요. 쿠알라룸푸르·슬랑오르·푸트라자야·믈라카·느그리슴빌란·조호르 등에 사는 사람이 해당돼요.",
+     pts:["가장 높은 곳은 쿠알라룸푸르 바투 무다로 API 173이었고, 같은 KL의 체라스 169, 푸트라자야 164였어요", "슬랑오르는 조한 스티아 171, 샤알람 170, 프탈링자야 169, 클랑 164, 반팅 162였어요", "전국에서 ‘보통’은 35곳, ‘좋음’은 8곳뿐이었어요"],
+     info:[["시각", "10월 20일 오후 4시"], ["구간", "API 101~200 건강에 해로움, 201~300 매우 해로움"], ["확인", "환경부(DOE) APIMS 포털"]],
+     src:"Malay Mail (Bernama) · 10.20", url:"https://www.malaymail.com/news/malaysia/2026/10/20/batu-muda-tops-api-readings-as-haze-worsens-in-25-areas-across-malaysia/239894"},
+    {region:"말레이시아", tag:"전시", icon:"art", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><rect x="7" y="27" width="44" height="26" rx="2"/><rect x="50" y="7" width="9" height="10" rx="2"/><rect x="43" y="16" width="23" height="10" rx="2"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><rect x="7" y="27" width="44" height="26" rx="2" fill="#8E3524"/><path d="M7 33h44" fill="none"/><rect x="50" y="7" width="9" height="10" rx="2" fill="#8C5A3A"/><rect x="43" y="16" width="23" height="10" rx="2" fill="#C98A4E"/></g><path d="M46 23h17M49 20h11" stroke="#8C5A3A" stroke-width="1.2" stroke-linecap="round"/><g fill="#F2CF6B" stroke="#C98B1E" stroke-width=".8" stroke-linejoin="round"><path d="M17 37l4 4-4 4-4-4z"/><path d="M29 37l4 4-4 4-4-4z"/><path d="M41 37l4 4-4 4-4-4z"/><circle cx="23" cy="48" r="1.6"/><circle cx="35" cy="48" r="1.6"/><circle cx="11" cy="48" r="1.6"/><circle cx="47" cy="48" r="1.6"/></g><path d="M10 30h3M17 30h3M24 30h3M31 30h3M38 30h3M45 30h3" stroke="#F2CF6B" stroke-width="1.6" stroke-linecap="round"/><path d="M52 10v4" stroke="#B9773A" stroke-width="1.2" stroke-linecap="round"/>'}, title:"금박으로 찍는 말레이 옷감, 텔레푹", titleEn:"Telepuk, the Nearly Forgotten Malay Art of Gold-Leaf Textiles",
+     lead:"퓨터 브랜드 로열 슬랑오르가 쿠알라룸푸르 스타팍의 방문자 센터에서, 금박으로 천을 꾸미는 말레이 전통 공예 ‘텔레푹(telepuk)’ 워크숍을 열었어요. 같은 곳에서 텔레푹 전시도 12월 31일까지 이어져요.",
+     pts:["참가자 약 20명이 조각한 나무 틀을 아카시아 고무에 눌러 찍은 뒤 금박을 입혔어요. 말레이 전통 공예 단체 랑카수카 무브먼트가 이끌었어요", "공동 창립자 인탄 자일라니는 이 공예가 거의 90년 동안 끊겨 있었다며, 기록과 직접 해 보는 교육이 중요하다고 했어요", "전시에는 술탄 압둘 사마드와 이어진 19세기 중반 왕실 예복 ‘바주 시캅’이 나왔고, 로열 슬랑오르는 100년 된 나무 틀의 무늬 여섯 가지로 퓨터 명판 세트를 만들었어요"],
+     info:[["전시", "Telepuk: The Imprint of Heritage, 8월 27일~12월 31일"], ["어디", "로열 슬랑오르 방문자 센터, 스타팍"]],
+     src:"Malay Mail (Bernama) · 10.20", url:"https://www.malaymail.com/news/life/2026/10/20/a-touch-of-gold-royal-selangor-shines-a-spotlight-on-telepuk-a-nearly-forgotten-malay-textile-art/239735"},
+    {region:"말레이시아", tag:"스포츠", icon:"news", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><rect x="7" y="29" width="58" height="4" rx="2"/><rect x="13" y="14" width="8" height="34" rx="2"/><rect x="21" y="19" width="5" height="24" rx="1.5"/><rect x="51" y="14" width="8" height="34" rx="2"/><rect x="46" y="19" width="5" height="24" rx="1.5"/><path d="M36 8l1.8 4.2 4.2 1.8-4.2 1.8-1.8 4.2-1.8-4.2-4.2-1.8 4.2-1.8z"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><rect x="7" y="29" width="58" height="4" rx="2" fill="#B9AE97"/><rect x="13" y="14" width="8" height="34" rx="2" fill="#C8553D"/><rect x="21" y="19" width="5" height="24" rx="1.5" fill="#2F6B5A"/><rect x="51" y="14" width="8" height="34" rx="2" fill="#C8553D"/><rect x="46" y="19" width="5" height="24" rx="1.5" fill="#2F6B5A"/></g><path d="M15.5 18v10M53.5 18v10" stroke="#fff" stroke-width="1.5" stroke-linecap="round" opacity=".6"/><path d="M28 31h16" stroke="#8C8478" stroke-width="1" stroke-dasharray="1.5 1.5"/><path d="M36 8l1.8 4.2 4.2 1.8-4.2 1.8-1.8 4.2-1.8-4.2-4.2-1.8 4.2-1.8z" fill="#F7D36B" stroke="#8A5A12" stroke-width="1.1" stroke-linejoin="round"/>'}, title:"보니, 아시안 패러게임 2연패로 두 번째 금", titleEn:"Bonnie Bunyau Gustin Defends His Asian Para Games Title for Malaysia's Second Gold",
+     lead:"파라 파워리프팅 선수 보니 부냐우 구스틴이 아이치·나고야 2026 아시안 패러게임 남자 72kg급에서 우승했어요. 이번 대회 말레이시아의 두 번째 금메달이에요.",
+     pts:["사라왁 출신인 보니는 2022년 항저우 아시안 패러게임에 이어 이 종목 2연패를 이뤘어요", "7월 글래스고 커먼웰스 게임에서는 금메달을 지키지 못하고 동메달을 땄었어요", "안와르 총리는 페이스북에 축하 글을 올렸어요"],
+     info:[["대회", "2026 아시안 패러게임 (일본 아이치·나고야)"], ["장소", "나고야시 상공업센터"], ["종목", "남자 72kg급 파라 파워리프팅"]],
+     src:"Bernama · 10.20", url:"https://www.bernama.com/en/news.php?id=2623223"},
+    {region:"말레이시아", tag:"스포츠", icon:"news", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-linejoin="round" stroke-linecap="round"><path d="M20 9L40 44q4 7 11 4" fill="none" stroke-width="14"/><circle cx="57" cy="30" r="5.5" stroke-width="7.5"/></g><path d="M20 9L40 44q4 7 11 4" fill="none" stroke="#4A2E1A" stroke-width="7.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 9L40 44q4 7 11 4" fill="none" stroke="#D9A441" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 9l6 10.5" fill="none" stroke="#2F6B5A" stroke-width="4.6" stroke-linecap="round"/><path d="M22 14l3-1.6M24 17.5l3-1.6" stroke="#9CC9B4" stroke-width="1" stroke-linecap="round"/><circle cx="57" cy="30" r="5.5" fill="#FBF7EF" stroke="#4A2E1A" stroke-width="1.5"/><path d="M54 28q3 1 4 5" fill="none" stroke="#B9AE97" stroke-width="1" stroke-linecap="round"/><path d="M60 20h5M62 25h4" stroke="#C98B1E" stroke-width="1.8" stroke-linecap="round"/>'}, title:"주니어 하키 영 타이거스, 일본에 4‑2 역전승", titleEn:"Malaysia's Young Tigers Come From Behind to Beat Japan 4-2",
+     lead:"조호르바루에서 열리고 있는 2026 술탄 오브 조호르컵(SOJC)에서 말레이시아 주니어 하키 대표팀 ‘영 타이거스’가 일본을 4‑2로 꺾었어요. 이번 대회 두 번째 경기였어요.",
+     pts:["일본이 19분에 먼저 골을 넣었고, 27분 무함마드 하피에주딘이 페널티로 동점을 만들었어요", "43분 일본이 다시 앞서갔지만, 51분 아페룰 샤의 페널티 코너 골과 56분 나빈내시 파니커의 필드골, 곧바로 이어진 디레시 구나실란의 페널티 코너 골로 뒤집었어요", "지금 순위는 파키스탄과 말레이시아가 승점 6, 일본과 캐나다가 3, 중국이 0이에요"],
+     info:[["대회", "2026 술탄 오브 조호르컵 (SOJC)"], ["장소", "조호르 하키 스타디움, 조호르바루"]],
+     src:"Bernama · 10.20", url:"https://www.bernama.com/en/sports/news.php?id=2623251"},
+    {region:"세계", tag:"호주 유학", icon:"school", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M22 22V10h8l-2 2.5 2 2.5h-8M36 16V8h8l-2 2.5 2 2.5h-8M50 22V10h8l-2 2.5 2 2.5h-8"/><path d="M10 28L36 16l26 12z"/><rect x="11" y="28" width="50" height="5"/><rect x="13" y="33" width="46" height="16"/><rect x="8" y="49" width="56" height="6" rx="1"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M22 22V10M36 16V8M50 22V10" fill="none" stroke-width="1.3"/><path d="M22 10h8l-2 2.5 2 2.5h-8z" fill="#C8553D" stroke-width="1.1"/><path d="M36 8h8l-2 2.5 2 2.5h-8z" fill="#2F6B5A" stroke-width="1.1"/><path d="M50 10h8l-2 2.5 2 2.5h-8z" fill="#DDA22F" stroke-width="1.1"/><rect x="13" y="33" width="46" height="16" fill="#E8DCC2"/><path d="M10 28L36 16l26 12z" fill="#F5E4BA"/><rect x="11" y="28" width="50" height="5" fill="#D9C79A"/><rect x="16" y="33" width="5" height="16" fill="#FBF7EF"/><rect x="26" y="33" width="5" height="16" fill="#FBF7EF"/><rect x="41" y="33" width="5" height="16" fill="#FBF7EF"/><rect x="51" y="33" width="5" height="16" fill="#FBF7EF"/><path d="M33 49v-9a3 3 0 0 1 6 0v9z" fill="#8C5A3A"/><rect x="8" y="49" width="56" height="6" rx="1" fill="#B9AE97"/></g><circle cx="36" cy="23.5" r="2.4" fill="#A9D9EC" stroke="#4A2E1A" stroke-width="1"/>'}, title:"서호주 대학 3곳 통합 검토, 커틴대는 반대", titleEn:"Western Australia Weighs Merging Curtin, Murdoch and UWA as Curtin Vows to Fight",
+     lead:"서호주(WA) 주정부가 커틴대, 머독대, 서호주대(UWA)를 하나로 합치는 방안을 따져 보는 사업 타당성 검토를 발표했어요. 퍼스의 대학 진학을 생각하는 가정이 지켜볼 소식이에요.",
+     pts:["세 대학을 합치면 학생이 12만 명 가까운 대학이 돼요. 주정부는 아직 최종 결정은 내리지 않았다고 밝혔어요", "12명으로 꾸린 운영위원회가 맡는 검토는 2026년 말 시작해 2027년에 끝나고, 결정은 그 뒤에 내려요", "커틴대 할린 헤인 총장은 비용과 낭비, 학생 선택권 축소를 들어 ‘강력히 반대’하겠다고 했어요"],
+     info:[["대상", "커틴대, 머독대, 서호주대(UWA)"], ["일정", "검토 2026년 말~2027년, 이후 결정"], ["참고", "기사에는 유학생 학비·비자에 미칠 영향이 나와 있지 않아요"]],
+     src:"The PIE News · 10.12", url:"https://thepienews.com/curtin-vows-to-fight-wa-mega-university-merger/"},
+    {region:"세계", tag:"과학", icon:"leaf", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><ellipse cx="27" cy="19" rx="11" ry="6" transform="rotate(-20 27 19)"/><ellipse cx="40" cy="18" rx="10" ry="5.5" transform="rotate(15 40 18)"/><path d="M28 44l-3 8M36 46l-1 7M44 44l2 7M57 28l4-6" fill="none"/><ellipse cx="34" cy="36" rx="17" ry="10"/><circle cx="54" cy="34" r="7"/></g><path d="M28 44l-3 8M36 46l-1 7M44 44l2 7" fill="none" stroke="#4A2E1A" stroke-width="2" stroke-linecap="round"/><path d="M57 28l4-6" fill="none" stroke="#4A2E1A" stroke-width="1.5" stroke-linecap="round"/><circle cx="61" cy="22" r="1.4" fill="#4A2E1A"/><g stroke="#4A2E1A" stroke-width="1.3"><ellipse cx="27" cy="19" rx="11" ry="6" transform="rotate(-20 27 19)" fill="#DCEFF5"/><ellipse cx="40" cy="18" rx="10" ry="5.5" transform="rotate(15 40 18)" fill="#DCEFF5"/></g><ellipse cx="34" cy="36" rx="17" ry="10" fill="#F2CF6B"/><path d="M28 27v18M38 27v18" stroke="#3B3B38" stroke-width="4"/><path d="M21 31v10" stroke="#3B3B38" stroke-width="3"/><ellipse cx="34" cy="36" rx="17" ry="10" fill="none" stroke="#4A2E1A" stroke-width="1.5"/><circle cx="54" cy="34" r="7" fill="#3B3B38" stroke="#4A2E1A" stroke-width="1.5"/><circle cx="56" cy="32.5" r="3" fill="#C8553D"/><circle cx="57" cy="31.6" r=".9" fill="#fff"/><path d="M24 30q3-3 8-3.5" fill="none" stroke="#fff" stroke-width="1.4" stroke-linecap="round" opacity=".7"/>'}, title:"150년 만에 다시 보인 곤충, 생물 목록의 빈칸", titleEn:"An Insect Unseen for 150 Years and the Gaps in Cataloguing Life on Earth",
+     lead:"호박벌을 닮은 곤충 ‘포코타 페르소나타(Pocota personata)’가 프랑스에서 150년 만인 2025년, 파리 지역에서 다시 눈에 띄었어요. 사라졌다 돌아온 건지, 그동안 아무도 알아채지 못한 건지는 알 수 없대요.",
+     pts:["2011년 한 연구는 육상 생물종의 86%, 해양 생물종의 91%가 아직 공식적으로 기재되지 않았다고 추정했어요", "2025년 국제자연보전연맹(IUCN)이 멸종 위험을 평가한 종은 알려진 종의 약 8%뿐이었어요", "프랑스 국립자연사박물관(MNHN) 연구원 파니 크라츠는 파리 식물원과 다른 16곳의 곤충 덫을 매주 살피며 DNA로 빈칸을 채워요. 덫 하나에서 DNA 유형이 261개까지 나오기도 해요"],
+     info:[["새 사업", "다이나비오드(Dynabiod), 6월 시작한 프랑스 식물·무척추동물 데이터베이스"], ["함께", "프랑스 국립자연사박물관(MNHN)과 국립과학연구센터(CNRS)"]],
+     src:"Malay Mail (AFP) · 10.20", url:"https://www.malaymail.com/news/life/2026/10/20/millions-of-species-missing-data-the-painstaking-work-of-cataloguing-life-on-earth/239724"}
+  ],
+  trend: {
+    title: "말레이시아 ‘똑똑한 온라인 쇼핑객’은 5명 중 1명", titleEn: "Only One in Five Malaysian Online Shoppers Is a 'Savvy' Shopper, Study Finds",
+    asOf: "2026년 10월 20일 보도 기준",
+    body: "라자다와 조사업체 큐브 아시아가 동남아시아 6개 시장의 18~61세 온라인 쇼핑객 6,000명을 조사한 ‘2026 이커머스 세이비 쇼퍼 보고서’를 내놓았습니다. 상품 정보 확인, 가성비 따지기, 구매 보호에 대한 자신감, 디지털 활용 능력의 네 가지 기준으로 가려낸 ‘세이비 쇼퍼’는 말레이시아 온라인 쇼핑객의 20%로, 지역 평균 24%보다 낮았습니다.",
+    points: [
+      "말레이시아의 세이비 쇼퍼는 일반 소비자보다 한 달에 36% 더 쓰며, 두 집단의 지출 차이는 한 해 약 9억 달러(약 36억 7,000만 링깃)로 계산됐습니다.",
+      "네 기준 가운데 세 가지를 갖춘 ‘거의 세이비’ 쇼핑객은 17%였고, 이 가운데 45%는 정보 확인 하나만 부족했습니다.",
+      "세이비 쇼퍼의 39%는 더 나은 구매 보호를 위해 돈을 더 낼 수 있다고 답해 일반 쇼핑객(24%)보다 높았고, 43%는 장터 안의 공식 ‘몰(Mall)’ 코너에서 대부분을 삽니다.",
+      "연구진은 이 지출 차이가 습관 때문에 더 쓴 돈이 아니라 세이비 쇼퍼의 더 높은 구매력을 반영한 것이라고 설명했고, 라자다 말레이시아의 카야 친 CEO는 ‘더 많이가 아니라 잘 쓰도록 돕는 것’이 목표라고 말했습니다."
+    ],
+    src: [["Malay Mail (2026.10.20)","https://www.malaymail.com/news/money/2026/10/20/study-finds-only-one-in-five-malaysians-are-savvy-online-shoppers-leaving-rm367b-gap/239863"]]
+  },
+  life: {
+    cat: "과학 이야기",
+    title: "올해 엘니뇨는 역대 최강일까, 답이 엇갈리는 이유", titleEn: "Is This the Strongest El Niño Ever? Why Scientists Can't Agree",
+    intro: "영국 기상청은 올해 엘니뇨를 ‘전례 없는’ 수준이라 부르고, 일본 기상청은 관측 이래 가장 강하다고 하지만, 미국 예보관들은 아직 가장 큰 엘니뇨들에는 못 미친다고 봅니다. 같은 바다를 보고도 답이 다른 까닭을 AFP 보도에서 정리했습니다.",
+    tips: [
+      ["엘니뇨는 이렇게 선언해요","니뇨3.4 해역 수온이 평년보다 0.5°C 이상 높고, 무역풍이 약해지고 열대 강우가 동쪽으로 옮겨 가는 식으로 대기가 함께 반응할 때 엘니뇨를 선언합니다. 평균 2~7년마다 찾아와 9~12개월 이어집니다."],
+      ["영국은 ‘실제 수온’을 봐요","영국 기상청은 적도 태평양 중부의 절대 해수면 온도가 이전 엘니뇨 때보다 높다는 점을 근거로 듭니다. 다른 기관들은 역사적 기준값에서 얼마나 벗어났는지, 곧 편차를 잽니다."],
+      ["일본은 다른 바다를 재요","일본 기상청은 동태평양 니뇨3 해역의 편차로 순위를 매기며, 1949년부터의 관측에서 1997년을 넘어섰다고 봅니다. 미국은 그보다 서쪽의 니뇨3.4 해역을 봅니다."],
+      ["미국은 잣대를 바꿨어요","바다 전체가 따뜻해지면서, 미국 해양대기청(NOAA)은 30년 평균과 비교하던 ONI 대신 동중부 태평양 수온을 나머지 열대 바다와 비교하는 RONI로 바꿨고, 세계기상기구(WMO)도 같은 전환을 진행하고 있습니다."],
+      ["순위는 끝나 봐야 알아요","NOAA는 RONI 3개월 평균 편차가 2.5°C 이상이면 1950년부터의 기록에서 가장 강한 엘니뇨가 된다고 보며, 그 가능성을 ‘높음’으로 봅니다. 마이애미대 에밀리 베커는 어느 잣대로 보든 매우 강한 엘니뇨이지만 역사 속 자리는 끝난 뒤에야 정할 수 있다고 말했습니다."]
+    ],
+    src: [["Malay Mail (AFP): Record El Nino? Why scientists can't agree (2026.10.20)","https://www.malaymail.com/news/life/2026/10/20/record-el-nino-why-scientists-cant-agree-on-how-strong-it-is/239723"]]
+  },
+  shows: {
+    intro: "쿠알라룸푸르에서 지금 볼 수 있거나 곧 열리는 전시와 공연입니다.",
+    items: [
+      {kind:"전시", title:"로버트 라우션버그와 아시아 (Robert Rauschenberg and Asia)", when:"11월 1일까지", where:"일함 갤러리(ILHAM Gallery) 5층", memo:"미국 현대미술 작가 로버트 라우션버그의 전시입니다.", url:"https://ilhamgallery.com/exhibitions/robert-rauschenberg-and-asia/"},
+      {kind:"전시", title:"경계 없는 예술: 난양으로 가는 새 항해 (Art Without Boundaries — New Voyage to Nanyang)", when:"11월 11일까지", where:"루앙 트두(Ruang Teduh), 익스체인지 106, 툰 라작 익스체인지", memo:"대만 태생의 큐레이터이자 작가 빅토리아 루가 AI의 도움을 받아 만든 작품을 젊은 작가들의 작품과 함께 선보입니다.", url:"https://www.malaymail.com/news/life/2026/10/10/art-meets-algorithm-victoria-lu-explores-ai-and-human-creativity-at-kuala-lumpur-exhibition/238604"},
+      {kind:"오페라", title:"투란도트 (Turandot)", when:"10월 22·24·25일", where:"KLPac 펜타스 1 (Pentas 1)", memo:"KLPac 오케스트라가 연주합니다. 25일은 오후 4시, 나머지 날은 오후 8시 공연입니다.", url:"https://www.klpac.org/shows/turandot/"},
+      {kind:"클래식", title:"스티븐 허프와 함께하는 저녁 (A Regal Evening with Stephen Hough)", when:"10월 24일", where:"데완 필하모닉 페트로나스 (Dewan Filharmonik PETRONAS)", memo:"히로카미 준이치가 지휘하는 말레이시아 필하모닉과 피아니스트 스티븐 허프가 베토벤 피아노 협주곡 5번 ‘황제’와 교향곡 4번을 연주합니다.", url:"https://www.mpo.com.my/season-2026/a-regal-evening-with-stephen-hough"},
+      {kind:"K팝", title:"더 로즈 아시아 투어 (The Rose ROSETOPIA Asia Tour)", when:"10월 25일", where:"메가 스타 아레나, 쿠알라룸푸르", memo:"한국 밴드 더 로즈의 쿠알라룸푸르 공연으로, CK 스타 엔터테인먼트가 주최합니다.", url:"https://thesmartlocal.my/the-rose-concert-2026/"},
+      {kind:"클래식", title:"보르네오의 울림: 알레나 무랑과 MPO (Beats of Borneo: Alena Murang with the MPO)", when:"10월 31일 오후 8시", where:"데완 필하모닉 페트로나스 (Dewan Filharmonik PETRONAS)", memo:"히로카미 준이치가 지휘하는 말레이시아 필하모닉이 라벨 ‘쿠프랭의 무덤’과 모차르트 교향곡 40번을 연주하고, 알레나 무랑이 추아의 사페 협주곡을 협연합니다.", url:"https://www.mpo.com.my/season-2026/beats-of-borneo-alena-murang-with-the-mpo"},
+      {kind:"K팝", title:"예성 10주년 투어 (YESUNG 10th Anniversary Tour: ABOUT THE THINGS WE CALLED ORDINARY)", when:"11월 7일 오후 8시", where:"제프 쿠알라룸푸르 (Zepp Kuala Lumpur)", memo:"슈퍼주니어 예성의 10주년 기념 투어 공연으로, iMe Malaysia가 주최합니다.", url:"https://klconcert.com/concert/yesung-10th-anniversary-tour-about-the-things-we-called-ordinary"}
+    ]
+  },
+  music: {
+    title: "Summer", artist: "히사이시 조 (Joe Hisaishi)", year: "1999",
+    mood: "어린 날의 여름방학이 문득 떠오르는 수요일",
+    why: "기타노 다케시 감독의 영화 『기쿠지로의 여름』을 위해 히사이시 조가 쓴 주제곡으로, 통통 튀는 피아노 선율이 맑은 현악 위로 경쾌하게 달려갑니다. 한 주의 한가운데, 마음이 조금 무거운 오후에 틀어 두면 어린 시절의 긴 여름날로 잠시 다녀온 듯 가벼워집니다.",
+    query: "Joe Hisaishi Summer Kikujiro"
+  },
+  fact: {
+    title: "10월 21일, 구겐하임 미술관이 문을 연 날", titleEn: "October 21, 1959: The Guggenheim Museum Opens in New York",
+    body: "1959년 10월 21일, 뉴욕의 솔로몬 R. 구겐하임 미술관이 공식 개관했습니다. 전날 언론에 먼저 공개된 이 건물은 프랭크 로이드 라이트가 설계한 유일한 미술관으로, 1943년 6월 설계를 맡은 뒤 설계와 건축에 15년이 걸렸습니다. 라이트는 개관을 약 여섯 달 앞둔 1959년 4월에 세상을 떠났습니다.",
+    more: [
+      "그릇 모양의 6층 중앙 전시실(로툰다)에는 길이 약 1,416피트의 나선형 경사로가 천창 아래 아트리움을 감싸며 이어지고, 관람객은 엘리베이터로 꼭대기에 올라가 경사로를 따라 내려오며 작품을 봅니다.",
+      "미술관을 운영하는 솔로몬 R. 구겐하임 재단은 1937년에 세워졌고, 1939년 첫 전시관인 ‘비대상 회화 미술관’을 열었습니다.",
+      "건물은 1990년 뉴욕시 랜드마크가 되었고, 2019년 ‘프랭크 로이드 라이트의 20세기 건축’의 하나로 유네스코 세계유산에 올랐습니다."
+    ],
+    src: [["Wikipedia: Solomon R. Guggenheim Museum","https://en.wikipedia.org/wiki/Solomon_R._Guggenheim_Museum"]]
+  }
+},
+
+{
   date: "2026-10-20",
   quote: {
     ko: "우리는 모두 시궁창에 있지만, 그중 누군가는 별을 바라보고 있다.",
