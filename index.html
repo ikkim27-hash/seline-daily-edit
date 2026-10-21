@@ -569,6 +569,133 @@ const PHOTO = null; // 예: {src:"photo.jpg", caption:"한 줄 설명", date:"20
 /* ===== DAYS: 날짜별 콘텐츠. 최신 날짜가 맨 앞. 매일 새 객체를 맨 앞에 추가하고 14일치만 유지. ===== */
 const DAYS = [
 {
+  date: "2026-10-22",
+  quote: {
+    ko: "내가 내 삶의 주인공이 될지, 아니면 그 자리를 다른 누군가가 차지하게 될지는 이 책장들이 보여 줄 것이다.",
+    en: "Whether I shall turn out to be the hero of my own life, or whether that station will be held by anybody else, these pages must show.",
+    by: "찰스 디킨스, 『데이비드 코퍼필드』 (1850)",
+    pick: {kind:"책", title:"배움의 발견 (Educated, 2018) · 타라 웨스트오버", gist:"아이다호주 벅스 피크 근처의 외딴 산골, 타라 웨스트오버는 병원과 공교육과 정부를 믿지 않는 생존주의자 아버지와 고철 처리장 곁에서 자랍니다. 정규 교육을 한 번도 받지 못한 채 열일곱 살에 대학 문을 연 그녀는, 브리검영대학교를 거쳐 영국 케임브리지까지 이어지는 낯선 배움의 길을 걷습니다. 책은 배운다는 것이 지식을 쌓는 일이기 전에, 남이 정해 준 이야기에서 걸어 나와 내 눈으로 세상을 다시 보는 용기라고 조용히 말합니다.", after:"내 삶의 주인공이 누구인지는, 결국 내 손으로 넘기는 책장마다 조금씩 쓰여 갑니다."}
+  },
+  english: {
+    title: "옆집 택배가 우리 집으로 왔을 때", titleEn: "When a Neighbor's Package Ends Up at Your Door",
+    situation: "옆집 앞으로 온 택배가 우리 집 현관에 놓여 있어서 이웃에게 건네주러 간 상황입니다. 가볍게 말을 걸고, 자연스럽게 통성명하며 이웃과 가까워지는 말투를 익혀 보세요.",
+    lines: [
+      ["A","Hi! Sorry to just show up like this, but I think this package was meant for you.","안녕하세요! 불쑥 찾아와서 죄송한데, 이 택배 그쪽 거 같아서요."],
+      ["B","Oh, wow, thank you! I've been waiting on that for days.","어머, 고마워요! 며칠째 기다리던 거예요."],
+      ["A","It ended up on our porch this morning. The label says 14B, and we're 14A.","오늘 아침에 저희 집 현관에 와 있더라고요. 라벨엔 14B인데 저흰 14A거든요."],
+      ["B","That happens all the time. The delivery drivers get our places confused constantly.","그런 일 자주 있어요. 택배 기사님들이 늘 두 집을 헷갈리시더라고요."],
+      ["A","Ha, good to know. If anything of ours shows up at your place, just leave it by our door.","하하, 알아 둘게요. 혹시 저희 물건이 그쪽으로 가면 그냥 저희 문 앞에 두세요."],
+      ["B","Will do. I'm Dana, by the way. I don't think we've officially met.","그럴게요. 참, 전 다나예요. 정식으로 인사한 적은 없는 것 같네요."],
+      ["A","I'm Chris. We moved in last month, and we're still settling in.","전 크리스예요. 지난달에 이사 왔는데 아직 자리 잡는 중이에요."],
+      ["B","Welcome to the neighborhood! If you need anything, just knock.","이 동네에 오신 걸 환영해요! 필요한 거 있으면 언제든 문 두드리세요."],
+      ["A","That's so nice of you. Actually, is there a decent pizza place around here?","정말 친절하시네요. 그런데 혹시 이 근처에 괜찮은 피자집 있어요?"],
+      ["B","Oh, you have to try Tony's on the corner. Trust me, you'll thank me later.","아, 모퉁이에 있는 토니스는 꼭 가 보세요. 제 말 믿어요, 나중에 고마워하실 거예요."]
+    ],
+    expressions: [
+      {en:"be meant for ~", ko:"‘~에게 가기로 된, ~ 몫인’. 원래 받을 사람이 따로 있다는 뜻으로, 물건이나 메시지가 엉뚱한 사람에게 갔을 때 씁니다.", eg:"I think this text was meant for your brother, not me."},
+      {en:"wait on ~", ko:"‘~을 기다리다’. 미국 구어에서 wait for 대신 자주 씁니다. 택배, 연락, 결과처럼 오기로 한 것을 기다릴 때 자연스럽습니다.", eg:"I'm still waiting on a call back from the landlord."},
+      {en:"end up ~", ko:"‘(뜻하지 않게) 결국 ~하게 되다, ~에 가 있게 되다’. 계획과 달리 어떤 곳이나 상황에 이르렀을 때 씁니다.", eg:"We got lost and ended up at a tiny diner in the next town."},
+      {en:"settle in", ko:"‘(새 집이나 환경에) 자리를 잡다, 적응하다’. 이사하거나 새로 시작한 뒤 아직 정리 중이라고 할 때 still settling in이라고 자주 말합니다.", eg:"How's the new apartment? Are you all settled in?"},
+      {en:"You'll thank me later.", ko:"‘나중에 나한테 고마워할걸’. 지금은 반신반의해도 내 추천을 따르면 좋을 거라고 자신 있게 권할 때 쓰는 장난스러운 말입니다.", eg:"Bring a jacket tonight. You'll thank me later."}
+    ],
+    pattern: {
+      en: "I don't think we've ~",
+      ko: "‘우리 ~한 적 없는 것 같아요’. I don't think를 앞에 두면 단정하지 않고 부드럽게 말할 수 있습니다. 처음 인사할 때 쓰는 I don't think we've met은 아주 흔한 말입니다.",
+      examples: [
+        ["I don't <b>think</b> we've <b>met</b>. I'm Sam.","처음 뵙는 것 같아요. 전 샘이에요."],
+        ["I don't <b>think</b> we've been to this <b>park</b> before.","우리 이 공원엔 와 본 적 없는 것 같아."],
+        ["I don't <b>think</b> we've <b>tried</b> that Thai place yet.","그 태국 음식점은 아직 안 가 본 것 같아."]
+      ]
+    }
+  },
+  news: [
+    {region:"말레이시아", tag:"생활 · 연무", important:true, icon:"school", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><rect x="15" y="10" width="40" height="27" rx="9"/><path d="M15 16q-8 1-8 7.5t8 7.5M55 16q8 1 8 7.5t-8 7.5" fill="none"/><rect x="15" y="44" width="40" height="8" rx="2"/><polygon points="55,44 63,48 55,52"/></g><path d="M15 16q-8 1-8 7.5t8 7.5M55 16q8 1 8 7.5t-8 7.5" fill="none" stroke="#4A2E1A" stroke-width="3.4" stroke-linecap="round"/><path d="M15 16q-8 1-8 7.5t8 7.5M55 16q8 1 8 7.5t-8 7.5" fill="none" stroke="#FBF7EF" stroke-width="1.5" stroke-linecap="round"/><rect x="15" y="10" width="40" height="27" rx="9" fill="#DCEFF5" stroke="#2F5D49" stroke-width="1.5"/><path d="M19 18h32M17.5 24h35M19 30h32" stroke="#8FB8C9" stroke-width="1.3" stroke-linecap="round"/><path d="M27 10.8q8-3 16 0" fill="none" stroke="#2F5D49" stroke-width="1.6" stroke-linecap="round"/><path d="M20 14q3-2 7-2" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" opacity=".9"/><g stroke="#4A2E1A" stroke-width="1.4" stroke-linejoin="round"><rect x="21" y="44" width="34" height="8" fill="#F2CF6B"/><polygon points="55,44 63,48 55,52" fill="#F0C987"/><rect x="15" y="44" width="6" height="8" rx="1.5" fill="#E0704F"/></g><polygon points="60.3,46.7 63,48 60.3,49.3" fill="#3B3B38"/><path d="M22 48h32" stroke="#DDA22F" stroke-width="1.1"/>'}, title:"오늘 KL 등 7곳 등교, 야외 활동은 미뤄요", titleEn:"Schools in KL, Putrajaya and Five States Open Today; Outdoor Activities Suspended",
+     lead:"연무가 이어지는 가운데 22일 목요일, 쿠알라룸푸르·푸트라자야와 슬랑오르·느그리슴빌란·믈라카·파항·페낭의 학교가 문을 열어요. 쿠알라룸푸르와 믈라카, 파항 등은 야외 활동을 미루니 이 지역에서 아이를 학교에 보내는 가정은 알아두세요.",
+     pts:["쿠알라룸푸르와 믈라카는 평소대로 수업하되 야외 활동은 미루고, 느그리슴빌란은 API가 100을 넘으면 야외 활동을 멈춰요", "파항은 벤통·브라·마란·테메를로 교육구 학교만 문을 열고 야외 활동은 중단해요. 푸트라자야는 마스크를 권하고, 페낭은 마실 물을 넉넉히 갖추도록 했어요", "이 기간에 잡혀 있던 학년 말 평가(UASA)는 미뤄졌어요"],
+     info:[["대상", "KL·푸트라자야·슬랑오르·느그리슴빌란·믈라카·페낭, 파항 4개 교육구"], ["결석", "KL·푸트라자야·슬랑오르·느그리슴빌란·믈라카·페낭은 학교에 알리면 아이를 집에 둘 수 있어요"], ["결정", "교육부·보건부·천연자원환경지속가능성부가 함께 정해요"]],
+     src:"Malay Mail (Bernama) · 10.21", url:"https://www.malaymail.com/news/malaysia/2026/10/21/haze-schools-in-kl-putrajaya-and-five-states-to-open-tomorrow-outdoor-activities-suspended/240066"},
+    {region:"말레이시아", tag:"스포츠", icon:"news", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-linejoin="round" stroke-linecap="round"><path d="M11 8L20 41q2 6 8 4" fill="none" stroke-width="13"/><path d="M32 9h20v12a10 10 0 0 1-20 0z" stroke-width="7.5"/><path d="M32 12h-5v3a6 6 0 0 0 6 6M52 12h5v3a6 6 0 0 1-6 6" fill="none" stroke-width="7.5"/><rect x="39" y="30" width="6" height="9" stroke-width="7.5"/><rect x="33" y="38" width="18" height="7" rx="1.5" stroke-width="7.5"/><circle cx="59" cy="49" r="5" stroke-width="7.5"/></g><path d="M11 8L20 41q2 6 8 4" fill="none" stroke="#4A2E1A" stroke-width="6.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 8L20 41q2 6 8 4" fill="none" stroke="#D9A441" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 8l2.6 9.5" fill="none" stroke="#2F6B5A" stroke-width="3.8" stroke-linecap="round"/><g stroke="#8A5A12" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M32 12h-5v3a6 6 0 0 0 6 6M52 12h5v3a6 6 0 0 1-6 6" fill="none" stroke-width="2.2"/><rect x="39" y="30" width="6" height="9" fill="#DDA22F"/><rect x="33" y="38" width="18" height="7" rx="1.5" fill="#8C5A3A" stroke="#4A2E1A"/><path d="M32 9h20v12a10 10 0 0 1-20 0z" fill="#F7D36B"/></g><path d="M42 13l1.4 2.8 3.1.4-2.3 2.1.6 3-2.8-1.5-2.8 1.5.6-3-2.3-2.1 3.1-.4z" fill="#FBF7EF"/><path d="M35 12q0 8 4 12" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" opacity=".7"/><path d="M37 41.5h10" stroke="#F2CF6B" stroke-width="1.3" stroke-linecap="round"/><circle cx="59" cy="49" r="5" fill="#FBF7EF" stroke="#4A2E1A" stroke-width="1.5"/><path d="M56.5 47.5q2.5 .8 3.4 4" fill="none" stroke="#B9AE97" stroke-width="1" stroke-linecap="round"/><path d="M61 38v4M65 41l-2.6 2.4" stroke="#C98B1E" stroke-width="1.6" stroke-linecap="round"/>'}, title:"영 타이거스, 파키스탄에 3‑2 역전승하고 결승으로", titleEn:"Malaysia's Young Tigers Beat Pakistan 3-2 to Reach the Sultan of Johor Cup Final",
+     lead:"조호르바루에서 열리고 있는 2026 술탄 오브 조호르컵(SOJC)에서 말레이시아 주니어 하키 대표팀 ‘영 타이거스’가 파키스탄을 3‑2로 꺾고 결승에 올랐어요.",
+     pts:["21분 S. 나빈내시의 골로 앞섰지만, 파키스탄의 아딜이 36분과 43분에 연달아 넣어 1‑2로 뒤집혔어요", "55분 사프완 살리헤가 동점을 만들었고, 2분 뒤 나빈내시 파니커가 결승골을 넣었어요", "골키퍼 아딥 암시아르는 페널티 코너와 페널티 스트로크를 막아 냈고, 파키스탄은 51분 왈리드 라나가 퇴장당해 10명이 뛰었어요"],
+     info:[["대회", "2026 술탄 오브 조호르컵 (SOJC)"], ["장소", "조호르 하키 스타디움, 조호르바루 타만 다야"], ["같은 날", "일본이 중국을 4‑1로 이겼어요"]],
+     src:"Bernama · 10.21", url:"https://www.bernama.com/en/news.php?id=2623803"},
+    {region:"말레이시아", tag:"음식", icon:"bowl", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><ellipse cx="25" cy="34" rx="16" ry="12"/><ellipse cx="8.5" cy="34" rx="2.6" ry="2.2"/><ellipse cx="41.5" cy="34" rx="2.6" ry="2.2"/><path d="M25 22q3-11 14-12q-2 11-14 12z"/><circle cx="53" cy="41" r="12"/></g><g stroke="#8A5A12" stroke-width="1.5" stroke-linejoin="round"><ellipse cx="8.5" cy="34" rx="2.6" ry="2.2" fill="#EDB83F"/><ellipse cx="41.5" cy="34" rx="2.6" ry="2.2" fill="#EDB83F"/><ellipse cx="25" cy="34" rx="16" ry="12" fill="#F7D36B"/></g><path d="M25 22q3-11 14-12q-2 11-14 12z" fill="#5FAE84" stroke="#2F5D49" stroke-width="1.4" stroke-linejoin="round"/><path d="M26 21q5-5 11-9" fill="none" stroke="#2F5D49" stroke-width="1" stroke-linecap="round"/><path d="M14 29q4-5 10-6" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" opacity=".8"/><g fill="#E0B23A"><circle cx="20" cy="38" r=".8"/><circle cx="30" cy="40" r=".8"/><circle cx="33" cy="31" r=".8"/></g><circle cx="53" cy="41" r="12" fill="#F7D36B" stroke="#8A5A12" stroke-width="1.5"/><circle cx="53" cy="41" r="9.4" fill="#FBF0B8" stroke="#EDB83F" stroke-width="1"/><path d="M53 32.6v16.8M45.7 36.8l14.6 8.4M45.7 45.2l14.6-8.4" stroke="#F2CF6B" stroke-width="1.8" stroke-linecap="round"/><circle cx="53" cy="41" r="1.8" fill="#FBF7EF" stroke="#EDB83F" stroke-width=".8"/>'}, title:"레몬 벽화 아래 로즈메리 레몬치킨, 타만 데사", titleEn:"Lemon Sole Café Serves Hearty Asian-Western Fusion in Taman Desa",
+     lead:"쿠알라룸푸르 타만 데사에 문을 연 지 반년이 안 된 캐주얼 식당 ‘레몬 솔 카페(Lemon Sole Café)’를 말레이 메일이 소개했어요. 리뷰어 케니 마는 꾸밈없고 든든한 아시아·서양 퓨전 음식을 낸다고 했어요.",
+     pts:["리뷰어가 고른 메뉴는 로즈메리 향을 입힌 레몬 치킨으로, 매시트포테이토와 브로콜리, 방울토마토가 함께 나와요", "아얌 른당이나 빵가루 입힌 치킨을 곁들인 나시 르막, 아얌 프르칙 포케 볼, 분가 칸탄 알리오 올리오도 있어요", "단팥 수프(퉁수이)는 무료로 내 주고, 레몬 벽화처럼 가게 곳곳에 레몬 장식이 있어요"],
+     info:[["어디", "45, Jalan 2/109E, Taman Desa Business Park, Kuala Lumpur"], ["운영", "오전 9시~오후 9시, 월요일 휴무"]],
+     src:"Malay Mail · 10.20", url:"https://www.malaymail.com/news/eat-drink/2026/10/20/from-citrusy-rosemary-chicken-to-nasi-lemak-ayam-rendang-lemon-sole-is-taman-desas-latest-soul-food-sanctuary/239812"},
+    {region:"말레이시아", tag:"문화", icon:"art", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M36 15v-3q0-4 4-4t3.5 4" fill="none"/><path d="M15 24L36 15l21 9z"/><path d="M30 19h12l-1 12 13 23H18l13-23z"/><path d="M60 8l1.4 3.4 3.4 1.4-3.4 1.4-1.4 3.4-1.4-3.4-3.4-1.4 3.4-1.4z"/></g><path d="M36 15v-3q0-4 4-4t3.5 4" fill="none" stroke="#6B4A2B" stroke-width="2.2" stroke-linecap="round"/><path d="M15 24L36 15l21 9z" fill="none" stroke="#8C5A3A" stroke-width="2.4" stroke-linejoin="round"/><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round"><path d="M30 19h12l-1 12 13 23H18l13-23z" fill="#F2A6B8"/><path d="M31 31h10v3.4H31z" fill="#C8553D"/></g><path d="M33 34.4l-6 19M36 34.4v19.6M39 34.4l6 19" fill="none" stroke="#E07A92" stroke-width="1.2" stroke-linecap="round"/><path d="M19.5 52h33" stroke="#FBD0DA" stroke-width="1.4" stroke-linecap="round"/><path d="M33 21q0 5 .5 8" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" opacity=".7"/><circle cx="36" cy="32.7" r="1.3" fill="#F2CF6B" stroke="#8A5A12" stroke-width=".7"/><path d="M60 8l1.4 3.4 3.4 1.4-3.4 1.4-1.4 3.4-1.4-3.4-3.4-1.4 3.4-1.4z" fill="#F7D36B" stroke="#8A5A12" stroke-width="1.1" stroke-linejoin="round"/><circle cx="12" cy="40" r="1.6" fill="#F2A6B8" stroke="#C8553D" stroke-width=".8"/>'}, title:"인터마크 몰을 분홍빛으로, 첫 KL 패션 페스티벌", titleEn:"Carven Ong's First KL Fashion Festival Turns Intermark Mall Pink",
+     lead:"말레이시아 디자이너 카번 옹이 연 첫 ‘쿠알라룸푸르 패션 페스티벌(KLFF 2026)’이 10월 6일부터 18일까지 인터마크 몰에서 열렸어요. 아트리움을 분홍색으로 꾸미고 말레이시아 디자이너들의 옷을 선보였어요.",
+     pts:["15일 런웨이에는 카번 옹과 다토 톰 아방 사우피, 셀레스트 토이 등 말레이시아 디자이너들이 참여했어요", "올해 50주년을 맞은 보석 브랜드 포 콩은 말레이시아 패션과 파인 주얼리를 함께 보여 주는 런웨이를 열었어요", "인터마크 몰이 말레이시아 유산과 현지 인재를 알리려고 벌이는 ‘Hail Heritage’ 활동과 이어진 행사로, 주최 측은 앞으로도 말레이시아 창작 인재를 키워 가겠다고 했어요"],
+     info:[["기간", "10월 6~18일 (행사는 끝났어요)"], ["어디", "인터마크 몰 아트리움, 쿠알라룸푸르"]],
+     src:"Malay Mail · 10.20", url:"https://www.malaymail.com/news/life/2026/10/20/carven-ongs-inaugural-kl-fashion-festival-turns-intermark-mall-pink-with-top-malaysian-designers/239824"},
+    {region:"세계", tag:"영국 유학", icon:"passport", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M15 27v9q12 6 24 0v-9z"/><path d="M6 23L27 14l21 9-21 9z"/><path d="M27 23l12 4v10" fill="none"/><rect x="50" y="25" width="16" height="3.5" rx="1.5"/><path d="M52 28.5q0 9 6 12q-6 3-6 12h12q0-9-6-12q6-3 6-12z"/><rect x="50" y="52.5" width="16" height="3.5" rx="1.5"/></g><g stroke="#1F2A36" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M15 27v9q12 6 24 0v-9z" fill="#3E4C5E"/><path d="M6 23L27 14l21 9-21 9z" fill="#2F3B4A"/></g><path d="M14 23l13-5.6" stroke="#5D7088" stroke-width="1.4" stroke-linecap="round" fill="none"/><path d="M27 23l12 4v10" fill="none" stroke="#C98B1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="27" cy="23" r="2.3" fill="#DDA22F" stroke="#1F2A36" stroke-width="1.1"/><path d="M36.5 37h5l1 6h-7z" fill="#F2CF6B" stroke="#8A5A12" stroke-width="1.1" stroke-linejoin="round"/><path d="M52 28.5q0 9 6 12q-6 3-6 12h12q0-9-6-12q6-3 6-12z" fill="#DCEFF5" stroke="#4A2E1A" stroke-width="1.4" stroke-linejoin="round"/><path d="M54.5 32h7q-1 4.5-3.5 6.5q-2.5-2-3.5-6.5z" fill="#DDA22F"/><path d="M58 39v8" stroke="#DDA22F" stroke-width="1" stroke-dasharray="1.2 1.2"/><path d="M53.5 52.5q1-5 4.5-6q3.5 1 4.5 6z" fill="#DDA22F"/><g stroke="#4A2E1A" stroke-width="1.3"><rect x="50" y="25" width="16" height="3.5" rx="1.5" fill="#8C5A3A"/><rect x="50" y="52.5" width="16" height="3.5" rx="1.5" fill="#8C5A3A"/></g><path d="M54 31q0 5 2.5 8" fill="none" stroke="#fff" stroke-width="1.2" stroke-linecap="round" opacity=".8"/>'}, title:"영국 졸업생 비자, 2027년 1월부터 18개월로", titleEn:"UK Graduate Visa Drops to 18 Months for Applications From January 1, 2027",
+     lead:"영국 대학을 마친 유학생이 졸업 뒤 영국에 남아 일할 수 있는 졸업생 비자(Graduate visa)의 기간이 줄어요. 영국에서 학사나 석사 과정을 밟는 자녀를 둔 가정이 알아둘 내용이에요.",
+     pts:["학사·석사(수업형) 졸업생은 2027년 1월 1일 전에 신청하면 2년, 그날부터 신청하면 18개월을 받아요", "1월 1일 전에 낸 신청에는 바뀐 규정이 적용되지 않아요. 박사과정 졸업생은 지금 안내로 3년이에요", "영국 안에서 학생비자로 과정을 마쳐야 신청할 수 있고 연장은 안 돼요. 신청비는 937파운드, 의료부담금(IHS)은 1년에 1,035파운드예요"],
+     info:[["시행", "2027년 1월 1일 신청분부터 18개월"], ["대상", "영국 학사·석사 과정을 마친 학생비자 소지자"], ["확인", "다니는 대학의 국제학생 안내와 GOV.UK"]],
+     src:"De Montfort University 공식 안내", url:"https://www.dmu.ac.uk/international/en/visa/graduate.aspx"},
+    {region:"세계", tag:"우주", icon:"news", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-linejoin="round" stroke-linecap="round"><path d="M8 18L34 39M24 7L48 24M42 40L55 50" fill="none" stroke-width="12"/><circle cx="37" cy="41.5" r="5" stroke-width="7.5"/><circle cx="51" cy="25.5" r="4" stroke-width="7.5"/><circle cx="58" cy="52" r="3.4" stroke-width="7.5"/><circle cx="61" cy="12" r="4" stroke-width="7.5"/></g><path d="M8 18L34 39M24 7L48 24M42 40L55 50" fill="none" stroke="#2F3B4A" stroke-width="5.2" stroke-linecap="round"/><path d="M8 18L34 39M24 7L48 24M42 40L55 50" fill="none" stroke="#F7D36B" stroke-width="3" stroke-linecap="round"/><path d="M20 27.7L34 39M37 16L48 24M48 44.5L55 50" fill="none" stroke="#FFF6D6" stroke-width="1.4" stroke-linecap="round"/><g stroke="#8A5A12" stroke-width="1.4"><circle cx="37" cy="41.5" r="5" fill="#FBE7A1"/><circle cx="51" cy="25.5" r="4" fill="#FBE7A1"/><circle cx="58" cy="52" r="3.4" fill="#FBE7A1"/></g><circle cx="61" cy="12" r="4" fill="#E0704F" stroke="#8E3524" stroke-width="1.4"/><path d="M61 4.5v3M61 16.5v3M53.5 12h3M65.5 12h3" stroke="#E0704F" stroke-width="1.4" stroke-linecap="round"/><g fill="#F7D36B"><circle cx="12" cy="44" r="1.3"/><circle cx="22" cy="54" r="1"/><circle cx="44" cy="9" r="1"/></g><path d="M35.5 40q1-1.6 2.8-1.6" fill="none" stroke="#fff" stroke-width="1.2" stroke-linecap="round"/>'}, title:"핼리 혜성의 부스러기, 오리온자리 유성우 절정", titleEn:"Debris From Halley's Comet Brings the Orionid Meteor Shower to Its Peak",
+     lead:"지구가 핼리 혜성(1P/Halley)이 남긴 부스러기 띠의 가장 짙은 곳을 지나면서, 오리온자리 유성우가 21~22일 밤 절정을 맞았어요. 스페이스닷컴이 보는 법을 정리했어요.",
+     pts:["NASA는 아주 어두운 하늘이라면 시간당 10~20개를 볼 수 있다고 보지만, 보름을 나흘쯤 앞둔 달빛 때문에 덜 보일 수 있어요", "유성은 오리온자리의 붉은 별 베텔게우스 근처에서 쏟아지는 것처럼 보여요. 베텔게우스에서 45~90도 떨어진 곳의 유성이 더 길게 보인대요", "핼리 혜성은 지금 다시 태양 쪽으로 오고 있고, 다음에 태양계 안쪽을 찾아오는 건 2061년이에요"],
+     info:[["관측 팁", "도시 불빛을 피하고, 눈이 어둠에 익도록 20~30분 기다리기"], ["좋은 때", "달이 진 뒤 새벽 (기사의 미국 기준)"]],
+     src:"Space.com · 10.21", url:"https://www.space.com/stargazing/meteor-showers/orionid-meteor-shower-peaks-oct-21-22-2026-heres-the-best-time-to-spot-shooting-stars"}
+  ],
+  trend: {
+    title: "말레이시아 소비자 역량 지수 70.36%, ‘높음’ 단계로", titleEn: "Malaysia's Consumer Empowerment Index Rises to 70.36%",
+    asOf: "2026년 10월 21일 보도 기준 (2025년 조사)",
+    body: "국내무역·생활비부(KPDN)가 발표한 2025년 소비자 역량 지수(CEI)가 70.36%로, 기준이 된 2020년 첫 조사의 63.1%보다 7.26%포인트 올랐습니다. 아르미잔 모흐드 알리 장관은 소비자 역량이 ‘보통’에서 ‘높음’ 단계로 올라섰다고 밝혔습니다.",
+    points: [
+      "지수는 금융 이해력, 구매 결정, 피해 구제와 보상을 요구할 권리를 알고 행사하는 능력의 세 영역을 평가하며, 기준은 유럽연합과 한국에 맞춰 잡았습니다.",
+      "가장 크게 오른 영역은 피해 구제 행동으로 66.84%(10.74%포인트 상승)였고, 구매 결정은 75.91%(7.11%포인트), 금융 이해력은 66.47%(3.97%포인트)였습니다.",
+      "장관은 이 상승이 소비자들의 지식과 자신감, 스스로 판단하고 권리를 지키는 힘이 커졌음을 보여 준다고 말했습니다.",
+      "KPDN은 대학생 소비자 교육의 장인 ‘학생 소비자 운동(GPS)’을 강화할 계획이며, 전국에 GPS 클럽 196곳이 등록돼 있습니다."
+    ],
+    src: [["Malay Mail (Bernama) (2026.10.21)","https://www.malaymail.com/news/malaysia/2026/10/21/malaysias-consumer-empowerment-index-rises-to-7036pc-from-631pc-in-2020/240083"]]
+  },
+  life: {
+    cat: "인문학 한 스푼",
+    title: "‘진흙탕 합류점’ 쿠알라룸푸르, 이름에 담긴 도시의 시작", titleEn: "Kuala Lumpur, the 'Muddy Confluence': How a Tin Town Got Its Name",
+    intro: "매일 오가는 도시의 이름에도 이야기가 있습니다. 쿠알라룸푸르라는 이름의 뜻과, 주석 광산 마을이 수도가 되기까지를 영어판 위키백과의 두 항목에서 짧게 따라가 봅니다.",
+    tips: [
+      ["흔히 ‘진흙탕 합류점’으로 풀어요","말레이어로 kuala는 두 강이 만나는 곳이나 강어귀, lumpur는 진흙이라 보통 ‘진흙탕 합류점’이라고 풉니다. 다만 Sungai Lumpur(진흙 강)나 Pengkalan Lumpur(진흙 선착장)에서 왔다는 설도 있고, 이를 뒷받침할 당대 기록은 없습니다."],
+      ["원래는 ‘쿠알라 곰박’이었어야?","도시는 곰박강과 클랑강이 만나는 곳에 있습니다. kuala 뒤에는 보통 흘러 들어오는 강의 이름을 붙이기 때문에, 쿠알라 곰박이라 불렀어야 한다는 주장도 있습니다."],
+      ["1857년, 주석을 찾아 온 광부들","공식 설명으로는 클랑의 말레이 수장 라자 압둘라가 1857년 주석 광산을 열려고 중국인 광부들을 보냈습니다. 광부들은 쿠알라룸푸르에 내려 암팡까지 걸어가 첫 광산을 열었고, 말라리아로 많은 사람이 목숨을 잃었지만 1859년에 첫 주석을 실어 냈습니다."],
+      ["배가 닿는 마지막 나루","쿠알라룸푸르는 배가 클랑강을 거슬러 믿고 오를 수 있는 가장 먼 곳이어서, 광산으로 물자를 나르는 거점이 되었습니다."],
+      ["불과 홍수를 딛고 수도로","1880년 슬랑오르의 주도가 클랑에서 쿠알라룸푸르로 옮겨졌고, 1881년 1월 불로 도시 전체가 탔으며 그해 말에는 큰 홍수가 났습니다. 그 뒤 영국 행정관 프랭크 스웨트넘은 불에 덜 타도록 건물을 벽돌과 기와로 짓게 했고, 도시는 1972년 2월 1일 시로 승격해 1974년 2월 1일 연방직할구가 되었습니다."]
+    ],
+    src: [["Wikipedia: Kuala Lumpur","https://en.wikipedia.org/wiki/Kuala_Lumpur"],["Wikipedia: History of Kuala Lumpur","https://en.wikipedia.org/wiki/History_of_Kuala_Lumpur"]]
+  },
+  shows: {
+    intro: "쿠알라룸푸르에서 지금 볼 수 있거나 곧 열리는 전시와 공연입니다.",
+    items: [
+      {kind:"전시", title:"로버트 라우션버그와 아시아 (Robert Rauschenberg and Asia)", when:"11월 1일까지", where:"일함 갤러리(ILHAM Gallery) 5층", memo:"미국 현대미술 작가 로버트 라우션버그의 전시입니다.", url:"https://ilhamgallery.com/exhibitions/robert-rauschenberg-and-asia/"},
+      {kind:"전시", title:"경계 없는 예술: 난양으로 가는 새 항해 (Art Without Boundaries — New Voyage to Nanyang)", when:"11월 11일까지", where:"루앙 트두(Ruang Teduh), 익스체인지 106, 툰 라작 익스체인지", memo:"대만 태생의 큐레이터이자 작가 빅토리아 루가 AI의 도움을 받아 만든 작품을 젊은 작가들의 작품과 함께 선보입니다.", url:"https://www.malaymail.com/news/life/2026/10/10/art-meets-algorithm-victoria-lu-explores-ai-and-human-creativity-at-kuala-lumpur-exhibition/238604"},
+      {kind:"오페라", title:"투란도트 (Turandot)", when:"10월 22·24·25일", where:"KLPac 펜타스 1 (Pentas 1)", memo:"KLPac 오케스트라가 연주합니다. 25일은 오후 4시, 나머지 날은 오후 8시 공연입니다.", url:"https://www.klpac.org/shows/turandot/"},
+      {kind:"클래식", title:"스티븐 허프와 함께하는 저녁 (A Regal Evening with Stephen Hough)", when:"10월 24일", where:"데완 필하모닉 페트로나스 (Dewan Filharmonik PETRONAS)", memo:"히로카미 준이치가 지휘하는 말레이시아 필하모닉과 피아니스트 스티븐 허프가 베토벤 피아노 협주곡 5번 ‘황제’와 교향곡 4번을 연주합니다.", url:"https://www.mpo.com.my/season-2026/a-regal-evening-with-stephen-hough"},
+      {kind:"K팝", title:"더 로즈 아시아 투어 (The Rose ROSETOPIA Asia Tour)", when:"10월 25일", where:"메가 스타 아레나, 쿠알라룸푸르", memo:"한국 밴드 더 로즈의 쿠알라룸푸르 공연으로, CK 스타 엔터테인먼트가 주최합니다.", url:"https://thesmartlocal.my/the-rose-concert-2026/"},
+      {kind:"클래식", title:"보르네오의 울림: 알레나 무랑과 MPO (Beats of Borneo: Alena Murang with the MPO)", when:"10월 31일 오후 8시", where:"데완 필하모닉 페트로나스 (Dewan Filharmonik PETRONAS)", memo:"히로카미 준이치가 지휘하는 말레이시아 필하모닉이 라벨 ‘쿠프랭의 무덤’과 모차르트 교향곡 40번을 연주하고, 알레나 무랑이 추아의 사페 협주곡을 협연합니다.", url:"https://www.mpo.com.my/season-2026/beats-of-borneo-alena-murang-with-the-mpo"},
+      {kind:"K팝", title:"예성 10주년 투어 (YESUNG 10th Anniversary Tour: ABOUT THE THINGS WE CALLED ORDINARY)", when:"11월 7일 오후 8시", where:"제프 쿠알라룸푸르 (Zepp Kuala Lumpur)", memo:"슈퍼주니어 예성의 10주년 기념 투어 공연으로, iMe Malaysia가 주최합니다.", url:"https://klconcert.com/concert/yesung-10th-anniversary-tour-about-the-things-we-called-ordinary"}
+    ]
+  },
+  music: {
+    title: "Gymnopédie No. 1", artist: "에리크 사티 (Erik Satie)", year: "1888",
+    mood: "뿌연 목요일 아침, 천천히 숨 고르기",
+    why: "‘느리고 아프게(Lent et douloureux)’라는 지시가 붙은 3박자 피아노곡으로, 느리게 흔들리는 왼손 화음 위로 오른손 선율이 한 음씩 떠오르듯 이어집니다. 밖에 나가기 망설여지는 흐린 아침, 창가에서 차 한 잔과 함께 볼륨을 낮춰 틀어 두기 좋습니다.",
+    query: "Erik Satie Gymnopedie No 1"
+  },
+  fact: {
+    title: "10월 22일, 파리 하늘에서 펼쳐진 낙하산", titleEn: "October 22, 1797: Garnerin's Parachute Descent Over Paris",
+    body: "1797년 10월 22일, 프랑스의 앙드레자크 가르느랭이 파리 몽소 공원 위로 떠오른 기구에서 약 1,000m(3,000피트) 높이에서 줄을 끊고 낙하산으로 내려왔습니다. 그는 뼈대 없는 낙하산을 만든 사람으로 꼽히며, 이날 지름 약 7m의 낙하산 아래 매단 바구니에 타고 있었습니다. 줄이 끊긴 기구는 계속 위로 올라갔고, 바구니는 땅에 부딪히며 긁혔지만 그는 다치지 않았습니다.",
+    more: [
+      "낙하산은 오르는 동안 접혀 있었고, 가운데를 지나는 막대 속 관으로 줄을 통과시켜 기구에 이어 두었습니다.",
+      "내려오는 동안 바구니가 심하게 흔들렸는데, 1804년 랄랑드가 낙하산 덮개에 공기구멍을 내 흔들림을 줄였습니다.",
+      "가르느랭의 제자이자 아내인 잔 주느비에브 라브로스는 1799년 10월 12일 900m 높이에서 뛰어내려, 낙하산으로 내려온 첫 여성이 되었습니다."
+    ],
+    src: [["Wikipedia: André-Jacques Garnerin","https://en.wikipedia.org/wiki/Andr%C3%A9-Jacques_Garnerin"]]
+  }
+},
+
+{
   date: "2026-10-21",
   quote: {
     ko: "모든 아이는 자란다. 단 한 아이만 빼고.",
