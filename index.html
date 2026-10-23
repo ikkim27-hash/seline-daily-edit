@@ -569,6 +569,133 @@ const PHOTO = null; // 예: {src:"photo.jpg", caption:"한 줄 설명", date:"20
 /* ===== DAYS: 날짜별 콘텐츠. 최신 날짜가 맨 앞. 매일 새 객체를 맨 앞에 추가하고 14일치만 유지. ===== */
 const DAYS = [
 {
+  date: "2026-10-24",
+  quote: {
+    ko: "젊어서는 어쩔 수 없이 신중해야 했던 그녀는, 나이가 들면서 낭만을 배웠다. 부자연스러운 시작이 낳은 자연스러운 결과였다.",
+    en: "She had been forced into prudence in her youth, she learned romance as she grew older: the natural sequel of an unnatural beginning.",
+    by: "제인 오스틴, 『설득』 (1817)",
+    pick: {kind:"책", title:"남아 있는 나날 (The Remains of the Day, 1989) · 가즈오 이시구로", gist:"1956년, 옥스퍼드 근처의 저택 달링턴 홀에서 오랫동안 집사로 일해 온 스티븐스는 저택을 사들인 미국인 패러데이 씨 밑에서 일하다가 콘월까지 이어지는 자동차 여행을 떠납니다. 예전에 같은 저택에서 하녀장으로 일했던 미스 켄턴, 지금의 벤 부인을 만나러 가는 길에, 그는 1920~30년대 달링턴 경을 모시던 날들과 그녀와의 엇갈린 시간을 하나씩 되짚습니다. 1989년 부커상을 받은 이 소설은, 품위와 의무를 지키느라 미뤄 둔 마음이 세월 속에서 어떤 모양으로 남는지를 담담한 목소리로 들려줍니다.", after:"신중함으로 지나 보낸 계절이 있었다면, 늦게 배운 마음은 그만큼 더 깊고 고운 빛을 띠게 됩니다."}
+  },
+  english: {
+    title: "비 예보에 주말 하이킹 대신 플랜 B 짜기", titleEn: "Making a Rainy-Day Plan B When the Weekend Forecast Turns",
+    situation: "친구와 토요일에 하이킹을 가기로 했는데 오후 내내 뇌우가 온다는 예보가 떴습니다. 아쉬운 마음을 나누고, 약속을 미루고, 집에서 보낼 대안을 가볍게 정하는 말투를 익혀 보세요.",
+    lines: [
+      ["A","Have you seen the forecast for tomorrow? Thunderstorms all afternoon.","내일 일기예보 봤어? 오후 내내 뇌우래."],
+      ["B","Ugh, seriously? I was really looking forward to that hike.","으, 진짜? 그 하이킹 엄청 기대하고 있었는데."],
+      ["A","Same. But I'd rather not get caught on a trail in a storm.","나도. 근데 산길에서 폭풍 만나는 건 좀 피하고 싶어."],
+      ["B","Yeah, no. Should we just call it off, then?","응, 그건 아니지. 그럼 그냥 취소할까?"],
+      ["A","How about we take a rain check and go next Saturday instead?","이번엔 미루고 대신 다음 주 토요일에 가는 건 어때?"],
+      ["B","Works for me. So what do we do tomorrow? Just hunker down at home?","난 좋아. 그럼 내일은 뭐 하지? 그냥 집에 콕 박혀 있을까?"],
+      ["A","We might as well make the most of it. I could make a big pot of chili.","이왕 이렇게 된 거 제대로 즐기자. 내가 칠리 한 솥 끓일게."],
+      ["B","Ooh, I'm in. I'll bring a board game, one that won't end in a fight this time.","오, 좋아. 난 보드게임 가져갈게. 이번엔 싸움으로 안 끝나는 걸로."],
+      ["A","Ha, no promises. Let's play it by ear and see if it clears up by the evening.","하하, 장담은 못 해. 상황 봐 가면서 저녁쯤 개는지 보자."],
+      ["B","Deal. If it does, we can at least take a walk around the lake.","좋아. 개면 호수 한 바퀴라도 걷자."]
+    ],
+    expressions: [
+      {en:"look forward to ~", ko:"‘~을 기대하다, 손꼽아 기다리다’. 뒤에는 명사나 -ing가 옵니다. was really looking forward to처럼 과거진행형으로 말하면 기대했던 일이 틀어져 아쉬운 마음이 묻어납니다.", eg:"I'm really looking forward to seeing you this weekend."},
+      {en:"call (something) off", ko:"‘(계획이나 행사를) 취소하다’. cancel과 같은 뜻의 구어 표현으로, 날씨나 사정 때문에 약속을 접을 때 자주 씁니다.", eg:"They called off the game because of the rain."},
+      {en:"take a rain check", ko:"‘이번엔 미루고 다음에 하자’. 원래는 비로 경기가 취소될 때 주던 다음 경기 입장권에서 온 말로, 제안을 거절하지 않고 뒤로 미룰 때 씁니다.", eg:"I can't make it to dinner tonight. Can I take a rain check?"},
+      {en:"hunker down", ko:"‘(한곳에) 틀어박혀 버티다’. 궂은 날씨나 바쁜 시기에 집에 머물며 지내거나, 한 가지 일에 집중할 때 씁니다.", eg:"We're just going to hunker down and watch movies until the storm passes."},
+      {en:"play it by ear", ko:"‘상황 봐 가며 정하다’. 미리 계획을 딱 정하지 않고 그때그때 맞춰 하자고 할 때 씁니다.", eg:"I'm not sure when I'll be done. Let's play it by ear."}
+    ],
+    pattern: {
+      en: "We might as well ~",
+      ko: "‘이왕 이렇게 된 거 ~하는 게 낫겠다, ~하는 편이 좋겠다’. 더 나은 선택지가 없을 때, 그나마 할 만한 쪽으로 마음을 정하며 쓰는 표현입니다. 혼자라면 I might as well ~이라고 합니다.",
+      examples: [
+        ["We might as well <b>stay</b> in and <b>cook</b>.","이왕 이렇게 된 거 집에서 요리나 하자."],
+        ["The bus is <b>late</b>, so we might as well <b>walk</b>.","버스가 늦으니까 그냥 걸어가는 게 낫겠어."],
+        ["I'm already <b>up</b>, so I might as well go for a <b>run</b>.","어차피 일어났으니 달리기나 하러 가야겠다."]
+      ]
+    }
+  },
+  news: [
+    {region:"말레이시아", tag:"생활 · 몬순", important:true, icon:"rain", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M10 30Q10 10 36 10Q62 10 62 30q-4.33-4-8.67 0q-4.33-4-8.67 0q-4.33-4-8.67 0q-4.33-4-8.67 0q-4.33-4-8.67 0q-4.33-4-8.67 0z"/><path d="M36 30v18q0 5 5 5t5-5M36 10V6" fill="none"/><path d="M16 40q-3 4-3 6a3 3 0 0 0 6 0q0-2-3-6zM24 47q-3 4-3 6a3 3 0 0 0 6 0q0-2-3-6zM57 44q-3 4-3 6a3 3 0 0 0 6 0q0-2-3-6z"/></g><path d="M36 30v18q0 5 5 5t5-5" fill="none" stroke="#4A2E1A" stroke-width="4" stroke-linecap="round"/><path d="M36 30v18q0 5 5 5t5-5" fill="none" stroke="#8C5A3A" stroke-width="2" stroke-linecap="round"/><path d="M36 10V6" stroke="#4A2E1A" stroke-width="2" stroke-linecap="round"/><path d="M10 30Q10 10 36 10Q62 10 62 30q-4.33-4-8.67 0q-4.33-4-8.67 0q-4.33-4-8.67 0q-4.33-4-8.67 0q-4.33-4-8.67 0q-4.33-4-8.67 0z" fill="#C8553D" stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round"/><path d="M27.3 30Q26 18 36 10Q46 18 44.7 30Z" fill="#F2CF6B" stroke="#4A2E1A" stroke-width="1.2" stroke-linejoin="round"/><path d="M16 22q4-7 12-9.5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" opacity=".7"/><path d="M16 40q-3 4-3 6a3 3 0 0 0 6 0q0-2-3-6zM24 47q-3 4-3 6a3 3 0 0 0 6 0q0-2-3-6zM57 44q-3 4-3 6a3 3 0 0 0 6 0q0-2-3-6z" fill="#7FC4E0" stroke="#2F5D49" stroke-width="1.2" stroke-linejoin="round"/>'}, title:"27일부터 북동 몬순, 11~1월 큰비 대비", titleEn:"North-East Monsoon Begins October 27, With Heavy Rain Expected From November to January",
+     lead:"말레이시아 기상청(MetMalaysia)이 2026/2027년 북동 몬순이 10월 27일 시작돼 2027년 3월까지 이어진다고 밝혔어요. 저지대나 강 가까이 사는 사람, 남중국해 바다를 오가는 사람은 특히 알아두세요.",
+     pts:["11월부터 1월까지인 초기에는 계속되는 큰비가 3~5차례 올 것으로 예상돼, 저지대와 강 주변에 홍수가 날 수 있어요", "북동풍이 강하게 이어지면 남중국해에 파도가 거칠어지고 해수면이 높아질 수 있어요", "1월부터 3월까지인 후기에는 반도 북부 주와 사바를 중심으로 비가 줄고, 슈퍼 엘니뇨 영향으로 덥고 건조해 폭염이 더 심해질 수 있대요"],
+     info:[["기간", "10월 27일~2027년 3월"], ["확인", "met.gov.my, myCuaca 앱, 기상청 SNS, 핫라인 1-300-22-1638"], ["발표", "모흐드 히샴 모흐드 아닙 기상청장 (23일 성명)"]],
+     src:"Malay Mail (Bernama) · 10.23", url:"https://www.malaymail.com/news/malaysia/2026/10/23/ready-for-floods-and-extreme-heat-north-east-monsoon-begins-oct-27-metmalaysia-warns/240346"},
+    {region:"말레이시아", tag:"음식", icon:"bowl", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M8 32h56a28 20 0 0 1-56 0z"/><rect x="27" y="50" width="18" height="5" rx="2"/><path d="M40 26L60 7M45 28L65 11" fill="none"/><rect x="17" y="16" width="9" height="14" rx="1"/></g><path d="M40 26L60 7M45 28L65 11" fill="none" stroke="#4A2E1A" stroke-width="3.6" stroke-linecap="round"/><path d="M40 26L60 7M45 28L65 11" fill="none" stroke="#D9A441" stroke-width="1.8" stroke-linecap="round"/><ellipse cx="36" cy="32" rx="28" ry="4.5" fill="#E9B76A" stroke="#4A2E1A" stroke-width="1.5"/><path d="M13 31.5q3-2.2 6 0t6 0t6 0t6 0t6 0t6 0t6 0" fill="none" stroke="#F7E3A8" stroke-width="1.5" stroke-linecap="round"/><rect x="17" y="16" width="9" height="14" rx="1" fill="#2F4A3A" stroke="#1F2A36" stroke-width="1.3"/><ellipse cx="45" cy="29" rx="6.5" ry="4" fill="#FBF7EF" stroke="#4A2E1A" stroke-width="1.3"/><circle cx="45" cy="29" r="2.4" fill="#F2A65A"/><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round"><path d="M8 32h56a28 20 0 0 1-56 0z" fill="#C8553D"/><rect x="27" y="50" width="18" height="5" rx="2" fill="#8E3524"/></g><path d="M14 39h44" stroke="#F2CF6B" stroke-width="2" stroke-linecap="round"/><path d="M18 44q4 4 9 5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" opacity=".6"/><g fill="#5FAE84" stroke="#2F5D49" stroke-width=".6"><circle cx="31" cy="30.5" r="1.2"/><circle cx="35" cy="32.5" r="1.2"/><circle cx="55" cy="31" r="1.2"/></g>'}, title:"오사카 라멘집 진루이, 다만사라 프르다나에", titleEn:"Osaka's Jinrui Ramen Opens Its First Malaysian Shop in Damansara Perdana",
+     lead:"오사카의 라멘집 ‘진루이(Human Beings Everybody Noodles)’가 프탈링자야 다만사라 프르다나에 말레이시아 첫 매장 ‘진루이 라멘 말레이시아’를 열었어요. 말레이 메일의 이선 라우가 직접 값을 내고 먹어 본 뒤 소개했어요.",
+     pts:["2012년 마쓰무라 다카히로가 세운 가게로, 2025년 타베로그가 꼽은 오사카 라멘 100선에 들었어요", "대표 메뉴 ‘프리미엄’(29링깃)은 조개와 닭 육수의 쇼유 라멘에 가리비 기름과 수비드 닭고기를 올려요. 말레이시아 입맛에 맞춘 매운 ‘레드’도 있어요", "돼지고기·라드·술을 쓰지 않아요. 할랄 인증 공급처의 재료를 쓴다고 밝혔지만, 매장의 할랄 인증은 아직 기다리는 중이에요"],
+     info:[["어디", "F-LG-06, Neo Damansara, 1 Jalan PJU 8/1, Damansara Perdana, Petaling Jaya"], ["운영", "매일 오전 11시~오후 9시"]],
+     src:"Malay Mail · 10.23", url:"https://www.malaymail.com/news/eat-drink/2026/10/23/osakas-famed-human-beings-everybody-noodles-opens-in-damansara-perdana-as-jinrui-ramen-malaysia-serving-clam-based-shoyu-ramen/240238"},
+    {region:"말레이시아", tag:"이야기", icon:"leaf", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><rect x="10" y="26" width="30" height="24" rx="4"/><path d="M18 26q7-14 16 0" fill="none"/><path d="M38 44L54 24" fill="none"/><path d="M50 24l6-6 4 4-6 6z"/><path d="M58 51v-9" fill="none"/><path d="M58 44q-7-1-8-7q7 0 8 7zM58 42q6-2 8-8q-7 0-8 8z"/><ellipse cx="58" cy="53" rx="8" ry="3"/></g><path d="M18 26q7-14 16 0" fill="none" stroke="#2F5D49" stroke-width="4" stroke-linecap="round"/><path d="M18 26q7-14 16 0" fill="none" stroke="#5FAE84" stroke-width="2" stroke-linecap="round"/><path d="M38 44L54 24" fill="none" stroke="#2F5D49" stroke-width="5" stroke-linecap="round"/><path d="M38 44L54 24" fill="none" stroke="#5FAE84" stroke-width="3" stroke-linecap="round"/><path d="M50 24l6-6 4 4-6 6z" fill="#3F8B66" stroke="#2F5D49" stroke-width="1.3" stroke-linejoin="round"/><rect x="10" y="26" width="30" height="24" rx="4" fill="#5FAE84" stroke="#2F5D49" stroke-width="1.5"/><path d="M10 33h30" stroke="#3F8B66" stroke-width="1.4"/><path d="M14 37v8" stroke="#fff" stroke-width="1.6" stroke-linecap="round" opacity=".6"/><g fill="#7FC4E0" stroke="#2F5D49" stroke-width=".9"><path d="M61 28q-1.6 2.2-1.6 3.2a1.6 1.6 0 0 0 3.2 0q0-1-1.6-3.2z"/><path d="M64 33q-1.6 2.2-1.6 3.2a1.6 1.6 0 0 0 3.2 0q0-1-1.6-3.2z"/></g><ellipse cx="58" cy="53" rx="8" ry="3" fill="#8C5A3A" stroke="#4A2E1A" stroke-width="1.3"/><path d="M58 51v-9" stroke="#2F5D49" stroke-width="1.6" stroke-linecap="round"/><path d="M58 44q-7-1-8-7q7 0 8 7zM58 42q6-2 8-8q-7 0-8 8z" fill="#8ED1AE" stroke="#2F5D49" stroke-width="1.2" stroke-linejoin="round"/>'}, title:"크마만 마을 텃밭 일군 농업관, 유엔이 상 줬다", titleEn:"Kemaman Agriculture Officer Nur Shazwani Honoured by the UN for Rural Farming Work",
+     lead:"크마만 지역의 농업관 누르 샤즈와니 모흐드 살레(41)가 유엔 식량농업기구(FAO)의 ‘2026 농식품 시스템·농촌 개발 분야 여성 영웅 100인’에 뽑혀, 15일 이탈리아 로마에서 상을 받았어요.",
+     pts:["후보 609명 가운데 100명이 뽑혔고, 말레이시아는 농업식량안보부 산하 기관에서 9명을 추천했어요", "2024년부터 크마식 일대 7개 공동체와 함께, 마을회관 옆 빈터 같은 놀던 땅 약 1헥타르에 채소와 로젤을 길러 시장에 내다 팔아요. 참여자 약 70명은 대부분 여성이에요", "넓은 땅 없이 작물을 기르는 이동식 수경재배 장치도 만들었고, 텃밭 사업을 크마만의 다른 지역으로 넓힐 계획이에요"],
+     info:[["상", "FAO 100 Women Heroes in Agrifood Systems and Rural Development 2026"], ["시상", "10월 15일, 이탈리아 로마 (취동위 FAO 사무총장)"]],
+     src:"Malay Mail (Bernama) · 10.22", url:"https://www.malaymail.com/news/life/2026/10/22/from-village-gardens-to-global-recognition-nur-shazwani-honoured-by-un-for-rural-farming-work/240094"},
+    {region:"말레이시아", tag:"여행", icon:"plane", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M8 32q0-5 6-5h36q11 0 15 5q-4 5-15 5H14q-6 0-6-5z"/><path d="M14 28L9 13h6l11 15z"/><path d="M30 34l-7 17h7l15-17z"/><path d="M13 33l-5 7h6l7-6z"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round"><path d="M14 28L9 13h6l11 15z" fill="#2F6B5A"/><path d="M13 33l-5 7h6l7-6z" fill="#2F6B5A"/><path d="M8 32q0-5 6-5h36q11 0 15 5q-4 5-15 5H14q-6 0-6-5z" fill="#FBF7EF"/><path d="M30 34l-7 17h7l15-17z" fill="#B9AE97"/><ellipse cx="32" cy="43" rx="5" ry="2.6" fill="#8C8478"/></g><path d="M9 34q20 3 50 1" fill="none" stroke="#C8553D" stroke-width="1.8" stroke-linecap="round"/><g fill="#A9D9EC" stroke="#4A2E1A" stroke-width=".8"><circle cx="22" cy="30.5" r="1.3"/><circle cx="27" cy="30.5" r="1.3"/><circle cx="32" cy="30.5" r="1.3"/><circle cx="37" cy="30.5" r="1.3"/><circle cx="42" cy="30.5" r="1.3"/><circle cx="47" cy="30.5" r="1.3"/><path d="M56 29.5h4.5q2 .8 2.8 2H56z"/></g><path d="M16 29q10-1.4 22-1.4" fill="none" stroke="#fff" stroke-width="1.2" stroke-linecap="round" opacity=".8"/>'}, title:"도쿄 나리타–KL 직항, 집에어가 매일 띄워요", titleEn:"ZIPAIR Launches Daily Direct Flights Between Tokyo Narita and Kuala Lumpur",
+     lead:"일본항공(JAL)의 저비용 자회사 집에어(ZIPAIR)가 도쿄 나리타와 쿠알라룸푸르 국제공항(KLIA)을 잇는 직항편을 매일 운항하기 시작했어요. 일본을 오가는 사람이라면 알아둘 만해요.",
+     pts:["첫 편 ZG61은 20일 화요일 오후 4시 50분 나리타를 떠나 밤 11시 40분 KLIA 1터미널에 내렸어요", "보잉 787‑8 드림라이너로 290석(풀플랫 비즈니스 18석, 이코노미 272석)이고, 일주일에 2,030석이 늘어나요", "올해 1~8월 말레이시아를 찾은 일본인은 28만 3,132명으로, 지난해 같은 기간보다 4.0% 늘었어요"],
+     info:[["노선", "도쿄 나리타 ↔ KLIA 1터미널, 매일"], ["요금", "기사에는 요금이 나오지 않았어요"]],
+     src:"Malay Mail · 10.22", url:"https://www.malaymail.com/news/money/2026/10/22/budget-carrier-zipair-launches-direct-narita-kl-flights-with-boeing-787-dreamliners/240186"},
+    {region:"세계", tag:"영국 입시", icon:"school", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M20 29v10q16 8 32 0V29z"/><path d="M6 24L36 12l30 12-30 12z"/><path d="M36 24l20 5v13" fill="none"/><path d="M53 42h6l1 8h-8z"/></g><g stroke="#1F2A36" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M20 29v10q16 8 32 0V29z" fill="#3E4C5E"/><path d="M6 24L36 12l30 12-30 12z" fill="#2F3B4A"/></g><path d="M14 24l22-9" stroke="#5D7088" stroke-width="1.4" stroke-linecap="round" fill="none"/><path d="M36 24l20 5v13" fill="none" stroke="#C8553D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="36" cy="24" r="2.4" fill="#C8553D" stroke="#1F2A36" stroke-width="1.2"/><path d="M53 42h6l1 8h-8z" fill="#C8553D" stroke="#8E3524" stroke-width="1.2" stroke-linejoin="round"/><path d="M54.5 44v5M56 44v5M57.5 44v5" stroke="#8E3524" stroke-width=".9"/><path d="M24 37q12 5 24 0" fill="none" stroke="#5D7088" stroke-width="1.2" stroke-linecap="round"/>'}, title:"케임브리지 면접 12월 7~18일, 초대는 주로 11월", titleEn:"Cambridge Interviews Run December 7–18, With Most Invitations Sent in November",
+     lead:"케임브리지대학교의 2027년 입학 지원자 면접이 12월 7일부터 18일까지 열려요. 10월에 케임브리지에 지원한 자녀를 둔 가정이 알아둘 일정이에요.",
+     pts:["면접 초대는 대부분 11월에 오고, 일부는 12월 초에 와요", "영국 밖에 사는 지원자의 면접 방식은 칼리지마다 달라요. 코퍼스 크리스티, 피터하우스, 로빈슨 등은 온라인으로 하고, 펨브로크와 트리니티는 온라인과 대면 가운데 고를 수 있어요", "보통 면접 방식을 따로 요청할 수는 없지만, 비자 신청이 거절된 경우처럼 예외적인 상황에서는 다른 방식을 내줄 수 있어요. 10월 지원자의 결과는 1월에 나와요"],
+     info:[["대상", "2027년 입학, 10월에 케임브리지에 지원한 학생"], ["겨울 풀", "2027년 1월 중·하순에 추가 면접"], ["확인", "케임브리지대학교 공식 안내 (칼리지별 면접 방식 표)"]],
+     src:"University of Cambridge 공식 안내", url:"https://www.undergraduate.study.cam.ac.uk/international-students/international-interviews"},
+    {region:"세계", tag:"문화", icon:"lantern", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M5 14h62" fill="none"/><path d="M8 14h16v35h-16z"/><path d="M28 14h16v35h-16z"/><path d="M48 14h16v35h-16z"/></g><path d="M5 14h62" stroke="#4A2E1A" stroke-width="2" stroke-linecap="round"/><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round"><path d="M8 14h16v32l-2.67 3l-2.67 -3l-2.67 3l-2.67 -3l-2.67 3l-2.67 -3z" fill="#E07A92"/><path d="M28 14h16v32l-2.67 3l-2.67 -3l-2.67 3l-2.67 -3l-2.67 3l-2.67 -3z" fill="#F2CF6B"/><path d="M48 14h16v32l-2.67 3l-2.67 -3l-2.67 3l-2.67 -3l-2.67 3l-2.67 -3z" fill="#5FAE84"/></g><g fill="#FBF7EF"><circle cx="16" cy="29" r="3"/><circle cx="16" cy="22.5" r="1.3"/><circle cx="16" cy="35.5" r="1.3"/><circle cx="11" cy="29" r="1.3"/><circle cx="21" cy="29" r="1.3"/><path d="M10 18l2 2.4 2-2.4zM14 18l2 2.4 2-2.4zM18 18l2 2.4 2-2.4z"/><path d="M16 40l1.6 2-1.6 2-1.6-2z"/><circle cx="36" cy="29" r="3"/><circle cx="36" cy="22.5" r="1.3"/><circle cx="36" cy="35.5" r="1.3"/><circle cx="31" cy="29" r="1.3"/><circle cx="41" cy="29" r="1.3"/><path d="M30 18l2 2.4 2-2.4zM34 18l2 2.4 2-2.4zM38 18l2 2.4 2-2.4z"/><path d="M36 40l1.6 2-1.6 2-1.6-2z"/><circle cx="56" cy="29" r="3"/><circle cx="56" cy="22.5" r="1.3"/><circle cx="56" cy="35.5" r="1.3"/><circle cx="51" cy="29" r="1.3"/><circle cx="61" cy="29" r="1.3"/><path d="M50 18l2 2.4 2-2.4zM54 18l2 2.4 2-2.4zM58 18l2 2.4 2-2.4z"/><path d="M56 40l1.6 2-1.6 2-1.6-2z"/></g><path d="M8 15.5h56" stroke="#4A2E1A" stroke-width="1" opacity=".35"/>'}, title:"망자의 날 앞둔 멕시코 마을, 종이를 오려요", titleEn:"A Mexican Town Keeps the Day of the Dead's Papel Picado Tradition Alive",
+     lead:"멕시코 중부의 작은 마을 산살바도르 우이스콜로틀라에서, 11월 1~2일 ‘망자의 날(Día de Muertos)’을 앞두고 장인들이 얇은 종이에 무늬를 뚫는 ‘파펠 피카도’를 만들고 있어요.",
+     pts:["파펠 피카도는 19세기 말 이 마을에서 시작됐어요. 주민 약 1만 7,000명 가운데 4분의 3 정도가 이 일을 하고, 만든 종이는 세계로 수출돼요", "40년째 이 일을 하는 미겔 레이노소(58)는 네 딸을 포함해 열 명 넘는 사람과 함께, 한국과 일본 고객에게 보낼 장식 줄도 만들어요", "AI와 3D 프린터가 있어도 많은 장인이 여전히 손으로 만들고, 망자의 날 직전에는 수십만 장이 쓰여요"],
+     info:[["어디", "멕시코 중부, 산살바도르 우이스콜로틀라"], ["망자의 날", "11월 1~2일"]],
+     src:"Malay Mail (AFP) · 10.22", url:"https://www.malaymail.com/news/life/2026/10/22/mexico-town-keeps-day-of-the-dead-tradition-alive-one-sheet-of-paper-at-a-time/240153"}
+  ],
+  trend: {
+    title: "린트, 동남아 첫 단독 매장을 TRX에", titleEn: "Lindt Opens Its First Southeast Asian Store at The Exchange TRX",
+    asOf: "2026년 10월 16일 보도 기준",
+    body: "스위스 초콜릿 브랜드 린트(Lindt)가 쿠알라룸푸르 더 익스체인지 TRX에 동남아시아 첫 단독 매장을 열었다고 인사이드 리테일 아시아가 전했습니다. 소매 그룹 발리람(Valiram)과 손잡고 연 매장으로, 수도에서 차례로 매장을 넓혀 가는 첫 단계입니다.",
+    points: [
+      "린도르 초콜릿 19종을 골라 담는 ‘픽 앤 믹스’ 코너가 있고, 이 매장에서만 파는 맛도 있습니다.",
+      "엑설런스 다크 초콜릿, 엑스트라 크리미 밀크 초콜릿과 새 웨이퍼 제품군을 내놓고, 매장 안에서 소프트아이스크림과 크리스마스 시즌 제품, 맞춤 선물도 선보입니다.",
+      "다음 달에는 므르데카 118과 미드밸리 메가몰에 매장 두 곳이 더 문을 열 예정입니다.",
+      "린트 앤 슈프륑리의 아달베르트 레히너 그룹 CEO는 말레이시아 첫 매장이 ‘중요한 이정표이자 이 시장에서 여정의 시작일 뿐’이라고 말했습니다."
+    ],
+    src: [["Inside Retail Asia (2026.10.16)","https://insideretail.asia/2026/10/16/lindt-opens-first-southeast-asian-store-in-malaysia/"]]
+  },
+  life: {
+    title: "몬순 앞두고 읽어 두는 기상 경보, 와스파다·부룩·바하야", titleEn: "Waspada, Buruk, Bahaya: Reading MetMalaysia's Rain Warnings Before the Monsoon",
+    intro: "오늘 소식처럼 27일부터 북동 몬순이 시작되면 말레이어로 된 기상 경보를 자주 보게 됩니다. 경보의 종류와 색깔 단계, 확인할 곳을 SAYS와 말레이 메일 보도에서 골랐습니다.",
+    tips: [
+      ["경보는 크게 두 가지","‘아마란 후잔 브르트루산(amaran hujan berterusan)’은 앞으로 1~3일 이어지는 비에 대한 경보입니다. ‘아마란 리붓 프티르(amaran ribut petir)’는 시간당 20mm가 넘는 뇌우가 내리고 있거나 곧 올 때 내는 짧은 경보로, 한 번에 6시간을 넘지 않습니다."],
+      ["노랑은 ‘와스파다(Waspada)’","‘주의’라는 뜻의 노란 단계로, 1~3일 안에 계속되는 비가 시작되거나 지금 내리는 비나 뇌우가 이어질 것으로 보일 때 냅니다."],
+      ["주황 ‘부룩’, 빨강 ‘바하야’","부룩(Buruk)은 ‘나쁨’, 바하야(Bahaya)는 ‘위험’이라는 뜻입니다. 부룩은 큰비가 계속될 때, 바하야는 아주 강한 비가 계속될 때 냅니다."],
+      ["시간당 몇 mm가 ‘큰비’일까","슬랑오르 관개배수국(JPS) 기준으로 시간당 1~10mm는 약한 비, 11~30mm는 보통, 31~60mm는 강한 비, 60mm가 넘으면 아주 강한 비입니다. 슬랑오르 지역의 강우 자료는 InfoBanjir JPS 슬랑오르 사이트에서 볼 수 있습니다."],
+      ["공식 채널에서 확인하기","기상청은 met.gov.my 웹사이트와 myCuaca 앱, 공식 SNS, 핫라인 1-300-22-1638로 예보와 경보를 알리고, 이 정보를 따라 대비하라고 당부합니다."]
+    ],
+    src: [["SAYS: What Does 20MM/H Of Rain Mean & What Areas Are At Risk? (2025.11.25)","https://says.com/my/news/what-100mm-h-of-rain-mean-areas-are-at-risk-explained"],["Malay Mail (Bernama): North-east monsoon begins Oct 27 (2026.10.23)","https://www.malaymail.com/news/malaysia/2026/10/23/ready-for-floods-and-extreme-heat-north-east-monsoon-begins-oct-27-metmalaysia-warns/240346"]]
+  },
+  shows: {
+    intro: "쿠알라룸푸르에서 지금 볼 수 있거나 곧 열리는 전시와 공연입니다.",
+    items: [
+      {kind:"전시", title:"로버트 라우션버그와 아시아 (Robert Rauschenberg and Asia)", when:"11월 1일까지", where:"일함 갤러리(ILHAM Gallery) 5층", memo:"미국 현대미술 작가 로버트 라우션버그의 전시입니다.", url:"https://ilhamgallery.com/exhibitions/robert-rauschenberg-and-asia/"},
+      {kind:"전시", title:"경계 없는 예술: 난양으로 가는 새 항해 (Art Without Boundaries — New Voyage to Nanyang)", when:"11월 11일까지", where:"루앙 트두(Ruang Teduh), 익스체인지 106, 툰 라작 익스체인지", memo:"대만 태생의 큐레이터이자 작가 빅토리아 루가 AI의 도움을 받아 만든 작품을 젊은 작가들의 작품과 함께 선보입니다.", url:"https://www.malaymail.com/news/life/2026/10/10/art-meets-algorithm-victoria-lu-explores-ai-and-human-creativity-at-kuala-lumpur-exhibition/238604"},
+      {kind:"오페라", title:"투란도트 (Turandot)", when:"10월 24·25일", where:"KLPac 펜타스 1 (Pentas 1)", memo:"KLPac 오케스트라가 연주합니다. 24일은 오후 8시, 25일은 오후 4시 공연입니다.", url:"https://www.klpac.org/shows/turandot/"},
+      {kind:"클래식", title:"스티븐 허프와 함께하는 저녁 (A Regal Evening with Stephen Hough)", when:"10월 24일", where:"데완 필하모닉 페트로나스 (Dewan Filharmonik PETRONAS)", memo:"히로카미 준이치가 지휘하는 말레이시아 필하모닉과 피아니스트 스티븐 허프가 베토벤 피아노 협주곡 5번 ‘황제’와 교향곡 4번을 연주합니다.", url:"https://www.mpo.com.my/season-2026/a-regal-evening-with-stephen-hough"},
+      {kind:"K팝", title:"더 로즈 아시아 투어 (The Rose ROSETOPIA Asia Tour)", when:"10월 25일", where:"메가 스타 아레나, 쿠알라룸푸르", memo:"한국 밴드 더 로즈의 쿠알라룸푸르 공연으로, CK 스타 엔터테인먼트가 주최합니다.", url:"https://thesmartlocal.my/the-rose-concert-2026/"},
+      {kind:"클래식", title:"보르네오의 울림: 알레나 무랑과 MPO (Beats of Borneo: Alena Murang with the MPO)", when:"10월 31일 오후 8시", where:"데완 필하모닉 페트로나스 (Dewan Filharmonik PETRONAS)", memo:"히로카미 준이치가 지휘하는 말레이시아 필하모닉이 라벨 ‘쿠프랭의 무덤’과 모차르트 교향곡 40번을 연주하고, 알레나 무랑이 추아의 사페 협주곡을 협연합니다.", url:"https://www.mpo.com.my/season-2026/beats-of-borneo-alena-murang-with-the-mpo"},
+      {kind:"K팝", title:"예성 10주년 투어 (YESUNG 10th Anniversary Tour: ABOUT THE THINGS WE CALLED ORDINARY)", when:"11월 7일 오후 8시", where:"제프 쿠알라룸푸르 (Zepp Kuala Lumpur)", memo:"슈퍼주니어 예성의 10주년 기념 투어 공연으로, iMe Malaysia가 주최합니다.", url:"https://klconcert.com/concert/yesung-10th-anniversary-tour-about-the-things-we-called-ordinary"}
+    ]
+  },
+  music: {
+    title: "내 마음에 비친 내 모습", artist: "이찬혁 (Lee Chan-hyuk) · 원곡 유재하", year: "2020",
+    mood: "잎이 지는 늦가을 토요일, 조용히 나를 들여다보며",
+    why: "유재하가 1987년 처음이자 마지막 앨범 『사랑하기 때문에』에 실은 곡을, 이찬혁이 2020년 KBS 『유희열의 스케치북』 무대에서 담백한 목소리로 다시 불렀습니다. TV 무대라 유튜브 영상으로 감상하며, 서두를 일 없는 토요일 오후 창가에서 차 한 잔과 함께 천천히 들어 보세요.",
+    query: "이찬혁 내 마음에 비친 내 모습 유희열의 스케치북",
+    noSpotify: true
+  },
+  fact: {
+    title: "10월 24일, 나무통을 타고 나이아가라를 넘은 날", titleEn: "October 24, 1901: Annie Edson Taylor Goes Over Niagara Falls in a Barrel",
+    body: "1901년 10월 24일, 미국의 교사 출신 애니 에드슨 테일러가 63번째 생일에 나무통을 타고 나이아가라 폭포를 넘어, 폭포에서 떨어지고도 살아남은 첫 사람이 되었습니다. 집이 불타고 투자한 돈까지 잃어 형편이 어려워지자, 이 일로 돈을 벌어 남은 생을 편히 보내려 했습니다. 그녀가 탄 통은 미국 쪽 기슭 가까이에서 강물에 띄워져 캐나다 쪽 호스슈 폭포로 떨어졌고, 그녀는 머리에 작은 상처를 입었을 뿐 거의 다치지 않았습니다.",
+    more: [
+      "통은 참나무와 쇠로 만들고 안에 매트리스를 댔으며, 뚜껑을 닫은 뒤 친구들이 자전거 펌프로 공기를 채우고 구멍을 코르크로 막았습니다.",
+      "이틀 전에는 고양이를 태운 통을 먼저 호스슈 폭포로 띄워 시험했는데, 고양이는 머리에 상처를 입은 채 살아남았습니다.",
+      "기대했던 돈은 벌지 못했습니다. 매니저가 통을 가지고 달아나 사립 탐정에게 저축 대부분을 썼고, 회고록을 팔고 기념품 가게에서 관광객과 사진을 찍으며 지내다 1921년 82세에 가난 속에 세상을 떠났습니다."
+    ],
+    src: [["Wikipedia: Annie Edson Taylor","https://en.wikipedia.org/wiki/Annie_Edson_Taylor"],["Guinness World Records: First person to survive a drop over Niagara Falls","https://www.guinnessworldrecords.com/news/2026/4/miraculous-but-tragic-tale-of-the-first-person-to-survive-a-drop-over-niagara-falls"]]
+  }
+},
+
+{
   date: "2026-10-23",
   quote: {
     ko: "10월은 잎사귀가 곱게 물드는 달이다.",
