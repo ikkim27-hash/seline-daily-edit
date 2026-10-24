@@ -569,6 +569,134 @@ const PHOTO = null; // 예: {src:"photo.jpg", caption:"한 줄 설명", date:"20
 /* ===== DAYS: 날짜별 콘텐츠. 최신 날짜가 맨 앞. 매일 새 객체를 맨 앞에 추가하고 14일치만 유지. ===== */
 const DAYS = [
 {
+  date: "2026-10-25",
+  quote: {
+    ko: "어제로 돌아가 봐야 소용없어요. 그때의 나는 다른 사람이었으니까요.",
+    en: "…but it's no use going back to yesterday, because I was a different person then.",
+    by: "루이스 캐럴, 『이상한 나라의 앨리스』 (1865)",
+    pick: {kind:"영화", title:"시네마 천국 (Cinema Paradiso, 1988)", gist:"1988년 로마, 이름난 영화감독 살바토레 디 비타는 알프레도가 세상을 떠났다는 소식을 듣습니다. 서른 해 동안 한 번도 찾지 않은 시칠리아의 고향 마을 잔칼도를 떠올리자, 기억은 전쟁이 끝나고 몇 해 뒤 마을 극장 ‘시네마 파라디소’에 마음을 빼앗겼던 여덟 살 토토와, 그를 영사실에 들여보내 주던 영사기사 알프레도에게로 거슬러 갑니다. 1989년 아카데미 외국어영화상을 받은 주세페 토르나토레 감독의 이 영화는, 돌아갈 수 없는 시간이기에 더 오래 마음속에서 빛나는 것들이 있다고 서두르지 않고 들려줍니다.", after:"어제의 나에게로 돌아갈 수는 없어도, 그 시절이 건네준 빛은 오늘의 나를 조금 더 다정하게 비춥니다."}
+  },
+  english: {
+    title: "친구와 핼러윈 파티 의상 같이 준비하기", titleEn: "Planning Matching Halloween Costumes With a Friend",
+    situation: "토요일에 친구 집에서 열리는 핼러윈 파티를 앞두고, 아직 의상을 못 정한 두 친구가 돈 적게 들고 금방 만들 수 있는 짝꿍 의상을 정하는 대화입니다. 망설임을 털어놓고, 아이디어를 내고, 맞장구치는 말투를 익혀 보세요.",
+    lines: [
+      ["A","So, are you dressing up for Jenna's Halloween party on Saturday?","그래서, 토요일 제나네 핼러윈 파티에 의상 입고 갈 거야?"],
+      ["B","I want to, but I left it to the last minute again. I'm totally drawing a blank.","그러고 싶은데 이번에도 막판까지 미뤄 버렸어. 아무 생각이 안 나."],
+      ["A","Same here. Want to team up and do matching costumes? Nothing too elaborate.","나도 그래. 우리 같이 짝 맞춘 의상 할래? 너무 거창한 건 말고."],
+      ["B","I'm game, as long as it doesn't involve a ton of face paint.","좋아, 얼굴에 페인트 잔뜩 바르는 것만 아니면."],
+      ["A","Ha, fair. What if we go as salt and pepper? We'd just need a white shirt and a black one.","하하, 그럴 만하지. 우리 소금이랑 후추로 가면 어때? 흰 티셔츠랑 검은 티셔츠만 있으면 돼."],
+      ["B","Oh, that's cute, and it definitely won't break the bank. I think I have an old white hoodie lying around.","오, 귀엽다. 돈도 거의 안 들겠고. 집에 굴러다니는 낡은 흰 후드티가 있을 거야."],
+      ["A","Perfect. We can make the shaker tops out of paper plates and some foil.","딱이다. 통 뚜껑은 종이 접시랑 포일로 만들면 되겠다."],
+      ["B","You know Jenna's going to go all out, though. Last year she built a whole robot suit.","근데 제나는 분명 제대로 할 거야. 작년엔 로봇 옷을 통째로 만들었잖아."],
+      ["A","Well, we're not trying to compete with that. We just need something we can throw together in one evening.","뭐, 그거랑 겨루려는 건 아니니까. 우린 저녁 한나절에 뚝딱 만들 수 있는 거면 돼."],
+      ["B","True. And if we pull it off, it'll be the easiest costume we've ever made.","맞아. 그리고 이거 해내면 우리가 만든 의상 중에 제일 쉬운 의상이 될 거야."]
+    ],
+    expressions: [
+      {en:"draw a blank", ko:"‘머릿속이 하얘지다, 아무 생각이 안 나다’. 기억이나 아이디어가 전혀 떠오르지 않을 때 씁니다. 지금 그렇다는 뜻으로 I'm drawing a blank처럼 진행형으로 자주 말합니다.", eg:"I know her face, but I'm drawing a blank on her name."},
+      {en:"I'm game.", ko:"‘좋아, 나도 할래’. 상대의 제안에 기꺼이 응할 때 쓰는 가벼운 말로, I'm game for ~처럼 뒤에 할 일을 붙이기도 합니다.", eg:"A board game night on Friday? I'm game."},
+      {en:"won't break the bank", ko:"‘큰돈 들지 않는다, 부담 없는 값이다’. 직역하면 ‘은행을 거덜 내지 않는다’로, 싸고 무난한 선택을 권할 때 씁니다.", eg:"Let's try that new taco place. It won't break the bank."},
+      {en:"go all out", ko:"‘아낌없이 하다, 있는 힘껏 제대로 하다’. 파티 준비나 장식, 선물처럼 무언가를 크게 벌일 때 씁니다.", eg:"My neighbors go all out with their Christmas lights every year."},
+      {en:"throw (something) together", ko:"‘(급히) 뚝딱 만들어 내다’. 시간이나 재료가 넉넉하지 않아도 있는 것으로 빨리 만들어 낸다는 느낌입니다.", eg:"I threw together a quick salad before everyone arrived."}
+    ],
+    pattern: {
+      en: "What if we ~?",
+      ko: "‘우리 ~하면 어때?’. 아이디어를 부드럽게 내놓을 때 씁니다. How about ~?보다 ‘이렇게 해 보면 어떨까’ 하고 함께 상상해 보자는 느낌이 있고, 뒤에는 주어와 동사가 이어집니다.",
+      examples: [
+        ["What if we <b>leave</b> a little <b>earlier</b>?","우리 조금 일찍 나가면 어때?"],
+        ["What if we <b>order</b> <b>pizza</b> instead?","대신 피자 시키면 어때?"],
+        ["What if we <b>ask</b> Sam to <b>come</b> along?","샘한테도 같이 가자고 하면 어때?"]
+      ]
+    }
+  },
+  news: [
+    {region:"말레이시아", tag:"생활 · 연무", important:true, icon:"rain", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><circle cx="36" cy="25" r="14"/><path d="M9 36q7-4 14 0t14 0t14 0t13 0M12 44q6-3.5 12 0t12 0t12 0t12 0M9 52q7-4 14 0t14 0t14 0t13 0" fill="none"/></g><circle cx="36" cy="25" r="14" fill="#E9A15A" stroke="#8A5A12" stroke-width="1.5"/><circle cx="36" cy="25" r="9" fill="#F2B880" opacity=".7"/><path d="M27 19q3-5 9-6" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" opacity=".7"/><path d="M9 36q7-4 14 0t14 0t14 0t13 0M12 44q6-3.5 12 0t12 0t12 0t12 0M9 52q7-4 14 0t14 0t14 0t13 0" fill="none" stroke="#4A2E1A" stroke-width="4.6" stroke-linecap="round"/><path d="M9 36q7-4 14 0t14 0t14 0t13 0M12 44q6-3.5 12 0t12 0t12 0t12 0M9 52q7-4 14 0t14 0t14 0t13 0" fill="none" stroke="#D3CBBA" stroke-width="2.2" stroke-linecap="round"/><g fill="#A39E95"><circle cx="16" cy="14" r="1.3"/><circle cx="56" cy="12" r="1.3"/><circle cx="59" cy="22" r="1"/><circle cx="13" cy="24" r="1"/></g>'}, title:"연무 다시 짙어져, 전국 23곳 ‘건강에 해로움’", titleEn:"Haze Thickens Again as 23 Stations Hit Unhealthy Levels",
+     lead:"환경부(DOE) 집계로 24일 오후 4시 전국 68개 측정소 가운데 23곳의 대기오염지수(API)가 ‘건강에 해로움’ 구간에 들었어요. 느그리슴빌란·믈라카·조호르와 사라왁에 사는 사람이 특히 알아두세요.",
+     pts:["가장 높은 곳은 느그리슴빌란 스렘반으로 API 172였고, 조호르는 바투파핫 166, 클루앙 165 등 8곳으로 가장 많았어요", "사라왁은 스리안 160, 쿠칭 155 등 5곳으로 오전 3곳에서 늘었고, 믈라카는 측정소 3곳이 모두 ‘건강에 해로움’이었어요", "클랑 밸리는 조금 나아졌어요. 푸트라자야는 오전 151에서 118로 내려갔고, KL 바투 무다는 159, 체라스는 141이었어요"],
+     info:[["시각", "10월 24일 오후 4시 (아주 해로움·위험 단계는 없었어요)"], ["권고", "어린이·노인·심장이나 호흡기 질환이 있는 사람은 밖에서 오래 운동하지 말고, 나갈 때 마스크를 쓰라고 했어요"], ["구간", "API 101~200 건강에 해로움"]],
+     src:"Malay Mail · 10.24", url:"https://www.malaymail.com/news/malaysia/2026/10/24/haze-spreads-to-five-sarawak-spots-while-klang-valley-air-improves-slightly/240457"},
+    {region:"말레이시아", tag:"스포츠", icon:"news", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-linejoin="round" stroke-linecap="round"><path d="M12 10L24 44q2 6 8 4" fill="none" stroke-width="13"/><path d="M34 9h22v12a11 11 0 0 1-22 0z" stroke-width="7.5"/><path d="M34 12h-5v3a6 6 0 0 0 6 6M56 12h5v3a6 6 0 0 1-6 6" fill="none" stroke-width="7.5"/><rect x="42" y="31" width="6" height="9" stroke-width="7.5"/><rect x="36" y="39" width="18" height="7" rx="1.5" stroke-width="7.5"/><circle cx="19" cy="52" r="4.5" stroke-width="7.5"/><path d="M62 30l1.2 3 3 1.2-3 1.2-1.2 3-1.2-3-3-1.2 3-1.2z" stroke-width="6"/></g><path d="M12 10L24 44q2 6 8 4" fill="none" stroke="#4A2E1A" stroke-width="6.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 10L24 44q2 6 8 4" fill="none" stroke="#D9A441" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 10l3.4 9.6" fill="none" stroke="#2F6B5A" stroke-width="3.8" stroke-linecap="round"/><g stroke="#8A5A12" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M34 12h-5v3a6 6 0 0 0 6 6M56 12h5v3a6 6 0 0 1-6 6" fill="none" stroke-width="2.2"/><rect x="42" y="31" width="6" height="9" fill="#DDA22F"/><rect x="36" y="39" width="18" height="7" rx="1.5" fill="#8C5A3A" stroke="#4A2E1A"/><path d="M34 9h22v12a11 11 0 0 1-22 0z" fill="#F7D36B"/></g><path d="M45 13l1.4 2.8 3.1.4-2.3 2.1.6 3-2.8-1.5-2.8 1.5.6-3-2.3-2.1 3.1-.4z" fill="#FBF7EF"/><path d="M37 12q0 8 4 12" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" opacity=".7"/><path d="M39 42.5h12" stroke="#F2CF6B" stroke-width="1.3" stroke-linecap="round"/><circle cx="19" cy="52" r="4.5" fill="#FBF7EF" stroke="#4A2E1A" stroke-width="1.5"/><path d="M62 30l1.2 3 3 1.2-3 1.2-1.2 3-1.2-3-3-1.2 3-1.2z" fill="#F7D36B" stroke="#8A5A12" stroke-width="1" stroke-linejoin="round"/>'}, title:"영 타이거스, 13년 만에 술탄 오브 조호르컵 우승", titleEn:"Young Tigers End a 13-Year Wait to Win the Sultan of Johor Cup",
+     lead:"말레이시아 주니어 하키 대표팀 ‘영 타이거스’가 24일 조호르바루에서 열린 제14회 술탄 오브 조호르컵(SOJC) 결승에서 파키스탄과 2‑2로 비긴 뒤, 승부 슛아웃에서 4‑3으로 이겨 우승했어요.",
+     pts:["2쿼터에 파키스탄이 왈리드 라나와 무함마드 우스만의 골로 2‑0으로 앞섰지만, 25분 무함마드 아담 아스야라프 조하리가 페널티 코너로 한 골을 만회했어요", "49분 D. 구나실란의 페널티 코너 골로 2‑2 동점을 만들었어요", "슛아웃에서는 아담 아스야라프, 가간딥 싱, 라훌 파즈리엔, 아페룰 샤가 넣었고, 파키스탄은 두 명이 실축했어요"],
+     info:[["대회", "제14회 술탄 오브 조호르컵 (SOJC)"], ["장소", "조호르 하키 스타디움, 조호르바루"], ["지난 우승", "2011년"]],
+     src:"Bernama · 10.24", url:"https://www.bernama.com/en/sports/news.php?id=2625183"},
+    {region:"말레이시아", tag:"음식", icon:"bowl", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M15 8h36l-9 16h-18z"/><rect x="21" y="24" width="24" height="3" rx="1"/><path d="M19 27h28v11a10 10 0 0 1-10 10h-8a10 10 0 0 1-10-10z"/><path d="M47 31h3a5 5 0 0 1 0 10h-3" fill="none"/><ellipse cx="33" cy="51" rx="21" ry="3.5"/><ellipse cx="58" cy="14" rx="4" ry="5.5" transform="rotate(25 58 14)"/><ellipse cx="60" cy="27" rx="3.5" ry="5" transform="rotate(-20 60 27)"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><ellipse cx="33" cy="51" rx="21" ry="3.5" fill="#DDD5C4"/><path d="M47 31h3a5 5 0 0 1 0 10h-3" fill="none" stroke-width="2.6"/><path d="M19 27h28v11a10 10 0 0 1-10 10h-8a10 10 0 0 1-10-10z" fill="#F5E4BA"/><path d="M19.5 34h27" fill="none" stroke="#C8553D" stroke-width="2.4"/><rect x="21" y="24" width="24" height="3" rx="1" fill="#8C5A3A"/><path d="M15 8h36l-9 16h-18z" fill="#FBF7EF"/><ellipse cx="58" cy="14" rx="4" ry="5.5" transform="rotate(25 58 14)" fill="#6B4226"/><ellipse cx="60" cy="27" rx="3.5" ry="5" transform="rotate(-20 60 27)" fill="#6B4226"/></g><path d="M24 11l4 10M33 11v10M42 11l-4 10" stroke="#D6C9B3" stroke-width="1.2" stroke-linecap="round"/><path d="M57 10q2.5 4 1 8M60.5 23q-1.6 4 0 8" fill="none" stroke="#C98A4E" stroke-width="1.1" stroke-linecap="round"/><path d="M23 38q1 5 5 7" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" opacity=".7"/>'}, title:"그을린 나무와 초록 정원, 체라스의 커피 쉼터", titleEn:"Gong Dou Coffee: A Leafy, Charred-Wood Hideaway in Cheras",
+     lead:"쿠알라룸푸르 체라스 타만 테인턴 뷰의 카페 ‘공 도우 커피(Gong Dou Coffee)’를 말레이 메일의 케니 마가 직접 값을 내고 다녀와 소개했어요. 도심 한가운데 초록 정원과 검게 그을린 나무로 꾸민 시골 같은 쉼터래요.",
+     pts:["주인 로이스 루가 옛 ‘아공 하우스(Ah Gong House)’ 자리를 새로 꾸몄고, 나무를 태워 검게 만드는 일본 기법 야키스기는 목공 일을 하는 친구가 매장에서 직접 재현했어요", "원두는 바로 아래층 마이크로 로스터리 이루더우(YiLuDou)가 직화로 볶아요. 에티오피아 핸드드립과 콜롬비아 게이샤 밀크커피, 말차와 21년 숙성 보이차가 있어요", "브런치로는 직접 만든 키시를, 티타임에는 패션프루트 치즈케이크와 딸기 모찌, 헤이즐넛과 에스프레소 글레이즈를 쓴 커피 너트 타르트를 내요"],
+     info:[["어디", "29, Jalan Goh Boon Hong, Taman Taynton View, Cheras, Kuala Lumpur"], ["운영", "수~금 오전 11시~오후 6시, 토·일 오전 10시~오후 6시 (월·화 휴무)"]],
+     src:"Malay Mail · 10.24", url:"https://www.malaymail.com/news/eat-drink/2026/10/24/escape-the-city-without-leaving-at-gong-dou-coffee-in-cheras-with-direct-fire-roasted-beans-strawberry-mochi-and-coffee-nut-tarts/240372"},
+    {region:"말레이시아", tag:"커뮤니티", icon:"heart", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><circle cx="36" cy="20" r="4.5"/><path d="M36 54C20 43 12 35 14 25c2-8 12-10 18-4c1.5 1.5 3 3 4 5c1-2 2.5-3.5 4-5c6-6 16-4 18 4c2 10-6 18-22 29z"/><path d="M60 8l1.4 3.4 3.4 1.4-3.4 1.4-1.4 3.4-1.4-3.4-3.4-1.4 3.4-1.4z"/></g><circle cx="36" cy="20" r="4.5" fill="none" stroke="#4A2E1A" stroke-width="3.6"/><circle cx="36" cy="20" r="4.5" fill="none" stroke="#B9AE97" stroke-width="1.8"/><path d="M36 54C20 43 12 35 14 25c2-8 12-10 18-4c1.5 1.5 3 3 4 5c1-2 2.5-3.5 4-5c6-6 16-4 18 4c2 10-6 18-22 29z" fill="#E0704F" stroke="#8E3524" stroke-width="1.5" stroke-linejoin="round"/><g fill="#FBF7EF" stroke="#8E3524" stroke-width="1"><ellipse cx="36" cy="41" rx="6.5" ry="5.2"/><circle cx="28.5" cy="33.5" r="2.5"/><circle cx="33" cy="29.8" r="2.5"/><circle cx="39" cy="29.8" r="2.5"/><circle cx="43.5" cy="33.5" r="2.5"/></g><path d="M18 27q2-5 7-5.5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" opacity=".7"/><path d="M60 8l1.4 3.4 3.4 1.4-3.4 1.4-1.4 3.4-1.4-3.4-3.4-1.4 3.4-1.4z" fill="#F7D36B" stroke="#8A5A12" stroke-width="1.1" stroke-linejoin="round"/>'}, title:"강아지 중성화 80링깃, 페락의 떠돌이 동물 대책", titleEn:"Perak Pawsitive: Subsidised Sterilisation, Dog Microchips and a Map of Stray Feeders",
+     lead:"페락주가 2024년 시작한 ‘페락 퍼지티브(Perak Pawsitive)’로 지금까지 개와 고양이 2,402마리를 중성화했어요. 산드레아 응 주 주택·지방정부위원장이 밝힌 숫자로, 개에게 마이크로칩을 심는 방안도 검토하고 있어요.",
+     pts:["보조금을 받으면 중성화 비용이 개 80링깃, 고양이 40링깃이에요. 보통은 개 180링깃, 고양이 120링깃이래요", "올해 예산은 15만 링깃에서 30만 링깃으로 두 배가 됐고, 동물병원 4곳이 이틀짜리 행사마다 개 50마리, 고양이 70마리를 목표로 해요", "마이크로칩에는 주인 정보와 예방접종·중성화 기록을 담아 개 면허와 잇는 방안을 검토하고, 이포시청과는 떠돌이 동물에게 밥 주는 사람을 등록해 지도로 만드는 시범 사업을 할 계획이에요"],
+     info:[["구호", "Adopt for Life, Never Abandon"], ["마이크로칩", "아직 타당성 검토 단계예요"]],
+     src:"Malay Mail (Bernama) · 10.23", url:"https://www.malaymail.com/news/life/2026/10/23/chip-snip-repeat-perak-eyes-microchips-for-dogs-and-a-map-of-its-stray-feeders/240245"},
+    {region:"세계", tag:"영국 유학", icon:"passport", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><rect x="30" y="10" width="28" height="40" rx="2" transform="rotate(8 44 30)"/><rect x="12" y="12" width="28" height="40" rx="3"/></g><rect x="30" y="10" width="28" height="40" rx="2" transform="rotate(8 44 30)" fill="#FBF7EF" stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round"/><g transform="rotate(8 44 30)"><path d="M43 17h11M43 22h11M43 27h9M43 32h11M43 37h7" stroke="#B9AE97" stroke-width="1.4" stroke-linecap="round"/><circle cx="51" cy="44" r="3.4" fill="#C8553D" stroke="#8E3524" stroke-width="1"/></g><rect x="12" y="12" width="28" height="40" rx="3" fill="#3E4C5E" stroke="#1F2A36" stroke-width="1.5"/><g fill="none" stroke="#F2CF6B" stroke-width="1.3" stroke-linecap="round"><circle cx="26" cy="29" r="7"/><path d="M19 29h14M26 22c-3 4-3 10 0 14M26 22c3 4 3 10 0 14M20 44h12"/></g><path d="M15.5 16v32" stroke="#5D7088" stroke-width="1.2" stroke-linecap="round"/>'}, title:"영국 9월 입학, CAS 24% 줄고 비자 거절은 44% 늘어", titleEn:"UK September Intake: CAS Issuance Falls 24% as Visa Refusals Jump 44%",
+     lead:"영국 대학의 입학 확인서(CAS) 관리 플랫폼 엔롤리(Enroly)가 2026년 9월 입학 자료를 내놓았다고 더 파이 뉴스가 23일 전했어요. 영국 대학 진학을 생각하는 가정이 요즘 영국 유학 흐름을 읽어 볼 만한 숫자예요.",
+     pts:["1년 전보다 합격은 13.8%, CAS 발급은 23.7% 줄었고, 합격이 CAS로 이어진 비율은 76.0%에서 57.2%로 내려갔어요", "비자 거절은 43.5% 늘었고, 비자 결과가 나온 학생 가운데 거절 비율은 4.5%였어요", "중국 학생은 CAS가 2.0% 늘고 미국 학생은 12.3% 줄었어요. 캐서린 윈터 CEO는 다음 입학에도 압박이 이어질 거라면서도 ‘조심스러운 낙관의 이유’가 있다고 했어요"],
+     info:[["CAS", "대학이 합격을 내준 뒤 발급하는 입학 확인서로, 받은 지 6개월 안에 학생비자를 신청해야 해요 (GOV.UK 안내)"], ["자료 범위", "엔롤리 파트너 대학의 9월 입학, 학생이 알린 결과 기준이에요. 말레이시아·한국 학생 수치는 따로 나오지 않았어요"]],
+     src:"The PIE News · 10.23", url:"https://thepienews.com/enroly-uk-cas-issuance-falls-24-as-visa-refusals-jump-44/"},
+    {region:"세계", tag:"유산", icon:"news", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M36 8v28" fill="none"/><path d="M36 8l9 3-9 3z"/><path d="M23 14h26q3 9 0 18h-26q3-9 0-18z"/><path d="M10 30h10v6h42l-6 12q-20 5-40 0z"/><path d="M9 53q5-3.5 10 0t10 0t10 0t10 0t10 0" fill="none"/></g><path d="M36 8v28" stroke="#4A2E1A" stroke-width="2.4" stroke-linecap="round"/><path d="M36 8l9 3-9 3z" fill="#2F6B5A" stroke="#4A2E1A" stroke-width="1.1" stroke-linejoin="round"/><path d="M23 14h26q3 9 0 18h-26q3-9 0-18z" fill="#F5E4BA" stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round"/><path d="M24.6 23h23" stroke="#C8553D" stroke-width="3"/><path d="M10 30h10v6h42l-6 12q-20 5-40 0z" fill="#8C5A3A" stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round"/><path d="M12 40h48M14.5 44h43" stroke="#6B4226" stroke-width="1.1" stroke-linecap="round"/><g fill="#F2CF6B" stroke="#4A2E1A" stroke-width=".8"><circle cx="30" cy="39" r="1.3"/><circle cx="38" cy="39" r="1.3"/><circle cx="46" cy="39" r="1.3"/></g><path d="M9 53q5-3.5 10 0t10 0t10 0t10 0t10 0" fill="none" stroke="#2F5D49" stroke-width="4.4" stroke-linecap="round"/><path d="M9 53q5-3.5 10 0t10 0t10 0t10 0t10 0" fill="none" stroke="#7FC4E0" stroke-width="2.2" stroke-linecap="round"/>'}, title:"스웨덴에서 가장 오래된 전함, 15세기 ‘브라크 5’", titleEn:"Vrak 5: Archaeologists Document Sweden's Oldest Known Warship Off Stockholm",
+     lead:"스톡홀름 남쪽 하링에 성 앞바다에 가라앉은 15세기 배 ‘브라크 5(Vrak 5)’를 해양고고학자들이 이번 10월 발굴해 기록했어요. 연구진은 스웨덴 앞바다에서 찾은 가장 오래된 전함으로 보고 있어요.",
+     pts:["2025년 2월 연구로 1480년대, 어쩌면 1460년대에 만든 배라는 연대가 나왔어요. 프로젝트를 이끄는 스웨덴 난파선 박물관의 호칸 알트로크는 길이를 40~45m로 봐요", "선체 판자를 겹치지 않고 맞대어 붙이는 ‘카벨’ 방식을 쓴 것으로 확인된 발트해 첫 배예요. 이 방식 덕분에 무거운 대포를 실을 만큼 크고 튼튼한 배를 만들 수 있었어요", "펌프로 퇴적물을 걷어 내고 주방 자리로 보이는 벽돌과 삭구 일부를 건졌어요. 박사과정생 마틸다 얄은 선원들이 생선·고기·죽을 먹고 주로 맥주를 마셨을 거라고 했어요"],
+     info:[["어디", "스웨덴 스톡홀름 남쪽, 하링에 성 앞 란드피에르덴 해협"], ["침몰 이유", "밝혀지지 않았어요. 1501년 덴마크군의 하링에 성 공격과 잇는 가설이 있어요"]],
+     src:"Malay Mail (AFP) · 10.23", url:"https://www.malaymail.com/news/life/2026/10/23/swedens-oldest-warship-marine-archaeologists-document-15th-century-warship-vrak-5-off-stockholm/240292"}
+  ],
+  trend: {
+    cat: "세계 트렌드 · 브랜드",
+    title: "에어비앤비, 손님에게 청소 시키는 숙소 규칙 막는다", titleEn: "Airbnb Bans Chore Lists and Guest Fines for Hosts",
+    asOf: "2026년 10월 23일 보도 기준",
+    body: "에어비앤비가 호스트가 손님에게 요구할 수 있는 일을 줄이는 쪽으로 규칙을 고쳤다고 AFP가 전했습니다. 이번 주 공개된 새 규칙은 11월 20일부터 잡는 예약에 적용됩니다.",
+    points: [
+      "호스트는 시트 벗기기, 쓰레기를 숙소 밖으로 내다 버리기, 설거지하고 그릇 정리하기처럼 품과 시간이 들거나 보통 청소 인력이 하는 일을 손님에게 요구할 수 없습니다.",
+      "쓴 그릇을 싱크대에 넣어 두거나 쓰레기와 재활용품을 나눠 버려 달라는 정도는 계속 부탁할 수 있습니다.",
+      "호스트는 더 이상 손님에게 벌금이나 위약금을 매길 수 없고, 파손이 생기면 에어비앤비가 제공하는 보험으로 보상을 청구해야 합니다.",
+      "에어비앤비는 AFP에 보낸 성명에서, 이용자들이 손님 지침을 ‘혼란스럽고 제한적이며 관리하기 어렵다’고 느꼈다며 이용자 의견을 바탕으로 혼란을 줄이려는 것이라고 밝혔습니다."
+    ],
+    src: [["Malay Mail (AFP) (2026.10.23)","https://www.malaymail.com/news/life/2026/10/23/guests-arent-cleaners-airbnb-bans-chore-lists-and-fines-as-it-tightens-rules-on-hosts/240255"]]
+  },
+  life: {
+    title: "가리키면 되는 밥, 커리가 ‘홍수’ 나는 밥", titleEn: "Point-Point Rice and 'Flooded' Nasi Kandar: How Mixed-Rice Counters Work",
+    intro: "말레이어 ‘반지르(banjir)’는 ‘홍수’라는 뜻이지만, 나시 칸다르 가게에서는 전혀 다른 뜻으로 쓰입니다. 반찬을 골라 밥에 얹어 먹는 말레이시아의 ‘섞음밥’ 가게를 즐기는 법을 영어판 위키백과의 두 항목에서 골랐습니다.",
+    tips: [
+      ["차판은 칸마다 반찬을 고르는 밥","중국계 가게의 이코노미 라이스(경제반, chap fan)는 반찬 10~15가지가 칸칸이 담긴 진열대에서 원하는 것을 골라 흰밥 위에 얹어 먹습니다. 밥 위에 커리나 그레이비를 부어 달라고 할 수도 있습니다."],
+      ["이름 몰라도 손가락이면 충분","반찬 이름을 몰라 밥을 달라고 한 뒤 손가락으로 가리켜 주문하는 사람이 많아 ‘포인트 포인트 라이스’라는 별명이 붙었습니다. 중국어로 ‘이거(这个)’, ‘저거(那个)’라고만 해도 통합니다."],
+      ["가장 싸게 먹는 한 끼","호커 센터에서 가장 싼 식사 가운데 하나로 꼽히며, 채소와 두부 위주로 고르면 더 쌉니다. 말레이·인도네시아식 같은 밥은 삼발과 른당 같은 반찬이 나오는 나시 참푸르(nasi campur)입니다."],
+      ["어깨에 메고 팔던 나시 칸다르","나시 칸다르는 1900년대 초 조지타운 웰드 키 부두에서 타밀 무슬림 상인들이 노동자에게 팔던 커리 밥에서 시작됐습니다. 이름은 음식을 어깨 장대에 메고 다니던 데서 왔고, 1907년 르부 캠벨의 나무 아래에서 시작한 하미디야가 페낭에서 가장 오래된 나시 칸다르 식당으로 꼽힙니다."],
+      ["‘반지르’는 커리를 섞어 붓기","나시 칸다르에서 ‘반지르(banjir, 홍수)’는 여러 커리 그레이비를 섞어 밥 위에 넉넉히 붓는 것을 말합니다. 요즘은 반찬을 작은 그릇에 따로 내도 그레이비는 밥에 바로 붓고, 무슬림이 운영하지 않는 비슷한 가게는 흔히 ‘바나나 잎 식당’이나 ‘커리 하우스’라고 부릅니다."]
+    ],
+    src: [["Wikipedia: Economy rice","https://en.wikipedia.org/wiki/Economy_rice"],["Wikipedia: Nasi kandar","https://en.wikipedia.org/wiki/Nasi_kandar"]]
+  },
+  shows: {
+    intro: "쿠알라룸푸르에서 지금 볼 수 있거나 곧 열리는 전시와 공연입니다.",
+    items: [
+      {kind:"전시", title:"로버트 라우션버그와 아시아 (Robert Rauschenberg and Asia)", when:"11월 1일까지", where:"일함 갤러리(ILHAM Gallery), 쿠알라룸푸르", memo:"홍콩 M+와 일함 갤러리가 함께 꾸린 전시로, 라우션버그와 아시아의 인연을 처음으로 종합해 보여 줍니다.", url:"https://ilhamgallery.com/exhibitions/robert-rauschenberg-and-asia/"},
+      {kind:"전시", title:"경계 없는 예술: 난양으로 가는 새 항해 (Art Without Boundaries — New Voyage to Nanyang)", when:"11월 11일까지", where:"루앙 트두(Ruang Teduh), 익스체인지 106, 툰 라작 익스체인지", memo:"대만 태생의 작가이자 큐레이터 빅토리아 루가 AI의 도움을 받아 만든 작품을 젊은 작가들의 작품과 함께 선보입니다.", url:"https://www.malaymail.com/news/life/2026/10/10/art-meets-algorithm-victoria-lu-explores-ai-and-human-creativity-at-kuala-lumpur-exhibition/238604"},
+      {kind:"오페라", title:"투란도트 (Turandot)", when:"10월 25일 오후 4시 (마지막 공연)", where:"KLPac 펜타스 1 (Pentas 1)", memo:"알레산드로 마초케티가 지휘하는 KLPac의 투란도트 마지막 무대입니다.", url:"https://www.klpac.org/shows/turandot/"},
+      {kind:"K팝", title:"더 로즈 아시아 투어 (The Rose ROSETOPIA Asia Tour)", when:"10월 25일 오후 8시", where:"메가 스타 아레나, 쿠알라룸푸르", memo:"한국 밴드 더 로즈의 쿠알라룸푸르 공연으로, CK 스타 엔터테인먼트가 주최합니다.", url:"https://thesmartlocal.my/the-rose-concert-2026/"},
+      {kind:"클래식", title:"브라이언 탄 헌정 공연 (Tribute to Brian Tan with The klpac Orchestra)", when:"10월 30·31일 오후 8시 30분, 11월 1일 오후 3시", where:"KLPac 펜타스 1 (Pentas 1)", memo:"2006년 KLPac의 첫 커뮤니티 오케스트라를 세운 고(故) 브라이언 탄을 기리고 오케스트라의 20주년을 맞는 공연으로, 리 콕 렁이 지휘합니다.", url:"https://www.klpac.org/shows/tribute-to-brian-tan-with-the-klpac-orchestra/"},
+      {kind:"클래식", title:"보르네오의 울림: 알레나 무랑과 MPO (Beats of Borneo: Alena Murang with the MPO)", when:"10월 31일 오후 8시", where:"데완 필하모닉 페트로나스 (Dewan Filharmonik PETRONAS)", memo:"히로카미 준이치가 지휘하는 말레이시아 필하모닉이 라벨 ‘쿠프랭의 무덤’과 모차르트 교향곡 40번을 연주하고, 알레나 무랑이 추아의 사페 협주곡을 초연합니다.", url:"https://www.mpo.com.my/season-2026/beats-of-borneo-alena-murang-with-the-mpo"},
+      {kind:"K팝", title:"예성 10주년 투어 (YESUNG 10th Anniversary Tour: ABOUT THE THINGS WE CALLED ORDINARY)", when:"11월 7일 오후 8시", where:"제프 쿠알라룸푸르 (Zepp Kuala Lumpur)", memo:"슈퍼주니어 예성의 10주년 기념 투어 공연으로, iMe Malaysia가 주최합니다.", url:"https://klconcert.com/concert/yesung-10th-anniversary-tour-about-the-things-we-called-ordinary"}
+    ]
+  },
+  music: {
+    title: "Waltz for Debby", artist: "빌 에번스 트리오 (Bill Evans Trio)", year: "1962",
+    mood: "느지막이 일어난 일요일 아침의 피아노 트리오",
+    why: "1961년 6월 25일 뉴욕 빌리지 뱅가드에서 베이스 스콧 라파로, 드럼 폴 모션과 함께 녹음해 이듬해 같은 이름의 앨범으로 나온 연주로, 에번스가 조카를 그린 곡입니다. 맑은 피아노가 왈츠 리듬 위로 가볍게 흔들리니, 서두를 일 없는 일요일 아침 커피를 내리며 틀어 두기 좋습니다.",
+    query: "Bill Evans Trio Waltz for Debby"
+  },
+  fact: {
+    title: "10월 25일, 피카소의 아주 긴 이름", titleEn: "October 25, 1881: Picasso and His Very Long Name",
+    body: "1881년 10월 25일, 스페인 안달루시아의 말라가에서 파블로 피카소가 태어났습니다. 그의 세례명은 ‘Pablo Diego José Francisco de Paula Juan Nepomuceno María de los Remedios Cipriano de la Santísima Trinidad Ruiz y Picasso’로, 성 요셉과 파올라의 성 프란치스코, 네포무크의 성 요한 같은 여러 성인과 친척의 이름을 이어 붙인 것입니다. 끝의 루이스(Ruiz)는 아버지 쪽 성, 피카소(Picasso)는 어머니 쪽 성입니다.",
+    more: [
+      "아버지 호세 루이스 이 블라스코는 새와 사냥감을 사실적으로 그리던 화가로, 미술 교수이자 박물관 큐레이터였습니다.",
+      "어머니는 그가 처음 한 말이 연필을 뜻하는 스페인어 lápiz를 줄인 ‘피스, 피스(piz, piz)’였다고 전했습니다.",
+      "1901년 3월 31일 잡지 『아르테 호벤』 창간호가 나올 무렵부터 작품에 ‘Picasso’라고 서명하기 시작했고, 1973년 4월 8일 프랑스 무쟁에서 91세로 세상을 떠났습니다."
+    ],
+    src: [["Wikipedia: Pablo Picasso","https://en.wikipedia.org/wiki/Pablo_Picasso"]]
+  }
+},
+
+
+{
   date: "2026-10-24",
   quote: {
     ko: "젊어서는 어쩔 수 없이 신중해야 했던 그녀는, 나이가 들면서 낭만을 배웠다. 부자연스러운 시작이 낳은 자연스러운 결과였다.",
