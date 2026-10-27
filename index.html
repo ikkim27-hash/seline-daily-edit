@@ -569,6 +569,415 @@ const PHOTO = null; // 예: {src:"photo.jpg", caption:"한 줄 설명", date:"20
 /* ===== DAYS: 날짜별 콘텐츠. 최신 날짜가 맨 앞. 매일 새 객체를 맨 앞에 추가하고 14일치만 유지. ===== */
 const DAYS = [
 {
+ "date": "2026-10-28",
+ "quote": {
+  "ko": "마음이 불만스러울 때면, 네가 받은 복을 하나하나 헤아려 보고 감사하렴.",
+  "en": "When you feel discontented, think over your blessings, and be grateful.",
+  "by": "루이자 메이 올컷, 『작은 아씨들』 (1868)",
+  "pick": {
+   "kind": "책",
+   "title": "츠바키 문구점 (Tsubaki Bunguten, 2016) · 오가와 이토",
+   "gist": "도쿄에서 지내던 스물다섯 살 하토코는 자신이 자란 도시 가마쿠라로 돌아와, 세상을 떠난 할머니가 꾸려 온 작은 문구점을 내키지 않는 마음으로 이어받습니다. ‘포포’라는 애칭으로 불리는 그녀가 맡은 또 하나의 일은 편지 대필이어서, 동네 사람들은 연애편지와 이별 편지, 부고까지 저마다 직접 쓰지 못한 마음을 들고 가게 문을 엽니다. 남의 마음을 한 장의 편지로 옮겨 적는 동안, 이 소설은 곁에 있는 사람들과 지나간 시간이 얼마나 고마운 것이었는지를 서두르지 않고 조용히 비춰 줍니다.",
+   "after": "고마운 사람에게 짧은 편지 한 줄을 써 보는 일, 어쩌면 그것이 받은 복을 헤아리는 가장 다정한 방법일지도 모릅니다."
+  }
+ },
+ "english": {
+  "title": "마트에서 옛 동창을 우연히 만났을 때",
+  "titleEn": "Running Into an Old Classmate at the Grocery Store",
+  "situation": "동네 마트에서 고등학교 동창 B를 몇 년 만에 우연히 만난 A의 대화입니다. 반갑게 인사하고, 근황을 가볍게 주고받고, 다음 만남을 자연스럽게 약속하는 말투를 익혀 보세요.",
+  "lines": [
+   [
+    "A",
+    "No way. Jess? Is that you? It's been forever!",
+    "말도 안 돼. 제스? 너 맞아? 진짜 오랜만이다!"
+   ],
+   [
+    "B",
+    "Oh my gosh, Mike! I almost didn't recognize you. What are you doing in this neck of the woods?",
+    "어머, 마이크! 하마터면 못 알아볼 뻔했어. 이 동네엔 웬일이야?"
+   ],
+   [
+    "A",
+    "I actually just moved here last month. I'm still finding my way around.",
+    "사실 지난달에 여기로 이사 왔어. 아직 동네 지리 익히는 중이야."
+   ],
+   [
+    "B",
+    "That's so funny. I've lived around the corner for, like, three years now.",
+    "신기하다. 나는 바로 근처에 산 지 한 3년 됐어."
+   ],
+   [
+    "A",
+    "Small world. So what have you been up to? Last I heard, you were teaching.",
+    "세상 좁다. 그동안 어떻게 지냈어? 마지막으로 들은 소식은 네가 선생님 한다는 거였는데."
+   ],
+   [
+    "B",
+    "Still at it, believe it or not. Fourth graders keep me on my toes.",
+    "믿기 힘들겠지만 아직 하고 있어. 4학년 애들 덕에 정신없이 지내."
+   ],
+   [
+    "A",
+    "I bet. Hey, I don't want to hold you up, but we should grab coffee sometime and catch up.",
+    "그렇겠다. 저기, 바쁜데 붙잡고 싶진 않은데, 언제 커피 한잔하면서 밀린 얘기 하자."
+   ],
+   [
+    "B",
+    "I'd love that. Are you free this weekend? There's a great little café near the park.",
+    "좋지. 이번 주말에 시간 돼? 공원 근처에 괜찮은 작은 카페가 있어."
+   ],
+   [
+    "A",
+    "Saturday morning works for me. Let me grab your number.",
+    "토요일 오전 괜찮아. 번호 좀 알려 줘."
+   ],
+   [
+    "B",
+    "Sure. It was so good running into you. I'll text you the address.",
+    "그래. 이렇게 우연히 만나서 정말 반가웠어. 주소는 문자로 보낼게."
+   ]
+  ],
+  "expressions": [
+   {
+    "en": "run into (someone)",
+    "ko": "‘(누구를) 우연히 마주치다’. 약속하지 않았는데 길이나 가게에서 아는 사람을 만났을 때 씁니다. It was so good running into you.는 헤어질 때 ‘이렇게 만나서 반가웠어’라는 인사입니다.",
+    "eg": "I ran into my old roommate at the farmers market."
+   },
+   {
+    "en": "in this neck of the woods",
+    "ko": "‘이 동네, 이 근방’. 지역이나 동네를 가볍고 친근하게 가리키는 말로, What are you doing in this neck of the woods?는 ‘여긴 웬일이야?’라는 느낌입니다.",
+    "eg": "Are there any good pizza places in this neck of the woods?"
+   },
+   {
+    "en": "keep (someone) on (their) toes",
+    "ko": "‘긴장을 늦출 수 없게 하다, 정신없이 바쁘게 만들다’. 아이, 일, 반려동물처럼 계속 신경 쓰게 만드는 대상을 말할 때 자주 씁니다.",
+    "eg": "Having two puppies really keeps me on my toes."
+   },
+   {
+    "en": "hold (someone) up",
+    "ko": "‘(누구를) 붙잡아 두다, 늦어지게 하다’. I don't want to hold you up은 ‘바쁜데 붙잡고 있을까 봐’라며 대화를 부드럽게 마무리할 때 씁니다.",
+    "eg": "Sorry I'm late. Traffic held me up."
+   },
+   {
+    "en": "catch up",
+    "ko": "‘(못 만난 동안의) 밀린 이야기를 나누다’. 오랜만에 만나 서로의 근황을 주고받는다는 뜻으로, grab coffee and catch up처럼 자주 짝을 이룹니다.",
+    "eg": "Let's get dinner next week and catch up."
+   }
+  ],
+  "pattern": {
+   "en": "I don't want to ~, but ~",
+   "ko": "‘~하고 싶진 않은데, ~’. 상대에게 부담을 줄까 조심스러울 때 먼저 배려를 보여 주고 본론을 꺼내는 말투입니다. 부탁, 제안, 대화를 마무리할 때 두루 씁니다.",
+   "examples": [
+    [
+     "I don't want to <b>rush</b> you, but the <b>movie</b> starts at seven.",
+     "재촉하고 싶진 않은데, 영화 7시에 시작해."
+    ],
+    [
+     "I don't want to <b>bother</b> you, but could you <b>turn</b> the music down a little?",
+     "귀찮게 하고 싶진 않은데, 음악 소리 좀 줄여 줄 수 있어요?"
+    ],
+    [
+     "I don't want to <b>overstay</b> my welcome, but this was <b>really</b> fun.",
+     "너무 오래 눌러앉고 싶진 않은데, 오늘 정말 즐거웠어."
+    ]
+   ]
+  }
+ },
+ "news": [
+  {
+   "region": "말레이시아",
+   "tag": "생활 · 날씨",
+   "important": true,
+   "icon": "rain",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><circle cx=\"48\" cy=\"20\" r=\"10\"/><path d=\"M48 4v3M60 9l-2.5 2.5M64 21h-3M36 9l2.5 2.5\"/><path d=\"M14 40a9 9 0 0 1 4-17a12 12 0 0 1 22-3a9 9 0 0 1 10 9a8 8 0 0 1-2 11z\"/><path d=\"M21 46l-3 7M31 46l-3 7M41 46l-3 7\"/></g><path d=\"M48 4v3M60 9l-2.5 2.5M64 21h-3M36 9l2.5 2.5\" stroke=\"#C98B1E\" stroke-width=\"2\" stroke-linecap=\"round\"/><circle cx=\"48\" cy=\"20\" r=\"10\" fill=\"#F7D36B\" stroke=\"#8A5A12\" stroke-width=\"1.5\"/><path d=\"M14 40a9 9 0 0 1 4-17a12 12 0 0 1 22-3a9 9 0 0 1 10 9a8 8 0 0 1-2 11z\" fill=\"#E9EEF0\" stroke=\"#3B4A52\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><path d=\"M19 28q4-5 10-4\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M21 46l-3 7M31 46l-3 7M41 46l-3 7\" stroke=\"#4E8FB8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/>"
+   },
+   "title": "몬순 홍수 다음엔 더위, 1~3월 가뭄 대비해야",
+   "titleEn": "After the Monsoon Floods, MetMalaysia Warns of Heat and Dry Spells From Late January",
+   "lead": "말레이시아 기상청(MetMalaysia)이 10월 27일 시작된 북동 몬순 동안에는 홍수에, 몬순이 끝나 갈 무렵인 내년 1월 말~3월에는 더위와 물 부족에 대비하라고 당부했어요. 말레이시아에 사는 모두가 알아둘 이야기예요.",
+   "pts": [
+    "2026년 11월부터 2027년 1월 사이 큰비가 오래 이어지는 시기가 3~5차례 올 것으로 보고, 클란탄·트렝가누·파항·조호르 동부의 홍수 위험이 더 높다고 했어요",
+    "지금 강한 단계인 엘니뇨가 올해 말부터 내년에 걸쳐 ‘슈퍼 엘니뇨’로 커질 것으로 예상돼, 1월 말~3월에는 전국적으로 비가 줄고 덥고 건조해질 수 있대요",
+    "비가 줄면 폭염과 물 부족으로 가뭄이 올 수 있으니 공식 기상 정보와 경보를 따르고, 대피 명령에 따르며, 건조할 때는 노천 소각을 하지 말라고 했어요"
+   ],
+   "info": [
+    [
+     "시기",
+     "몬순 10월 27일 시작, 1월 말~3월 덥고 건조할 수 있어요"
+    ],
+    [
+     "홍수 위험",
+     "클란탄, 트렝가누, 파항, 조호르 동부"
+    ],
+    [
+     "말한 사람",
+     "MetMalaysia 국가기상지진운영센터 마크룬 파들리 모드 파미 선임국장"
+    ]
+   ],
+   "src": "Malay Mail (Bernama) · 10.27",
+   "url": "https://www.malaymail.com/news/malaysia/2026/10/27/first-the-floods-then-the-heat-metmalaysia-warns-of-challenging-months-ahead/240835"
+  },
+  {
+   "region": "말레이시아",
+   "tag": "축제",
+   "icon": "lantern",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><circle cx=\"36\" cy=\"31\" r=\"21\"/><circle cx=\"45.2\" cy=\"8.8\" r=\"2.2\"/><circle cx=\"58.2\" cy=\"21.8\" r=\"2.2\"/><circle cx=\"58.2\" cy=\"40.2\" r=\"2.2\"/><circle cx=\"45.2\" cy=\"53.2\" r=\"2.2\"/><circle cx=\"26.8\" cy=\"53.2\" r=\"2.2\"/><circle cx=\"13.8\" cy=\"40.2\" r=\"2.2\"/><circle cx=\"13.8\" cy=\"21.8\" r=\"2.2\"/><circle cx=\"26.8\" cy=\"8.8\" r=\"2.2\"/></g><g stroke=\"#4A2E1A\" stroke-width=\"1.3\"><ellipse cx=\"36\" cy=\"20\" rx=\"5\" ry=\"9\" transform=\"rotate(0 36 31)\" fill=\"#E07A92\"/><ellipse cx=\"36\" cy=\"20\" rx=\"5\" ry=\"9\" transform=\"rotate(45 36 31)\" fill=\"#F2B640\"/><ellipse cx=\"36\" cy=\"20\" rx=\"5\" ry=\"9\" transform=\"rotate(90 36 31)\" fill=\"#E07A92\"/><ellipse cx=\"36\" cy=\"20\" rx=\"5\" ry=\"9\" transform=\"rotate(135 36 31)\" fill=\"#F2B640\"/><ellipse cx=\"36\" cy=\"20\" rx=\"5\" ry=\"9\" transform=\"rotate(180 36 31)\" fill=\"#E07A92\"/><ellipse cx=\"36\" cy=\"20\" rx=\"5\" ry=\"9\" transform=\"rotate(225 36 31)\" fill=\"#F2B640\"/><ellipse cx=\"36\" cy=\"20\" rx=\"5\" ry=\"9\" transform=\"rotate(270 36 31)\" fill=\"#E07A92\"/><ellipse cx=\"36\" cy=\"20\" rx=\"5\" ry=\"9\" transform=\"rotate(315 36 31)\" fill=\"#F2B640\"/></g><circle cx=\"36\" cy=\"31\" r=\"6\" fill=\"#C8553D\" stroke=\"#4A2E1A\" stroke-width=\"1.3\"/><circle cx=\"36\" cy=\"31\" r=\"2.4\" fill=\"#F7D36B\"/><g fill=\"#2F6B5A\" stroke=\"#1F4A3E\" stroke-width=\".8\"><circle cx=\"45.2\" cy=\"8.8\" r=\"2.2\"/><circle cx=\"58.2\" cy=\"21.8\" r=\"2.2\"/><circle cx=\"58.2\" cy=\"40.2\" r=\"2.2\"/><circle cx=\"45.2\" cy=\"53.2\" r=\"2.2\"/><circle cx=\"26.8\" cy=\"53.2\" r=\"2.2\"/><circle cx=\"13.8\" cy=\"40.2\" r=\"2.2\"/><circle cx=\"13.8\" cy=\"21.8\" r=\"2.2\"/><circle cx=\"26.8\" cy=\"8.8\" r=\"2.2\"/></g>"
+   },
+   "title": "11월 14일 브릭필즈에서 전국 디파발리 잔치",
+   "titleEn": "Brickfields to Host the National Deepavali Celebration on November 14",
+   "lead": "국민통합부가 여는 전국 디파발리 축하 행사가 11월 14일(토) 쿠알라룸푸르 브릭필즈에서 열려요. 아침부터 밤까지 예술과 문화, 유산 프로그램이 이어진대요.",
+   "pts": [
+    "R. 유네스와란 국민통합부 부장관은 토요일이라 사람이 많이 올 것이라며 1만 명이 넘는 방문객을 예상했어요",
+    "아티스트들의 공연과 함께 ‘루마 말레이시아(Rumah Malaysia)’ 같은 전시가 마련돼요",
+    "안와르 이브라힘 총리가 행사 개막을 맡을 예정이에요"
+   ],
+   "info": [
+    [
+     "언제",
+     "11월 14일(토), 아침부터 밤까지"
+    ],
+    [
+     "어디",
+     "브릭필즈, 쿠알라룸푸르"
+    ],
+    [
+     "주최",
+     "국민통합부 (KPN)"
+    ]
+   ],
+   "src": "Malay Mail (Bernama) · 10.27",
+   "url": "https://www.malaymail.com/news/malaysia/2026/10/27/more-than-10000-visitors-expected-at-national-deepavali-celebration-in-brickfields-on-nov-14/240833"
+  },
+  {
+   "region": "말레이시아",
+   "tag": "스타트업",
+   "icon": "people",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M36 6c8 7 10 18 8 30h-16c-2-12 0-23 8-30z\"/><path d=\"M28 28l-8 11 9-2zM44 28l8 11-9-2z\"/><rect x=\"30\" y=\"35\" width=\"12\" height=\"5\"/><path d=\"M31 41q5 15 10 0z\"/><path d=\"M58 12l1.4 3.4 3.4 1.4-3.4 1.4-1.4 3.4-1.4-3.4-3.4-1.4 3.4-1.4z\"/></g><path d=\"M31 41q5 15 10 0z\" fill=\"#F2B640\" stroke=\"#C8553D\" stroke-width=\"1.3\" stroke-linejoin=\"round\"/><path d=\"M34 42q2 6 4 0z\" fill=\"#FFF3C8\"/><g stroke=\"#4A2E1A\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><path d=\"M28 28l-8 11 9-2zM44 28l8 11-9-2z\" fill=\"#C8553D\"/><path d=\"M36 6c8 7 10 18 8 30h-16c-2-12 0-23 8-30z\" fill=\"#FBF7EF\"/><path d=\"M31.2 13h9.6q-2-4-4.8-7q-2.8 3-4.8 7z\" fill=\"#C8553D\"/><rect x=\"30\" y=\"35\" width=\"12\" height=\"5\" rx=\"1\" fill=\"#8796A3\"/><circle cx=\"36\" cy=\"22\" r=\"4.2\" fill=\"#A9D9EC\"/></g><path d=\"M34.5 20.5l1.5-1\" stroke=\"#fff\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><path d=\"M58 12l1.4 3.4 3.4 1.4-3.4 1.4-1.4 3.4-1.4-3.4-3.4-1.4 3.4-1.4z\" fill=\"#F7D36B\" stroke=\"#8A5A12\" stroke-width=\"1.1\" stroke-linejoin=\"round\"/>"
+   },
+   "title": "말레이시아 스타트업 3곳, 서울·대구에서 한국 문 두드려",
+   "titleEn": "Three Malaysian Startups Court Korean Investors in Seoul and Daegu",
+   "lead": "한-아세안센터(ASEAN-Korea Centre)가 연 ‘2026 한-아세안 스타트업 위크’에 말레이시아 스타트업 세 곳이 참가해, 한국 투자자와 협력할 회사를 찾았어요.",
+   "pts": [
+    "Enygma AI는 드론, 360도 카메라, CCTV 영상에서 AI와 디지털 트윈 기술로 결함과 안전 위험을 찾아내는 회사로, FIX 미디어 어워드를 받았어요",
+    "Vendfun은 호텔 체크인·체크아웃과 객실 키를 처리하는 셀프 키오스크를 여러 나라에 180대 넘게 설치했고, Zircochem Resources는 물을 부으면 젤이 되는 생활용품 스틱 ‘BIOMÉ’를 선보였어요",
+    "아세안 10개국 스타트업 28곳이 참가해 10월 21~22일 대구의 ICT 융합 엑스포와 FIX 2026에서 전시하고 데모데이에서 사업을 발표했어요. 센터는 한국 투자자·액셀러레이터·기업과의 1:1 만남도 주선했어요"
+   ],
+   "info": [
+    [
+     "행사",
+     "2026 한-아세안 스타트업 위크 (10월 20~23일)"
+    ],
+    [
+     "장소",
+     "서울, 대구"
+    ],
+    [
+     "주최",
+     "한-아세안센터"
+    ]
+   ],
+   "src": "Bernama · 10.27",
+   "url": "https://www.bernama.com/en/world/news.php?id=2626210"
+  },
+  {
+   "region": "세계",
+   "tag": "자연",
+   "icon": "turtle",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M14 31q6-13 24-13q14 0 21 9q4 5 1 9q-3 4-9 3q-11 6-23 4q-11-2-14-12z\"/><path d=\"M16 30l-9-9 3 10-3 9z\"/><path d=\"M33 39q-3 8-9 10q9 1 13-7z\"/><path d=\"M10 54q8-4 16 0t16 0t16 0\"/></g><path d=\"M10 54q8-4 16 0t16 0t16 0\" fill=\"none\" stroke=\"#6FA6C2\" stroke-width=\"2\" stroke-linecap=\"round\"/><g stroke=\"#3B4A52\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><path d=\"M16 30l-9-9 3 10-3 9z\" fill=\"#A7B6BF\"/><path d=\"M14 31q6-13 24-13q14 0 21 9q4 5 1 9q-3 4-9 3q-11 6-23 4q-11-2-14-12z\" fill=\"#B9C6CE\"/><path d=\"M33 39q-3 8-9 10q9 1 13-7z\" fill=\"#A7B6BF\"/></g><path d=\"M19 36q14 6 30 3\" fill=\"none\" stroke=\"#E2E8EB\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M58 30q-3 3-7 2\" fill=\"none\" stroke=\"#3B4A52\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><circle cx=\"51\" cy=\"25\" r=\"1.6\" fill=\"#1B2321\"/><circle cx=\"51.5\" cy=\"24.5\" r=\".5\" fill=\"#fff\"/><circle cx=\"55.5\" cy=\"34\" r=\".7\" fill=\"#3B4A52\"/><circle cx=\"57.5\" cy=\"33\" r=\".7\" fill=\"#3B4A52\"/><path d=\"M26 22q6-3 12-3\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\".7\"/>"
+   },
+   "title": "팬벨트에 감긴 아기 듀공, 구조대 15명이 살렸어요",
+   "titleEn": "Fifteen Rescuers Free a Young Dugong Tangled in a Car Fanbelt",
+   "lead": "서호주 엑스머스 근처 와펫 크리크에서 자동차 고무 팬벨트에 몸이 감긴 어린 듀공을 서호주 생물다양성·보전·관광청(DBCA) 등 구조대 15명이 풀어 줬어요. 발견된 지 24시간도 안 돼 깊은 물로 돌아갔대요.",
+   "pts": [
+    "몸길이 약 2m의 어린 듀공으로, 퍼스 동물원과 시월드 재단 전문가에게 자문한 뒤 붙잡아 벨트를 잘라 냈어요",
+    "화물용 그물로 감싸 얕은 물에서 들어 올린 뒤 모래톱과 모래 갯벌을 건너 깊은 물로 옮겼고, 구조대는 개울 이름을 따 ‘와피’라고 불렀어요",
+    "헤엄쳐 가는 듀공에게 구조대는 이곳 전통 소유자인 바이융구 사람들의 말로 듀공을 뜻하는 ‘야디야라’를 외쳤어요. 엑스머스만은 샤크베이 다음으로 서호주에서 듀공이 많은 곳이에요"
+   ],
+   "info": [
+    [
+     "어디",
+     "와펫 크리크, 엑스머스 근처 (퍼스에서 북쪽으로 약 1,230km)"
+    ],
+    [
+     "구조",
+     "DBCA 등 15명"
+    ],
+    [
+     "듀공",
+     "세계적으로 취약종"
+    ]
+   ],
+   "src": "ABC News · 10.26",
+   "url": "https://www.abc.net.au/news/2026-10-26/rescuers-hoist-entangled-dugong-to-safety-exmouth-wa/107310186"
+  },
+  {
+   "region": "세계",
+   "tag": "영국 입시",
+   "icon": "school",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M30 7h12v4h-2v12l12 22q2 4-3 4H23q-5 0-3-4l12-22V11h-2z\"/><circle cx=\"56\" cy=\"16\" r=\"3.5\"/><circle cx=\"60\" cy=\"27\" r=\"2.4\"/></g><path d=\"M30 7h12v4h-2v12l12 22q2 4-3 4H23q-5 0-3-4l12-22V11h-2z\" fill=\"#FBF7EF\" stroke=\"#4A2E1A\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><path d=\"M26.6 33h18.8l5.4 11.5q1.2 2.5-1.8 2.5H23q-3 0-1.8-2.5z\" fill=\"#8ED1AE\" stroke=\"#2F5D49\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"31\" cy=\"40\" r=\"1.8\" fill=\"#fff\"/><circle cx=\"38\" cy=\"37\" r=\"1.3\" fill=\"#fff\"/><circle cx=\"41\" cy=\"42\" r=\"1.6\" fill=\"#fff\"/><path d=\"M33 15v8\" stroke=\"#B9AE97\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><circle cx=\"56\" cy=\"16\" r=\"3.5\" fill=\"#A9D9EC\" stroke=\"#4A2E1A\" stroke-width=\"1.2\"/><circle cx=\"60\" cy=\"27\" r=\"2.4\" fill=\"#8ED1AE\" stroke=\"#2F5D49\" stroke-width=\"1.1\"/>"
+   },
+   "title": "ESAT 1월 시험 접수, 오늘 밤 11시에 열려요",
+   "titleEn": "Booking for the January 2027 ESAT Opens Tonight",
+   "lead": "임페리얼·케임브리지·옥스퍼드·UCL이 일부 공학·과학 과정에 쓰는 입학시험 ESAT의 2027년 1월 시험 접수가 영국 시간 10월 28일(수) 오후 3시에 열릴 예정이에요. 말레이시아 시간으로는 오늘 밤 11시예요.",
+   "pts": [
+    "1월 시험은 2027년 1월 4~8일이에요. 옥스퍼드·케임브리지 지원자는 보통 대상이 아니고, 1월 마감 케임브리지 성인(mature) 칼리지 지원자와 1월 마감 옥스퍼드 파운데이션 이어 지원자만 예외예요",
+    "수학 1은 모두 보고, 대부분 생물·화학·물리·수학 2 가운데 두 과목을 더 봐요. 과목마다 40분에 객관식 27문항이고, 계산기와 사전은 쓸 수 없어요",
+    "영국·아일랜드 밖에서 보는 응시료는 133파운드예요. 점수는 과목별 1~9점(소수 첫째 자리)으로 나오고, 합격·불합격은 없어요"
+   ],
+   "info": [
+    [
+     "접수",
+     "10월 28일 오후 3시 (영국 시간) 예정, 시스템 점검으로 늦춰진 일정"
+    ],
+    [
+     "시험",
+     "2027년 1월 4~8일"
+    ],
+    [
+     "확인",
+     "과정마다 필요한 과목은 각 대학 과정 안내에서"
+    ]
+   ],
+   "src": "ESAT·TMUA 공식 안내",
+   "url": "https://esat-tmua.ac.uk/about-the-tests/esat-test/"
+  },
+  {
+   "region": "세계",
+   "tag": "과학",
+   "icon": "turtle",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M60 6a9 9 0 1 0 5 15a7.5 7.5 0 1 1-5-15z\"/><path d=\"M24 32l-10-8-6 8M24 37l-12-2-5 9M48 32l10-8 6 8M48 37l12-2 5 9M27 42l-8 7M45 42l8 7\" fill=\"none\"/><ellipse cx=\"36\" cy=\"36\" rx=\"14\" ry=\"12\"/></g><path d=\"M60 6a9 9 0 1 0 5 15a7.5 7.5 0 1 1-5-15z\" fill=\"#F7D36B\" stroke=\"#8A5A12\" stroke-width=\"1.3\" stroke-linejoin=\"round\"/><path d=\"M24 32l-10-8-6 8M24 37l-12-2-5 9M48 32l10-8 6 8M48 37l12-2 5 9M27 42l-8 7M45 42l8 7\" fill=\"none\" stroke=\"#4A2E1A\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M24 32l-10-8-6 8M24 37l-12-2-5 9M48 32l10-8 6 8M48 37l12-2 5 9M27 42l-8 7M45 42l8 7\" fill=\"none\" stroke=\"#9C6B45\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"36\" cy=\"36\" rx=\"14\" ry=\"12\" fill=\"#8C5A3A\" stroke=\"#4A2E1A\" stroke-width=\"1.5\"/><path d=\"M26 30q10-8 20 0\" fill=\"none\" stroke=\"#F2CF6B\" stroke-width=\"2\" stroke-linecap=\"round\"/><circle cx=\"30.5\" cy=\"37\" r=\"4.6\" fill=\"#3B2A1E\"/><circle cx=\"41.5\" cy=\"37\" r=\"4.6\" fill=\"#3B2A1E\"/><path d=\"M27.5 37q3 2.6 6 0M38.5 37q3 2.6 6 0\" fill=\"none\" stroke=\"#F5E4BA\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><circle cx=\"25\" cy=\"42\" r=\"1.6\" fill=\"#E07A92\" opacity=\".8\"/><circle cx=\"47\" cy=\"42\" r=\"1.6\" fill=\"#E07A92\" opacity=\".8\"/>"
+   },
+   "title": "깡충거미도 렘수면처럼 다리를 씰룩여요",
+   "titleEn": "Jumping Spiders Twitch in REM-Like Sleep, Study Finds",
+   "lead": "독일 본 대학의 행동생태학자 다니엘라 뢰슬러 등 연구팀이 깡충거미가 두 단계로 잠을 자는 모습을 밤새 영상으로 기록해, 10월 27일 학술지 PNAS에 발표했어요.",
+   "pts": [
+    "주인공은 호주 북부에 사는 몸길이 최대 10mm의 ‘포르티아 핌브리아타(Portia fimbriata)’로, 밤에는 작은 거미줄에 거꾸로 매달려 쉬어요",
+    "몸단장을 한 뒤 밤새 천천히 축 늘어지는 고요한 단계와, 다리를 오므리고 눈이 움직이며 씰룩이는 렘수면 같은 단계가 있었어요",
+    "큰 소리로 깨워 보니 잠든 사람처럼 반응이 느리거나 아예 없었고, 렘수면 같은 단계에서 가장 둔했어요. 시드니 대학의 토머스 화이트는 거미류의 잠에 대한 가장 완전한 행동 증거라고 평가했어요"
+   ],
+   "info": [
+    [
+     "학술지",
+     "PNAS (2026년 10월 27일)"
+    ],
+    [
+     "연구",
+     "다니엘라 뢰슬러 (본 대학), 나디아 가이거"
+    ],
+    [
+     "다음",
+     "퀸즐랜드 북부와 서호주에서 인공조명 등이 잠에 주는 영향을 현장 연구"
+    ]
+   ],
+   "src": "ABC News · 10.27",
+   "url": "https://www.abc.net.au/news/science/2026-10-27/jumping-spider-rem-sleep/107309370"
+  }
+ ],
+ "trend": {
+  "title": "금값 g당 503링깃, 코타바루 금은방에 사려는 손님 몰려",
+  "titleEn": "Gold Dips to RM503 a Gram, and Kota Bharu Shoppers Rush to Buy",
+  "asOf": "2026년 10월 27일 보도 기준",
+  "body": "10월 26일 금값이 g당 약 503링깃까지 내려가면서, 클란탄주 코타바루의 파사르 시티 카디자 주변 금은방에 장신구를 사려는 손님이 몰렸습니다. 이 주변 가게들은 g당 503~504링깃을 내걸었고, 한 손님은 가게에 온 사람 모두가 팔지 않고 사고 있었다고 전했습니다.",
+  "points": [
+   "45세 할리마 오스만 씨는 몇 주 동안 가격을 지켜보다 10월 27일 팔찌를 샀다며, 앞서 g당 600링깃 가까이 갔던 금값이 생각보다 크게 내렸다고 말했습니다.",
+   "30세 누르 아인 압둘 마나프 씨는 목걸이와 발찌를 사며, 금 장신구를 필요할 때 팔 수 있는 저축이자 투자로 여긴다고 했습니다.",
+   "뉴스트레이츠타임스(NST)의 앞선 보도에 따르면 클란탄의 한 달 금 판매량은 약 500kg으로 추정됩니다.",
+   "국제 금 현물 가격은 10월 26일 0.3% 올라 온스당 4,007.57달러를 기록했고, 직전 금요일에는 7월 20일 이후 가장 낮은 3,975달러로 마감했습니다."
+  ],
+  "src": [
+   [
+    "Malay Mail (2026.10.27)",
+    "https://www.malaymail.com/news/malaysia/2026/10/27/buy-low-sell-high-kelantan-shoppers-see-opportunity-as-gold-falls-to-rm503/240757"
+   ]
+  ]
+ },
+ "life": {
+  "title": "말레이시아에서 금 장신구 살 때 확인할 것",
+  "titleEn": "Buying Gold Jewellery in Malaysia: What to Check Before You Pay",
+  "intro": "금은방 진열장에 붙은 ‘916’ 표시부터 가격표에 빠진 세공비까지, 말레이시아에서 금 장신구를 살 때 알아두면 좋은 점을 스트레이츠 타임스 기사에서 골랐습니다. 금값이 내려 코타바루 금은방에 손님이 몰렸다는 소식이 나온 요즘 참고해 보세요.",
+  "tips": [
+   [
+    "916은 22K 금",
+    "916은 순금 함량이 91.6%인 22K 금을 뜻하며, 말레이시아와 싱가포르에서 장신구에 흔히 쓰는 기준입니다."
+   ],
+   [
+    "시세 따로, 세공비 따로",
+    "가게가 내건 금 시세에는 세공비가 들어 있지 않고, 세공비는 가게와 디자인의 복잡함에 따라 다릅니다. 그래서 시세만 보지 말고 세공비를 더한 최종 가격으로 비교하라고 기사는 조언합니다."
+   ],
+   [
+    "순도와 무게, 보석 포함 여부",
+    "금의 순도와 무게를 확인하고, 박힌 보석이 표시된 무게에 들어가 있는지도 물어보라고 합니다."
+   ],
+   [
+    "되팔 때의 조건",
+    "나중에 가게에 되팔 때 어떤 조건으로 사 주는지 미리 물어보는 것이 좋습니다. 금값은 오르내리고, 가게도 가격을 바꿀 수 있습니다."
+   ],
+   [
+    "작은 도시 가게가 더 쌀 때도",
+    "말레이시아 금세공·보석상 협회는 소매가를 정하지 않아 가게마다 값이 다릅니다. 운영비가 낮고 디자인과 포장이 단순한 작은 도시의 가게들이 쿠알라룸푸르 대형 체인보다 싸게 파는 경우가 있다고 합니다."
+   ]
+  ],
+  "src": [
+   [
+    "The Straits Times, Asia News Network (2026.08.20)",
+    "https://asianews.network/?p=295579"
+   ],
+   [
+    "Malay Mail (2026.10.27)",
+    "https://www.malaymail.com/news/malaysia/2026/10/27/buy-low-sell-high-kelantan-shoppers-see-opportunity-as-gold-falls-to-rm503/240757"
+   ]
+  ]
+ },
+ "shows": {
+    intro: "쿠알라룸푸르에서 지금 볼 수 있거나 곧 열리는 전시와 공연입니다.",
+    items: [
+      {kind:"전시", title:"로버트 라우션버그와 아시아 (Robert Rauschenberg and Asia)", when:"11월 1일까지", where:"일함 갤러리(ILHAM Gallery), 쿠알라룸푸르", memo:"홍콩 M+와 일함 갤러리가 함께 꾸린 전시로, 라우션버그와 아시아의 인연을 처음으로 종합해 보여 줍니다.", url:"https://ilhamgallery.com/exhibitions/robert-rauschenberg-and-asia/"},
+      {kind:"전시", title:"경계 없는 예술: 난양으로 가는 새 항해 (Art Without Boundaries — New Voyage to Nanyang)", when:"11월 11일까지", where:"루앙 트두(Ruang Teduh), 익스체인지 106, 툰 라작 익스체인지", memo:"대만 태생의 작가이자 큐레이터 빅토리아 루가 AI의 도움을 받아 만든 작품을 젊은 작가들의 작품과 함께 선보입니다.", url:"https://www.malaymail.com/news/life/2026/10/10/art-meets-algorithm-victoria-lu-explores-ai-and-human-creativity-at-kuala-lumpur-exhibition/238604"},
+      {kind:"클래식", title:"심포닉 스플렌더 (A Symphonic Splendour)", when:"10월 28일 오후 8시", where:"데완 필하모닉 페트로나스 (Dewan Filharmonik PETRONAS)", memo:"말레이시아 필하모닉 유스 오케스트라가 제라드 살롱가의 지휘로 쇼스타코비치 ‘축전 서곡’, 첼리스트 딜런 리 민 탕과 함께하는 차이콥스키 ‘로코코 주제에 의한 변주곡’, 하차투리안 ‘스파르타쿠스’ 모음곡 2번 등을 연주합니다.", url:"https://www.mpo.com.my/season-2026/a-symphonic-splendour"},
+      {kind:"클래식", title:"브라이언 탄 헌정 공연 (Tribute to Brian Tan with The klpac Orchestra)", when:"10월 30·31일 오후 8시 30분, 11월 1일 오후 3시", where:"KLPac 펜타스 1 (Pentas 1)", memo:"2006년 KLPac의 첫 커뮤니티 오케스트라를 세운 고(故) 브라이언 탄을 기리고 오케스트라의 20주년을 맞는 공연으로, 리 콕 렁이 지휘합니다.", url:"https://www.klpac.org/shows/tribute-to-brian-tan-with-the-klpac-orchestra/"},
+      {kind:"클래식", title:"보르네오의 울림: 알레나 무랑과 MPO (Beats of Borneo: Alena Murang with the MPO)", when:"10월 31일 오후 8시", where:"데완 필하모닉 페트로나스 (Dewan Filharmonik PETRONAS)", memo:"히로카미 준이치가 지휘하는 말레이시아 필하모닉이 라벨 ‘쿠프랭의 무덤’과 모차르트 교향곡 40번을 연주하고, 알레나 무랑이 추아의 사페 협주곡을 초연합니다.", url:"https://www.mpo.com.my/season-2026/beats-of-borneo-alena-murang-with-the-mpo"},
+      {kind:"K팝", title:"예성 10주년 투어 (YESUNG 10th Anniversary Tour: ABOUT THE THINGS WE CALLED ORDINARY)", when:"11월 7일 오후 8시", where:"제프 쿠알라룸푸르 (Zepp Kuala Lumpur)", memo:"슈퍼주니어 예성의 10주년 기념 투어 공연으로, iMe Malaysia가 주최합니다.", url:"https://klconcert.com/concert/yesung-10th-anniversary-tour-about-the-things-we-called-ordinary"},
+      {kind:"연극", title:"遙遠的東方有一群鬼 (The Ghosts Within)", when:"11월 12~15일 오후 8시, 14·15일 오후 3시", where:"KLPac 펜타스 2 (Pentas 2)", memo:"입센의 『유령』을 두 세대에 걸친 아시아 가족의 이야기로 다시 쓴 대만‑말레이시아 공동 제작 연극으로, 로 콕 만이 연출하고 중국어로 공연하며 영어 자막이 나옵니다.", url:"https://www.klpac.org/shows/%e9%81%99%e9%81%a0%e7%9a%84%e6%9d%b1%e6%96%b9%e6%9c%89%e4%b8%80%e7%be%a4%e9%ac%bc-the-ghosts-within/"}
+    ]
+  },
+ "music": {
+  "title": "River Flows in You",
+  "artist": "이루마 (Yiruma)",
+  "year": "2001",
+  "mood": "비 갠 수요일 아침",
+  "why": "2001년 앨범 『First Love』에 실린 피아노 소품으로, 잔잔한 물살처럼 같은 선율이 조금씩 모양을 바꾸며 흘러갑니다. 몬순 비가 그친 아침, 창문을 열고 커피를 내리며 틀어 두면 한 주의 한가운데가 한결 부드러워집니다.",
+  "query": "Yiruma River Flows in You"
+ },
+ "fact": {
+  "title": "10월 28일, 자유의 여신상이 제막된 날",
+  "titleEn": "October 28, 1886: The Statue of Liberty Is Dedicated",
+  "body": "1886년 10월 28일 오후, 뉴욕항의 베들로섬에서 그로버 클리블랜드 대통령이 주재한 가운데 자유의 여신상 제막식이 열렸습니다. 정식 이름은 ‘세계를 비추는 자유(Liberty Enlightening the World)’로, 프랑스 사람들이 미국에 보낸 선물입니다. 여신상은 프랑스 조각가 프레데리크 오귀스트 바르톨디가 디자인했고, 속을 받치는 철골 구조는 귀스타브 에펠이 설계해 지었습니다.",
+  "more": [
+   "그날 아침 뉴욕 시내 행진이 증권거래소 앞을 지날 때 사람들이 창밖으로 티커 테이프를 던졌는데, 이것이 ‘티커 테이프 퍼레이드’ 전통의 시작이 됐습니다.",
+   "얼굴을 덮은 프랑스 국기는 연설이 끝날 때 내릴 예정이었지만, 바르톨디가 연설 중 잠시 멈춘 틈을 끝으로 착각해 일찍 내렸고, 터져 나온 환호에 연설이 그대로 끝나 버렸습니다.",
+   "여신이 왼손에 든 석판에는 미국 독립선언일인 1776년 7월 4일이 로마 숫자 ‘JULY IV MDCCLXXVI’로 새겨져 있고, 구리 외피의 두께는 2.4mm에 불과합니다."
+  ],
+  "src": [
+   [
+    "Wikipedia: Statue of Liberty",
+    "https://en.wikipedia.org/wiki/Statue_of_Liberty"
+   ]
+  ]
+ }
+},
+
+{
  "date": "2026-10-27",
  "quote": {
   "ko": "나는 어딘가에 닿으려고 여행하지 않는다. 그저 가기 위해 간다. 나는 여행 그 자체를 위해 여행한다.",
