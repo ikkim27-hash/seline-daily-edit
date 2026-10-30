@@ -569,6 +569,448 @@ const PHOTO = null; // 예: {src:"photo.jpg", caption:"한 줄 설명", date:"20
 /* ===== DAYS: 날짜별 콘텐츠. 최신 날짜가 맨 앞. 매일 새 객체를 맨 앞에 추가하고 14일치만 유지. ===== */
 const DAYS = [
 {
+ "date": "2026-10-31",
+ "quote": {
+  "ko": "나른하고 꿈결 같은 기운이 그 땅 위에 드리워, 공기 속까지 스며 있는 듯하다.",
+  "en": "A drowsy, dreamy influence seems to hang over the land, and to pervade the very atmosphere.",
+  "by": "워싱턴 어빙, 『슬리피 할로의 전설』 (1820)",
+  "pick": {
+   "kind": "영화",
+   "title": "이웃집 토토로 (となりのトトロ · My Neighbor Totoro, 1988)",
+   "gist": "1950년대 일본의 시골, 열 살쯤 된 사츠키와 네 살배기 메이 자매가 대학교수인 아빠 다쓰오와 함께 낡은 집으로 이사 옵니다. 오래 입원해 있는 엄마의 병원과 가까운 곳이고, 집 근처 커다란 녹나무 속에는 숲의 정령 토토로가 살고 있습니다. 미야자키 하야오의 이 영화는 큰 사건 대신 바람과 빗소리, 숲의 공기를 천천히 보여 주며, 기다림 속에서도 세상의 신비를 알아보는 아이들의 눈을 다정하게 지켜봅니다.",
+   "after": "꿈결 같은 기운이 머무는 땅에서는, 어른이 서둘러 지나친 것들이 아이의 눈에 먼저 보입니다."
+  }
+ },
+ "english": {
+  "title": "주말 약속, 미안하게 미루자고 말하기",
+  "titleEn": "Taking a Rain Check on Weekend Plans",
+  "situation": "토요일 아침 파머스 마켓에 같이 가기로 한 친구 A에게, B가 갑자기 생긴 일로 약속을 미루자고 말하는 대화입니다. 미안한 마음을 전하고, 날짜를 다시 잡고, 상대의 배려에 고마워하는 말투를 익혀 보세요.",
+  "lines": [
+   [
+    "A",
+    "Hey, are we still on for the farmers market tomorrow morning?",
+    "저기, 내일 아침 파머스 마켓 가는 거 그대로 하는 거지?"
+   ],
+   [
+    "B",
+    "About that... I hate to do this, but can I take a rain check? My sister's flying in last minute.",
+    "그거 말인데… 이러기 정말 싫지만, 다음으로 미뤄도 될까? 언니가 갑자기 비행기 타고 온대."
+   ],
+   [
+    "A",
+    "Oh, no worries! That's a good reason. Is everything okay?",
+    "아, 괜찮아! 그럴 만하네. 별일은 없는 거지?"
+   ],
+   [
+    "B",
+    "Yeah, she found a cheap flight and just jumped on it. I'm kind of scrambling to get the guest room ready.",
+    "응, 싼 비행기 표를 보고 바로 잡았대. 손님방 치우느라 좀 정신없어."
+   ],
+   [
+    "A",
+    "Ha, I bet. Do you want to push it to next Saturday instead?",
+    "하하, 그렇겠다. 그럼 다음 주 토요일로 미룰까?"
+   ],
+   [
+    "B",
+    "Next Saturday should work. Let me double-check and get back to you tonight.",
+    "다음 주 토요일이면 될 것 같아. 한 번 더 확인하고 오늘 밤에 알려 줄게."
+   ],
+   [
+    "A",
+    "Sounds good. And hey, if she wants to tag along, the more the merrier.",
+    "좋아. 그리고 언니도 따라오고 싶으면 와. 사람 많을수록 좋지."
+   ],
+   [
+    "B",
+    "Aw, that's sweet. She'd probably love that. I'll run it by her.",
+    "어머, 고마워. 언니가 엄청 좋아할 거야. 한번 물어볼게."
+   ],
+   [
+    "A",
+    "Perfect. Just don't let her talk you out of the kettle corn this time.",
+    "좋아. 이번엔 언니가 말려도 캐틀콘은 꼭 사 먹자."
+   ],
+   [
+    "B",
+    "Deal. I owe you one for being so cool about this.",
+    "콜. 이렇게 쿨하게 넘어가 줘서 고마워, 신세 졌어."
+   ]
+  ],
+  "expressions": [
+   {
+    "en": "take a rain check",
+    "ko": "‘(초대나 약속을) 다음으로 미루다’. 원래는 비로 경기가 취소되면 다음에 쓰라고 주던 표에서 온 말로, 거절이 아니라 ‘다음에 꼭 하자’는 마음이 담겨 있습니다. Can I take a rain check?처럼 부드럽게 씁니다.",
+    "eg": "I'm wiped out tonight. Can I take a rain check on dinner?"
+   },
+   {
+    "en": "jump on ~",
+    "ko": "‘(좋은 기회를) 냉큼 잡다, 바로 달려들다’. 할인이나 좋은 조건을 보고 망설이지 않고 움직였을 때 씁니다. jump on it처럼 짧게도 자주 말합니다.",
+    "eg": "The tickets were half off, so I jumped on them."
+   },
+   {
+    "en": "push ~ to …",
+    "ko": "‘(약속이나 일정을) …로 미루다’. push back이라고도 하며, 날짜나 시간을 뒤로 옮길 때 일상에서 가장 자연스럽게 쓰는 말입니다.",
+    "eg": "Can we push lunch to one o'clock?"
+   },
+   {
+    "en": "tag along",
+    "ko": "‘(누구를) 따라가다, 끼어서 같이 가다’. 원래 계획에 없던 사람이 함께 갈 때 씁니다. Mind if I tag along?은 ‘나도 따라가도 돼?’라는 말입니다.",
+    "eg": "My little brother wants to tag along to the movies."
+   },
+   {
+    "en": "I owe you one",
+    "ko": "‘신세 졌어, 다음에 갚을게’. 상대가 부탁을 들어주거나 너그럽게 넘어가 줬을 때 가볍고 따뜻하게 고마움을 전하는 말입니다.",
+    "eg": "Thanks for picking me up. I owe you one."
+   }
+  ],
+  "pattern": {
+   "en": "I hate to do this, but ~?",
+   "ko": "‘이러기 정말 싫지만(미안하지만), ~해도 될까?’. 약속을 바꾸거나 부담스러운 부탁을 하기 전에 미안한 마음을 먼저 꺼내는 말입니다. 뒤에는 can I ~ / could you ~ 같은 부탁이 자주 옵니다.",
+   "examples": [
+    [
+     "I <b>hate</b> to do this, but can we <b>move</b> dinner to Friday?",
+     "미안한데, 저녁 금요일로 옮겨도 될까?"
+    ],
+    [
+     "I <b>hate</b> to do this, but could you <b>watch</b> the kids for an hour?",
+     "이런 부탁 정말 싫지만, 한 시간만 애들 좀 봐 줄 수 있어?"
+    ],
+    [
+     "I <b>hate</b> to do this, but I have to <b>cancel</b> on you again.",
+     "이러고 싶지 않은데, 또 약속을 취소해야 할 것 같아."
+    ]
+   ]
+  }
+ },
+ "news": [
+  {
+   "region": "말레이시아",
+   "tag": "교통",
+   "important": true,
+   "icon": "plane",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M9 40q-2-5 4-6l38-9q11-2 13 2t-8 7L18 44q-7 1-9-4z\"/><path d=\"M30 35l-9 16h7l15-19z\"/><path d=\"M15 36l-5-13h6l9 11z\"/></g><g stroke=\"#4A2E1A\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><path d=\"M15 36l-5-13h6l9 11z\" fill=\"#C8553D\"/><path d=\"M30 35l-9 16h7l15-19z\" fill=\"#2F6B5A\"/><path d=\"M9 40q-2-5 4-6l38-9q11-2 13 2t-8 7L18 44q-7 1-9-4z\" fill=\"#FBF7EF\"/><path d=\"M55 27q6-1 8 2l-7 2z\" fill=\"#A9D9EC\" stroke-width=\"1.1\"/></g><g fill=\"#A9D9EC\" stroke=\"#4A2E1A\" stroke-width=\".9\"><circle cx=\"24\" cy=\"36\" r=\"1.6\"/><circle cx=\"30\" cy=\"34.6\" r=\"1.6\"/><circle cx=\"36\" cy=\"33.2\" r=\"1.6\"/><circle cx=\"42\" cy=\"31.8\" r=\"1.6\"/><circle cx=\"48\" cy=\"30.4\" r=\"1.6\"/></g><path d=\"M12 41.5l44-10\" stroke=\"#C8553D\" stroke-width=\"1.4\"/><path d=\"M6 52h10M4 46h6\" stroke=\"#8FB8C9\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>"
+   },
+   "title": "1일까지 KLIA 가는 길 혼잡, 국제선은 3시간 전 도착",
+   "titleEn": "MotoGP Weekend: Allow Extra Time to Reach KLIA Through November 1",
+   "lead": "말레이시아항공이 10월 30일부터 11월 1일까지 KLIA에서 출발하는 승객에게 공항까지 시간을 넉넉히 잡으라고 안내했어요. 세팡 서킷에서 열리는 MotoGP(페트로나스 말레이시아 그랑프리 2026) 때문에 공항으로 가는 고속도로와 주변 도로가 막힐 것으로 봤어요.",
+   "pts": [
+    "국제선은 출발 최소 3시간 전, 국내선은 최소 2시간 전까지 공항에 도착하라고 했어요",
+    "국내선과 국제선 모두 체크인 카운터는 출발 60분 전에 닫아요",
+    "공항 진입로는 모두 열려 있고, 경찰의 실시간 교통 정보를 확인하고 KLIA 에크스프레스 열차를 타는 것도 권했어요"
+   ],
+   "info": [
+    [
+     "언제",
+     "10월 30일~11월 1일"
+    ],
+    [
+     "대상",
+     "KLIA에서 출발하는 말레이시아항공 승객"
+    ],
+    [
+     "원인",
+     "페트로나스 세팡 인터내셔널 서킷의 MotoGP"
+    ]
+   ],
+   "src": "Malay Mail · 10.30",
+   "url": "https://www.malaymail.com/news/malaysia/2026/10/30/klia-bound-this-weekend-malaysia-airlines-advises-using-klia-ekspres-amid-motogp-traffic/241268"
+  },
+  {
+   "region": "말레이시아",
+   "tag": "축제",
+   "icon": "lantern",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><ellipse cx=\"36\" cy=\"46\" rx=\"29\" ry=\"9\"/><circle cx=\"23\" cy=\"35\" r=\"11\"/><circle cx=\"49\" cy=\"35\" r=\"11\"/><circle cx=\"36\" cy=\"25\" r=\"11\"/><circle cx=\"59\" cy=\"12\" r=\"4\"/></g><ellipse cx=\"36\" cy=\"46\" rx=\"29\" ry=\"9\" fill=\"#FBF7EF\" stroke=\"#4A2E1A\" stroke-width=\"1.5\"/><ellipse cx=\"36\" cy=\"45\" rx=\"23\" ry=\"6\" fill=\"none\" stroke=\"#C8553D\" stroke-width=\"1.6\"/><g stroke=\"#8A5A12\" stroke-width=\"1.4\"><circle cx=\"23\" cy=\"35\" r=\"11\" fill=\"#E0A44A\"/><circle cx=\"49\" cy=\"35\" r=\"11\" fill=\"#E0A44A\"/><circle cx=\"36\" cy=\"25\" r=\"11\" fill=\"#EBB65A\"/></g><g fill=\"none\" stroke=\"#A9682A\" stroke-width=\"1.6\" stroke-dasharray=\"2.2 1.6\"><circle cx=\"23\" cy=\"35\" r=\"7.2\"/><circle cx=\"23\" cy=\"35\" r=\"3.4\"/><circle cx=\"49\" cy=\"35\" r=\"7.2\"/><circle cx=\"49\" cy=\"35\" r=\"3.4\"/><circle cx=\"36\" cy=\"25\" r=\"7.2\"/><circle cx=\"36\" cy=\"25\" r=\"3.4\"/></g><g stroke=\"#A9601E\" stroke-width=\"1\"><circle cx=\"16\" cy=\"48\" r=\"3.6\" fill=\"#F2B640\"/><circle cx=\"56\" cy=\"48\" r=\"3.6\" fill=\"#F2B640\"/></g><path d=\"M59 7l1.3 3.4 3.4 1.3-3.4 1.3-1.3 3.4-1.3-3.4-3.4-1.3 3.4-1.3z\" fill=\"#F7D36B\" stroke=\"#8A5A12\" stroke-width=\"1.1\" stroke-linejoin=\"round\"/>"
+   },
+   "title": "디파발리 앞두고, 전국 리틀 인디아가 북적여요",
+   "titleEn": "Saris, Sweets and Bazaars: Deepavali Buzz Builds Across Malaysia",
+   "lead": "11월 8일 디파발리를 앞두고 인도계 가정들이 전통 옷을 사고, 명절 과자를 만들고, 집을 꾸미느라 바빠요. 베르나마가 여러 주의 바자르와 가게를 돌아보고 전했어요.",
+   "pts": [
+    "스름반 리틀 인디아(잘란 다툭 리 퐁 이)의 디파발리 바자르에는 상인 140곳이 나왔고, 열흘 동안 약 3만 명이 찾을 것으로 봐요",
+    "조호르바루 잘란 웅쿠 푸안 바자르에서는 타르트, 수지, 무루쿠 같은 과자가 잘 팔린대요",
+    "쿠알라룸푸르 브릭필즈 리틀 인디아 상인들은 최근 비로 매출이 줄었지만 이번 주말 손님이 늘 것으로 기대해요"
+   ],
+   "info": [
+    [
+     "디파발리",
+     "11월 8일"
+    ],
+    [
+     "어디",
+     "브릭필즈(KL), 클랑, 스름반, 조호르바루 등"
+    ]
+   ],
+   "src": "Malay Mail (Bernama) · 10.30",
+   "url": "https://www.malaymail.com/news/malaysia/2026/10/30/saris-sweets-and-shopping-sprees-deepavali-buzz-builds-across-malaysia/241314"
+  },
+  {
+   "region": "말레이시아",
+   "tag": "음식",
+   "icon": "bowl",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><ellipse cx=\"36\" cy=\"40\" rx=\"29\" ry=\"13\"/></g><ellipse cx=\"36\" cy=\"40\" rx=\"29\" ry=\"13\" fill=\"#FBF7EF\" stroke=\"#4A2E1A\" stroke-width=\"1.5\"/><ellipse cx=\"36\" cy=\"39\" rx=\"23\" ry=\"9\" fill=\"#E9C5A0\" stroke=\"#C8553D\" stroke-width=\"1.4\"/><g stroke=\"#7A2E1A\" stroke-width=\"1.3\" stroke-linejoin=\"round\" fill=\"#C8553D\"><rect x=\"20\" y=\"31\" width=\"10\" height=\"8\" rx=\"3.5\"/><rect x=\"33\" y=\"34\" width=\"10\" height=\"8\" rx=\"3.5\"/><rect x=\"40\" y=\"28\" width=\"9\" height=\"7\" rx=\"3\"/><rect x=\"24\" y=\"39\" width=\"9\" height=\"7\" rx=\"3\"/></g><g stroke=\"#8A5A12\" stroke-width=\"1.1\" stroke-linejoin=\"round\" fill=\"#F7D36B\"><path d=\"M31 30l5-3 2 5z\"/><path d=\"M46 37l6-1-2 6z\"/><path d=\"M16 38l5-2 1 5z\"/></g><g stroke=\"#2F5D49\" stroke-width=\"1\" fill=\"#7DBF6A\"><path d=\"M35 44q3-2 6 0l-1 2.5q-2-1-4 0z\"/><path d=\"M50 31q3-1 5 1l-2 2q-1-1-3-.5z\"/></g><path d=\"M22 33q2-1.4 4-1M35 36q2-1.2 4-1\" stroke=\"#F5A28A\" stroke-width=\"1.2\" stroke-linecap=\"round\" fill=\"none\"/>"
+   },
+   "title": "몽키아라의 테오추 식당, 파인애플 탕수육이 일품",
+   "titleEn": "Teochew House in Mont Kiara Serves a Superb Sweet and Sour Pork",
+   "lead": "TRX에 있는 ‘어퍼 팰리스 테오추’의 캐주얼한 동생 가게 ‘테오추 하우스(Teochew House)’가 몽키아라 스텝스(Steppes)에 있어요. 말레이 메일의 리 캉 이가 직접 값을 내고 먹어 봤어요.",
+   "pts": [
+    "기자는 홍콩 파트너 훙스 델리커시스(Hung's Delicacies)에서 온 파인애플 탕수육(58링깃)을 시내 최고 수준으로 꼽았어요",
+    "굴죽(38.80링깃), 굴전(32.80링깃), 절인 무를 넣은 돼지고기 찜(58링깃) 같은 테오추 요리에 단골용 숨은 메뉴도 있어요",
+    "디저트는 세 가지뿐인데, 갓 간 아몬드 크림(15.80링깃)을 가장 좋은 선택으로 꼽았어요"
+   ],
+   "info": [
+    [
+     "어디",
+     "G-05-01, Steppes, No. 32, Jalan Kiara 3, Mont Kiara"
+    ],
+    [
+     "운영",
+     "매일 오전 11시~오후 3시, 오후 5시 30분~10시"
+    ],
+    [
+     "팁",
+     "붐비는 시간에는 예약하고 미리 주문해 두기"
+    ]
+   ],
+   "src": "Malay Mail · 10.30",
+   "url": "https://www.malaymail.com/news/eat-drink/2026/10/30/teochew-house-in-mont-kiaras-steppes-offers-finer-teochew-dishes-and-a-superb-sweet-and-sour-pork/241183"
+  },
+  {
+   "region": "말레이시아",
+   "tag": "이야기",
+   "icon": "people",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M22 6h10l8 22h-10zM50 6H40l-8 22h10z\"/><circle cx=\"36\" cy=\"40\" r=\"15\"/></g><g stroke=\"#4A2E1A\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><path d=\"M22 6h10l8 22h-10z\" fill=\"#2F6B5A\"/><path d=\"M50 6H40l-8 22h10z\" fill=\"#C8553D\"/><circle cx=\"36\" cy=\"40\" r=\"15\" fill=\"#F7D36B\" stroke=\"#8A5A12\"/></g><circle cx=\"36\" cy=\"40\" r=\"10.5\" fill=\"#DDA22F\" stroke=\"#B57F1C\" stroke-width=\"1.3\"/><path d=\"M36 33.5l2 4.3 4.6.5-3.4 3.1 1 4.6-4.2-2.4-4.2 2.4 1-4.6-3.4-3.1 4.6-.5z\" fill=\"#FFF3C8\" stroke=\"#8A5A12\" stroke-width=\"1\" stroke-linejoin=\"round\"/><path d=\"M26 34q3-5 8-6\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\".85\"/>"
+   },
+   "title": "말레이시아 의사, 세계 통증학회 첫 아시아인 회장",
+   "titleEn": "Malaysia's Dr Mary Suma Cardosa Becomes IASP's First Asian President",
+   "lead": "말레이시아의 마취과 의사 메리 수마 카르도사 박사가 국제통증연구학회(IASP) 50여 년 역사에서 처음으로 아시아인 회장이 됐어요. 30일 방콕에서 열린 2026 세계통증학회 폐막과 함께 취임했다고 베르나마가 전했어요.",
+   "pts": [
+    "임기는 2028년까지 2년이고, 영국의 앤드루 라이스에 이어 회장을 맡아요",
+    "1993년 보건부의 첫 급성 통증 진료 서비스를, 2000년 나라 첫 다학제 통증 클리닉을 세웠어요",
+    "2011년 ‘통증 없는 병원(Pain Free Hospital)’ 운동을 이끌었고, 같은 해 말레이시아 의사협회 첫 여성 회장이 됐어요"
+   ],
+   "info": [
+    [
+     "임기",
+     "2028년까지"
+    ],
+    [
+     "취임",
+     "2026 세계통증학회 폐막, 방콕"
+    ]
+   ],
+   "src": "Malay Mail (Bernama) · 10.30",
+   "url": "https://www.malaymail.com/news/malaysia/2026/10/30/malaysian-doctor-mary-suma-cardosa-makes-history-as-first-asian-to-lead-global-pain-research-body/241333"
+  },
+  {
+   "region": "세계",
+   "tag": "호주 유학",
+   "icon": "passport",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><rect x=\"15\" y=\"8\" width=\"34\" height=\"46\" rx=\"4\" transform=\"rotate(-8 32 31)\"/><circle cx=\"52\" cy=\"44\" r=\"10\"/></g><g transform=\"rotate(-8 32 31)\"><rect x=\"15\" y=\"8\" width=\"34\" height=\"46\" rx=\"4\" fill=\"#2F5D49\" stroke=\"#1E3B2F\" stroke-width=\"1.5\"/><rect x=\"15\" y=\"8\" width=\"5\" height=\"46\" rx=\"2\" fill=\"#24493F\"/><circle cx=\"34\" cy=\"26\" r=\"8\" fill=\"none\" stroke=\"#DFC585\" stroke-width=\"1.4\"/><path d=\"M26 26h16M34 18v16M28.5 21q5.5 2.5 11 0M28.5 31q5.5-2.5 11 0\" fill=\"none\" stroke=\"#DFC585\" stroke-width=\"1\"/><path d=\"M27 41h14M29 45h10\" stroke=\"#DFC585\" stroke-width=\"1.4\" stroke-linecap=\"round\"/></g><circle cx=\"52\" cy=\"44\" r=\"10\" fill=\"#FBF7EF\" fill-opacity=\".85\" stroke=\"#C8553D\" stroke-width=\"1.8\"/><circle cx=\"52\" cy=\"44\" r=\"6.5\" fill=\"none\" stroke=\"#C8553D\" stroke-width=\"1.1\" stroke-dasharray=\"2 1.5\"/><path d=\"M48.5 44.5l2.5 2.5 4.5-5\" fill=\"none\" stroke=\"#C8553D\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>"
+   },
+   "title": "호주 학생비자 재정 증명 개편안, 11월 23일 의견 마감",
+   "titleEn": "Australia Consults on Student Visa Finance Rules, With Submissions Closing November 23",
+   "lead": "호주 내무부(Department of Home Affairs)가 10월 30일 학생비자의 ‘진정한 학생(Genuine Student)’ 심사와 재정 능력 증명 방식을 바꾸는 협의안을 내놓았다고 더 파이 뉴스가 전했어요. 아직 정해진 것은 없어요.",
+   "pts": [
+    "심사 지침인 장관 지시 106(MD106)을 고쳐, 새 과정을 시작하는 학생과 이어서 공부하는 학생을 다르게 심사하는 안이 들어 있어요",
+    "예시 모델 네 가지 가운데 세 가지는 비자 신청 전에 본인 명의의 호주 은행 계좌에 돈을 넣어 두게 해요. 예를 들면 전체 과정 학비와 생활비의 50%를 최소 한 달 보유하는 식이에요",
+    "요구 금액 자체는 올리지 않고, 호주에서 일해서 벌 수입은 필수 비용으로 치지 않는다는 내용이에요"
+   ],
+   "info": [
+    [
+     "의견 마감",
+     "11월 23일"
+    ],
+    [
+     "대상",
+     "호주 학생비자를 준비하는 유학생과 교육기관"
+    ],
+    [
+     "확인",
+     "호주 내무부 협의 문서 (2026.10.30)"
+    ]
+   ],
+   "src": "The PIE News · 10.30",
+   "url": "https://thepienews.com/australia-consults-on-student-visa-overhaul-as-refusals-hit-key-markets/"
+  },
+  {
+   "region": "세계",
+   "tag": "자연",
+   "icon": "leaf",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><rect x=\"13\" y=\"8\" width=\"7\" height=\"40\" rx=\"3\"/><rect x=\"25\" y=\"12\" width=\"7\" height=\"36\" rx=\"3\"/><rect x=\"37\" y=\"6\" width=\"7\" height=\"42\" rx=\"3\"/><path d=\"M6 46q5-4 10 0t10 0 10 0 10 0 10 0 10 0v10H6z\"/><path d=\"M50 50q8-12 16 0z\"/></g><g stroke=\"#2F5D49\" stroke-width=\"1.4\" stroke-linejoin=\"round\" fill=\"#8DB66A\"><rect x=\"13\" y=\"8\" width=\"7\" height=\"40\" rx=\"3\"/><rect x=\"25\" y=\"12\" width=\"7\" height=\"36\" rx=\"3\"/><rect x=\"37\" y=\"6\" width=\"7\" height=\"42\" rx=\"3\"/></g><path d=\"M13 20h7M13 33h7M25 24h7M25 37h7M37 18h7M37 31h7\" stroke=\"#2F5D49\" stroke-width=\"1.4\"/><path d=\"M15 11v8M27 15v8M39 9v8\" stroke=\"#C7E0A8\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><path d=\"M44 18q6-4 9-2q-4 4-9 4z\" fill=\"#8DB66A\" stroke=\"#2F5D49\" stroke-width=\"1.1\"/><path d=\"M6 46q5-4 10 0t10 0 10 0 10 0 10 0 10 0v10H6z\" fill=\"#8FC3D6\" stroke=\"#2F5A6B\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><path d=\"M10 52q4-2 8 0M28 53q4-2 8 0\" fill=\"none\" stroke=\"#DCEFF5\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><path d=\"M50 50q8-12 16 0z\" fill=\"#E6DCCB\" stroke=\"#4A2E1A\" stroke-width=\"1.3\" stroke-linejoin=\"round\"/><path d=\"M58 50l-5-6M58 50v-8M58 50l5-6\" stroke=\"#9C8B73\" stroke-width=\"1\"/>"
+   },
+   "title": "대나무와 굴 껍데기로 바다를 막는 필리핀 섬",
+   "titleEn": "A Philippine Island Holds Back the Sea With Bamboo and Oyster Shells",
+   "lead": "필리핀 불라칸주 말롤로스시의 파마라완섬이 콘크리트 대신 대나무와 굴 껍데기로 밀려드는 바닷물에 맞서고 있다고 AFP가 전했어요. 약 3,000명이 사는 이 섬은 폭풍 해일과 지반 침하, 해수면 상승에 시달려 왔어요.",
+   "pts": [
+    "잔가지를 채운 대나무 말뚝이 물살을 늦춰 퇴적물을 모으고, 코코넛 섬유 자루에 굴 껍데기를 담은 방파제가 파도를 누그러뜨려요",
+    "마닐라만을 따라 약 14헥타르에 유지비를 포함해 7,000만 페소(약 440만 링깃)가 들었는데, 시장은 콘크리트 방벽이면 약 9,000만 페소가 들 것으로 봤어요",
+    "1단계는 2025년 말 끝났고, 주민들은 파도와 침수가 줄었다고 해요. 내년 과학 평가로 맹그로브를 심을 수 있을지 정해요"
+   ],
+   "info": [
+    [
+     "어디",
+     "파마라완섬, 말롤로스, 필리핀"
+    ],
+    [
+     "관리",
+     "대나무는 약 5년마다 갈아야 해요"
+    ]
+   ],
+   "src": "Malay Mail (AFP) · 10.30",
+   "url": "https://www.malaymail.com/news/life/2026/10/30/bamboo-and-oyster-shells-philippine-island-fights-rising-seas-with-nature-not-concrete/241085"
+  }
+ ],
+ "trend": {
+  "title": "말레이시아 해산물 국수 하이카랑, 항저우로",
+  "titleEn": "Malaysian Seafood Noodle Chain Hai Kah Lang Heads to Hangzhou",
+  "asOf": "2026년 10월 29일 보도 기준",
+  "body": "쿠알라룸푸르의 해산물 국수 체인 하이카랑(Hai Kah Lang)이 중국 항저우의 쇼핑몰 더 믹스씨(The Mixc)에 매장을 낸다는 소식이, 항저우 주민들이 샤오훙수(RedNote)에 올린 현수막 사진으로 알려졌다고 말레이 메일이 전했습니다. 미쉐, 차지, 하이디라오 같은 중국 F&B 브랜드가 말레이시아로 들어오는 흐름과는 반대 방향의 움직임입니다.",
+  "points": [
+   "첫 매장은 2022년 1월 쿠알라룸푸르 타만 체라스에서 열었고, 2025년 9월 싱가포르 푸난 쇼핑센터에 첫 해외 매장을 냈으며, 항저우는 두 번째 해외 시장이 됩니다.",
+   "타만 체라스 매장은 2023년 첫 미쉐린 가이드 쿠알라룸푸르·페낭에서 빕 구르망에 올랐고, 2026년판까지 그 자리를 지켰습니다.",
+   "메뉴는 국수 8가지와 국물 5가지로 짜여 있고, 창업자 스티븐 탄은 2024년 미쉐린 가이드 인터뷰에서 해산물의 약 99%가 사바, 인도네시아, 필리핀에서 매일 들여오는 자연산이라고 밝혔습니다.",
+   "항저우 매장의 개점 날짜 등 자세한 내용은 아직 발표되지 않았습니다."
+  ],
+  "src": [
+   [
+    "Malay Mail (2026.10.29)",
+    "https://www.malaymail.com/news/life/2026/10/29/newsmalaysia20261029malaysian-restaurant-chain-hai-kah-lang-spotted-heading-to-hangzhou-bucking-trend-of-inbound-chinese-fb-brands241178/241178"
+   ]
+  ]
+ },
+ "life": {
+  "title": "국물 추가 3링깃, 메뉴에 없으면 받을 수 없어요",
+  "titleEn": "Extra Charges at Malaysian Eateries Must Be on the Menu",
+  "intro": "국물을 더 달라는 손님에게 메뉴에 없는 3링깃을 받았다가 벌과금(컴파운드) 처분을 받은 라부안 식당 이야기가 30일 전해졌습니다. 말레이시아 식당에서 가격표를 볼 때 알아 두면 좋은 규칙을 이 기사에서 골랐습니다.",
+  "tips": [
+   [
+    "추가분도 값을 써 붙여야 해요",
+    "라부안의 한 식당은 밥과 국수 추가 요금은 적어 두었지만 국물 추가 값은 적지 않은 채 3링깃을 받았습니다. 메뉴와 모든 추가 요금은 빠짐없이, 분명하게, 잘 보이게 표시해야 합니다."
+   ],
+   [
+    "근거는 2020년 가격 표시 명령",
+    "2011년 가격통제·폭리방지법에 따른 ‘2020년 상품 가격 표시·서비스 요금 명령’이 근거입니다. 유죄가 되면 개인은 최대 5만 링깃, 회사는 최대 10만 링깃의 벌금을 물 수 있습니다."
+   ],
+   [
+    "가격표는 말레이어로, 값은 링깃으로",
+    "가격표는 말레이어로 쓰거나, 다른 언어를 쓸 때는 번역을 함께 붙여야 하고, 값은 링깃이나 센으로 표시해야 합니다."
+   ],
+   [
+    "주문 전에 값을 알 권리",
+    "소비자는 주문하거나 사기 전에 상품과 서비스의 값을 알 권리가 있습니다."
+   ],
+   [
+    "신고는 KPDN 공식 창구로",
+    "이번 건은 국내무역생계부(KPDN)의 e-Aduan 포털에 들어온 소비자 신고로 시작됐습니다. 표시가 안 된 곳을 보면 부처의 공식 민원 창구로 알릴 수 있습니다."
+   ]
+  ],
+  "src": [
+   [
+    "Malay Mail (2026.10.30)",
+    "https://www.malaymail.com/news/malaysia/2026/10/30/rm3-for-extra-soup-labuan-eatery-compounded-for-failing-to-display-charge-on-menu/241328"
+   ]
+  ]
+ },
+ "shows": {
+  "intro": "쿠알라룸푸르에서 지금 볼 수 있거나 곧 열리는 전시와 공연, 문화 행사입니다.",
+  "items": [
+   {
+    "kind": "전시",
+    "title": "로버트 라우션버그와 아시아 (Robert Rauschenberg and Asia)",
+    "when": "11월 1일까지",
+    "where": "일함 갤러리(ILHAM Gallery), 쿠알라룸푸르",
+    "memo": "홍콩 M+와 일함 갤러리가 함께 꾸린 전시로, 라우션버그와 아시아의 인연을 처음으로 종합해 보여 줍니다.",
+    "url": "https://ilhamgallery.com/exhibitions/robert-rauschenberg-and-asia/"
+   },
+   {
+    "kind": "전시",
+    "title": "경계 없는 예술: 난양으로 가는 새 항해 (Art Without Boundaries — New Voyage to Nanyang)",
+    "when": "11월 11일까지",
+    "where": "루앙 트두(Ruang Teduh), 익스체인지 106, 툰 라작 익스체인지",
+    "memo": "대만 태생의 작가이자 큐레이터 빅토리아 루가 AI의 도움을 받아 만든 작품을 젊은 작가들의 작품과 함께 선보입니다.",
+    "url": "https://www.malaymail.com/news/life/2026/10/10/art-meets-algorithm-victoria-lu-explores-ai-and-human-creativity-at-kuala-lumpur-exhibition/238604"
+   },
+   {
+    "kind": "문화",
+    "title": "말레이시아 한국문화원 개관 · K‑컬처 페스티벌 2026 (Korean Cultural Centre Malaysia · K-Culture Festival 2026)",
+    "when": "10월 30일 개관식, 11월 2일부터 일반 공개",
+    "where": "말레이시아 한국문화원, 142 Jalan Ampang, 쿠알라룸푸르",
+    "memo": "사비나미술관과 함께한 전시 ‘한복, 예술로 다시 태어나다’와 함께, 11월 2일부터 K팝·뷰티·춤·전통 음악·뮤지컬 프로그램이 이어집니다.",
+    "url": "https://www.thestar.com.my/lifestyle/culture/2026/10/26/korean-cultural-centre-in-malaysia-to-open-to-public-on-nov-2"
+   },
+   {
+    "kind": "클래식",
+    "title": "브라이언 탄 헌정 공연 (Tribute to Brian Tan with The klpac Orchestra)",
+    "when": "10월 30·31일 오후 8시 30분, 11월 1일 오후 3시",
+    "where": "KLPac 펜타스 1 (Pentas 1)",
+    "memo": "2006년 KLPac의 첫 커뮤니티 오케스트라를 세운 고(故) 브라이언 탄을 기리고 오케스트라의 20주년을 맞는 공연으로, 리 콕 렁이 지휘합니다.",
+    "url": "https://www.klpac.org/shows/tribute-to-brian-tan-with-the-klpac-orchestra/"
+   },
+   {
+    "kind": "클래식",
+    "title": "보르네오의 울림: 알레나 무랑과 MPO (Beats of Borneo: Alena Murang with the MPO)",
+    "when": "10월 31일 오후 8시",
+    "where": "데완 필하모닉 페트로나스 (Dewan Filharmonik PETRONAS)",
+    "memo": "히로카미 준이치가 지휘하는 말레이시아 필하모닉이 라벨 ‘쿠프랭의 무덤’과 모차르트 교향곡 40번을 연주하고, 알레나 무랑이 추아의 사페 협주곡을 초연합니다.",
+    "url": "https://www.mpo.com.my/season-2026/beats-of-borneo-alena-murang-with-the-mpo"
+   },
+   {
+    "kind": "K팝",
+    "title": "예성 10주년 투어 (YESUNG 10th Anniversary Tour: ABOUT THE THINGS WE CALLED ORDINARY)",
+    "when": "11월 7일 오후 8시",
+    "where": "제프 쿠알라룸푸르 (Zepp Kuala Lumpur)",
+    "memo": "슈퍼주니어 예성의 10주년 기념 투어 공연으로, iMe Malaysia가 주최합니다.",
+    "url": "https://klconcert.com/concert/yesung-10th-anniversary-tour-about-the-things-we-called-ordinary"
+   },
+   {
+    "kind": "연극",
+    "title": "遙遠的東方有一群鬼 (The Ghosts Within)",
+    "when": "11월 12~15일 오후 8시, 14·15일 오후 3시",
+    "where": "KLPac 펜타스 2 (Pentas 2)",
+    "memo": "입센의 『유령』을 두 세대에 걸친 아시아 가족의 이야기로 다시 쓴 대만‑말레이시아 공동 제작 연극으로, 로 콕 만이 연출하고 중국어로 공연하며 영어 자막이 나옵니다.",
+    "url": "https://www.klpac.org/shows/%e9%81%99%e9%81%a0%e7%9a%84%e6%9d%b1%e6%96%b9%e6%9c%89%e4%b8%80%e7%be%a4%e9%ac%bc-the-ghosts-within/"
+   }
+  ]
+ },
+ "music": {
+  "title": "Season of the Witch",
+  "artist": "도노반 (Donovan)",
+  "year": "1966",
+  "mood": "핼러윈 토요일 밤, 나른하고 어둑하게",
+  "why": "덜컥덜컥 이어지는 일렉트릭 기타 리듬 위로 건반과 베이스가 느슨하게 깔리며 어둑한 기운을 만드는, 1960년대 사이키델릭 포크 록의 한 곡입니다. 핼러윈 토요일 저녁, 창밖이 어두워질 무렵 불을 조금 낮추고 틀어 보세요.",
+  "query": "Donovan Season of the Witch"
+ },
+ "fact": {
+  "title": "10월 31일, 러시모어산 조각이 멈춘 날",
+  "titleEn": "October 31, 1941: Work on Mount Rushmore Comes to an End",
+  "body": "미국 사우스다코타주 러시모어산의 대통령 얼굴 조각은 1927년 10월 4일 깎기 시작해 1941년 10월 31일 작업을 마쳤습니다. 조지 워싱턴, 토머스 제퍼슨, 시어도어 루스벨트, 에이브러햄 링컨의 머리가 각각 높이 약 18m(60피트)로 새겨졌습니다. 원래는 머리부터 허리까지 새길 계획이었지만, 돈이 모자라 작업이 끝나면서 턱 아래까지 다듬어진 것은 워싱턴뿐입니다.",
+  "more": [
+   "조각가 거천 보글럼이 약 400명의 일꾼과 함께 작업을 이끌었고, 1941년 3월 그가 세상을 떠난 뒤에는 아들 링컨 보글럼이 이어받았습니다.",
+   "처음에는 루이스와 클라크 같은 서부의 영웅들을 새기자는 제안이 있었지만, 보글럼이 지역이 아닌 나라 전체의 기념물이어야 한다며 대통령을 고르자고 설득했습니다.",
+   "공사비는 98만 9,992.32달러였고, 단 한 명의 사망자도 없이 끝났습니다."
+  ],
+  "src": [
+   [
+    "Wikipedia: Mount Rushmore",
+    "https://en.wikipedia.org/wiki/Mount_Rushmore"
+   ]
+  ]
+ }
+},
+
+{
  "date": "2026-10-30",
  "quote": {
   "ko": "서로의 삶을 조금 덜 힘들게 해 주려는 것이 아니라면, 우리는 무엇을 위해 사는 걸까요?",
@@ -4799,6 +5241,7 @@ render();
   start();
 })();
 </script>
+
 
 </body>
 </html>
