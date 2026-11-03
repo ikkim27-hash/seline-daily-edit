@@ -569,6 +569,436 @@ const PHOTO = null; // 예: {src:"photo.jpg", caption:"한 줄 설명", date:"20
 /* ===== DAYS: 날짜별 콘텐츠. 최신 날짜가 맨 앞. 매일 새 객체를 맨 앞에 추가하고 14일치만 유지. ===== */
 const DAYS = [
 {
+ "date": "2026-11-04",
+ "quote": {
+  "ko": "나는 아무도 가 본 적 없는 세상의 한 자락을 두 눈으로 보며 타오르는 호기심을 채우고, 사람의 발자국이 한 번도 찍힌 적 없는 땅을 밟게 될지도 모릅니다.",
+  "en": "I shall satiate my ardent curiosity with the sight of a part of the world never before visited, and may tread a land never before imprinted by the foot of man.",
+  "by": "메리 셸리, 『프랑켄슈타인』 (1818)",
+  "pick": {
+   "kind": "영화",
+   "title": "더 디그 (The Dig, 2021) · 사이먼 스톤 감독",
+   "gist": "1939년 영국 서퍽의 서튼 후, 남편을 잃은 지주 이디스 프리티는 열두 살에 학교를 그만두고 혼자 발굴을 익힌 동네 사람 바실 브라운에게 자기 땅의 오래된 봉분을 파 달라고 부탁합니다. 주급 2파운드를 받으며 묵묵히 흙을 걷어 내던 그의 손끝에서, 땅속에 잠들어 있던 배 한 척과 그 안의 부장품이 모습을 드러냅니다. 영화는 전쟁의 그림자가 다가오는 여름, 흙 속에서 아주 오래된 시간과 마주한 사람들의 조용한 설렘을 서두르지 않고 따라갑니다.",
+   "after": "아무도 본 적 없는 것을 처음 보고 싶은 마음은 먼 북극의 얼음 위에도, 우리 집 마당의 흙 아래에도 똑같이 깃들어 있습니다."
+  }
+ },
+ "english": {
+  "title": "여행에서 돌아온 친구와 근황 나누기",
+  "titleEn": "Catching Up With a Friend Who Just Got Back From a Trip",
+  "situation": "오랜 여행을 마치고 돌아온 친구 B를 A가 반갑게 맞으며 여행 이야기를 묻는 대화입니다. 시차 적응, 시간이 금방 갔다는 말, 우연히 찾은 곳, 다음 만남을 약속하는 자연스러운 표현을 익혀 보세요.",
+  "lines": [
+   [
+    "A",
+    "Hey, look who's back! How was the trip?",
+    "어머, 누가 돌아왔나 봐! 여행은 어땠어?"
+   ],
+   [
+    "B",
+    "It was amazing. I'm still trying to get over the jet lag, though.",
+    "정말 좋았어. 근데 아직 시차 적응하느라 애쓰는 중이야."
+   ],
+   [
+    "A",
+    "I bet. You were gone for, what, two weeks?",
+    "그렇겠다. 얼마나 있었지, 2주쯤?"
+   ],
+   [
+    "B",
+    "Almost three. It totally flew by.",
+    "거의 3주. 시간이 완전 쏜살같이 갔어."
+   ],
+   [
+    "A",
+    "So what was the highlight? Tell me everything.",
+    "그래서 제일 좋았던 건 뭐야? 다 얘기해 줘."
+   ],
+   [
+    "B",
+    "Probably the food. We stumbled on this tiny place that wasn't even in the guidebook.",
+    "아마 음식일 거야. 가이드북에도 안 나온 작은 식당을 우연히 발견했거든."
+   ],
+   [
+    "A",
+    "That's the best kind. Did you get to relax at all, or was it nonstop?",
+    "그런 데가 제일 좋지. 좀 쉬긴 했어, 아니면 쉴 틈 없이 다녔어?"
+   ],
+   [
+    "B",
+    "A little of both. We packed a lot in, but we took it easy the last few days.",
+    "둘 다 조금씩. 일정은 빡빡하게 채웠는데, 마지막 며칠은 느긋하게 쉬었어."
+   ],
+   [
+    "A",
+    "Sounds like the perfect balance. You'll have to show me pictures.",
+    "딱 좋은 균형이네. 사진 꼭 보여 줘야 해."
+   ],
+   [
+    "B",
+    "For sure. Let's grab coffee this weekend and I'll fill you in.",
+    "물론이지. 이번 주말에 커피 한잔하면서 자세히 얘기해 줄게."
+   ]
+  ],
+  "expressions": [
+   {
+    "en": "get over (something)",
+    "ko": "‘~에서 회복하다, ~을 이겨 내다’. 감기나 시차, 실망처럼 한동안 나를 붙잡는 것에서 벗어날 때 씁니다. jet lag와 함께 아주 자주 쓰여요.",
+    "eg": "It took me a week to get over my cold."
+   },
+   {
+    "en": "fly by",
+    "ko": "‘(시간이) 쏜살같이 지나가다’. 즐겁거나 바쁜 시간이 생각보다 빨리 지나갔을 때 씁니다. Time flies와 비슷한 느낌이에요.",
+    "eg": "The weekend just flew by."
+   },
+   {
+    "en": "stumble on (something)",
+    "ko": "‘우연히 발견하다’. 찾으려던 게 아닌데 뜻밖에 좋은 곳이나 물건을 만났을 때 씁니다. stumble upon이라고도 해요.",
+    "eg": "We stumbled on a great little bookstore near the station."
+   },
+   {
+    "en": "pack a lot in",
+    "ko": "‘(짧은 시간에) 많은 것을 해치우다, 일정을 꽉 채우다’. 여행이나 하루 일정이 알찼다고 말할 때 잘 어울립니다.",
+    "eg": "We only had two days in the city, so we packed a lot in."
+   },
+   {
+    "en": "fill (someone) in",
+    "ko": "‘~에게 자세히 알려 주다, 그간의 이야기를 들려주다’. 상대가 놓친 소식이나 사정을 차근차근 설명해 줄 때 씁니다.",
+    "eg": "I missed the meeting. Can you fill me in?"
+   }
+  ],
+  "pattern": {
+   "en": "You'll have to ~",
+   "ko": "‘꼭 ~해 줘야 해요’. 원래는 ‘~해야 할 거예요’라는 뜻이지만, 친구 사이에서는 무언가를 권하거나 다음을 기약할 때 다정하게 조르는 말로 자주 씁니다.",
+   "examples": [
+    [
+     "You'll <b>have</b> to show me the <b>pictures</b>.",
+     "사진 꼭 보여 줘야 해요."
+    ],
+    [
+     "You'll <b>have</b> to try their <b>pancakes</b>.",
+     "거기 팬케이크는 꼭 먹어 봐야 해요."
+    ],
+    [
+     "You'll <b>have</b> to come over for <b>dinner</b> sometime.",
+     "언제 꼭 저녁 먹으러 와요."
+    ]
+   ]
+  }
+ },
+ "news": [
+  {
+   "region": "말레이시아",
+   "tag": "대학",
+   "icon": "school",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M20 27V41Q36 50 52 41V27L36 34Z\"/><path d=\"M8 22L36 10L64 22L36 34Z\"/><path d=\"M58 25V42\"/><path d=\"M55.5 42h5l1 7h-7z\"/></g><g stroke=\"#2A3138\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><path d=\"M20 27V41Q36 50 52 41V27L36 34Z\" fill=\"#3F4A55\"/><path d=\"M8 22L36 10L64 22L36 34Z\" fill=\"#4F5E6B\"/></g><path d=\"M23 30v9\" stroke=\"#5B6B78\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><path d=\"M15 21L36 12.5\" stroke=\"#fff\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\".5\"/><path d=\"M36 22L58 25V42\" fill=\"none\" stroke=\"#D9A441\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"36\" cy=\"22\" r=\"2.2\" fill=\"#F2CF6B\" stroke=\"#8A5A12\" stroke-width=\"1\"/><path d=\"M55.5 42h5l1 7h-7z\" fill=\"#F2CF6B\" stroke=\"#8A5A12\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/>"
+   },
+   "title": "QS 아시아 순위, 말레이시아 대학 8곳이 50위 안에",
+   "titleEn": "Malaysia Sets a Record in QS Asia 2027, With Eight Universities in the Top 50",
+   "lead": "QS 아시아 대학 순위 2027에서 말레이시아 대학 8곳이 50위 안에 들어 일본·한국과 나란히 섰어요. 사립대 12곳을 포함해 16곳이 역대 가장 높은 순위를 받았다고 말레이 메일이 전했어요.",
+   "pts": [
+    "말라야대(UM)가 17위로 국립대 가운데 가장 높고 9년 연속 20위 안을 지켰어요. 말레이시아국립대(UKM)는 처음으로 20위 안에 들었어요",
+    "사립대 중에는 테일러스대가 32위로 가장 높고, 선웨이대는 처음 50위 안에, INTI 국제대는 처음 100위 안에 들었어요",
+    "순위에 오른 말레이시아 대학은 55곳으로 아시아에서 여덟 번째로 많아요. 1위는 홍콩대, 2·3위는 베이징대와 칭화대예요"
+   ],
+   "info": [
+    [
+     "순위",
+     "QS 아시아 대학 순위 2027"
+    ],
+    [
+     "범위",
+     "26개 지역 1,722개 대학"
+    ]
+   ],
+   "src": "Malay Mail · 11.03",
+   "url": "https://www.malaymail.com/news/malaysia/2026/11/03/private-universities-steal-the-spotlight-as-malaysia-sets-a-historic-record-in-qs-asia-2027/241748"
+  },
+  {
+   "region": "말레이시아",
+   "tag": "유산",
+   "icon": "music",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M12 24Q14 48 34 50Q54 48 56 24Z\"/><ellipse cx=\"34\" cy=\"24\" rx=\"22\" ry=\"7\"/><path d=\"M50 14L63 5\"/><circle cx=\"48\" cy=\"15\" r=\"4.2\"/></g><path d=\"M12 24Q14 48 34 50Q54 48 56 24Z\" fill=\"#EFE9DC\" stroke=\"#4A2E1A\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><path d=\"M18 29L20 40M26 31L27 44M34 31V46M42 31L41 44M50 29L48 40\" stroke=\"#A8743E\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><path d=\"M15.5 36Q34 43 52.5 36\" fill=\"none\" stroke=\"#4E7FA8\" stroke-width=\"2\"/><ellipse cx=\"34\" cy=\"24\" rx=\"22\" ry=\"7\" fill=\"#E2BE7E\" stroke=\"#4A2E1A\" stroke-width=\"1.5\"/><ellipse cx=\"33\" cy=\"23.4\" rx=\"16\" ry=\"4.2\" fill=\"#F1D9A6\"/><path d=\"M18 34q4 8 12 11\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\".8\"/><path d=\"M50 14L63 5\" stroke=\"#4A2E1A\" stroke-width=\"4.2\" stroke-linecap=\"round\"/><path d=\"M50 14L63 5\" stroke=\"#B5783F\" stroke-width=\"2\" stroke-linecap=\"round\"/><circle cx=\"48\" cy=\"15\" r=\"4.2\" fill=\"#6B4A2B\" stroke=\"#2E1B0E\" stroke-width=\"1.3\"/><circle cx=\"46.8\" cy=\"13.8\" r=\"1.2\" fill=\"#fff\" opacity=\".6\"/>"
+   },
+   "title": "고무 수액 그릇으로 만드는 북, 장인은 세 사람뿐",
+   "titleEn": "Only Three Craftsmen Still Make Kelantan's Rebana Mangkuk",
+   "lead": "고무 수액을 받던 사기 그릇으로 몸통을 만드는 클란탄 전통 북 ‘르바나 망꾹(rebana mangkuk)’을 지금 만드는 사람은, 탄아 메라의 한 가족 세 사람뿐이라고 베르나마가 전했어요.",
+   "pts": [
+    "모하맛 하스불라 알링(43)과 삼촌 유소프 압둘라(79), 사촌 모하맛 사브리 유소프(46)가 만들어요",
+    "북면은 첨가물 없이 굳힌 천연 라텍스를 33~48겹 붙여 만들고, 한 겹마다 소리를 확인해요. 여섯 개 한 벌이 모두 같은 음을 내도록 맞춰요",
+    "북 하나에 약 일주일이 걸리고 값은 약 RM170이에요. 치고 싶어 하는 젊은이는 많지만 만들기를 배우려는 이는 드물대요"
+   ],
+   "info": [
+    [
+     "어디",
+     "클란탄주 탄아 메라"
+    ],
+    [
+     "연주",
+     "보통 12명이 함께 쳐요"
+    ]
+   ],
+   "src": "Malay Mail (Bernama) · 11.03",
+   "url": "https://www.malaymail.com/news/life/2026/11/03/a-traditional-malaysian-drum-three-craftsmen-and-a-race-against-time/241774"
+  },
+  {
+   "region": "말레이시아",
+   "tag": "음식",
+   "icon": "bowl",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M48 30L52 12H60L64 30Z\"/><ellipse cx=\"30\" cy=\"42\" rx=\"23\" ry=\"10\"/><path d=\"M19 40Q22 29 30 29Q38 29 41 40Z\"/></g><path d=\"M48 30L52 12H60L64 30Z\" fill=\"#C8553D\" stroke=\"#4A2E1A\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><path d=\"M53.5 19h5M52.6 23h7\" stroke=\"#F5E4BA\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><ellipse cx=\"30\" cy=\"42\" rx=\"23\" ry=\"10\" fill=\"#FBF7EF\" stroke=\"#3F4A55\" stroke-width=\"1.5\"/><ellipse cx=\"30\" cy=\"41.5\" rx=\"16\" ry=\"6.2\" fill=\"#EDE6D6\" stroke=\"#B9C0C8\" stroke-width=\"1\"/><path d=\"M36 41Q44 31 52 35Q46 43 36 41Z\" fill=\"#5FAE84\" stroke=\"#2F5D49\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><path d=\"M19 40Q22 29 30 29Q38 29 41 40Z\" fill=\"#fff\" stroke=\"#3F4A55\" stroke-width=\"1.3\" stroke-linejoin=\"round\"/><circle cx=\"25\" cy=\"37.5\" r=\"2.4\" fill=\"#C8553D\"/><circle cx=\"31\" cy=\"35\" r=\"1.6\" fill=\"#F2CF6B\"/>"
+   },
+   "title": "렘바융 예약, 이제 그랩 앱에서 해요",
+   "titleEn": "Rembayung Moves Table Bookings to Grab Dine Out to Beat Scalpers",
+   "lead": "카이룰 아밍의 캄풍 바루 식당 ‘렘바융(Rembayung)’이 예약을 싹쓸이하는 암표상을 막으려고, 테이블 예약을 그랩의 ‘다인 아웃(Dine Out)’으로 옮겼어요.",
+   "pts": [
+    "매장 식사는 3~8명이 예약할 수 있고, 아이와 아기도 한 명으로 세요. 이용 시간은 1시간 45분이에요",
+    "자리는 15분만 잡아 두고, 늦으면 환불 없이 자동 취소돼요. 스크린숏은 안 되고 구매 증빙을 입구 직원에게 직접 보여 줘야 해요",
+    "예약 양도와 자리 바꾸기는 금지이고, 결제는 카드와 QR 같은 현금 없는 방식만 받아요"
+   ],
+   "info": [
+    [
+     "예약",
+     "그랩 앱 ‘Dine Out’에서 Rembayung 검색"
+    ],
+    [
+     "포장",
+     "오후 12시 45분~6시 45분 사이 예약"
+    ]
+   ],
+   "src": "Malay Mail · 11.03",
+   "url": "https://www.malaymail.com/news/life/2026/11/03/tired-of-battling-scalpers-for-a-table-at-rembayung-khairul-aming-is-turning-to-grab/241765"
+  },
+  {
+   "region": "말레이시아",
+   "tag": "생활 · 도시",
+   "icon": "people",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M7 24L11 14H61L65 24Z\"/><path d=\"M14 24V48M36 24V48M58 24V48\"/><rect x=\"6\" y=\"47\" width=\"60\" height=\"6\" rx=\"1.5\"/><path d=\"M20 5l-2 4M36 3l-2 4M52 5l-2 4\"/></g><path d=\"M20 5l-2 4M36 3l-2 4M52 5l-2 4\" stroke=\"#4E9CC2\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M14 24V48M36 24V48M58 24V48\" stroke=\"#3F4A55\" stroke-width=\"4.4\" stroke-linecap=\"round\"/><path d=\"M14 24V48M36 24V48M58 24V48\" stroke=\"#B9C0C8\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"6\" y=\"47\" width=\"60\" height=\"6\" rx=\"1.5\" fill=\"#D9C49A\" stroke=\"#4A2E1A\" stroke-width=\"1.3\"/><path d=\"M18 47v6M30 47v6M42 47v6M54 47v6\" stroke=\"#B59A6B\" stroke-width=\"1.1\"/><path d=\"M7 24L11 14H61L65 24Z\" fill=\"#2F6B5A\" stroke=\"#1F3F35\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><path d=\"M20 14.5L18.5 23.5M30 14.5L29.5 23.5M42 14.5L42.5 23.5M52 14.5L53.5 23.5\" stroke=\"#5FAE84\" stroke-width=\"1.2\"/><path d=\"M7 24H65\" stroke=\"#1F3F35\" stroke-width=\"1.5\"/>"
+   },
+   "title": "KL에 지붕 덮인 보행로 22km 생긴다",
+   "titleEn": "KL to Get 22km of Covered Walkways From January 2027",
+   "lead": "한나 여 총리실 장관(연방직할구 담당)이 11월 2일 의회에서, 쿠알라룸푸르에 지붕 있는 보행로 22km를 짓는 RM5,500만 사업이 이르면 2027년 1월 시작된다고 밝혔어요.",
+   "pts": [
+    "의회 선거구마다 2km씩 배정되고, 쿠알라룸푸르 시청(DBKL)이 맡아 2027년 3분기 완공을 목표로 해요",
+    "주택가와 버스 정류장, 보건소, 상업 지역, 예배 장소를 이어 걷거나 대중교통을 타도록 하려는 사업이에요",
+    "DBKL은 도심에도 20km의 지붕 보행로를 지어 대중교통과 보타닉 가든, 티티왕사 호수공원 등을 이을 계획이에요"
+   ],
+   "info": [
+    [
+     "착공",
+     "이르면 2027년 1월"
+    ],
+    [
+     "완공",
+     "2027년 3분기 목표"
+    ]
+   ],
+   "src": "Malay Mail · 11.02",
+   "url": "https://www.malaymail.com/news/malaysia/2026/11/02/kl-to-get-22km-of-covered-walkways-under-rm55m-project-from-jan-2027-says-hannah-yeoh/241720"
+  },
+  {
+   "region": "세계",
+   "tag": "영국 유학",
+   "icon": "passport",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><rect x=\"18\" y=\"6\" width=\"32\" height=\"46\" rx=\"3\"/><circle cx=\"52\" cy=\"42\" r=\"10\"/></g><rect x=\"18\" y=\"6\" width=\"32\" height=\"46\" rx=\"3\" fill=\"#2F4A6B\" stroke=\"#1E2F44\" stroke-width=\"1.5\"/><path d=\"M22.5 6.8V51.2\" stroke=\"#1E2F44\" stroke-width=\"1.2\"/><circle cx=\"35\" cy=\"23\" r=\"6.5\" fill=\"none\" stroke=\"#F2CF6B\" stroke-width=\"1.5\"/><path d=\"M35 16.5V29.5M28.5 23h13\" stroke=\"#F2CF6B\" stroke-width=\"1.1\"/><ellipse cx=\"35\" cy=\"23\" rx=\"3\" ry=\"6.5\" fill=\"none\" stroke=\"#F2CF6B\" stroke-width=\"1.1\"/><path d=\"M28 37h14M30 41h10\" stroke=\"#F2CF6B\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><circle cx=\"52\" cy=\"42\" r=\"10\" fill=\"#FBF7EF\" stroke=\"#C8553D\" stroke-width=\"2\"/><circle cx=\"52\" cy=\"42\" r=\"6.6\" fill=\"none\" stroke=\"#C8553D\" stroke-width=\"1.2\" stroke-dasharray=\"2 1.6\"/><path d=\"M48.5 42l2.6 2.8 4.6-5.4\" fill=\"none\" stroke=\"#C8553D\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>"
+   },
+   "title": "영국 HPI 비자, 세계 상위 150개 대학 졸업생으로 확대",
+   "titleEn": "UK to Open the High Potential Individual Visa to Graduates of the Top 150 Universities",
+   "lead": "영국 정부가 2026년 예산안에서, 세계 상위권 대학 졸업생이 일자리 제안 없이 영국에 머물 수 있는 ‘고급 인재(HPI) 비자’ 대상을 상위 80곳에서 150곳 졸업생으로 넓힌다고 밝혔어요.",
+   "pts": [
+    "HPI 비자는 2022년에 생겼고, 졸업생은 2년(박사는 3년) 머물 수 있어요. 일자리 제안이나 후원자가 필요 없어요",
+    "대상은 THE·QS·ARWU 가운데 두 곳 이상에서 100위 안에 든 영국 밖 대학을 모은 ‘글로벌 대학 목록’이에요. 새로 들어갈 대학은 아직 발표되지 않았어요",
+    "연 8,000건인 신청 한도도 비례해 늘린다고 했지만, 새 한도와 시행일은 내무부가 ‘추후’ 알리기로 했어요"
+   ],
+   "info": [
+    [
+     "대상",
+     "영국 밖 상위권 대학 졸업생"
+    ],
+    [
+     "시행",
+     "미정 (영국 내무부 후속 안내)"
+    ],
+    [
+     "확인",
+     "GOV.UK의 HPI 비자 공식 안내"
+    ]
+   ],
+   "src": "The PIE News · 11.02",
+   "url": "https://thepienews.com/uk-to-raise-hpi-visa-cap-as-eligibility-expands-to-top-150-universities/"
+  },
+  {
+   "region": "세계",
+   "tag": "과학",
+   "icon": "news",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><circle cx=\"14\" cy=\"22\" r=\"6.5\"/><circle cx=\"14\" cy=\"34\" r=\"6.5\"/><circle cx=\"58\" cy=\"22\" r=\"6.5\"/><circle cx=\"58\" cy=\"34\" r=\"6.5\"/><rect x=\"14\" y=\"23\" width=\"44\" height=\"10\"/><ellipse cx=\"44\" cy=\"48\" rx=\"9.5\" ry=\"6\"/><ellipse cx=\"25\" cy=\"50\" rx=\"6.5\" ry=\"4.2\"/></g><g fill=\"#F1E3C4\" stroke=\"#6B4A2B\" stroke-width=\"1.5\"><circle cx=\"14\" cy=\"22\" r=\"6.5\"/><circle cx=\"14\" cy=\"34\" r=\"6.5\"/><circle cx=\"58\" cy=\"22\" r=\"6.5\"/><circle cx=\"58\" cy=\"34\" r=\"6.5\"/></g><rect x=\"13\" y=\"23.5\" width=\"46\" height=\"9\" fill=\"#F1E3C4\"/><path d=\"M15 23H57M15 33H57\" stroke=\"#6B4A2B\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M22 26.5h14M42 29.5h8\" stroke=\"#D2B98A\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><ellipse cx=\"44\" cy=\"48\" rx=\"9.5\" ry=\"6\" fill=\"#C8553D\" stroke=\"#7A2A1E\" stroke-width=\"1.5\"/><ellipse cx=\"44\" cy=\"48\" rx=\"5\" ry=\"2.8\" fill=\"#A63A2B\"/><ellipse cx=\"25\" cy=\"50\" rx=\"6.5\" ry=\"4.2\" fill=\"#D9694F\" stroke=\"#7A2A1E\" stroke-width=\"1.3\"/><ellipse cx=\"25\" cy=\"50\" rx=\"3.2\" ry=\"1.8\" fill=\"#B5462F\"/>"
+   },
+   "title": "1억 1,500만 년 된 공룡 뼈에서 ‘피’의 흔적",
+   "titleEn": "Traces of Blood Molecules Found in a 115-Million-Year-Old Dinosaur Bone",
+   "lead": "커틴대 클리티 그리스 교수가 이끈 국제 연구팀이 브라질의 깃털 공룡 아라타사우루스(Aratasaurus museunacionali) 뒷다리뼈에서, 헤모글로빈 속 철 분자 ‘헴(heme)’의 흔적을 찾았다고 ABC가 전했어요.",
+   "pts": [
+    "약 1억 1,500만 년 전 미생물 매트 위에서 죽은 공룡으로, 2008년 브라질 북동부 광산에서 뼈가 나왔어요. 네 살쯤, 34kg, 머리부터 꼬리까지 3.1m였대요",
+    "헴은 뼈 혈관 통로 속 타원형 구조 안에서 나왔고, 연구팀은 화석 혈구에서 헴을 찾은 건 처음이라고 했어요. 고대 DNA는 나오지 않았어요",
+    "다른 학자들은 온전한 세포가 아니라 광물로 남은 흔적이라며, 정말 적혈구인지는 아직 확신하지 못한다고 했어요"
+   ],
+   "info": [
+    [
+     "논문",
+     "미국국립과학원회보(PNAS)"
+    ],
+    [
+     "다음 연구",
+     "샤크베이 미생물 매트로 사람 피를 광물화하는 실험"
+    ]
+   ],
+   "src": "ABC News · 11.03",
+   "url": "https://www.abc.net.au/news/science/2026-11-03/signs-of-mineralised-molecules-from-dinosaurs-red-blood-cell/107335770"
+  }
+ ],
+ "trend": {
+  "cat": "세계 트렌드 · 브랜드",
+  "title": "남자들은 외모를 더 챙기는데, ‘남성용’은 덜 산다",
+  "titleEn": "Men Care More About Their Looks but Skip 'For Men' Products",
+  "asOf": "2026년 10월 31일 보도 기준",
+  "body": "시장조사 기업 닐슨IQ(NIQ)가 남성 뷰티 보고서 ‘허락의 간극(The Permission Gap)’을 내고, 외모를 중요하게 여기는 남성은 늘었지만 ‘남성용’을 내세운 브랜드는 시장 전체보다 덜 자랐다고 밝혔습니다. NIQ는 브랜드가 ‘남성용’ 라벨보다 남성이 무언가를 사는 이유와 필요에 집중해야 한다고 짚었습니다.",
+  "points": [
+   "남성의 36%는 피부 관리를 포함해 외모를 가꾸는 일이 5년 전보다 중요해졌다고 답했으며, 인도 69%, 멕시코 63%, 아랍에미리트 57%로 높고 영국 22%, 독일 17%로 낮았습니다.",
+   "57개국에서 남성을 겨냥한 브랜드는 3% 성장해, 뷰티·퍼스널 케어 전체 성장률 7%에 못 미쳤습니다.",
+   "서유럽 10개 시장에서 성별 구분 없는 스킨케어는 1년 새 7% 늘었지만, 남성용 스킨케어는 제자리였습니다.",
+   "온라인에서 남성들은 성분과 효과를 내세운 브랜드를 사고 있으며, 더모코스메틱과 K뷰티가 그 예로 꼽혔습니다."
+  ],
+  "src": [
+   [
+    "Malay Mail (NIQ 발표, 2026.10.31)",
+    "https://www.malaymail.com/news/life/2026/10/31/men-care-more-about-looks-but-are-skipping-for-men-products-survey-finds/241354"
+   ]
+  ]
+ },
+ "life": {
+  "cat": "과학 이야기",
+  "title": "6년째 한 아이만 노리는 까치, 얼굴을 기억한다",
+  "titleEn": "The Magpie That Has Held a Grudge Against One Boy for Six Years",
+  "intro": "호주에서는 봄마다 둥지 근처를 지나는 사람을 덮치는 까치(magpie)가 늘 화제입니다. 빅토리아주 북동부의 열두 살 루이스는 6년째 같은 새에게 쫓기고 있는데, 전문가는 이 새들이 사람 얼굴을 꽤 오래 기억한다고 설명합니다.",
+  "tips": [
+   [
+    "6년째 이어진 악연",
+    "집 근처에 둥지를 튼 까치가 봄마다 루이스만 골라 덮칩니다. 자전거를 타다 처음 공격당했고, 몸을 지키려고 빗자루로 새를 친 뒤로 더 심해졌습니다."
+   ],
+   [
+    "얼굴을 30개쯤 기억",
+    "그리피스대 대릴 존스 명예교수는 까치가 얼굴을 30개 정도까지 기억할 수 있고, 멀릿 머리처럼 눈에 띄는 모습은 알아보기가 더 쉽다고 말합니다."
+   ],
+   [
+    "15년 뒤에도 알아봤다",
+    "존스 교수의 한 동료는 연구 중에 까치 무리에게 혼자만 공격당했는데, 15년 동안 해외에 있다 돌아와서도 새들이 그를 알아봤다고 합니다."
+   ],
+   [
+    "원한도 풀 수 있다",
+    "까치는 원한을 품지만 화해에도 열려 있습니다. 존스 교수는 다진 고기나 치즈 같은 먹이로 20명이 까치와의 갈등을 끝내도록 도왔는데, 새에게 먹이를 주는 일 자체는 논란이 있다고 인정합니다."
+   ]
+  ],
+  "src": [
+   [
+    "ABC News (2026.11.03)",
+    "https://www.abc.net.au/news/2026-11-03/magpie-swooping-schoolboy-in-years-long-grudge/107270052"
+   ]
+  ]
+ },
+ "music": {
+  "title": "Crush",
+  "artist": "유나 (Yuna) · 피처링 어셔 (Usher)",
+  "year": "2016",
+  "mood": "비 오는 수요일 오후에",
+  "why": "말레이시아 출신 싱어송라이터 유나가 2016년 앨범 『Chapters』에 실은 R&B 곡으로, 어셔와 주고받는 부드러운 목소리가 느긋한 비트 위에 포개집니다. 빗소리가 들리는 오후, 따뜻한 차 한 잔과 함께 틀어 두기 좋습니다.",
+  "query": "Yuna Crush Usher"
+ },
+ "shows": {
+  "intro": "쿠알라룸푸르에서 지금 볼 수 있거나 곧 열리는 전시와 공연, 문화 행사입니다.",
+  "items": [
+   {
+    "kind": "문화",
+    "title": "말레이시아 한국문화원 개관 · K‑컬처 페스티벌 2026 (Korean Cultural Centre Malaysia · K-Culture Festival 2026)",
+    "when": "10월 30일 개관, 11월 2일부터 일반 공개",
+    "where": "말레이시아 한국문화원, 142 Jalan Ampang, 쿠알라룸푸르",
+    "memo": "사비나미술관과 함께한 전시 ‘한복, 예술로 다시 태어나다(Hanbok, Reborn As Art)’를 열고, 11월 2일부터 K‑컬처 페스티벌을 시작합니다.",
+    "url": "https://www.thestar.com.my/lifestyle/culture/2026/10/26/korean-cultural-centre-in-malaysia-to-open-to-public-on-nov-2"
+   },
+   {
+    "kind": "전시",
+    "title": "경계 없는 예술: 난양으로 가는 새 항해 (Art Without Boundaries — New Voyage to Nanyang)",
+    "when": "11월 11일까지",
+    "where": "루앙 트두(Ruang Teduh), 익스체인지 106, 툰 라작 익스체인지",
+    "memo": "대만 태생의 작가이자 큐레이터 빅토리아 루가 AI와 인간의 창의성을 탐구한 작품을 선보이는 전시의 두 번째 회입니다.",
+    "url": "https://www.malaymail.com/news/life/2026/10/10/art-meets-algorithm-victoria-lu-explores-ai-and-human-creativity-at-kuala-lumpur-exhibition/238604"
+   },
+   {
+    "kind": "K팝",
+    "title": "예성 10주년 투어 (YESUNG 10th Anniversary Tour: ABOUT THE THINGS WE CALLED ORDINARY)",
+    "when": "11월 7일(토) 오후 8시",
+    "where": "제프 쿠알라룸푸르 (Zepp Kuala Lumpur)",
+    "memo": "슈퍼주니어 예성의 10주년 기념 투어 공연으로, iMe Malaysia가 주최합니다.",
+    "url": "https://klconcert.com/concert/yesung-10th-anniversary-tour-about-the-things-we-called-ordinary"
+   },
+   {
+    "kind": "콘서트",
+    "title": "마치 그녀가 여기 있는 듯: 천자가 부르는 덩리쥔 (As If She Were Here: Chen Jia Sings Teresa Teng)",
+    "when": "11월 7일 오후 8시, 8일 오후 3시",
+    "where": "데완 필하모닉 페트로나스 (Dewan Filharmonik PETRONAS)",
+    "memo": "프랜시스 칸이 지휘하는 말레이시아 필하모닉과 가수 천자(Chen Jia)가 덩리쥔의 노래를 들려주며, 공연 시간은 약 75분에 휴식 20분이 더해집니다.",
+    "url": "https://www.mpo.com.my/season-2026/asifshewerehere-chenjiasingsteresateng"
+   },
+   {
+    "kind": "연극",
+    "title": "遙遠的東方有一群鬼 (The Ghosts Within)",
+    "when": "11월 12~15일 오후 8시, 14·15일 오후 3시",
+    "where": "KLPac 펜타스 2 (Pentas 2)",
+    "memo": "로 콕 만(羅國文)이 연출한 90분짜리 연극으로, 중국어로 공연하고 영어 자막이 나옵니다.",
+    "url": "https://www.klpac.org/shows/%e9%81%99%e9%81%a0%e7%9a%84%e6%9d%b1%e6%96%b9%e6%9c%89%e4%b8%80%e7%be%a4%e9%ac%bc-the-ghosts-within/"
+   },
+   {
+    "kind": "클래식",
+    "title": "말레이시아 실내악 쇼케이스 2 (Malaysian Chamber Showcase 2)",
+    "when": "11월 15일(일) 오후 3시",
+    "where": "데완 필하모닉 페트로나스 (Dewan Filharmonik PETRONAS)",
+    "memo": "UCSI의 듀오 브릴란테와 쿼드 스쿼드, 루미노 브라스 등이 멘델스존, 프로코피예프, 비발디 등의 곡을 들려주며, 중간에 20분 휴식이 있습니다.",
+    "url": "https://www.mpo.com.my/season-2026/malaysian-chamber-showcase-2"
+   },
+   {
+    "kind": "클래식",
+    "title": "판타지 월드 II: 애니메이션 × 클래식 (A Fantasy World II: Anime x Classical with The klpac String Orchestra)",
+    "when": "11월 20~21일 오후 8시 30분, 22일 오후 3시",
+    "where": "KLPac 펜타스 2 (Pentas 2)",
+    "memo": "앤드리아 심이 지휘하는 klpac 현악 오케스트라가 히사이시 조의 지브리 음악과 래드윔프스의 ‘너의 이름은.’ 메들리 등을 연주하며, 공연 시간은 휴식 15분을 포함해 90분입니다.",
+    "url": "https://www.klpac.org/shows/a-fantasy-world-ii-anime-x-classical-with-the-klpac-string-orchestra/"
+   }
+  ]
+ },
+ "fact": {
+  "title": "11월 4일, 투탕카멘 무덤이 처음 모습을 드러낸 날",
+  "titleEn": "November 4, 1922: The First Sign of Tutankhamun's Tomb",
+  "body": "1922년 11월 4일, 영국의 고고학자 하워드 카터가 이집트 ‘왕가의 계곡’에서 훗날 투탕카멘의 무덤으로 밝혀진 곳의 첫 흔적을 찾았습니다. 11월 26일 두 번째 봉인된 문에 이른 카터가 작은 구멍을 내고 촛불을 비추자, 어둠 속에서 놀랍고 아름다운 물건들이 뒤섞여 쌓인 방이 서서히 드러났습니다. 그 뒤 10년 동안 카터가 유물을 꺼내는 일을 이끌었고, 대부분은 지금 카이로의 이집트 박물관에 있습니다.",
+  "more": [
+   "카터는 1874년 영국 노퍽에서 태어나, 열일곱 살에 영국이 후원한 이집트 고고학 조사단에 들어갔습니다.",
+   "고대 유물 수집가였던 5대 카나번 백작이 1907년쯤 카터를 찾아 왕가의 계곡 발굴을 맡기며 후원자가 됐습니다.",
+   "카터는 A. C. 메이스와 함께 발굴 기록 『투탕카멘의 무덤』(1923~33)을 펴냈습니다."
+  ],
+  "src": [
+   [
+    "Britannica: Howard Carter",
+    "https://www.britannica.com/biography/Howard-Carter"
+   ]
+  ]
+ }
+},
+{
  "date": "2026-11-03",
  "quote": {
   "ko": "그대는 아이들에게 사랑을 줄 수는 있어도 생각을 줄 수는 없습니다. 아이들에게는 아이들만의 생각이 있으니까요.",
@@ -6557,7 +6987,6 @@ render();
   start();
 })();
 </script>
-
 
 </body>
 </html>
