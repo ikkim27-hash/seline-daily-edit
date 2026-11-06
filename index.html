@@ -569,6 +569,893 @@ const PHOTO = null; // 예: {src:"photo.jpg", caption:"한 줄 설명", date:"20
 /* ===== DAYS: 날짜별 콘텐츠. 최신 날짜가 맨 앞. 매일 새 객체를 맨 앞에 추가하고 14일치만 유지. ===== */
 const DAYS = [
 {
+ "date": "2026-11-07",
+ "quote": {
+  "ko": "우리 집이 아무리 쓸쓸하고 잿빛이라 해도, 살과 피를 지닌 우리 사람들은 아무리 아름다운 다른 나라보다 그곳에서 살고 싶어 해요. 집만 한 곳은 없으니까요.",
+  "en": "No matter how dreary and gray our homes are, we people of flesh and blood would rather live there than in any other country, be it ever so beautiful. There is no place like home.",
+  "by": "L. 프랭크 바움, 『오즈의 마법사』 (1900)",
+  "pick": {
+   "kind": "책",
+   "title": "키친 (キッチン · Kitchen, 1988) · 요시모토 바나나",
+   "gist": "부엌을 유난히 좋아하는 젊은 여성 사쿠라이 미카게는 하나 남은 가족이던 할머니를 떠나보낸 뒤, 할머니와 꽃집에서 인연이 있던 청년 다나베 유이치의 집에 머물게 됩니다. 다정하고 아름다운 유이치의 어머니 에리코와 함께 지내며 미카게는 남의 집 부엌에서 조금씩 다시 밥을 짓고, 하루하루를 견디는 힘을 되찾아 갑니다. 소설은 집이란 꼭 태어난 곳만이 아니라, 누군가 불을 켜 두고 함께 밥을 먹어 주는 자리일 수도 있다는 것을 조용히 들려줍니다.",
+   "after": "도로시가 그토록 돌아가고 싶어 한 집도, 어쩌면 저녁마다 불이 켜지는 작은 부엌 하나의 온기였는지 모릅니다."
+  }
+ },
+ "english": {
+  "title": "토요일 아침, 룸메이트와 집안일 나누기",
+  "titleEn": "Splitting the Saturday Chores With Your Roommate",
+  "situation": "주말 아침, 함께 사는 A와 B가 어질러진 집을 보며 누가 어떤 집안일을 맡을지 정하는 대화예요. 장 볼 것과 저녁 계획도 가볍게 이야기해요.",
+  "lines": [
+   [
+    "A",
+    "So, what's the game plan for today? This place is kind of a mess.",
+    "그래서 오늘 계획이 뭐야? 집이 좀 엉망이네."
+   ],
+   [
+    "B",
+    "Tell me about it. I was hoping we could knock out the chores before lunch.",
+    "내 말이. 점심 전에 집안일 후딱 해치웠으면 했어."
+   ],
+   [
+    "A",
+    "Works for me. Why don't I tackle the kitchen while you deal with the bathroom?",
+    "좋아. 내가 부엌 맡을 테니까 너는 화장실 맡는 게 어때?"
+   ],
+   [
+    "B",
+    "Ugh, fine. But then you're on trash duty all week.",
+    "으, 알았어. 대신 이번 주 쓰레기 당번은 네가 해."
+   ],
+   [
+    "A",
+    "Fair enough. Could you also run the vacuum in the living room?",
+    "그 정도면 공평하지. 거실 청소기도 좀 돌려 줄래?"
+   ],
+   [
+    "B",
+    "Sure, once I'm done scrubbing. Oh, and we're out of dish soap.",
+    "응, 화장실 다 닦고 나서. 아, 그리고 주방 세제 다 떨어졌어."
+   ],
+   [
+    "A",
+    "No problem. I'll swing by the store later and pick some up.",
+    "괜찮아. 이따 가게에 잠깐 들러서 사 올게."
+   ],
+   [
+    "B",
+    "While you're at it, could you grab some paper towels too?",
+    "가는 김에 키친타월도 좀 사다 줄래?"
+   ],
+   [
+    "A",
+    "Will do. Let's just get it all out of the way so we can enjoy the rest of the day.",
+    "그럴게. 얼른 다 끝내 버리고 남은 하루는 즐기자."
+   ],
+   [
+    "B",
+    "Deal. Pizza and a movie tonight, then. My treat.",
+    "좋아. 그럼 오늘 밤엔 피자 먹으면서 영화 보자. 내가 쏠게."
+   ]
+  ],
+  "expressions": [
+   {
+    "en": "knock out (the chores)",
+    "ko": "‘(할 일을) 후딱 해치우다’. 해야 할 일을 빠르게 몰아서 끝낸다는 뜻의 편한 구어예요. knock out a few emails처럼 일거리 앞에 붙여 써요.",
+    "eg": "I want to knock out my errands before it gets too hot."
+   },
+   {
+    "en": "be on ~ duty",
+    "ko": "‘~ 당번이다’. 집안이나 모임에서 정해진 일을 맡았다고 말할 때 써요. trash duty(쓰레기 당번), dish duty(설거지 당번)처럼 앞에 일을 넣어요.",
+    "eg": "You cooked, so I'm on dish duty tonight."
+   },
+   {
+    "en": "swing by",
+    "ko": "‘(가는 길에) 잠깐 들르다’. 오래 머물지 않고 잠시 들른다는 가벼운 느낌이에요. stop by와 비슷하지만 조금 더 경쾌하게 들려요.",
+    "eg": "Can you swing by my place and pick up the charger?"
+   },
+   {
+    "en": "get it out of the way",
+    "ko": "‘(귀찮은 일을) 먼저 끝내 버리다’. 하기 싫거나 부담스러운 일을 미루지 않고 처리해 홀가분해지자는 뉘앙스예요.",
+    "eg": "Let's do the grocery run first and get it out of the way."
+   },
+   {
+    "en": "My treat.",
+    "ko": "‘내가 살게, 내가 쏠게’. 밥값이나 음료값을 내가 내겠다고 할 때 짧고 다정하게 쓰는 말이에요. It's on me도 같은 뜻이에요.",
+    "eg": "Let's grab coffee after this. My treat."
+   }
+  ],
+  "pattern": {
+   "en": "Why don't I ~ while you ~?",
+   "ko": "‘내가 ~할 테니 너는 ~하는 게 어때?’. 일을 나눠 맡자고 부드럽게 제안할 때 쓰는 틀이에요. 명령처럼 들리지 않게 상대의 동의를 구하는 느낌이 있어요.",
+   "examples": [
+    [
+     "Why don't I <b>cook</b> while you <b>set</b> the table?",
+     "내가 요리할 테니 너는 상 차리는 게 어때?"
+    ],
+    [
+     "Why don't I <b>drive</b> while you <b>check</b> the map?",
+     "내가 운전할 테니 너는 지도 봐 줄래?"
+    ],
+    [
+     "Why don't I <b>grab</b> the drinks while you <b>find</b> us a seat?",
+     "내가 음료 사 올 테니 너는 자리 좀 잡아 줄래?"
+    ]
+   ]
+  }
+ },
+ "news": [
+  {
+   "region": "말레이시아",
+   "tag": "생활 · 날씨",
+   "important": true,
+   "icon": "rain",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M17 38a9 9 0 0 1 0-18a15 15 0 0 1 25-5a10 10 0 0 1 16 9a7 7 0 0 1-1 14z\"/><path d=\"M22 43q-4 6-4 8.5a4 4 0 0 0 8 0q0-2.5-4-8.5z\"/><path d=\"M36 43q-4 6-4 8.5a4 4 0 0 0 8 0q0-2.5-4-8.5z\"/><path d=\"M50 43q-4 6-4 8.5a4 4 0 0 0 8 0q0-2.5-4-8.5z\"/></g><path d=\"M17 38a9 9 0 0 1 0-18a15 15 0 0 1 25-5a10 10 0 0 1 16 9a7 7 0 0 1-1 14z\" fill=\"#B9C0C8\" stroke=\"#3F4A55\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><path d=\"M14 34h44\" stroke=\"#8C99A5\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M20 22q4-6 11-7\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\".8\"/><g fill=\"#6FA9C9\" stroke=\"#2F5D74\" stroke-width=\"1.4\" stroke-linejoin=\"round\"><path d=\"M22 43q-4 6-4 8.5a4 4 0 0 0 8 0q0-2.5-4-8.5z\"/><path d=\"M36 43q-4 6-4 8.5a4 4 0 0 0 8 0q0-2.5-4-8.5z\"/><path d=\"M50 43q-4 6-4 8.5a4 4 0 0 0 8 0q0-2.5-4-8.5z\"/></g><path d=\"M20.5 51q0 1.8 1.6 2.6M34.5 51q0 1.8 1.6 2.6M48.5 51q0 1.8 1.6 2.6\" fill=\"none\" stroke=\"#DCEFF7\" stroke-width=\"1.2\" stroke-linecap=\"round\"/>"
+   },
+   "title": "동해안에 일요일부터 11일까지 계속 비",
+   "titleEn": "Continuous Rain Forecast for Kelantan and Terengganu From Sunday to November 11",
+   "lead": "말레이시아 기상청(MetMalaysia)이 일요일부터 11일까지 클란탄과 트렝가누 여러 지역에 비가 계속 내릴 것으로 예보했어요. 디파발리 연휴에 동해안으로 가거나 그곳에 사는 분들은 최신 예보를 꼭 확인하세요.",
+   "pts": [
+    "클란탄: 타나메라, 파시르마스, 툼팟, 코타바루, 마창, 바초크, 파시르푸테",
+    "트렝가누: 베슛, 스티우, 쿠알라네루스, 쿠알라트렝가누, 마랑, 훌루트렝가누",
+    "기상 모델상 9~11일 몬순 서지가 들어와 반도 동해안과 사바 동부에 굵은 비가 이어질 수 있고, 사바 산다칸 주 일대도 9~11일 비가 계속돼요"
+   ],
+   "info": [
+    [
+     "기간",
+     "일요일 ~ 11월 11일"
+    ],
+    [
+     "확인",
+     "MetMalaysia 웹사이트 · myCuaca 앱"
+    ],
+    [
+     "문의",
+     "1‑300‑22‑1638"
+    ]
+   ],
+   "src": "Malay Mail · 11.06",
+   "url": "https://www.malaymail.com/news/malaysia/2026/11/06/metmalaysia-forecasts-continuous-rain-in-kelantan-terengganu-from-sunday-to-nov-11/242222"
+  },
+  {
+   "region": "말레이시아",
+   "tag": "외국인 생활",
+   "icon": "passport",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><rect x=\"14\" y=\"7\" width=\"40\" height=\"48\" rx=\"2\"/><circle cx=\"54\" cy=\"46\" r=\"7.5\"/></g><rect x=\"14\" y=\"7\" width=\"40\" height=\"48\" rx=\"2\" fill=\"#E9D7B0\" stroke=\"#4A2E1A\" stroke-width=\"1.5\"/><rect x=\"19\" y=\"12\" width=\"30\" height=\"38\" fill=\"#FFFFFF\" stroke=\"#4A2E1A\" stroke-width=\"1.2\"/><g fill=\"#8C99A5\" stroke=\"#3F4A55\" stroke-width=\"1.2\" stroke-linejoin=\"round\"><path d=\"M23 50q0-11 11-11t11 11z\"/><circle cx=\"34\" cy=\"28\" r=\"6.5\"/></g><circle cx=\"54\" cy=\"46\" r=\"7.5\" fill=\"#5FAE84\" stroke=\"#2F5D49\" stroke-width=\"1.5\"/><polyline points=\"50.5 46 53 48.6 57.6 43.4\" fill=\"none\" stroke=\"#fff\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>"
+   },
+   "title": "12월 1일부터 외국인 신청 사진은 흰 배경",
+   "titleEn": "From December 1, Expatriate Application Photos Need a White Background",
+   "lead": "이민국 외국인 서비스부(ESD)가 6일, 엑스팻츠 게이트웨이(Xpats Gateway)와 ESD 온라인으로 내는 외국인 전문인력(expatriate) 신청의 여권 사진 배경을 흰색으로 통일한다고 공지했어요. 엑스팻 신청용 사진을 준비하고 있다면 미리 확인해 두세요.",
+   "pts": [
+    "시행일은 2026년 12월 1일이고, 앞서 알린 사진 확인(Photo Verification) 기능 개선에 이은 조치예요",
+    "ESD 사진 요건: 가로 35mm × 세로 50mm, 턱부터 정수리까지 30~35mm, 파일은 25KB 이하",
+    "정면을 보고 두 눈을 뜬 채 무표정하게, 종교적 이유가 아니면 머리 가리개 없이 얼굴이 다 보여야 해요"
+   ],
+   "info": [
+    [
+     "대상",
+     "Xpats Gateway · ESD Online 외국인 신청"
+    ],
+    [
+     "시행",
+     "2026년 12월 1일"
+    ],
+    [
+     "확인",
+     "ESD 사진 요건 안내 페이지"
+    ]
+   ],
+   "src": "이민국 ESD 공식 안내",
+   "url": "https://esd.imi.gov.my/portal/latest-news/announcement/standardisation-passport-photo-2026/"
+  },
+  {
+   "region": "말레이시아",
+   "tag": "유산",
+   "icon": "shophouse",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><ellipse cx=\"36\" cy=\"52\" rx=\"28\" ry=\"5\"/><polygon points=\"12 20 24 12 60 12 60 42 48 50 12 50\"/></g><ellipse cx=\"36\" cy=\"52\" rx=\"28\" ry=\"5\" fill=\"#FBF7EF\" stroke=\"#4A2E1A\" stroke-width=\"1.5\"/><rect x=\"12\" y=\"20\" width=\"36\" height=\"5\" fill=\"#F7D36B\"/><polygon points=\"48 20 60 12 60 17 48 25\" fill=\"#DDA22F\"/><rect x=\"12\" y=\"25\" width=\"36\" height=\"5\" fill=\"#B5651D\"/><polygon points=\"48 25 60 17 60 22 48 30\" fill=\"#8E4A14\"/><rect x=\"12\" y=\"30\" width=\"36\" height=\"5\" fill=\"#F7D36B\"/><polygon points=\"48 30 60 22 60 27 48 35\" fill=\"#DDA22F\"/><rect x=\"12\" y=\"35\" width=\"36\" height=\"5\" fill=\"#B5651D\"/><polygon points=\"48 35 60 27 60 32 48 40\" fill=\"#8E4A14\"/><rect x=\"12\" y=\"40\" width=\"36\" height=\"5\" fill=\"#F7D36B\"/><polygon points=\"48 40 60 32 60 37 48 45\" fill=\"#DDA22F\"/><rect x=\"12\" y=\"45\" width=\"36\" height=\"5\" fill=\"#B5651D\"/><polygon points=\"48 45 60 37 60 42 48 50\" fill=\"#8E4A14\"/><polygon points=\"12 20 24 12 60 12 48 20\" fill=\"#C98A4E\" stroke=\"#4A2E1A\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><polygon points=\"12 20 48 20 48 50 12 50\" fill=\"none\" stroke=\"#4A2E1A\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><polygon points=\"48 20 60 12 60 42 48 50\" fill=\"none\" stroke=\"#4A2E1A\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><path d=\"M27 15h20\" stroke=\"#E8B96A\" stroke-width=\"1.3\" stroke-linecap=\"round\"/>"
+   },
+   "title": "미 콜록부터 의회 의장봉까지, 국가유산 69가지",
+   "titleEn": "From Mi Kolok to the Dewan Rakyat Mace: 69 New National Heritage Items",
+   "lead": "관광예술문화부(Motac)가 ‘제6차 국가유산 선포 2026’에서 69가지를 국가유산으로 인정했다고 츄 춘 만(Chiew Choon Man) 부장관이 6일 밝혔어요. 사라왁의 국물 없는 쌀국수 미 콜록, 켁 라피스 같은 음식도 들어갔어요.",
+   "pts": [
+    "69가지 가운데 39가지는 이번에 선포됐고, 30가지는 나중에 관보에 실려요",
+    "1952년 하원 의장봉, 1966년 상원 의장봉, 툰쿠 압둘 라만이 첫 내각 회의를 연 탁자 등 유물 16점이 포함됐어요",
+    "클란탄 그림자 인형극의 체 모드 나시르 유소프, 사자춤·사자탈 장인 시오 호 피유 등 11명은 증서와 2만 링깃을 받아요"
+   ],
+   "info": [
+    [
+     "앞으로",
+     "나시 칸다르, 카창 풀, 가와이 다약 축제, 말레이시아 아침 식문화 등"
+    ],
+    [
+     "근거",
+     "국가유산법 2005"
+    ]
+   ],
+   "src": "Malay Mail (Bernama) · 11.06",
+   "url": "https://www.malaymail.com/news/malaysia/2026/11/06/malaysia-declares-69-items-national-heritage-from-mi-kolok-to-dewan-rakyat-mace/242233"
+  },
+  {
+   "region": "말레이시아",
+   "tag": "축제",
+   "icon": "lantern",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><rect x=\"9\" y=\"32\" width=\"54\" height=\"18\" rx=\"3\"/><rect x=\"14\" y=\"13\" width=\"44\" height=\"21\" rx=\"3\"/></g><g stroke=\"#4A2E1A\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><rect x=\"9\" y=\"32\" width=\"54\" height=\"18\" rx=\"3\" fill=\"#2F8C8A\"/><rect x=\"9\" y=\"43\" width=\"54\" height=\"4\" fill=\"#F2CF6B\"/><rect x=\"14\" y=\"13\" width=\"44\" height=\"21\" rx=\"3\" fill=\"#C8336B\"/><rect x=\"14\" y=\"27\" width=\"44\" height=\"4\" fill=\"#F2CF6B\"/></g><g fill=\"#F7D36B\"><circle cx=\"21\" cy=\"19\" r=\"1.4\"/><circle cx=\"29\" cy=\"21\" r=\"1.4\"/><circle cx=\"37\" cy=\"19\" r=\"1.4\"/><circle cx=\"45\" cy=\"21\" r=\"1.4\"/><circle cx=\"52\" cy=\"19\" r=\"1.4\"/><circle cx=\"17\" cy=\"38\" r=\"1.4\"/><circle cx=\"27\" cy=\"38\" r=\"1.4\"/><circle cx=\"37\" cy=\"38\" r=\"1.4\"/><circle cx=\"47\" cy=\"38\" r=\"1.4\"/><circle cx=\"57\" cy=\"38\" r=\"1.4\"/></g><path d=\"M14 29h44M9 45h54\" stroke=\"#B5462F\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><path d=\"M18 16q8-2 16-1\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\".6\"/>"
+   },
+   "title": "1분이면 입는 사리, 디파발리 앞두고 인기",
+   "titleEn": "Ready-Made Saris That Go On in Under a Minute Win Over Deepavali Shoppers",
+   "lead": "6m 길이의 사리를 두르려면 20분에서 1시간이 걸리기도 하죠. 이포의 디자이너 겸 재단사 S.C. 카비타가 만드는, 주름을 미리 잡은 사리와 기성 사리가 디파발리 손님들에게 인기라고 베르나마가 전했어요.",
+   "pts": [
+    "주름을 미리 잡은 사리는 혼자서 5분쯤이면, 허리에 버클이나 후크를 단 기성 사리는 1분도 안 돼 입을 수 있어요",
+    "주름 잡기는 원단에 따라 30~40링깃, 기성 사리 제작은 한 벌에 85~90링깃이에요",
+    "말레이계·중국계 손님들도 인도계 친구의 결혼식이나 학교 행사에 입으려고 주문한대요"
+   ],
+   "info": [
+    [
+     "어디",
+     "페락주 이포"
+    ],
+    [
+     "수업",
+     "하루 집중 과정 · 이틀 워크숍"
+    ]
+   ],
+   "src": "Malay Mail (Bernama) · 11.06",
+   "url": "https://www.malaymail.com/news/life/2026/11/06/love-the-sari-not-the-struggle-ready-made-versions-win-over-deepavali-shoppers/242201"
+  },
+  {
+   "region": "세계",
+   "tag": "영국 입시",
+   "icon": "school",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><rect x=\"12\" y=\"12\" width=\"48\" height=\"42\" rx=\"3\"/><rect x=\"21\" y=\"7\" width=\"5\" height=\"10\" rx=\"2\"/><rect x=\"46\" y=\"7\" width=\"5\" height=\"10\" rx=\"2\"/></g><rect x=\"12\" y=\"12\" width=\"48\" height=\"42\" rx=\"3\" fill=\"#FBF7EF\" stroke=\"#4A2E1A\" stroke-width=\"1.5\"/><path d=\"M12 22V15a3 3 0 0 1 3-3h42a3 3 0 0 1 3 3v7z\" fill=\"#C8553D\" stroke=\"#4A2E1A\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><rect x=\"17.0\" y=\"27\" width=\"6\" height=\"5.5\" rx=\"1\" fill=\"#E9D7B0\"/><rect x=\"25.4\" y=\"27\" width=\"6\" height=\"5.5\" rx=\"1\" fill=\"#E9D7B0\"/><rect x=\"33.8\" y=\"27\" width=\"6\" height=\"5.5\" rx=\"1\" fill=\"#E9D7B0\"/><rect x=\"42.2\" y=\"27\" width=\"6\" height=\"5.5\" rx=\"1\" fill=\"#E9D7B0\"/><rect x=\"50.6\" y=\"27\" width=\"6\" height=\"5.5\" rx=\"1\" fill=\"#E9D7B0\"/><rect x=\"17.0\" y=\"35\" width=\"6\" height=\"5.5\" rx=\"1\" fill=\"#E9D7B0\"/><rect x=\"25.4\" y=\"35\" width=\"6\" height=\"5.5\" rx=\"1\" fill=\"#5FAE84\"/><rect x=\"33.8\" y=\"35\" width=\"6\" height=\"5.5\" rx=\"1\" fill=\"#5FAE84\"/><rect x=\"42.2\" y=\"35\" width=\"6\" height=\"5.5\" rx=\"1\" fill=\"#E9D7B0\"/><rect x=\"50.6\" y=\"35\" width=\"6\" height=\"5.5\" rx=\"1\" fill=\"#E9D7B0\"/><rect x=\"17.0\" y=\"43\" width=\"6\" height=\"5.5\" rx=\"1\" fill=\"#E9D7B0\"/><rect x=\"25.4\" y=\"43\" width=\"6\" height=\"5.5\" rx=\"1\" fill=\"#5FAE84\"/><rect x=\"33.8\" y=\"43\" width=\"6\" height=\"5.5\" rx=\"1\" fill=\"#5FAE84\"/><rect x=\"42.2\" y=\"43\" width=\"6\" height=\"5.5\" rx=\"1\" fill=\"#E9D7B0\"/><rect x=\"50.6\" y=\"43\" width=\"6\" height=\"5.5\" rx=\"1\" fill=\"#E9D7B0\"/><g fill=\"#B9C0C8\" stroke=\"#3F4A55\" stroke-width=\"1.3\"><rect x=\"21\" y=\"7\" width=\"5\" height=\"10\" rx=\"2\"/><rect x=\"46\" y=\"7\" width=\"5\" height=\"10\" rx=\"2\"/></g>"
+   },
+   "title": "케임브리지 면접 12월 7~18일, 초대는 대부분 11월",
+   "titleEn": "Cambridge Interviews Run December 7 to 18, With Most Invitations Sent in November",
+   "lead": "케임브리지대 학부 지원자의 면접이 2026년 12월 7일부터 18일까지 열려요. 면접 초대는 대부분 11월에 오고 일부는 12월 초에 갈 수 있다고 케임브리지 공식 안내에 나와 있어요.",
+   "pts": [
+    "면접은 칼리지와 학과에 따라 온라인 또는 대면이고, 보통 방식을 직접 고를 수는 없어요",
+    "코퍼스 크리스티, 지저스, 피터하우스, 로빈슨 등 여러 칼리지는 영국 밖 지원자를 온라인으로 면접하고, 펨브로크와 트리니티는 영국 밖 지원자가 방식을 고를 수 있어요",
+    "초대장에는 면접 시간과 장소, 준비물, 미리 읽을 자료나 과제, 참여 방법이 담겨요"
+   ],
+   "info": [
+    [
+     "대상",
+     "케임브리지대 학부 지원자"
+    ],
+    [
+     "면접",
+     "2026년 12월 7~18일"
+    ],
+    [
+     "확인",
+     "케임브리지 공식 안내 · 칼리지별 방식 표"
+    ]
+   ],
+   "src": "Cambridge 공식 안내",
+   "url": "https://www.undergraduate.study.cam.ac.uk/apply/after/cambridge-interviews"
+  },
+  {
+   "region": "세계",
+   "tag": "과학",
+   "icon": "turtle",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M17 42q-9 1-9 8q1 5 8 4\" fill=\"none\"/><ellipse cx=\"32\" cy=\"38\" rx=\"17\" ry=\"12\"/><path d=\"M42 27q13 3 19 12q-6 5-19 5z\"/><circle cx=\"44\" cy=\"24\" r=\"6.5\"/><ellipse cx=\"26\" cy=\"50\" rx=\"4\" ry=\"2.6\"/><ellipse cx=\"42\" cy=\"50\" rx=\"4\" ry=\"2.6\"/></g><path d=\"M17 42q-9 1-9 8q1 5 8 4\" fill=\"none\" stroke=\"#C98A6B\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><g stroke=\"#4A2E1A\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><ellipse cx=\"26\" cy=\"50\" rx=\"4\" ry=\"2.6\" fill=\"#E9A3A0\"/><ellipse cx=\"42\" cy=\"50\" rx=\"4\" ry=\"2.6\" fill=\"#E9A3A0\"/><ellipse cx=\"32\" cy=\"38\" rx=\"17\" ry=\"12\" fill=\"#A0785A\"/><path d=\"M42 27q13 3 19 12q-6 5-19 5z\" fill=\"#B48A69\"/><circle cx=\"44\" cy=\"24\" r=\"6.5\" fill=\"#B48A69\"/></g><circle cx=\"44\" cy=\"24\" r=\"3.4\" fill=\"#F2B8B0\"/><circle cx=\"61\" cy=\"39\" r=\"2\" fill=\"#E07A7A\"/><circle cx=\"51\" cy=\"33\" r=\"1.8\" fill=\"#1B2321\"/><circle cx=\"51.6\" cy=\"32.4\" r=\".6\" fill=\"#fff\"/><path d=\"M56 43v3.5h2.4V43\" fill=\"#FBF7EF\" stroke=\"#4A2E1A\" stroke-width=\"1\"/><path d=\"M22 32q5-5 12-5\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\".5\"/>"
+   },
+   "title": "이빨 두 개로 찾은 30kg ‘거대 쥐’, 태국 크라비",
+   "titleEn": "Two Fossil Teeth Reveal a 30-Kilogram 'Giant Rat' From Ancient Thailand",
+   "lead": "태국·프랑스·캐나다 연구진이 태국 남부 크라비에서 나온 이빨 화석 두 개로, 3,300만~3,500만 년 전에 살던 몸무게 약 30kg의 설치류를 밝혀냈어요. 이름은 시린톤 공주를 기려 ‘야카미스 시린토르나이(Yakamys sirindhornae)’예요.",
+   "pts": [
+    "큰 카피바라의 절반쯤 되는 무게로, 팔레오기 설치류 가운데 가장 큰 축에 들어요",
+    "어금니와 앞니는 2004년 크라비주 남부의 탄광에서 나왔고, 앞니를 찾은 지질학자 판니파 티안은 처음엔 뼈인 줄 알았대요",
+    "연구는 11월 5일 『사이언티픽 리포츠』에 실렸고, 이빨 두 개뿐이라 생김새나 먹이는 아직 몰라요"
+   ],
+   "info": [
+    [
+     "어디",
+     "태국 남부 크라비 분지"
+    ],
+    [
+     "학술지",
+     "Scientific Reports"
+    ]
+   ],
+   "src": "Malay Mail (AFP) · 11.06",
+   "url": "https://www.malaymail.com/news/life/2026/11/06/prehistoric-giant-rat-found-in-thailand-from-fossil-teeth/242094"
+  }
+ ],
+ "trend": {
+  "title": "이온몰 KL 미드타운, 옥상 공원 품고 문 열었다",
+  "titleEn": "AEON Mall KL Midtown Opens With a Rooftop Park",
+  "asOf": "2026년 11월 4~5일 보도 기준",
+  "body": "이온(AEON CO. (M) Bhd)의 새 쇼핑몰 ‘이온몰 KL 미드타운’이 11월 5일 일반에 문을 열었습니다. 정식 개관(그랜드 오프닝)은 2027년 1월 8일로 잡혀 있습니다.",
+  "points": [
+   "순임대면적은 약 36만 7,000제곱피트로, 지하(LG)부터 5M층까지 8개 층입니다.",
+   "유니클로, 스타벅스, 다이소, 스시로, 이온 수퍼마켓 등이 먼저 문을 열었고, 딘타이펑, 세포라, 아디다스, JD 스포츠, 아식스, MPH 서점이 앞으로 들어옵니다.",
+   "반다이남코 익스피리언스의 일본 체험형 게임 공간 ‘VS 챌린지’가 이온 판타지 운영으로 말레이시아에 처음 들어왔습니다.",
+   "옥상에는 1.5에이커 크기의 선형 공원이 있고, 셔틀 ‘모비 커넥트’가 센툴 바랏 MRT역과 이어집니다."
+  ],
+  "src": [
+   [
+    "Sinar Harian (2026.11.04)",
+    "https://www.sinarharian.com.my/article/803226/bisnes/aeon-mall-kl-midtown-mula-operasi-5-november-himpun-lebih-100-jenama"
+   ],
+   [
+    "SAYS (2026.11.05)",
+    "https://says.com/my/lifestyle/new-mall-rooftop-garden-opens-kl-today-retail-stores-list"
+   ]
+  ]
+ },
+ "life": {
+  "title": "디파발리 오픈 하우스에 초대받았다면",
+  "titleEn": "Invited to a Deepavali Open House? A Few Quiet Courtesies",
+  "intro": "디파발리에는 많은 가정이 집을 열어 친척과 친구, 동료를 맞고, 민족과 종교가 다른 손님들도 커리와 비리야니, 과자와 단것을 함께 나눕니다. 처음 초대받았다면 아래 몇 가지만 기억해 두세요.",
+  "tips": [
+   [
+    "신발은 문 앞에서",
+    "집 안에 들어가기 전에 신발을 벗습니다. 입구 가까이에는 쌀가루나 색을 입힌 쌀로 그린 바닥 그림 콜람이 놓여 있곤 한데, 손님을 반기고 복을 비는 뜻이 담겨 있습니다."
+   ],
+   [
+    "밝은 색 옷",
+    "축제 분위기에 맞춰 밝은 색 옷을 입는 것이 좋습니다. 검은색이나 어두운 옷은 불길하게 여겨집니다."
+   ],
+   [
+    "나일론은 피하기",
+    "디파발리에는 ‘아갈 빌락쿠’라는 기름 등잔을 밝히는데, 불이 잘 붙는 나일론 옷은 특히 등잔 가까이에서 피하는 게 좋습니다."
+   ],
+   [
+    "주인을 보고 따라 하기",
+    "어떻게 해야 할지 모를 때는 집주인과 주변 분위기를 살피며 따라 하면 됩니다."
+   ],
+   [
+    "폭죽은 밖에서",
+    "폭죽이나 불꽃놀이는 절대 집 안에서 터뜨리지 않고, 아이들끼리 폭죽을 다루게 두지 않습니다."
+   ]
+  ],
+  "src": [
+   [
+    "The Rakyat Post (2026.10.30)",
+    "https://www.therakyatpost.com/news/2026/10/30/deepavali-in-malaysia-is-more-than-just-mall-decorations-and-shopping/"
+   ]
+  ]
+ },
+ "music": {
+  "title": "Saturday in the Park",
+  "artist": "시카고 (Chicago)",
+  "year": "1972",
+  "mood": "느긋한 토요일 오후 산책길에",
+  "why": "로버트 램이 쓴 곡으로, 시카고 특유의 브라스가 경쾌하게 울리는 팝 록입니다. 앨범 『Chicago V』에 실려 빌보드 핫 100 3위까지 올랐고, 볕 좋은 토요일 공원이나 동네를 한 바퀴 걸으며 듣기 좋습니다.",
+  "query": "Chicago Saturday in the Park"
+ },
+ "shows": {
+  "intro": "쿠알라룸푸르에서 지금 볼 수 있거나 곧 열리는 전시와 공연입니다.",
+  "items": [
+   {
+    "kind": "전시",
+    "title": "경계 없는 예술: 난양으로 가는 새 항해 (Art Without Boundaries — New Voyage to Nanyang)",
+    "when": "11월 11일까지",
+    "where": "루앙 트두(Ruang Teduh), 익스체인지 106, 툰 라작 익스체인지",
+    "memo": "대만 태생의 작가이자 큐레이터 빅토리아 루가 AI와 인간의 창의성을 탐구한 작품을 선보이는 전시의 두 번째 회입니다.",
+    "url": "https://www.malaymail.com/news/life/2026/10/10/art-meets-algorithm-victoria-lu-explores-ai-and-human-creativity-at-kuala-lumpur-exhibition/238604"
+   },
+   {
+    "kind": "K팝",
+    "title": "예성 10주년 투어 (YESUNG 10th Anniversary Tour: ABOUT THE THINGS WE CALLED ORDINARY)",
+    "when": "11월 7일(토) 오후 8시",
+    "where": "제프 쿠알라룸푸르 (Zepp Kuala Lumpur)",
+    "memo": "슈퍼주니어 예성의 10주년 기념 투어 공연으로, iMe Malaysia가 주최합니다.",
+    "url": "https://klconcert.com/concert/yesung-10th-anniversary-tour-about-the-things-we-called-ordinary"
+   },
+   {
+    "kind": "콘서트",
+    "title": "마치 그녀가 여기 있는 듯: 천자가 부르는 덩리쥔 (As If She Were Here: Chen Jia Sings Teresa Teng)",
+    "when": "11월 7일 오후 8시, 8일 오후 3시",
+    "where": "데완 필하모닉 페트로나스 (Dewan Filharmonik PETRONAS)",
+    "memo": "프랜시스 칸이 지휘하는 말레이시아 필하모닉과 가수 천자(Chen Jia)가 덩리쥔의 노래를 들려주며, 공연 시간은 휴식 20분을 포함해 약 75분입니다.",
+    "url": "https://www.mpo.com.my/season-2026/asifshewerehere-chenjiasingsteresateng"
+   },
+   {
+    "kind": "연극",
+    "title": "遙遠的東方有一群鬼 (The Ghosts Within)",
+    "when": "11월 12~15일 오후 8시, 14·15일 오후 3시",
+    "where": "KLPac 펜타스 2 (Pentas 2)",
+    "memo": "로 콕 만(羅國文)이 연출한 90분짜리 연극으로, 중국어로 공연하고 영어 자막이 나옵니다.",
+    "url": "https://www.klpac.org/shows/%e9%81%99%e9%81%a0%e7%9a%84%e6%9d%b1%e6%96%b9%e6%9c%89%e4%b8%80%e7%be%a4%e9%ac%bc-the-ghosts-within/"
+   },
+   {
+    "kind": "K팝",
+    "title": "베이비몬스터 월드 투어 (BABYMONSTER CHOOM World Tour)",
+    "when": "11월 14일(토) 오후 8시",
+    "where": "유니파이 아레나 (Unifi Arena · Axiata Arena)",
+    "memo": "베이비몬스터의 CHOOM 월드 투어 쿠알라룸푸르 공연으로, 라이브 네이션 말레이시아가 주최합니다.",
+    "url": "https://klconcert.com/concert/babymonster-hello-monsters-world-tour"
+   },
+   {
+    "kind": "클래식",
+    "title": "말레이시아 실내악 쇼케이스 2 (Malaysian Chamber Showcase 2)",
+    "when": "11월 15일(일) 오후 3시",
+    "where": "데완 필하모닉 페트로나스 (Dewan Filharmonik PETRONAS)",
+    "memo": "UCSI의 듀오 브릴란테와 쿼드 스쿼드, 루미노 브라스 등이 멘델스존, 프로코피예프, 비발디 등의 곡을 들려주며, 중간에 20분 휴식이 있습니다.",
+    "url": "https://www.mpo.com.my/season-2026/malaysian-chamber-showcase-2"
+   },
+   {
+    "kind": "클래식",
+    "title": "판타지 월드 II: 애니메이션 × 클래식 (A Fantasy World II: Anime x Classical with The klpac String Orchestra)",
+    "when": "11월 20~21일 오후 8시 30분, 22일 오후 3시",
+    "where": "KLPac 펜타스 2 (Pentas 2)",
+    "memo": "앤드리아 심이 지휘하는 klpac 현악 오케스트라가 히사이시 조의 지브리 음악과 래드윔프스의 ‘너의 이름은.’ 메들리 등을 연주하며, 공연 시간은 휴식 15분을 포함해 90분입니다.",
+    "url": "https://www.klpac.org/shows/a-fantasy-world-ii-anime-x-classical-with-the-klpac-string-orchestra/"
+   }
+  ]
+ },
+ "fact": {
+  "title": "11월 7일, 마리 퀴리가 태어난 날",
+  "titleEn": "November 7: The Birthday of Marie Curie",
+  "body": "방사능 연구로 이름난 물리학자 마리 퀴리(본명 마리아 살로메아 스크워도프스카)는 1867년 11월 7일, 당시 러시아 제국에 속해 있던 폴란드 바르샤바에서 태어났습니다. 그는 1903년 남편 피에르 퀴리, 앙리 베크렐과 함께 노벨 물리학상을, 1911년에는 노벨 화학상을 혼자 받아 여성 최초의 노벨상 수상자이자 두 분야에서 상을 받은 유일한 여성이 되었습니다.",
+  "more": [
+   "언니 브로니스와바와 함께, 여성도 받아 주던 바르샤바의 비밀 교육 기관 ‘떠다니는 대학(Flying University)’에서 공부했습니다.",
+   "1898년 새로 찾아낸 원소에 고국 폴란드의 이름을 따 ‘폴로늄’이라는 이름을 붙였습니다.",
+   "1906년 피에르가 세상을 떠난 뒤 그를 위해 만들어졌던 물리학 교수 자리를 이어받아, 파리 대학의 첫 여성 교수가 되었습니다."
+  ],
+  "src": [
+   [
+    "Britannica: Marie Curie",
+    "https://www.britannica.com/biography/Marie-curie"
+   ],
+   [
+    "Wikipedia: Marie Curie",
+    "https://en.wikipedia.org/wiki/Marie_Curie"
+   ]
+  ]
+ }
+},
+{
+ "date": "2026-11-06",
+ "quote": {
+  "ko": "빛, 나의 빛, 세상을 가득 채우는 빛, 눈에 입 맞추는 빛, 마음을 달게 하는 빛이여!",
+  "en": "Light, my light, the world-filling light, the eye-kissing light, heart-sweetening light!",
+  "by": "라빈드라나트 타고르, 『기탄잘리』 (1912)",
+  "pick": {
+   "kind": "영화",
+   "title": "라이언 (Lion, 2016) · 가스 데이비스 감독",
+   "gist": "인도 마디아프라데시주 칸드와에 살던 다섯 살 사루는 형 구두와 함께 나간 기차역에서 잠이 들었다가, 문이 잠긴 빈 기차에 실려 며칠 뒤 말도 통하지 않는 캘커타에 닿습니다. 1987년 호주 태즈메이니아 호바트의 브리얼리 부부에게 입양되어 자란 그는, 헤어진 지 25년이 지나 구글 어스 위에서 기억 속 고향을 더듬어 찾기 시작합니다. 영화는 아무리 멀리 떠나왔어도 사람 안에 꺼지지 않고 남아 있는 작은 불빛 같은 기억이 있다는 것을, 서두르지 않고 보여 줍니다.",
+   "after": "명절이면 집으로 향하는 불빛들처럼, 우리 마음에도 돌아갈 길을 비추는 빛 하나쯤은 늘 켜져 있는지 모릅니다."
+  }
+ },
+ "english": {
+  "title": "연휴 귀성길, 막히기 전에 일찍 출발하자고 정하기",
+  "titleEn": "Leaving Early to Beat the Holiday Traffic",
+  "situation": "긴 연휴를 맞아 친구 A와 B가 함께 차를 타고 이모 댁에 가기로 했습니다. 언제 출발해야 길이 덜 막힐지, 가는 길에 저녁은 어떻게 할지 가볍게 의논하는 대화예요.",
+  "lines": [
+   [
+    "A",
+    "Are we still on for the drive up to my aunt's this weekend?",
+    "이번 주말에 우리 이모 댁 가는 거, 그대로 가는 거지?"
+   ],
+   [
+    "B",
+    "Definitely. What time were you thinking of heading out?",
+    "당연하지. 몇 시쯤 출발할 생각이야?"
+   ],
+   [
+    "A",
+    "If we leave Saturday morning, we'll be stuck in bumper-to-bumper traffic the whole way.",
+    "토요일 아침에 나가면 가는 내내 꽉 막힌 길에 갇혀 있을 거야."
+   ],
+   [
+    "B",
+    "True. Everyone's leaving town for the long weekend.",
+    "맞아. 긴 연휴라 다들 도시를 빠져나가니까."
+   ],
+   [
+    "A",
+    "So how about we hit the road Friday night instead? We could beat the traffic.",
+    "그러니까 차라리 금요일 밤에 출발하는 게 어때? 차 막히기 전에 빠져나갈 수 있잖아."
+   ],
+   [
+    "B",
+    "I'm down for that. I'll get a head start on packing tonight.",
+    "좋아, 찬성. 오늘 밤에 짐부터 미리 싸 둘게."
+   ],
+   [
+    "A",
+    "Great. Should we stop somewhere for dinner on the way?",
+    "좋다. 가는 길에 어디 들러서 저녁 먹을까?"
+   ],
+   [
+    "B",
+    "Let's play it by ear. If the roads are clear, we can just grab something at a rest stop.",
+    "그건 상황 봐서 정하자. 길이 뻥 뚫려 있으면 휴게소에서 간단히 먹으면 되고."
+   ],
+   [
+    "A",
+    "Sounds good. I'll fill up the tank tomorrow so we don't have to stop for gas.",
+    "좋아. 기름 넣느라 멈출 일 없게 내일 가득 채워 둘게."
+   ],
+   [
+    "B",
+    "Perfect. We'd better leave right after dinner, or we'll end up crawling along with everyone else.",
+    "완벽해. 저녁 먹고 바로 출발하는 게 좋겠어. 안 그러면 우리도 다른 차들이랑 같이 기어가게 될 거야."
+   ]
+  ],
+  "expressions": [
+   {
+    "en": "Are we still on for ~?",
+    "ko": "‘~하기로 한 거 그대로지?’. 미리 잡아 둔 약속이 여전히 유효한지 가볍게 확인할 때 쓰는 말이에요. 대답은 We're still on(그대로 해)처럼 해요.",
+    "eg": "Are we still on for coffee tomorrow morning?"
+   },
+   {
+    "en": "bumper-to-bumper",
+    "ko": "‘(차가) 범퍼끼리 닿을 듯 꽉 막힌’. 차들이 줄줄이 붙어서 거의 움직이지 않는 교통 체증을 실감 나게 묘사해요. traffic 앞에 붙여 써요.",
+    "eg": "Traffic was bumper-to-bumper all the way to the airport."
+   },
+   {
+    "en": "hit the road",
+    "ko": "‘출발하다, 길을 나서다’. 특히 차를 타고 여행이나 먼 길을 떠날 때 자주 써요. leave보다 경쾌하고 들뜬 느낌이 있어요.",
+    "eg": "We should hit the road by seven if we want to get there before lunch."
+   },
+   {
+    "en": "beat the traffic",
+    "ko": "‘차가 막히기 전에 움직이다’. 출퇴근 시간이나 연휴 정체를 피하려고 일찍 또는 늦게 출발한다는 뜻이에요. beat the crowds(붐비기 전에 가다)도 같은 틀이에요.",
+    "eg": "Let's leave the stadium a few minutes early to beat the traffic."
+   },
+   {
+    "en": "play it by ear",
+    "ko": "‘상황 봐 가며 정하다’. 미리 계획을 확정하지 않고 그때그때 형편에 맞춰 결정하자고 할 때 써요. 악보 없이 귀로 듣고 연주한다는 데서 왔어요.",
+    "eg": "I'm not sure how long the party will last, so let's play it by ear."
+   }
+  ],
+  "pattern": {
+   "en": "We'd better ~, or ~",
+   "ko": "‘~하는 게 좋겠어, 안 그러면 ~할 거야’. had better는 그냥 권하는 should보다 ‘안 하면 곤란해진다’는 느낌이 강해서, 뒤에 or로 생길 일을 붙여 자주 말해요.",
+   "examples": [
+    [
+     "We'd <b>better</b> leave <b>now</b>, or we'll miss the <b>train</b>.",
+     "지금 나가는 게 좋겠어. 안 그러면 기차 놓쳐."
+    ],
+    [
+     "You'd <b>better</b> book a <b>table</b>, or you won't get <b>in</b>.",
+     "테이블 예약해 두는 게 좋아. 안 그러면 못 들어가."
+    ],
+    [
+     "We'd <b>better</b> bring <b>umbrellas</b>, or we'll get <b>soaked</b>.",
+     "우산 챙기는 게 좋겠어. 안 그러면 홀딱 젖을 거야."
+    ]
+   ]
+  }
+ },
+ "news": [
+  {
+   "region": "말레이시아",
+   "tag": "교통 · 통행료",
+   "important": true,
+   "icon": "bus",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M5 18L17 9l12 9z\"/><rect x=\"8\" y=\"18\" width=\"18\" height=\"34\"/><rect x=\"24\" y=\"28\" width=\"42\" height=\"8\" rx=\"2\"/><rect x=\"5\" y=\"50\" width=\"24\" height=\"6\" rx=\"1.5\"/><rect x=\"58\" y=\"36\" width=\"5\" height=\"18\"/></g><g stroke=\"#4A2E1A\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><rect x=\"58\" y=\"36\" width=\"5\" height=\"18\" fill=\"#B9C0C8\"/><rect x=\"8\" y=\"18\" width=\"18\" height=\"34\" fill=\"#2F6B5A\"/><rect x=\"11.5\" y=\"23\" width=\"11\" height=\"9\" rx=\"1\" fill=\"#A9D9EC\"/><path d=\"M5 18L17 9l12 9z\" fill=\"#C8553D\"/><rect x=\"5\" y=\"50\" width=\"24\" height=\"6\" rx=\"1.5\" fill=\"#6B4A2B\"/><rect x=\"24\" y=\"28\" width=\"42\" height=\"8\" rx=\"2\" fill=\"#FBF7EF\"/></g><g fill=\"#C8553D\"><rect x=\"31\" y=\"29\" width=\"5\" height=\"6\"/><rect x=\"42\" y=\"29\" width=\"5\" height=\"6\"/><rect x=\"53\" y=\"29\" width=\"5\" height=\"6\"/></g><rect x=\"24\" y=\"28\" width=\"42\" height=\"8\" rx=\"2\" fill=\"none\" stroke=\"#4A2E1A\" stroke-width=\"1.5\"/><circle cx=\"26\" cy=\"32\" r=\"3.2\" fill=\"#F2CF6B\" stroke=\"#4A2E1A\" stroke-width=\"1.3\"/><circle cx=\"17\" cy=\"40\" r=\"2.2\" fill=\"#F2CF6B\" stroke=\"#4A2E1A\" stroke-width=\"1\"/><path d=\"M13 21.5q3-1 6-1\" stroke=\"#fff\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\".6\"/>"
+   },
+   "title": "6·7일 고속도로 통행료 50% 할인",
+   "titleEn": "Expressway Tolls Cut by About Half on November 6 and 7 for Deepavali",
+   "lead": "디파발리를 앞두고 6일(금)부터 7일(토) 밤 11시 59분까지 전국 고속도로 통행료가 약 50% 할인돼요. 1종 승용차, 그리고 페낭 대교를 건너는 2종 상용차가 대상이에요.",
+   "pts": [
+    "조호르의 BSI 요금소와 제2연륙교(링크두아)의 탄중 쿠팡 요금소는 할인 없이 평소 요금을 받아요",
+    "연휴 동안 주요 고속도로에는 하루 약 328만 대가 다닐 것으로 예상되고, 그중 PLUS 구간이 224만 대예요",
+    "PLUS는 32곳에서 비상 차로를 임시로 쓰는 스마트 레인을 열었고, 클랑밸리로 돌아오는 차는 9·10일에 늘어날 전망이에요"
+   ],
+   "info": [
+    [
+     "할인",
+     "11월 6일(금) ~ 7일(토) 23:59"
+    ],
+    [
+     "교통 정보",
+     "X @plustrafik · @llminfotrafik"
+    ],
+    [
+     "긴급",
+     "PLUSLine 1‑800‑88‑0000"
+    ]
+   ],
+   "src": "Malay Mail · 11.05",
+   "url": "https://www.malaymail.com/news/malaysia/2026/11/05/driving-home-for-deepavali-328-million-vehicles-expected-daily-on-plus-and-major-highways/242060"
+  },
+  {
+   "region": "말레이시아",
+   "tag": "공연",
+   "icon": "music",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><rect x=\"7\" y=\"6\" width=\"58\" height=\"46\" rx=\"2\"/><rect x=\"5\" y=\"49\" width=\"62\" height=\"7\" rx=\"1.5\"/></g><rect x=\"7\" y=\"6\" width=\"58\" height=\"46\" rx=\"2\" fill=\"#6B4A2B\" stroke=\"#4A2E1A\" stroke-width=\"1.5\"/><rect x=\"12\" y=\"12\" width=\"48\" height=\"38\" fill=\"#F7E3A6\"/><path d=\"M25 50l11-30 11 30z\" fill=\"#FFF6D6\" opacity=\".9\"/><g stroke=\"#4A2E1A\" stroke-width=\"1.4\" stroke-linejoin=\"round\"><path d=\"M12 12h17q-6 14 1 38H12z\" fill=\"#B5462F\"/><path d=\"M60 12H43q6 14-1 38h18z\" fill=\"#B5462F\"/><path d=\"M12 12h48v6q-4 3-8 0-4 3-8 0-4 3-8 0-4 3-8 0-4 3-8 0-4 3-8 0z\" fill=\"#C8553D\"/></g><path d=\"M17 22q-1 12 1 24M23 21q-2 13 1 26M55 22q1 12-1 24M49 21q2 13-1 26\" fill=\"none\" stroke=\"#8E3424\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><path d=\"M12 15h48\" stroke=\"#F2CF6B\" stroke-width=\"1.3\"/><rect x=\"5\" y=\"49\" width=\"62\" height=\"7\" rx=\"1.5\" fill=\"#D9A441\" stroke=\"#4A2E1A\" stroke-width=\"1.5\"/><circle cx=\"36\" cy=\"38\" r=\"2.4\" fill=\"#F2CF6B\" stroke=\"#8A5A12\" stroke-width=\"1\"/>"
+   },
+   "title": "1,200석 새 극장에 다시 오른 ‘푸테리 구눙 레당’",
+   "titleEn": "Puteri Gunung Ledang Returns on Sunway's New 1,200-Seat Stage",
+   "lead": "선웨이 시티 쿠알라룸푸르의 선웨이 스퀘어에 10월 16일 문을 연 제프리 치아 공연예술센터(JCPAC)에서, 말레이 전설을 바탕으로 한 뮤지컬 ‘푸테리 구눙 레당’이 10월 31일 다시 막을 올렸어요.",
+   "pts": [
+    "선웨이 그룹이 2억 링깃을 들인 곳으로, 1,200석 대극장과 신진·실험 작품을 위한 150석 스튜디오가 있어요",
+    "20년 전 초연한 작품을, 티아라 재클리나가 세운 엔피니티 프로덕션이 다시 무대에 올렸어요",
+    "선예매와 일반 예매에서 몇 시간 만에 1만 8,000장 넘게 팔렸고, 온라인 대기열에는 2만 2,000명 넘게 남아 있었어요"
+   ],
+   "info": [
+    [
+     "어디",
+     "JCPAC, 선웨이 스퀘어"
+    ],
+    [
+     "출연",
+     "아이샤 레트노, 밀라 모신, 아카샤 등"
+    ]
+   ],
+   "src": "Malay Mail · 11.05",
+   "url": "https://www.malaymail.com/news/life/2026/11/05/for-jeffrey-cheah-a-performing-arts-centre-represents-opportunities-for-malaysian-artistes-like-those-in-popular-puteri-gunung-ledang-the-musical/242113"
+  },
+  {
+   "region": "말레이시아",
+   "tag": "커뮤니티",
+   "icon": "heart",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><rect x=\"6\" y=\"12\" width=\"9\" height=\"26\" rx=\"2\"/><path d=\"M15 20h26a8 8 0 0 1 8 8v8H39v-6H15z\"/><rect x=\"24\" y=\"8\" width=\"14\" height=\"5\" rx=\"2\"/><rect x=\"29\" y=\"12\" width=\"4\" height=\"8\"/><path d=\"M44 42q-5 7-5 10a5 5 0 0 0 10 0q0-3-5-10z\"/><path d=\"M8 52h22\"/></g><g stroke=\"#3F4A55\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"12\" width=\"9\" height=\"26\" rx=\"2\" fill=\"#8C99A5\"/><rect x=\"29\" y=\"12\" width=\"4\" height=\"8\" fill=\"#B9C0C8\"/><rect x=\"24\" y=\"8\" width=\"14\" height=\"5\" rx=\"2\" fill=\"#C8553D\"/><path d=\"M15 20h26a8 8 0 0 1 8 8v8H39v-6H15z\" fill=\"#C9D1D8\"/><rect x=\"38\" y=\"35\" width=\"12\" height=\"3.5\" rx=\"1\" fill=\"#8C99A5\"/></g><path d=\"M18 23h21\" stroke=\"#fff\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\".85\"/><path d=\"M44 42q-5 7-5 10a5 5 0 0 0 10 0q0-3-5-10z\" fill=\"#6FA9C9\" stroke=\"#2F5D74\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><path d=\"M42 51q0 2 2 3\" fill=\"none\" stroke=\"#DCEFF7\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><path d=\"M8 52h22\" stroke=\"#5FAE84\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M12 52q1-5 4-6M22 52q0-4 3-6\" fill=\"none\" stroke=\"#2F5D49\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>"
+   },
+   "title": "불탄 물 위 마을에 수도꼭지가 돌아왔어요",
+   "titleEn": "Six Months After the Fire, Kampung Bahagia Gets Water and Toilets",
+   "lead": "4월 19일 큰불이 났던 사바주 산다칸의 수상 마을 캄풍 바하기아에, 머시 말레이시아와 야야산 사임 다비(YSD)가 만든 물·위생 시설이 4일 정식으로 문을 열었어요.",
+   "pts": [
+    "그 불로 수상 가옥 약 1,000채가 타고, 주민 9,000명 가까이가 피해를 입었어요",
+    "YSD가 30만 링깃을 대고 머시 말레이시아가 지어, 화장실·목욕·빨래용 임시 공동 건물 4동과 물탱크, 배관망을 갖췄어요",
+    "늘어난 저수량은 앞으로의 비상 상황과 불을 끄는 데에도 쓰일 수 있어요"
+   ],
+   "info": [
+    [
+     "어디",
+     "사바주 산다칸, 캄풍 바하기아"
+    ],
+    [
+     "함께",
+     "지역 장인, 지방 당국, 주민 대표"
+    ]
+   ],
+   "src": "Malay Mail · 11.04",
+   "url": "https://www.malaymail.com/news/life/2026/11/04/from-ashes-to-taps-six-months-on-kampung-bahagia-gets-water-toilets-and-a-tank-for-future-fires/241969"
+  },
+  {
+   "region": "말레이시아",
+   "tag": "음식",
+   "icon": "bowl",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><rect x=\"6\" y=\"38\" width=\"60\" height=\"14\" rx=\"4\"/><rect x=\"11\" y=\"18\" width=\"16\" height=\"22\" rx=\"2\"/><rect x=\"29\" y=\"16\" width=\"16\" height=\"24\" rx=\"2\"/><rect x=\"47\" y=\"19\" width=\"15\" height=\"21\" rx=\"2\"/></g><rect x=\"6\" y=\"38\" width=\"60\" height=\"14\" rx=\"4\" fill=\"#C9935F\" stroke=\"#4A2E1A\" stroke-width=\"1.5\"/><path d=\"M11 46h50\" stroke=\"#A8743F\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><g stroke=\"#4A2E1A\" stroke-width=\"1.4\" stroke-linejoin=\"round\"><rect x=\"11\" y=\"18\" width=\"16\" height=\"22\" rx=\"2\" fill=\"#E9A3A0\"/><rect x=\"29\" y=\"16\" width=\"16\" height=\"24\" rx=\"2\" fill=\"#E9A3A0\"/><rect x=\"47\" y=\"19\" width=\"15\" height=\"21\" rx=\"2\" fill=\"#E9A3A0\"/></g><g fill=\"#FBF3E4\"><rect x=\"11.8\" y=\"25\" width=\"14.4\" height=\"4\"/><rect x=\"11.8\" y=\"33\" width=\"14.4\" height=\"2.6\"/><rect x=\"29.8\" y=\"23\" width=\"14.4\" height=\"4\"/><rect x=\"29.8\" y=\"32\" width=\"14.4\" height=\"2.6\"/><rect x=\"47.8\" y=\"26\" width=\"13.4\" height=\"4\"/><rect x=\"47.8\" y=\"34\" width=\"13.4\" height=\"2.4\"/></g><g fill=\"#D9892B\" stroke=\"#4A2E1A\" stroke-width=\"1.4\" stroke-linejoin=\"round\"><path d=\"M11 25v-5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5z\"/><path d=\"M29 23v-5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5z\"/><path d=\"M47 26v-5a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v5z\"/></g><g fill=\"#F7D36B\"><circle cx=\"15\" cy=\"21\" r=\"1\"/><circle cx=\"20\" cy=\"22.5\" r=\"1\"/><circle cx=\"24\" cy=\"20.5\" r=\"1\"/><circle cx=\"33\" cy=\"19\" r=\"1\"/><circle cx=\"38\" cy=\"20.8\" r=\"1\"/><circle cx=\"42\" cy=\"18.8\" r=\"1\"/><circle cx=\"51\" cy=\"22\" r=\"1\"/><circle cx=\"56\" cy=\"23.5\" r=\"1\"/><circle cx=\"59.5\" cy=\"21.6\" r=\"1\"/></g>"
+   },
+   "title": "반년 걸린 바삭한 껍질, 선웨이 지오 로스트 미트 숍",
+   "titleEn": "Six Months to Perfect the Crackling at The Roast Meat Shop in Sunway Geo",
+   "lead": "10년 넘게 독일 회사의 지사장으로 일한 해리 퐁(Harry Fong)과 아내 올리비아 얍(Olivia Yap)이 집에서 고기를 구워 보던 데서 시작한 ‘더 로스트 미트 숍’을 말레이 메일이 소개했어요.",
+   "pts": [
+    "시우욕(껍질이 바삭한 구운 돼지고기)과 차슈는 레시피 연구와 재료 찾기, 시험에 반년쯤 걸렸어요",
+    "얍의 집안에는 하카 출신 할머니의 새콤매콤한 갓 로스트 포크 레시피가 내려오고, 만두는 미국에 사는 이모가 30여 년 전에 배운 레시피예요",
+    "가장 많이 팔리는 건 완탄면으로, 쫄깃하고 알칼리 맛이 덜한 오리알 면을 써요"
+   ],
+   "info": [
+    [
+     "어디",
+     "선웨이 지오 애비뉴 F‑01‑08, 수방 자야"
+    ],
+    [
+     "영업",
+     "매일 오전 10시 30분~오후 8시 30분"
+    ]
+   ],
+   "src": "Malay Mail · 11.05",
+   "url": "https://www.malaymail.com/news/eat-drink/2026/11/05/crackling-with-character-the-family-recipes-behind-the-roast-meat-shop-in-sunway-geo/242017"
+  },
+  {
+   "region": "세계",
+   "tag": "영국 입시",
+   "icon": "book",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><circle cx=\"36\" cy=\"9\" r=\"3.5\"/><rect x=\"34\" y=\"10\" width=\"4\" height=\"40\"/><rect x=\"11\" y=\"15\" width=\"50\" height=\"4\" rx=\"2\"/><path d=\"M15 19L8 36M15 19l7 17M57 19l-7 17M57 19l7 17\"/><path d=\"M6 36h18q-9 9-18 0z\"/><path d=\"M48 36h18q-9 9-18 0z\"/><path d=\"M24 55h24l-4-7H28z\"/></g><path d=\"M15 19L8 36M15 19l7 17M57 19l-7 17M57 19l7 17\" fill=\"none\" stroke=\"#8A5A12\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><g stroke=\"#8A5A12\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><rect x=\"34\" y=\"10\" width=\"4\" height=\"40\" fill=\"#DDA22F\"/><rect x=\"11\" y=\"15\" width=\"50\" height=\"4\" rx=\"2\" fill=\"#F7D36B\"/><circle cx=\"36\" cy=\"9\" r=\"3.5\" fill=\"#F7D36B\"/><path d=\"M6 36h18q-9 9-18 0z\" fill=\"#DDA22F\"/><path d=\"M48 36h18q-9 9-18 0z\" fill=\"#DDA22F\"/><path d=\"M24 55h24l-4-7H28z\" fill=\"#6B4A2B\"/></g><circle cx=\"15\" cy=\"17\" r=\"1.6\" fill=\"#C98B1E\"/><circle cx=\"57\" cy=\"17\" r=\"1.6\" fill=\"#C98B1E\"/><path d=\"M10 38.5q5 2.5 10 0M52 38.5q5 2.5 10 0\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\".7\"/>"
+   },
+   "title": "KCL·LSE·UCL 법대 지원, LNAT은 12월 31일까지",
+   "titleEn": "Applying for Law at KCL, LSE or UCL? Sit the LNAT by December 31",
+   "lead": "2027년 가을 입학으로 영국 법학과에 지원하면서 킹스칼리지런던(KCL), LSE, UCL을 고른 학생은 LNAT 시험을 2026년 12월 31일까지 치러야 해요. LNAT 공식 일정 안내에 나온 날짜예요.",
+   "pts": [
+    "그 밖의 LNAT 대학(브리스톨·더럼 제외)은 2027년 1월 20일 전까지 등록·예약하고, 1월 25일까지 응시하면 돼요",
+    "브리스톨·더럼은 1월 13일까지 등록·예약·응시를 모두 마치고, UCAS 지원서도 그날 영국 시간 오후 6시까지 내야 해요",
+    "응시료는 예약할 때 내야 하고, 신용카드·직불카드나 LNAT 전자 바우처로 낼 수 있어요"
+   ],
+   "info": [
+    [
+     "대상",
+     "2027년 가을 입학 LNAT 대학 법학 지원자"
+    ],
+    [
+     "마감",
+     "KCL·LSE·UCL 12월 31일까지 응시"
+    ],
+    [
+     "확인",
+     "LNAT 공식 일정 안내"
+    ]
+   ],
+   "src": "LNAT 공식 안내",
+   "url": "https://lnat.ac.uk/registration/dates-and-deadlines/"
+  },
+  {
+   "region": "세계",
+   "tag": "자연",
+   "icon": "turtle",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><circle cx=\"19\" cy=\"17\" r=\"10\"/><circle cx=\"53\" cy=\"17\" r=\"10\"/><ellipse cx=\"36\" cy=\"29\" rx=\"17\" ry=\"15\"/><path d=\"M8 52q28-10 56-4\"/><ellipse cx=\"22\" cy=\"49\" rx=\"5\" ry=\"4\"/><ellipse cx=\"50\" cy=\"47\" rx=\"5\" ry=\"4\"/></g><path d=\"M8 52q28-10 56-4\" fill=\"none\" stroke=\"#6B4A2B\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M58 47l5-6M14 51l-5-5\" stroke=\"#6B4A2B\" stroke-width=\"2\" stroke-linecap=\"round\"/><g stroke=\"#2F5D49\" stroke-width=\"1.2\" stroke-linejoin=\"round\" fill=\"#7CC6A0\"><path d=\"M63 41q4-6 1-10-5 4-1 10z\"/><path d=\"M9 46q-5-4-3-9 5 3 3 9z\"/></g><g stroke=\"#3F4A55\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><circle cx=\"19\" cy=\"17\" r=\"10\" fill=\"#A7B0B8\"/><circle cx=\"53\" cy=\"17\" r=\"10\" fill=\"#A7B0B8\"/><ellipse cx=\"36\" cy=\"29\" rx=\"17\" ry=\"15\" fill=\"#B9C0C8\"/><ellipse cx=\"22\" cy=\"49\" rx=\"5\" ry=\"4\" fill=\"#A7B0B8\"/><ellipse cx=\"50\" cy=\"47\" rx=\"5\" ry=\"4\" fill=\"#A7B0B8\"/></g><circle cx=\"19\" cy=\"18\" r=\"5.5\" fill=\"#F3F1EC\"/><circle cx=\"53\" cy=\"18\" r=\"5.5\" fill=\"#F3F1EC\"/><ellipse cx=\"36\" cy=\"32\" rx=\"5\" ry=\"6.5\" fill=\"#2E3338\"/><path d=\"M34 28.5q1.5-1 3 0\" fill=\"none\" stroke=\"#8C99A5\" stroke-width=\"1\" stroke-linecap=\"round\"/><circle cx=\"28\" cy=\"26\" r=\"1.9\" fill=\"#1B2321\"/><circle cx=\"44\" cy=\"26\" r=\"1.9\" fill=\"#1B2321\"/><circle cx=\"28.6\" cy=\"25.4\" r=\".6\" fill=\"#fff\"/><circle cx=\"44.6\" cy=\"25.4\" r=\".6\" fill=\"#fff\"/><circle cx=\"25\" cy=\"33\" r=\"2\" fill=\"#F5A3A3\" opacity=\".7\"/><circle cx=\"47\" cy=\"33\" r=\"2\" fill=\"#F5A3A3\" opacity=\".7\"/>"
+   },
+   "title": "뉴캐슬 근처 코알라 숲, 클라미디아 흔적이 없어요",
+   "titleEn": "Koalas Near Newcastle May Be Free of Chlamydia, Researchers Find",
+   "lead": "호주 뉴사우스웨일스주 뉴캐슬 도심에서 차로 35분 거리인 슈가로프‑스톡링턴 주립 보호구역의 코알라들에게서 클라미디아 감염 흔적이 나오지 않았다고, 뉴캐슬대 라이언 위트(Ryan Witt) 연구팀이 밝혔어요.",
+   "pts": [
+    "야생 코알라 27마리를 검사했고, 보호구역 30km 안의 구조·진료 기록 27마리에서도 감염은 없었어요",
+    "열화상 드론과 나무에 단 카메라로 코알라를 찾은 뒤, 신선한 배설물을 드라이아이스에 담아 선샤인코스트대에 보내 분석했어요",
+    "2025년 말 292마리를 확인했고, 연구팀은 이곳에 약 2,300마리가 살 수 있다고 추정해요"
+   ],
+   "info": [
+    [
+     "어디",
+     "호주 NSW, 슈가로프‑스톡링턴 주립 보호구역"
+    ],
+    [
+     "참고",
+     "전문가는 100% 감염이 없다고 단정할 수는 없다고 말해요"
+    ]
+   ],
+   "src": "ABC News · 11.05",
+   "url": "https://www.abc.net.au/news/2026-11-05/chlamydia-free-koalas-discovered-newcastle/107344308"
+  }
+ ],
+ "trend": {
+  "title": "다이소 세계 최대 물류센터, 풀라우 인다에 문 열었다",
+  "titleEn": "Daiso Opens Its Largest Global Distribution Centre on Pulau Indah",
+  "asOf": "2026년 11월 5일 보도 기준",
+  "body": "생활용품 브랜드 다이소를 운영하는 일본의 다이소 산교(Daiso Industries)가 슬랑오르주 클랑 항 인근 풀라우 인다에 세계 최대 규모의 글로벌 물류센터(GDC)를 열었습니다. 이 센터는 일본과 중국 등 세계 각지의 공급처와 이어지는 핵심 입출고 물류 거점 역할을 맡습니다.",
+  "points": [
+   "면적은 13만 3,666㎡로, 다이소의 일본 히로시마 본거지보다도 큰 세계 최대 창고입니다.",
+   "투자액은 12억 링깃입니다.",
+   "이곳에서 아시아와 중동의 27개국으로 물건이 나갑니다.",
+   "개관식에는 야노 세이지(Seiji Yano) 사장 겸 CEO가 참석했고, 센터는 예정보다 일찍, 예산보다 적게 들여 완공됐습니다."
+  ],
+  "src": [
+   [
+    "Malay Mail (2026.11.05)",
+    "https://www.malaymail.com/news/malaysia/2026/11/05/daisos-largest-global-distribution-centre-in-pulau-indah-a-vote-of-confidence-in-malaysia-says-anwar/242055"
+   ]
+  ]
+ },
+ "life": {
+  "cat": "인문학 한 스푼",
+  "title": "1869년 11월 6일, 첫 대학 ‘풋볼’은 축구에 더 가까웠다",
+  "titleEn": "November 6, 1869: The First College Football Game Looked More Like Soccer",
+  "intro": "1869년 11월 6일, 미국 럿거스대 뉴브런즈윅 캠퍼스의 칼리지 애비뉴 체육관 뒤 들판에서 럿거스와 프린스턴이 맞붙었습니다. 대학 풋볼의 첫 경기로 남은 이날의 모습은 지금의 미식축구보다 축구에 훨씬 가까웠습니다.",
+  "tips": [
+   [
+    "한 팀에 25명",
+    "두 팀은 각각 25명씩 나섰고, 지켜본 관중은 100명쯤이었습니다. 보호 장비를 갖춘 선수는 아무도 없었습니다."
+   ],
+   [
+    "손과 주먹, 그리고 발",
+    "공은 발뿐 아니라 손이나 주먹으로도 칠 수 있었지만, 상대를 붙잡거나 걸어 넘어뜨리는 것은 금지였습니다."
+   ],
+   [
+    "먼저 여섯 골",
+    "경기장은 가로 360피트, 세로 225피트였고 양 끝 골문 너비는 24피트였습니다. 먼저 여섯 골을 넣는 팀이 이기는 방식이었고, 럿거스가 6대 4로 이겼습니다."
+   ],
+   [
+    "손수건과 평상복",
+    "럿거스 선수들은 주홍색 손수건과 터번처럼 두른 스카프를 썼고, 프린스턴 선수들은 대부분 평소 옷차림 그대로였습니다."
+   ],
+   [
+    "진짜 승부는 다음 주",
+    "일주일 뒤 프린스턴에서 열린 재경기는 프린스턴이 8대 0으로 이겼고, 세 번째 경기는 끝내 열리지 않았습니다. 두 경기 합계 12대 6으로 앞선 프린스턴이 논란 속에 1869년 챔피언으로 정해졌습니다."
+   ]
+  ],
+  "src": [
+   [
+    "Rutgers University (2019.11.06)",
+    "https://www.rutgers.edu/news/birthplace-college-football"
+   ]
+  ]
+ },
+ "music": {
+  "title": "밤편지",
+  "artist": "아이유 (IU)",
+  "year": "2017",
+  "mood": "연휴를 앞둔 금요일 밤에",
+  "why": "악기를 덜어 내고 목소리를 앞세운, 어쿠스틱하고 포크 느낌이 나는 잔잔한 발라드로, 아이유 정규 4집 『Palette』의 리드 싱글입니다. 긴 연휴를 앞둔 금요일 밤, 불을 조금 낮추고 하루를 정리하며 듣기 좋습니다.",
+  "query": "IU 밤편지 Through the Night"
+ },
+ "shows": {
+  "intro": "쿠알라룸푸르에서 지금 볼 수 있거나 곧 열리는 전시와 공연, 문화 행사입니다.",
+  "items": [
+   {
+    "kind": "문화",
+    "title": "말레이시아 한국문화원 개관 · K‑컬처 페스티벌 2026 (Korean Cultural Centre Malaysia · K-Culture Festival 2026)",
+    "when": "10월 30일 개관, 11월 2일부터 일반 공개",
+    "where": "말레이시아 한국문화원, 142 Jalan Ampang, 쿠알라룸푸르",
+    "memo": "사비나미술관과 함께한 전시 ‘한복, 예술로 다시 태어나다(Hanbok, Reborn As Art)’를 열고, 11월 2일부터 K‑컬처 페스티벌을 시작합니다.",
+    "url": "https://www.thestar.com.my/lifestyle/culture/2026/10/26/korean-cultural-centre-in-malaysia-to-open-to-public-on-nov-2"
+   },
+   {
+    "kind": "전시",
+    "title": "경계 없는 예술: 난양으로 가는 새 항해 (Art Without Boundaries — New Voyage to Nanyang)",
+    "when": "11월 11일까지",
+    "where": "루앙 트두(Ruang Teduh), 익스체인지 106, 툰 라작 익스체인지",
+    "memo": "대만 태생의 작가이자 큐레이터 빅토리아 루가 AI와 인간의 창의성을 탐구한 작품을 선보이는 전시의 두 번째 회입니다.",
+    "url": "https://www.malaymail.com/news/life/2026/10/10/art-meets-algorithm-victoria-lu-explores-ai-and-human-creativity-at-kuala-lumpur-exhibition/238604"
+   },
+   {
+    "kind": "K팝",
+    "title": "예성 10주년 투어 (YESUNG 10th Anniversary Tour: ABOUT THE THINGS WE CALLED ORDINARY)",
+    "when": "11월 7일(토) 오후 8시",
+    "where": "제프 쿠알라룸푸르 (Zepp Kuala Lumpur)",
+    "memo": "슈퍼주니어 예성의 10주년 기념 투어 공연으로, iMe Malaysia가 주최합니다.",
+    "url": "https://klconcert.com/concert/yesung-10th-anniversary-tour-about-the-things-we-called-ordinary"
+   },
+   {
+    "kind": "콘서트",
+    "title": "마치 그녀가 여기 있는 듯: 천자가 부르는 덩리쥔 (As If She Were Here: Chen Jia Sings Teresa Teng)",
+    "when": "11월 7일 오후 8시, 8일 오후 3시",
+    "where": "데완 필하모닉 페트로나스 (Dewan Filharmonik PETRONAS)",
+    "memo": "프랜시스 칸이 지휘하는 말레이시아 필하모닉과 가수 천자(Chen Jia)가 덩리쥔의 노래를 들려주며, 공연 시간은 약 75분에 휴식 20분이 더해집니다.",
+    "url": "https://www.mpo.com.my/season-2026/asifshewerehere-chenjiasingsteresateng"
+   },
+   {
+    "kind": "연극",
+    "title": "遙遠的東方有一群鬼 (The Ghosts Within)",
+    "when": "11월 12~15일 오후 8시, 14·15일 오후 3시",
+    "where": "KLPac 펜타스 2 (Pentas 2)",
+    "memo": "로 콕 만(羅國文)이 연출한 90분짜리 연극으로, 중국어로 공연하고 영어 자막이 나옵니다.",
+    "url": "https://www.klpac.org/shows/%e9%81%99%e9%81%a0%e7%9a%84%e6%9d%b1%e6%96%b9%e6%9c%89%e4%b8%80%e7%be%a4%e9%ac%bc-the-ghosts-within/"
+   },
+   {
+    "kind": "클래식",
+    "title": "말레이시아 실내악 쇼케이스 2 (Malaysian Chamber Showcase 2)",
+    "when": "11월 15일(일) 오후 3시",
+    "where": "데완 필하모닉 페트로나스 (Dewan Filharmonik PETRONAS)",
+    "memo": "UCSI의 듀오 브릴란테와 쿼드 스쿼드, 루미노 브라스 등이 멘델스존, 프로코피예프, 비발디 등의 곡을 들려주며, 중간에 20분 휴식이 있습니다.",
+    "url": "https://www.mpo.com.my/season-2026/malaysian-chamber-showcase-2"
+   },
+   {
+    "kind": "클래식",
+    "title": "판타지 월드 II: 애니메이션 × 클래식 (A Fantasy World II: Anime x Classical with The klpac String Orchestra)",
+    "when": "11월 20~21일 오후 8시 30분, 22일 오후 3시",
+    "where": "KLPac 펜타스 2 (Pentas 2)",
+    "memo": "앤드리아 심이 지휘하는 klpac 현악 오케스트라가 히사이시 조의 지브리 음악과 래드윔프스의 ‘너의 이름은.’ 메들리 등을 연주하며, 공연 시간은 휴식 15분을 포함해 90분입니다.",
+    "url": "https://www.klpac.org/shows/a-fantasy-world-ii-anime-x-classical-with-the-klpac-string-orchestra/"
+   }
+  ]
+ },
+ "fact": {
+  "title": "11월 6일, 색소폰을 만든 사람이 태어난 날",
+  "titleEn": "November 6: The Birthday of the Man Who Invented the Saxophone",
+  "body": "색소폰을 만든 벨기에의 악기 제작자 아돌프 삭스(본명 앙투안조제프 삭스)는 1814년 11월 6일 벨기에 디낭에서 태어났습니다. 그는 베이스 클라리넷의 음색을 더 좋게 만들려다 금속 몸통에 리드 하나를 쓰는 새 악기를 만들었고, 1842년 파리로 옮겨 이 악기를 선보인 뒤 1846년에 특허를 받았습니다.",
+  "more": [
+   "아버지 샤를 조제프 삭스도 관악기와 금관악기, 피아노, 하프, 기타를 만드는 악기 제작자였고, 부자는 함께 색스혼을 개발해 1845년에 특허를 받았습니다.",
+   "그가 만든 악기 가운데 상당수가 프랑스 군악대에 채택됐고, 1857년에는 파리 음악원의 색소폰 교수가 됐습니다.",
+   "경쟁 악기 제작자들이 특허를 무효로 하려고 10년쯤 소송을 이어 갔고, 말년에 몹시 가난해지자 샤브리에, 마스네, 생상스가 미술부 장관에게 도움을 청했습니다."
+  ],
+  "src": [
+   [
+    "Britannica: Adolphe Sax",
+    "https://www.britannica.com/EBchecked/topic/525956/Adolphe-Sax"
+   ]
+  ]
+ }
+},
+{
  "date": "2026-11-05",
  "quote": {
   "ko": "나는 촉촉함과 사랑에 빠져, 버들가지 사이로 머리를 물속 깊이 담그는 하얀 오리들이 부럽다. 메마른 바깥세상에 자기 모습이 얼마나 우스꽝스러워 보일지 아랑곳하지 않는 그 오리들이.",
@@ -7423,5 +8310,6 @@ render();
   start();
 })();
 </script>
+
 </body>
 </html>
