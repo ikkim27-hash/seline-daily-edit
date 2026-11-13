@@ -569,6 +569,441 @@ const PHOTO = null; // 예: {src:"photo.jpg", caption:"한 줄 설명", date:"20
 /* ===== DAYS: 날짜별 콘텐츠. 최신 날짜가 맨 앞. 매일 새 객체를 맨 앞에 추가하고 14일치만 유지. ===== */
 const DAYS = [
 {
+ "date": "2026-11-14",
+ "quote": {
+  "ko": "가장 근사하고 다정한 날은 대단하거나 놀랍거나 신나는 일이 벌어지는 날이 아니라, 소박한 작은 기쁨들이 실에서 미끄러져 내리는 진주알처럼 하나씩 살며시 이어지는 날인 것 같아요.",
+  "en": "I believe the nicest and sweetest days are not those on which anything very splendid or wonderful or exciting happens but just those that bring simple little pleasures, following one another softly, like pearls slipping off a string.",
+  "by": "루시 모드 몽고메리, 『에이번리의 앤』 (1909)",
+  "pick": {
+   "kind": "영화",
+   "title": "리틀 포레스트 (Little Forest, 2018) · 임순례 감독",
+   "gist": "도시 생활에 지친 송혜원(김태리)은 고향으로 내려와, 오랜 친구 재하와 은숙 곁에서 사계절을 보냅니다. 그는 직접 만든 음식을 먹으며 지난 기억과 마음의 상처를 천천히 다독여 갑니다. 이가라시 다이스케의 같은 이름 만화를 옮긴 이 영화는, 밥 한 끼를 정성껏 짓는 하루가 사람을 얼마나 단단하게 붙잡아 주는지 조용히 보여 줍니다.",
+   "after": "큰일 없이 지나간 하루가 실에 꿴 진주알처럼 하나 더 늘었다면, 그것만으로도 오늘은 충분히 좋은 날입니다."
+  }
+ },
+ "english": {
+  "title": "주말 브런치 맛집, 줄 서서 기다리기",
+  "titleEn": "Waiting in Line at a Popular Brunch Spot",
+  "situation": "토요일 아침, 요즘 뜬 브런치 가게 앞에서 줄이 길게 늘어선 걸 본 A와 B가 기다릴지 말지 이야기해요.",
+  "lines": [
+   [
+    "A",
+    "Whoa, the line's out the door. Is it always this packed on Saturdays?",
+    "와, 줄이 문밖까지 섰네. 토요일엔 늘 이렇게 붐벼?"
+   ],
+   [
+    "B",
+    "Pretty much. This place blew up after a video of it went viral last month.",
+    "거의 그래. 지난달에 여기 영상이 퍼지고 나서 확 떴거든."
+   ],
+   [
+    "A",
+    "How long do you think the wait is? I'm starving.",
+    "얼마나 기다려야 할 것 같아? 나 배고파 죽겠어."
+   ],
+   [
+    "B",
+    "The host said about forty minutes, but they usually overestimate.",
+    "직원이 40분쯤이라고 했는데, 보통 넉넉하게 말하더라."
+   ],
+   [
+    "A",
+    "Forty minutes? I don't know if I can hold out that long.",
+    "40분? 그렇게 오래 버틸 수 있을지 모르겠다."
+   ],
+   [
+    "B",
+    "Come on, it's worth it. Their pancakes are out of this world.",
+    "에이, 그럴 만한 가치가 있어. 여기 팬케이크가 끝내주거든."
+   ],
+   [
+    "A",
+    "Fine, but if it drags on, we're grabbing bagels next door instead.",
+    "알았어, 근데 너무 길어지면 그냥 옆집에서 베이글 사 먹자."
+   ],
+   [
+    "B",
+    "Deal. I'll put our name down while you snag us a spot on the bench.",
+    "좋아. 내가 이름 올려 둘 테니까 넌 벤치에 자리 좀 잡아 줘."
+   ],
+   [
+    "A",
+    "Sure. And text me if they call us early.",
+    "그래. 혹시 일찍 부르면 문자 줘."
+   ],
+   [
+    "B",
+    "Will do. Hey, at least the weather's nice for once.",
+    "그럴게. 그래도 오늘은 웬일로 날씨가 좋네."
+   ]
+  ],
+  "expressions": [
+   {
+    "en": "The line's out the door",
+    "ko": "‘줄이 문밖까지 늘어섰다’. 가게가 꽉 차서 손님 줄이 밖까지 이어질 만큼 인기 있다는 걸 생생하게 전하는 말이에요.",
+    "eg": "The bakery was so popular the line was out the door by 8 a.m."
+   },
+   {
+    "en": "blow up",
+    "ko": "‘(갑자기) 확 뜨다, 대박 나다’. 가게나 영상, 사람이 짧은 시간에 유명해질 때 일상적으로 써요. 맥락에 따라 ‘화를 터뜨리다’라는 뜻도 있으니 주의하세요.",
+    "eg": "Her little cooking channel really blew up this year."
+   },
+   {
+    "en": "hold out",
+    "ko": "‘(힘든 상황을) 버티다, 견디다’. 배고픔이나 피곤함을 참고 기다릴 때 자연스럽게 써요.",
+    "eg": "Can you hold out until dinner, or do you need a snack?"
+   },
+   {
+    "en": "out of this world",
+    "ko": "‘끝내주게 좋은, 기가 막힌’. 특히 음식 맛을 크게 칭찬할 때 즐겨 쓰는 표현이에요.",
+    "eg": "Have you tried her lasagna? It's out of this world."
+   },
+   {
+    "en": "snag (a spot)",
+    "ko": "‘(자리나 물건을) 재빨리 잡다, 손에 넣다’. get보다 운 좋게, 재빠르게 차지했다는 느낌이 살아 있어요.",
+    "eg": "We got there early and snagged a table by the window."
+   }
+  ],
+  "pattern": {
+   "en": "I don't know if I can ~",
+   "ko": "‘~할 수 있을지 모르겠어’. 자신 없거나 망설여질 때, 거절하기 전에 부드럽게 쿠션을 깔 때도 써요.",
+   "examples": [
+    [
+     "I don't know if I can <b>make</b> it to your party on <b>Friday</b>.",
+     "금요일 네 파티에 갈 수 있을지 모르겠어."
+    ],
+    [
+     "I don't know if I can <b>finish</b> this whole <b>plate</b>.",
+     "이 한 접시를 다 먹을 수 있을지 모르겠다."
+    ],
+    [
+     "I don't know if I can <b>wake</b> up that <b>early</b>.",
+     "그렇게 일찍 일어날 수 있을지 모르겠어."
+    ]
+   ]
+  }
+ },
+ "news": [
+  {
+   "region": "말레이시아",
+   "tag": "유산",
+   "icon": "people",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M11 39Q36 31 61 39L59 52Q36 45 13 52z\"/><path d=\"M19 38L47 8L55 36z\"/></g><g stroke=\"#4A2E1A\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M19 38L47 8L55 36z\" fill=\"#8E2F2A\"/><path d=\"M47 8L41 37\" fill=\"none\" stroke-width=\"1.2\"/><path d=\"M11 39Q36 31 61 39L59 52Q36 45 13 52z\" fill=\"#B5462F\"/></g><path d=\"M27 31L45 13M33 33L47 18\" fill=\"none\" stroke=\"#F2CF6B\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><path d=\"M15 45l4-3 4 3 4-3 4 3 4-3 4 3 4-3 4 3 4-3 4 3 4-3\" fill=\"none\" stroke=\"#F2CF6B\" stroke-width=\"1.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"47\" cy=\"10\" r=\"1.6\" fill=\"#F2CF6B\"/>"
+   },
+   "title": "트렝가누 장인이 짓는 왕실의 탄작",
+   "titleEn": "Meet the Terengganu Craftsman Shaping Royal Tanjaks",
+   "lead": "트렝가누 쿠알라브랑의 무함마드 알리 유소프(52) 씨가 2023년부터 술탄 미잔 자이날 아비딘과 왕실 가족이 쓰는 머리 장식 ‘탄작’을 만들어 왔다고 베르나마가 전했어요. 그는 2014년에 처음 이 일을 배웠어요.",
+   "pts": [
+    "트렝가누에는 기본 전통 모양이 8가지 있고, 술탄이 쓰는 ‘블랄라이 가자(코끼리 코)’와 인기 많은 ‘락사마나’가 대표적이에요",
+    "전통 탄작은 약 30분, 현대식은 반나절 넘게 걸리고, 대부분 송켓 천으로 만들며 값은 개당 RM100‑150이에요",
+    "실랏 협회, 양궁 클럽, 수집가는 물론 호주 손님도 찾고, 지금은 22살 아들에게 기술을 가르치고 있어요"
+   ],
+   "info": [
+    [
+     "어디",
+     "카르야 즈마리 카양안, 캄풍 가웅 틍아, 쿠알라브랑 (트렝가누)"
+    ],
+    [
+     "시작",
+     "2014년 배우기 시작, 2023년부터 왕실 주문"
+    ]
+   ],
+   "src": "Malay Mail (Bernama) · 11.13",
+   "url": "https://www.malaymail.com/news/life/2026/11/13/meet-the-terengganu-craftsman-shaping-royal-tanjaks-and-preserving-malay-heritage/242952"
+  },
+  {
+   "region": "말레이시아",
+   "tag": "책 · 숲",
+   "icon": "book",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M6 22V55Q22 49 36 55Q50 49 66 55V22z\"/><path d=\"M30 34Q34 9 57 10Q56 32 30 34z\"/></g><g stroke=\"#2F5D49\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M6 24V55Q22 49 36 55Q50 49 66 55V24\" fill=\"#2F6B5A\"/><path d=\"M9 21Q23 15 36 21V51Q23 45 9 51z\" fill=\"#FBF7EF\"/><path d=\"M63 21Q49 15 36 21V51Q49 45 63 51z\" fill=\"#F5E4BA\"/><path d=\"M14 27q8-3 17-1M14 33q8-3 17-1M14 39q8-3 17-1M14 45q8-3 17-1\" fill=\"none\" stroke=\"#9FB8AC\" stroke-width=\"1.1\"/><path d=\"M41 37q8-3 17-1M41 43q8-3 17-1\" fill=\"none\" stroke=\"#C9B48A\" stroke-width=\"1.1\"/><path d=\"M30 34Q34 9 57 10Q56 32 30 34z\" fill=\"#5FAE84\"/><path d=\"M31 33Q42 22 55 12\" fill=\"none\" stroke-width=\"1.2\"/><path d=\"M38 27l-1-6M44 22l-1-6M44 22l6 1M38 27l7 1\" fill=\"none\" stroke-width=\"1\"/></g>"
+   },
+   "title": "100년 넘은 숲 도서관, 이제 온라인으로",
+   "titleEn": "FRIM Puts Its Century-Old Forest Library Collection Online",
+   "lead": "말레이시아 산림연구원(FRIM)이 1918년 이전에 문을 연 도서관의 자료를 온라인 저장소 FRED로 공개했다고 베르나마가 전했어요. 무료로 가입하면 하루 종일 언제든 볼 수 있어요.",
+   "pts": [
+    "메타데이터 16만 244건, 디지털 파일 7만 7,600개로, 논문·책·학위논문·학술지·숲 지도·신문 스크랩까지 담겼어요",
+    "케퐁의 도서관은 82개 분야 자료 약 20만 점을 지녔고, 영국과 일본 통치기를 모두 견뎌 왔어요",
+    "등나무(1988년)·대나무(1993년, 자료 1,200점 이상)·아세안·FRIM 연구 성과 등 4개 특별 컬렉션이 있어요"
+   ],
+   "info": [
+    [
+     "어디",
+     "fred.frim.gov.my"
+    ],
+    [
+     "이용",
+     "무료 회원가입 후 24시간"
+    ]
+   ],
+   "src": "Malay Mail (Bernama) · 11.12",
+   "url": "https://www.malaymail.com/news/malaysia/2026/11/12/malaysias-frim-puts-century-old-library-collection-online-opening-77600-digital-files-to-public/243026"
+  },
+  {
+   "region": "말레이시아",
+   "tag": "영화",
+   "icon": "art",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><rect x=\"13\" y=\"25\" width=\"46\" height=\"30\" rx=\"2\"/><polygon points=\"13,19 59,19 59,26 13,26\"/><polygon points=\"13,18 56,9 54,3 12,12\"/></g><g stroke=\"#2B2B28\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><rect x=\"13\" y=\"25\" width=\"46\" height=\"30\" rx=\"2\" fill=\"#3B3B38\"/><polygon points=\"13,19 59,19 59,26 13,26\" fill=\"#F5E4BA\"/><polygon points=\"13,18 56,9 54,3 12,12\" fill=\"#F5E4BA\"/></g><polygon points=\"19,19 26,19 21,26 14,26\" fill=\"#3B3B38\"/><polygon points=\"33,19 40,19 35,26 28,26\" fill=\"#3B3B38\"/><polygon points=\"47,19 54,19 49,26 42,26\" fill=\"#3B3B38\"/><polygon points=\"18,11 25,9.5 22,15.5 15,17\" fill=\"#3B3B38\"/><polygon points=\"32,8 39,6.5 36,12.5 29,14\" fill=\"#3B3B38\"/><polygon points=\"46,5 53,3.5 50,9.5 43,11\" fill=\"#3B3B38\"/><circle cx=\"14.5\" cy=\"18.5\" r=\"1.8\" fill=\"#C8553D\" stroke=\"#2B2B28\" stroke-width=\"1\"/><path d=\"M19 34h20M19 40h28M19 46h14\" stroke=\"#9A9A92\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M50 43l1.5 3 3.3.4-2.4 2.3.6 3.3-3-1.6-3 1.6.6-3.3-2.4-2.3 3.3-.4z\" fill=\"#F2CF6B\"/>"
+   },
+   "title": "UiTM 단편 ‘콜라 룸포르’, 7관왕",
+   "titleEn": "UiTM's 'Kola Loompor' Wins Seven Awards at Student Film Festival",
+   "lead": "쿠알라룸푸르 아스와라(ASWARA)에서 열린 제14회 말레이시아 학생 영상 영화제에서 UiTM 학생들의 ‘콜라 룸포르(Kola Loompor)’가 최고상 ‘베스트 오브 더 베스트’를 포함해 7개 상을 받았다고 베르나마가 전했어요.",
+   "pts": [
+    "2022년 이후 처음 열린 영화제로, 대학과 중등학교 35곳에서 177편이 출품됐어요",
+    "‘콜라 룸포르’는 각본·촬영·편집·미술 등 상과 함께 RM5만 단편영화 제작 지원금을 받았어요",
+    "아스와라의 ‘말람 브르시웅’은 최우수 단편영화상 등 4개 상을, 쿠알라룸푸르 예술학교의 ‘카르야 100’은 신인상을 받았어요"
+   ],
+   "info": [
+    [
+     "어디",
+     "아스와라 실험극장, 쿠알라룸푸르"
+    ],
+    [
+     "심사",
+     "영화감독 다인 사이드가 심사위원장"
+    ]
+   ],
+   "src": "Bernama · 11.13",
+   "url": "https://www.bernama.com/en/general/news.php?id=2634057"
+  },
+  {
+   "region": "말레이시아",
+   "tag": "교통",
+   "icon": "bus",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><rect x=\"17\" y=\"8\" width=\"38\" height=\"40\" rx=\"9\"/><path d=\"M14 56h44M22 48l-5 8M50 48l5 8\"/></g><g stroke=\"#23384F\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M22 48l-5 8M50 48l5 8M14 56h44\" fill=\"none\"/><rect x=\"17\" y=\"8\" width=\"38\" height=\"40\" rx=\"9\" fill=\"#2E6FB5\"/><rect x=\"22\" y=\"14\" width=\"28\" height=\"14\" rx=\"3\" fill=\"#A9D9EC\"/><rect x=\"17\" y=\"32\" width=\"38\" height=\"5\" fill=\"#F2CF6B\"/><circle cx=\"25\" cy=\"42\" r=\"2.6\" fill=\"#FFF3C8\"/><circle cx=\"47\" cy=\"42\" r=\"2.6\" fill=\"#FFF3C8\"/><rect x=\"31\" y=\"40\" width=\"10\" height=\"4\" rx=\"1\" fill=\"#1E4F86\"/></g><path d=\"M25 17l7 0M25 20l4 0\" stroke=\"#fff\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\".8\"/><rect x=\"31\" y=\"4\" width=\"10\" height=\"4\" rx=\"1.5\" fill=\"#3B3B38\"/>"
+   },
+   "title": "KTM 코뮤터 30일 무제한 RM50 패스",
+   "titleEn": "KTMB's RM50 MyKomuter50 Pass Offers 30 Days of Unlimited Rides",
+   "lead": "KTMB가 코뮤터 열차를 30일 동안 마음껏 타는 RM50짜리 ‘마이코뮤터50’ 패스를 내놓는다고 말레이메일이 전했어요. 7살 이상 말레이시아 시민이 대상이에요.",
+   "pts": [
+    "북부 구간, 클랑밸리, 남부 셔틀 세 가지가 있고 모두 RM50이며, KTMB는 최대 88%까지 아낄 수 있다고 했어요",
+    "예를 들어 탄중말림‑KL 센트럴을 30일 다니면 보통 RM416이라 RM366을 아껴요",
+    "KTM Mobile이나 KITS Style 앱에서 신분증을 올려 확인받거나(최대 3영업일), 코뮤터역 키오스크·창구에서 당일 확인받을 수 있어요"
+   ],
+   "info": [
+    [
+     "활성화",
+     "11월 16일부터"
+    ],
+    [
+     "사용",
+     "12월 1일부터"
+    ],
+    [
+     "대상",
+     "마이카드·마이키드 소지 말레이시아 시민 (MyRailLife 패스 소지자 제외)"
+    ]
+   ],
+   "src": "Malay Mail · 11.12",
+   "url": "https://www.malaymail.com/news/malaysia/2026/11/12/ktmb-mykomuter50-pass-activation-begins-nov-16-offering-30-days-of-unlimited-travel-on-selected-routes-from-dec-1/243027"
+  },
+  {
+   "region": "세계",
+   "tag": "영국 유학",
+   "icon": "passport",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><rect x=\"15\" y=\"7\" width=\"34\" height=\"47\" rx=\"3\"/><circle cx=\"51\" cy=\"44\" r=\"12\"/></g><g stroke=\"#1F3F33\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><rect x=\"15\" y=\"7\" width=\"34\" height=\"47\" rx=\"3\" fill=\"#2F5D49\"/><path d=\"M20 7v47\" fill=\"none\" stroke=\"#24493F\" stroke-width=\"1.2\"/></g><circle cx=\"33\" cy=\"25\" r=\"7\" fill=\"none\" stroke=\"#F2CF6B\" stroke-width=\"1.6\"/><path d=\"M26 25h14M33 18v14M28 20q5 5 0 10M38 20q-5 5 0 10\" fill=\"none\" stroke=\"#F2CF6B\" stroke-width=\"1.1\"/><rect x=\"25\" y=\"40\" width=\"16\" height=\"2.2\" rx=\"1\" fill=\"#F2CF6B\"/><circle cx=\"51\" cy=\"44\" r=\"11\" fill=\"#FBF7EF\" fill-opacity=\".55\" stroke=\"#C8553D\" stroke-width=\"2\"/><circle cx=\"51\" cy=\"44\" r=\"7\" fill=\"none\" stroke=\"#C8553D\" stroke-width=\"1.3\"/><path d=\"M47 44l3 3 5-6\" fill=\"none\" stroke=\"#C8553D\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>"
+   },
+   "title": "영국 학생비자 신청, 1년 새 20% 감소",
+   "titleEn": "UK Student Visa Applications Fall 20% Over the Year",
+   "lead": "영국 내무부의 10월 비자 통계에서 2026년 10월까지 1년간 학생비자 주신청이 34만 9,900건으로 20% 줄었다고 PIE 뉴스가 전했어요. 러셀 그룹은 유학생 시장의 변동이 멈출 기미가 없다고 했어요.",
+   "pts": [
+    "학생 동반가족 신청은 1만 5,400건으로 32% 줄었고, 대부분의 유학생 가족 동반을 막은 2024년 1월 이전보다 89% 낮아요",
+    "정부는 10월 예산안에서 이민 규정을 잘 지키는 ‘고준수’ 대학 졸업생에게 졸업생 비자(Graduate Route) 2년을 되돌려 주겠다고 했어요",
+    "세부 자격 기준은 아직 정해지지 않았고, 대학들은 2028년 8월부터 유학생 1인당 £925의 부담금을 내게 돼요"
+   ],
+   "info": [
+    [
+     "자료",
+     "영국 내무부 월간 비자 신청 통계 (2026년 10월)"
+    ],
+    [
+     "확인",
+     "세부 기준은 GOV.UK 발표 확인"
+    ]
+   ],
+   "src": "The PIE News · 11.12",
+   "url": "https://thepienews.com/uk-student-visa-applications-down-31-as-russell-group-warns-of-volatility/"
+  },
+  {
+   "region": "세계",
+   "tag": "자연",
+   "icon": "leaf",
+   "art": {
+    "vb": "0 0 66 92",
+    "tall": true,
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M28 50Q27 20 33 6Q39 20 38 50z\"/><path d=\"M8 46Q14 39 20 45Q26 38 33 44Q40 38 46 45Q52 39 58 46Q58 72 33 80Q8 72 8 46z\"/><rect x=\"29\" y=\"78\" width=\"8\" height=\"8\"/></g><g stroke=\"#2F5D49\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><rect x=\"29\" y=\"77\" width=\"8\" height=\"9\" fill=\"#5FAE84\"/><path d=\"M8 46Q14 39 20 45Q26 38 33 44Q40 38 46 45Q52 39 58 46Q58 72 33 80Q8 72 8 46z\" fill=\"#6E9A55\"/><path d=\"M11 48Q14 43 20 47Q26 42 33 46Q40 42 46 47Q52 43 55 48Q50 54 33 54Q16 54 11 48z\" fill=\"#7A1F2B\"/><path d=\"M28 50Q27 20 33 6Q39 20 38 50z\" fill=\"#E3C77A\" stroke=\"#7A5A14\"/></g><path d=\"M15 56Q20 68 30 74M51 56Q46 68 36 74M33 58V76\" fill=\"none\" stroke=\"#557E40\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><path d=\"M31 44Q30 26 33 13\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\".6\"/>"
+   },
+   "title": "7~10년에 한 번, 시체꽃 ‘피트’가 곧 핀대요",
+   "titleEn": "Geelong Prepares for Crowds as Corpse Flower 'Pete' Nears Bloom",
+   "lead": "호주 질롱 식물원의 시체꽃(타이탄 아룸) ‘피트’가 며칠 안에 꽃을 피울 전망이라고 ABC가 전했어요. 이 식물은 보통 7~10년에 한 번, 하루이틀만 꽃을 피워요.",
+   "pts": [
+    "키는 약 1.5m로, 10월에 휴면에서 깨어나 하루 약 5cm씩 자라 왔어요",
+    "알줄기 무게는 2024년 10kg이 조금 안 됐는데, 올해 5월엔 17.7kg이었어요",
+    "2024년 개화 땐 2만 명 넘게 찾아왔고 생중계 조회는 35만 회를 넘었어요"
+   ],
+   "info": [
+    [
+     "어디",
+     "질롱 식물원 온실, 빅토리아주 (호주)"
+    ],
+    [
+     "냄새",
+     "죽은 주머니쥐·썩은 치즈에 비유되는 강한 냄새"
+    ]
+   ],
+   "src": "ABC News · 11.13",
+   "url": "https://www.abc.net.au/news/2026-11-13/giant-corpse-flower-about-to-bloom-in-geelong/107378284"
+  }
+ ],
+ "trend": {
+  "cat": "세계 트렌드 · 브랜드",
+  "title": "차지, 마닐라에 필리핀색 입힌 플래그십",
+  "titleEn": "Chagee Opens a Manila Flagship with Filipino Flair",
+  "asOf": "2026년 11월 13일 보도 기준",
+  "body": "중국 밀크티 브랜드 차지(Chagee)가 메트로 마닐라 보니파시오 글로벌 시티에 필리핀 첫 플래그십 매장을 열었다고 인사이드 리테일 아시아가 전했습니다. 매장은 차 문화와 필리핀 디자인을 섞은 문화 공간으로 꾸몄습니다.",
+  "points": [
+   "실내는 필리핀 전통 가옥과 직물에서 영감을 얻었고, 필리핀 작가 락센 마니키스(Raxenne Maniquiz)의 식물 벽화가 걸렸습니다.",
+   "초록 코끼리 마스코트 ‘티도어(Teadore)’는 필리핀 전통 의상 바롯 사야를 본뜬 필리핀 한정 차림으로 나왔습니다.",
+   "윈난 재스민차 네 가지에 망고 퓌레와 동결건조 망고를 더한 새 음료 ‘보야 망고 재스민 그린’과 매장 한정 페이스트리를 선보였습니다.",
+   "차지는 지난해 필리핀에 매장 세 곳을 열었고, 지금은 메트로 마닐라에 30곳의 찻집을 두고 있습니다."
+  ],
+  "src": [
+   [
+    "Inside Retail Asia (2026.11.13)",
+    "https://insideretail.asia/2026/11/13/chagee-opens-manila-flagship-with-filipino-flair/"
+   ]
+  ]
+ },
+ "life": {
+  "cat": "과학 이야기",
+  "title": "1960년의 계산, 인류 종말의 날은 어제였다",
+  "titleEn": "A 1960 Paper Set Doomsday for Friday, November 13, 2026",
+  "intro": "1960년 과학자 세 명이 학술지 『사이언스』에 인구가 계속 늘어 2026년 11월 13일 금요일에 세상이 끝난다는 계산을 실었다고 ABC 사이언스가 전했습니다. 바로 어제였지요. 예언은 빗나갔지만, 그 이유가 꽤 흥미롭습니다.",
+  "tips": [
+   [
+    "무한대로 치솟는 곡선",
+    "대표 저자 하인츠 폰 푀르스터(일리노이대 어배너-섐페인 전기공학과)와 동료들은 출생률과 사망률로 공식을 만들어 지난 2,000년의 인구 추정치에 적용했습니다. 결과는 인구가 두 배, 세 배로 느는 시간이 점점 짧아지다 한순간 무한대에 이르는 쌍곡선이었습니다."
+   ],
+   [
+    "날짜는 저자의 생일",
+    "UC 샌타바버라의 경제학자 하비에르 버첸올은 그 날짜가 폰 푀르스터의 생일과 같았다며, 저자들이 아주 진지했다기보다 요점을 말하려 했을 것이라고 봅니다."
+   ],
+   [
+    "1980년대까지는 맞았다",
+    "버첸올은 이 공식이 1980년대까지는 들어맞았지만 그 뒤 세계 인구가 훨씬 완만하게 늘었다고 말합니다. 세계 인구 증가율은 예언 몇 년 뒤인 1963년 약 2.3%로 정점을 찍었습니다."
+   ],
+   [
+    "걱정은 거꾸로",
+    "1960년 세계 인구는 약 30억 명이었고, 유엔은 약 60년 뒤 100억 명을 조금 넘어 정점을 찍은 뒤 서서히 줄 것으로 내다봅니다. 지금은 많은 나라가 인구 증가보다 감소를 더 큰 걱정거리로 봅니다."
+   ],
+   [
+    "10년 너머는 모른다",
+    "멜버른대 인구학자 피터 맥도널드는 출산율을 약 10년 넘어서까지 정확히 예측할 수는 없다며, 전후 베이비붐도 당대 대표 인구학자들이 내다보지 못했다고 말합니다."
+   ]
+  ],
+  "src": [
+   [
+    "ABC News: Science (2026.11.13)",
+    "https://www.abc.net.au/news/science/2026-11-13/world-has-avoided-a-predicted-population-doomsday/107320748"
+   ]
+  ]
+ },
+ "music": {
+  "title": "다시 사랑한다 말할까",
+  "artist": "김동률 (Kim Dong-ryul)",
+  "year": "2001",
+  "mood": "늦가을 토요일, 창가에 앉아",
+  "why": "김동률의 세 번째 솔로 앨범 『귀향』의 타이틀곡으로, 2001년 11월 경향신문은 이 앨범이 나오자마자 여러 판매 차트 1위에 올랐다고 전했습니다. 낮고 묵직한 목소리로 천천히 차오르는 발라드라, 바람이 차가워진 주말 오후 따뜻한 차 한 잔과 함께 들으면 잘 어울립니다.",
+  "query": "김동률 다시 사랑한다 말할까"
+ },
+ "shows": {
+  "intro": "쿠알라룸푸르와 클랑밸리에서 지금 볼 수 있거나 곧 열리는 전시와 공연입니다.",
+  "items": [
+   {
+    "kind": "연극",
+    "title": "遙遠的東方有一群鬼 (The Ghosts Within)",
+    "when": "11월 12~15일 오후 8시, 14·15일 오후 3시",
+    "where": "KLPac 펜타스 2 (Pentas 2)",
+    "memo": "로 콕 만(羅國文)이 연출한 90분짜리 연극으로, 중국어로 공연하고 영어 자막이 나옵니다.",
+    "url": "https://www.klpac.org/shows/%e9%81%99%e9%81%a0%e7%9a%84%e6%9d%b1%e6%96%b9%e6%9c%89%e4%b8%80%e7%be%a4%e9%ac%bc-the-ghosts-within/"
+   },
+   {
+    "kind": "K팝",
+    "title": "베이비몬스터 월드 투어 (BABYMONSTER CHOOM World Tour)",
+    "when": "11월 14일(토) 오후 8시",
+    "where": "유니파이 아레나 (Unifi Arena · Axiata Arena)",
+    "memo": "베이비몬스터의 CHOOM 월드 투어 쿠알라룸푸르 공연으로, 라이브 네이션 말레이시아가 주최합니다.",
+    "url": "https://klconcert.com/concert/babymonster-hello-monsters-world-tour"
+   },
+   {
+    "kind": "클래식",
+    "title": "판타지 월드 II: 애니메이션 x 클래식 (A Fantasy World II: Anime x Classical with The klpac String Orchestra)",
+    "when": "11월 20~21일 오후 8시 30분, 22일 오후 3시",
+    "where": "KLPac 펜타스 2 (Pentas 2)",
+    "memo": "klpac 현악 오케스트라가 음악감독 안드레아 심의 지휘로 히사이시 조의 지브리 음악, 『너의 이름은』 메들리, 드뷔시의 「달빛」 등을 연주하는 90분(휴식 15분 포함) 공연입니다.",
+    "url": "https://www.klpac.org/shows/a-fantasy-world-ii-anime-x-classical-with-the-klpac-string-orchestra/"
+   },
+   {
+    "kind": "전시",
+    "title": "쉬자웨이: 시간이 흐를수록 늘 모호한 (Chia-Wei Hsu: Always Ambiguous With the Passage of Time)",
+    "when": "11월 22일 개막",
+    "where": "일함 갤러리 (ILHAM Gallery) 3층, 쿠알라룸푸르",
+    "memo": "대만 작가 쉬자웨이가 영상, 가상현실, 3D 프린팅, 인터랙티브 AI, 드론 영상 등으로 동남아시아와 대만의 역사와 일상, 생태, 시간을 다룬 작품을 선보입니다.",
+    "url": "https://ilhamgallery.com/exhibitions/chiaweihsu/"
+   },
+   {
+    "kind": "콘서트",
+    "title": "웨이브 투 어스: 더 피시스 투어 (wave to earth: the pieces tour)",
+    "when": "11월 22일(일) 오후 8시",
+    "where": "아이디어 라이브 아레나 (Idea Live Arena), 페탈링자야",
+    "memo": "한국 밴드 웨이브 투 어스의 ‘the pieces tour’ 공연으로, 라이브 네이션 말레이시아가 주최합니다.",
+    "url": "https://klconcert.com/concert/wave-to-earth-the-pieces-tour"
+   },
+   {
+    "kind": "콘서트",
+    "title": "MPO 자선 콘서트: 쉴라 마지드 ‘레겐다’ 35주년 (MPO Benefit Concert: Sheila Majid 35th Legenda Anniversary)",
+    "when": "11월 27일(금) 오후 8시",
+    "where": "데완 필하모닉 페트로나스 (Dewan Filharmonik PETRONAS)",
+    "memo": "말레이시아 필하모닉 오케스트라가 쉴라 마지드의 ‘레겐다’ 35주년을 기념해 여는 자선 콘서트입니다.",
+    "url": "https://klconcert.com/concert/mpo-benefit-concert-sheila-majid-35th-legenda-anniversary"
+   },
+   {
+    "kind": "연극",
+    "title": "데이비드 글래스의 템페스트 (David Glass's TEMPEST)",
+    "when": "11월 27~28일 오후 8시, 29일 오후 3시",
+    "where": "KLPac 펜타스 2 (Pentas 2)",
+    "memo": "영국 신체극의 개척자 데이비드 글래스와 함께 만들어 2019년 klpac에서 초연한 작품으로, KL 셰익스피어 플레이어스가 셰익스피어의 『템페스트』에서 출발해 배우 일곱 명과 움직임, 음악, 조명으로 90분 동안 쉬는 시간 없이 펼칩니다.",
+    "url": "https://www.klpac.org/shows/david-glasss-tempest/"
+   }
+  ]
+ },
+ "fact": {
+  "title": "11월 14일, 넬리 블라이가 세계 일주를 떠난 날",
+  "titleEn": "November 14: Nellie Bly Sets Out to Race Around the World",
+  "body": "1889년 11월 14일 오전 9시 40분, 미국 기자 넬리 블라이가 증기선 아우구스타 빅토리아호에 올라 세계 일주를 시작했습니다. 쥘 베른의 소설 『80일간의 세계 일주』 속 필리어스 포그의 여행을 실제로 해 보겠다는 도전이었고, 그녀는 72일 남짓 만인 1890년 1월 25일 뉴욕으로 돌아왔습니다. 그녀의 기록은 몇 달 뒤 조지 프랜시스 트레인이 67일로 앞당길 때까지 유지됐습니다.",
+  "more": [
+   "여행 도중 프랑스 아미앵에 들러 쥘 베른을 직접 만났습니다.",
+   "신문 『뉴욕 월드』는 독자들이 그녀의 도착 시간을 맞히는 ‘넬리 블라이 추측 대회’를 열었습니다.",
+   "같은 때 『코스모폴리탄』의 엘리자베스 비슬랜드가 반대 방향으로 세계 일주에 나섰습니다."
+  ],
+  "src": [
+   [
+    "Wikipedia: Nellie Bly",
+    "https://en.wikipedia.org/wiki/Nellie_Bly"
+   ]
+  ]
+ }
+},
+{
  "date": "2026-11-13",
  "quote": {
   "ko": "내 말 믿게, 젊은 친구. 그저 배를 띄우고 이리저리 노니는 것만큼 해 볼 만한 일은 세상에 정말이지 하나도 없다네.",
@@ -9772,132 +10207,6 @@ const DAYS = [
       "1981년부터는 해마다 다른 주제를 내걸고 있습니다."
     ],
     src: [["Wikipedia: World Food Day","https://en.wikipedia.org/wiki/World_Food_Day"],["Wikipedia: Food and Agriculture Organization","https://en.wikipedia.org/wiki/Food_and_Agriculture_Organization"]]
-  }
-},
-
-{
-  date: "2026-10-15",
-  quote: {
-    ko: "그날은 산책을 나갈 수가 없었다.",
-    en: "There was no possibility of taking a walk that day.",
-    by: "샬럿 브론테, 『제인 에어』 (1847)",
-    pick: {kind:"영화", title:"말없는 소녀 (An Cailín Ciúin · The Quiet Girl, 2022)", gist:"1981년 여름, 아일랜드 시골에서 가난하고 무심한 부모와 많은 형제 사이에 지내던 아홉 살 카이트는 워터퍼드주 링 게일탁트의 농장에 사는 먼 친척 아이블린과 그 남편 숀에게 한동안 맡겨집니다. 콤 바레드 감독이 클레어 키건의 2010년 작품 『Foster』를 바탕으로 대부분 아일랜드어로 찍은 이 영화는, 아일랜드 영화 가운데 처음으로 아카데미 국제장편영화상 후보에 올랐습니다. 말수 적은 아이가 낯선 집의 조용한 일상 속에서 처음으로 마음 놓을 자리를 찾아가는 여름을, 영화는 서두르지 않고 가만히 지켜봅니다.", after:"밖으로 나갈 수 없던 날이, 돌아보면 마음 둘 곳을 처음 찾은 날로 남기도 합니다."}
-  },
-  english: {
-    title: "룸메이트와 오늘 밤 볼 영화 고르기", titleEn: "Picking a Movie for a Night In with Your Roommate",
-    situation: "비가 쏟아지는 저녁, 밖에 나가는 대신 집에서 영화를 보기로 한 룸메이트의 대화입니다. 기분과 취향을 부드럽게 말하고 서로 맞춰 가는 말투를 익혀 보세요.",
-    lines: [
-      ["A","So, are you up for a movie night? I'm not really feeling going out.","있잖아, 오늘 영화 볼래? 밖에 나갈 기분이 별로 아니야."],
-      ["B","Totally. It's pouring anyway. What are you in the mood for?","좋지. 어차피 비도 쏟아지는데. 뭐 보고 싶어?"],
-      ["A","Something light. It's been a long week, and I can't handle a tearjerker right now.","가벼운 거. 이번 주 너무 길었어. 지금은 눈물 쏙 빼는 영화는 못 보겠어."],
-      ["B","Fair enough. How about that heist comedy everyone's been raving about?","그럴 만하지. 다들 극찬하는 그 강도 코미디는 어때?"],
-      ["A","I'm torn. I heard it's kind of a slow burn for the first half hour.","고민되네. 처음 30분은 좀 느리게 흘러간다던데."],
-      ["B","True, but supposedly the payoff is totally worth it.","맞아, 근데 뒤에 가면 그만한 보람이 있대."],
-      ["A","Okay, you talked me into it. Should we order in, or just raid the pantry?","좋아, 네 말에 넘어갔다. 뭐 시켜 먹을까, 아니면 찬장 털까?"],
-      ["B","Let's order in. I'll grab the blankets, and you pick the place.","시켜 먹자. 내가 담요 가져올 테니까 가게는 네가 골라."],
-      ["A","Deal. And no scrolling on your phone the whole time.","좋아. 그리고 영화 보는 내내 휴대폰 보기 없기."],
-      ["B","No promises, but I'll try.","장담은 못 하지만 노력해 볼게."]
-    ],
-    expressions: [
-      {en:"be up for ~", ko:"‘~할 마음이 있다, ~해 볼래?’. 상대에게 무언가를 함께 할 생각이 있는지 가볍게 물을 때 씁니다. Are you up for ~?는 친구 사이에 아주 흔한 제안입니다.", eg:"Are you up for a quick walk after dinner?"},
-      {en:"I'm not really feeling ~", ko:"‘~할 기분이 아니야, ~가 당기지 않아’. 거절을 부드럽게 돌려 말하는 요즘 구어체로, 뒤에 명사나 -ing가 옵니다.", eg:"I'm not really feeling pizza tonight. Want to get tacos?"},
-      {en:"rave about ~", ko:"‘~을 극찬하다, 입이 마르게 칭찬하다’. 영화, 식당, 책처럼 사람들이 좋다고 난리인 것을 말할 때 씁니다.", eg:"My sister keeps raving about that new bakery downtown."},
-      {en:"a slow burn", ko:"‘처음엔 느리지만 갈수록 빠져드는 것’. 천천히 전개되는 영화나 드라마, 서서히 깊어지는 관계를 말할 때 씁니다.", eg:"The show is a slow burn, but by episode three I was hooked."},
-      {en:"talk (someone) into ~", ko:"‘(누구를) 설득해서 ~하게 하다’. you talked me into it은 ‘네 말에 넘어갔다’는 가벼운 항복의 말입니다. 반대로 말리는 것은 talk someone out of ~입니다.", eg:"She talked me into signing up for the pottery class."}
-    ],
-    pattern: {
-      en: "I'm in the mood for ~",
-      ko: "‘~이 당기다, ~하고 싶은 기분이다’. 음식이나 영화, 할 일을 고를 때 지금 기분을 말하는 표현입니다. 물을 때는 What are you in the mood for?, 뒤에 동사를 쓸 때는 in the mood to ~입니다.",
-      examples: [
-        ["I'm in the <b>mood</b> for something <b>spicy</b>.","매운 게 당기네."],
-        ["I'm not in the <b>mood</b> to <b>cook</b> tonight.","오늘 밤은 요리할 기분이 아니야."],
-        ["Are you in the <b>mood</b> for a <b>walk</b>?","산책할 기분 있어?"]
-      ]
-    }
-  },
-  news: [
-    {region:"말레이시아", tag:"생활 · 연무", important:true, icon:"school", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M10 28L36 11l26 17z"/><rect x="14" y="27" width="44" height="26"/><path d="M6 38q8-4 15 0t15 0t15 0t15 0M6 47q8-4 15 0t15 0t15 0t15 0" fill="none"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><rect x="14" y="27" width="44" height="26" fill="#F5E4BA"/><path d="M10 28L36 11l26 17z" fill="#B5462F"/><circle cx="36" cy="21" r="3.4" fill="#fff"/><rect x="19" y="31" width="8" height="7" fill="#A9D9EC"/><rect x="45" y="31" width="8" height="7" fill="#A9D9EC"/><path d="M30 53V41h12v12z" fill="#8C5A3A"/><path d="M30 41l12 12M42 41L30 53" fill="none" stroke-width="1.2"/><path d="M8 53h56" fill="none"/></g><path d="M6 38q8-4 15 0t15 0t15 0t15 0M6 47q8-4 15 0t15 0t15 0t15 0" fill="none" stroke="#4A2E1A" stroke-width="4.6" stroke-linecap="round"/><path d="M6 38q8-4 15 0t15 0t15 0t15 0M6 47q8-4 15 0t15 0t15 0t15 0" fill="none" stroke="#D3CBBA" stroke-width="2.2" stroke-linecap="round"/>'}, title:"오늘 조호르 전면 휴교, KL·믈라카는 정상 등교", titleEn:"Haze Shuts All Johor Schools Today; KL, Melaka and Others Reopen",
-     lead:"연무 때문에 15일 목요일 조호르의 모든 학교가 문을 닫아요. 14일에 휴교했던 믈라카와 느그리슴빌란을 비롯해 여러 주는 평소대로 수업해요.",
-     pts:["조호르주 교육청은 ‘연무가 이어져 조호르의 모든 학교가 내일 휴교한다’고 밝혔어요", "푸트라자야·쿠알라룸푸르·슬랑오르·느그리슴빌란·페낭·믈라카·페락·사라왁은 평소대로 수업해요", "파항은 7개 교육구 학교가 야외 활동을 멈춰요"],
-     info:[["등교", "학생들에게 마스크 착용을 권해요"], ["결석", "걱정되면 아이를 집에 둘 수 있지만, 학교에 꼭 알려야 해요"], ["발표", "각 주 교육청 (14일)"]],
-     src:"The Star · 10.14", url:"https://www.thestar.com.my/news/nation/2026/10/14/haze-pahang-schools-in-seven-districts-closed-tomorrow"},
-    {region:"말레이시아", tag:"과학", icon:"school", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M20 22h32l-3 33H23z"/><rect x="17" y="15" width="38" height="7" rx="2"/><rect x="29" y="7" width="14" height="9" rx="2"/><rect x="57" y="22" width="9" height="13" rx="2"/><rect x="5" y="40" width="10" height="13" rx="1.5"/><path d="M7 26h8l-1 9H8z"/></g><g stroke="#2F5D49" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M20 22h32l-3 33H23z" fill="#5FAE84"/><rect x="17" y="15" width="38" height="7" rx="2" fill="#3F8B66"/><rect x="29" y="7" width="14" height="9" rx="2" fill="#3B3B38"/><circle cx="36" cy="11.5" r="2.6" fill="#A9D9EC"/><path d="M29 28v21M36 28v21M43 28v21" fill="none" stroke="#3F8B66" stroke-width="1.3"/></g><g stroke="#4A2E1A" stroke-width="1.3" stroke-linejoin="round"><rect x="57" y="22" width="9" height="13" rx="2" fill="#C8553D"/><rect x="5" y="40" width="10" height="13" rx="1.5" fill="#F5E4BA"/><path d="M7 26h8l-1 9H8z" fill="#A9D9EC"/></g><path d="M8 44h4M8 47h4M8 50h3" stroke="#A8843F" stroke-width="1" stroke-linecap="round"/><path d="M57 26h9M57 31h9" stroke="#F5E4BA" stroke-width="1.2"/><circle cx="36.8" cy="10.7" r=".8" fill="#fff"/><path d="M24 26v18" stroke="#fff" stroke-width="1.6" stroke-linecap="round" opacity=".55"/>'}, title:"청소부 이모 도우려 만든 AI 분리수거함, 전국 1등", titleEn:"A Sarawak School's AI Waste Sorter Wins a National Tech Contest",
-     lead:"사라왁 텔랑 우산의 SMK 롱 베디안 팀이 전국 기술 경진대회 ‘페트로사인스 테크포올(Tech4All) 2026’에서 우승했어요. 학교 청소부 ‘시티 이모’의 일을 덜어 주고 싶어서 만든 장치예요.",
-     pts:["S.O.R.T.(Smart Object Recycling Technology)는 카메라로 캔·플라스틱·종이를 알아보고 맞는 통을 자동으로 열어요", "아두이노 코딩과 AI 학습 도구 티처블 머신(Teachable Machine)을 함께 써서 만들었어요", "우승 상금은 3,500링깃이에요. 2위는 조호르의 SK 푸난, 3위는 파항의 SK 텔라녹이에요"],
-     info:[["주최", "페트로나스 산하 페트로사인스와 교육부, 올해 3회째"], ["참가", "6개 주 오랑 아슬리·프리부미 학교 10곳의 학생 40명과 교사 20명"]],
-     src:"The Borneo Post · 10.14", url:"https://www.theborneopost.com/2026/10/14/telang-usan-schools-ai-waste-sorter-wins-national-tech-competition/"},
-    {region:"말레이시아", tag:"음식", icon:"bowl", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M10 36a26 18 0 0 1 52 0z"/><path d="M10 38h52a26 16 0 0 1-52 0z"/><path d="M8 37q14-6 28 0t28 0" fill="none"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M10 38h52a26 16 0 0 1-52 0z" fill="#E9B76A"/><path d="M8 37q7-5 14-1t14 0t14 0t14 1q-1 4-4 4H12q-3 0-4-4z" fill="#8C4A2B"/><path d="M10 34a26 18 0 0 1 52 0z" fill="#F2CF8B"/></g><path d="M18 27q18-10 36 0M22 22q14-7 28 0" fill="none" stroke="#C98B3A" stroke-width="1.3" stroke-linecap="round"/><path d="M14 40l4 2M24 39l3 3M38 39l2 3M50 39l3 2" fill="none" stroke="#5FAE84" stroke-width="2" stroke-linecap="round"/><path d="M18 46q16 6 36 0" fill="none" stroke="#C98B3A" stroke-width="1.3" stroke-linecap="round"/><path d="M20 24q6-5 13-6" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" opacity=".7"/>'}, title:"선양 가족이 차린 타만 데사의 러우자모", titleEn:"A Shenyang Family's Roujiamo and Dumplings in Taman Desa",
-     lead:"중국 동북부 선양 출신 가족이 두 세대째 꾸려 가는 ‘포춘 카페(Fortune Cafe)’가 쿠알라룸푸르 타만 다나우 데사에서 소박한 중국 북방 음식을 내요.",
-     pts:["겹겹이 결이 살아 바삭한 빵에 고기를 채운 퉁관식 러우자모는 돼지고기 11링깃, 소고기 13링깃이에요", "새콤한 국물에 담근 만두는 14링깃, 손으로 만든 참깨 냉면은 11링깃이에요", "토마토 없이 쌀식초와 설탕 소스로 맛을 낸 동북식 바삭 탕수육은 27링깃이에요"],
-     info:[["어디", "11-0-5, Jalan 4/109F, Taman Danau Desa Business Centre"], ["운영", "매일 오전 10시 30분~오후 10시"]],
-     src:"Malay Mail · 10.14", url:"https://www.malaymail.com/news/eat-drink/2026/10/14/fortune-cafe-in-taman-danau-desa-serves-simple-chinese-pleasures-like-flaky-juicy-roujiamo-liang-pi-and-dumplings-in-a-sour-soup/238990"},
-    {region:"말레이시아", tag:"축제", icon:"lantern", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M14 36q0-20 22-20t22 20z"/><path d="M8 36h56v14a3 3 0 0 1-3 3H11a3 3 0 0 1-3-3z"/><path d="M28 13q2-6 0-10M36 12q2-6 0-10M44 13q2-6 0-10" fill="none"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M8 36h56v14a3 3 0 0 1-3 3H11a3 3 0 0 1-3-3z" fill="#D9A441"/><path d="M8 42h56" fill="none" stroke="#A8843F"/><path d="M14 37q0-20 22-20t22 20z" fill="#FBF7EF"/></g><path d="M14 46h4M22 46h4M30 46h4M38 46h4M46 46h4M54 46h4" stroke="#A8843F" stroke-width="1.2" stroke-linecap="round"/><path d="M36 18v6M29 20q3 3 4 6M43 20q-3 3-4 6" fill="none" stroke="#C9B48A" stroke-width="1.2" stroke-linecap="round"/><circle cx="36" cy="27" r="2.6" fill="#E0704F"/><path d="M28 13q2-6 0-10M36 12q2-6 0-10M44 13q2-6 0-10" fill="none" stroke="#B9AE97" stroke-width="1.6" stroke-linecap="round"/><path d="M19 32q2-8 9-11" fill="none" stroke="#E8DCC2" stroke-width="1.6" stroke-linecap="round"/>'}, title:"페낭 구황야 축제, 하루 1만 개 찐빵 빚는 사원", titleEn:"Penang's Nine Emperor Gods Festival and a Temple's 10,000 Buns a Day",
-     lead:"음력 9월에 아흐레 동안 이어지는 페낭의 ‘나인 엠퍼러 갓 축제(Kew Ong Yeah)’가 18일까지 열려요. 19세기에 중국 푸젠에서 건너온 이민자들이 들여온 것으로 여겨지는 전통이에요.",
-     pts:["조지타운 로롱 마드라스의 채식 음식 장터는 1993년부터 열렸고, 올해는 노점 50곳이 섰어요", "크파라 바타스의 타우 보 콩 사원에서는 자원봉사자 70~80명이 하루 8,000~1만 개의 미쿠(mee koo) 찐빵을 만들어요", "11일 열린 퍼레이드에는 사원 20곳에서 꾸민 행렬 차량 약 20대가 나왔어요"],
-     info:[["언제", "10월 18일까지"], ["어디", "조지타운과 버터워스 일대, 크파라 바타스"]],
-     src:"The Star · 10.14", url:"https://www.thestar.com.my/metro/metro-news/2026/10/14/tracing-chinese-emigrants-journey-of-faith-to-penang"},
-    {region:"세계", tag:"영국 입시", icon:"school", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M14 8h30l10 10v38H14z"/><path d="M60 14l5 5-24 27-7 2 2-7z"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M14 8h30l10 10v38H14z" fill="#FBF7EF"/><path d="M44 8v10h10" fill="#E8DCC2"/></g><g fill="none" stroke-linecap="round"><path d="M20 22h16M20 30h26M20 36h22M20 44h26M20 50h14" stroke="#B9AE97" stroke-width="1.4"/><circle cx="21" cy="15" r="2.4" stroke="#2F6B5A" stroke-width="1.3"/><path d="M38 26l2.5 2.5 5-5" stroke="#C8553D" stroke-width="1.8"/><path d="M44 40l2.5 2.5 5-5" stroke="#C8553D" stroke-width="1.8"/></g><g stroke="#4A2E1A" stroke-width="1.4" stroke-linejoin="round"><path d="M58 12l6 6-22 25-6-6z" fill="#F2CF6B"/><path d="M36 37l6 6-8 2z" fill="#F0C987"/><path d="M58 12l3-3 6 6-3 3z" fill="#E0704F"/></g><path d="M34.6 42.4l-.8 2.4 2.4-.8z" fill="#3B3B38"/>'}, title:"옥스퍼드 입학시험 주간, 결과는 11월 16일", titleEn:"Oxford's October Admissions Tests Run This Week; Results Due November 16",
-     lead:"2027년 옥스퍼드 입학을 위한 UAT-UK 시험(ESAT·TMUA·TARA)의 10월 시험 기간이 12~16일이에요. 옥스퍼드는 학부 지원자 모두 이번 10월 시험을 치러야 한다고 안내해요.",
-     pts:["ESAT는 공학·물리·생명의과학, TMUA는 수학·컴퓨터과학, TARA는 PPE·경제경영·심리학 등 과정 지원자가 쳐요", "결과는 11월 16일 각자의 UAT-UK 계정으로 나와요", "면접은 2026년 12월, 합격 결과는 2027년 1월 12일 UCAS로 나와요"],
-     info:[["대상", "2027년 입학 옥스퍼드 학부 지원자 (의대는 UCAT, 법학은 LNAT)"], ["1월 시험", "2027년 1월 4~8일, 아스트로포리아 파운데이션 과정 지원자만"], ["확인", "옥스퍼드 입학시험 공식 안내"]],
-     src:"University of Oxford 공식 안내", url:"https://www.ox.ac.uk/admissions/undergraduate/applying/guide-for-applicants/admissions-tests"},
-    {region:"세계", tag:"문화", icon:"art", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><rect x="15" y="7" width="42" height="34"/><path d="M26 41l-7 16M46 41l7 16M36 41v15" fill="none"/></g><path d="M26 41l-7 16M46 41l7 16M36 41v15" fill="none" stroke="#4A2E1A" stroke-width="3.4" stroke-linecap="round"/><path d="M26 41l-7 16M46 41l7 16M36 41v15" fill="none" stroke="#B9773A" stroke-width="1.6" stroke-linecap="round"/><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round"><rect x="15" y="7" width="42" height="34" fill="#C98A4E"/><rect x="18.5" y="10.5" width="35" height="27" fill="#9CC9DE"/></g><path d="M18.5 31q17-5 35 0v6.5h-35z" fill="#8DB66A"/><path d="M34 34v-9" stroke="#6B4226" stroke-width="2" stroke-linecap="round"/><g fill="#5FAE84"><circle cx="34" cy="20" r="7.5"/><circle cx="28" cy="23" r="4.5"/><circle cx="40" cy="23" r="4.5"/></g><g fill="#FBF7EF"><circle cx="31" cy="17" r="1.4"/><circle cx="36" cy="16" r="1.4"/><circle cx="39" cy="21" r="1.4"/><circle cx="29" cy="22" r="1.4"/><circle cx="34" cy="22" r="1.4"/><circle cx="42" cy="24" r="1.2"/><circle cx="26" cy="24" r="1.2"/></g><g fill="#F2A6A6"><circle cx="33" cy="19" r="1"/><circle cx="38" cy="18.5" r="1"/><circle cx="31" cy="24" r="1"/></g><path d="M45 34v-3.5" stroke="#3B3B38" stroke-width="1.6" stroke-linecap="round"/><circle cx="45" cy="29.6" r="1.1" fill="#3B3B38"/><rect x="31" y="40" width="10" height="3" fill="#8C5A3A" stroke="#4A2E1A" stroke-width="1"/>'}, title:"60년 만에 나온 반 고흐, 홍콩에 긴 줄", titleEn:"A Van Gogh Unseen for 60 Years Draws Crowds in Hong Kong",
-     lead:"반 고흐가 생애 마지막 두 달 사이에 그린 ‘꽃 핀 밤나무(Chataigniers en fleurs)’가 홍콩의 소더비 경매 프리뷰에 나오자 수백 명이 줄을 섰어요.",
-     pts:["꽃이 활짝 핀 밤나무 곁으로, 한 남자가 일본식 옷차림의 세 여인을 지나 걸어가는 그림이에요", "아르헨티나 수집가 블라키에르 부부가 가졌던 12점 가운데 하나로, 소더비는 60년 넘게 대중에 공개되지 않았다고 밝혔어요", "추정가는 약 1억 8,000만 달러예요. 지금까지 반 고흐 최고가는 2022년 ‘사이프러스가 있는 과수원’의 1억 1,720만 달러예요"],
-     info:[["경매", "11월 18일, 뉴욕 소더비"], ["제작", "1890년"]],
-     src:"Malay Mail (AFP) · 10.14", url:"https://www.malaymail.com/news/life/2026/10/14/van-gogh-painting-unseen-for-60-years-draws-crowds-in-hong-kong-ahead-of-auction/238972"}
-  ],
-  trend: {
-    title: "30세 미만, 상반기 ‘선구매 후결제’ 54억 링깃", titleEn: "Under-30s Made RM5.4 Billion in Buy Now, Pay Later Purchases in H1 2026",
-    asOf: "2026년 10월 14일 보도 기준 (2026년 상반기 수치)",
-    body: "재무부가 의회 서면 답변에서, 2026년 상반기 30세 미만 소비자의 ‘선구매 후결제(BNPL)’ 거래가 6,590만 건, 54억 링깃이었다고 밝혔습니다. 같은 기간 말레이시아 전체 BNPL 거래는 1억 7,390만 건, 147억 링깃이었습니다.",
-    points: [
-      "30세 미만의 거래는 전체 BNPL 거래 건수의 37.9%, 거래액의 36.7%를 차지했습니다.",
-      "6월 30일 기준 30세 미만의 BNPL 미상환 잔액은 24억 링깃이었습니다.",
-      "이 가운데 9,680만 링깃(4.0%)은 부실 채권이었습니다.",
-      "답변은 젊은 층의 과도한 빚을 막기 위해 소비자신용위원회가 어떤 조치를 했는지 묻는 질의에 대한 것으로, 10월 13일 의회 웹사이트에 실렸습니다."
-    ],
-    src: [["Malay Mail (Bernama) (2026.10.14)","https://www.malaymail.com/news/malaysia/2026/10/14/finance-ministry-malaysians-under-30-rack-up-rm54b-in-bnpl-transactions-in-first-half-of-2026/239008"]]
-  },
-  life: {
-    title: "엔칙, 푸안, 칙: 이름 앞에 붙이는 말레이시아 호칭", titleEn: "Encik, Puan, Cik: How to Address People in Malaysia",
-    intro: "말레이시아에서는 이메일이나 안내문, 관공서 창구에서 이름 앞에 말레이어 호칭을 붙여 부릅니다. 영어판 위키백과의 말레이 경칭 항목에서 일상에서 자주 마주치는 것을 골랐습니다.",
-    tips: [
-      ["남성은 누구나 ‘엔칙(Encik)’","Encik은 모든 남성에게 쓸 수 있는 호칭으로, 영어의 Mr.에 해당합니다."],
-      ["기혼 여성은 ‘푸안(Puan)’","Puan은 결혼한 여성에게 쓰며 Pn.으로 줄여 씁니다. 남편의 이름을 쓰는 여성은 Puan 뒤에 남편의 이름을 붙여 부르기도 합니다."],
-      ["미혼 여성은 ‘칙(Cik)’","Cik은 영어의 Miss에 해당하며, 결혼하지 않은 여성에게 씁니다."],
-      ["‘투안(Tuan)’은 편지에서만","Tuan은 본래 ‘주인’이라는 뜻이라 식민지 시대의 느낌 때문에 일상에서는 거의 쓰지 않습니다. 다만 공식 서신에서는 영어의 Sir처럼 씁니다."],
-      ["다툭의 아내는 ‘다틴’, 하지는 ‘하자’","Datuk 작위를 받은 남성의 아내는 Datin, Tan Sri의 아내는 Puan Sri라고 부릅니다. 메카 순례를 마친 사람은 Haji(여성은 Hajah)를 붙이며 Hj., Hjh.로 줄여 씁니다."]
-    ],
-    src: [["Wikipedia: Malay styles and titles","https://en.wikipedia.org/wiki/Malay_styles_and_titles"]]
-  },
-  shows: {
-    intro: "쿠알라룸푸르에서 지금 볼 수 있거나 곧 열리는 전시와 공연입니다.",
-    items: [
-      {kind:"전시", title:"로버트 라우션버그와 아시아 (Robert Rauschenberg and Asia)", when:"11월 1일까지", where:"일함 갤러리(ILHAM Gallery) 5층", memo:"미국 현대미술 작가 로버트 라우션버그의 전시입니다.", url:"https://ilhamgallery.com/exhibitions/robert-rauschenberg-and-asia/"},
-      {kind:"전시", title:"경계 없는 예술: 난양으로 가는 새 항해 (Art Without Boundaries — New Voyage to Nanyang)", when:"11월 11일까지", where:"루앙 트두(Ruang Teduh), 익스체인지 106, 툰 라작 익스체인지", memo:"대만 태생의 큐레이터이자 작가 빅토리아 루가 AI의 도움을 받아 만든 작품을 젊은 작가들의 작품과 함께 선보입니다.", url:"https://www.malaymail.com/news/life/2026/10/10/art-meets-algorithm-victoria-lu-explores-ai-and-human-creativity-at-kuala-lumpur-exhibition/238604"},
-      {kind:"연극", title:"쇼트+스위트 말레이시아 페스티벌 2026: 연극 (Short + Sweet Malaysia Festival 2026: Theatre)", when:"10월 16~17일, 23~25일", where:"KLPac 펜타스 2 (Pentas 2)", memo:"10분 이내의 짧은 창작극을 여러 편 묶어 올리는 경연 축제로, 25일은 갈라와 시상식입니다.", url:"https://www.klpac.org/shows/short-sweet-malaysia-festival-2026-theatre/"},
-      {kind:"오페라", title:"투란도트 (Turandot)", when:"10월 17~25일", where:"KLPac", memo:"KLPac 오케스트라가 연주합니다.", url:"https://www.klpac.org/shows/turandot/"},
-      {kind:"클래식", title:"스티븐 허프와 함께하는 저녁 (A Regal Evening with Stephen Hough)", when:"10월 24일", where:"데완 필하모닉 페트로나스 (Dewan Filharmonik PETRONAS)", memo:"히로카미 준이치가 지휘하는 말레이시아 필하모닉과 피아니스트 스티븐 허프가 베토벤 피아노 협주곡 5번 ‘황제’와 교향곡 4번을 연주합니다.", url:"https://www.mpo.com.my/season-2026/a-regal-evening-with-stephen-hough"},
-      {kind:"K팝", title:"더 로즈 아시아 투어 (The Rose ROSETOPIA Asia Tour)", when:"10월 25일", where:"메가 스타 아레나, 쿠알라룸푸르", memo:"한국 밴드 더 로즈의 쿠알라룸푸르 공연으로, CK 스타 엔터테인먼트가 주최합니다.", url:"https://thesmartlocal.my/the-rose-concert-2026/"},
-      {kind:"클래식", title:"브라이언 탄 헌정 공연 (Tribute to Brian Tan with The klpac Orchestra)", when:"10월 30일~11월 1일", where:"KLPac 펜타스 1 (Pentas 1)", memo:"KLPac의 첫 커뮤니티 오케스트라를 세운 고(故) 브라이언 탄을 기리며, 리 콕 렁이 지휘하는 KLPac 오케스트라가 연주합니다.", url:"https://www.klpac.org/shows/tribute-to-brian-tan-with-the-klpac-orchestra/"}
-    ]
-  },
-  music: {
-    title: "Prelude in D-flat major, Op. 28 No. 15 “Raindrop”", artist: "프레데리크 쇼팽 (Frédéric Chopin)", year: "1839",
-    mood: "창밖이 뿌연 날, 실내에서 듣는 피아노",
-    why: "같은 음이 빗방울처럼 쉬지 않고 되풀이되는 쇼팽의 ‘빗방울’ 전주곡으로, 고요하게 시작해 어둡고 무거운 중간부를 지난 뒤 다시 처음의 선율로 돌아옵니다. 바깥 활동이 어려운 목요일, 창가에 앉아 따뜻한 차 한 잔과 함께 들어 보세요.",
-    query: "Chopin Raindrop Prelude Op 28 No 15"
-  },
-  fact: {
-    title: "10월 15일, 열흘이 사라진 달력", titleEn: "October 15, 1582: The Day Ten Days Vanished",
-    body: "1582년 10월 4일 목요일의 다음 날은 10월 15일 금요일이었습니다. 교황 그레고리오 13세가 1582년 2월 24일 칙서 ‘인테르 그라비시마스(Inter gravissimas)’로 정한 그레고리력이 이때 시행되면서 날짜가 열흘 앞당겨졌기 때문입니다. 1년을 정확히 365.25일로 본 율리우스력에서는 춘분 날짜가 조금씩 어긋났고, 춘분은 부활절 날짜를 계산하는 기준이라 교회에 중요한 문제였습니다.",
-    more: [
-      "그레고리력에서는 4로 나누어떨어지는 해가 윤년이지만, 100으로 나누어떨어지면서 400으로는 나누어떨어지지 않는 해는 윤년이 아닙니다. 그래서 2000년은 윤년, 1900년은 평년이었습니다.",
-      "처음에는 유럽의 가톨릭 국가들과 그 해외 영토가 이 달력을 받아들였습니다.",
-      "대영제국은 1752년에야 그레고리력으로 바꿨습니다."
-    ],
-    src: [["Wikipedia: Gregorian calendar","https://en.wikipedia.org/wiki/Gregorian_calendar"],["Britannica: Gregorian calendar","https://www.britannica.com/topic/Gregorian-calendar"]]
   }
 }
 ];
