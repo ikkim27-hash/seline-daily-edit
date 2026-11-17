@@ -633,6 +633,435 @@ const PHOTO = null; // 예: {src:"photo.jpg", caption:"한 줄 설명", date:"20
 /* ===== DAYS: 날짜별 콘텐츠. 최신 날짜가 맨 앞. 매일 새 객체를 맨 앞에 추가하고 14일치만 유지. ===== */
 const DAYS = [
 {
+ "date": "2026-11-18",
+ "quote": {
+  "ko": "인생이라는 배는 가볍게, 꼭 필요한 것만 싣고 가세요. 아늑한 집과 소박한 즐거움, 이름값 하는 친구 한둘, 사랑할 사람과 나를 사랑해 줄 사람…",
+  "en": "Let your boat of life be light, packed with only what you need—a homely home and simple pleasures, one or two friends, worth the name, someone to love and someone to love you…",
+  "by": "제롬 K. 제롬, 『보트 위의 세 남자』 (1889)",
+  "pick": {
+   "kind": "영화",
+   "title": "인생 후르츠 (人生フルーツ · Life Is Fruity, 2017) · 후시하라 겐시 감독",
+   "gist": "일본 아이치현 가스가이시의 작은 집에 아흔 살 건축가 쓰바타 슈이치와 여든일곱 살 아내 히데코가 삽니다. 50여 년 전 뉴타운을 설계하던 그는 계획이 경제적인 이유로 받아들여지지 않자 일을 그만두고 아내와 함께 자연 가까이 집을 지었고, 두 사람은 과일나무로 둘러싸인 텃밭을 스물한 칸으로 나눠 채소와 과일을 길러 왔습니다. 배우 기키 기린의 목소리를 따라가는 이 다큐멘터리는, 서두르지 않고 손으로 쌓아 올린 하루하루가 한 사람의 삶을 얼마나 넉넉하게 만드는지 조용히 보여 줍니다.",
+   "after": "꼭 필요한 것만 싣고 가라는 오늘의 문장처럼, 한 주의 한가운데인 수요일에는 마음의 짐도 조금 내려놓아 보세요."
+  }
+ },
+ "english": {
+  "title": "저녁 먹고 친구와 계산 나누기",
+  "titleEn": "Splitting the Check With a Friend After Dinner",
+  "situation": "수요일 저녁, A와 B가 동네 식당에서 저녁을 먹고 계산하려고 해요. 그런데 두 사람이 주문한 양이 꽤 달라요.",
+  "lines": [
+   [
+    "A",
+    "That was so good. Should we ask for the check?",
+    "진짜 맛있었다. 계산서 달라고 할까?"
+   ],
+   [
+    "B",
+    "Yeah, let's. Want to just split it down the middle?",
+    "응, 그러자. 그냥 반반 할까?"
+   ],
+   [
+    "A",
+    "Hmm, I only had a salad, and you got the steak and two drinks.",
+    "음, 난 샐러드만 먹었고 넌 스테이크에 음료 두 잔이잖아."
+   ],
+   [
+    "B",
+    "Ha, fair point. Let's each pay for what we ordered, then.",
+    "하하, 맞는 말이네. 그럼 각자 시킨 것만 내자."
+   ],
+   [
+    "A",
+    "Works for me. Do you think they'll split the check here?",
+    "좋아. 여기서 계산 따로 해 줄까?"
+   ],
+   [
+    "B",
+    "Not sure. If not, I'll put it on my card and you can Venmo me.",
+    "글쎄. 안 되면 내 카드로 낼 테니까 넌 벤모로 보내 줘."
+   ],
+   [
+    "A",
+    "Perfect. And let me chip in for the tip, too.",
+    "완벽해. 팁은 나도 보탤게."
+   ],
+   [
+    "B",
+    "Don't worry about it. You covered parking.",
+    "신경 쓰지 마. 주차비 네가 냈잖아."
+   ],
+   [
+    "A",
+    "Okay, but the next dinner's on me. No arguing.",
+    "알았어. 그래도 다음 저녁은 내가 살게. 토 달기 없기야."
+   ],
+   [
+    "B",
+    "Deal. I'll hold you to that.",
+    "좋아. 그 말 꼭 기억해 둘게."
+   ]
+  ],
+  "expressions": [
+   {
+    "en": "split (something) down the middle",
+    "ko": "‘(비용을) 딱 반으로 나누다’. 누가 무엇을 먹었든 정확히 절반씩 낼 때 써요. split the bill(나눠 내다)보다 ‘정확히 반반’이라는 느낌이 강해요.",
+    "eg": "Rent is $1,800, so we just split it down the middle."
+   },
+   {
+    "en": "Fair point.",
+    "ko": "‘일리 있네, 맞는 말이야’. 상대의 지적을 가볍게 인정할 때 쓰는 짧은 맞장구예요. Fair enough와 비슷하게 써요.",
+    "eg": "Fair point. Let's leave a little earlier, then."
+   },
+   {
+    "en": "chip in (for something)",
+    "ko": "‘(돈을) 보태다, 조금씩 내다’. 여럿이 돈을 모으거나 내 몫을 보탤 때 써요. 일손을 거든다는 뜻으로도 써요.",
+    "eg": "We all chipped in for Sarah's birthday present."
+   },
+   {
+    "en": "Venmo (someone)",
+    "ko": "‘벤모로 돈을 보내다’. 미국에서 흔히 쓰는 송금 앱 이름을 그대로 동사로 쓴 캐주얼한 표현이에요.",
+    "eg": "I'll Venmo you for the concert tickets tonight."
+   },
+   {
+    "en": "I'll hold you to that.",
+    "ko": "‘그 말 꼭 지켜야 해, 기억해 둘게’. 상대가 한 약속을 농담 반 진담 반으로 다짐받을 때 써요.",
+    "eg": "You said you'd cook next weekend. I'll hold you to that."
+   }
+  ],
+  "pattern": {
+   "en": "I'll ~, and you can ~.",
+   "ko": "‘내가 ~할 테니 너는 ~해’. 할 일이나 비용을 자연스럽게 나눌 때 써요. 대화의 ‘I'll put it on my card and you can Venmo me’처럼 쉼표 없이 이어 말하기도 해요.",
+   "examples": [
+    [
+     "I'll <b>drive</b>, and you can pick the <b>music</b>.",
+     "내가 운전할 테니 너는 음악을 골라."
+    ],
+    [
+     "I'll <b>cook</b>, and you can do the <b>dishes</b>.",
+     "내가 요리할 테니 너는 설거지해."
+    ],
+    [
+     "I'll grab the <b>tickets</b>, and you can get the <b>popcorn</b>.",
+     "내가 표를 살 테니 너는 팝콘을 사."
+    ]
+   ]
+  }
+ },
+ "news": [
+  {
+   "region": "말레이시아",
+   "tag": "생활 · 홍수",
+   "important": true,
+   "icon": "rain",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M14 30L36 12l22 18z\"/><rect x=\"19\" y=\"29\" width=\"34\" height=\"18\"/><path d=\"M8 44q4.5-4 9 0t9 0 9 0 9 0 9 0 9 0v10H8z\"/><path d=\"M12 6c-3 4-3 7 0 7s3-3 0-7z\"/><path d=\"M60 8c-3 4-3 7 0 7s3-3 0-7z\"/></g><g stroke=\"#4A2E1A\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><rect x=\"19\" y=\"29\" width=\"34\" height=\"18\" fill=\"#F5E4BA\"/><path d=\"M14 30L36 12l22 18z\" fill=\"#C8553D\"/><rect x=\"24\" y=\"33\" width=\"9\" height=\"7\" fill=\"#A9D9EC\"/><path d=\"M28.5 33v7M24 36.5h9\" stroke-width=\"1\"/><rect x=\"39\" y=\"33\" width=\"8\" height=\"12\" fill=\"#8C5A3A\"/></g><path d=\"M8 44q4.5-4 9 0t9 0 9 0 9 0 9 0 9 0v10H8z\" fill=\"#5BA7D6\" stroke=\"#2F4F6B\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><path d=\"M13 49.5q3.5-3 7 0M29 49.5q3.5-3 7 0M45 49.5q3.5-3 7 0\" fill=\"none\" stroke=\"#DDF0FA\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><g fill=\"#5BA7D6\" stroke=\"#2F4F6B\" stroke-width=\"1.3\" stroke-linejoin=\"round\"><path d=\"M12 6c-3 4-3 7 0 7s3-3 0-7z\"/><path d=\"M60 8c-3 4-3 7 0 7s3-3 0-7z\"/></g>"
+   },
+   "title": "셀랑고르, 홍수 핫스폿 56곳 지정",
+   "titleEn": "Selangor Identifies 56 Flood Hotspots Ahead of the Northeast Monsoon",
+   "lead": "북동 몬순을 앞두고 셀랑고르주 소방구조청(JBPM)이 주 안의 홍수 위험 지역 232곳과 그중 특히 위험한 ‘핫스폿’ 56곳을 파악했다고 말레이메일이 베르나마를 인용해 전했어요. 클랑, 페탈링, 곰박, 훌루 랑앗 등 셀랑고르에 사는 분에게 해당돼요.",
+   "pts": [
+    "핫스폿은 클랑 13곳, 페탈링 11곳, 곰박 10곳, 훌루 랑앗 9곳, 쿠알라 셀랑고르 6곳 순으로 많아요",
+    "2시간 남짓 동안 100mm 넘는 비가 오면 숭아이 다만사라와 숭아이 불로가 넘쳐 캄풍 멜라유 수방 일대에 돌발 홍수가 날 수 있다고 해요",
+    "소방관 1,603명과 자원봉사자 1,251명, 구조 보트 71척이 대기하고 있어요"
+   ],
+   "info": [
+    [
+     "대상",
+     "셀랑고르 9개 군, 홍수 위험 지역 232곳"
+    ],
+    [
+     "대기",
+     "소방관 1,603명 · 구조 보트 71척"
+    ]
+   ],
+   "src": "Malay Mail (Bernama) · 11.16",
+   "url": "https://www.malaymail.com/news/malaysia/2026/11/16/selangor-identifies-56-flood-hotspots-ahead-of-northeast-monsoon/243530"
+  },
+  {
+   "region": "말레이시아",
+   "tag": "여행 · 건축",
+   "icon": "bus",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M22 50V18q0-10 14-10t14 10v32z\"/><rect x=\"12\" y=\"50\" width=\"48\" height=\"7\"/></g><g stroke=\"#2F3B45\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M14 54h44\" fill=\"none\"/><path d=\"M19 50l-4 7M53 50l4 7M28 50l-2 7M44 50l2 7\" fill=\"none\" stroke=\"#8C5A3A\" stroke-width=\"2\"/><path d=\"M22 50V18q0-10 14-10t14 10v32z\" fill=\"#F4F1EA\"/><path d=\"M25 27q0-13 11-13t11 13v4H25z\" fill=\"#2F3B45\"/><path d=\"M22 36h28v5H22z\" fill=\"#2F6B5A\"/><circle cx=\"27.5\" cy=\"45.5\" r=\"2.4\" fill=\"#F7D36B\"/><circle cx=\"44.5\" cy=\"45.5\" r=\"2.4\" fill=\"#F7D36B\"/><path d=\"M33 46h6\" fill=\"none\"/></g><path d=\"M28 24q2-6 8-7\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\".7\"/>"
+   },
+   "title": "석영 능선과 상아, 동해안철도 역 이야기",
+   "titleEn": "Quartz Ridges and Ivory Tusks: The Stories Behind Four ECRL Stations",
+   "lead": "12월 12일 여객 운행을 앞둔 동해안철도(ECRL)의 대표 역 네 곳이 저마다 그 지역의 자연과 유산을 디자인에 담았다고 말레이메일이 소개했어요. 지금은 말레이시아 레일 링크(MRL)가 마지막 시험 운행을 하고 있어요.",
+   "pts": [
+    "곰박 종합터미널(ITT Gombak)은 길이 약 14km, 폭 200m로 세계에서 가장 긴 석영 암맥이라는 곰박 셀랑고르 석영 능선에서 영감을 받았어요",
+    "파항의 코타SAS역은 주 문장에 있는 교차한 코끼리 상아를 지붕선에 담고, 외관을 상아색 같은 흰색으로 칠했어요",
+    "쿠알라 트렝가누역은 전통 목선 ‘페라후 파양’을, 코타바루역은 이스타나 자하르 같은 말레이 궁전 건축과 클란탄 바틱 문양을 담았어요"
+   ],
+   "info": [
+    [
+     "운행",
+     "12월 12일 여객 서비스 예정"
+    ],
+    [
+     "역",
+     "곰박 · 코타SAS · 쿠알라 트렝가누 · 코타바루"
+    ]
+   ],
+   "src": "Malay Mail · 11.17",
+   "url": "https://www.malaymail.com/news/malaysia/2026/11/17/quartz-ridges-ivory-tusks-and-perahu-payang-how-four-flagship-ecrl-stations-celebrate-local-heritage-and-geography/243514"
+  },
+  {
+   "region": "말레이시아",
+   "tag": "스포츠",
+   "icon": "people",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M22 6h10l8 22h-10z\"/><path d=\"M50 6H40l-8 22h10z\"/><circle cx=\"36\" cy=\"40\" r=\"15\"/></g><g stroke=\"#2F3B45\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><path d=\"M22 6h10l8 22h-10z\" fill=\"#3A6EA5\"/><path d=\"M50 6H40l-8 22h10z\" fill=\"#2F6B5A\"/></g><circle cx=\"36\" cy=\"40\" r=\"15\" fill=\"#C98A4E\" stroke=\"#6B4226\" stroke-width=\"1.5\"/><circle cx=\"36\" cy=\"40\" r=\"10.5\" fill=\"#E0A96D\" stroke=\"#8A5A2A\" stroke-width=\"1.2\"/><path d=\"M28.5 41q3.75-3.5 7.5 0t7.5 0M28.5 45.5q3.75-3.5 7.5 0t7.5 0\" fill=\"none\" stroke=\"#FFF3DC\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M26 33q4-6 11-6.5\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\".6\"/>"
+   },
+   "title": "16살 맥스 탕, 바다 수영 세계 결선 동메달",
+   "titleEn": "Malaysia's Max Tang, 16, Swims to Bronze at the Oceanman World Finals",
+   "lead": "쿠알라룸푸르 가든 인터내셔널 스쿨 11학년(Year 11) 맥스 탕(16)이 도미니카공화국 미체스에서 열린 ‘오션맨 월드 챔피언십 파이널 2026’ 15~19세 남자 2km 스프린트에서 동메달을 땄다고 말레이메일이 전했어요.",
+   "pts": [
+    "금메달은 프랑스의 피에르 수숑(19), 은메달은 멕시코의 에밀리아노 라미레스 렌테리아(18)가 차지했어요",
+    "7월 코타키나발루 대회에서 2km 스프린트와 5km 하프 오션맨 모두 전 연령 종합 우승을 해 결선에 올랐어요",
+    "결선에서 말레이시아 기수를 맡았고, 나이 많고 경험 많은 선수들과 겨뤄 얻은 메달이라 더 뜻깊다고 했어요"
+   ],
+   "info": [
+    [
+     "대회",
+     "오션맨 월드 챔피언십 파이널 2026"
+    ],
+    [
+     "장소",
+     "도미니카공화국 미체스"
+    ]
+   ],
+   "src": "Malay Mail · 11.17",
+   "url": "https://www.malaymail.com/news/sports/2026/11/17/malaysian-max-tang-16-wins-bronze-at-oceanman-open-water-swimming-world-championship/243577"
+  },
+  {
+   "region": "말레이시아",
+   "tag": "음식",
+   "icon": "bowl",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M46 5L30 28\"/><path d=\"M54 8L35 29\"/><ellipse cx=\"36\" cy=\"30\" rx=\"26\" ry=\"7\"/><path d=\"M10 30q2 22 26 22t26-22z\"/></g><ellipse cx=\"36\" cy=\"30\" rx=\"26\" ry=\"7\" fill=\"#F4F1EA\" stroke=\"#4A2E1A\" stroke-width=\"1.5\"/><ellipse cx=\"36\" cy=\"30.5\" rx=\"22\" ry=\"5\" fill=\"#F2CF6B\" stroke=\"#C98B1E\" stroke-width=\"1\"/><path d=\"M20 30q3-3 6 0t6 0 6 0 6 0 6 0M23 33q3-2.5 6 0t6 0 6 0 6 0\" fill=\"none\" stroke=\"#D9A441\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><ellipse cx=\"25\" cy=\"28.5\" rx=\"4\" ry=\"1.8\" fill=\"#5FAE84\" stroke=\"#2F5D49\" stroke-width=\"1\"/><g stroke-linecap=\"round\"><path d=\"M46 5L30 28M54 8L35 29\" stroke=\"#4A2E1A\" stroke-width=\"4\"/><path d=\"M46 5L30 28M54 8L35 29\" stroke=\"#C98A4E\" stroke-width=\"2.2\"/></g><path d=\"M10 30q2 22 26 22t26-22q-6 7-26 7t-26-7z\" fill=\"#FBF7EF\" stroke=\"#4A2E1A\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><path d=\"M13 39q23 9 46 0\" fill=\"none\" stroke=\"#3A6EA5\" stroke-width=\"3\"/><path d=\"M28 52h16\" stroke=\"#4A2E1A\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>"
+   },
+   "title": "손으로 뜯는 면, 스렘반 ‘이소 면분고’",
+   "titleEn": "Hand-Torn Noodles and Homemade Kaya at Yi Sou Mian Fen Gao in Seremban",
+   "lead": "느그리 슴빌란 스렘반 오클랜드 동네의 ‘이소 면분고(二嫂麵粉糕, Yi Sou Mian Fen Gao)’가 주문하면 그 자리에서 손으로 뜯어 만드는 ‘민판고우’와 직접 만든 용타우푸로 말레이메일 음식 칼럼에 소개됐어요. ‘이소’는 광둥어로 ‘둘째 형수(second sister-in-law)’라는 뜻이에요.",
+   "pts": [
+    "용타우푸는 신선한 삼치(ikan tenggiri)로 만든 어묵을 써서 가게에서 직접 만들고, 가지·여주·고추·두부 등을 골라 담아요",
+    "가게에 ‘합석 환영(We Welcome Table Sharing)’ 안내가 붙어 있고, 손님이 빨리 바뀌어 자리가 차 보여도 오래 기다리지 않는다고 해요",
+    "토스트(roti bakar)는 진짜 버터와 판단 잎으로 직접 만든 초록빛 카야를 곁들여 나와요"
+   ],
+   "info": [
+    [
+     "어디",
+     "18, Lorong Haruan 5/1, Oakland Commercial Square, Seremban"
+    ],
+    [
+     "운영",
+     "오전 7시 30분~오후 4시"
+    ]
+   ],
+   "src": "Malay Mail · 11.17",
+   "url": "https://www.malaymail.com/news/eat-drink/2026/11/17/yi-sou-mian-fen-gao-in-seremban-come-for-the-min-fan-gou-and-yong-tau-foo-return-for-the-roti-bakar-with-homemade-kaya/243567"
+  },
+  {
+   "region": "세계",
+   "tag": "시험 일정",
+   "icon": "school",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><rect x=\"18\" y=\"7\" width=\"36\" height=\"30\" rx=\"2\"/><rect x=\"12\" y=\"25\" width=\"48\" height=\"30\" rx=\"2\"/></g><g stroke=\"#2F3B45\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><rect x=\"18\" y=\"7\" width=\"36\" height=\"30\" rx=\"2\" fill=\"#FBF7EF\"/><path d=\"M23 14h18M23 19h24M23 24h14\" stroke=\"#9AA6AE\" stroke-width=\"1.4\"/><rect x=\"12\" y=\"25\" width=\"48\" height=\"30\" rx=\"2\" fill=\"#E8D3A8\"/><path d=\"M12 27l24 15 24-15\" fill=\"none\"/><path d=\"M12 55l17-14M60 55l-17-14\" fill=\"none\" stroke=\"#B89B6A\"/><circle cx=\"36\" cy=\"42\" r=\"4.6\" fill=\"#C8553D\"/></g><path d=\"M47 11l1.5 3.2 3.4.4-2.5 2.3.7 3.4-3.1-1.7-3.1 1.7.7-3.4-2.5-2.3 3.4-.4z\" fill=\"#F7D36B\" stroke=\"#8A5A12\" stroke-width=\"1\" stroke-linejoin=\"round\"/>"
+   },
+   "title": "에드엑셀 가을 시리즈 결과, 1월 21일 발표",
+   "titleEn": "Pearson Edexcel Autumn Series Results Arrive January 21",
+   "lead": "피어슨 에드엑셀이 국제 과학 과목 소식지에서 가을 시리즈(IAL 10월, 인터내셔널 GCSE 11월) 결과를 1월 21일 수험생에게 발표한다고 밝혔어요. 이번 가을 시험을 치른 학생과 학부모에게 해당돼요.",
+   "pts": [
+    "IAL 2026년 10월 시험 문제지는 11월 10일, 인터내셔널 GCSE 2026년 11월 시험 문제지는 12월 1일에 공개돼요",
+    "가을 시리즈 채점 기준(mark scheme)은 12월 22일, 시험관 보고서(examiner report)는 1월 26일에 나와요",
+    "2027년 여름 시리즈 최종 시험 시간표는 피어슨의 시험 시간표 페이지에 올라와 있다고 해요"
+   ],
+   "info": [
+    [
+     "결과",
+     "1월 21일 (가을 시리즈)"
+    ],
+    [
+     "대상",
+     "IAL 10월 · 인터내셔널 GCSE 11월 응시자"
+    ]
+   ],
+   "src": "Pearson · 11.02",
+   "url": "https://qualifications.pearson.com/en/news-policy/subject-updates/Science/november-2026-international-science-qualification-news.html"
+  },
+  {
+   "region": "세계",
+   "tag": "우주",
+   "icon": "news",
+   "art": {
+    "vb": "0 0 72 62",
+    "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><ellipse cx=\"30\" cy=\"19\" rx=\"17\" ry=\"7\"/><path d=\"M30 19V8\"/><rect x=\"23\" y=\"27\" width=\"14\" height=\"10\"/><path d=\"M23 32L10 41\"/><path d=\"M37 30L64 21\"/><path d=\"M37 35L60 48\"/></g><g stroke=\"#2F3B45\" stroke-linecap=\"round\"><path d=\"M37 30L64 21M37 35L60 48\" stroke-width=\"1.4\"/><path d=\"M23 32L12 39.5\" stroke-width=\"2.4\"/></g><rect x=\"5\" y=\"37\" width=\"9\" height=\"6\" rx=\"1.5\" fill=\"#9AA6AE\" stroke=\"#2F3B45\" stroke-width=\"1.3\" transform=\"rotate(-34 9.5 40)\"/><g stroke=\"#2F3B45\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M30 25v2\" fill=\"none\"/><rect x=\"23\" y=\"27\" width=\"14\" height=\"10\" fill=\"#D9A441\"/><ellipse cx=\"30\" cy=\"19\" rx=\"17\" ry=\"7\" fill=\"#F4F1EA\"/><ellipse cx=\"30\" cy=\"19.6\" rx=\"11\" ry=\"4\" fill=\"none\" stroke=\"#C9CFC9\" stroke-width=\"1.2\"/><path d=\"M30 19V9\" fill=\"none\"/><circle cx=\"30\" cy=\"8.5\" r=\"2\" fill=\"#9AA6AE\"/></g><circle cx=\"33\" cy=\"32\" r=\"2.8\" fill=\"#F2CF6B\" stroke=\"#8A5A12\" stroke-width=\"1\"/><path d=\"M17 17q5-4 12-4.5\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\".8\"/><g fill=\"#F7D36B\" stroke=\"#8A5A12\" stroke-width=\".9\" stroke-linejoin=\"round\"><path d=\"M57 6l1.4 3.4 3.4 1.4-3.4 1.4-1.4 3.4-1.4-3.4-3.4-1.4 3.4-1.4z\"/><path d=\"M14 50l1 2.2 2.2 1-2.2 1-1 2.2-1-2.2-2.2-1 2.2-1z\"/></g>"
+   },
+   "title": "보이저 1호, 오늘 ‘빛으로 하루’ 거리에",
+   "titleEn": "Voyager 1 Reaches One Light-Day From Earth Today",
+   "lead": "1977년에 발사된 NASA의 보이저 1호가 오늘 지구에서 1광일, 곧 빛이 꼬박 하루를 가야 닿는 거리에 이른다고 호주 ABC가 전했어요. NASA가 예측한 시각은 호주 동부 서머타임 기준 오후 9시 16분, 말레이시아 시간으로 오늘 저녁 6시 16분이에요.",
+   "pts": [
+    "거리는 약 259억 km(약 173AU)로, 무선 신호가 지구와 탐사선 사이를 가는 데 정확히 24시간이 걸려요",
+    "2012년 성간 공간에 들어섰고, 시속 약 6만 1,000km로 날아가는 가장 먼 인공물이에요",
+    "전력을 아끼려고 장비 대부분을 껐고, 지금은 태양 자기장과 플라스마를 재는 장비 두 개만 작동해요"
+   ],
+   "info": [
+    [
+     "시각",
+     "11월 18일 오후 6시 16분 (말레이시아)"
+    ],
+    [
+     "발사",
+     "1977년"
+    ]
+   ],
+   "src": "ABC News · 11.18",
+   "url": "https://www.abc.net.au/news/science/2026-11-18/nasa-voyager-one-light-day-from-earth-milestone/107154162"
+  }
+ ],
+ "trend": {
+  "title": "샘 에델만, 파빌리온 KL에 말레이시아 첫 플래그십",
+  "titleEn": "Sam Edelman Opens Its First Malaysian Flagship at Pavilion Kuala Lumpur",
+  "asOf": "2026년 11월 17일 보도 기준",
+  "body": "미국 신발 브랜드 샘 에델만(Sam Edelman)이 쿠알라룸푸르 파빌리온 3층에 말레이시아 첫 플래그십 매장을 열었다고 인사이드 리테일 아시아가 보도했습니다. 이 매장은 샘 에델만의 말레이시아 단독 매장 가운데 가장 큽니다.",
+  "points": [
+   "샘 에델만은 지난해 9월 더 가든스 몰 매장으로 말레이시아에 들어왔고, 이번 개점으로 단독 매장이 5곳이 됐습니다.",
+   "다른 매장은 선웨이 피라미드, 수리아 KLCC, 페낭 거니 플라자에 있고, 더 익스체인지 TRX의 세이부 백화점에도 판매 코너가 있습니다.",
+   "신발과 핸드백을 팔며, 2026 가을·겨울 컬렉션과 이 매장에서만 한정 기간 판매하는 스타일을 선보입니다.",
+   "지나 고(Gina Goh) 샘 에델만 동남아시아 대표는 말레이시아 소비자들의 반응이 계속 성장할 자신감을 줬다고 말했습니다."
+  ],
+  "src": [
+   [
+    "Inside Retail Asia (2026.11.17)",
+    "https://insideretail.asia/2026/11/17/sam-edelman-opens-its-largest-malaysia-store-at-pavilion-kuala-lumpur/"
+   ]
+  ]
+ },
+ "life": {
+  "title": "클란탄과 트렝가누는 금요일부터 주말",
+  "titleEn": "In Kelantan and Terengganu, the Weekend Starts on Friday",
+  "intro": "12월 12일 동해안철도(ECRL)가 열리면 코타바루와 쿠알라 트렝가누가 한결 가까워지는데, 말레이시아는 주마다 주말 요일이 다릅니다. 다른 주로 여행하거나 볼일을 보러 갈 때 알아 두면 좋은 차이입니다.",
+  "tips": [
+   [
+    "클란탄·트렝가누·크다: 금·토 주말",
+    "이 세 주는 금요일과 토요일이 주말입니다. 주민들이 금요일 예배에 지장 없이 참석할 수 있도록 한 것입니다."
+   ],
+   [
+    "조호르는 2025년부터 다시 토·일",
+    "조호르는 2014년부터 금·토 주말을 지냈지만, 2025년 1월 1일 토·일 주말로 돌아가 11년 동안의 금·토 주말을 마무리했습니다."
+   ],
+   [
+    "조호르 주말의 긴 역사",
+    "조호르는 1994년부터 2014년까지 토·일 주말이었습니다. 그 뒤의 금·토 주말은 술탄 이브라힘이 2013년 11월 23일 자신의 55세 생일에 맞춰 내린 칙령으로 시작됐고, 비연방 말레이 주 시절의 원래 주말로 돌아간 것이었습니다."
+   ],
+   [
+    "새해 첫날도 주마다 달라요",
+    "2025년 1월 1일에는 조호르, 크다, 트렝가누, 클란탄이 이날을 공휴일로 두지 않았습니다. 클란탄과 트렝가누는 이슬람 종교 행사를 우선하기 때문에 새해를 공식 공휴일로 인정하지 않는다고 더 스타는 전했습니다."
+   ]
+  ],
+  "src": [
+   [
+    "The Star (2024.12.31)",
+    "https://www.thestar.com.my/news/nation/2024/12/31/business-as-usual-on-new-year039s-day-for-residents-in-five-states-across-malaysia"
+   ],
+   [
+    "The Star (2024.10.8)",
+    "https://www.thestar.com.my/news/nation/2024/10/08/johor-realigns-its-weekend"
+   ]
+  ]
+ },
+ "music": {
+  "title": "사건의 지평선",
+  "artist": "윤하 (Younha)",
+  "year": "2022",
+  "mood": "멀리 떠나는 것들을 생각하는 수요일 저녁에",
+  "why": "록 밴드 사운드가 차곡차곡 쌓여 올라가는 곡으로, 블랙홀의 바깥 경계를 뜻하는 제목처럼 우주의 이미지를 품고 있습니다. 2022년 3월에 나와 그해 11월 서클 디지털 차트 정상에 올랐으니, 보이저 1호가 빛으로 하루 거리에 닿는 오늘 저녁에 들어 보세요.",
+  "query": "윤하 사건의 지평선"
+ },
+ "shows": {
+  "intro": "쿠알라룸푸르와 클랑밸리에서 지금 볼 수 있거나 곧 열리는 전시와 공연입니다.",
+  "items": [
+   {
+    "kind": "클래식",
+    "title": "판타지 월드 II: 애니메이션 x 클래식 (A Fantasy World II: Anime x Classical with The klpac String Orchestra)",
+    "when": "11월 20~21일 오후 8시 30분, 22일 오후 3시",
+    "where": "KLPac 펜타스 2 (Pentas 2)",
+    "memo": "klpac 현악 오케스트라가 음악감독 안드레아 심의 지휘로 히사이시 조의 지브리 음악, 『너의 이름은』 메들리, 드뷔시의 「달빛」 등을 연주하는 90분(휴식 15분 포함) 공연입니다.",
+    "url": "https://www.klpac.org/shows/a-fantasy-world-ii-anime-x-classical-with-the-klpac-string-orchestra/"
+   },
+   {
+    "kind": "전시",
+    "title": "쉬자웨이: 시간이 흐를수록 늘 모호한 (Chia-Wei Hsu: Always Ambiguous With the Passage of Time)",
+    "when": "11월 22일 개막",
+    "where": "일함 갤러리 (ILHAM Gallery) 3층, 쿠알라룸푸르",
+    "memo": "대만 작가 쉬자웨이가 영상, 가상현실, 3D 프린팅, 인터랙티브 AI, 드론 영상 등으로 동남아시아와 대만의 역사와 일상, 생태, 시간을 다룬 작품을 선보입니다.",
+    "url": "https://ilhamgallery.com/exhibitions/chiaweihsu/"
+   },
+   {
+    "kind": "콘서트",
+    "title": "웨이브 투 어스: 더 피시스 투어 (wave to earth: the pieces tour)",
+    "when": "11월 22일(일) 오후 8시",
+    "where": "아이디어 라이브 아레나 (Idea Live Arena), 페탈링자야",
+    "memo": "한국 밴드 웨이브 투 어스의 ‘the pieces tour’ 공연으로, 라이브 네이션 말레이시아가 주최합니다.",
+    "url": "https://klconcert.com/concert/wave-to-earth-the-pieces-tour"
+   },
+   {
+    "kind": "콘서트",
+    "title": "MPO 자선 콘서트: 쉴라 마지드 ‘레겐다’ 35주년 (MPO Benefit Concert: Sheila Majid 35th Legenda Anniversary)",
+    "when": "11월 27일(금) 오후 8시",
+    "where": "데완 필하모닉 페트로나스 (Dewan Filharmonik PETRONAS)",
+    "memo": "말레이시아 필하모닉 오케스트라가 쉴라 마지드의 ‘레겐다’ 35주년을 기념해 여는 자선 콘서트입니다.",
+    "url": "https://klconcert.com/concert/mpo-benefit-concert-sheila-majid-35th-legenda-anniversary"
+   },
+   {
+    "kind": "연극",
+    "title": "데이비드 글래스의 템페스트 (David Glass's TEMPEST)",
+    "when": "11월 27~28일 오후 8시, 29일 오후 3시",
+    "where": "KLPac 펜타스 2 (Pentas 2)",
+    "memo": "영국 신체극의 개척자 데이비드 글래스와 함께 만들어 2019년 klpac에서 초연한 작품으로, KL 셰익스피어 플레이어스가 셰익스피어의 『템페스트』에서 출발해 배우 일곱 명과 움직임, 음악, 조명으로 90분 동안 쉬는 시간 없이 펼칩니다.",
+    "url": "https://www.klpac.org/shows/david-glasss-tempest/"
+   },
+   {
+    "kind": "콘서트",
+    "title": "에젠 알리 인 콘서트: 10주년 (Ejen Ali in Concert: 10th Anniversary)",
+    "when": "11월 28일(토) 오후 8시",
+    "where": "KL 컨벤션 센터 플레너리 홀 (Plenary Hall)",
+    "memo": "말레이시아 애니메이션 『에젠 알리』의 10주년을 기념하는 콘서트로, 말레이시아 방송사 RTM이 주최합니다.",
+    "url": "https://klconcert.com/concert/ejen-ali-in-concert-2026"
+   },
+   {
+    "kind": "콘서트",
+    "title": "얼티밋 뮤직 크롤 II (Ultimate Music Crawl II with The klpac Symphonic Band)",
+    "when": "12월 5일(토) 오후 8시 30분, 6일(일) 오후 3시",
+    "where": "KLPac 펜타스 1 (Pentas 1)",
+    "memo": "klpac 심포닉 밴드가 음악감독 셰릴 마의 지휘로 포크 댄스, 행진곡, 재즈와 스윙, 1980년대풍 시티팝을 넘나드는 90분(휴식 15분 포함) 공연으로, 5세 이상에게 권합니다.",
+    "url": "https://www.klpac.org/shows/ultimate-music-crawl-ii/"
+   }
+  ]
+ },
+ "fact": {
+  "title": "1883년 11월 18일, 북미 철도가 시계를 맞춘 날",
+  "titleEn": "November 18, 1883: The Day North America's Railroads Reset Their Clocks",
+  "body": "1883년까지 미국의 철도 회사들은 저마다 자기 시간 기준을 썼습니다. 철도 회사들의 모임인 ‘제너럴 타임 컨벤션’의 간사 윌리엄 F. 앨런이 다섯 개 시간대를 쓰자고 주장했고, 1883년 11월 18일 일요일 미국과 캐나다의 모든 철도는 피츠버그 앨러게니 천문대가 서경 90도 기준 정확히 정오에 보낸 전신 신호에 맞춰 시계를 새 체계로 다시 맞췄습니다.",
+  "more": [
+   "다섯 개 시간대로 계획했지만, 인터콜로니얼 철도가 동부 시간을 택하면서 1883년에 실제로 쓰인 시간대는 네 개였습니다.",
+   "표준시가 미국 법으로 정해진 것은 1918년 표준시법(Standard Time Act)부터입니다.",
+   "캐나다의 샌퍼드 플레밍은 1879년 2월 8일 왕립 캐나다 연구소 모임에서 세계 표준시를 제안했습니다."
+  ],
+  "src": [
+   [
+    "Wikipedia: Standard time",
+    "https://en.wikipedia.org/wiki/Standard_time"
+   ]
+  ]
+ }
+},
+{
  "date": "2026-11-17",
  "quote": {
   "ko": "그대들은 스스로 얼마나 복된지 모릅니다. 희망을 품고 길을 가는 것이 도착하는 것보다 더 좋은 일이며, 참된 성공은 애써 일하는 데 있으니까요.",
@@ -11089,132 +11518,6 @@ const DAYS = [
     ],
     src: [["Wikipedia: Sydney Opera House","https://en.wikipedia.org/wiki/Sydney_Opera_House"]]
   }
-},
-
-{
-  date: "2026-10-19",
-  quote: {
-    ko: "세상에 알아낼 것이 이렇게나 많다니, 정말 멋지지 않아요? 그냥 살아 있다는 게 기뻐져요. 정말 흥미로운 세상이잖아요.",
-    en: "Isn’t it splendid to think of all the things there are to find out about? It just makes me feel glad to be alive—it’s such an interesting world.",
-    by: "루시 모드 몽고메리, 『빨강 머리 앤』 (1908)",
-    pick: {kind:"영화", title:"옥토버 스카이 (October Sky, 1999)", gist:"1957년 웨스트버지니아의 탄광 마을 콜우드, 열일곱 살 고등학생 호머 히컴은 마을 위로 지나가는 소련 인공위성 스푸트니크 1호를 보고 친구 로이 리, 셔먼, 퀜틴과 함께 로켓을 만들어 보기로 합니다. 선생님 라일리는 아이들을 응원하지만, 탄광을 관리하는 아버지는 아들이 광산에서 일하기를 바랍니다. 호머 히컴의 1998년 회고록 『Rocket Boys』를 바탕으로 조 존스턴이 연출한 이 영화는, 궁금한 것을 끝까지 따라가 보려는 마음이 한 사람의 하늘을 얼마나 넓혀 놓는지를 서두르지 않고 보여 줍니다.", after:"알아낼 것이 많아 기쁘다는 그 작은 마음이, 때로는 한 사람을 하늘 끝까지 데려갑니다."}
-  },
-  english: {
-    title: "친구와 주말 자동차 여행 계획 짜기", titleEn: "Planning a Weekend Road Trip With a Friend",
-    situation: "친구와 주말에 차를 몰고 바닷가로 떠나기로 했습니다. 출발 시간과 운전 순서, 쉬어 갈 곳을 정하며 가볍게 주고받는 말투를 익혀 보세요.",
-    lines: [
-      ["A","Okay, road trip planning time. When do you want to hit the road on Saturday?","자, 여행 계획 짜 보자. 토요일에 몇 시에 출발할래?"],
-      ["B","Let's head out around seven so we can beat the traffic.","차 막히기 전에 일곱 시쯤 나가자."],
-      ["A","Seven? Ugh, I'm not a morning person, but I'll make it work.","일곱 시? 으, 나 아침형 인간 아닌데. 그래도 어떻게든 맞춰 볼게."],
-      ["B","You can nap in the car. I'll drive the first half, and we can take turns after lunch.","차에서 자면 돼. 앞쪽 절반은 내가 운전하고, 점심 먹고 나서는 번갈아 하자."],
-      ["A","Deal. Should we stop anywhere on the way, or just power through?","좋아. 가는 길에 어디 들를까, 아니면 그냥 쭉 달릴까?"],
-      ["B","There's a cute little diner about halfway. We could grab a bite and stretch our legs.","중간쯤에 아담하고 예쁜 식당이 있어. 간단히 먹고 다리 좀 펴자."],
-      ["A","Love that. And I'm in charge of the playlist. No arguments.","좋다. 그리고 음악은 내가 고를 거야. 반대 없기."],
-      ["B","Fine, as long as it's not three hours of podcasts again.","알았어, 또 세 시간 내내 팟캐스트만 아니면."],
-      ["A","Ha, that was one time. Oh, and let's fill up the tank tonight so we don't have to stop first thing.","하하, 그건 딱 한 번이었잖아. 아, 그리고 아침부터 멈추지 않게 오늘 밤에 기름 가득 넣어 두자."],
-      ["B","Good thinking. I'll stop by the gas station on my way home.","좋은 생각이야. 집에 가는 길에 주유소 들를게."]
-    ],
-    expressions: [
-      {en:"hit the road", ko:"‘길을 나서다, 출발하다’. 여행을 떠나거나 어떤 자리에서 일어나 갈 때 가볍게 씁니다.", eg:"It's getting late. We should probably hit the road."},
-      {en:"beat the traffic", ko:"‘차가 막히기 전에 움직이다’. 출퇴근 시간이나 연휴 정체를 피하려고 일찍 나설 때 씁니다. beat the crowd(사람이 몰리기 전에 가다)도 같은 틀입니다.", eg:"Let's leave the game a few minutes early to beat the traffic."},
-      {en:"not a morning person", ko:"‘아침형 인간이 아니다, 아침에 약하다’. 일찍 일어나는 게 힘들다고 웃으며 말할 때 씁니다. 반대로 밤에 쌩쌩한 사람은 a night owl입니다.", eg:"Don't call me before nine. I'm not a morning person."},
-      {en:"power through", ko:"‘쉬지 않고 밀고 나가다’. 피곤하거나 힘들어도 멈추지 않고 끝까지 해낼 때 씁니다.", eg:"I was exhausted, but I powered through and finished the last chapter."},
-      {en:"stretch one's legs", ko:"‘(오래 앉아 있다가) 다리를 펴다, 잠깐 걷다’. 긴 운전이나 비행 중에 잠시 쉬어 가자고 할 때 자주 씁니다.", eg:"Let's pull over for a few minutes and stretch our legs."}
-    ],
-    pattern: {
-      en: "~, as long as ~",
-      ko: "‘~하기만 하면 ~’. 조건을 하나 걸고 그것만 지켜지면 괜찮다고 말할 때 씁니다. 대화에서처럼 상대의 제안을 받아들이면서 장난스럽게 조건을 붙일 때도 자연스럽습니다.",
-      examples: [
-        ["You can <b>borrow</b> it, as long as you bring it <b>back</b>.","돌려주기만 하면 빌려 가도 돼."],
-        ["I'm <b>fine</b> with any place, as long as it has <b>parking</b>.","주차만 되면 어디든 괜찮아."],
-        ["As long as we're <b>home</b> by <b>ten</b>, I'm in.","10시까지만 집에 오면 나도 갈래."]
-      ]
-    }
-  },
-  news: [
-    {region:"말레이시아", tag:"생활 · 연무", important:true, icon:"school", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><rect x="18" y="14" width="36" height="42" rx="9"/><path d="M30 14v-4a6 6 0 0 1 12 0v4" fill="none"/><rect x="12" y="30" width="7" height="18" rx="3"/><rect x="53" y="30" width="7" height="18" rx="3"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M30 14v-4a6 6 0 0 1 12 0v4" fill="none" stroke-width="2.6"/><rect x="12" y="30" width="7" height="18" rx="3" fill="#C8553D"/><rect x="53" y="30" width="7" height="18" rx="3" fill="#C8553D"/><rect x="18" y="14" width="36" height="42" rx="9" fill="#2F6B5A"/><path d="M18 23a9 9 0 0 1 9-9h18a9 9 0 0 1 9 9v6q-18 8-36 0z" fill="#3F8B66"/><rect x="25" y="37" width="22" height="14" rx="4" fill="#F2A65A"/><path d="M25 42h22" fill="none"/><rect x="33.5" y="28" width="5" height="6" rx="1.2" fill="#F2CF6B" stroke-width="1.1"/></g><path d="M22 22q2-5 7-6" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" opacity=".6"/>'}, title:"오늘 슬랑오르 등 5개 주 등교 재개, 마스크 권장", titleEn:"Schools in Selangor and Four Other States Reopen Today; Masks Encouraged",
-     lead:"연무로 문을 닫았던 슬랑오르·느그리슴빌란·믈라카·파항·페낭의 교육부 산하 학교가 19일 월요일부터 다시 정상 운영해요. 이 다섯 주에서 아이를 학교에 보내는 가정이 해당돼요.",
-     pts:["슬랑오르는 야외 활동을 멈추고 마스크를 권해요. 아이 건강이 걱정되면 학교에 알린 뒤 집에 둘 수 있어요", "느그리슴빌란은 학년 말 시험(UASA)과 학교 자체 시험을 모두 미루고, 날짜는 학교마다 다시 정해요", "파항은 벤통 교육구만 야외 활동을 추후 공지 때까지 미루고, 페낭은 마스크와 충분한 물 마시기를 권해요"],
-     info:[["재개", "10월 19일(월)"], ["야외 활동", "느그리슴빌란은 API가 100을 넘으면 모두 멈춰요"], ["확인", "각 주 교육청 공식 채널"]],
-     src:"Malay Mail (Bernama) · 10.18", url:"https://www.malaymail.com/news/malaysia/2026/10/18/selangor-negeri-sembilan-melaka-pahang-and-penang-schools-resume-oct-19-masks-encouraged/239631"},
-    {region:"말레이시아", tag:"스포츠", icon:"news", art:{vb:"0 0 72 62", svg:'<g transform="rotate(32 36 31)"><g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M28 44L20 10h32l-8 34z"/><path d="M28 44h16v2a8 8 0 0 1-16 0z"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M28 44L20 10q4-3 8 0q4-3 8 0q4-3 8 0q4-3 8 0l-8 34z" fill="#FBF7EF"/><path d="M30 44l-6-34M33 44l-1-34M39 44l1-34M42 44l6-34" fill="none" stroke="#B9AE97" stroke-width="1.1"/><path d="M27 36h18" fill="none" stroke="#C8553D" stroke-width="2.4"/><path d="M28 44h16v2a8 8 0 0 1-16 0z" fill="#F0C987"/><path d="M28 46h16" fill="none" stroke="#C8553D" stroke-width="1.6"/></g></g><path d="M8 44l7-1M9 51l8-2M14 57l6-2" fill="none" stroke="#C98B1E" stroke-width="1.8" stroke-linecap="round"/>'}, title:"펄리 탄·티나, 18년 만에 덴마크오픈 정상", titleEn:"Pearly Tan and Thinaah End Malaysia's 18-Year Wait for a Denmark Open Title",
-     lead:"말레이시아의 펄리 탄·M. 티나 조가 덴마크오픈 여자복식 결승에서 이겼어요. 말레이시아가 이 대회 여자복식에서 우승한 건 18년 만이에요.",
-     pts:["결승에서 일본의 스즈키 히나타·야마키타 나오 조를 21‑18, 21‑11로 36분 만에 꺾었어요", "앞선 말레이시아 우승은 2008년 친 에이 후이·웡 페이 티 조였어요", "두 선수는 지금 여자복식 세계 랭킹 5위예요"],
-     info:[["대회", "덴마크오픈 여자복식"], ["장소", "덴마크 오덴세, 위스케 방크 아레나"]],
-     src:"Bernama · 10.18", url:"https://www.bernama.com/en/news.php?id=2622163"},
-    {region:"말레이시아", tag:"문화", icon:"puppet", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><rect x="8" y="8" width="56" height="44" rx="2"/><rect x="5" y="49" width="62" height="8" rx="2"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><rect x="8" y="8" width="56" height="44" rx="2" fill="#2F3B4A"/><path d="M33 12h6l12 38H21z" fill="#F7E3A8" stroke="none" opacity=".8"/><path d="M9 9h17c-1 14-6 28-14 41h-3z" fill="#B5462F"/><path d="M63 9H46c1 14 6 28 14 41h3z" fill="#B5462F"/><path d="M8 8h56v6H8z" fill="#8E3524"/><rect x="32" y="11" width="8" height="4" rx="1.5" fill="#DDA22F"/><path d="M36 48V33" fill="none" stroke-width="2.2"/><path d="M31 48h10" fill="none" stroke-width="2.2"/><rect x="33.5" y="27" width="5" height="8" rx="2.5" fill="#3B3B38"/><rect x="5" y="49" width="62" height="8" rx="2" fill="#8C5A3A"/></g><path d="M14 20q-1 12-4 22M58 20q1 12 4 22" fill="none" stroke="#8E3524" stroke-width="1.2" stroke-linecap="round"/><path d="M10 53h52" stroke="#A86F45" stroke-width="1.1"/>'}, title:"새 단장 마친 국립극장 이스타나 부다야", titleEn:"The Show Goes On: Istana Budaya Gets a New Lease of Life",
-     lead:"2024년 대대적인 보수와 지붕 공사로 문을 닫았던 국립극장 이스타나 부다야가 올해 8월 다시 문을 열었어요. 건물의 약 90%를 1999년 처음 모습으로 되살렸대요.",
-     pts:["재개관 무대는 8월 15일 더글러스 림의 스탠드업 코미디 ‘Vital Stats’, 그리고 다툭 M. 나시르가 연출하고 곡을 쓴 말레이 뮤지컬 ‘Mansur & Liu’였어요", "1964년 국가 문화 센터 계획에서 처음 제안돼 1995년 7월 짓기 시작했고, 1999년 9월 15일 지금의 이름을 얻었어요", "무대 위에 장치를 매다는 설비가 있어 대형 뮤지컬에 잘 맞고, 어린이 공연으로 처음 오는 관객과 젊은 관객도 부르려 해요"],
-     info:[["재개관", "2026년 8월"], ["다음 공연", "어린이 뮤지컬 ‘Pengembaraan Sang Kancil’, 11월 13~15일 (매진에 가깝대요)"]],
-     src:"Malay Mail · 10.18", url:"https://www.malaymail.com/news/life/2026/10/18/the-show-must-go-on-istana-budaya-gets-a-new-lease-of-life/239256"},
-    {region:"말레이시아", tag:"음식", icon:"bowl", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><ellipse cx="33" cy="40" rx="27" ry="15"/><path d="M58 36l8-4" fill="none"/><path d="M26 33a10 8 0 0 1 20 0zM12 40a10 8 0 0 1 20 0zM36 42a10 8 0 0 1 20 0z"/></g><path d="M58 36l8-4" fill="none" stroke="#4A2E1A" stroke-width="5" stroke-linecap="round"/><path d="M58 36l8-4" fill="none" stroke="#8C5A3A" stroke-width="2.6" stroke-linecap="round"/><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round"><ellipse cx="33" cy="40" rx="27" ry="15" fill="#3B3B38"/><ellipse cx="33" cy="39" rx="23" ry="12" fill="#55524C"/><ellipse cx="36" cy="33.5" rx="10" ry="2.6" fill="#C98B3A"/><path d="M26 33a10 8 0 0 1 20 0q-10 3-20 0z" fill="#FBF7EF"/><ellipse cx="22" cy="40.5" rx="10" ry="2.6" fill="#C98B3A"/><path d="M12 40a10 8 0 0 1 20 0q-10 3-20 0z" fill="#FBF7EF"/><ellipse cx="46" cy="42.5" rx="10" ry="2.6" fill="#C98B3A"/><path d="M36 42a10 8 0 0 1 20 0q-10 3-20 0z" fill="#FBF7EF"/></g><g fill="none" stroke="#B9AE97" stroke-width="1.1" stroke-linecap="round"><path d="M34 27q2-1.5 4 0M20 34q2-1.5 4 0M44 36q2-1.5 4 0"/></g><g fill="#5FAE84"><circle cx="31" cy="29" r="1"/><circle cx="41" cy="30" r="1"/><circle cx="17" cy="37" r="1"/><circle cx="51" cy="39" r="1"/></g><g fill="#E8D3A8" stroke="#8A7F6A" stroke-width=".5"><ellipse cx="37" cy="29.5" rx=".9" ry=".6"/><ellipse cx="25" cy="36.5" rx=".9" ry=".6"/><ellipse cx="47" cy="38" rx=".9" ry=".6"/></g><path d="M16 50q8 4 18 4" fill="none" stroke="#6E6A62" stroke-width="1.4" stroke-linecap="round"/>'}, title:"한 개 3링깃, 다만사라 우타마의 셩지엔바오", titleEn:"Superb Shanghainese Shengjian Bao at Jia Yu Fang, Damansara Utama",
-     lead:"프탈링자야 다만사라 우타마에 문을 연 지 한 달이 채 안 된 ‘자위팡(Jia Yu Fang)’을 말레이 메일이 소개했어요. 주문을 받으면 바로 굽는 상하이식 군만두빵 셩지엔바오가 주인공이에요.",
-     pts:["셩지엔바오는 한 개 3링깃이고, 굽는 데 10분쯤 걸려요. 리뷰어는 클랑 밸리에서 손꼽히게 맛있다고 했어요", "상하이식 홍소육은 46링깃으로, 후난식보다 더 달고 끈적하대요", "풋고추와 양파를 넣고 볶은 달걀 요리는 18링깃이고, 직접 담근 김치가 진한 요리 사이에서 입맛을 산뜻하게 잡아 줘요"],
-     info:[["어디", "72G, Jalan SS21/62, Damansara Utama, Petaling Jaya"], ["운영", "화~일 오전 10시 30분~오후 10시"]],
-     src:"Malay Mail · 10.18", url:"https://www.malaymail.com/news/eat-drink/2026/10/18/sink-your-teeth-into-superb-shanghainese-shengjian-bao-and-more-at-jia-yu-fang-damansara-utama/239520"},
-    {region:"세계", tag:"호주 유학", icon:"school", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"><path d="M6 24L27 15l21 9-21 9z"/><path d="M16 28v9q11 6 22 0v-9z"/><rect x="39" y="24" width="7" height="30"/><rect x="48" y="32" width="7" height="22"/><rect x="57" y="40" width="7" height="14"/><path d="M43 12l5 4 5-1 6 6M60 17v5h-5" fill="none"/></g><g stroke="#4A2E1A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><rect x="39" y="24" width="7" height="30" fill="#7FA9C9"/><rect x="48" y="32" width="7" height="22" fill="#7FA9C9"/><rect x="57" y="40" width="7" height="14" fill="#7FA9C9"/><path d="M36 54h31" fill="none"/></g><g stroke="#1F2A36" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M16 28v9q11 6 22 0v-9z" fill="#3E4C5E"/><path d="M6 24L27 15l21 9-21 9z" fill="#2F3B4A"/></g><path d="M27 24l13 4v10" fill="none" stroke="#C98B1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="27" cy="24" r="2.2" fill="#DDA22F" stroke="#1F2A36" stroke-width="1.1"/><path d="M38 38h4l-2 4z" fill="#DDA22F" stroke="#8A5A12" stroke-width="1"/><path d="M43 12l5 4 5-1 6 6" fill="none" stroke="#4A2E1A" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M43 12l5 4 5-1 6 6" fill="none" stroke="#C8553D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M60 17v5h-5" fill="none" stroke="#C8553D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>'}, title:"호주 대학 신입 유학생, 1년 새 4.9% 줄었다", titleEn:"New Overseas Student Commencements at Australian Universities Fall 4.9%",
-     lead:"호주 교육부가 15일 낸 고등교육 등록 예비 통계에서, 올해 호주 대학에 새로 들어온 해외 유학생이 지난해보다 4.9% 줄었어요. 호주 대학 진학을 생각하는 가정이 참고할 흐름이에요.",
-     pts:["5월 1일 기준 신입 해외 유학생은 12만 3,968명으로, 지난해 같은 때의 13만 415명보다 줄었어요", "전체 해외 유학생은 47만 4,716명에서 47만 2,245명으로 0.5% 줄어, 최근 몇 년의 빠른 증가세가 멈췄어요", "교육부는 정책 변화와 경제 여건을 이유로 들었어요. 2026년 신입 유학생 국가 계획 수준은 29만 5,000명이고, 재정·영어 요건 강화와 ‘진정한 학생(Genuine Student)’ 심사, 비자 신청비 인상도 시행 중이에요"],
-     info:[["자료", "호주 교육부 고등교육 등록 예비 통계 (10월 15일)"], ["기간", "2026년 1월 1일~5월 1일 등록분"], ["참고", "예비 수치라 바뀔 수 있고, 해외 분교 학생도 포함돼요"]],
-     src:"The PIE News · 10.15", url:"https://thepienews.com/overseas-student-commencements-fall-5-in-australian-higher-education/"},
-    {region:"세계", tag:"자연", icon:"leaf", art:{vb:"0 0 72 62", svg:'<g fill="#fff" stroke="#fff" stroke-width="15" stroke-linejoin="round" stroke-linecap="round"><path d="M30 50V38M30 38l-9-10M21 28l-4-9M21 28l3-10M30 38l8-11M38 27l-2-10M38 27l7-6" fill="none"/></g><g fill="#fff" stroke="#fff" stroke-width="7.5" stroke-linejoin="round"><ellipse cx="30" cy="52" rx="16" ry="5"/><ellipse cx="55" cy="22" rx="8" ry="5"/><path d="M47 22l-6-5v10z"/></g><path d="M30 50V38M30 38l-9-10M21 28l-4-9M21 28l3-10M30 38l8-11M38 27l-2-10M38 27l7-6" fill="none" stroke="#8E3524" stroke-width="7.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M30 50V38M30 38l-9-10M21 28l-4-9M21 28l3-10M30 38l8-11M38 27l-2-10M38 27l7-6" fill="none" stroke="#F28C7A" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/><g fill="#FBD0C6"><circle cx="17" cy="19" r="1"/><circle cx="24" cy="18" r="1"/><circle cx="36" cy="17" r="1"/><circle cx="45" cy="21" r="1"/></g><ellipse cx="30" cy="52" rx="16" ry="5" fill="#B9AE97" stroke="#4A2E1A" stroke-width="1.5"/><g stroke="#4A2E1A" stroke-width="1.4" stroke-linejoin="round"><path d="M47 22l-6-5v10z" fill="#E0A23A"/><ellipse cx="55" cy="22" rx="8" ry="5" fill="#F2CF6B"/></g><path d="M52 18v8" stroke="#E0A23A" stroke-width="1.4"/><circle cx="59" cy="21" r="1.2" fill="#1B2321"/><g fill="none" stroke="#7FA9C9" stroke-width="1.2"><circle cx="63" cy="12" r="1.8"/><circle cx="60" cy="7" r="1.2"/><circle cx="12" cy="40" r="1.5"/></g>'}, title:"바다를 지킨 피지 마을, 상어가 돌아왔다", titleEn:"How One Fiji Village Brought Its Reef, and Its Sharks, Back to Life",
-     lead:"피지 코럴 코스트의 나이디리 마을이 2009년부터 마을 앞바다 일부를 보호 구역으로 지켜 왔더니, 수십 년 동안 보이지 않던 상어가 올해 다시 나타났어요.",
-     pts:["잡히는 물고기가 줄고 작아지는 걸 걱정한 마노아 두와이가 원로들을 설득해 30×40m로 시작한 보호 구역이, 지금은 280×240m로 넓어졌어요", "2011년 생긴 마을 청년 모임이 구역을 돌보며, 2023년 한 해에만 산호 1만 8,000개와 맹그로브 1만 그루를 심었어요", "올해 바닷물이 최고 39도까지 오른 폭염에도 심은 산호의 약 20%가 살아남았고, 마을은 이 ‘슈퍼 산호’를 수도 수바 근처의 더 깊고 시원한 바다로 옮겨 심고 있어요"],
-     info:[["어디", "피지 코럴 코스트, 나이디리 마을 (주민 147명)"], ["청년 리더", "조세바 쿠나가도 (21)"]],
-     src:"Malay Mail (AFP) · 10.18", url:"https://www.malaymail.com/news/life/2026/10/18/no-fish-no-future-how-one-fiji-village-brought-its-reef-back-to-life/239421"}
-  ],
-  trend: {
-    title: "타오바오, 11.11 앞두고 말레이시아 반품 거점 1,400곳", titleEn: "Taobao Adds Over 1,400 Malaysian Return Points and AI Try-Ons Ahead of 11.11",
-    asOf: "2026년 10월 17일 보도 기준",
-    body: "온라인 쇼핑 플랫폼 타오바오가 10월 20일 오후 8시부터 11월 13일까지 여는 ‘11.11 글로벌 쇼핑 페스티벌’을 앞두고 말레이시아 소비자를 겨냥한 혜택을 내놓았습니다. 패션 전 품목 무료 배송과 AI 가상 피팅, 현지 반품 접수처 확대가 핵심입니다.",
-    points: [
-      "패션 카테고리는 최소 주문 금액 없이 무료 배송이고, 무료 배송 상품은 4억 개가 넘습니다. 일부 주문은 항공 배송으로 바꿔 주요 도시에서 빠르면 5일 안에 받을 수 있습니다.",
-      "11월부터 J&T 익스프레스와 함께 말레이시아 전역에 1,400곳이 넘는 반품 접수처를 차례로 늘립니다.",
-      "사진을 올려 옷을 입어 보는 ‘AI 트라이온’과 추천·가격 비교를 해 주는 AI 쇼핑 도우미를 선보였고, 소파와 식탁을 비롯한 가구 100만 개 이상을 말레이시아로 바로 배송합니다.",
-      "중국 배우 장링허가 캠페인 얼굴로 나서며, 10월 24~25일 라라포트 쿠알라룸푸르와 27~28일 샤먼대학교 말레이시아 캠퍼스에서 오프라인 행사를 엽니다."
-    ],
-    src: [["Malay Mail (2026.10.17)","https://www.malaymail.com/news/life/2026/10/17/zhang-linghe-free-shipping-and-ai-try-ons-taobao-goes-all-out-for-malaysias-1111-sale/239446"]]
-  },
-  life: {
-    title: "올해 디파발리 바자르, 브릭필즈는 자리가 바뀌었어요", titleEn: "This Year's Brickfields Deepavali Bazaar Has Moved",
-    intro: "디파발리를 앞두고 쿠알라룸푸르에서 디파발리 바자르가 열리고 있습니다. 오래 산 사람도 헷갈리기 쉬운 올해 달라진 점과 장 보러 가기 전에 알아두면 좋은 것을, 더 스타 보도와 영어판 위키백과에서 골랐습니다.",
-    tips: [
-      ["20여 년 만에 리틀 인디아 거리를 떠났어요","올해 브릭필즈 바자르는 늘 열리던 리틀 인디아 거리 대신, 잘란 툰 삼반탄 1에 있는 툰 삼반탄 복합 건물 근처 DBKL 축구장 주차장에 100칸으로 섭니다. 이 바자르가 전통적인 자리를 떠난 것은 20년이 넘어 처음입니다."],
-      ["기간은 10월 9일부터 11월 7일까지","바자르는 30일 동안 열립니다. 브릭필즈 자리에서는 ‘드라이 굿즈(dry goods)’와 함께 음식과 음료도 팔 수 있습니다."],
-      ["마스지드 인디아는 잘란 부누스 6에 작게","마스지드 인디아 쪽은 잘란 부누스 6에 20칸이 서고, 드라이 굿즈만 팝니다. 두 곳을 합쳐 120칸으로, 지난해 140칸보다 줄었습니다."],
-      ["옮긴 이유는 개발과 혼잡","예전 자리 가운데 일부가 개발로 쓸 수 없게 됐고, 오래된 혼잡과 소음, 안전 문제를 줄이려고 한곳으로 모았다고 쿠알라룸푸르시청(DBKL)이 설명했습니다."],
-      ["문간의 랑골리와 집 안의 등불","디파발리에는 쌀가루나 꽃잎, 색을 입힌 쌀이나 모래로 문간에 랑골리를 꾸미고, 집과 사원, 일터를 디야(기름 등잔)와 초, 등불로 밝힙니다."]
-    ],
-    src: [["The Star: Brickfields Deepavali bazaar moved to Jalan Tun Sambanthan 1 car park (2026.9.21)","https://www.thestar.com.my/metro/metro-news/2026/09/21/brickfields-deepavali-bazaar-moved-to-jalan-tun-sambanthan-1-car-park"],["Wikipedia: Diwali","https://en.wikipedia.org/wiki/Diwali"]]
-  },
-  shows: {
-    intro: "쿠알라룸푸르에서 지금 볼 수 있거나 곧 열리는 전시와 공연입니다.",
-    items: [
-      {kind:"전시", title:"로버트 라우션버그와 아시아 (Robert Rauschenberg and Asia)", when:"11월 1일까지", where:"일함 갤러리(ILHAM Gallery) 5층", memo:"미국 현대미술 작가 로버트 라우션버그의 전시입니다.", url:"https://ilhamgallery.com/exhibitions/robert-rauschenberg-and-asia/"},
-      {kind:"전시", title:"경계 없는 예술: 난양으로 가는 새 항해 (Art Without Boundaries — New Voyage to Nanyang)", when:"11월 11일까지", where:"루앙 트두(Ruang Teduh), 익스체인지 106, 툰 라작 익스체인지", memo:"대만 태생의 큐레이터이자 작가 빅토리아 루가 AI의 도움을 받아 만든 작품을 젊은 작가들의 작품과 함께 선보입니다.", url:"https://www.malaymail.com/news/life/2026/10/10/art-meets-algorithm-victoria-lu-explores-ai-and-human-creativity-at-kuala-lumpur-exhibition/238604"},
-      {kind:"오페라", title:"투란도트 (Turandot)", when:"10월 20·22·24·25일", where:"KLPac 펜타스 1 (Pentas 1)", memo:"KLPac 오케스트라가 연주합니다. 25일은 오후 4시, 나머지 날은 오후 8시 공연입니다.", url:"https://www.klpac.org/shows/turandot/"},
-      {kind:"클래식", title:"스티븐 허프와 함께하는 저녁 (A Regal Evening with Stephen Hough)", when:"10월 24일", where:"데완 필하모닉 페트로나스 (Dewan Filharmonik PETRONAS)", memo:"히로카미 준이치가 지휘하는 말레이시아 필하모닉과 피아니스트 스티븐 허프가 베토벤 피아노 협주곡 5번 ‘황제’와 교향곡 4번을 연주합니다.", url:"https://www.mpo.com.my/season-2026/a-regal-evening-with-stephen-hough"},
-      {kind:"K팝", title:"더 로즈 아시아 투어 (The Rose ROSETOPIA Asia Tour)", when:"10월 25일", where:"메가 스타 아레나, 쿠알라룸푸르", memo:"한국 밴드 더 로즈의 쿠알라룸푸르 공연으로, CK 스타 엔터테인먼트가 주최합니다.", url:"https://thesmartlocal.my/the-rose-concert-2026/"},
-      {kind:"클래식", title:"브라이언 탄 헌정 공연 (Tribute to Brian Tan with The klpac Orchestra)", when:"10월 30일~11월 1일", where:"KLPac 펜타스 1 (Pentas 1)", memo:"KLPac의 첫 커뮤니티 오케스트라를 세운 고(故) 브라이언 탄을 기리며, 리 콕 렁이 지휘하는 KLPac 오케스트라가 연주합니다.", url:"https://www.klpac.org/shows/tribute-to-brian-tan-with-the-klpac-orchestra/"},
-      {kind:"K팝", title:"예성 10주년 투어 (YESUNG 10th Anniversary Tour: ABOUT THE THINGS WE CALLED ORDINARY)", when:"11월 7일 오후 8시", where:"제프 쿠알라룸푸르 (Zepp Kuala Lumpur)", memo:"슈퍼주니어 예성의 10주년 기념 투어 공연으로, iMe Malaysia가 주최합니다.", url:"https://klconcert.com/concert/yesung-10th-anniversary-tour-about-the-things-we-called-ordinary"}
-    ]
-  },
-  music: {
-    title: "Lovely Day", artist: "빌 위더스 (Bill Withers)", year: "1977",
-    mood: "한 주를 여는 월요일 아침의 따뜻한 솔",
-    why: "빌 위더스가 스킵 스카버러와 함께 써서 1977년 앨범 『Menagerie』에 실은 곡으로, 느긋하게 걷는 듯한 리듬 위로 따뜻한 목소리가 하루를 천천히 밝힙니다. 끝부분에서 높은 음을 18초 동안 끄는데, 미국 톱 40 히트곡 가운데 가장 긴 음으로 꼽히니 월요일 아침 길을 나서며 끝까지 들어 보세요.",
-    query: "Bill Withers Lovely Day"
-  },
-  fact: {
-    title: "10월 19일, ‘블랙 먼데이’ 주가 대폭락", titleEn: "October 19, 1987: Black Monday",
-    body: "1987년 10월 19일 월요일, 미국 다우존스 산업평균지수가 하루 만에 508포인트, 22.6% 떨어졌습니다. 다우 지수 역사상 하루 최대 하락률이며, 같은 날 S&P 500 지수도 20.47% 떨어졌습니다. 폭락은 일본을 뺀 아시아 시장에서 시작해 유럽과 미국을 거쳐 마지막으로 일본에 이르렀습니다.",
-    more: [
-      "홍콩 증시가 45.8%로 가장 크게 떨어졌고, 주요 선진국 23곳 가운데 19곳의 증시가 20% 넘게 떨어졌습니다.",
-      "이 일 뒤로 큰 폭락 때 거래를 잠시 멈추는 ‘서킷 브레이커’가 마련됐고, 뉴욕증권거래소는 1988년에 관련 규칙을 도입했습니다.",
-      "S&P 500 지수가 폭락 전 최고치 336.77을 되찾은 것은 1989년 7월 26일이었습니다."
-    ],
-    src: [["Wikipedia: Black Monday (1987)","https://en.wikipedia.org/wiki/Black_Monday_(1987)"]]
-  }
 }
 ];
 
@@ -11496,7 +11799,6 @@ render();
   start();
 })();
 </script>
-
 
 </body>
 </html>
