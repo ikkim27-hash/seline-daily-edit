@@ -489,10 +489,6 @@ section h2,.news h3,.news article:first-child h3{font-size:clamp(1.22rem,4.24vw,
 .cpour .cp-steam .cp-s2{animation-delay:-1.4s;animation-duration:4.6s}
 .cpour .cp-steam .cp-s3{animation-delay:-2.8s;animation-duration:3.8s}
 @keyframes cpsteam{0%{transform:translate(0,6px) scale(.7,.6) skewX(0);opacity:0}25%{opacity:1}55%{transform:translate(2px,-6px) scale(1,1) skewX(-6deg);opacity:.75}100%{transform:translate(-3px,-20px) scale(1.5,1.2) skewX(8deg);opacity:0}}
-/* 커피가 떨어지는 자리에서 작은 방울이 살짝 튀었다 떨어진다 */
-.cpour .cp-drops ellipse{fill:url(#cp-drop);opacity:0;transform-box:view-box;animation:cpdrop 1.8s cubic-bezier(.3,.7,.5,1) infinite}
-@keyframes cpdrop{0%{transform:translate(0,0) scale(.4);opacity:0}6%{opacity:1}28%{transform:translate(calc(var(--dx) * .6),var(--h)) scale(1)}50%{transform:translate(var(--dx),1px) scale(.8);opacity:.9}54%,100%{transform:translate(var(--dx),2px) scale(.6);opacity:0}}
-@media (prefers-reduced-motion:reduce){.cpour .cp-drops{display:none}}
 /* 주전자: 주둥이 끝을 축으로 천천히 더 기울였다 돌아오며 따르는 동작 */
 .cpour .cp-kettle{transform-box:view-box;transform-origin:101px 43px;animation:cptilt 3.4s ease-in-out infinite alternate}
 @keyframes cptilt{0%{transform:rotate(-4deg)}55%{transform:rotate(9deg)}100%{transform:rotate(12deg)}}
@@ -531,7 +527,6 @@ section h2,.news h3,.news article:first-child h3{font-size:clamp(1.22rem,4.24vw,
           <linearGradient id="cp-pot" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F3C9A0"/><stop offset=".45" stop-color="#C97B45"/><stop offset="1" stop-color="#7E4320"/></linearGradient>
           <filter id="cp-blur" x="-80%" y="-30%" width="260%" height="160%"><feGaussianBlur stdDeviation="1.7"/></filter>
           <linearGradient id="cp-wisp" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".25" stop-color="#FFFFFF" stop-opacity="1"/><stop offset=".7" stop-color="#FFFFFF" stop-opacity=".8"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
-          <radialGradient id="cp-drop" cx="35%" cy="30%" r="70%"><stop offset="0" stop-color="#C08A55"/><stop offset=".5" stop-color="#7A4A22"/><stop offset="1" stop-color="#4A2A12"/></radialGradient>
           <linearGradient id="cp-str" x1="0" x2="1"><stop offset="0" stop-color="#4A2A12"/><stop offset=".45" stop-color="#8C5428"/><stop offset="1" stop-color="#4A2A12"/></linearGradient>
         </defs>
         <circle cx="100" cy="100" r="100" fill="url(#cp-bg)"/>
@@ -549,10 +544,6 @@ section h2,.news h3,.news article:first-child h3{font-size:clamp(1.22rem,4.24vw,
         <ellipse class="cp-rip cp-rip2" cx="100" cy="106" rx="16" ry="3.4" fill="none" stroke="#E2BC86" stroke-width="1.4"/>
         <path d="M101 44Q99 76 100 106" fill="none" stroke="url(#cp-str)" stroke-width="4.2" stroke-linecap="round"/>
         <path class="cp-flow" d="M101 46Q99 76 100 104" fill="none" stroke="#D8A26A" stroke-width="1.1" stroke-linecap="round" opacity=".9"/>
-        <g class="cp-drops">
-          <ellipse cx="100" cy="104" rx="3" ry="3.4" style="--dx:-12px;--h:-22px;animation-delay:0s"/>
-          <ellipse cx="100" cy="104" rx="2.3" ry="2.6" style="--dx:10px;--h:-17px;animation-delay:-.9s"/>
-        </g>
         <g class="cp-kettle">
           <path d="M58 54Q80 66 88 48Q93 38 101 43" fill="none" stroke="#6B3818" stroke-width="8" stroke-linecap="round"/>
           <path d="M58 54Q80 66 88 48Q93 38 101 43" fill="none" stroke="#D99566" stroke-width="4.6" stroke-linecap="round"/>
