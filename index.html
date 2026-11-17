@@ -484,19 +484,21 @@ section h2,.news h3,.news article:first-child h3{font-size:clamp(1.22rem,4.24vw,
 .cpour .cp-rip{transform-box:fill-box;transform-origin:center;animation:cprip 1.6s ease-out infinite}
 .cpour .cp-rip2{animation-delay:-.8s}
 @keyframes cprip{from{transform:scale(.35);opacity:.95}to{transform:scale(2.2);opacity:0}}
-.cpour .cp-steam path{animation:cpsteam 3.2s ease-in-out infinite}
-.cpour .cp-steam .cp-s2{animation-delay:-1.6s}
-@keyframes cpsteam{0%{transform:translateY(4px);opacity:0}40%{opacity:.8}100%{transform:translateY(-8px);opacity:0}}
+/* 김: 흐릿한 세 줄기가 흔들리며 피어올라 흩어진다 */
+.cpour .cp-steam path{opacity:0;transform-box:fill-box;transform-origin:50% 100%;animation:cpsteam 4.2s ease-in-out infinite}
+.cpour .cp-steam .cp-s2{animation-delay:-1.4s;animation-duration:4.6s}
+.cpour .cp-steam .cp-s3{animation-delay:-2.8s;animation-duration:3.8s}
+@keyframes cpsteam{0%{transform:translate(0,6px) scale(.7,.6) skewX(0);opacity:0}25%{opacity:1}55%{transform:translate(2px,-6px) scale(1,1) skewX(-6deg);opacity:.75}100%{transform:translate(-3px,-20px) scale(1.5,1.2) skewX(8deg);opacity:0}}
 /* 커피가 떨어지는 자리에서 작은 방울이 살짝 튀었다 떨어진다 */
-.cpour .cp-drops circle{fill:#7A4A22;stroke:#C99A62;stroke-width:.5;opacity:0;transform-box:view-box;animation:cpdrop .95s cubic-bezier(.3,.7,.5,1) infinite}
-@keyframes cpdrop{0%{transform:translate(0,0) scale(.5);opacity:0}12%{opacity:1}45%{transform:translate(calc(var(--dx) * .6),var(--h)) scale(1)}85%{opacity:.9}100%{transform:translate(var(--dx),1px) scale(.7);opacity:0}}
+.cpour .cp-drops ellipse{fill:url(#cp-drop);opacity:0;transform-box:view-box;animation:cpdrop 1.8s cubic-bezier(.3,.7,.5,1) infinite}
+@keyframes cpdrop{0%{transform:translate(0,0) scale(.4);opacity:0}6%{opacity:1}28%{transform:translate(calc(var(--dx) * .6),var(--h)) scale(1)}50%{transform:translate(var(--dx),1px) scale(.8);opacity:.9}54%,100%{transform:translate(var(--dx),2px) scale(.6);opacity:0}}
 @media (prefers-reduced-motion:reduce){.cpour .cp-drops{display:none}}
 /* 주전자: 주둥이 끝을 축으로 천천히 더 기울였다 돌아오며 따르는 동작 */
 .cpour .cp-kettle{transform-box:view-box;transform-origin:101px 43px;animation:cptilt 3.4s ease-in-out infinite alternate}
 @keyframes cptilt{0%{transform:rotate(-4deg)}55%{transform:rotate(9deg)}100%{transform:rotate(12deg)}}
 .cpour .cp-flow{animation-duration:.5s}
 @media (prefers-reduced-motion:reduce){.cpour .cp-kettle{animation:none;transform:rotate(6deg)}}
-@media (prefers-reduced-motion:reduce){.cpour .cp-flow,.cpour .cp-rip,.cpour .cp-steam path{animation:none}.cpour .cp-rip{opacity:0}}
+@media (prefers-reduced-motion:reduce){.cpour .cp-steam path{opacity:.6}.cpour .cp-flow,.cpour .cp-rip,.cpour .cp-steam path{animation:none}.cpour .cp-rip{opacity:0}}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -527,6 +529,9 @@ section h2,.news h3,.news article:first-child h3{font-size:clamp(1.22rem,4.24vw,
           <linearGradient id="cp-sau" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#CDBDA6"/></linearGradient>
           <radialGradient id="cp-cof" cx="45%" cy="40%" r="65%"><stop offset="0" stop-color="#9A6534"/><stop offset=".6" stop-color="#6A3F1C"/><stop offset="1" stop-color="#3E2410"/></radialGradient>
           <linearGradient id="cp-pot" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F3C9A0"/><stop offset=".45" stop-color="#C97B45"/><stop offset="1" stop-color="#7E4320"/></linearGradient>
+          <filter id="cp-blur" x="-80%" y="-30%" width="260%" height="160%"><feGaussianBlur stdDeviation="1.7"/></filter>
+          <linearGradient id="cp-wisp" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".25" stop-color="#FFFFFF" stop-opacity="1"/><stop offset=".7" stop-color="#FFFFFF" stop-opacity=".8"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+          <radialGradient id="cp-drop" cx="35%" cy="30%" r="70%"><stop offset="0" stop-color="#C08A55"/><stop offset=".5" stop-color="#7A4A22"/><stop offset="1" stop-color="#4A2A12"/></radialGradient>
           <linearGradient id="cp-str" x1="0" x2="1"><stop offset="0" stop-color="#4A2A12"/><stop offset=".45" stop-color="#8C5428"/><stop offset="1" stop-color="#4A2A12"/></linearGradient>
         </defs>
         <circle cx="100" cy="100" r="100" fill="url(#cp-bg)"/>
@@ -545,12 +550,8 @@ section h2,.news h3,.news article:first-child h3{font-size:clamp(1.22rem,4.24vw,
         <path d="M101 44Q99 76 100 106" fill="none" stroke="url(#cp-str)" stroke-width="4.2" stroke-linecap="round"/>
         <path class="cp-flow" d="M101 46Q99 76 100 104" fill="none" stroke="#D8A26A" stroke-width="1.1" stroke-linecap="round" opacity=".9"/>
         <g class="cp-drops">
-          <circle cx="100" cy="105" r="1.8" style="--dx:-9px;--h:-11px;animation-delay:0s"/>
-          <circle cx="100" cy="105" r="1.4" style="--dx:8px;--h:-13px;animation-delay:-.15s"/>
-          <circle cx="100" cy="105" r="1.2" style="--dx:-4px;--h:-16px;animation-delay:-.32s"/>
-          <circle cx="100" cy="105" r="1.6" style="--dx:12px;--h:-8px;animation-delay:-.48s"/>
-          <circle cx="100" cy="105" r="1.1" style="--dx:-13px;--h:-7px;animation-delay:-.63s"/>
-          <circle cx="100" cy="105" r="1.3" style="--dx:4px;--h:-15px;animation-delay:-.78s"/>
+          <ellipse cx="100" cy="104" rx="3" ry="3.4" style="--dx:-12px;--h:-22px;animation-delay:0s"/>
+          <ellipse cx="100" cy="104" rx="2.3" ry="2.6" style="--dx:10px;--h:-17px;animation-delay:-.9s"/>
         </g>
         <g class="cp-kettle">
           <path d="M58 54Q80 66 88 48Q93 38 101 43" fill="none" stroke="#6B3818" stroke-width="8" stroke-linecap="round"/>
@@ -562,8 +563,15 @@ section h2,.news h3,.news article:first-child h3{font-size:clamp(1.22rem,4.24vw,
           <circle cx="38" cy="17" r="4" fill="#3B2414"/>
           <path d="M22 50Q22 36 32 30" fill="none" stroke="#FFF1E2" stroke-width="3.2" stroke-linecap="round" opacity=".75"/>
         </g>
-        <g class="cp-steam" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity=".75">
-          <path d="M124 92q-6-8 0-15t0-15"/><path class="cp-s2" d="M136 94q-5-7 0-13t0-13"/>
+        <g class="cp-steam" fill="none" stroke="#A88C68" stroke-linecap="round" filter="url(#cp-blur)" opacity=".38" transform="translate(1.2 1)">
+          <path d="M118 98c-7-7 6-12 0-20s5-12 0-20" stroke-width="8"/>
+          <path class="cp-s2" d="M131 99c-6-6 6-11 1-18s4-11-1-18" stroke-width="7"/>
+          <path class="cp-s3" d="M124 100c5-6-6-10 0-17s-5-11 1-19" stroke-width="6"/>
+        </g>
+        <g class="cp-steam" fill="none" stroke="url(#cp-wisp)" stroke-linecap="round" filter="url(#cp-blur)">
+          <path d="M118 98c-7-7 6-12 0-20s5-12 0-20" stroke-width="6"/>
+          <path class="cp-s2" d="M131 99c-6-6 6-11 1-18s4-11-1-18" stroke-width="5"/>
+          <path class="cp-s3" d="M124 100c5-6-6-10 0-17s-5-11 1-19" stroke-width="4.4"/>
         </g>
       </svg></span></div>
     <p class="tag">셀린이 고른 오늘</p>
