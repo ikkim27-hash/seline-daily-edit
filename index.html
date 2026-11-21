@@ -633,6 +633,447 @@ const PHOTO = null; // 예: {src:"photo.jpg", caption:"한 줄 설명", date:"20
 /* ===== DAYS: 날짜별 콘텐츠. 최신 날짜가 맨 앞. 매일 새 객체를 맨 앞에 추가하고 14일치만 유지. ===== */
 const DAYS = [
  {
+  "date": "2026-11-22",
+  "quote": {
+   "ko": "내 말 믿게, 젊은 친구. 그냥 배를 타고 이리저리 노니는 것만큼 해 볼 만한 일은 세상에 없어. 정말이지 아무것도 없다네.",
+   "en": "Believe me, my young friend, there is NOTHING—absolute nothing—half so much worth doing as simply messing about in boats.",
+   "by": "케네스 그레이엄, 『버드나무에 부는 바람』 (1908)",
+   "pick": {
+    "kind": "책",
+    "title": "모리사키 서점의 나날들 (森崎書店の日々 · Days at the Morisaki Bookshop, 2010) · 야기사와 사토시",
+    "gist": "스물다섯 살 회사원 다카코는 사귀던 히데아키가 다른 사람과 결혼한다는 말을 듣고, 일을 그만둔 채 방 안에 틀어박힙니다. 그런 그녀를 도쿄 진보초에서 헌책방 ‘모리사키 서점’을 꾸리는 삼촌 사토루가 불러, 서점 2층의 비좁은 방에 머물게 합니다. 오래된 책 냄새와 느리게 흘러가는 하루 사이에서 다카코는 조금씩 마음을 추스르고, 소설은 아무것도 하지 않는 듯한 시간이 사람을 어떻게 다시 일으켜 세우는지를 조용히 보여 줍니다.",
+    "after": "서둘러 무언가를 해내지 않아도 괜찮은 일요일, 오늘은 나만의 작은 배를 띄워 천천히 노닐어 보세요."
+   }
+  },
+  "english": {
+   "title": "옆집 이웃에게 사다리 빌리기",
+   "titleEn": "Borrowing a Ladder From Your Neighbor",
+   "situation": "일요일 오전, A가 현관 등을 갈려는데 사다리가 없어요. 그래서 옆집에 사는 B에게 빌리러 가요.",
+   "lines": [
+    [
+     "A",
+     "Hey, sorry to bug you on a Sunday. Do you happen to have a ladder I could borrow?",
+     "저기, 일요일에 귀찮게 해서 미안해요. 혹시 빌려줄 사다리 있어요?"
+    ],
+    [
+     "B",
+     "Sure, I've got one in the garage. What are you working on?",
+     "그럼요, 차고에 하나 있어요. 뭐 하시게요?"
+    ],
+    [
+     "A",
+     "My porch light burned out, and I can't reach it even standing on a chair.",
+     "현관 등이 나갔는데, 의자 위에 올라서도 손이 안 닿아요."
+    ],
+    [
+     "B",
+     "Been there. Hang on, let me dig it out. It's buried behind the bikes.",
+     "저도 겪어 봤죠. 잠깐만요, 꺼내 올게요. 자전거 뒤에 파묻혀 있거든요."
+    ],
+    [
+     "A",
+     "No rush. I really appreciate it.",
+     "천천히 하세요. 정말 고마워요."
+    ],
+    [
+     "B",
+     "Here you go. It's a little wobbly, so make sure it's on flat ground.",
+     "여기 있어요. 좀 흔들거리니까 꼭 평평한 데 세우세요."
+    ],
+    [
+     "A",
+     "Good to know. Would you mind holding it steady for a sec?",
+     "알아 둘게요. 잠깐만 좀 잡아 주실 수 있어요?"
+    ],
+    [
+     "B",
+     "Happy to. Can't have you falling off on my watch.",
+     "그럼요. 제가 보는 앞에서 떨어지시면 안 되죠."
+    ],
+    [
+     "A",
+     "You're a lifesaver. I owe you one.",
+     "덕분에 살았어요. 신세 졌네요."
+    ],
+    [
+     "B",
+     "Don't mention it. Just bring it back whenever you're done.",
+     "별말씀을요. 다 쓰시면 아무 때나 돌려주세요."
+    ]
+   ],
+   "expressions": [
+    {
+     "en": "Do you happen to have ~?",
+     "ko": "‘혹시 ~ 있어요?’. happen to가 들어가면 ‘혹시나 해서 묻는다’는 느낌이 생겨 부탁이 한결 부드러워져요. 이웃이나 처음 보는 사람에게 묻기 좋아요.",
+     "eg": "Do you happen to have a phone charger I could use?"
+    },
+    {
+     "en": "burn out",
+     "ko": "‘(전구가) 나가다’. 전구나 등이 수명이 다해 꺼졌을 때 써요. 사람에게 쓰면 ‘지쳐서 번아웃되다’라는 뜻이 되니 문맥을 함께 보세요.",
+     "eg": "The bulb in the bathroom just burned out."
+    },
+    {
+     "en": "Been there.",
+     "ko": "‘나도 겪어 봤어, 그 마음 알아’. I've been there.를 줄인 말로, 상대의 곤란한 상황에 공감할 때 가볍게 던져요.",
+     "eg": "Stuck in traffic for an hour? Been there."
+    },
+    {
+     "en": "on my watch",
+     "ko": "‘내가 책임지고 있는 동안, 내가 보는 앞에서’. 내가 지켜보는 동안에는 나쁜 일이 생기게 두지 않겠다는 뜻으로, 농담처럼도 자주 써요.",
+     "eg": "Nobody's skipping dessert on my watch."
+    },
+    {
+     "en": "I owe you one.",
+     "ko": "‘신세 졌어, 다음에 꼭 갚을게’. 도움을 받은 뒤 고마움을 가볍게 전하는 말이에요. You're a lifesaver.(덕분에 살았어)와 함께 자주 붙여 써요.",
+     "eg": "Thanks for picking up my kids today. I owe you one."
+    }
+   ],
+   "pattern": {
+    "en": "Make sure ~.",
+    "ko": "‘꼭 ~하도록 해’. 상대가 잊지 않고 챙겨야 할 일을 부드럽게 당부할 때 써요. 대화의 ‘make sure it's on flat ground’처럼 뒤에 문장을 그대로 붙이면 돼요.",
+    "examples": [
+     [
+      "Make sure you <b>lock</b> the back <b>door</b>.",
+      "뒷문 꼭 잠가."
+     ],
+     [
+      "Make sure the stove is <b>off</b> before you <b>leave</b>.",
+      "나가기 전에 꼭 가스레인지 껐는지 확인해."
+     ],
+     [
+      "Make sure you bring a <b>jacket</b>. It gets <b>cold</b> at night.",
+      "재킷 꼭 챙겨. 밤에는 추워지거든."
+     ]
+    ]
+   }
+  },
+  "news": [
+   {
+    "region": "말레이시아",
+    "tag": "여행 · 거리",
+    "icon": "shophouse",
+    "art": {
+     "vb": "0 0 72 62",
+     "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><rect x=\"10\" y=\"7\" width=\"52\" height=\"7\"/><rect x=\"13\" y=\"13\" width=\"46\" height=\"43\"/><path d=\"M10 32h52l-4 7H14z\"/><rect x=\"6\" y=\"54\" width=\"60\" height=\"4\"/></g><g stroke=\"#4A2E1A\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><rect x=\"13\" y=\"13\" width=\"46\" height=\"43\" fill=\"#F5E4BA\"/><rect x=\"10\" y=\"7\" width=\"52\" height=\"7\" fill=\"#2F6B5A\"/><rect x=\"18\" y=\"17\" width=\"10\" height=\"12\" fill=\"#A9D9EC\"/><rect x=\"44\" y=\"17\" width=\"10\" height=\"12\" fill=\"#A9D9EC\"/><path d=\"M23 17v12M49 17v12\" stroke-width=\"1\"/><path d=\"M34 22h4v7h-4z\" fill=\"#C8553D\"/><path d=\"M10 32h52l-4 7H14z\" fill=\"#FBF7EF\"/><path d=\"M20 39V48a5 5 0 0 1 10 0v8H20z\" fill=\"#4A2E1A\"/><path d=\"M42 39V48a5 5 0 0 1 10 0v8H42z\" fill=\"#4A2E1A\"/><rect x=\"6\" y=\"54\" width=\"60\" height=\"4\" fill=\"#C98A4E\"/></g><g fill=\"#C8553D\"><path d=\"M16 32h6l-1 7h-6z\"/><path d=\"M28 32h6v7h-6z\"/><path d=\"M40 32h6l1 7h-6z\"/><path d=\"M52 32h6l2.6 7H53z\"/></g><path d=\"M10 32h52l-4 7H14z\" fill=\"none\" stroke=\"#4A2E1A\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><g stroke=\"#4A2E1A\" stroke-width=\"1.2\" stroke-linejoin=\"round\"><path d=\"M33 47h6v5h-6z\" fill=\"#FBF7EF\"/><path d=\"M39 48.5h1.6a1.4 1.4 0 0 1 0 2.8H39\" fill=\"none\"/></g><path d=\"M34 44q-1-1.5 0-3M37 44q-1-1.5 0-3\" fill=\"none\" stroke=\"#B9AE97\" stroke-width=\"1.1\" stroke-linecap=\"round\"/>"
+    },
+    "title": "페낭 비치 스트리트, 세계 멋진 거리 9위",
+    "titleEn": "Penang's Beach Street Ranks Ninth on Time Out's World's Coolest Streets",
+    "lead": "페낭 조지타운의 비치 스트리트(Lebuh Pantai)가 타임아웃이 11월 17일 발표한 ‘2026 세계에서 가장 멋진 거리 28곳’에서 9위에 올랐다고 말레이메일이 전했어요. 말레이시아에서는 유일하게 이름을 올렸어요.",
+    "pts": [
+     "1위는 방콕의 송왓 로드, 2위는 런던 골본 로드였고, 싱가포르 닐 로드가 5위, 교토 산조도리가 13위였어요",
+     "쿠알라룸푸르나 싱가포르처럼 물가 비싼 도시에서 돌아온 젊은 말레이시아인들이 가게를 열며 거리에 활기를 불어넣고 있대요",
+     "타임아웃은 현대 동남아 요리의 렘바(Rembar), 옛 인디아 하우스 건물의 페닌슐라 하우스, 말레이시아풍 차·와인 칵테일의 스팁 소셜 등을 꼽았어요"
+    ],
+    "info": [
+     [
+      "어디",
+      "조지타운 비치 스트리트(Lebuh Pantai), 페낭"
+     ],
+     [
+      "순위",
+      "타임아웃 선정 28곳 중 9위"
+     ]
+    ],
+    "src": "Malay Mail · 11.21",
+    "url": "https://www.malaymail.com/news/life/2026/11/21/penangs-beach-street-cracks-worlds-top-10-coolest-streets-beating-new-york-and-kyoto/244182"
+   },
+   {
+    "region": "말레이시아",
+    "tag": "스포츠",
+    "icon": "people",
+    "art": {
+     "vb": "0 0 72 62",
+     "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M18 52c-6 0-8-6-7-13 1-6 5-10 9-9 4 1 5 6 4 12-1 6-2 10-6 10z\"/><circle cx=\"12\" cy=\"25\" r=\"2.4\"/><circle cx=\"16.5\" cy=\"23\" r=\"2.2\"/><circle cx=\"21\" cy=\"23.4\" r=\"2\"/><circle cx=\"24.6\" cy=\"25.2\" r=\"1.8\"/><circle cx=\"27.4\" cy=\"28\" r=\"1.6\"/><path d=\"M48 38c-6 0-8-6-7-13 1-6 5-10 9-9 4 1 5 6 4 12-1 6-2 10-6 10z\"/><circle cx=\"42\" cy=\"11\" r=\"2.4\"/><circle cx=\"46.5\" cy=\"9\" r=\"2.2\"/><circle cx=\"51\" cy=\"9.4\" r=\"2\"/><circle cx=\"54.6\" cy=\"11.2\" r=\"1.8\"/><circle cx=\"57.4\" cy=\"14\" r=\"1.6\"/></g><g fill=\"#E8B98A\" stroke=\"#4A2E1A\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><path d=\"M18 52c-6 0-8-6-7-13 1-6 5-10 9-9 4 1 5 6 4 12-1 6-2 10-6 10z\"/><circle cx=\"12\" cy=\"25\" r=\"2.4\"/><circle cx=\"16.5\" cy=\"23\" r=\"2.2\"/><circle cx=\"21\" cy=\"23.4\" r=\"2\"/><circle cx=\"24.6\" cy=\"25.2\" r=\"1.8\"/><circle cx=\"27.4\" cy=\"28\" r=\"1.6\"/><path d=\"M48 38c-6 0-8-6-7-13 1-6 5-10 9-9 4 1 5 6 4 12-1 6-2 10-6 10z\"/><circle cx=\"42\" cy=\"11\" r=\"2.4\"/><circle cx=\"46.5\" cy=\"9\" r=\"2.2\"/><circle cx=\"51\" cy=\"9.4\" r=\"2\"/><circle cx=\"54.6\" cy=\"11.2\" r=\"1.8\"/><circle cx=\"57.4\" cy=\"14\" r=\"1.6\"/></g><path d=\"M15 36q1-3 4-3M45 22q1-3 4-3\" fill=\"none\" stroke=\"#FFF1E2\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><g fill=\"none\" stroke=\"#2F6B5A\" stroke-width=\"1.8\" stroke-linecap=\"round\"><path d=\"M32 48h8M34 53h10M60 30h6M58 35h7\"/></g>"
+    },
+    "title": "맨발 러너 아리핀(60), 아이언맨 완주",
+    "titleEn": "Barefoot Runner Pak Cik Ariffin, 60, Finishes Ironman 70.3 Langkawi",
+    "lead": "‘팍칙 아리핀’으로 불리는 파항 즈란투트 출신 맨발 러너 아리핀 압둘 마난(60) 씨가 토요일 열린 아이언맨 70.3 랑카위를 7시간 19분 57초에 완주했다고 말레이메일이 전했어요. 철인 3종 경기복 없이 평소의 수수한 옷차림 그대로였대요.",
+    "pts": [
+     "수영 1.9km, 자전거 90km, 달리기 21.1km, 모두 113km 코스에서 587명 가운데 391위, 연령대 9위를 했어요",
+     "처음 나선 아이언맨 70.3으로, 물고기 연못에서 수영하고 모스크에 갈 때도 자전거를 타며 준비했다고 해요",
+     "지난달에는 진흙투성이 정글 길을 달리는 30km 타만 네가라 울트라(MTNU)를 맨발로 7시간 32분 36초에 완주했어요"
+    ],
+    "info": [
+     [
+      "대회",
+      "아이언맨 70.3 랑카위"
+     ],
+     [
+      "기록",
+      "7시간 19분 57초 (달리기 21.1km 2시간 54분 8초)"
+     ]
+    ],
+    "src": "Malay Mail · 11.21",
+    "url": "https://www.malaymail.com/news/life/2026/11/21/who-needs-fancy-gear-barefoot-running-hero-pak-cik-ariffin-60-powers-to-ironman-langkawi-finish-in-seven-hours/244216"
+   },
+   {
+    "region": "말레이시아",
+    "tag": "음식",
+    "icon": "bowl",
+    "art": {
+     "vb": "0 0 72 62",
+     "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M10 33h52q-2 20-26 21-24-1-26-21z\"/><path d=\"M40 6l-6 30M50 8l-12 29\"/><path d=\"M33 14q-2 10 1 19h6q-3-9-1-19z\"/></g><g stroke-linecap=\"round\"><path d=\"M40 6l-6 30M50 8l-12 29\" stroke=\"#4A2E1A\" stroke-width=\"4\"/><path d=\"M40 6l-6 30M50 8l-12 29\" stroke=\"#C98A4E\" stroke-width=\"2.2\"/></g><g fill=\"none\" stroke=\"#C98B1E\" stroke-width=\"1.6\" stroke-linecap=\"round\"><path d=\"M34 14q-2 5 0 10t0 10\"/><path d=\"M37 14q-2 5 0 10t0 10\"/><path d=\"M40 15q-2 5 0 10t0 9\"/></g><ellipse cx=\"36\" cy=\"33\" rx=\"26\" ry=\"5.5\" fill=\"#E07A3F\" stroke=\"#4A2E1A\" stroke-width=\"1.5\"/><g fill=\"none\" stroke=\"#F7D36B\" stroke-width=\"1.4\" stroke-linecap=\"round\"><path d=\"M18 33q3-2.4 6 0t6 0M40 33q3-2.4 6 0t6 0\"/></g><circle cx=\"26\" cy=\"31.5\" r=\"2.2\" fill=\"#5FAE84\" stroke=\"#2F5D49\" stroke-width=\"1\"/><ellipse cx=\"47\" cy=\"34\" rx=\"3\" ry=\"1.6\" fill=\"#F4F1EA\" stroke=\"#B9875F\" stroke-width=\".9\"/><path d=\"M10 33q2 20 26 21 24-1 26-21q-6 5.5-26 5.5T10 33z\" fill=\"#FBF7EF\" stroke=\"#4A2E1A\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><path d=\"M14 42q22 8 44 0\" fill=\"none\" stroke=\"#C8553D\" stroke-width=\"2.6\"/><path d=\"M28 54h16\" stroke=\"#4A2E1A\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>"
+    },
+    "title": "올드 클랑 로드, 국수 세 그릇 순례",
+    "titleEn": "An Old Klang Road Noodle Crawl: Wantan Mee, Curry Mee and Mee Hoon Kueh",
+    "lead": "말레이메일 음식 칼럼이 쿠알라룸푸르 올드 클랑 로드 일대의 국숫집 세 곳을 돌며 쫄깃한 완탄미, 얼큰한 커리미, 옛날식 미훈쿠이를 소개했어요.",
+    "pts": [
+     "OUG의 ‘타이카호(大家好茶餐室)’는 차슈 완탄미가 대표로, 쫄깃한 달걀면에 완탕은 국물에 따로 담겨 나와요",
+     "타만 그음비라의 ‘누들 타임(三椒面馆)’ 커리미는 코코넛 밀크 국물에 말린 고추, 커리 잎, 생강, 레몬그라스로 맛을 내요",
+     "‘리안키 판미(Lian Kee Pan Mee)’는 손으로 돌리는 기계로 주문 즉시 판미를 뽑고, 손으로 뜯은 미훈쿠이도 내요"
+    ],
+    "info": [
+     [
+      "타이카호",
+      "오전 7시 30분~오후 4시 (월요일 휴무)"
+     ],
+     [
+      "누들 타임",
+      "오전 7시 30분~오후 9시 (화요일 휴무)"
+     ],
+     [
+      "리안키",
+      "낮 12시~3시, 오후 6~11시 (목요일 휴무)"
+     ]
+    ],
+    "src": "Malay Mail · 11.21",
+    "url": "https://www.malaymail.com/news/eat-drink/2026/11/21/old-klang-road-noodle-odyssey-from-springy-wantan-mee-to-fiery-curry-mee-and-old-school-mee-hoon-kueh/244137"
+   },
+   {
+    "region": "말레이시아",
+    "tag": "자연",
+    "icon": "leaf",
+    "art": {
+     "vb": "0 0 72 62",
+     "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M8 34q8-12 26-12t26 8q-14 12-30 12T8 34z\"/><path d=\"M52 29l12-11-2 15 2 15-12-10z\"/><path d=\"M12 31q-4 3-6 9M12 35q-3 5-2 10\"/></g><g stroke=\"#4A2E1A\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M52 29l12-11-2 15 2 15-12-10z\" fill=\"#D9412B\"/><path d=\"M30 24q4-7 12-6-2 5-4 8z\" fill=\"#6E5A48\"/><path d=\"M8 34q8-12 26-12t26 8q-14 12-30 12T8 34z\" fill=\"#8C7A66\"/><path d=\"M14 36q16 8 40-3q-14 9-30 9-6 0-10-6z\" fill=\"#E8DCC6\"/><path d=\"M30 42l-3 6 7-4z\" fill=\"#6E5A48\"/></g><g fill=\"none\" stroke=\"#4A2E1A\" stroke-width=\"1.3\" stroke-linecap=\"round\"><path d=\"M12 31q-4 3-6 9\"/><path d=\"M12 35q-3 5-2 10\"/></g><circle cx=\"16\" cy=\"30\" r=\"2\" fill=\"#1B2321\"/><circle cx=\"16.6\" cy=\"29.4\" r=\".6\" fill=\"#fff\"/><path d=\"M56 25l5 6M56 35l5-3\" stroke=\"#F7B9A8\" stroke-width=\"1\" stroke-linecap=\"round\"/><g fill=\"none\" stroke=\"#5BA7D6\" stroke-width=\"1.4\"><circle cx=\"10\" cy=\"14\" r=\"2.4\"/><circle cx=\"16\" cy=\"9\" r=\"1.6\"/></g>"
+    },
+    "title": "파항, 외래종 ‘빨간 꼬리 메기’ 낚시 축제",
+    "titleEn": "Pahang Puts RM450,000 Into a Hunt for Invasive Redtail Catfish",
+    "lead": "파항주가 토종 물고기를 위협하는 외래종 레드테일 메기(현지명 baung ekor merah)를 줄이려고 RM45만을 배정하고, 쿠알라 크라우에서 ‘파항 퍼스트: 타완 바웅 에코르 메라 페스트’를 열었다고 말레이메일이 베르나마를 인용해 전했어요.",
+    "pts": [
+     "프칸, 즈란투트, 트므를로 등 주 안 일곱 곳에서 동시에 퇴치 프로그램이 진행돼요",
+     "축제에서는 시민들이 레드테일 메기를 되도록 많이 잡도록 이끄는 낚시 대회가 열렸어요",
+     "완 로스디 완 이스마일 주총리는 이 메기가 아주 공격적으로 다른 물고기를 잡아먹어, 그냥 두면 우세종이 될 수 있다고 했어요"
+    ],
+    "info": [
+     [
+      "예산",
+      "RM45만"
+     ],
+     [
+      "행사",
+      "다타란 프칸 스하리, 쿠알라 크라우"
+     ]
+    ],
+    "src": "Malay Mail (Bernama) · 11.21",
+    "url": "https://www.malaymail.com/news/malaysia/2026/11/21/pahang-puts-rm450000-into-hunt-for-invasive-redtail-catfish-threatening-native-fish/244229"
+   },
+   {
+    "region": "세계",
+    "tag": "영국 입시",
+    "icon": "school",
+    "art": {
+     "tall": true,
+     "vb": "0 0 66 92",
+     "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><rect x=\"13\" y=\"8\" width=\"40\" height=\"8\" rx=\"2\"/><rect x=\"13\" y=\"76\" width=\"40\" height=\"8\" rx=\"2\"/><path d=\"M19 16h28q0 18-11 30 11 12 11 30H19q0-18 11-30-11-12-11-30z\"/></g><g stroke=\"#4A2E1A\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M19 16h28q0 18-11 30 11 12 11 30H19q0-18 11-30-11-12-11-30z\" fill=\"#DDF0FA\"/><path d=\"M25 30h16q-2 7-8 12-6-5-8-12z\" fill=\"#F2CF6B\"/><path d=\"M33 47v22\" stroke=\"#E3B23C\" stroke-width=\"1.6\"/><path d=\"M21 76q2-10 12-10t12 10z\" fill=\"#F2CF6B\"/><rect x=\"13\" y=\"8\" width=\"40\" height=\"8\" rx=\"2\" fill=\"#8C5A3A\"/><rect x=\"13\" y=\"76\" width=\"40\" height=\"8\" rx=\"2\" fill=\"#8C5A3A\"/><path d=\"M16 16v60M50 16v60\" stroke=\"#6B4226\" stroke-width=\"2.4\"/></g><path d=\"M24 20q1 6 4 9\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\".9\"/>"
+    },
+    "title": "UCAS 마감, 1월 13일 오후 6시(영국)",
+    "titleEn": "UCAS Equal Consideration Deadline for 2027 Entry: January 13, 6pm UK Time",
+    "lead": "UCAS가 2027년 입학 학부 과정의 ‘동등 심사(equal consideration)’ 마감을 2027년 1월 13일 오후 6시(영국 시간)로 안내했어요. 10월 15일 마감 과정을 뺀 모든 학부 과정에 지원하는 학생과 학부모에게 해당돼요.",
+    "pts": [
+     "말레이시아 시간으로는 1월 14일(목) 새벽 2시예요",
+     "이 시각까지 UCAS에 도착한 지원서는 대학이 모두 동등하게 심사해야 해요",
+     "마감 뒤 지원서는 대학이 꼭 심사하지 않아도 되고, 자리가 남으면 검토할 수도 있어요. 과정별 마감은 UCAS 과정 검색에서 확인하라고 해요"
+    ],
+    "info": [
+     [
+      "마감",
+      "2027년 1월 13일(수) 18:00 영국 시간"
+     ],
+     [
+      "말레이시아",
+      "1월 14일(목) 오전 2시"
+     ],
+     [
+      "대상",
+      "10월 15일 마감 과정을 뺀 2027년 입학 학부 과정"
+     ]
+    ],
+    "src": "UCAS 공식 안내",
+    "url": "https://www.ucas.com/events/2027-entry-deadline-for-all-undergraduate-courses-except-those-with-a-15-october-deadline-475546"
+   },
+   {
+    "region": "세계",
+    "tag": "문화",
+    "icon": "people",
+    "art": {
+     "vb": "0 0 72 62",
+     "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><circle cx=\"24\" cy=\"14\" r=\"5\"/><circle cx=\"46\" cy=\"14\" r=\"5\"/><ellipse cx=\"35\" cy=\"34\" rx=\"20\" ry=\"19\"/><path d=\"M35 15q-2-6 4-9\"/><path d=\"M58 8l1.6 4 4 1.6-4 1.6-1.6 4-1.6-4-4-1.6 4-1.6z\"/></g><g stroke=\"#4A2E1A\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><circle cx=\"24\" cy=\"14\" r=\"5\" fill=\"#E9A15F\"/><circle cx=\"46\" cy=\"14\" r=\"5\" fill=\"#E9A15F\"/><ellipse cx=\"35\" cy=\"34\" rx=\"20\" ry=\"19\" fill=\"#F2B872\"/><ellipse cx=\"35\" cy=\"40\" rx=\"11\" ry=\"9\" fill=\"#FBF0DC\"/><path d=\"M35 15q-2-6 4-9\" fill=\"none\" stroke=\"#2F5D49\"/><path d=\"M39 6q6-1 7 4-5 1-7-4z\" fill=\"#5FAE84\" stroke=\"#2F5D49\"/><path d=\"M16 38q-5 2-6 7M54 38q5 2 6 7\" fill=\"none\" stroke-width=\"3\"/><ellipse cx=\"27\" cy=\"54\" rx=\"5\" ry=\"2.6\" fill=\"#E9A15F\"/><ellipse cx=\"43\" cy=\"54\" rx=\"5\" ry=\"2.6\" fill=\"#E9A15F\"/></g><g fill=\"none\" stroke=\"#E9A15F\" stroke-width=\"1.5\" stroke-linecap=\"round\"><path d=\"M16 38q-5 2-6 7M54 38q5 2 6 7\"/></g><circle cx=\"29\" cy=\"31\" r=\"1.9\" fill=\"#1B2321\"/><circle cx=\"41\" cy=\"31\" r=\"1.9\" fill=\"#1B2321\"/><circle cx=\"29.6\" cy=\"30.4\" r=\".6\" fill=\"#fff\"/><circle cx=\"41.6\" cy=\"30.4\" r=\".6\" fill=\"#fff\"/><path d=\"M32 37q3 2.6 6 0\" fill=\"none\" stroke=\"#4A2E1A\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><circle cx=\"24\" cy=\"36\" r=\"2.2\" fill=\"#F5A3A3\" opacity=\".8\"/><circle cx=\"46\" cy=\"36\" r=\"2.2\" fill=\"#F5A3A3\" opacity=\".8\"/><path d=\"M58 8l1.6 4 4 1.6-4 1.6-1.6 4-1.6-4-4-1.6 4-1.6z\" fill=\"#F7D36B\" stroke=\"#8A5A12\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/>"
+    },
+    "title": "마스코트 200여 개가 한자리에, 일본 하뉴",
+    "titleEn": "Over 200 Mascots Gather in Hanyu for Japan's World Mascot Summit",
+    "lead": "일본 사이타마현 하뉴시에서 11월 21일 해마다 열리는 ‘월드 마스코트 서밋’에 실물 크기 마스코트 200여 개와 수만 명의 팬이 모였다고 AFP가 전했어요.",
+    "pts": [
+     "마을과 기업을 알리는 마스코트들로, 주최 측은 올해 약 220개를 초대했어요",
+     "2010년부터 하뉴에서 열린 모임으로, 지난해 이틀 동안 8만 명이 찾았고 주최 측은 올해도 비슷한 인파를 예상했어요",
+     "히코네성의 사무라이 투구를 쓴 고양이 마스코트 ‘히코냥’은 올해 1월 전국에서 연하장 약 1만 장을 받았대요"
+    ],
+    "info": [
+     [
+      "어디",
+      "일본 사이타마현 하뉴시"
+     ],
+     [
+      "행사",
+      "월드 마스코트 서밋 (이틀간)"
+     ]
+    ],
+    "src": "Malay Mail (AFP) · 11.21",
+    "url": "https://www.malaymail.com/news/life/2026/11/21/over-200-mascots-tens-of-thousands-of-fans-hanyu-hosts-japans-cuddliest-gathering/244235"
+   }
+  ],
+  "trend": {
+   "title": "이케아, 동말레이시아 첫 매장 쿠칭에 연다",
+   "titleEn": "Ikea Opens Its First East Malaysia Store in Kuching on November 27",
+   "asOf": "2026년 11월 21일 보도 기준",
+   "body": "이케아가 11월 27일 사라왁 쿠칭 바투 카와의 파인스 몰(Pines Mall)에 사라왁 첫 매장이자 동말레이시아 첫 매장을 연다고 말레이메일이 보르네오 포스트 보도를 인용해 전했습니다. 이케아 말레이시아의 첫 소형 매장이며, 약 5,000가지 홈퍼니싱 제품을 갖춥니다.",
+   "points": [
+    "이케아는 먼 거리에도 물류 협력사와 함께 가격을 반도 말레이시아와 같게 맞췄다고 밝혔습니다.",
+    "현지 조사에서 수납 제품에 대한 관심이 특히 높아 상품 구성에 반영했고, 매장에는 이케아 푸드 그랩앤고 코너도 둡니다.",
+    "직원의 약 90%가 현지 출신이며, 개점 주말인 11월 27~29일 행사는 개점에 가까워지면 알릴 예정입니다.",
+    "무라이 다케시 이케아 말레이시아 국가 리테일 디렉터는 가치란 가장 낮은 가격만이 아니라 품질과 기능, 디자인을 뜻한다고 말했습니다."
+   ],
+   "src": [
+    [
+     "Malay Mail (2026.11.21)",
+     "https://www.malaymail.com/news/life/2026/11/21/ikea-opens-first-east-malaysia-store-in-kuching-on-nov-27-with-5000-products-at-peninsular-prices/244159"
+    ]
+   ]
+  },
+  "life": {
+   "title": "비 오는 날엔 ‘카키 리마’로 걸어요",
+   "titleEn": "Walk the Kaki Lima: The Covered Five-Foot Ways of Malaysian Shophouses",
+   "intro": "오늘 소식에 나온 페낭 비치 스트리트처럼 숍하우스가 늘어선 거리에는 가게 앞으로 지붕 덮인 통로가 이어져 있습니다. 말레이어로 ‘카키 리마(kaki lima)’, 영어로 ‘파이브풋 웨이(five-foot way)’라 부르는 이 길을 알아 두면 몬순철 산책이 한결 편해집니다.",
+   "tips": [
+    [
+     "해와 비를 막아 주는 길",
+     "가게 앞 통로 위를 위층이나 차양이 덮고 있어 걷는 사람을 햇볕과 비로부터 가려 줍니다. 말레이시아의 도시와 마을에서 지금도 흔히 볼 수 있습니다."
+    ],
+    [
+     "이름은 통로 폭에서",
+     "‘다섯 자 길’이라는 이름은 통로 폭에서 왔지만, 실제로는 5피트(1.5m)보다 좁거나 넓기도 합니다. 호키엔어로는 ‘五脚基’라고 부릅니다."
+    ],
+    [
+     "시작은 1822년 싱가포르",
+     "래플스의 1822년 도시 계획은 집마다 늘 열려 있는 지붕 덮인 통로를 두어 거리 양쪽으로 이어지게 했고, 이것이 파이브풋 웨이가 됐습니다."
+    ],
+    [
+     "쿠알라룸푸르는 1884년부터",
+     "프랭크 스웨트넘이 도시를 재건하며 만든 1884년 건축 조례에 도로 옆으로 5피트 통로를 두도록 하는 내용이 들어갔습니다."
+    ],
+    [
+     "가게와 장사의 무대",
+     "1층 가게들은 이 통로에서 진열하고 간단한 먹거리를 팔아 왔습니다. 인도네시아에서는 이런 길을 차지한 거리 노점상을 ‘프다강 카키 리마(pedagang kaki lima)’라고 부릅니다."
+    ]
+   ],
+   "src": [
+    [
+     "Wikipedia: Five-foot way",
+     "https://en.wikipedia.org/wiki/Five-foot_way"
+    ]
+   ]
+  },
+  "music": {
+   "title": "Banana Pancakes",
+   "artist": "잭 존슨 (Jack Johnson)",
+   "year": "2005",
+   "mood": "비 소식 있는 일요일 늦은 아침에",
+   "why": "어쿠스틱 기타와 느긋한 목소리가 방 안에 오래 머무는 듯한 곡으로, 2005년 앨범 『In Between Dreams』의 세 번째 트랙입니다. 밖에 비가 와서 굳이 나갈 일 없는 몬순철 일요일, 천천히 아침을 차리며 틀어 두기 좋습니다.",
+   "query": "Jack Johnson Banana Pancakes"
+  },
+  "shows": {
+   "intro": "쿠알라룸푸르와 클랑밸리에서 지금 볼 수 있거나 곧 열리는 전시와 공연입니다.",
+   "items": [
+    {
+     "kind": "클래식",
+     "title": "판타지 월드 II: 애니메이션 x 클래식 (A Fantasy World II: Anime x Classical with The klpac String Orchestra)",
+     "when": "11월 20~21일 오후 8시 30분, 22일 오후 3시",
+     "where": "KLPac 펜타스 2 (Pentas 2)",
+     "memo": "klpac 현악 오케스트라가 음악감독 안드레아 심의 지휘로 히사이시 조의 지브리 음악, 『너의 이름은』 메들리, 드뷔시의 「달빛」 등을 연주하는 90분(휴식 15분 포함) 공연입니다.",
+     "url": "https://www.klpac.org/shows/a-fantasy-world-ii-anime-x-classical-with-the-klpac-string-orchestra/"
+    },
+    {
+     "kind": "전시",
+     "title": "쉬자웨이: 시간이 흐를수록 늘 모호한 (Chia-Wei Hsu: Always Ambiguous With the Passage of Time)",
+     "when": "11월 22일 개막",
+     "where": "일함 갤러리 (ILHAM Gallery) 3층, 쿠알라룸푸르",
+     "memo": "대만 작가 쉬자웨이가 영상, 가상현실, 3D 프린팅, 인터랙티브 AI, 드론 영상 등으로 동남아시아와 대만의 역사와 일상, 생태, 시간을 다룬 작품을 선보입니다.",
+     "url": "https://ilhamgallery.com/exhibitions/chiaweihsu/"
+    },
+    {
+     "kind": "콘서트",
+     "title": "웨이브 투 어스: 더 피시스 투어 (wave to earth: the pieces tour)",
+     "when": "11월 22일(일) 오후 8시",
+     "where": "아이디어 라이브 아레나 (Idea Live Arena), 페탈링자야",
+     "memo": "한국 밴드 웨이브 투 어스의 ‘the pieces tour’ 공연으로, 라이브 네이션 말레이시아가 주최합니다.",
+     "url": "https://klconcert.com/concert/wave-to-earth-the-pieces-tour"
+    },
+    {
+     "kind": "콘서트",
+     "title": "MPO 자선 콘서트: 쉴라 마지드 ‘레겐다’ 35주년 (MPO Benefit Concert: Sheila Majid 35th Legenda Anniversary)",
+     "when": "11월 27일(금) 오후 8시",
+     "where": "데완 필하모닉 페트로나스 (Dewan Filharmonik PETRONAS)",
+     "memo": "말레이시아 필하모닉 오케스트라가 쉴라 마지드의 ‘레겐다’ 35주년을 기념해 여는 자선 콘서트입니다.",
+     "url": "https://klconcert.com/concert/mpo-benefit-concert-sheila-majid-35th-legenda-anniversary"
+    },
+    {
+     "kind": "연극",
+     "title": "데이비드 글래스의 템페스트 (David Glass's TEMPEST)",
+     "when": "11월 27~28일 오후 8시, 29일 오후 3시",
+     "where": "KLPac 펜타스 2 (Pentas 2)",
+     "memo": "영국 신체극의 개척자 데이비드 글래스와 함께 만들어 2019년 klpac에서 초연한 작품으로, KL 셰익스피어 플레이어스가 셰익스피어의 『템페스트』에서 출발해 배우 일곱 명과 움직임, 음악, 조명으로 90분 동안 쉬는 시간 없이 펼칩니다.",
+     "url": "https://www.klpac.org/shows/david-glasss-tempest/"
+    },
+    {
+     "kind": "콘서트",
+     "title": "에젠 알리 인 콘서트: 10주년 (Ejen Ali in Concert: 10th Anniversary)",
+     "when": "11월 28일(토) 오후 8시",
+     "where": "KL 컨벤션 센터 플레너리 홀 (Plenary Hall)",
+     "memo": "말레이시아 애니메이션 『에젠 알리』의 10주년을 기념하는 콘서트로, 말레이시아 방송사 RTM이 주최합니다.",
+     "url": "https://klconcert.com/concert/ejen-ali-in-concert-2026"
+    },
+    {
+     "kind": "콘서트",
+     "title": "얼티밋 뮤직 크롤 II (Ultimate Music Crawl II with The klpac Symphonic Band)",
+     "when": "12월 5일(토) 오후 8시 30분, 6일(일) 오후 3시",
+     "where": "KLPac 펜타스 1 (Pentas 1)",
+     "memo": "klpac 심포닉 밴드가 음악감독 셰릴 마의 지휘로 포크 댄스, 행진곡, 재즈와 스윙, 1980년대풍 시티팝을 넘나드는 90분(휴식 15분 포함) 공연으로, 5세 이상에게 권합니다.",
+     "url": "https://www.klpac.org/shows/ultimate-music-crawl-ii/"
+    }
+   ]
+  },
+  "fact": {
+   "title": "11월 22일, 김치의 날",
+   "titleEn": "November 22: Korea's Kimchi Day",
+   "body": "오늘 11월 22일은 2020년 제정된 ‘김치산업진흥법’에 따라 이름 붙은 대한민국의 ‘김치의 날’입니다. 김치 재료 하나하나(11월)가 모여 22가지 효능(22일)을 낸다는 뜻을 담았고, 김장문화를 이어 가며 김치의 가치를 알리자는 취지입니다.",
+   "more": [
+    "첫 기념식은 2020년에 열렸고, 2021년 제2회 기념식은 농림축산식품부 주최로 ‘한국인의 힘, 세계인의 맛!’이라는 구호를 내걸었습니다.",
+    "미국 캘리포니아주 의회는 2021년 8월 23일 한국과 같은 11월 22일을 ‘김치의 날’로 정하는 결의안을 통과시켰습니다.",
+    "최석호 하원의원이 대표 발의한 이 결의안에는 한국이 김치의 기원국이라는 점과 김장의 유네스코 무형문화유산 등재가 담겼습니다."
+   ],
+   "src": [
+    [
+     "데일리안 (2021.11.21)",
+     "https://www.dailian.co.kr/news/view/1055063/"
+    ],
+    [
+     "전자신문 (2021.8.24)",
+     "https://www.etnews.com/20210824000065"
+    ]
+   ]
+  }
+ },
+ {
   "date": "2026-11-21",
   "quote": {
    "ko": "일 년이라는 긴 달력 속에서, 사람들이 마치 약속이라도 한 듯 꼭 닫아 두었던 마음을 활짝 여는, 내가 아는 단 하나의 때…",
@@ -2803,449 +3244,6 @@ const DAYS = [
     ]
    ]
   }
- },
- {
-  "date": "2026-11-15",
-  "quote": {
-   "ko": "나는 새가 아니에요. 어떤 그물도 나를 옭아매지 못해요. 나는 스스로의 의지를 지닌 자유로운 사람이에요.",
-   "en": "I am no bird; and no net ensnares me; I am a free human being with an independent will.",
-   "by": "샬럿 브론테, 『제인 에어』 (1847)",
-   "pick": {
-    "kind": "책",
-    "title": "나의 눈부신 친구 (L'amica geniale · My Brilliant Friend, 2011) · 엘레나 페란테",
-    "gist": "1950년대 나폴리의 가난하고 거친 동네, 여섯 살에 학교에 들어간 엘레나 ‘레누’ 그레코는 그곳에서 라파엘라 ‘릴라’ 체룰로를 만납니다. 2010년, 릴라가 흔적도 없이 사라졌다는 전화를 받은 엘레나는 친구에 대해 기억하는 모든 것을 처음부터 적어 내려가기 시작합니다. 소설은 같은 골목에서 자란 두 사람이 서로를 비추며 자기 길을 찾아가는 긴 시간을 따라가며, 한 사람의 삶이 태어난 자리보다 넓을 수 있다는 것을 조용히 들려줍니다.",
-    "after": "오늘 내가 고른 작은 선택 하나도 어떤 그물에도 걸리지 않은 나의 의지였다는 것을, 일요일 아침에 한 번쯤 떠올려 봅니다."
-   }
-  },
-  "english": {
-   "title": "일요일 아침, 친구와 파머스 마켓 가기",
-   "titleEn": "Talking a Friend Into a Sunday Farmers Market Trip",
-   "situation": "A가 일요일 아침 동네 파머스 마켓에 같이 가자고 B를 설득해요. B는 아침잠이 많고 값이 비쌀까 봐 망설여요.",
-   "lines": [
-    [
-     "A",
-     "Got any plans for Sunday morning? I was thinking of hitting the farmers market.",
-     "일요일 아침에 뭐 해? 나 파머스 마켓에 가 볼까 하는데."
-    ],
-    [
-     "B",
-     "The one by the park? I've been meaning to check it out, but I never get up in time.",
-     "공원 옆에 있는 거? 한번 가 봐야지 하면서도 매번 제때 못 일어나."
-    ],
-    [
-     "A",
-     "That's the thing. You've got to get there early, or the good stuff sells out.",
-     "그게 문제야. 일찍 가야지, 안 그러면 좋은 건 다 팔려."
-    ],
-    [
-     "B",
-     "How early are we talking? I'm not exactly a morning person.",
-     "얼마나 일찍인데? 나 아침형 인간은 아니잖아."
-    ],
-    [
-     "A",
-     "Like, nine-ish. I'll swing by and pick you up, so you can't bail on me.",
-     "아홉 시쯤? 내가 들러서 데리러 갈게. 그래야 너 못 빠지지."
-    ],
-    [
-     "B",
-     "Ha, fair enough. Is it pricey, though? I've heard it can add up.",
-     "하, 그건 인정. 근데 비싸지 않아? 이것저것 사다 보면 금방 돈이 꽤 나온다던데."
-    ],
-    [
-     "A",
-     "Some stuff is, but the produce is way fresher than at the grocery store.",
-     "몇 개는 그렇지. 근데 채소랑 과일이 마트보다 훨씬 신선해."
-    ],
-    [
-     "B",
-     "Okay, you've talked me into it. Should I bring my own bags?",
-     "알았어, 넘어갔다. 장바구니 챙겨 갈까?"
-    ],
-    [
-     "A",
-     "Definitely, and grab some cash too. A few of the smaller stands don't take cards.",
-     "당연하지. 현금도 좀 챙겨. 작은 가판대 몇 군데는 카드를 안 받거든."
-    ],
-    [
-     "B",
-     "Got it. Let's get coffee there and make a morning of it.",
-     "알겠어. 거기서 커피도 마시면서 아침 시간 제대로 즐기자."
-    ]
-   ],
-   "expressions": [
-    {
-     "en": "hit (a place)",
-     "ko": "‘(어떤 곳에) 가다, 들르다’. go보다 가볍고 신나는 느낌으로, 가게나 시장, 헬스장, 해변 등에 갈 때 일상적으로 써요.",
-     "eg": "Let's hit the beach before it gets too hot."
-    },
-    {
-     "en": "I've been meaning to ~",
-     "ko": "‘전부터 ~하려고 했는데 (아직 못 했어)’. 마음은 있었지만 미뤄 온 일을 말할 때 자연스럽게 써요.",
-     "eg": "I've been meaning to call my grandma all week."
-    },
-    {
-     "en": "swing by",
-     "ko": "‘(가는 길에) 잠깐 들르다’. 누군가를 데리러 가거나 물건을 가지러 잠깐 들를 때 즐겨 써요.",
-     "eg": "Can you swing by the bakery on your way home?"
-    },
-    {
-     "en": "bail on (someone)",
-     "ko": "‘(약속한 사람을) 바람맞히다, 막판에 빠지다’. 친구 사이에서 쓰는 캐주얼한 표현이에요.",
-     "eg": "Sorry I bailed on you last night. I was exhausted."
-    },
-    {
-     "en": "talk (someone) into ~",
-     "ko": "‘(설득해서) ~하게 만들다’. 처음엔 내키지 않던 사람이 결국 마음을 바꿨을 때 써요. You've talked me into it.은 ‘네 말에 넘어갔다’는 뜻이에요.",
-     "eg": "She talked me into signing up for a pottery class."
-    }
-   ],
-   "pattern": {
-    "en": "You've got to ~, or ~",
-    "ko": "‘~해야 해, 안 그러면 ~돼’. 꼭 해야 하는 일과 안 했을 때 생기는 일을 한 문장에 묶어 조언할 때 써요. got to는 말할 때 흔히 gotta처럼 들려요.",
-    "examples": [
-     [
-      "You've got to <b>book</b> early, or the <b>flights</b> get expensive.",
-      "일찍 예약해야 해, 안 그러면 비행기표가 비싸져."
-     ],
-     [
-      "You've got to keep <b>stirring</b>, or it'll <b>burn</b>.",
-      "계속 저어 줘야 해, 안 그러면 타."
-     ],
-     [
-      "You've got to <b>water</b> it every day, or it'll <b>die</b>.",
-      "매일 물을 줘야 해, 안 그러면 죽어."
-     ]
-    ]
-   }
-  },
-  "news": [
-   {
-    "region": "말레이시아",
-    "tag": "생활 · 날씨",
-    "important": true,
-    "icon": "rain",
-    "art": {
-     "vb": "0 0 72 62",
-     "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M17 40Q8 40 9 32Q10 24 19 25Q21 13 34 12Q46 12 49 21Q60 20 61 30Q62 40 52 40Z\"/><polygon points=\"37,36 30,48 35,48 31,56 43,44 38,44 41,36\"/><path d=\"M19 44q-3 5 0 7q3-2 0-7z\"/><path d=\"M52 44q-3 5 0 7q3-2 0-7z\"/></g><g stroke=\"#23384F\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M17 40Q8 40 9 32Q10 24 19 25Q21 13 34 12Q46 12 49 21Q60 20 61 30Q62 40 52 40Z\" fill=\"#B8C9D9\"/><polygon points=\"37,36 30,48 35,48 31,56 43,44 38,44 41,36\" fill=\"#F2CF6B\" stroke=\"#8A5A12\"/><path d=\"M19 44q-3 5 0 7q3-2 0-7z\" fill=\"#5FA8D3\"/><path d=\"M52 44q-3 5 0 7q3-2 0-7z\" fill=\"#5FA8D3\"/></g><path d=\"M16 31q2-5 7-5M27 20q4-4 10-3\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\".8\"/><path d=\"M19 25q3 4 2 9M49 21q-2 4-1 8\" fill=\"none\" stroke=\"#8FA6BC\" stroke-width=\"1.2\" stroke-linecap=\"round\"/>"
-    },
-    "title": "15~17일, 반도 대부분 뇌우·폭우 예보",
-    "titleEn": "MetMalaysia Warns of Thunderstorms and Heavy Rain Across Most of the Peninsula, Nov 15–17",
-    "lead": "말레이시아 기상청(MetMalaysia)이 바람이 한데 모이는 수렴 현상 때문에 11월 15일부터 17일까지 반도 대부분 주에 뇌우와 폭우, 강풍이 올 것으로 예보했다고 베르나마가 전했어요. 반도 대부분 지역 주민에게 해당돼요.",
-    "pts": [
-     "무하맛 히샴 모하맛 아닙 청장은 최신 예보 모델에 바람 수렴이 나타났다며, 반도 대부분 주에서 뇌우가 더 오래 이어질 수 있다고 했어요",
-     "발표 당시 조호르(코타팅기·클루앙), 페락, 크다, 트렝가누 일부와 사라왁 여러 지역에는 뇌우·폭우·강풍 경보도 내려져 있었어요",
-     "최신 정보는 기상청 웹사이트(met.gov.my)와 공식 SNS, myCuaca 앱에서 수시로 확인하라고 당부했어요"
-    ],
-    "info": [
-     [
-      "기간",
-      "11월 15~17일"
-     ],
-     [
-      "지역",
-      "반도 대부분 주"
-     ],
-     [
-      "확인",
-      "met.gov.my · myCuaca 앱"
-     ]
-    ],
-    "src": "Malay Mail (Bernama) · 11.14",
-    "url": "https://www.malaymail.com/news/malaysia/2026/11/14/metmalaysia-wind-convergence-to-bring-thunderstorms-heavy-rain-to-most-peninsular-states-from-nov-15-to-17/243173"
-   },
-   {
-    "region": "말레이시아",
-    "tag": "전시",
-    "icon": "art",
-    "art": {
-     "vb": "0 0 72 62",
-     "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><circle cx=\"34\" cy=\"32\" r=\"22\"/><path d=\"M55 8l1.6 4 4 1.6-4 1.6-1.6 4-1.6-4-4-1.6 4-1.6z\"/></g><g stroke=\"#1B2321\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><circle cx=\"34\" cy=\"32\" r=\"22\" fill=\"#2B2B28\"/><circle cx=\"34\" cy=\"32\" r=\"8.5\" fill=\"#C8553D\"/></g><g fill=\"none\" stroke=\"#5A5A55\" stroke-width=\"1\"><circle cx=\"34\" cy=\"32\" r=\"18.5\"/><circle cx=\"34\" cy=\"32\" r=\"15\"/><circle cx=\"34\" cy=\"32\" r=\"11.5\"/></g><circle cx=\"34\" cy=\"32\" r=\"5\" fill=\"none\" stroke=\"#F2CF6B\" stroke-width=\"1.2\"/><circle cx=\"34\" cy=\"32\" r=\"1.6\" fill=\"#FBF7EF\"/><path d=\"M20 22q5-6 12-7.5\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\".55\"/><path d=\"M55 8l1.6 4 4 1.6-4 1.6-1.6 4-1.6-4-4-1.6 4-1.6z\" fill=\"#B88BD9\" stroke=\"#4A2E5A\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/>"
-    },
-    "title": "푸두 감옥부터 공항 활주로까지, KL 레이브의 기억",
-    "titleEn": "From Pudu Jail to Airport Runways, an Exhibition Uncovers KL's Rave Years",
-    "lead": "1997년부터 2003년까지 쿠알라룸푸르의 언더그라운드 댄스 문화를 기록한 아카이브 전시 ‘나이트 시프트: 웬 KL 웬트 아웃(Night Shift: When KL Went Out)’이 방사르의 APW에서 열리고 있다고 말레이메일이 전했어요. 7년 만에 돌아온 축제 어반스케이프(Urbanscapes)의 프로그램이에요.",
-    "pts": [
-     "1997년 새벽 1시 유흥 통금이 생기자 파티는 공공장소와 산업 공간으로 옮겨 갔고, 그해 10월 18일 푸두 교도소에서 열린 ‘블루 스카이’에는 약 2,500명이 모였어요",
-     "1999년에서 2000년으로 넘어가는 밀레니엄 카운트다운 파티는 수방 공항 1터미널 계류장과 KLIA 주차장 옥상에서 열렸어요",
-     "DJ 로샨 메논(33)이 옛 레이브 전단을 모으다 초기 기획자 캘런 탐(59)과 함께 자료를 모아 꾸렸어요"
-    ],
-    "info": [
-     [
-      "어디",
-      "APW 방사르, 쿠알라룸푸르"
-     ],
-     [
-      "운영",
-      "매일 낮 12시~밤 9시"
-     ]
-    ],
-    "src": "Malay Mail · 11.14",
-    "url": "https://www.malaymail.com/news/life/2026/11/14/from-pudu-jail-to-airport-runways-exhibition-uncovers-the-wild-years-of-kls-rave-underground/243102"
-   },
-   {
-    "region": "말레이시아",
-    "tag": "음식",
-    "icon": "bowl",
-    "art": {
-     "vb": "0 0 72 62",
-     "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><rect x=\"19\" y=\"9\" width=\"30\" height=\"9\" rx=\"2\"/><rect x=\"20\" y=\"17\" width=\"28\" height=\"38\" rx=\"6\"/><path d=\"M47 52Q61 50 64 36Q59 45 47 46z\"/><path d=\"M47 49l-4 1\"/></g><g stroke=\"#4A2E1A\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><rect x=\"20\" y=\"17\" width=\"28\" height=\"38\" rx=\"6\" fill=\"#F7E8E0\"/><rect x=\"23\" y=\"26\" width=\"22\" height=\"26\" rx=\"4\" fill=\"#B5462F\"/><rect x=\"19\" y=\"9\" width=\"30\" height=\"9\" rx=\"2\" fill=\"#2F6B5A\"/><path d=\"M47 52Q61 50 64 36Q59 45 47 46z\" fill=\"#D9412B\"/><path d=\"M47 46q-3 1-4 3\" fill=\"none\" stroke=\"#2F5D49\" stroke-width=\"2\"/></g><path d=\"M19 13.5h30\" stroke=\"#24493F\" stroke-width=\"1\"/><circle cx=\"29\" cy=\"33\" r=\"1.3\" fill=\"#7A1F2B\"/><circle cx=\"38\" cy=\"38\" r=\"1.3\" fill=\"#7A1F2B\"/><circle cx=\"31\" cy=\"44\" r=\"1.3\" fill=\"#7A1F2B\"/><circle cx=\"40\" cy=\"30\" r=\"1.1\" fill=\"#F2CF6B\"/><circle cx=\"27\" cy=\"40\" r=\"1.1\" fill=\"#F2CF6B\"/><path d=\"M25 21v26\" stroke=\"#fff\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\".7\"/><path d=\"M52 47q6-2 9-8\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\".6\"/>"
-    },
-    "title": "엄마의 뇨냐 삼발, 남매가 병에 담았어요",
-    "titleEn": "BibikJee's Nyonya Flavours Keeps a Peranakan Mother's Recipes Alive",
-    "lead": "믈라카의 이사벨·다리엔 라우 남매가 세상을 떠난 어머니 지니(‘지’)의 이름을 딴 브랜드 ‘비빅지스 뇨냐 플레이버스(BibikJee's Nyonya Flavours)’로 집안의 뇨냐 삼발을 병에 담아 팔고 있다고 말레이메일이 전했어요.",
-    "pts": [
-     "어머니는 믈라카 공립병원의 간호사이자 조산사였고, 약사인 이사벨은 운영과 마케팅을, 르 코르동 블루 출신 셰프 다리엔은 생산을 맡아요",
-     "고추를 손으로 씨 빼서 만드는 ‘뇨냐 칠리 가람’과, 말린 고추·블라찬·산탄에 타마린드 신맛을 더한 ‘뇨냐 삼발 투미스’ 두 가지예요",
-     "2024년 2월 문을 연 가족 식당 ‘네니지스 뇨냐 키친’ 손님들이 삼발을 사 가고 싶다고 하면서 병 삼발이 시작됐어요"
-    ],
-    "info": [
-     [
-      "구매",
-      "바자, 쇼피, 공식 웹사이트, 네니지스, OUG·PJ 일부 톱캐치 매장"
-     ],
-     [
-      "다음",
-      "퐁테·른당·아삼·락사 페이스트 출시 계획"
-     ]
-    ],
-    "src": "Malay Mail · 11.14",
-    "url": "https://www.malaymail.com/news/eat-drink/2026/11/14/from-cili-garam-to-sambal-tumis-how-bibikjees-nyonya-flavours-keeps-a-peranakan-mothers-culinary-legacy-alive/243179"
-   },
-   {
-    "region": "말레이시아",
-    "tag": "음식",
-    "icon": "bowl",
-    "art": {
-     "vb": "0 0 72 62",
-     "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M17 31Q36 5 55 31z\"/><path d=\"M11 31H61Q59 52 36 54Q13 52 11 31z\"/></g><g stroke=\"#4A2E1A\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M17 31Q36 5 55 31z\" fill=\"#FBF7EF\"/><path d=\"M11 31H61Q59 52 36 54Q13 52 11 31z\" fill=\"#C9E3EE\"/></g><path d=\"M22 27q5-11 14-11q8 0 13 9q-6 4-12 1q-7-3-15 1z\" fill=\"#8C5A3A\"/><path d=\"M24 24q6-3 11 0M30 20q6-3 11 1\" fill=\"none\" stroke=\"#FFF3C8\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><g fill=\"none\" stroke=\"#3F8B3F\" stroke-width=\"2.4\" stroke-linecap=\"round\"><path d=\"M20 30q2-3 4 0\"/><path d=\"M27 29q2-3 4 0\"/><path d=\"M41 29q2-3 4 0\"/><path d=\"M48 30q2-3 4 0\"/><path d=\"M34 27q2-3 4 0\"/></g><path d=\"M16 37q20 6 40 0\" fill=\"none\" stroke=\"#9CC7D9\" stroke-width=\"1.2\"/><path d=\"M18 40q2 7 9 10\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\".8\"/>"
-    },
-    "title": "코타 크무닝, 손수 만든 첸돌 한 그릇",
-    "titleEn": "Tang Tang Tang Tang Enterprise in Kota Kemuning Serves Homemade Cendol",
-    "lead": "샤알람 코타 크무닝의 작은 가게 ‘탕탕탕탕 엔터프라이즈(Tang Tang Tang Tang Enterprise)’가 손수 만든 첸돌과 집밥 같은 메뉴를 낸다고 말레이메일이 전했어요. 믈라카 출신 두 여성이 꾸리고, 바로 옆 ‘고 압둘라’ 식당의 페낭 음식도 함께 먹을 수 있어요.",
-    "pts": [
-     "녹두와 쌀가루 반죽에 판단 즙을 섞어 얼음물 위로 갈아 내린 초록 젤리를 빙수에 올리고, 산탄과 굴라 믈라카 시럽을 뿌려요",
-     "첸돌 RM6.90, 미훈쿠이 RM9.90, 강황 치킨 나시르막 RM9.90, 고 압둘라의 페낭 아삼 락사 RM8.50이에요",
-     "가게 주방이 작아서, 고 압둘라 메뉴는 복도 끝 그 가게 코너에서 주문·계산하면 자리로 가져다줘요"
-    ],
-    "info": [
-     [
-      "어디",
-      "잘란 수아사나 1, 코타 크무닝, 샤알람"
-     ],
-     [
-      "운영",
-      "오전 11시~오후 5시, 매달 셋째 화·수 휴무"
-     ],
-     [
-      "11월 휴무",
-      "11월 17·18일"
-     ]
-    ],
-    "src": "Malay Mail · 11.13",
-    "url": "https://www.malaymail.com/news/eat-drink/2026/11/13/tang-tang-tang-tang-enterprise-in-kota-kemuning-serves-homemade-cendol-and-home-style-favourites-like-assam-laksa-from-neighbour-goh-abdullah/243036"
-   },
-   {
-    "region": "세계",
-    "tag": "영국 입시",
-    "icon": "school",
-    "art": {
-     "vb": "0 0 72 62",
-     "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><rect x=\"13\" y=\"7\" width=\"33\" height=\"47\" rx=\"2\"/><polygon points=\"56,17 62,20.5 49,44.5 43,41\"/><polygon points=\"43,41 49,44.5 43.5,51\"/><polygon points=\"56,17 62,20.5 63.5,18 57.5,14.5\"/></g><g stroke=\"#2F3B45\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><rect x=\"13\" y=\"7\" width=\"33\" height=\"47\" rx=\"2\" fill=\"#FBF7EF\"/><polygon points=\"56,17 62,20.5 49,44.5 43,41\" fill=\"#F2CF6B\" stroke=\"#8A5A12\"/><polygon points=\"43,41 49,44.5 43.5,51\" fill=\"#F0C987\" stroke=\"#8A5A12\"/><polygon points=\"56,17 62,20.5 63.5,18 57.5,14.5\" fill=\"#E7A0A0\" stroke=\"#8A5A12\"/></g><rect x=\"18\" y=\"12\" width=\"14\" height=\"3\" rx=\"1\" fill=\"#2F6B5A\"/><g fill=\"none\" stroke=\"#9AA6AE\" stroke-width=\"1.4\" stroke-linecap=\"round\"><path d=\"M26 22h15M26 30h15M26 38h12M26 46h9\"/></g><g fill=\"#FBF7EF\" stroke=\"#2F6B5A\" stroke-width=\"1.3\"><circle cx=\"20.5\" cy=\"22\" r=\"2.3\"/><circle cx=\"20.5\" cy=\"30\" r=\"2.3\"/><circle cx=\"20.5\" cy=\"38\" r=\"2.3\"/><circle cx=\"20.5\" cy=\"46\" r=\"2.3\"/></g><circle cx=\"20.5\" cy=\"22\" r=\"1.2\" fill=\"#2F6B5A\"/><circle cx=\"20.5\" cy=\"30\" r=\"1.2\" fill=\"#2F6B5A\"/><circle cx=\"43.8\" cy=\"50\" r=\"1\" fill=\"#2F3B45\"/><path d=\"M53 21.5l-9 17\" stroke=\"#C98B1E\" stroke-width=\"1\"/>"
-    },
-    "title": "TARA 1월 시험, 예약 마감은 12월 21일",
-    "titleEn": "Booking for the January 2027 TARA Closes December 21",
-    "lead": "옥스퍼드와 UCL이 여러 전공 선발에 쓰는 입학시험 TARA(Test of Academic Reasoning for Admissions)의 2027년 입학용 1월 시험이 2027년 1월 4~8일 열리고, 예약은 12월 21일 오후 6시(GMT)에 마감된다고 UAT-UK가 안내했어요.",
-    "pts": [
-     "비판적 사고(22문항, 40분), 문제 해결(22문항, 40분), 에세이 쓰기(40분, 750단어 이내) 세 모듈로 이뤄지고, 과목 지식은 필요 없어요",
-     "1월 시험은 옥스퍼드·케임브리지 지원자에게는 해당하지 않아요 (1월 마감인 케임브리지 성인 칼리지와 옥스퍼드 파운데이션 과정은 예외)",
-     "영국·아일랜드 밖 응시료는 £133이고, 피어슨 VUE 시험장에서 보며 결과는 약 4주 뒤 지원한 대학에 자동으로 전달돼요"
-    ],
-    "info": [
-     [
-      "시험",
-      "2027년 1월 4~8일"
-     ],
-     [
-      "마감",
-      "12월 21일 오후 6시(GMT) · 말레이시아 시간 12월 22일 오전 2시"
-     ],
-     [
-      "확인",
-      "지원 학과 페이지와 UAT-UK 과목 목록"
-     ]
-    ],
-    "src": "UAT-UK 공식 안내",
-    "url": "https://esat-tmua.ac.uk/about-the-tests/tara/"
-   },
-   {
-    "region": "세계",
-    "tag": "자연",
-    "icon": "leaf",
-    "art": {
-     "vb": "0 0 72 62",
-     "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M34 27Q16 9 9 22Q8 36 33 35z\"/><path d=\"M38 27Q56 9 63 22Q64 36 39 35z\"/><path d=\"M34 35Q18 40 20 51Q30 54 35 41z\"/><path d=\"M38 35Q54 40 52 51Q42 54 37 41z\"/><ellipse cx=\"36\" cy=\"34\" rx=\"4\" ry=\"14\"/><path d=\"M34.5 21L28 10M37.5 21L44 10\"/></g><g stroke=\"#3B2614\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M34.5 21L28 10M37.5 21L44 10\" fill=\"none\" stroke-width=\"1.3\"/><path d=\"M34 35Q18 40 20 51Q30 54 35 41z\" fill=\"#7A5A7E\"/><path d=\"M38 35Q54 40 52 51Q42 54 37 41z\" fill=\"#7A5A7E\"/><path d=\"M34 27Q16 9 9 22Q8 36 33 35z\" fill=\"#A9774A\"/><path d=\"M38 27Q56 9 63 22Q64 36 39 35z\" fill=\"#A9774A\"/><ellipse cx=\"36\" cy=\"34\" rx=\"4\" ry=\"14\" fill=\"#6B4A2B\"/></g><circle cx=\"28\" cy=\"10\" r=\"1.6\" fill=\"#3B2614\"/><circle cx=\"44\" cy=\"10\" r=\"1.6\" fill=\"#3B2614\"/><path d=\"M14 22q8-4 16 4M58 22q-8-4-16 4\" fill=\"none\" stroke=\"#D9A86B\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><circle cx=\"20\" cy=\"27\" r=\"2.2\" fill=\"#6B4A2B\"/><circle cx=\"52\" cy=\"27\" r=\"2.2\" fill=\"#6B4A2B\"/><path d=\"M24 44q4 2 8-1M48 44q-4 2-8-1\" fill=\"none\" stroke=\"#B79BC0\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><path d=\"M33 26h6M33 31h6M33 36h6M33 41h6\" stroke=\"#8C6640\" stroke-width=\"1\"/>"
-    },
-    "title": "날지 못하는 판다니 나방을 찾아서",
-    "titleEn": "Volunteers Track Down Tasmania's Elusive, Flightless Pandani Moth",
-    "lead": "호주 태즈메이니아 고산지대에만 사는, 날지 못하는 ‘판다니 나방’을 자원봉사 모임 ‘판다니 나방의 친구들(Friends of the Pandani Moth)’이 찾아 연구하고 있다고 ABC가 전했어요.",
-    "pts": [
-     "구릿빛 갈색에 다리가 크고 빛을 받으면 보랏빛이 돌며, 날지 못해 주로 깡충 뛰고 판다니 식물에서 미끄러지듯 내려오기만 해요",
-     "1980년대에 처음 눈에 띈 뒤 거의 보이지 않다가, 2025년 10월 마운트 필드에서 약 30명이 밤에 흰 천을 깔고 판다니를 흔들어 눈 속에서 세 마리를 찾았어요",
-     "가장 가까운 친척은 뉴질랜드 종으로, 둘 다 수천만 년 동안 남반구에 살아온 곤드와나 곤충 무리에 속해요"
-    ],
-    "info": [
-     [
-      "어디",
-      "마운트 필드 국립공원, 태즈메이니아 (호주)"
-     ],
-     [
-      "다음",
-      "2026년 10월 유전자 시료 수집, 학술지 발표 계획"
-     ]
-    ],
-    "src": "ABC News · 11.14",
-    "url": "https://www.abc.net.au/news/2026-11-14/tasmanian-volunteers-find-flightless-pandani-moth/107354720"
-   }
-  ],
-  "trend": {
-   "cat": "세계 트렌드 · 브랜드",
-   "title": "스타벅스, 아시아태평양 매장 6,000곳 넘었다",
-   "titleEn": "Starbucks Passes 6,000 Coffeehouses in Asia Pacific",
-   "asOf": "2026년 11월 12일 보도 기준",
-   "body": "스타벅스가 아시아태평양 16개 시장에서 매장 6,000곳을 넘어섰다고 인사이드 리테일 아시아가 전했습니다. 이를 기념해 커피 산지로 이름난 베트남 중부 고원 도시 부온마투옷에 첫 매장을 열었습니다.",
-   "points": [
-    "매장 수는 2023 회계연도 말 5,303곳에서 2026 회계연도 말 6,022곳으로 700곳 넘게(약 13%) 늘었습니다.",
-    "아시아태평양에서 하루 280만 명이 넘는 손님이 찾고, 이 지역에는 1996년 싱가포르로 처음 들어왔습니다.",
-    "교통 거점이나 행사장 같은 곳을 위한 더 작은 모듈형 매장도 개발하고 있습니다.",
-    "찬다 베푸 스타벅스 아시아태평양 사장은 이 이정표를 부온마투옷에서 맞는 것이 특히 잘 어울린다고 말했습니다."
-   ],
-   "src": [
-    [
-     "Inside Retail Asia (2026.11.12)",
-     "https://insideretail.asia/2026/11/12/starbucks-hits-6000-coffeehouse-milestone-in-asia-pacific/"
-    ]
-   ]
-  },
-  "life": {
-   "cat": "인문학 한 스푼",
-   "title": "바바와 뇨냐, 이름에 담긴 페라나칸 이야기",
-   "titleEn": "Baba and Nyonya: What the Names of the Peranakan Chinese Tell Us",
-   "intro": "오늘 소식에 나온 ‘뇨냐 삼발’의 뇨냐는 어디서 온 말일까요. 믈라카와 페낭에 뿌리내린 페라나칸 중국계 사람들을 부르는 이름에는 몇 세기에 걸친 만남이 겹겹이 담겨 있습니다.",
-   "tips": [
-    [
-     "‘페라나칸’은 ‘아이’에서",
-     "말레이·인도네시아어 ‘아낙(anak, 아이·자손)’에서 나온 말로, 넓게는 ‘후손’을 뜻하다가 나중에는 ‘이 땅에서 태어났지만 토착민은 아닌 사람’이라는 뜻으로 쓰이게 됐습니다."
-    ],
-    [
-     "바바와 뇨냐",
-     "‘바바’는 해협 중국계 남성을 높여 부르는 말로, 본래 힌디·페르시아어에서 온 말을 말레이 사람들이 조부모를 다정하게 부를 때 쓰던 것입니다. ‘뇨냐’는 외국인 기혼 여성을 높여 부르던 말레이·인도네시아어인데, 차츰 해협 중국계 여성만을 가리키는 말이 됐습니다."
-    ],
-    [
-     "14~17세기에 건너온 사람들",
-     "중국 남부의 이주민들이 14세기에서 17세기 사이 말레이반도에 많이 정착했습니다. 1826년 영국이 믈라카·페낭·싱가포르를 묶어 세운 해협식민지에서 태어나거나 산 사람들을 ‘해협 중국인’이라고도 불렀습니다."
-    ],
-    [
-     "사라져 가는 바바 말레이어",
-     "바바 말레이어는 말레이어와 가까운 크리올어로 호키엔 낱말이 많이 섞여 있고, 지금은 주로 나이 든 세대가 씁니다. 믈라카에서는 말레이어 색이 짙고, 페낭에서는 페낭 호키엔의 영향이 큽니다."
-    ],
-    [
-     "식탁 위의 만남",
-     "뇨냐 요리는 말레이 향신료를 바탕으로 발전했습니다. 마른 치킨 커리인 ‘치킨 카피탄’, 양파·검은 버섯에 닭고기나 돼지고기를 넣고 발효 콩장으로 맛을 내는 믈라카 요리 ‘퐁테’가 대표적입니다."
-    ]
-   ],
-   "src": [
-    [
-     "Wikipedia: Peranakan Chinese",
-     "https://en.wikipedia.org/wiki/Peranakan_Chinese"
-    ]
-   ]
-  },
-  "music": {
-   "title": "Easy",
-   "artist": "코모도스 (Commodores)",
-   "year": "1977",
-   "mood": "느긋한 일요일 아침에",
-   "why": "라이오넬 리치가 쓴 1977년 소울 발라드로, 미국 소울 싱글 차트 1위에 올랐습니다. 서두르지 않고 천천히 풀려 가는 곡이라, 비 소식이 있는 일요일 아침 늦잠을 자고 일어나 커피 한 잔과 함께 틀어 두기 좋습니다.",
-   "query": "Commodores Easy"
-  },
-  "shows": {
-   "intro": "쿠알라룸푸르와 클랑밸리에서 지금 볼 수 있거나 곧 열리는 전시와 공연입니다.",
-   "items": [
-    {
-     "kind": "연극",
-     "title": "遙遠的東方有一群鬼 (The Ghosts Within)",
-     "when": "11월 12~15일 오후 8시, 14·15일 오후 3시",
-     "where": "KLPac 펜타스 2 (Pentas 2)",
-     "memo": "로 콕 만(羅國文)이 연출한 90분짜리 연극으로, 중국어로 공연하고 영어 자막이 나옵니다.",
-     "url": "https://www.klpac.org/shows/%e9%81%99%e9%81%a0%e7%9a%84%e6%9d%b1%e6%96%b9%e6%9c%89%e4%b8%80%e7%be%a4%e9%ac%bc-the-ghosts-within/"
-    },
-    {
-     "kind": "클래식",
-     "title": "판타지 월드 II: 애니메이션 x 클래식 (A Fantasy World II: Anime x Classical with The klpac String Orchestra)",
-     "when": "11월 20~21일 오후 8시 30분, 22일 오후 3시",
-     "where": "KLPac 펜타스 2 (Pentas 2)",
-     "memo": "klpac 현악 오케스트라가 음악감독 안드레아 심의 지휘로 히사이시 조의 지브리 음악, 『너의 이름은』 메들리, 드뷔시의 「달빛」 등을 연주하는 90분(휴식 15분 포함) 공연입니다.",
-     "url": "https://www.klpac.org/shows/a-fantasy-world-ii-anime-x-classical-with-the-klpac-string-orchestra/"
-    },
-    {
-     "kind": "전시",
-     "title": "쉬자웨이: 시간이 흐를수록 늘 모호한 (Chia-Wei Hsu: Always Ambiguous With the Passage of Time)",
-     "when": "11월 22일 개막",
-     "where": "일함 갤러리 (ILHAM Gallery) 3층, 쿠알라룸푸르",
-     "memo": "대만 작가 쉬자웨이가 영상, 가상현실, 3D 프린팅, 인터랙티브 AI, 드론 영상 등으로 동남아시아와 대만의 역사와 일상, 생태, 시간을 다룬 작품을 선보입니다.",
-     "url": "https://ilhamgallery.com/exhibitions/chiaweihsu/"
-    },
-    {
-     "kind": "콘서트",
-     "title": "웨이브 투 어스: 더 피시스 투어 (wave to earth: the pieces tour)",
-     "when": "11월 22일(일) 오후 8시",
-     "where": "아이디어 라이브 아레나 (Idea Live Arena), 페탈링자야",
-     "memo": "한국 밴드 웨이브 투 어스의 ‘the pieces tour’ 공연으로, 라이브 네이션 말레이시아가 주최합니다.",
-     "url": "https://klconcert.com/concert/wave-to-earth-the-pieces-tour"
-    },
-    {
-     "kind": "콘서트",
-     "title": "MPO 자선 콘서트: 쉴라 마지드 ‘레겐다’ 35주년 (MPO Benefit Concert: Sheila Majid 35th Legenda Anniversary)",
-     "when": "11월 27일(금) 오후 8시",
-     "where": "데완 필하모닉 페트로나스 (Dewan Filharmonik PETRONAS)",
-     "memo": "말레이시아 필하모닉 오케스트라가 쉴라 마지드의 ‘레겐다’ 35주년을 기념해 여는 자선 콘서트입니다.",
-     "url": "https://klconcert.com/concert/mpo-benefit-concert-sheila-majid-35th-legenda-anniversary"
-    },
-    {
-     "kind": "연극",
-     "title": "데이비드 글래스의 템페스트 (David Glass's TEMPEST)",
-     "when": "11월 27~28일 오후 8시, 29일 오후 3시",
-     "where": "KLPac 펜타스 2 (Pentas 2)",
-     "memo": "영국 신체극의 개척자 데이비드 글래스와 함께 만들어 2019년 klpac에서 초연한 작품으로, KL 셰익스피어 플레이어스가 셰익스피어의 『템페스트』에서 출발해 배우 일곱 명과 움직임, 음악, 조명으로 90분 동안 쉬는 시간 없이 펼칩니다.",
-     "url": "https://www.klpac.org/shows/david-glasss-tempest/"
-    },
-    {
-     "kind": "콘서트",
-     "title": "에젠 알리 인 콘서트: 10주년 (Ejen Ali in Concert: 10th Anniversary)",
-     "when": "11월 28일(토) 오후 8시",
-     "where": "KL 컨벤션 센터 플레너리 홀 (Plenary Hall)",
-     "memo": "말레이시아 애니메이션 『에젠 알리』의 10주년을 기념하는 콘서트로, 말레이시아 방송사 RTM이 주최합니다.",
-     "url": "https://klconcert.com/concert/ejen-ali-in-concert-2026"
-    }
-   ]
-  },
-  "fact": {
-   "title": "11월 15일, 누구나 살 수 있는 첫 마이크로프로세서",
-   "titleEn": "November 15, 1971: Intel Releases the 4004",
-   "body": "1971년 11월 15일, 인텔이 4비트 마이크로프로세서 ‘4004’를 내놓았습니다. 첫 광고는 같은 날 업계 신문 『일렉트로닉 뉴스』에 ‘집적 전자공학의 새 시대를 알립니다’라는 문구로 실렸습니다. 4004는 다른 제품 속에만 들어간 칩이 아니라, 누구나 사서 쓸 수 있게 판매된 첫 상용 마이크로프로세서로 꼽힙니다.",
-   "more": [
-    "원래는 비지콤(Busicom)이 1969년 4월 전자계산기용으로 주문한 칩 세트였고, 처음 작동한 4004는 1971년 3월 계산기 141-PF 시제품에 들어갔습니다.",
-    "트랜지스터 2,300개가 들어간 칩으로, 출시 가격은 60달러였습니다.",
-    "설계는 페데리코 파긴이 이끌었고, 마션 호프가 구조를 제안했으며 스탠리 메이저와 시마 마사토시가 힘을 보탰습니다."
-   ],
-   "src": [
-    [
-     "Wikipedia: Intel 4004",
-     "https://en.wikipedia.org/wiki/Intel_4004"
-    ]
-   ]
-  }
  }
 ];
 
@@ -3527,7 +3525,6 @@ render();
   start();
 })();
 </script>
-
 
 </body>
 </html>
