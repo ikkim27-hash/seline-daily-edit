@@ -633,6 +633,451 @@ const PHOTO = null; // 예: {src:"photo.jpg", caption:"한 줄 설명", date:"20
 /* ===== DAYS: 날짜별 콘텐츠. 최신 날짜가 맨 앞. 매일 새 객체를 맨 앞에 추가하고 14일치만 유지. ===== */
 const DAYS = [
  {
+  "date": "2026-11-27",
+  "quote": {
+   "ko": "마릴라 아주머니, 내일은 아직 아무 실수도 하지 않은 새날이라고 생각하면 참 좋지 않아요?",
+   "en": "Marilla, isn't it nice to think that tomorrow is a new day with no mistakes in it yet?",
+   "by": "L. M. 몽고메리, 『빨간 머리 앤』 (1908)",
+   "pick": {
+    "kind": "영화",
+    "title": "퍼펙트 데이즈 (Perfect Days, 2023) · 빔 벤더스 감독",
+    "gist": "도쿄 시부야에서 ‘더 도쿄 토일렛(The Tokyo Toilet)’ 프로젝트의 공중화장실을 청소하는 히라야마(야쿠쇼 고지)는 날마다 비슷한 하루를 보냅니다. 출퇴근길 승합차에서 카세트테이프로 음악을 듣고, 신사의 나무 아래에서 샌드위치를 먹으며 나뭇잎 사이로 스미는 햇살 ‘코모레비’를 필름 카메라에 담고, 밤에는 책을 읽다 잠이 듭니다. 같은 하루가 되풀이되는 듯 보여도 실은 어느 하루도 똑같지 않다는 것을, 영화는 서두르지 않는 눈길로 조용히 보여 줍니다.",
+    "after": "내일이 아직 실수 하나 없는 새날이라면, 오늘의 서툰 순간들은 이쯤에서 가볍게 내려놓아도 괜찮겠지요."
+   }
+  },
+  "english": {
+   "title": "식당에서 잘못 나온 주문 정중하게 바꾸기",
+   "titleEn": "Politely Sending Back a Wrong Order at a Restaurant",
+   "situation": "금요일 저녁, A가 동네 식당에서 양파를 빼 달라고 한 버거를 주문했는데 양파가 그대로 들어간 채 나왔어요. 서버 B가 테이블에 들르자 A가 조심스럽게 말을 꺼내요.",
+   "lines": [
+    [
+     "B",
+     "How's everything tasting over here?",
+     "여기 음식은 입에 잘 맞으세요?"
+    ],
+    [
+     "A",
+     "It looks great, but I think there's been a mix-up. I asked for no onions on my burger.",
+     "보기엔 맛있어 보이는데, 주문이 좀 잘못 들어간 것 같아요. 버거에 양파 빼 달라고 했거든요."
+    ],
+    [
+     "B",
+     "Oh no, I'm so sorry about that. You're right, it's right here on the ticket.",
+     "어머, 정말 죄송해요. 맞네요, 주문서에 그렇게 적혀 있어요."
+    ],
+    [
+     "A",
+     "I hate to be a pain, but could I get a new one? I really can't stand raw onions.",
+     "번거롭게 해서 죄송한데, 새로 하나 받을 수 있을까요? 생양파는 정말 못 먹어서요."
+    ],
+    [
+     "B",
+     "Not a pain at all. I'll have the kitchen whip up a fresh one right away.",
+     "전혀요. 주방에 바로 새로 만들어 달라고 할게요."
+    ],
+    [
+     "A",
+     "Thanks, I appreciate it. Take your time.",
+     "고마워요. 천천히 하셔도 돼요."
+    ],
+    [
+     "B",
+     "Can I bring you some fries to tide you over while you wait?",
+     "기다리시는 동안 출출하지 않게 감자튀김 좀 갖다 드릴까요?"
+    ],
+    [
+     "A",
+     "Honestly, that'd be great. I'm starving.",
+     "솔직히 그러면 좋겠어요. 배가 엄청 고프거든요."
+    ],
+    [
+     "B",
+     "Coming right up. And the fries are on the house for the trouble.",
+     "바로 갖다 드릴게요. 불편을 드렸으니 감자튀김은 서비스예요."
+    ],
+    [
+     "A",
+     "Oh, you didn't have to do that. That's really sweet of you.",
+     "어머, 안 그러셔도 되는데. 정말 친절하시네요."
+    ]
+   ],
+   "expressions": [
+    {
+     "en": "a mix-up",
+     "ko": "‘(주문이나 예약의) 착오, 혼동’. 누구 잘못인지 따지지 않고 ‘뭔가 엇갈렸다’고 부드럽게 말할 때 좋아요. There's been a mix-up처럼 자주 써요.",
+     "eg": "There was a mix-up with our hotel reservation."
+    },
+    {
+     "en": "I hate to be a pain, but ~",
+     "ko": "‘귀찮게 해서 미안하지만 ~’. 부탁이나 불만을 꺼내기 전에 쿠션처럼 먼저 까는 말이에요. 듣는 쪽은 Not a pain at all.(전혀 귀찮지 않아요)이라고 답하곤 해요.",
+     "eg": "I hate to be a pain, but could you turn the music down a little?"
+    },
+    {
+     "en": "whip up (something)",
+     "ko": "‘(음식을) 뚝딱 만들다’. 빠르고 간단하게 요리해 낼 때 써요. 계획이나 아이디어를 금방 만들어 낼 때도 써요.",
+     "eg": "I can whip up some pasta if you're hungry."
+    },
+    {
+     "en": "tide (someone) over",
+     "ko": "‘(다음 때까지) 버티게 해 주다’. 식사 전 간식이나 월급날 전의 돈처럼, 잠깐 모자란 것을 메워 줄 때 써요.",
+     "eg": "Have a banana to tide you over until dinner."
+    },
+    {
+     "en": "on the house",
+     "ko": "‘가게에서 공짜로 주는, 서비스인’. 식당이나 카페, 바에서 값을 받지 않고 내줄 때 써요.",
+     "eg": "The dessert is on the house tonight."
+    }
+   ],
+   "pattern": {
+    "en": "I hate to ~, but ~.",
+    "ko": "‘~하고 싶진 않지만 ~’. 상대에게 부담이 될 말을 꺼내기 전에 미안한 마음부터 보여 주는 표현이에요. 대화의 ‘I hate to be a pain, but could I get a new one?’처럼 but 뒤에 진짜 하고 싶은 말을 붙여요.",
+    "examples": [
+     [
+      "I hate to <b>interrupt</b>, but your <b>phone</b> is ringing.",
+      "말 끊어서 미안한데, 네 전화 울려."
+     ],
+     [
+      "I hate to <b>rush</b> you, but the movie starts in ten <b>minutes</b>.",
+      "재촉하고 싶진 않은데, 영화 10분 뒤에 시작해."
+     ],
+     [
+      "I hate to <b>say</b> it, but I think we're <b>lost</b>.",
+      "이런 말 하긴 싫지만, 우리 길 잃은 것 같아."
+     ]
+    ]
+   }
+  },
+  "news": [
+   {
+    "region": "말레이시아",
+    "tag": "생활 · 호우",
+    "important": true,
+    "icon": "rain",
+    "art": {
+     "vb": "0 0 72 62",
+     "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M18 34a10 10 0 0 1 2-19.8A13 13 0 0 1 45 12a10 10 0 0 1 9 22z\"/><path d=\"M22 42l-3 9M34 42l-3 9M46 42l-3 9\"/></g><g stroke=\"#5BA7D6\" stroke-width=\"3.4\" stroke-linecap=\"round\"><path d=\"M22 42l-3 9M34 42l-3 9M46 42l-3 9\"/></g><path d=\"M18 34a10 10 0 0 1 2-19.8A13 13 0 0 1 45 12a10 10 0 0 1 9 22z\" fill=\"#A9BFCF\" stroke=\"#2F4F6B\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><path d=\"M24 22q4-6 11-6\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\".8\"/><path d=\"M16 30h38\" stroke=\"#8AA3B6\" stroke-width=\"1.2\" stroke-linecap=\"round\"/>"
+    },
+    "title": "트렝가누·클란탄, 일요일까지 계속 비",
+    "titleEn": "Continuous Rain Alert for Terengganu and Parts of Kelantan Until Sunday",
+    "lead": "말레이시아 기상청(MetMalaysia)이 트렝가누 전역과 클란탄 여러 지역에 11월 29일(일)까지 ‘계속되는 비’ 경계(alert) 단계 경보를 냈다고 말레이메일이 베르나마를 인용해 전했어요. 이 지역에 살거나 주말에 동해안으로 갈 계획인 분에게 해당돼요.",
+    "pts": [
+     "클란탄은 파시르 푸테, 바착, 코타바루, 툼팟, 파시르 마스, 마창, 타나 메라, 즐리, 쿠알라 크라이가 대상이에요",
+     "예보 모델상 반도 동부 위로 바람이 모이는 현상(wind convergence)이 일요일까지 이어져, 이 기간 내내 비가 계속될 수 있대요",
+     "최신 정보는 기상청 웹사이트와 소셜미디어, myCuaca 앱에서 확인할 수 있어요"
+    ],
+    "info": [
+     [
+      "기간",
+      "11월 29일(일)까지"
+     ],
+     [
+      "단계",
+      "경계(alert) · 계속되는 비"
+     ],
+     [
+      "확인",
+      "MetMalaysia · myCuaca 앱"
+     ]
+    ],
+    "src": "Malay Mail (Bernama) · 11.26",
+    "url": "https://www.malaymail.com/news/malaysia/2026/11/26/metmalaysia-warns-of-continuous-rain-across-terengganu-parts-of-kelantan-until-sunday/244904"
+   },
+   {
+    "region": "말레이시아",
+    "tag": "외국인 생활",
+    "icon": "passport",
+    "art": {
+     "vb": "0 0 72 62",
+     "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><rect x=\"8\" y=\"14\" width=\"28\" height=\"38\" rx=\"3\"/><rect x=\"28\" y=\"8\" width=\"32\" height=\"42\" rx=\"2\"/><circle cx=\"57\" cy=\"47\" r=\"7\"/></g><g stroke=\"#4A2E1A\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"14\" width=\"28\" height=\"38\" rx=\"3\" fill=\"#7A2E3A\"/></g><circle cx=\"20\" cy=\"31\" r=\"6\" fill=\"none\" stroke=\"#DDA22F\" stroke-width=\"1.4\"/><path d=\"M14 44h12\" stroke=\"#DDA22F\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><g stroke=\"#2F3B45\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><rect x=\"28\" y=\"8\" width=\"32\" height=\"42\" rx=\"2\" fill=\"#FBF7EF\"/><rect x=\"32\" y=\"12\" width=\"24\" height=\"28\" fill=\"#FFFFFF\" stroke=\"#9AA6AE\" stroke-width=\"1.2\"/></g><circle cx=\"44\" cy=\"22\" r=\"5\" fill=\"#9AA6AE\"/><path d=\"M35 40q0-10 9-10t9 10z\" fill=\"#9AA6AE\"/><path d=\"M33 45h14\" stroke=\"#9AA6AE\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><circle cx=\"57\" cy=\"47\" r=\"7\" fill=\"#5FAE84\" stroke=\"#2F5D49\" stroke-width=\"1.5\"/><path d=\"M53.6 47l2.4 2.4 4.4-4.8\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>"
+    },
+    "title": "EP·DP 신청, 1월부터 거절돼도 환불 없어요",
+    "titleEn": "No Refunds for Rejected EP, DP, LTSVP and PVP Applications From January 1",
+    "lead": "이민국 외국인 전문인력 서비스(ESD) 포털이 11월 23일, 2027년 1월 1일부터는 ESD Online으로 낸 신청이 거절돼도 환불을 요청할 수 없다고 공지했어요. 고용 패스나 동반 가족 패스로 말레이시아에 사는 분과 그 고용주에게 해당돼요.",
+    "pts": [
+     "대상은 고용 패스(EP), 동반 가족 패스(DP), 장기 사회방문 패스(LTSVP), 전문직 방문 패스(PVP) 네 가지예요",
+     "11월 6일 별도 공지로, 12월 1일부터 Xpats Gateway와 ESD Online에 올리는 여권 사진은 모두 흰 배경이어야 해요",
+     "두 공지 모두 ESD 포털의 공지(Announcement) 난에 올라와 있어요"
+    ],
+    "info": [
+     [
+      "시행",
+      "흰 배경 사진 12월 1일 · 환불 중단 2027년 1월 1일"
+     ],
+     [
+      "대상",
+      "ESD Online의 EP · DP · LTSVP · PVP 신청"
+     ],
+     [
+      "확인",
+      "esd.imi.gov.my 공지"
+     ]
+    ],
+    "src": "Immigration ESD 공식 안내",
+    "url": "https://esd.imi.gov.my/portal/latest-news/announcement/rejected-application-refund-2027/"
+   },
+   {
+    "region": "말레이시아",
+    "tag": "문화 · 우표",
+    "icon": "art",
+    "art": {
+     "vb": "0 0 72 62",
+     "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><rect x=\"12\" y=\"8\" width=\"42\" height=\"46\" rx=\"1\"/><path d=\"M50 28q4-3 8 0t8 0M50 34q4-3 8 0t8 0\"/></g><rect x=\"12\" y=\"8\" width=\"42\" height=\"46\" rx=\"1\" fill=\"#F7D36B\" stroke=\"#8A5A12\" stroke-width=\"1.5\"/><rect x=\"12\" y=\"8\" width=\"42\" height=\"46\" fill=\"none\" stroke=\"#fff\" stroke-width=\"3.2\" stroke-dasharray=\"0.1 4.4\" stroke-linecap=\"round\"/><g stroke=\"#2F3B45\" stroke-width=\"1.3\" stroke-linejoin=\"round\"><rect x=\"17\" y=\"13\" width=\"32\" height=\"32\" fill=\"#A9D9EC\"/><path d=\"M17 45V37q8-8 16-2t16-4v14z\" fill=\"#5FAE84\"/></g><circle cx=\"40\" cy=\"21\" r=\"4.4\" fill=\"#F2A65A\" stroke=\"#C8553D\" stroke-width=\"1.2\"/><path d=\"M22 49h10\" stroke=\"#8A5A12\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><circle cx=\"54\" cy=\"31\" r=\"8\" fill=\"none\" stroke=\"#C8553D\" stroke-width=\"1.6\"/><path d=\"M50 28q4-3 8 0t8 0M50 34q4-3 8 0t8 0\" fill=\"none\" stroke=\"#C8553D\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>"
+    },
+    "title": "포켓몬 우표 세트, 우체국에서 예약 중",
+    "titleEn": "Pos Malaysia Opens Pre-Orders for a RM50 Pokémon Stamp Set",
+    "lead": "포스 말레이시아(Pos Malaysia)가 붙이는 스티커형 포켓몬 우표와 기념품 예약을 받고 있다고 말레이메일이 전했어요. 지난해 포켓몬 우표가 엔터테인먼트 협업 가운데 가장 큰 성공을 거둔 뒤 다시 나온 컬렉션이에요.",
+    "pts": [
+     "우표 세트(RM50)는 액면가 60센 우표 10장짜리 시트 두 장, 모두 20장이고, 재고가 있는 동안 포켓몬 카드 게임 펀 팩을 함께 줘요",
+     "피카츄, 이브이, 팽도리, 나몰빼미, 루카리오, 글레이시아, 리피아, 아르세우스가 담겼고, 키링(RM10), 캔버스백(RM15), 냉장고 자석(RM15) 등은 따로 팔아요",
+     "11월 23일부터 전국 중앙우체국 13곳과 일부 우체국, 온라인 스토어에서 예약하며, 값은 주문할 때 모두 내요"
+    ],
+    "info": [
+     [
+      "수령",
+      "우표 세트 12월 23일부터 · 가방·키링·자석 2027년 2월 16일부터"
+     ],
+     [
+      "예약",
+      "중앙우체국 13곳 · 일부 우체국 · Pos 온라인 스토어"
+     ]
+    ],
+    "src": "Malay Mail · 11.26",
+    "url": "https://www.malaymail.com/news/life/2026/11/26/pikachu-by-post-pos-malaysia-launches-rm50-pokemon-stamp-set-keychains-and-more/244903"
+   },
+   {
+    "region": "말레이시아",
+    "tag": "음식 · 자연",
+    "icon": "bowl",
+    "art": {
+     "vb": "0 0 72 62",
+     "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M10 31Q24 14 44 18Q54 21 58 31Q54 41 44 44Q24 48 10 31z\"/><path d=\"M55 31L66 20L63 31L66 42z\"/><path d=\"M28 18Q34 9 44 18z\"/><path d=\"M30 44Q34 52 40 45z\"/></g><g stroke=\"#4A2E1A\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><path d=\"M55 31L66 20L63 31L66 42z\" fill=\"#C8553D\"/><path d=\"M28 18Q34 9 44 18z\" fill=\"#C8553D\"/><path d=\"M30 44Q34 52 40 45z\" fill=\"#C8553D\"/><path d=\"M10 31Q24 14 44 18Q54 21 58 31Q54 41 44 44Q24 48 10 31z\" fill=\"#D9B860\"/><path d=\"M12 33Q26 46 44 43Q54 40 57 32Q40 38 12 33z\" fill=\"#F4E9C8\"/></g><g fill=\"none\" stroke=\"#A8862E\" stroke-width=\"1.1\" stroke-linecap=\"round\"><path d=\"M27 24q3 3 0 6M33 22q3 3 0 6M39 21q3 3 0 6M45 22q3 3 0 6M30 30q3 3 0 6M36 29q3 3 0 6M42 29q3 3 0 6M48 29q2 2 0 5\"/></g><path d=\"M22 22q-2 6 0 14\" fill=\"none\" stroke=\"#4A2E1A\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><circle cx=\"16.5\" cy=\"28.5\" r=\"2.2\" fill=\"#1B2321\"/><circle cx=\"17.2\" cy=\"27.8\" r=\".7\" fill=\"#fff\"/><path d=\"M10.5 32.5q2 .6 4 0\" fill=\"none\" stroke=\"#4A2E1A\" stroke-width=\"1\" stroke-linecap=\"round\"/>"
+    },
+    "title": "사라왁 엠푸라우, 1kg에 최대 RM2,500",
+    "titleEn": "Sarawak's Prized Empurau Fetches Up to RM2,500 per Kilo",
+    "lead": "사라왁 시부의 민물고기 공급업자 제퍼리 시우(Jeferry Siew Seng Kwong, 41) 씨의 가게에 12kg이 넘는 야생 엠푸라우(Tor tambroides)가 들어왔다고 말레이메일이 베르나마를 인용해 전했어요. 사라왁이 자랑하는 고급 민물고기예요.",
+    "pts": [
+     "국제 시장에서 1kg에 RM2,000~2,500에 팔리고, 홍콩, 중국, 싱가포르의 고급 식당과 도매상, 반도의 KL, 페락, 페낭으로 가요",
+     "길이 약 600km인 라장강(Batang Rajang) 상류, 울루 카핏과 발레의 어부들에게서 들여오고, 다 자라는 데 10년 넘게 걸린대요",
+     "크리스마스와 설을 앞두고 수요가 늘고, 신선도가 중요해 항공 운송에는 허가증과 수의 서류가 필요해요"
+    ],
+    "info": [
+     [
+      "어디",
+      "사라왁 시부"
+     ],
+     [
+      "어종",
+      "엠푸라우 (Tor tambroides)"
+     ]
+    ],
+    "src": "Malay Mail (Bernama) · 11.26",
+    "url": "https://www.malaymail.com/news/malaysia/2026/11/26/from-remote-batang-rajang-to-luxury-tables-sarawaks-prized-empurau-commands-up-to-rm2500-per-kg/244863"
+   },
+   {
+    "region": "세계",
+    "tag": "호주 유학",
+    "icon": "passport",
+    "art": {
+     "vb": "0 0 72 62",
+     "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><rect x=\"8\" y=\"20\" width=\"30\" height=\"36\" rx=\"3\"/><path d=\"M34 18L50 11L66 18L50 25z\"/><path d=\"M40 21v7q10 5 20 0v-7\"/><circle cx=\"40\" cy=\"48\" r=\"8\"/></g><g stroke=\"#1F3A33\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"20\" width=\"30\" height=\"36\" rx=\"3\" fill=\"#2F6B5A\"/></g><circle cx=\"23\" cy=\"35\" r=\"6\" fill=\"none\" stroke=\"#DDA22F\" stroke-width=\"1.4\"/><path d=\"M17 35h12M23 29q-3 6 0 12M23 29q3 6 0 12\" fill=\"none\" stroke=\"#DDA22F\" stroke-width=\"1\" stroke-linecap=\"round\"/><path d=\"M15 48h10\" stroke=\"#DDA22F\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><circle cx=\"40\" cy=\"48\" r=\"8\" fill=\"#FBF7EF\" fill-opacity=\".85\" stroke=\"#C8553D\" stroke-width=\"1.6\"/><circle cx=\"40\" cy=\"48\" r=\"5\" fill=\"none\" stroke=\"#C8553D\" stroke-width=\"1\"/><path d=\"M37.6 48l1.7 1.7 3.2-3.4\" fill=\"none\" stroke=\"#C8553D\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g stroke=\"#1F2A36\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M40 21v7q10 5 20 0v-7\" fill=\"#3E4C5E\"/><path d=\"M34 18L50 11L66 18L50 25z\" fill=\"#2F3B4A\"/></g><path d=\"M50 18l13 2v8\" fill=\"none\" stroke=\"#DDA22F\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"50\" cy=\"18\" r=\"1.6\" fill=\"#DDA22F\"/><path d=\"M61 28h4l-2 5z\" fill=\"#DDA22F\" stroke=\"#8A5A12\" stroke-width=\".9\"/>"
+    },
+    "title": "호주 졸업생 비자 485, 가족은 함께 신청",
+    "titleEn": "Australia's Graduate Visa 485: Family Members Must Now Apply Together",
+    "lead": "호주 정부 유학 안내 사이트 스터디 오스트레일리아(Study Australia)가 11월 17일 안내를 고쳐, 11월 13일부터 졸업생 임시 비자(subclass 485)에는 자격 있는 가족만, 주 신청자와 같은 때에 함께 신청할 수 있다고 알렸어요. 호주에서 공부한 뒤 485 비자를 생각하는 학생과 가족에게 해당돼요.",
+    "pts": [
+     "가족이 나중에 따로(subsequent entrant) 신청할 수는 없고, 485 비자의 근로 권한은 지금처럼 제한이 없어요",
+     "10월 2일부터 학생비자(500)를 처음 또는 다시 신청할 때는 가족을 넣을 수 없고, 박사과정생, 태평양·아세안 국적자, 외국 정부 전액 장학생 등만 예외예요",
+     "485 신청비는 7월 1일 A$5,750로 올랐고, 개인 상황은 등록 이민 대행사(registered migration agent)에 문의하라고 안내해요"
+    ],
+    "info": [
+     [
+      "시행",
+      "2026년 11월 13일 (485 가족 규정)"
+     ],
+     [
+      "대상",
+      "호주 졸업생 임시 비자(485) 신청자와 가족"
+     ],
+     [
+      "확인",
+      "Study Australia · 호주 내무부 안내"
+     ]
+    ],
+    "src": "Study Australia 공식 안내",
+    "url": "https://www.studyaustralia.gov.au/en/tools-and-resources/news/student-visa-changes-october-2026"
+   },
+   {
+    "region": "세계",
+    "tag": "문화 · 박물관",
+    "icon": "art",
+    "art": {
+     "vb": "0 0 72 62",
+     "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M8 24L36 9l28 15z\"/><rect x=\"10\" y=\"24\" width=\"52\" height=\"28\"/><rect x=\"6\" y=\"51\" width=\"60\" height=\"5\"/></g><g stroke=\"#4A2E1A\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"24\" width=\"52\" height=\"28\" fill=\"#B5603D\"/><path d=\"M8 24L36 9l28 15z\" fill=\"#3F584F\"/><path d=\"M16 50V38a4 4 0 0 1 8 0v12z\" fill=\"#A9D9EC\"/><path d=\"M32 50V36a4 4 0 0 1 8 0v14z\" fill=\"#4A2E1A\"/><path d=\"M48 50V38a4 4 0 0 1 8 0v12z\" fill=\"#A9D9EC\"/><rect x=\"6\" y=\"51\" width=\"60\" height=\"5\" fill=\"#C9B79E\"/></g><circle cx=\"36\" cy=\"18.5\" r=\"3.4\" fill=\"#F4E9D2\" stroke=\"#4A2E1A\" stroke-width=\"1.1\"/><path d=\"M36 16.6v2l1.3.9\" fill=\"none\" stroke=\"#4A2E1A\" stroke-width=\".9\" stroke-linecap=\"round\"/><path d=\"M10 28h52\" stroke=\"#F2CF6B\" stroke-width=\"2\"/><g stroke=\"#8E4A2C\" stroke-width=\".9\"><path d=\"M12 33h6M26 33h4M42 33h4M54 33h6M12 44h3M27 43h3M42 43h3M57 44h3\"/></g><path d=\"M20 38v12M52 38v12M16 44h8M48 44h8\" stroke=\"#4A2E1A\" stroke-width=\".9\"/>"
+    },
+    "title": "옛 고기 시장이 박물관으로, 런던 뮤지엄",
+    "titleEn": "From Meat Market to Museum: The London Museum Opens at Smithfield",
+    "lead": "런던의 약 2,000년 역사를 다루는 무료 박물관 ‘런던 뮤지엄(London Museum)’이 1970년대의 옛 건물을 떠나 런던 도심 스미스필드 시장의 19세기 벽돌 건물로 옮겨, 이번 토요일 문을 연다고 말레이메일이 AFP를 인용해 전했어요.",
+    "pts": [
+     "옮기는 데 4억 3,700만 파운드(약 RM23억 5,000만)가 들었고, 옛 철도 창고 자리의 본관에 유물 5,000점을 전시해요",
+     "로드 메이어의 금빛 마차, 빅토리아 여왕의 검은 비단 상복, 한 가족이 100년 동안 꾸린 말이 끄는 커피 노점 등이 나와요",
+     "1층은 앉을 곳과 먹을 곳이 있는 열린 공간으로, 샤론 아먼트 관장은 이곳을 ‘커다란 실내 광장’이라고 불렀어요"
+    ],
+    "info": [
+     [
+      "어디",
+      "영국 런던 스미스필드"
+     ],
+     [
+      "개관",
+      "11월 28일(토)"
+     ],
+     [
+      "입장",
+      "무료"
+     ]
+    ],
+    "src": "Malay Mail (AFP) · 11.26",
+    "url": "https://www.malaymail.com/news/life/2026/11/26/from-meat-market-to-museum-london-opens-new-rm235b-cultural-landmark/244736"
+   }
+  ],
+  "trend": {
+   "title": "99 스피드마트, 상반기 매출 15.5% 늘었다",
+   "titleEn": "99 Speed Mart Grows First-Half Revenue 15.5% in Malaysia's Battle for Shoppers",
+   "asOf": "2026년 11월 16일 보도 기준",
+   "body": "더 스타는 말레이시아 소비자의 지갑을 두고 99 스피드마트, MR DIY, 팜프레시, 상장을 앞둔 KK마트가 맞붙고 있다고 보도했습니다. 그 가운데 99 스피드마트의 2026년 상반기 매출은 RM61억 4,000만으로 15.5% 늘었습니다.",
+   "points": [
+    "99 스피드마트는 2026년 6월 말 기준 매장 3,151곳과 물류센터 22곳을 운영합니다(Apex Research).",
+    "MR DIY의 상반기 매출은 RM26억 3,000만으로 6.5% 늘었습니다.",
+    "99 스피드마트의 기존 점포 매출 증가율은 상반기 9.1%, 2분기 7.2%였고, 평균 장바구니 금액은 약 RM21.40으로 10분기 동안 거의 그대로였습니다.",
+    "팜프레시는 일부 말레이시아 제품 값을 3% 올리는 등 가격을 골라서 올렸습니다."
+   ],
+   "src": [
+    [
+     "The Star (2026.11.16)",
+     "https://www.thestar.com.my/business/business-news/2026/11/16/the-battle-for-consumer-wallets"
+    ]
+   ]
+  },
+  "life": {
+   "title": "‘Can lah’ 한마디, 망글리시 기본기",
+   "titleEn": "Can Lah: Everyday Manglish That Makes Life Easier",
+   "intro": "말레이시아 사람들과 이야기하다 보면 영어 문장 끝에 lah, meh 같은 짧은 말이 붙고, 익숙한 영어 단어가 조금 다르게 쓰이는 걸 자주 듣게 됩니다. 알아 두면 대화가 한결 편해지는 망글리시를 모았습니다.",
+   "tips": [
+    [
+     "lah는 말을 부드럽게",
+     "문장 끝에 붙는 lah는 자기 생각을 분명히 하면서도 상대와 한편이라는 느낌을 주어, 말이 덜 퉁명스럽게 들리게 합니다."
+    ],
+    [
+     "meh는 ‘정말?’",
+     "문장 끝의 meh는 평범한 문장을 의심이나 놀라움이 담긴 질문으로 바꿉니다."
+    ],
+    [
+     "Can? Can. Cannot.",
+     "can은 묻는 말로도 대답으로도 두루 쓰이고, 안 된다고 할 때는 cannot이라고 합니다."
+    ],
+    [
+     "outstation은 ‘다른 지역에 가다’",
+     "going outstation은 사는 도시를 떠나 다른 지역에 간다는 뜻입니다."
+    ],
+    [
+     "‘on the light’와 tumpang",
+     "불을 켜고 끌 때 on, off를 동사처럼 써서 on the light라고 하고, tumpang은 남의 차를 얻어 타거나 남의 집에 묵는 것을 말합니다."
+    ]
+   ],
+   "src": [
+    [
+     "Wikipedia: Manglish",
+     "https://en.wikipedia.org/wiki/Manglish"
+    ]
+   ]
+  },
+  "music": {
+   "title": "한 페이지가 될 수 있게 (Time of Our Life)",
+   "artist": "데이식스 (DAY6)",
+   "year": "2019",
+   "mood": "한 주를 마무리하는 금요일 저녁에",
+   "why": "빠르고 시원한 밴드 사운드가 처음부터 끝까지 내달리는 곡으로, 2019년 미니앨범 『The Book of Us: Gravity』의 타이틀곡입니다. 2024년 써클차트 연간 3위에 오를 만큼 몇 년 뒤 다시 사랑받은 노래이니, 금요일 퇴근길에 볼륨을 조금 올려 들어 보세요.",
+   "query": "DAY6 Time of Our Life"
+  },
+  "shows": {
+   "intro": "쿠알라룸푸르와 클랑밸리에서 지금 볼 수 있거나 곧 열리는 전시와 공연입니다.",
+   "items": [
+    {
+     "kind": "전시",
+     "title": "쉬자웨이: 시간이 흐를수록 늘 모호한 (Chia-Wei Hsu: Always Ambiguous With the Passage of Time)",
+     "when": "11월 22일 개막",
+     "where": "일함 갤러리 (ILHAM Gallery) 3층, 쿠알라룸푸르",
+     "memo": "대만 작가 쉬자웨이가 영상, 가상현실, 3D 프린팅, 인터랙티브 AI, 드론 영상 등으로 동남아시아와 대만의 역사와 일상, 생태, 시간을 다룬 작품을 선보입니다.",
+     "url": "https://ilhamgallery.com/exhibitions/chiaweihsu/"
+    },
+    {
+     "kind": "콘서트",
+     "title": "MPO 자선 콘서트: 쉴라 마지드 ‘레겐다’ 35주년 (MPO Benefit Concert: Sheila Majid 35th Legenda Anniversary)",
+     "when": "11월 27일(금) 오후 8시",
+     "where": "데완 필하모닉 페트로나스 (Dewan Filharmonik PETRONAS)",
+     "memo": "말레이시아 필하모닉 오케스트라가 쉴라 마지드의 ‘레겐다’ 35주년을 기념해 여는 자선 콘서트입니다.",
+     "url": "https://klconcert.com/concert/mpo-benefit-concert-sheila-majid-35th-legenda-anniversary"
+    },
+    {
+     "kind": "연극",
+     "title": "데이비드 글래스의 템페스트 (David Glass's TEMPEST)",
+     "when": "11월 27~28일 오후 8시, 29일 오후 3시",
+     "where": "KLPac 펜타스 2 (Pentas 2)",
+     "memo": "영국 신체극의 개척자 데이비드 글래스와 함께 만들어 2019년 klpac에서 초연한 작품으로, KL 셰익스피어 플레이어스가 셰익스피어의 『템페스트』에서 출발해 배우 일곱 명과 움직임, 음악, 조명으로 90분 동안 쉬는 시간 없이 펼칩니다.",
+     "url": "https://www.klpac.org/shows/david-glasss-tempest/"
+    },
+    {
+     "kind": "콘서트",
+     "title": "에젠 알리 인 콘서트: 10주년 (Ejen Ali in Concert: 10th Anniversary)",
+     "when": "11월 28일(토) 오후 8시",
+     "where": "KL 컨벤션 센터 플레너리 홀 (Plenary Hall)",
+     "memo": "말레이시아 애니메이션 『에젠 알리』의 10주년을 기념하는 콘서트로, 말레이시아 방송사 RTM이 주최합니다.",
+     "url": "https://klconcert.com/concert/ejen-ali-in-concert-2026"
+    },
+    {
+     "kind": "음악",
+     "title": "테카 2026: 소프트 시그널스 (TEKKA 2026: Soft Signals)",
+     "when": "12월 4~6일 오후 8시",
+     "where": "KLPac 펜타스 2 (Pentas 2)",
+     "memo": "RHIZO와 klpac이 함께 여는 두 번째 시청각 축제로, 실험 음악과 소리, 영상이 어우러진 라이브 공연에 워크숍과 아티스트 토크가 이어지며 13세 이상에게 권합니다.",
+     "url": "https://www.klpac.org/shows/tekka-2026-soft-signals/"
+    },
+    {
+     "kind": "콘서트",
+     "title": "얼티밋 뮤직 크롤 II (Ultimate Music Crawl II with The klpac Symphonic Band)",
+     "when": "12월 5일(토) 오후 8시 30분, 6일(일) 오후 3시",
+     "where": "KLPac 펜타스 1 (Pentas 1)",
+     "memo": "klpac 심포닉 밴드가 음악감독 셰릴 마의 지휘로 포크 댄스, 행진곡, 재즈와 스윙, 1980년대풍 시티팝을 넘나드는 90분(휴식 15분 포함) 공연으로, 5세 이상에게 권합니다.",
+     "url": "https://www.klpac.org/shows/ultimate-music-crawl-ii/"
+    },
+    {
+     "kind": "무용",
+     "title": "댄스박스 12월 (Dancebox December 2026)",
+     "when": "12월 12일(토) 오후 3시",
+     "where": "KLPac 펜타스 2 (Pentas 2)",
+     "memo": "마이댄스 얼라이언스와 액터스 스튜디오가 선보이는 70분 공연으로, 중견 무용가의 실험작과 신진 무용가의 새 작품을 한 무대에 모았습니다.",
+     "url": "https://www.klpac.org/shows/dancebox-december-2026/"
+    }
+   ]
+  },
+  "fact": {
+   "title": "1895년 11월 27일, 노벨이 유언장에 서명하다",
+   "titleEn": "November 27, 1895: Alfred Nobel Signs the Will That Created the Nobel Prizes",
+   "body": "1895년 11월 27일, 알프레드 노벨은 파리의 스웨덴·노르웨이 클럽에서 마지막 유언장에 서명했습니다. 그는 전 재산의 94%인 3,100만 스웨덴 크로나를 남겨, 인류에게 가장 큰 혜택을 준 사람들에게 상을 주도록 했습니다.",
+   "more": [
+    "유언장이 정한 상은 물리학, 화학, 생리의학, 문학, 평화의 다섯 부문이었습니다.",
+    "노르웨이 의회(스토르팅)는 1897년 4월 26일 유언을 승인했고, 노벨 재단은 1900년 6월 29일 세워졌습니다.",
+    "첫 시상은 노벨이 세상을 떠난 지 5년째인 1901년에 열렸고, 지금도 그의 기일인 12월 10일에 상을 줍니다."
+   ],
+   "src": [
+    [
+     "Wikipedia: Nobel Prize",
+     "https://en.wikipedia.org/wiki/Nobel_Prize"
+    ]
+   ]
+  }
+ },
+ {
   "date": "2026-11-26",
   "quote": {
    "ko": "장미를 가꾸는 곳에는, 얘야, 엉겅퀴가 자랄 수 없단다.",
@@ -2808,435 +3253,6 @@ const DAYS = [
     [
      "전자신문 (2021.8.24)",
      "https://www.etnews.com/20210824000065"
-    ]
-   ]
-  }
- },
- {
-  "date": "2026-11-21",
-  "quote": {
-   "ko": "일 년이라는 긴 달력 속에서, 사람들이 마치 약속이라도 한 듯 꼭 닫아 두었던 마음을 활짝 여는, 내가 아는 단 하나의 때…",
-   "en": "…the only time I know of, in the long calendar of the year, when men and women seem by one consent to open their shut-up hearts freely…",
-   "by": "찰스 디킨스, 『크리스마스 캐럴』 (1843)",
-   "pick": {
-    "kind": "영화",
-    "title": "클라우스 (Klaus, 2019) · 세르히오 파블로스 감독",
-    "gist": "19세기 노르웨이, 우편 학교에서 말썽만 부리던 제스퍼는 우정국장인 아버지의 명으로 외딴 마을 스메렌스부르크에 보내집니다. 1년 안에 편지 6,000통을 배달해야 집안의 재산을 지킬 수 있는 처지에서, 그는 숲속에 홀로 사는 나무꾼이자 장난감 만드는 사람 클라우스를 만납니다. 서로 등을 돌린 채 살던 마을에 작은 선물 하나가 어떤 바람을 일으키는지, 이 애니메이션은 산타클로스의 시작을 새로 상상하며 서두르지 않고 보여 줍니다.",
-    "after": "닫아 두었던 마음이 열리는 계절은, 어쩌면 누군가 먼저 건넨 작은 편지 한 통에서 시작되는지도 모릅니다."
-   }
-  },
-  "english": {
-   "title": "여행 가는 동안 친구에게 화분 부탁하기",
-   "titleEn": "Asking a Friend to Water Your Plants While You're Away",
-   "situation": "A가 며칠 동안 언니 집에 다녀오게 되어, 같은 동네에 사는 친구 B에게 집에 있는 화분을 돌봐 달라고 부탁해요.",
-   "lines": [
-    [
-     "A",
-     "Hey, random favor. Are you around next weekend?",
-     "저기, 갑자기 부탁 하나. 다음 주말에 시간 돼?"
-    ],
-    [
-     "B",
-     "Yeah, I'm not going anywhere. What's up?",
-     "응, 어디 안 가. 무슨 일인데?"
-    ],
-    [
-     "A",
-     "I'm heading to my sister's for a few days, and I need someone to keep my plants alive.",
-     "며칠 언니네 가는데, 내 화분들 좀 살려 줄 사람이 필요해."
-    ],
-    [
-     "B",
-     "Ha, sure. I can't promise I have a green thumb, though.",
-     "하하, 좋아. 근데 내가 식물을 잘 키운다고는 장담 못 해."
-    ],
-    [
-     "A",
-     "Don't worry, they're pretty low-maintenance. Just water them every other day.",
-     "걱정 마, 다들 손이 별로 안 가. 이틀에 한 번만 물 주면 돼."
-    ],
-    [
-     "B",
-     "Got it. Are any of them picky?",
-     "알았어. 그중에 까다로운 애도 있어?"
-    ],
-    [
-     "A",
-     "The fern's a little needy, so give it a bit extra. The cactus you can pretty much ignore.",
-     "고사리가 좀 손이 가니까 물을 조금 더 줘. 선인장은 거의 신경 안 써도 돼."
-    ],
-    [
-     "B",
-     "Easy enough. Should I swing by and grab your spare key?",
-     "그 정도면 쉽지. 들러서 여분 열쇠 받아 갈까?"
-    ],
-    [
-     "A",
-     "That'd be great. And help yourself to anything in the fridge.",
-     "그러면 좋지. 그리고 냉장고에 있는 거 아무거나 꺼내 먹어."
-    ],
-    [
-     "B",
-     "Now you're talking. Go have fun, and don't worry about a thing.",
-     "그래야지. 재밌게 다녀와, 아무 걱정 하지 말고."
-    ]
-   ],
-   "expressions": [
-    {
-     "en": "Are you around (+ time)?",
-     "ko": "‘(그때) 시간 돼? 근처에 있어?’. 부탁이나 약속을 꺼내기 전에 상대가 그 시간에 있는지 가볍게 묻는 말이에요. Are you free?보다 더 캐주얼해요.",
-     "eg": "Are you around this afternoon? I could use a hand."
-    },
-    {
-     "en": "have a green thumb",
-     "ko": "‘식물을 잘 키우다’. 손대는 식물마다 잘 자라는 사람을 말해요. 영국에서는 green fingers라고 해요.",
-     "eg": "My mom has a green thumb. Her balcony looks like a jungle."
-    },
-    {
-     "en": "low-maintenance",
-     "ko": "‘손이 많이 안 가는, 관리가 쉬운’. 식물, 반려동물, 머리 스타일은 물론 성격이 무난한 사람에게도 써요. 반대는 high-maintenance예요.",
-     "eg": "I want a low-maintenance haircut I don't have to style every morning."
-    },
-    {
-     "en": "every other day",
-     "ko": "‘이틀에 한 번, 하루걸러’. every other week(격주로)처럼 다른 시간 단위에도 써요.",
-     "eg": "I go running every other day."
-    },
-    {
-     "en": "help yourself (to something)",
-     "ko": "‘마음껏 드세요, 편하게 가져다 쓰세요’. 손님에게 음식이나 물건을 자유롭게 쓰라고 권할 때 써요.",
-     "eg": "There's pizza in the kitchen. Help yourself."
-    }
-   ],
-   "pattern": {
-    "en": "I can't promise ~, though.",
-    "ko": "‘~라고 장담은 못 하지만’. 부탁을 받아들이면서 기대치를 살짝 낮출 때 써요. 문장 끝의 though가 ‘그래도, 다만’ 하는 부드러운 단서를 붙여 줘요.",
-    "examples": [
-     [
-      "I'll <b>try</b>. I can't promise I'll be on <b>time</b>, though.",
-      "해 볼게. 근데 제시간에 간다고는 장담 못 해."
-     ],
-     [
-      "Sure, I'll <b>bake</b> something. I can't promise it'll look <b>pretty</b>, though.",
-      "그래, 뭐 하나 구워 볼게. 근데 예쁘게 나온다고는 장담 못 해."
-     ],
-     [
-      "I can't promise I'll <b>win</b>, though. I haven't <b>played</b> in years.",
-      "근데 이긴다고는 장담 못 해. 몇 년 동안 안 해 봤거든."
-     ]
-    ]
-   }
-  },
-  "news": [
-   {
-    "region": "말레이시아",
-    "tag": "안전",
-    "important": true,
-    "icon": "news",
-    "art": {
-     "vb": "0 0 72 62",
-     "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><rect x=\"22\" y=\"5\" width=\"28\" height=\"52\" rx=\"5\"/><circle cx=\"56\" cy=\"14\" r=\"8\"/></g><g stroke=\"#2F3B45\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><rect x=\"22\" y=\"5\" width=\"28\" height=\"52\" rx=\"5\" fill=\"#3B3B38\"/><rect x=\"25\" y=\"11\" width=\"22\" height=\"38\" rx=\"2\" fill=\"#DCE8E1\"/><path d=\"M33 8h6\" stroke=\"#9AA6AE\"/><circle cx=\"36\" cy=\"53\" r=\"1.6\" fill=\"#9AA6AE\" stroke=\"none\"/><path d=\"M36 19l9 16H27z\" fill=\"#F7D36B\"/></g><path d=\"M36 24v5.5\" stroke=\"#4A2E1A\" stroke-width=\"2\" stroke-linecap=\"round\"/><circle cx=\"36\" cy=\"32.2\" r=\"1.2\" fill=\"#4A2E1A\"/><path d=\"M29 41h14M31 45h10\" stroke=\"#9AA6AE\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><circle cx=\"56\" cy=\"14\" r=\"8\" fill=\"#C8553D\" stroke=\"#7A2E1E\" stroke-width=\"1.5\"/><path d=\"M52 10q4-3 8 0M50 7q6-5 12 0\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><path d=\"M56 14v4\" stroke=\"#fff\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>"
-    },
-    "title": "23일 국회 주변, 29일 전국 비상경보 시험",
-    "titleEn": "Emergency Alert Tests Near Parliament on Nov 23 and Nationwide on Nov 29",
-    "lead": "말레이시아가 새 국가 비상 조기경보 체계(EWS)를 11월 23일 국회 주변에서, 11월 29일에는 전국에서 시험한다고 파흐미 파질 통신부 장관이 밝혔어요. 휴대폰을 쓰는 말레이시아의 모든 사람이 받을 수 있고, 시험 메시지는 실제 비상 상황이 아니에요.",
-    "pts": [
-     "앱을 깔 필요 없이 호환 휴대폰으로 바로 오고, 최신 휴대폰은 팝업으로, 구형 휴대폰은 문자(SMS)로 받아요",
-     "홍수, 산사태, 지진 같은 자연재해와 실종 아동 같은 공공 안전 경보에 쓰일 예정이에요",
-     "경보는 넓게 보내져 영향이 없는 지역에서도 받을 수 있고, 최근 왓츠앱으로 돈 홍수 경보 메시지는 EWS가 아니라고 해요"
-    ],
-    "info": [
-     [
-      "시험",
-      "11월 23일 국회 주변 · 11월 29일 전국"
-     ],
-     [
-      "안내",
-      "영화관, TV, 라디오, 틱톡 등에서 공익 광고로 알려요"
-     ]
-    ],
-    "src": "Malay Mail (Bernama) · 11.19",
-    "url": "https://www.malaymail.com/news/malaysia/2026/11/19/fahmi-malaysia-to-test-emergency-alert-system-near-parliament-on-nov-23-nationwide-on-nov-29/243925"
-   },
-   {
-    "region": "말레이시아",
-    "tag": "여행 · 자연",
-    "icon": "turtle",
-    "art": {
-     "vb": "0 0 72 62",
-     "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M10 22h40a6 6 0 0 1 6 6v8a6 6 0 0 1-6 6H40l-4-5h-6l-4 5H16a6 6 0 0 1-6-6v-8a6 6 0 0 1 6-6z\"/><path d=\"M58 40V10a4 4 0 0 1 8 0v4\" fill=\"none\"/><path d=\"M58 40q0 10-10 12\"/></g><path d=\"M58 40V10a4 4 0 0 1 8 0v4\" fill=\"none\" stroke=\"#2F3B45\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M58 40V10a4 4 0 0 1 8 0v4\" fill=\"none\" stroke=\"#F2A65A\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><path d=\"M58 40q0 10-10 12\" fill=\"none\" stroke=\"#2F3B45\" stroke-width=\"3\" stroke-linecap=\"round\"/><g stroke=\"#2F3B45\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><path d=\"M10 22h40a6 6 0 0 1 6 6v8a6 6 0 0 1-6 6H40l-4-5h-6l-4 5H16a6 6 0 0 1-6-6v-8a6 6 0 0 1 6-6z\" fill=\"#3A6EA5\"/><rect x=\"15\" y=\"26\" width=\"15\" height=\"11\" rx=\"3\" fill=\"#A9D9EC\"/><rect x=\"36\" y=\"26\" width=\"15\" height=\"11\" rx=\"3\" fill=\"#A9D9EC\"/></g><path d=\"M18 29l4-2M39 29l4-2\" stroke=\"#fff\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><g fill=\"none\" stroke=\"#5BA7D6\" stroke-width=\"1.3\"><circle cx=\"8\" cy=\"12\" r=\"2.4\"/><circle cx=\"14\" cy=\"8\" r=\"1.5\"/></g>"
-    },
-    "title": "섬까지 안 가도 돼요, 포트딕슨 다이빙",
-    "titleEn": "Port Dickson Becomes a New Place to Earn Your Diving Licence",
-    "lead": "느그리 슴빌란 수산청이 지난해부터 다이빙 센터, 공인 강사들과 함께 포트딕슨을 다이빙 교육지로 키우고 있다고 말레이메일이 베르나마를 인용해 전했어요. 클랑밸리에서 가까워 개방 수역 다이빙을 하러 레당, 티오만, 사바까지 가지 않아도 된다는 거예요.",
-    "pts": [
-     "교육 장소는 탄중 비루, 텔룩 몽옛(몽키 베이), 탄중 투안의 바르보사 코브예요",
-     "탄중 비루와 텔룩 몽옛은 물이 맑아 5m 정도 거리에서 산호초를 볼 수 있지만, 비가 오면 시야가 흐려지기도 한대요",
-     "앞바다에는 산호 46종(그중 5종은 멸종 위기)과 매부리바다거북, 푸른바다거북이 살아요"
-    ],
-    "info": [
-     [
-      "어디",
-      "포트딕슨 탄중 비루 · 텔룩 몽옛 · 바르보사 코브"
-     ],
-     [
-      "운영",
-      "느그리 슴빌란 수산청과 다이빙 센터"
-     ]
-    ],
-    "src": "Malay Mail (Bernama) · 11.20",
-    "url": "https://www.malaymail.com/news/life/2026/11/20/port-dickson-makes-a-splash-as-new-destination-for-diving-licences/243968"
-   },
-   {
-    "region": "말레이시아",
-    "tag": "음식",
-    "icon": "bowl",
-    "art": {
-     "vb": "0 0 72 62",
-     "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><ellipse cx=\"34\" cy=\"22\" rx=\"20\" ry=\"6\"/><path d=\"M12 28q0 24 22 24t22-24z\"/><path d=\"M56 32h10\" /><circle cx=\"34\" cy=\"13\" r=\"4\"/></g><path d=\"M56 32h9\" stroke=\"#4A2E1A\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M56 32h9\" stroke=\"#8C5A3A\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><g stroke=\"#4A2E1A\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><path d=\"M12 28q0 24 22 24t22-24z\" fill=\"#5A3A28\"/><ellipse cx=\"34\" cy=\"28\" rx=\"22\" ry=\"6\" fill=\"#6E4A34\"/><ellipse cx=\"34\" cy=\"22\" rx=\"20\" ry=\"6\" fill=\"#8C5A3A\"/><circle cx=\"34\" cy=\"14\" r=\"4\" fill=\"#6E4A34\"/><path d=\"M34 18v-1\" fill=\"none\"/></g><path d=\"M18 36q16 8 32 0\" fill=\"none\" stroke=\"#B9875F\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><path d=\"M22 20q5-3 12-3.5\" fill=\"none\" stroke=\"#C9A27C\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><g fill=\"none\" stroke=\"#B9AE97\" stroke-width=\"1.6\" stroke-linecap=\"round\"><path d=\"M48 12q-2-3 0-6\"/><path d=\"M53 15q-2-3 0-6\"/></g>"
-    },
-    "title": "치킨 말고 생선, 카장의 클레이팟 생선밥",
-    "titleEn": "Skip the Chicken: Claypot Fish Rice at Restoran Six One in Kajang",
-    "lead": "셀랑고르 카장의 ‘레스토랑 식스 원(Restoran Six One)’이 가물치(sang yu, 말레이어로 ikan toman) 살을 올린 클레이팟 생선밥으로 말레이메일 음식 칼럼에 소개됐어요. 다른 테이블도 대부분 이 생선 세트를 시켰대요.",
-    "pts": [
-     "뼈를 바른 가물치 살에 바삭하게 눌은 밥과 진한 소스가 어우러지고, 생선이 부서지지 않게 젓지 말고 퍼서 먹으라고 해요",
-     "생선 머리와 뼈, 생강, 소흥주, 대추, 양배추로 끓인 클레이팟 생선 수프와 세트로 나오며, 2~3명이 먹기 알맞대요",
-     "밥에는 랍청(중국식 소시지)이나 함유(소금에 절인 생선)를 넣지 않아요"
-    ],
-    "info": [
-     [
-      "어디",
-      "68, Jalan Langat 1, Taman Sri Langat, Kajang"
-     ],
-     [
-      "운영",
-      "오전 11시~오후 2시 30분, 오후 5~10시 (화요일 휴무)"
-     ]
-    ],
-    "src": "Malay Mail · 11.19",
-    "url": "https://www.malaymail.com/news/eat-drink/2026/11/19/forget-chicken-claypot-fish-rice-is-the-way-to-go-here-savour-a-sang-yu-feast-at-restoran-six-one-in-kajang/243817"
-   },
-   {
-    "region": "말레이시아",
-    "tag": "음식 · 문화",
-    "icon": "bowl",
-    "art": {
-     "vb": "0 0 72 62",
-     "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><ellipse cx=\"30\" cy=\"34\" rx=\"22\" ry=\"12\"/><path d=\"M50 30l16-8\"/></g><path d=\"M50 30l15-7.5\" stroke=\"#2F3B45\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M50 30l15-7.5\" stroke=\"#3B3B38\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><ellipse cx=\"30\" cy=\"34\" rx=\"22\" ry=\"12\" fill=\"#3B3B38\" stroke=\"#2F3B45\" stroke-width=\"1.5\"/><ellipse cx=\"30\" cy=\"33\" rx=\"18.5\" ry=\"9\" fill=\"#C8553D\" stroke=\"#7A2E1E\" stroke-width=\"1.2\"/><g stroke=\"#C98B1E\" stroke-width=\"1\" stroke-linejoin=\"round\"><path d=\"M17 31q6-3 12 1q-6 3-12-1z\" fill=\"#F7D36B\"/><path d=\"M27 36q7-4 14 0q-7 3-14 0z\" fill=\"#F7D36B\"/><path d=\"M31 28q6-3 11 0q-5 3-11 0z\" fill=\"#F7D36B\"/><path d=\"M19 37q4-2 8 0q-4 2-8 0z\" fill=\"#F7D36B\"/></g><g fill=\"#5FAE84\" stroke=\"#2F5D49\" stroke-width=\".8\"><ellipse cx=\"38\" cy=\"34\" rx=\"2.2\" ry=\"1.2\"/><ellipse cx=\"25\" cy=\"34\" rx=\"2\" ry=\"1.1\"/></g><g fill=\"none\" stroke=\"#B9AE97\" stroke-width=\"1.6\" stroke-linecap=\"round\"><path d=\"M22 18q-2-3 0-6\"/><path d=\"M30 16q-2-3 0-6\"/><path d=\"M38 18q-2-3 0-6\"/></g>"
-    },
-    "title": "이탈리아 셰프가 본 말레이시아의 맛",
-    "titleEn": "An Italian Chef on What Makes Malaysian Food Unique",
-    "lead": "이탈리아 모데나의 셰프 알레시아 모라비토가 ‘2026 세계 이탈리아 요리 주간’을 맞아 말레이시아를 찾았어요. 베르나마 인터뷰에서 그는 말레이, 중국, 인도 음식이 저마다 개성을 지니면서도 하나의 정체성을 보여 준다고 말했어요.",
-    "pts": [
-     "말레이시아의 소고기 스튜는 북이탈리아의 브라사토를, 만두는 토르텔리니를 닮았다고 했어요",
-     "말레이시아의 맛은 뿌리가 깊어 직접 와서 먹어 봐야 하지만, 이탈리아 음식은 어디서나 쉽게 찾을 수 있다는 차이도 짚었어요",
-     "얇은 치즈 오믈렛을 썰어 토마토소스에 끓여 내장 요리처럼 만든 전후 중부 이탈리아 가정식 ‘트리파 핀타’를 선보였어요"
-    ],
-    "info": [
-     [
-      "셰프",
-      "알레시아 모라비토 (모데나 사회적 기업 식당 Roots 요리 강사)"
-     ],
-     [
-      "행사",
-      "2026 세계 이탈리아 요리 주간"
-     ]
-    ],
-    "src": "Malay Mail (Bernama) · 11.20",
-    "url": "https://www.malaymail.com/news/life/2026/11/20/you-understand-the-same-identity-italian-chef-on-what-makes-malaysian-food-unique/243954"
-   },
-   {
-    "region": "세계",
-    "tag": "영국 입시",
-    "icon": "school",
-    "art": {
-     "vb": "0 0 72 62",
-     "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M6 24L36 12l30 12-30 12z\"/><path d=\"M20 30v12q16 9 32 0V30\"/><path d=\"M60 26v16\"/></g><g stroke=\"#1F2A36\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M20 30v12q16 9 32 0V30\" fill=\"#3E4C5E\"/><path d=\"M6 24L36 12l30 12-30 12z\" fill=\"#2F3B4A\"/></g><path d=\"M36 24l24 2v14\" fill=\"none\" stroke=\"#C98B1E\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"36\" cy=\"24\" r=\"2.2\" fill=\"#DDA22F\" stroke=\"#1F2A36\" stroke-width=\"1.1\"/><path d=\"M57 40h6l-3 7z\" fill=\"#DDA22F\" stroke=\"#8A5A12\" stroke-width=\"1\"/><path d=\"M14 23l14-5\" stroke=\"#5A6878\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>"
-    },
-    "title": "옥스퍼드 면접은 12월, 결과는 1월 12일",
-    "titleEn": "Oxford Interviews in Early to Mid-December, Decisions on January 12",
-    "lead": "옥스퍼드대학교의 2027년 입학 일정표에 따르면, 면접 대상자 선정(shortlisting)은 11월 말부터 진행되고 면접은 12월 초중순에 열려요. 2027년 입학을 위해 옥스퍼드에 지원한 학생과 학부모에게 해당돼요.",
-    "pts": [
-     "면접 대상자 선정은 11월 말부터이며, 일정표에는 통보 날짜가 따로 나와 있지 않아요",
-     "면접은 12월 초중순에 열리고, 합격 여부는 2027년 1월 12일에 알 수 있어요",
-     "올해 지원 마감은 10월 15일 오후 6시(영국 시간), 칼리지에 내는 필기 과제 기한은 11월 10일이었어요"
-    ],
-    "info": [
-     [
-      "면접",
-      "12월 초중순"
-     ],
-     [
-      "결과",
-      "2027년 1월 12일"
-     ]
-    ],
-    "src": "University of Oxford 공식 안내",
-    "url": "https://www.ox.ac.uk/node/1425160"
-   },
-   {
-    "region": "세계",
-    "tag": "역사 · 바다",
-    "icon": "news",
-    "art": {
-     "vb": "0 0 72 62",
-     "svg": "<g fill=\"#fff\" stroke=\"#fff\" stroke-width=\"7.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M8 38h56l-8 12H16z\"/><path d=\"M34 38V8\"/><path d=\"M34 10l18 24H34z\"/><path d=\"M32 12L18 34h14z\"/></g><g stroke=\"#4A2E1A\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M34 38V7\" fill=\"none\" stroke-width=\"2\"/><path d=\"M36 10l16 24H36z\" fill=\"#F4F1EA\"/><path d=\"M32 13L19 34h13z\" fill=\"#F4F1EA\"/><path d=\"M8 38h56l-8 12H16z\" fill=\"#A86F45\"/><path d=\"M11 42h50\" fill=\"none\" stroke=\"#7A4E2E\"/><path d=\"M34 7l7 2.5-7 2.5z\" fill=\"#C8553D\"/></g><path d=\"M5 54q4-3 8 0t8 0 8 0 8 0 8 0 8 0 8 0 8 0\" fill=\"none\" stroke=\"#5BA7D6\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M40 16v12M24 26v5\" stroke=\"#D6C9B3\" stroke-width=\"1.2\" stroke-linecap=\"round\"/>"
-    },
-    "title": "호주 첫 국산 군함, 128년 만에 찾았다",
-    "titleEn": "Wreck of the First Australian-Built Warship Found Off Far North Queensland",
-    "lead": "1855년 시드니 달링 하버에서 진수된 호주 최초의 국산 군함 ‘HMCS 스핏파이어’의 잔해를 퀸즐랜드 북부 록하트 리버 앞바다에서 찾았다고 호주 ABC가 전했어요. 1898년 가라앉은 지 128년 만이에요.",
-    "pts": [
-     "길이 19m의 순찰선으로 호주 목재로 만든 첫 군함이었고, 크림 전쟁 무렵 러시아의 위협을 걱정해 지었지만 실을 대포는 끝내 달지 못했어요",
-     "1898년 강풍에 판자 이음매가 벌어져 가라앉았고, 원주민과 토러스 해협 섬 주민, 남태평양 섬 출신이 대부분이던 선원들은 근처 섬으로 피했다가 일본 증기선에 구조됐어요",
-     "호주 국립해양박물관과 퀸즐랜드 주 정부가 올해 해군 함정 HMAS 다이아만티나 승조원과 함께 수색했고, 내년에 다시 조사할 계획이에요"
-    ],
-    "info": [
-     [
-      "어디",
-      "퀸즐랜드 북부 록하트 리버 앞바다"
-     ],
-     [
-      "진수",
-      "1855년, 시드니 달링 하버"
-     ]
-    ],
-    "src": "ABC News · 11.20",
-    "url": "https://www.abc.net.au/news/2026-11-20/hmcs-spitfire-wreck-found-off-far-north-queensland/107408318"
-   }
-  ],
-  "trend": {
-   "title": "GTA 6 출시에 말레이시아 브랜드도 올라탔다",
-   "titleEn": "As GTA 6 Arrives, Malaysian Brands Want In on the Fun",
-   "asOf": "2026년 11월 19일 보도 기준",
-   "body": "록스타 게임즈의 ‘GTA 6’가 11월 19일 플레이스테이션 5와 엑스박스 시리즈 X|S로 나오자, 말레이시아 브랜드들도 게임 분위기를 빌린 마케팅에 나섰다고 말레이메일이 보도했습니다. GTA 시리즈의 새 본편은 2013년 GTA 5 이후 처음입니다.",
-   "points": [
-    "A&W 말레이시아는 매장 앞 자동차 보닛 위에서 버거를 먹는 인물들을 GTA 풍 그림으로 올렸습니다.",
-    "칩스모어(ChipsMore!)는 게임 콘텐츠와 보상을 여는 한정판 쿠키 팩으로 ‘18 Unrestricted’ 캠페인을 펼쳤습니다.",
-    "코미디언 엉클 로저(나이젤 응)는 게임 화면 같은 그림으로 자신의 볶음밥 사업을 홍보했습니다.",
-    "CARMA 집계에 따르면 한 달 동안 동남아시아에서 관련 소셜미디어 언급이 11만 3,865건, 반응이 249만 건을 넘었고, 대화의 60% 가까이가 긍정적이었습니다."
-   ],
-   "src": [
-    [
-     "Malay Mail (2026.11.19)",
-     "https://www.malaymail.com/news/life/2026/11/19/gta-6-is-here-malaysian-brands-want-in-on-the-chaos/243894"
-    ]
-   ]
-  },
-  "life": {
-   "title": "ECRL 첫 여행, 역에서 시내까지 미리 알아 두기",
-   "titleEn": "Your First ECRL Trip: Getting From the Station Into Town",
-   "intro": "동해안철도(ECRL)를 타고 동해안으로 떠난다면, 주요 역이 시내에서 꽤 떨어져 있다는 점부터 알아 두세요. 말레이메일이 정리한 역별 거리와 이동 방법, 근처 먹거리를 모았습니다.",
-   "tips": [
-    [
-     "콴탄은 코타SAS역",
-     "곰박 종합터미널에서 약 1시간 35분 걸리고, 콴탄 시내까지는 약 10km입니다. Grab이나 Bas.my 시내버스로 이동할 수 있습니다."
-    ],
-    [
-     "쿠알라 트렝가누역은 시내까지 23km",
-     "곰박에서 약 2시간 52분이며, 아직 연계 버스가 없어 Grab이나 택시, 렌터카를 이용해야 합니다."
-    ],
-    [
-     "코타바루역은 곰박에서 약 3시간 52분",
-     "시내까지 약 9.2km이고, 역 옆에 새 터미널이 아직 없어 Grab이나 택시, 렌터카로 이동합니다."
-    ],
-    [
-     "코타바루에선 로티 티탑",
-     "코피티암 키타(Kopitiam Kita)에서는 이곳에서 시작됐다는 로티 티탑, 곧 버터에 구운 빵에 카야와 반숙 달걀을 올린 메뉴를 냅니다."
-    ],
-    [
-     "트렝가누에선 나시 다강",
-     "레스토랑 나시 다강 아타스 톨(Restoran Nasi Dagang Atas Tol)에서는 코코넛 밀크로 찐 밥에 생선 커리를 곁들인 나시 다강을 맛볼 수 있습니다."
-    ]
-   ],
-   "src": [
-    [
-     "Malay Mail (2026.11.21)",
-     "https://www.malaymail.com/news/malaysia/2026/11/21/first-ecrl-ride-its-your-chance-to-explore-some-east-coast-attractions-and-sample-some-great-local-eats/243914"
-    ]
-   ]
-  },
-  "music": {
-   "title": "Love Lee",
-   "artist": "악뮤 (AKMU)",
-   "year": "2023",
-   "mood": "가볍게 어깨가 들썩이는 토요일 오후에",
-   "why": "어쿠스틱한 소리와 경쾌한 드럼 위로 남매의 목소리가 어우러지는 포크·댄스 곡으로, 제목은 ‘lovely’와 두 사람의 성 ‘이(Lee)’를 합친 말입니다. 2023년 서클 디지털 차트 1위로 데뷔한 노래이니, 주말 오후 산책길에 틀어 보세요.",
-   "query": "AKMU Love Lee"
-  },
-  "shows": {
-   "intro": "쿠알라룸푸르와 클랑밸리에서 지금 볼 수 있거나 곧 열리는 전시와 공연입니다.",
-   "items": [
-    {
-     "kind": "클래식",
-     "title": "판타지 월드 II: 애니메이션 x 클래식 (A Fantasy World II: Anime x Classical with The klpac String Orchestra)",
-     "when": "11월 20~21일 오후 8시 30분, 22일 오후 3시",
-     "where": "KLPac 펜타스 2 (Pentas 2)",
-     "memo": "klpac 현악 오케스트라가 음악감독 안드레아 심의 지휘로 히사이시 조의 지브리 음악, 『너의 이름은』 메들리, 드뷔시의 「달빛」 등을 연주하는 90분(휴식 15분 포함) 공연입니다.",
-     "url": "https://www.klpac.org/shows/a-fantasy-world-ii-anime-x-classical-with-the-klpac-string-orchestra/"
-    },
-    {
-     "kind": "전시",
-     "title": "쉬자웨이: 시간이 흐를수록 늘 모호한 (Chia-Wei Hsu: Always Ambiguous With the Passage of Time)",
-     "when": "11월 22일 개막",
-     "where": "일함 갤러리 (ILHAM Gallery) 3층, 쿠알라룸푸르",
-     "memo": "대만 작가 쉬자웨이가 영상, 가상현실, 3D 프린팅, 인터랙티브 AI, 드론 영상 등으로 동남아시아와 대만의 역사와 일상, 생태, 시간을 다룬 작품을 선보입니다.",
-     "url": "https://ilhamgallery.com/exhibitions/chiaweihsu/"
-    },
-    {
-     "kind": "콘서트",
-     "title": "웨이브 투 어스: 더 피시스 투어 (wave to earth: the pieces tour)",
-     "when": "11월 22일(일) 오후 8시",
-     "where": "아이디어 라이브 아레나 (Idea Live Arena), 페탈링자야",
-     "memo": "한국 밴드 웨이브 투 어스의 ‘the pieces tour’ 공연으로, 라이브 네이션 말레이시아가 주최합니다.",
-     "url": "https://klconcert.com/concert/wave-to-earth-the-pieces-tour"
-    },
-    {
-     "kind": "콘서트",
-     "title": "MPO 자선 콘서트: 쉴라 마지드 ‘레겐다’ 35주년 (MPO Benefit Concert: Sheila Majid 35th Legenda Anniversary)",
-     "when": "11월 27일(금) 오후 8시",
-     "where": "데완 필하모닉 페트로나스 (Dewan Filharmonik PETRONAS)",
-     "memo": "말레이시아 필하모닉 오케스트라가 쉴라 마지드의 ‘레겐다’ 35주년을 기념해 여는 자선 콘서트입니다.",
-     "url": "https://klconcert.com/concert/mpo-benefit-concert-sheila-majid-35th-legenda-anniversary"
-    },
-    {
-     "kind": "연극",
-     "title": "데이비드 글래스의 템페스트 (David Glass's TEMPEST)",
-     "when": "11월 27~28일 오후 8시, 29일 오후 3시",
-     "where": "KLPac 펜타스 2 (Pentas 2)",
-     "memo": "영국 신체극의 개척자 데이비드 글래스와 함께 만들어 2019년 klpac에서 초연한 작품으로, KL 셰익스피어 플레이어스가 셰익스피어의 『템페스트』에서 출발해 배우 일곱 명과 움직임, 음악, 조명으로 90분 동안 쉬는 시간 없이 펼칩니다.",
-     "url": "https://www.klpac.org/shows/david-glasss-tempest/"
-    },
-    {
-     "kind": "콘서트",
-     "title": "에젠 알리 인 콘서트: 10주년 (Ejen Ali in Concert: 10th Anniversary)",
-     "when": "11월 28일(토) 오후 8시",
-     "where": "KL 컨벤션 센터 플레너리 홀 (Plenary Hall)",
-     "memo": "말레이시아 애니메이션 『에젠 알리』의 10주년을 기념하는 콘서트로, 말레이시아 방송사 RTM이 주최합니다.",
-     "url": "https://klconcert.com/concert/ejen-ali-in-concert-2026"
-    },
-    {
-     "kind": "콘서트",
-     "title": "얼티밋 뮤직 크롤 II (Ultimate Music Crawl II with The klpac Symphonic Band)",
-     "when": "12월 5일(토) 오후 8시 30분, 6일(일) 오후 3시",
-     "where": "KLPac 펜타스 1 (Pentas 1)",
-     "memo": "klpac 심포닉 밴드가 음악감독 셰릴 마의 지휘로 포크 댄스, 행진곡, 재즈와 스윙, 1980년대풍 시티팝을 넘나드는 90분(휴식 15분 포함) 공연으로, 5세 이상에게 권합니다.",
-     "url": "https://www.klpac.org/shows/ultimate-music-crawl-ii/"
-    }
-   ]
-  },
-  "fact": {
-   "title": "1783년 11월 21일, 사람이 처음 열기구로 하늘을 날다",
-   "titleEn": "November 21, 1783: People Fly Free in a Hot-Air Balloon for the First Time",
-   "body": "1783년 11월 21일, 필라트르 드 로지에와 군인 다를랑드 후작이 파리 서쪽 외곽 라 뮈에트 성에서 몽골피에식 열기구를 타고 떠올랐습니다. 두 사람은 약 25분 동안 파리 상공 약 900m까지 올라 약 9km를 날았고, 성벽 밖 뷔트오카유의 풍차들 사이에 내렸습니다.",
-   "more": [
-    "비행 중 불씨에 천이 그을리자 필라트르가 외투를 벗어 불을 껐습니다.",
-    "내렸을 때 남은 연료는 네다섯 배 더 멀리 날 수 있을 만큼이었습니다.",
-    "두 달 전인 9월 19일 베르사유에서는 양 ‘몽토시엘’과 오리, 수탉이 루이 16세와 마리 앙투아네트 앞에서 먼저 열기구를 타고 약 8분 동안 날았습니다."
-   ],
-   "src": [
-    [
-     "Wikipedia: Montgolfier brothers",
-     "https://en.wikipedia.org/wiki/Montgolfier_brothers"
     ]
    ]
   }
